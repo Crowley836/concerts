@@ -107,8 +107,13 @@ export function TimelineContainer({ concerts, onMapFocus }: TimelineContainerPro
                 <YearMarker year={yearGroup.year} concertCount={yearGroup.concerts.length} />
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
-                  {yearGroup.concerts.map((concert) => (
-                    <ConcertCard key={concert.id} concert={concert} onMapFocus={onMapFocus} />
+                  {yearGroup.concerts.map((concert, index) => (
+                    <ConcertCard
+                      key={concert.id}
+                      concert={concert}
+                      onMapFocus={onMapFocus}
+                      index={index}
+                    />
                   ))}
                 </div>
               </div>

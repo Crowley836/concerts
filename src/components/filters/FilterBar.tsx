@@ -1,3 +1,4 @@
+import { motion, AnimatePresence } from 'framer-motion'
 import { useFilterStore } from '@/store/useFilterStore'
 import { SearchBar } from './SearchBar'
 import { ArtistFilter } from './ArtistFilter'
@@ -77,25 +78,37 @@ export function FilterBar({
             )}
           </div>
 
-          {activeFilters > 0 && (
-            <button
-              onClick={clearFilters}
-              className="flex items-center gap-2 px-3 py-1.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-              <span>Clear all filters</span>
-              <span className="px-1.5 py-0.5 bg-purple-500/20 text-purple-300 rounded text-xs font-bold">
-                {activeFilters}
-              </span>
-            </button>
-          )}
+          <AnimatePresence>
+            {activeFilters > 0 && (
+              <motion.button
+                initial={{ opacity: 0, scale: 0.8, x: 20 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: 0.8, x: 20 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={clearFilters}
+                className="flex items-center gap-2 px-3 py-1.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                <span>Clear all filters</span>
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', stiffness: 500, damping: 15 }}
+                  className="px-1.5 py-0.5 bg-purple-500/20 text-purple-300 rounded text-xs font-bold"
+                >
+                  {activeFilters}
+                </motion.span>
+              </motion.button>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

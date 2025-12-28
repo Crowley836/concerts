@@ -1,19 +1,31 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import type { Concert } from '@/types/concert'
 
 interface ConcertCardProps {
   concert: Concert
   onMapFocus?: (concert: Concert) => void
+  index?: number
 }
 
-export function ConcertCard({ concert, onMapFocus }: ConcertCardProps) {
+export function ConcertCard({ concert, onMapFocus, index = 0 }: ConcertCardProps) {
   const [showAllOpeners, setShowAllOpeners] = useState(false)
 
   const displayedOpeners = showAllOpeners ? concert.openers : concert.openers.slice(0, 3)
   const hiddenOpenersCount = concert.openers.length - 3
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{
+        duration: 0.4,
+        delay: index * 0.05,
+        ease: [0.25, 0.4, 0.25, 1],
+      }}
+      whileHover={{ scale: 1.02, y: -4 }}
+      whileTap={{ scale: 0.98 }}
       className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 cursor-pointer"
       onClick={() => onMapFocus?.(concert)}
     >
@@ -30,9 +42,21 @@ export function ConcertCard({ concert, onMapFocus }: ConcertCardProps) {
         </div>
       )}
 
-      <div className="p-6">
+      <div className="p-6 relative">
+        {/* Ticket perforated edge effect */}
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gray-800 via-purple-500/20 to-gray-800" style={{
+          backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 8px, rgb(17 24 39) 8px, rgb(17 24 39) 12px)'
+        }} />
+
+        {/* ADMIT ONE badge */}
+        <div className="absolute top-4 right-4 px-3 py-1 bg-purple-500/10 border border-purple-500/30 rounded transform rotate-3">
+          <span className="text-xs font-mono uppercase tracking-widest text-purple-400">
+            ╱╱╱ ADMIT ONE ╱╱╱
+          </span>
+        </div>
+
         {/* Header with artist name and genre */}
-        <div className="flex items-start justify-between mb-4">
+        <div className="flex items-start justify-between mb-4 mt-8">
           <div className="flex-1">
             <h3 className="text-2xl font-display uppercase text-white mb-2 leading-tight">
               {concert.headliner}
@@ -130,6 +154,6 @@ export function ConcertCard({ concert, onMapFocus }: ConcertCardProps) {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
