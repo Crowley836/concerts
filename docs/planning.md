@@ -1464,5 +1464,10 @@ d3.forceRadial(
 **Bundle Size**: 504.63 kB JS (gzipped: 160.04 kB), 59.30 kB CSS (gzipped: 14.10 kB)
 
 **Pending Work**:
-- [ ] Replace donut chart with sunburst visualization in Scene5Genres.tsx
+- [ ] ⚠️ **Sunburst visualization sizing** - Needs visual mockup from user
+  - Current state: Sunburst renders but appears too small in default multi-genre view
+  - Issue: Iterative pixel-based adjustments not achieving desired visual impact
+  - Next step: User will provide visual mockup showing target size/layout
+  - Current sizing: `min(100vw, calc(100vh - 280px))` with CSS viewport units
+  - File: [src/components/scenes/Scene5Genres.tsx](../src/components/scenes/Scene5Genres.tsx:647-654)
 - [ ] Fix viewport clipping in genres scene (if still occurring)
