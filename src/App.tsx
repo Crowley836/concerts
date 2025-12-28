@@ -9,7 +9,6 @@ import { MapContainer } from './components/map/MapContainer'
 function App() {
   const [data, setData] = useState<ConcertData | null>(null)
   const [loading, setLoading] = useState(true)
-  const [showMap, setShowMap] = useState(false)
 
   useEffect(() => {
     fetch('/data/concerts.json')
@@ -67,118 +66,134 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
-        <div className="container mx-auto px-4 py-6">
-          <h1 className="text-4xl font-display uppercase tracking-wider text-purple-400">
-            Morperhaus
-          </h1>
-          <p className="text-sm font-mono uppercase tracking-widest text-gray-400 mt-1">
-            Concert Archives
-          </p>
-          <div className="flex gap-4 mt-3 text-sm text-gray-500">
-            <span>{stats.filtered} Shows</span>
-            <span>·</span>
-            <span>{stats.artists} Artists</span>
-            <span>·</span>
-            <span>{stats.venues} Venues</span>
-            <span>·</span>
-            <span>{stats.cities} Cities</span>
-          </div>
+    <div className="h-screen bg-black text-white flex flex-col overflow-hidden">
+      {/* Minimal Header - 60px */}
+      <header className="h-[60px] border-b border-gray-800 bg-gray-950 flex items-center px-6 shrink-0">
+        <h1 className="text-xl font-display uppercase tracking-wider text-purple-400">
+          Morperhaus
+        </h1>
+        <div className="ml-4 flex gap-3 text-sm text-gray-500 font-mono">
+          <span>{stats.filtered}</span>
+          <span>·</span>
+          <span>{stats.artists}</span>
+          <span>·</span>
+          <span>{stats.venues}</span>
+        </div>
+        <div className="ml-auto flex items-center gap-3">
+          <input
+            type="text"
+            placeholder="Search concerts..."
+            className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded text-sm focus:outline-none focus:border-indigo-500 w-64"
+          />
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 rounded text-sm font-medium transition-colors">
+            📊 Story
+          </button>
         </div>
       </header>
 
-      {/* Filter Bar */}
-      <FilterBar
-        uniqueArtists={uniqueArtists}
-        uniqueGenres={uniqueGenres}
-        uniqueVenues={uniqueVenues}
-        uniqueCities={uniqueCities}
-        yearRange={yearRange}
-        filteredCount={stats.filtered}
-        totalCount={stats.total}
-      />
+      {/* Collapsible Filter Chips */}
+      <div className="px-6 py-2 border-b border-gray-800 bg-gray-950/50 shrink-0">
+        <FilterBar
+          uniqueArtists={uniqueArtists}
+          uniqueGenres={uniqueGenres}
+          uniqueVenues={uniqueVenues}
+          uniqueCities={uniqueCities}
+          yearRange={yearRange}
+          filteredCount={stats.filtered}
+          totalCount={stats.total}
+        />
+      </div>
 
-      {/* Main Content - Desktop: Split Layout, Mobile: Toggle */}
-      <main className="relative">
-        {/* Desktop: Side-by-side layout */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr,500px] lg:gap-6 container mx-auto px-4 py-8">
-          {/* Timeline */}
-          <div className="overflow-y-auto">
-            <TimelineContainer concerts={filteredConcerts} onMapFocus={focusOnConcert} />
-          </div>
-
-          {/* Map - Sticky */}
-          <div className="sticky top-[320px] h-[calc(100vh-340px)]">
-            <MapContainer
-              concerts={filteredConcerts}
-              focusedConcert={focusedConcert}
-              onMarkerClick={focusOnConcert}
-            />
-          </div>
-        </div>
-
-        {/* Mobile: Timeline with floating map button */}
-        <div className="lg:hidden container mx-auto px-4 py-8">
-          <TimelineContainer concerts={filteredConcerts} onMapFocus={focusOnConcert} />
-
-          {/* Floating Map Toggle Button */}
-          <button
-            onClick={() => setShowMap(true)}
-            className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-4 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg transition-colors"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-              />
-            </svg>
-            <span className="font-medium">Map</span>
-          </button>
-
-          {/* Full-screen Map Overlay for Mobile */}
-          {showMap && (
-            <div className="fixed inset-0 z-50 bg-gray-950">
-              <div className="h-full flex flex-col">
-                {/* Header */}
-                <div className="flex items-center justify-between p-4 bg-gray-900 border-b border-gray-800">
-                  <h2 className="text-lg font-display uppercase text-purple-400">Concert Map</h2>
-                  <button
-                    onClick={() => setShowMap(false)}
-                    className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
-                  >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
+      {/* Main Dashboard - Three Column Layout */}
+      <main className="flex-1 flex overflow-hidden">
+        {/* Left Sidebar: Stats - 250px */}
+        <aside className="w-[250px] border-r border-gray-800 bg-gray-950 p-4 overflow-y-auto shrink-0">
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xs font-mono uppercase text-gray-500 mb-3">Overview</h3>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Shows</span>
+                  <span className="font-semibold text-white">{stats.filtered}</span>
                 </div>
-
-                {/* Map */}
-                <div className="flex-1">
-                  <MapContainer
-                    concerts={filteredConcerts}
-                    focusedConcert={focusedConcert}
-                    onMarkerClick={focusOnConcert}
-                  />
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Artists</span>
+                  <span className="font-semibold text-white">{stats.artists}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Venues</span>
+                  <span className="font-semibold text-white">{stats.venues}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Cities</span>
+                  <span className="font-semibold text-white">{stats.cities}</span>
                 </div>
               </div>
             </div>
-          )}
-        </div>
-      </main>
 
-      {/* Footer */}
-      <footer className="mt-16 py-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-        <p>Built with love for live music 🎸</p>
-      </footer>
+            <div>
+              <h3 className="text-xs font-mono uppercase text-gray-500 mb-3">Top Artists</h3>
+              <div className="space-y-2">
+                {uniqueArtists.slice(0, 5).map((artist) => {
+                  const count = filteredConcerts.filter(c => c.headliner === artist).length
+                  return (
+                    <div key={artist} className="text-sm">
+                      <div className="flex justify-between mb-1">
+                        <span className="text-gray-300 truncate">{artist}</span>
+                        <span className="text-gray-500">{count}x</span>
+                      </div>
+                      <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-indigo-500"
+                          style={{ width: `${(count / filteredConcerts.length) * 100}%` }}
+                        />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xs font-mono uppercase text-gray-500 mb-3">Genre Mix</h3>
+              <div className="space-y-2">
+                {uniqueGenres.slice(0, 4).map((genre) => {
+                  const count = filteredConcerts.filter(c => c.genre === genre).length
+                  const percentage = ((count / filteredConcerts.length) * 100).toFixed(0)
+                  return (
+                    <div key={genre} className="text-sm">
+                      <div className="flex justify-between mb-1">
+                        <span className="text-gray-300">{genre}</span>
+                        <span className="text-gray-500">{percentage}%</span>
+                      </div>
+                      <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-purple-500"
+                          style={{ width: `${percentage}%` }}
+                        />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        {/* Center: Concert List */}
+        <div className="flex-1 overflow-y-auto bg-black">
+          <TimelineContainer concerts={filteredConcerts} onMapFocus={focusOnConcert} />
+        </div>
+
+        {/* Right Sidebar: Map - 400px */}
+        <aside className="w-[400px] border-l border-gray-800 bg-gray-950 shrink-0">
+          <MapContainer
+            concerts={filteredConcerts}
+            focusedConcert={focusedConcert}
+            onMarkerClick={focusOnConcert}
+          />
+        </aside>
+      </main>
     </div>
   )
 }

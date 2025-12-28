@@ -1,8 +1,6 @@
 import { useMemo } from 'react'
 import type { Concert } from '@/types/concert'
-import { ConcertCard } from './ConcertCard'
-import { YearMarker } from './YearMarker'
-import { DecadeHeader } from './DecadeHeader'
+import { CompactConcertRow } from './CompactConcertRow'
 
 interface TimelineContainerProps {
   concerts: Concert[]
@@ -91,36 +89,32 @@ export function TimelineContainer({ concerts, onMapFocus }: TimelineContainerPro
   }
 
   return (
-    <div className="space-y-8">
-      {groupedConcerts.map((decadeGroup) => {
-        const decadeConcertCount = decadeGroup.years.reduce(
-          (sum, year) => sum + year.concerts.length,
-          0
-        )
-
-        return (
-          <div key={decadeGroup.decade}>
-            <DecadeHeader decade={decadeGroup.decade} concertCount={decadeConcertCount} />
-
-            {decadeGroup.years.map((yearGroup) => (
-              <div key={yearGroup.year} className="mb-8">
-                <YearMarker year={yearGroup.year} concertCount={yearGroup.concerts.length} />
-
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
-                  {yearGroup.concerts.map((concert, index) => (
-                    <ConcertCard
-                      key={concert.id}
-                      concert={concert}
-                      onMapFocus={onMapFocus}
-                      index={index}
-                    />
-                  ))}
+    <div className="divide-y divide-gray-900">
+      {groupedConcerts.map((decadeGroup) => (
+        <div key={decadeGroup.decade}>
+          {decadeGroup.years.map((yearGroup) => (
+            <div key={yearGroup.year}>
+              {/* Year Header */}
+              <div className="sticky top-0 z-10 px-4 py-2 bg-gray-950 border-b border-gray-800">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg font-display text-indigo-400">{yearGroup.year}</span>
+                  <span className="text-xs text-gray-500">{yearGroup.concerts.length} shows</span>
+                  <div className="flex-1 h-px bg-gray-800" />
                 </div>
               </div>
-            ))}
-          </div>
-        )
-      })}
+
+              {/* Concert Rows */}
+              {yearGroup.concerts.map((concert) => (
+                <CompactConcertRow
+                  key={concert.id}
+                  concert={concert}
+                  onMapFocus={onMapFocus}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   )
 }
