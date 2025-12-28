@@ -3,16 +3,20 @@ import type { Concert } from '@/types/concert'
 
 interface ConcertCardProps {
   concert: Concert
+  onMapFocus?: (concert: Concert) => void
 }
 
-export function ConcertCard({ concert }: ConcertCardProps) {
+export function ConcertCard({ concert, onMapFocus }: ConcertCardProps) {
   const [showAllOpeners, setShowAllOpeners] = useState(false)
 
   const displayedOpeners = showAllOpeners ? concert.openers : concert.openers.slice(0, 3)
   const hiddenOpenersCount = concert.openers.length - 3
 
   return (
-    <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+    <div
+      className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 cursor-pointer"
+      onClick={() => onMapFocus?.(concert)}
+    >
       {/* Artist image header (if available) */}
       {concert.headlinerImage && (
         <div className="relative h-48 overflow-hidden">
@@ -76,7 +80,10 @@ export function ConcertCard({ concert }: ConcertCardProps) {
               {/* Show more/less button for many openers */}
               {concert.openers.length > 3 && (
                 <button
-                  onClick={() => setShowAllOpeners(!showAllOpeners)}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setShowAllOpeners(!showAllOpeners)
+                  }}
                   className="mt-2 text-xs text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1"
                 >
                   {showAllOpeners ? (
@@ -106,6 +113,7 @@ export function ConcertCard({ concert }: ConcertCardProps) {
                 href={concert.reference}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 className="inline-flex items-center gap-2 text-xs text-purple-400 hover:text-purple-300 transition-colors"
               >
                 <span>View details</span>

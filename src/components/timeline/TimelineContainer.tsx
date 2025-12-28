@@ -6,6 +6,7 @@ import { DecadeHeader } from './DecadeHeader'
 
 interface TimelineContainerProps {
   concerts: Concert[]
+  onMapFocus?: (concert: Concert) => void
 }
 
 interface GroupedConcerts {
@@ -16,7 +17,7 @@ interface GroupedConcerts {
   }[]
 }
 
-export function TimelineContainer({ concerts }: TimelineContainerProps) {
+export function TimelineContainer({ concerts, onMapFocus }: TimelineContainerProps) {
   // Group concerts by decade and year
   const groupedConcerts = useMemo(() => {
     const decadeMap = new Map<string, Map<number, Concert[]>>()
@@ -107,7 +108,7 @@ export function TimelineContainer({ concerts }: TimelineContainerProps) {
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
                   {yearGroup.concerts.map((concert) => (
-                    <ConcertCard key={concert.id} concert={concert} />
+                    <ConcertCard key={concert.id} concert={concert} onMapFocus={onMapFocus} />
                   ))}
                 </div>
               </div>
