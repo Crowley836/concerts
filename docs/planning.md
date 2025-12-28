@@ -1076,3 +1076,249 @@ Before starting each major phase, I will:
 4. Document all progress in /docs/planning.md
 
 This ensures we never run out of context mid-phase and maintains continuity.
+
+## Implementation Progress
+
+### ✅ Phase 0: Project Infrastructure (COMPLETE)
+**Completed**: Initial session
+**Status**: All tasks completed successfully
+
+- ✅ Git repository initialized
+- ✅ Directory structure created (docs/, .claude/, src/, public/, scripts/)
+- ✅ .gitignore created
+- ✅ Planning doc moved to /docs/planning.md
+- ✅ .claude/config.json and context.md created
+- ✅ Initial README.md created
+- ✅ First commit: "Initial project structure"
+- ✅ GitHub repo created and pushed
+- ✅ index.html backed up to old_index.html
+
+**Key Files Created**:
+- `.gitignore`
+- `docs/planning.md`
+- `.claude/config.json`
+- `.claude/context.md`
+- `README.md`
+- `old_index.html` (backup)
+
+### ✅ Phase 1: Foundation (COMPLETE)
+**Completed**: Initial session
+**Status**: All tasks completed successfully
+
+- ✅ Vite + React + TypeScript project initialized
+- ✅ Tailwind CSS v4 configured with @import syntax
+- ✅ Basic project structure set up
+- ✅ TypeScript type definitions created (Concert, Artist, FilterState)
+- ✅ Sample concert data with 5 concerts
+- ✅ Basic App.tsx with dark theme and concert cards
+- ✅ npm install completed (213 packages, 0 vulnerabilities)
+
+**Key Files Created**:
+- `package.json` - All dependencies configured
+- `vite.config.ts` - Vite + React plugin with path aliases
+- `tsconfig.json` - Strict TypeScript configuration
+- `postcss.config.js` - Tailwind CSS PostCSS plugin
+- `src/types/concert.ts` - Concert interface
+- `src/types/artist.ts` - Artist metadata interface
+- `src/App.tsx` - Main application component
+- `src/main.tsx` - Entry point
+- `src/index.css` - Tailwind v4 with custom fonts
+- `public/data/concerts.json` - Sample data (5 concerts)
+- `index.html` - Updated for Vite
+
+**Tech Stack Confirmed**:
+- Vite 6.0.7
+- React 18.3.1
+- TypeScript 5.7.2
+- Tailwind CSS 4.0.0
+- Custom fonts: Bebas Neue, Inter, Courier New
+
+### ✅ Phase 2: Data Pipeline (COMPLETE)
+**Completed**: Initial session
+**Status**: All scripts and documentation created
+
+- ✅ .env.example for API configuration
+- ✅ city-coordinates.ts static geocoding mapping
+- ✅ rate-limiter.ts utility (2/sec AudioDB, 5/sec Last.fm)
+- ✅ theaudiodb-client.ts for artist metadata
+- ✅ lastfm-client.ts as fallback for artist data
+- ✅ google-sheets-client.ts for OAuth and sheet fetching
+- ✅ fetch-google-sheet.ts to pull and process sheet data
+- ✅ enrich-artists.ts to fetch artist images/bios
+- ✅ build-data.ts orchestrator script
+- ✅ docs/api-setup.md comprehensive API setup guide
+
+**Key Files Created**:
+- `.env.example` - Template for all API keys
+- `src/utils/city-coordinates.ts` - Static city→coords mapping
+- `scripts/utils/rate-limiter.ts` - Rate limiting utility
+- `scripts/utils/theaudiodb-client.ts` - TheAudioDB API client
+- `scripts/utils/lastfm-client.ts` - Last.fm API client
+- `scripts/utils/google-sheets-client.ts` - Google Sheets OAuth wrapper
+- `scripts/fetch-google-sheet.ts` - Main sheet fetch script
+- `scripts/enrich-artists.ts` - Artist enrichment script
+- `scripts/build-data.ts` - Pipeline orchestrator
+- `docs/api-setup.md` - Complete API setup documentation
+
+**Data Pipeline Workflow**:
+1. `npm run fetch-sheet` - Pull from Google Sheets
+2. `npm run enrich` - Fetch artist metadata (TheAudioDB → Last.fm fallback)
+3. `npm run build-data` - Run full pipeline
+4. Outputs: `public/data/concerts.json` and `public/data/artists-metadata.json`
+
+### ✅ Phase 3: Core Features (COMPLETE)
+**Completed**: Continuation session
+**Status**: All filtering and timeline features implemented
+
+- ✅ Zustand store for filter state management
+- ✅ useConcertData hook for filtering logic
+- ✅ SearchBar component with clear button
+- ✅ MultiSelectFilter reusable component with checkboxes
+- ✅ ArtistFilter, GenreFilter, VenueFilter, CityFilter components
+- ✅ YearRangeSlider with dual thumb range selection
+- ✅ FilterBar with active filter count and clear all
+- ✅ TimelineContainer with decade and year grouping
+- ✅ Enhanced ConcertCard with expandable openers
+- ✅ YearMarker and DecadeHeader components
+- ✅ Migrated to Tailwind CSS v4
+- ✅ TypeScript compilation successful
+- ✅ Production build working
+
+**Key Files Created**:
+- `src/store/useFilterStore.ts` - Zustand store for filters
+- `src/hooks/useConcertData.ts` - Data filtering hook
+- `src/components/filters/SearchBar.tsx`
+- `src/components/filters/MultiSelectFilter.tsx` - Reusable dropdown
+- `src/components/filters/ArtistFilter.tsx`
+- `src/components/filters/GenreFilter.tsx`
+- `src/components/filters/VenueFilter.tsx`
+- `src/components/filters/CityFilter.tsx`
+- `src/components/filters/YearRangeSlider.tsx`
+- `src/components/filters/FilterBar.tsx` - Main filter container
+- `src/components/timeline/TimelineContainer.tsx` - Timeline orchestrator
+- `src/components/timeline/ConcertCard.tsx` - Enhanced card component
+- `src/components/timeline/YearMarker.tsx`
+- `src/components/timeline/DecadeHeader.tsx`
+
+**Features Implemented**:
+- Text search across artists, venues, cities, openers
+- Multi-select filters with checkboxes
+- Year range slider with live preview
+- "Has Openers" toggle filter
+- Active filter count with "Clear all" button
+- Live stats update (shows, artists, venues, cities)
+- Concerts grouped by decade and year (newest first)
+- Empty state handling
+
+**Build Output**:
+- Production: 165.39 kB JS (gzipped: 51.65 kB), 33.93 kB CSS (gzipped: 6.09 kB)
+
+### ✅ Phase 4: Map Integration (COMPLETE)
+**Completed**: Continuation session
+**Status**: Interactive map fully integrated with timeline
+
+- ✅ React Leaflet and dependencies installed
+- ✅ MapContainer component with OpenStreetMap tiles
+- ✅ Custom cluster markers with purple gradient styling
+- ✅ useMapSync hook for timeline synchronization
+- ✅ Bidirectional sync (card click → map focus, marker click → concert focus)
+- ✅ Split desktop layout (timeline 60% + sticky map 40%)
+- ✅ Mobile layout with floating map button + full-screen overlay
+- ✅ Event propagation handled correctly
+- ✅ TypeScript compilation successful
+- ✅ Production build working
+
+**Key Files Created**:
+- `src/components/map/MapContainer.tsx` - Leaflet map wrapper
+- `src/hooks/useMapSync.ts` - Map synchronization hook
+
+**Key Files Updated**:
+- `src/App.tsx` - Split layout with map integration
+- `src/components/timeline/ConcertCard.tsx` - Added onMapFocus callback
+- `src/components/timeline/TimelineContainer.tsx` - Pass through onMapFocus
+
+**Features Implemented**:
+- OpenStreetMap with Leaflet integration
+- Marker clustering (small/medium/large based on count)
+- Concert popups with details (artist, date, venue, openers count)
+- Click concert card → map flies to venue
+- Click map marker → focuses concert (ready for scroll-to)
+- Desktop: Side-by-side timeline + sticky map (500px wide)
+- Mobile: Timeline with floating "Map" button
+- Full-screen map overlay for mobile with close button
+- Custom purple gradient cluster styling
+
+**Build Output**:
+- Production: 371.74 kB JS (gzipped: 114.12 kB), 53.26 kB CSS (gzipped: 13.14 kB)
+
+**Dependencies Added**:
+- leaflet 1.9.4
+- react-leaflet 4.2.1
+- react-leaflet-cluster 2.1.0
+
+### 🔄 Phase 5: Polish (PENDING)
+**Status**: Not started
+
+**Planned Tasks**:
+1. Add animations with Framer Motion
+   - Scroll-triggered card animations
+   - Map marker pulse effects
+   - Filter transition animations
+2. Implement concert ticket design theme
+   - Perforated edge styling
+   - "ADMIT ONE" stamp aesthetic
+3. Add stats overview header enhancements
+4. Optimize images and performance
+   - Image lazy loading improvements
+   - Virtual scrolling with react-window
+5. Mobile responsive refinements
+6. Genre-based color theming for cards
+
+**Remaining Dependencies to Use**:
+- framer-motion (already installed)
+- react-window (already installed)
+- date-fns (already installed)
+
+### 📦 Phase 6: Deployment (PENDING)
+**Status**: Not started
+
+**Planned Tasks**:
+1. Set up Cloudflare Pages project
+2. Connect GitHub repository
+3. Configure build settings
+4. Test production build locally
+5. Deploy and verify
+6. Set up custom domain (optional)
+
+**Deployment Configuration**:
+```
+Build command: npm run build
+Build output: dist
+Root directory: /
+Node version: 18
+Environment Variables: (none - all data is static)
+```
+
+## Current Status Summary
+
+**Phases Completed**: 4 out of 6 (67%)
+**Remaining Phases**: 2 (Polish, Deployment)
+
+**What's Working**:
+- ✅ Full filtering system with 6 filter types
+- ✅ Timeline view with decade/year grouping
+- ✅ Interactive map with clustering
+- ✅ Bidirectional timeline/map synchronization
+- ✅ Responsive desktop and mobile layouts
+- ✅ Dark theme with purple accents
+- ✅ TypeScript strict mode
+- ✅ Production builds successful
+
+**What's Next**:
+- Phase 5: Animations, visual polish, performance optimization
+- Phase 6: Cloudflare Pages deployment
+
+**Token Usage**: ~86k/200k (43% used, 114k remaining)
+
+**GitHub Repository**: https://github.com/mmorper/concerts
+**Latest Commit**: Phase 4: Map Integration - Complete (58c7299)
