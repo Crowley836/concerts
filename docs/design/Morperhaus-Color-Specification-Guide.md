@@ -1,6 +1,6 @@
 # Morperhaus Concerts — Color Specification Guide
 
-**Version:** 2.0  
+**Version:** 2.1
 **Last Updated:** December 2024
 
 ---
@@ -13,26 +13,28 @@ Deep jewel tones at 35-45% lightness, 65-80% saturation.
 
 | Genre | Hex | Vibe |
 |-------|-----|------|
-| **New Wave** | `#1e3a8a` | Deep electric blue — synth, cold, 80s |
+| **New Wave** | `#1e40af` | Deep navy blue — synth, cold, 80s |
 | **Punk** | `#991b1b` | Dried blood red — raw, aggressive |
 | **Alternative** | `#5b21b6` | Deep violet — moody, introspective |
-| **Ska** | `#b45309` | Burnt orange — brass, sunshine |
-| **Indie Rock** | `#1d4ed8` | Royal blue — melodic, expansive |
-| **Electronic** | `#0e7490` | Deep cyan — synthetic, club lights |
-| **Pop Rock** | `#c2410c` | Burnt sienna — warm, accessible |
-| **Pop Punk** | `#be185d` | Deep magenta — youthful, loud |
-| **Classic Rock** | `#78350f` | Brown leather — vintage, worn |
-| **Jazz** | `#312e81` | Midnight indigo — smoky, sophisticated |
-| **Reggae** | `#166534` | Forest green — roots, earth |
-| **Metal** | `#1f2937` | Near-black charcoal — heavy, dark |
-| **Hip Hop** | `#9a3412` | Rust orange — street, bold |
-| **R&B/Soul** | `#4c1d95` | Deep purple — smooth, rich |
-| **Folk/Country** | `#713f12` | Saddle brown — acoustic, earthy |
-| **Funk** | `#a16207` | Mustard gold — groove, 70s |
-| **Blues** | `#1e40af` | Deep navy — soulful, late night |
-| **World** | `#115e59` | Dark teal — global, oceanic |
-| **Experimental** | `#7c3aed` | Electric purple — weird, avant-garde |
-| **Other** | `#4b5563` | Slate gray — neutral bucket |
+| **Ska** | `#f59e0b` | Bright amber — brass, sunshine ⚠️ |
+| **Indie Rock** | `#0ea5e9` | Sky blue — melodic, expansive ⚠️ |
+| **Electronic** | `#06b6d4` | Bright cyan — synthetic, club lights ⚠️ |
+| **Pop Rock** | `#dc2626` | Bright red — warm, accessible ⚠️ |
+| **Pop Punk** | `#ec4899` | Hot pink — youthful, loud ⚠️ |
+| **Classic Rock** | `#92400e` | Dark brown leather — vintage, worn ⚠️ |
+| **Jazz** | `#4338ca` | Rich indigo — smoky, sophisticated ⚠️ |
+| **Reggae** | `#16a34a` | Vibrant green — roots, earth ⚠️ |
+| **Metal** | `#18181b` | Near-black — heavy, dark ⚠️ |
+| **Hip Hop** | `#ea580c` | Bright orange — street, bold ⚠️ |
+| **R&B/Soul** | `#7c3aed` | Electric purple — smooth, rich ⚠️ |
+| **Folk/Country** | `#a16207` | Golden brown — acoustic, earthy ⚠️ |
+| **Funk** | `#d97706` | Rich gold — groove, 70s ⚠️ |
+| **Blues** | `#1e3a8a` | Deep blue — soulful, late night ⚠️ |
+| **World** | `#14b8a6` | Bright teal — global, oceanic ⚠️ |
+| **Experimental** | `#a855f7` | Bright purple — weird, avant-garde ⚠️ |
+| **Other** | `#6b7280` | Medium gray — neutral bucket ⚠️ |
+
+⚠️ **Updated in v2.1** - Colors adjusted for better differentiation in sunburst visualization
 
 ---
 

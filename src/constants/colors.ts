@@ -3,26 +3,26 @@
 // Source: docs/design/Morperhaus-Color-Specification-Guide.md
 
 export const GENRE_COLORS: Record<string, string> = {
-  'New Wave': '#1e3a8a',
-  'Punk': '#991b1b',
-  'Alternative': '#5b21b6',
-  'Ska': '#b45309',
-  'Indie Rock': '#1d4ed8',
-  'Electronic': '#0e7490',
-  'Pop Rock': '#c2410c',
-  'Pop Punk': '#be185d',
-  'Classic Rock': '#78350f',
-  'Jazz': '#312e81',
-  'Reggae': '#166534',
-  'Metal': '#1f2937',
-  'Hip Hop': '#9a3412',
-  'R&B/Soul': '#4c1d95',
-  'Folk/Country': '#713f12',
-  'Funk': '#a16207',
-  'Blues': '#1e40af',
-  'World': '#115e59',
-  'Experimental': '#7c3aed',
-  'Other': '#4b5563',
+  'New Wave': '#1e40af',        // Deep navy blue (synth, 80s)
+  'Punk': '#991b1b',            // Dried blood red (raw, aggressive)
+  'Alternative': '#5b21b6',     // Deep violet (moody, introspective)
+  'Ska': '#f59e0b',             // Bright amber (brass, sunshine) - CHANGED for visibility
+  'Indie Rock': '#0ea5e9',      // Sky blue (melodic, expansive) - CHANGED from royal blue
+  'Electronic': '#06b6d4',      // Bright cyan (synthetic, club lights) - CHANGED for differentiation
+  'Pop Rock': '#dc2626',        // Bright red (warm, accessible) - CHANGED from burnt sienna
+  'Pop Punk': '#ec4899',        // Hot pink (youthful, loud) - CHANGED to brighter magenta
+  'Classic Rock': '#92400e',    // Dark brown leather (vintage, worn) - CHANGED for differentiation
+  'Jazz': '#4338ca',            // Rich indigo (smoky, sophisticated) - CHANGED from midnight
+  'Reggae': '#16a34a',          // Vibrant green (roots, earth) - CHANGED to brighter green
+  'Metal': '#18181b',           // Near-black (heavy, dark) - CHANGED to true dark
+  'Hip Hop': '#ea580c',         // Bright orange (street, bold) - CHANGED for visibility
+  'R&B/Soul': '#7c3aed',        // Electric purple (smooth, rich) - CHANGED to violet-purple
+  'Folk/Country': '#a16207',    // Golden brown (acoustic, earthy) - SWAPPED with Funk
+  'Funk': '#d97706',            // Rich gold (groove, 70s) - CHANGED to brighter gold
+  'Blues': '#1e3a8a',           // Deep blue (soulful, late night) - SWAPPED with New Wave
+  'World': '#14b8a6',           // Bright teal (global, oceanic) - CHANGED to more vibrant
+  'Experimental': '#a855f7',    // Bright purple (weird, avant-garde) - CHANGED for visibility
+  'Other': '#6b7280',           // Medium gray (neutral bucket) - CHANGED for better visibility
 } as const
 
 export const BACKGROUNDS = {

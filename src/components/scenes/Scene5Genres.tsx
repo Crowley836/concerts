@@ -288,6 +288,31 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         .attr('stop-color', baseColor)
     })
 
+    // Create floating tooltip (before segments so it's above them)
+    const tooltip = svg.append('g')
+      .attr('class', 'hover-tooltip')
+      .style('opacity', 0)
+      .style('pointer-events', 'none')
+
+    const tooltipBg = tooltip.append('rect')
+      .attr('rx', 6)
+      .attr('ry', 6)
+      .attr('fill', 'white')
+      .attr('stroke', '#d1d5db')
+      .attr('stroke-width', 1)
+      .style('filter', 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))')
+
+    const tooltipText = tooltip.append('text')
+      .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
+      .attr('font-size', '14px')
+      .attr('font-weight', '600')
+      .attr('fill', '#1f2937')
+
+    const tooltipSubtext = tooltip.append('text')
+      .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
+      .attr('font-size', '12px')
+      .attr('fill', '#6b7280')
+
     // Create node groups
     const nodeGroups = g.selectAll('.node-group')
       .data(root.descendants().filter(d => d.depth > 0) as PartitionNode[])
@@ -366,6 +391,44 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           .attr('font-size', '16px')
           .attr('font-weight', '800')
           .style('text-shadow', '0 2px 8px rgba(0,0,0,1)')
+
+        // Show floating tooltip to the right (only in drill-down view with artists)
+        if (expandedGenre && d.depth === 2 && d.data.isArtist) {
+          const angle = (d.x0 + d.x1) / 2
+          const labelRadius = radius * 1.15 // Position outside the sunburst
+          const x = Math.cos(angle - Math.PI / 2) * labelRadius
+          const y = Math.sin(angle - Math.PI / 2) * labelRadius
+
+          const value = d.value || 0
+          const percentage = ((value / (root.value || 1)) * 100).toFixed(1)
+
+          tooltipText
+            .text(d.data.name)
+            .attr('x', x + 12)
+            .attr('y', y - 6)
+
+          tooltipSubtext
+            .text(`${value} show${value !== 1 ? 's' : ''} (${percentage}%)`)
+            .attr('x', x + 12)
+            .attr('y', y + 10)
+
+          // Size background to fit text
+          const textBBox = (tooltipText.node() as SVGTextElement).getBBox()
+          const subtextBBox = (tooltipSubtext.node() as SVGTextElement).getBBox()
+          const maxWidth = Math.max(textBBox.width, subtextBBox.width)
+          const totalHeight = textBBox.height + subtextBBox.height + 8
+
+          tooltipBg
+            .attr('x', x + 8)
+            .attr('y', y - textBBox.height - 2)
+            .attr('width', maxWidth + 8)
+            .attr('height', totalHeight + 4)
+
+          tooltip
+            .transition()
+            .duration(200)
+            .style('opacity', 1)
+        }
       })
       .on('mouseleave', function(_event, d) {
         const currentPath = d3.select(this)
@@ -396,9 +459,15 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           .attr('font-size', baseFontSize)
           .attr('font-weight', '600')
           .style('text-shadow', '0 1px 4px rgba(0,0,0,0.8)')
+
+        // Hide floating tooltip
+        tooltip
+          .transition()
+          .duration(200)
+          .style('opacity', 0)
       })
 
-    // Add tooltips
+    // Add tooltips (browser default)
     nodeGroups.append('title')
       .text(d => {
         const value = d.value || 0
@@ -491,27 +560,31 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
     centerText.append('text')
       .attr('class', 'center-count')
       .attr('text-anchor', 'middle')
-      .attr('dy', '-0.5em')
-      .attr('font-size', '48px')
-      .attr('font-weight', '300')
+      .attr('dy', '-0.2em')
+      .attr('font-size', '56px')
+      .attr('font-weight', '400')
       .attr('fill', '#1f2937')
-      .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
+      .attr('font-family', 'Playfair Display, Georgia, serif')
       .text(concerts.length)
 
     centerText.append('text')
       .attr('class', 'center-label')
       .attr('text-anchor', 'middle')
-      .attr('dy', '1.5em')
-      .attr('font-size', '14px')
+      .attr('dy', '1.8em')
+      .attr('font-size', '13px')
+      .attr('font-weight', '500')
       .attr('fill', '#6b7280')
       .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
+      .attr('letter-spacing', '0.05em')
+      .style('text-transform', 'uppercase')
       .text('total shows')
 
     centerText.append('text')
       .attr('class', 'center-genre')
       .attr('text-anchor', 'middle')
-      .attr('dy', '3em')
-      .attr('font-size', '12px')
+      .attr('dy', '3.4em')
+      .attr('font-size', '11px')
+      .attr('font-weight', '400')
       .attr('fill', '#9ca3af')
       .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
       .text(`${totalGenres} genres`)
