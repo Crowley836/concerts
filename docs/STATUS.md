@@ -1,8 +1,8 @@
 # Concert Archives - Current Status
 
-**Last Updated:** 2025-12-28
-**Current Phase:** Phase 5+ (Bug Fixes)
-**Last Commit:** 6b187d5 - "docs: Synchronize .claude/context.md and establish planning.md as source of truth"
+**Last Updated:** 2025-12-29
+**Current Phase:** Phase 6 (Design Conformance - In Progress)
+**Last Commit:** 103d6f1 - "feat: Implement 270° artist arc centered at left in sunburst drill-down"
 
 ---
 
@@ -26,35 +26,40 @@ All major implementation phases are complete:
 - **Phase 2:** Data pipeline (Google Sheets API, enrichment scripts)
 - **Phase 3:** Core features (filters, timeline, search)
 - **Phase 4:** Map integration (Leaflet, clustering, sync)
-- **Phase 5:** Polish (Framer Motion, scrolling scenes, D3.js visualizations)
+- **Phase 5:** Polish (Framer Motion, scrolling scenes, D3.js visualizations, sunburst sizing, 270° artist arc)
 
-### 🔄 Current Work: Bug Fixes & Refinements
+### 🔄 Phase 6: Design Conformance (In Progress)
 
-**Recent Fixes (December 28, 2025):**
+**Completed Items:**
+
+- ✅ Typography updated to Playfair Display (titles) + Source Sans 3 (body)
+- ✅ Genre color constants created ([src/constants/colors.ts](../src/constants/colors.ts))
+- ✅ Color palette applied throughout (using getGenreColor function)
+- ✅ Scene-specific backgrounds implemented
+- ✅ Consistent animation timing (Framer Motion 0.8-1.2s transitions)
+
+**Remaining Items:**
+
+- ⚠️ Scene background rhythm - Currently LIGHT→DARK→DARK→DARK→DARK, target is LIGHT→DARK→DARK→LIGHT→LIGHT
+  - Scene 1 (Hero): ✅ LIGHT (`bg-white`)
+  - Scene 2 (Artists): ❌ DARK (should be LIGHT) - `from-indigo-950 to-purple-950`
+  - Scene 3 (Map): ✅ DARK (`bg-gray-900`)
+  - Scene 4 (Venue Network): ✅ DARK (`from-indigo-950 to-purple-950`)
+  - Scene 5 (Genres): ⚠️ Light violet (`#ede9fe`) but could be lighter for contrast
+- ⚠️ Apply consistent spacing per design guide
+- ⚠️ Validate "One Thing" rule per scene
+
+**Recent Bug Fixes (December 28-29, 2025):**
+
 1. ✅ Navigation dots - Fixed scroll tracking to use `.snap-y` container
-2. ✅ Scene order - Reordered to Timeline→Venues→Map→Genres→Artists
+2. ✅ Scene order - Reordered to Timeline→Bands→Map→Genres→Artists
 3. ✅ Venue network - Redesigned as radial hierarchy (venue→headliner→opener)
 4. ✅ Map z-index - Fixed header overlay layering (z-20 over z-0 map)
-5. ✅ Artist list - Converted Scene2Venues to show top 20 artists
-6. ✅ Sunburst artist arc - Implemented 270° arc centered at left (9 o'clock) for drill-down view
+5. ✅ Artist list - Converted Scene2 to show top 20 artists
+6. ✅ Sunburst sizing - Updated to `min(85vw, 85vh)` with 800px max
+7. ✅ Sunburst artist arc - Implemented 270° arc centered at left (9 o'clock) for drill-down view
 
 ### 📋 Upcoming Phases
-
-⚠️ **Phase 5: Sunburst visualization sizing**
-
-- Design spec: [Music Scene Spec](phase-5-music-scene-spec-v2.md)
-- Current: `min(100vw, calc(100vh - 280px))`
-- Issue: Appears too small in multi-genre view
-- File: [src/components/scenes/Scene5Genres.tsx](../src/components/scenes/Scene5Genres.tsx:647-654)
-
-**Phase 6: Design Conformance**
-
-- Implement [Scene Design Guide](design/Morperhaus-Scene-Design-Guide.md) specifications
-- Apply [Color Specification Guide](design/Morperhaus-Color-Specification-Guide.md) palette
-- Update typography to Playfair Display + Source Sans 3
-- Align scene backgrounds with LIGHT→DARK→DARK→LIGHT→LIGHT rhythm
-- Create genre color constants (`src/constants/colors.ts`)
-- Apply consistent spacing, animation timing, and "One Thing" rule
 
 **Phase 7: Geography Scene Enhancement**
 
@@ -90,7 +95,7 @@ All major implementation phases are complete:
 **Phase 12: Data Sources Enhancement**
 
 - Review all Google Sheets/API integration work
-- Integrate Spotify API for artist cards
+- Consider future music API integrations (Spotify, MusicBrainz) for artist cards
 - Enhance data enrichment pipeline
 
 ---
@@ -99,15 +104,15 @@ All major implementation phases are complete:
 
 ### 5 Full-Viewport Scenes
 
-**Scene Flow:** Timeline → Artists → Map → Venue Network → Genres
+**Scene Flow:** Timeline → Venue Network → Map → Genres → Artists
 
 | Scene | Component | Technology | Purpose |
 |-------|-----------|------------|---------|
 | **1. Timeline** | Scene1Hero.tsx | D3.js | Interactive timeline with year dots sized by concert count |
-| **2. Artists** | Scene2Venues.tsx | Framer Motion | Top 20 artists in 4-column grid |
+| **2. Venue Network** | Scene4Bands.tsx | D3.js force simulation | Radial hierarchy: venues→headliners→openers |
 | **3. Map** | Scene3Map.tsx | Leaflet + React Leaflet | Dark monochromatic map with region filters |
-| **4. Venue Network** | Scene4Bands.tsx | D3.js force simulation | Radial hierarchy: venues→headliners→openers |
-| **5. Genres** | Scene5Genres.tsx | D3.js sunburst | Hierarchical genre chart with drill-down zoom |
+| **4. Genres** | Scene5Genres.tsx | D3.js sunburst | Hierarchical genre chart with drill-down zoom, 270° artist arc |
+| **5. Artists** | Scene2Venues.tsx | Framer Motion | Top 20 artists in 4-column grid |
 
 ### Tech Stack
 
@@ -203,7 +208,7 @@ concerts/
 
 **Latest Build:** ✅ Successful
 **TypeScript:** ✅ Strict mode passing
-**Bundle Size:** 504.63 kB JS (gzipped: 160.04 kB), 59.30 kB CSS (gzipped: 14.10 kB)
+**Bundle Size:** 516.97 kB JS (gzipped: 163.76 kB), 61.36 kB CSS (gzipped: 14.30 kB)
 
 ---
 
@@ -251,21 +256,22 @@ npm run build-data   # Fetch & enrich concert data from Google Sheets
 
 ### Scene Background Colors
 
-For visual reference:
-- Scene 1 (Timeline): `bg-white`
-- Scene 2 (Artists): `bg-stone-50`
-- Scene 3 (Map): `bg-gray-900`
-- Scene 4 (Venue Network): `bg-gradient-to-br from-indigo-950 to-purple-950`
-- Scene 5 (Genres): `bg-gray-100`
+For visual reference (actual order):
+
+- Scene 1 (Timeline): `bg-white` - LIGHT
+- Scene 2 (Venue Network): `from-indigo-950 to-purple-950` - DARK
+- Scene 3 (Map): `bg-gray-900` - DARK
+- Scene 4 (Genres): `#ede9fe` (light violet) - LIGHT
+- Scene 5 (Artists): `from-indigo-950 to-purple-950` - DARK (should be LIGHT)
 
 ---
 
 ## Recent Commits
 
+- `103d6f1` - feat: Implement 270° artist arc centered at left in sunburst drill-down
 - `6b187d5` - docs: Synchronize .claude/context.md and establish planning.md as source of truth
-- `778467f` - wip: Sunburst sizing adjustments - awaiting visual mockup
+- `d216550` - feat: Apply Playfair Display + Source Sans 3 typography, genre color palette
 - `8830dd3` - Redesign to dashboard layout - above-the-fold horizontal 16:9 format
-- `a7b1e63` - Phase 5: Polish - Complete
 
 ---
 

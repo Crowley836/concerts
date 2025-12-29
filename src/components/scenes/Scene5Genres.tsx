@@ -471,17 +471,18 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           .attr('stroke-width', 3)
           .style('filter', 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))')
 
-        // Reset label
-        const baseOpacity = angle > 0.3 ? 1 : 0.3
-        const baseFontSize = angle > 0.4 ? '12px' : angle > 0.2 ? '11px' : '10px'
+        // Reset label - always keep full opacity
+        const baseFontSize = d.depth === 2
+          ? (angle > 0.4 ? '12px' : angle > 0.2 ? '11px' : '10px')
+          : (angle > 0.4 ? '14px' : angle > 0.2 ? '12px' : '11px')
 
         parentSelection
           .select('.segment-label')
           .transition()
           .duration(300)
-          .attr('opacity', baseOpacity)
+          .attr('opacity', 1)
           .attr('font-size', baseFontSize)
-          .attr('font-weight', '600')
+          .attr('font-weight', d.depth === 2 ? '500' : '600')
           .style('text-shadow', '0 1px 4px rgba(0,0,0,0.8)')
 
         // Hide floating tooltip
@@ -509,7 +510,9 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           const x = Math.cos(angle - Math.PI / 2) * adjustedRadius
           const y = Math.sin(angle - Math.PI / 2) * adjustedRadius
           const rotation = angle * 180 / Math.PI - 90
-          return `translate(${x},${y}) rotate(${rotation < 180 ? rotation : rotation + 180})`
+          // Flip text if it's on the bottom half of the circle (angle between π/2 and 3π/2)
+          const needsFlip = angle > Math.PI / 2 && angle < (3 * Math.PI / 2)
+          return `translate(${x},${y}) rotate(${needsFlip ? rotation + 180 : rotation})`
         }
 
         // For depth 2+ (artists/small genres), position along arc
@@ -522,8 +525,10 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         const x = Math.cos(angle - Math.PI / 2) * adjustedRadius
         const y = Math.sin(angle - Math.PI / 2) * adjustedRadius
         const rotation = angle * 180 / Math.PI - 90
+        // Flip text if it's on the bottom half of the circle (angle between π/2 and 3π/2)
+        const needsFlip = angle > Math.PI / 2 && angle < (3 * Math.PI / 2)
 
-        return `translate(${x},${y}) rotate(${rotation < 180 ? rotation : rotation + 180})`
+        return `translate(${x},${y}) rotate(${needsFlip ? rotation + 180 : rotation})`
       })
       .attr('dy', '0.35em')
       .attr('text-anchor', 'middle')
@@ -570,13 +575,7 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         if (angle > 0.2) return name.length > 14 ? name.substring(0, 12) + '…' : name
         return name.length > 10 ? name.substring(0, 8) + '…' : name
       })
-      .attr('opacity', d => {
-        const angle = d.x1 - d.x0
-        if (expandedGenre && d.depth === 1) return 1  // Always show zoomed genre
-        if (d.depth === 2) return 1  // Always show artist labels at full opacity
-        if (angle > 0.2) return 1
-        return 0.5  // Increased from 0.3 for better visibility
-      })
+      .attr('opacity', 1)  // Always show all labels at full opacity
 
     // Add center text
     const centerText = g.append('g')

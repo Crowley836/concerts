@@ -1,34 +1,39 @@
 # Concert Archives - Project Context
 
-## Current Status (December 28, 2025)
+## Current Status (December 29, 2025)
 
 **Implementation Status:**
 - Phases 0-5: ✅ Complete
-- Bug Fix Session 1: 🔄 In progress
+- Phase 6 (Design Conformance): 🔄 ~80% complete
 
-**Recent Work:**
-- Fixed navigation dots scroll tracking
-- Reordered scenes: Timeline → Venues → Map → Genres → Artists
-- Redesigned venue network as radial hierarchy
-- Fixed map z-index layering issue
-- Converted Scene2 to artist list (top 20)
+**Recent Work (December 28-29):**
+
+- ✅ Applied Playfair Display + Source Sans 3 typography system
+- ✅ Created genre color constants (src/constants/colors.ts)
+- ✅ Fixed sunburst sizing to min(85vw, 85vh) with 800px max
+- ✅ Implemented 270° artist arc in sunburst drill-down view
+- ✅ Fixed navigation dots, scene order, venue network, map z-index
 
 **Pending Work:**
-- Sunburst visualization sizing (awaiting user's visual mockup)
-- User will provide annotated mockup showing desired layout
+
+- Scene background rhythm adjustment (Scene 2 & 5 should be LIGHT)
+- Validate spacing consistency per design guide
+- Review "One Thing" rule per scene
 
 **Architecture:**
-- 5 full-viewport scenes (100vh each) with parallax scrolling
-- NYT-inspired design: clean, minimal, contemporary sans-serif
-- Scene-specific backgrounds with scroll-triggered animations
-- D3.js visualizations for all data displays
+
+- 5 full-viewport scenes (100vh each) with snap scrolling
+- Scene order: Timeline → Venue Network → Map → Genres → Artists
+- Design system: Playfair Display (serif titles) + Source Sans 3 (sans body)
+- Scene backgrounds: LIGHT→DARK→DARK→LIGHT→DARK (target: LIGHT→DARK→DARK→LIGHT→LIGHT)
+- D3.js visualizations with genre color palette
 
 **Tech Stack:**
 - Vite 6.0.7 + React 18.3.1 + TypeScript 5.7.2
 - Tailwind CSS 4.1.18
-- Framer Motion 11.18.2 (parallax scrolling)
-- D3.js 7.9.0 (visualizations)
-- React Leaflet 4.2.1 (map scene)
+- Framer Motion 11.18.2 (scroll animations)
+- D3.js 7.9.0 (timeline, venue network, sunburst)
+- React Leaflet 4.2.1 (map)
 
 **Data Source:**
 - 175 concerts (1984-2026, 42 years)
@@ -36,7 +41,7 @@
 - Top genres: New Wave (46), Punk (15), Alternative (14)
 - Geographic: California ~65%, DC cluster, Boston, New Orleans, UK
 
-**Last Commit:** 778467f - "wip: Sunburst sizing adjustments - awaiting visual mockup"
+**Last Commit:** 103d6f1 - "feat: Implement 270° artist arc centered at left in sunburst drill-down"
 
 ---
 
