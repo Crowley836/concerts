@@ -392,52 +392,57 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           .attr('font-weight', '800')
           .style('text-shadow', '0 2px 8px rgba(0,0,0,1)')
 
-        // Show floating tooltip to the right (only in drill-down view with artists)
-        if (expandedGenre && d.depth === 2 && d.data.isArtist) {
-          const angle = (d.x0 + d.x1) / 2
+        // Show floating tooltip for all segments
+        const angle = (d.x0 + d.x1) / 2
 
-          // Position at the outer edge of the slice (depth 2 is at 0.50 to 0.80 radius)
-          const sliceOuterRadius = radius * 0.80
-
-          // Calculate position at outer edge of slice
-          const sliceX = Math.cos(angle - Math.PI / 2) * sliceOuterRadius
-          const sliceY = Math.sin(angle - Math.PI / 2) * sliceOuterRadius
-
-          // Add offset to position tooltip to the right of the slice
-          const offsetDistance = 20
-          const tooltipX = sliceX + Math.cos(angle - Math.PI / 2) * offsetDistance
-          const tooltipY = sliceY + Math.sin(angle - Math.PI / 2) * offsetDistance
-
-          const value = d.value || 0
-          const percentage = ((value / (root.value || 1)) * 100).toFixed(1)
-
-          tooltipText
-            .text(d.data.name)
-            .attr('x', tooltipX + 8)
-            .attr('y', tooltipY - 2)
-
-          tooltipSubtext
-            .text(`${value} show${value !== 1 ? 's' : ''} (${percentage}%)`)
-            .attr('x', tooltipX + 8)
-            .attr('y', tooltipY + 14)
-
-          // Size background to fit text
-          const textBBox = (tooltipText.node() as SVGTextElement).getBBox()
-          const subtextBBox = (tooltipSubtext.node() as SVGTextElement).getBBox()
-          const maxWidth = Math.max(textBBox.width, subtextBBox.width)
-          const totalHeight = textBBox.height + subtextBBox.height + 8
-
-          tooltipBg
-            .attr('x', tooltipX + 4)
-            .attr('y', tooltipY - textBBox.height - 2)
-            .attr('width', maxWidth + 8)
-            .attr('height', totalHeight + 4)
-
-          tooltip
-            .transition()
-            .duration(200)
-            .style('opacity', 1)
+        // Determine the outer radius based on depth
+        let sliceOuterRadius
+        if (d.depth === 1) {
+          sliceOuterRadius = radius * 0.50   // Outer edge of inner ring
+        } else if (d.depth === 2) {
+          sliceOuterRadius = radius * 0.80   // Outer edge of middle ring
+        } else {
+          sliceOuterRadius = radius * 0.98   // Outer edge of outer ring
         }
+
+        // Calculate position at outer edge of slice
+        const sliceX = Math.cos(angle - Math.PI / 2) * sliceOuterRadius
+        const sliceY = Math.sin(angle - Math.PI / 2) * sliceOuterRadius
+
+        // Add offset to position tooltip outside the slice
+        const offsetDistance = 20
+        const tooltipX = sliceX + Math.cos(angle - Math.PI / 2) * offsetDistance
+        const tooltipY = sliceY + Math.sin(angle - Math.PI / 2) * offsetDistance
+
+        const value = d.value || 0
+        const percentage = ((value / (root.value || 1)) * 100).toFixed(1)
+
+        tooltipText
+          .text(d.data.name)
+          .attr('x', tooltipX + 8)
+          .attr('y', tooltipY - 2)
+
+        tooltipSubtext
+          .text(`${value} show${value !== 1 ? 's' : ''} (${percentage}%)`)
+          .attr('x', tooltipX + 8)
+          .attr('y', tooltipY + 14)
+
+        // Size background to fit text
+        const textBBox = (tooltipText.node() as SVGTextElement).getBBox()
+        const subtextBBox = (tooltipSubtext.node() as SVGTextElement).getBBox()
+        const maxWidth = Math.max(textBBox.width, subtextBBox.width)
+        const totalHeight = textBBox.height + subtextBBox.height + 8
+
+        tooltipBg
+          .attr('x', tooltipX + 4)
+          .attr('y', tooltipY - textBBox.height - 2)
+          .attr('width', maxWidth + 8)
+          .attr('height', totalHeight + 4)
+
+        tooltip
+          .transition()
+          .duration(200)
+          .style('opacity', 1)
       })
       .on('mouseleave', function(_event, d) {
         const currentPath = d3.select(this)
@@ -474,15 +479,6 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           .transition()
           .duration(200)
           .style('opacity', 0)
-      })
-
-    // Add tooltips (browser default)
-    nodeGroups.append('title')
-      .text(d => {
-        const value = d.value || 0
-        const total = root.value || 1
-        const percentage = ((value / total) * 100).toFixed(1)
-        return `${d.data.name}: ${value} shows (${percentage}%)`
       })
 
     // DEBUG: Log paths created
