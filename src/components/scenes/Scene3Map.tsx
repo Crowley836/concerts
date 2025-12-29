@@ -129,6 +129,7 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
           weight: 2,
           opacity: 0.8,
           fillOpacity: 0.6,
+          pane: 'markerPane', // Ensure markers render in proper pane
         })
           .bindPopup(`<strong>${city}</strong><br/>${data.count} concert${data.count !== 1 ? 's' : ''}`)
           .addTo(markersLayerRef.current)
@@ -154,13 +155,13 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
       transition={{ duration: 0.8 }}
       className="h-screen flex flex-col items-center justify-center bg-gray-900 relative snap-start snap-always"
     >
-      {/* Title Overlay */}
+      {/* Title Overlay - increased z-index to be above Leaflet panes */}
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 0 }}
-        className="absolute top-20 left-0 right-0 z-20 text-center px-8 pointer-events-none"
+        className="absolute top-20 left-0 right-0 z-[1000] text-center px-8 pointer-events-none"
       >
         <h2 className="font-serif text-5xl md:text-7xl text-white mb-3 tracking-tight">
           The Geography
@@ -204,7 +205,7 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="absolute bottom-20 left-0 right-0 z-20 text-center"
+        className="absolute bottom-20 left-0 right-0 z-[1000] text-center"
       >
         <p className="font-sans text-xs text-gray-500 font-medium uppercase tracking-widest">
           {concerts.length} Shows · {cityCount} Cities
