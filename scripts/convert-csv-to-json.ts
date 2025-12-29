@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { parse } from 'csv-parse/sync'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -69,28 +70,26 @@ const CITY_COORDINATES: Record<string, { lat: number; lng: number }> = {
   'Morrison, CO': { lat: 39.6653, lng: -105.2055 },
   'Denver, CO': { lat: 39.7392, lng: -104.9903 },
   'Buena Park, California': { lat: 33.8675, lng: -118.0001 },
+  // DC Metro Area
+  'Washington, District of Columbia': { lat: 38.9072, lng: -77.0369 },
+  'Fairfax, Virginia': { lat: 38.8462, lng: -77.3064 },
+  'Alexandria, Virginia': { lat: 38.8048, lng: -77.0469 },
+  'Vienna, Virginia': { lat: 38.9012, lng: -77.2653 },
+  'Bethesda, Maryland': { lat: 38.9807, lng: -77.0947 },
+  'Baltimore, Maryland': { lat: 39.2904, lng: -76.6122 },
+  'Hanover, Maryland': { lat: 39.1926, lng: -76.7241 },
+  'Silver Spring, Maryland': { lat: 38.9907, lng: -77.0261 },
 }
 
 function parseCSV(csvContent: string): ConcertRow[] {
-  const lines = csvContent.split('\n')
-  const headers = lines[0].split(',').map(h => h.trim())
-  const rows: ConcertRow[] = []
+  // Use proper CSV parsing library that handles quoted fields
+  const records = parse(csvContent, {
+    columns: true,
+    skip_empty_lines: true,
+    trim: true,
+  })
 
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim()
-    if (!line) continue
-
-    const values = line.split(',').map(v => v.trim())
-    const row: any = {}
-
-    headers.forEach((header, index) => {
-      row[header] = values[index] || ''
-    })
-
-    rows.push(row as ConcertRow)
-  }
-
-  return rows
+  return records as ConcertRow[]
 }
 
 function normalizeArtistName(name: string): string {
