@@ -212,11 +212,30 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
       .sum(d => d.value || 0)
       .sort((a, b) => (b.value || 0) - (a.value || 0))
 
-    // Create partition layout
+    // Create partition layout with 270° arc for depth 2 (artists)
     const partition = d3.partition<GenreNode>()
       .size([2 * Math.PI, radius])
 
     partition(root)
+
+    // When in drill-down view, adjust artist arcs to 270° (3 o'clock to 9 o'clock)
+    if (expandedGenre) {
+      (root.descendants() as PartitionNode[]).forEach(d => {
+        if (d.depth === 2) {
+          // Artists: Map from 270° arc starting at 0 (3 o'clock)
+          const totalArtistAngle = Math.PI * 1.5  // 270° in radians
+          const fullCircle = 2 * Math.PI
+          const scaleFactor = totalArtistAngle / fullCircle
+
+          // Scale the angles proportionally
+          const originalStart = d.x0
+          const originalSpan = d.x1 - d.x0
+
+          d.x0 = originalStart * scaleFactor
+          d.x1 = d.x0 + (originalSpan * scaleFactor)
+        }
+      })
+    }
 
     // Create arc generators with fixed 3-ring layout
     // Ring 1 (inner): 20-50% of radius
