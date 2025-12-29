@@ -10,28 +10,54 @@ interface Scene3MapProps {
 
 type Region = 'all' | 'california' | 'dc' | 'boston'
 
-const REGION_VIEWS: Record<Region, { center: [number, number]; zoom: number; label: string }> = {
-  all: { center: [39.8283, -98.5795], zoom: 4, label: 'All' },
-  california: { center: [34.0522, -118.2437], zoom: 7, label: 'California' },
-  dc: { center: [38.9072, -77.0369], zoom: 10, label: 'DC Area' },
-  boston: { center: [42.3601, -71.0589], zoom: 10, label: 'Boston' },
+const REGION_VIEWS: Record<Region, { center: [number, number]; zoom: number; label: string; filter?: (concert: Concert) => boolean }> = {
+  all: {
+    center: [39.8283, -98.5795],
+    zoom: 4,
+    label: 'All',
+  },
+  california: {
+    center: [33.8, -118.0], // LA area center
+    zoom: 9, // Much tighter zoom
+    label: 'California',
+    filter: (c) => c.state === 'California' || c.state === 'CA'
+  },
+  dc: {
+    center: [38.9072, -77.0369],
+    zoom: 11, // Tighter zoom for DC metro area
+    label: 'DC Area',
+    filter: (c) => ['Virginia', 'VA', 'Maryland', 'MD', 'District of Columbia', 'DC'].includes(c.state)
+  },
+  boston: {
+    center: [42.3601, -71.0589],
+    zoom: 10,
+    label: 'Boston',
+    filter: (c) => c.state === 'Massachusetts' || c.state === 'MA'
+  },
 }
 
 export function Scene3Map({ concerts }: Scene3MapProps) {
   const mapRef = useRef<HTMLDivElement>(null)
   const mapInstanceRef = useRef<L.Map | null>(null)
+  const markersLayerRef = useRef<L.LayerGroup | null>(null)
   const [selectedRegion, setSelectedRegion] = useState<Region>('all')
 
-  // Count unique cities
-  const cityCount = useMemo(() => {
-    const cities = new Set(concerts.map(c => c.cityState))
-    return cities.size
-  }, [concerts])
+  // Filter concerts based on selected region
+  const filteredConcerts = useMemo(() => {
+    const filter = REGION_VIEWS[selectedRegion].filter
+    return filter ? concerts.filter(filter) : concerts
+  }, [concerts, selectedRegion])
 
+  // Count unique cities in filtered set
+  const cityCount = useMemo(() => {
+    const cities = new Set(filteredConcerts.map(c => c.cityState))
+    return cities.size
+  }, [filteredConcerts])
+
+  // Initialize map (one-time setup)
   useEffect(() => {
     if (!mapRef.current || concerts.length === 0) return
 
-    // Initialize map
     if (!mapInstanceRef.current) {
       const map = L.map(mapRef.current, {
         center: REGION_VIEWS.all.center,
@@ -49,29 +75,53 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
         maxZoom: 19,
       }).addTo(map)
 
+      // Create layer group for markers
+      const markersLayer = L.layerGroup().addTo(map)
+      markersLayerRef.current = markersLayer
+
       mapInstanceRef.current = map
+    }
 
-      // Add markers for each concert
-      const cityMarkers = new Map<string, { lat: number; lng: number; count: number }>()
+    return () => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove()
+        mapInstanceRef.current = null
+      }
+      if (markersLayerRef.current) {
+        markersLayerRef.current = null
+      }
+    }
+  }, [concerts])
 
-      concerts.forEach(concert => {
-        const key = concert.cityState
-        const existing = cityMarkers.get(key)
-        if (existing) {
-          existing.count++
-        } else {
-          cityMarkers.set(key, {
-            lat: concert.location.lat,
-            lng: concert.location.lng,
-            count: 1,
-          })
-        }
-      })
+  // Update markers when region changes
+  useEffect(() => {
+    if (!markersLayerRef.current) return
 
-      // Create markers with size based on concert count
-      cityMarkers.forEach((data, city) => {
-        const radius = Math.sqrt(data.count) * 5
+    // Clear existing markers
+    markersLayerRef.current.clearLayers()
 
+    // Aggregate concerts by city
+    const cityMarkers = new Map<string, { lat: number; lng: number; count: number }>()
+
+    filteredConcerts.forEach(concert => {
+      const key = concert.cityState
+      const existing = cityMarkers.get(key)
+      if (existing) {
+        existing.count++
+      } else {
+        cityMarkers.set(key, {
+          lat: concert.location.lat,
+          lng: concert.location.lng,
+          count: 1,
+        })
+      }
+    })
+
+    // Create markers with size based on concert count
+    cityMarkers.forEach((data, city) => {
+      const radius = Math.sqrt(data.count) * 5
+
+      if (markersLayerRef.current) {
         L.circleMarker([data.lat, data.lng], {
           radius,
           fillColor: '#6366f1',
@@ -81,17 +131,10 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
           fillOpacity: 0.6,
         })
           .bindPopup(`<strong>${city}</strong><br/>${data.count} concert${data.count !== 1 ? 's' : ''}`)
-          .addTo(map)
-      })
-    }
-
-    return () => {
-      if (mapInstanceRef.current) {
-        mapInstanceRef.current.remove()
-        mapInstanceRef.current = null
+          .addTo(markersLayerRef.current)
       }
-    }
-  }, [concerts])
+    })
+  }, [filteredConcerts])
 
   // Handle region changes
   useEffect(() => {
