@@ -395,22 +395,31 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         // Show floating tooltip to the right (only in drill-down view with artists)
         if (expandedGenre && d.depth === 2 && d.data.isArtist) {
           const angle = (d.x0 + d.x1) / 2
-          const labelRadius = radius * 1.15 // Position outside the sunburst
-          const x = Math.cos(angle - Math.PI / 2) * labelRadius
-          const y = Math.sin(angle - Math.PI / 2) * labelRadius
+
+          // Position at the outer edge of the slice (depth 2 is at 0.50 to 0.80 radius)
+          const sliceOuterRadius = radius * 0.80
+
+          // Calculate position at outer edge of slice
+          const sliceX = Math.cos(angle - Math.PI / 2) * sliceOuterRadius
+          const sliceY = Math.sin(angle - Math.PI / 2) * sliceOuterRadius
+
+          // Add offset to position tooltip to the right of the slice
+          const offsetDistance = 20
+          const tooltipX = sliceX + Math.cos(angle - Math.PI / 2) * offsetDistance
+          const tooltipY = sliceY + Math.sin(angle - Math.PI / 2) * offsetDistance
 
           const value = d.value || 0
           const percentage = ((value / (root.value || 1)) * 100).toFixed(1)
 
           tooltipText
             .text(d.data.name)
-            .attr('x', x + 12)
-            .attr('y', y - 6)
+            .attr('x', tooltipX + 8)
+            .attr('y', tooltipY - 2)
 
           tooltipSubtext
             .text(`${value} show${value !== 1 ? 's' : ''} (${percentage}%)`)
-            .attr('x', x + 12)
-            .attr('y', y + 10)
+            .attr('x', tooltipX + 8)
+            .attr('y', tooltipY + 14)
 
           // Size background to fit text
           const textBBox = (tooltipText.node() as SVGTextElement).getBBox()
@@ -419,8 +428,8 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           const totalHeight = textBBox.height + subtextBBox.height + 8
 
           tooltipBg
-            .attr('x', x + 8)
-            .attr('y', y - textBBox.height - 2)
+            .attr('x', tooltipX + 4)
+            .attr('y', tooltipY - textBBox.height - 2)
             .attr('width', maxWidth + 8)
             .attr('height', totalHeight + 4)
 
