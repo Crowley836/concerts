@@ -473,24 +473,24 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
       .attr('class', 'segment-label')
       .attr('transform', function(d) {
         const angle = (d.x0 + d.x1) / 2
-        // Fixed radius based on depth (matching arc generators)
-        let adjustedRadius
+
+        // For depth 1 (inner genres), position label at bottom center
         if (d.depth === 1) {
-          adjustedRadius = radius * 0.35   // Middle of inner ring (0.20 to 0.50)
-        } else if (d.depth === 2) {
+          // Position at bottom of inner circle (6 o'clock = 1.5π radians)
+          const bottomY = radius * 0.42  // Slightly below center of ring
+          return `translate(0, ${bottomY})`
+        }
+
+        // For depth 2+ (artists/small genres), position along arc
+        let adjustedRadius
+        if (d.depth === 2) {
           adjustedRadius = radius * 0.65   // Middle of middle ring (0.50 to 0.80)
         } else {
           adjustedRadius = radius * 0.89   // Middle of outer ring (0.80 to 0.98)
         }
         const x = Math.cos(angle - Math.PI / 2) * adjustedRadius
         const y = Math.sin(angle - Math.PI / 2) * adjustedRadius
-
-        // Keep labels horizontal in bottom half for depth 1 (inner genres)
         const rotation = angle * 180 / Math.PI - 90
-        if (d.depth === 1 && angle > Math.PI) {
-          // Bottom half - keep horizontal (no rotation)
-          return `translate(${x},${y})`
-        }
 
         return `translate(${x},${y}) rotate(${rotation < 180 ? rotation : rotation + 180})`
       })
