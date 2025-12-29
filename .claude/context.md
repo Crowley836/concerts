@@ -4,8 +4,14 @@
 
 **Implementation Status:**
 
-- Phases 0-7, 9: ✅ Complete
-- Phase 8: Venue Scene Enhancements (IN PROGRESS - 2 pending items)
+- Phases 0-9: ✅ Complete
+- Phase 10: Artists Scene Enhancement (NEXT)
+
+**Phase 8 Complete (Venue Scene Enhancements):**
+
+- ✅ Fixed 9:30 Club parsing bug - Replaced `:` delimiters with `|` (pipe) in node IDs
+- ✅ Resolved venue names with colons being incorrectly parsed in venue network
+- ⚠️ Map interaction improvements deferred (enable zoom/pan without scroll hijacking)
 
 **Phase 9 Complete (Venue-Level Geocoding):**
 
@@ -14,17 +20,7 @@
 - ✅ Cost optimization: $0.00 (within $200/month free tier)
 - ✅ DC map adjustments: center [39.00, -77.03], zoom 10.5
 - ✅ Popup z-index fix: z-index 9999 for top-most layer
-- ⚠️ Pending cleanup: Remove jitter logic from Scene3Map.tsx
-
-**Phase 8 Pending Items:**
-
-1. **9:30 Club parsing bug** - Venue names starting with numbers incorrectly parsed
-   - "9:30 Club" appearing as multiple nodes in venue network
-   - See: docs/bugs/44-930.png
-
-2. **Map interaction improvements** - Enable zoom/pan without scroll hijacking
-   - Need UX plan for separating map interaction from viewport scroll
-   - Current state: Map completely static (no scroll/zoom/pan)
+- ✅ Removed jitter logic from Scene3Map.tsx (no longer needed)
 
 **Recent Work (December 29):**
 
@@ -62,7 +58,7 @@
 - Top genres: New Wave (46), Punk (15), Alternative (14)
 - Geographic: California ~65%, DC cluster, Boston, New Orleans, UK
 
-**Last Commit:** TBD - "feat: Implement venue-level geocoding with Google Maps API"
+**Last Commit:** ea67089 - "fix: Resolve 9:30 Club parsing bug and remove jitter logic"
 
 ---
 

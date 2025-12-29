@@ -1,8 +1,8 @@
 # Concert Archives - Current Status
 
 **Last Updated:** 2025-12-29
-**Current Phase:** Phase 8 (Venue-Level Geocoding - Complete, Pending Jitter Removal)
-**Last Commit:** TBD - "feat: Implement venue-level geocoding with Google Maps API"
+**Current Phase:** Phase 8 (Venue Scene Enhancements - Complete)
+**Last Commit:** ea67089 - "fix: Resolve 9:30 Club parsing bug and remove jitter logic"
 
 ---
 
@@ -74,16 +74,20 @@ All major implementation phases are complete:
   - All 32 DC area concerts now display correctly on map
   - Data quality improvements: 54→34 cities (deduplicated), 305→240 artists (deduplicated)
 
-### 🔄 Phase 8: Venue Scene Enhancements (In Progress)
+### ✅ Phase 8: Venue Scene Enhancements (Complete)
+
+**Completed Items:**
+
+- ✅ **9:30 Club parsing bug** - Fixed venue names with colons being incorrectly parsed
+  - Issue: "9:30 Club" appearing as multiple nodes ("30 Club", etc.) in venue network
+  - Root cause: Node IDs used `:` as delimiter, but "9:30 Club" contains a colon
+  - Solution: Replaced all `:` delimiters with `|` (pipe) throughout node ID system
+  - Changed formats: `venue:name` → `venue|name`, `headliner:venue:band` → `headliner|venue|band`
+  - Updated all `.split(':')` calls to `.split('|')` (12 locations)
+  - Reference: [docs/bugs/44-930.png](bugs/44-930.png)
+  - Component: [src/components/scenes/Scene4Bands.tsx](../src/components/scenes/Scene4Bands.tsx)
 
 **Pending Items:**
-
-- ⚠️ **9:30 Club parsing bug** - Venue names starting with numbers being incorrectly parsed
-  - Issue: "9:30 Club" appearing as multiple nodes ("9:30Club", "30 Club", etc.) in venue network
-  - Root cause: String parsing issue with venue names containing numbers/colons
-  - Reference: [docs/bugs/44-930.png](bugs/44-930.png)
-  - Impact: Venue network visualization shows duplicate/incorrect nodes
-  - Component: [src/components/scenes/Scene4Bands.tsx](../src/components/scenes/Scene4Bands.tsx)
 
 - ⚠️ **Map interaction improvements** - Enable zoom/pan without scroll hijacking
   - Current state: Map is completely static (no scroll, zoom, or pan)
@@ -321,11 +325,11 @@ For visual reference (actual order):
 
 ## Recent Commits
 
+- `ea67089` - fix: Resolve 9:30 Club parsing bug and remove jitter logic (Phase 8 - Complete)
+- `ca6e059` - feat: Implement venue-level geocoding with Google Maps API (Phase 9 - Complete)
 - `69b1ea2` - fix: Resolve DC area coordinate geocoding issue (Phase 7 - Complete)
 - `65688d3` - fix: Add coordinate validation to DC area filter
 - `bd52be4` - fix: Increase z-index for map UI overlays to z-[1000]
-- `04d3d66` - feat: Implement tighter zoom levels and region filtering for map
-- `103d6f1` - feat: Implement 270° artist arc centered at left in sunburst drill-down
 
 ---
 
