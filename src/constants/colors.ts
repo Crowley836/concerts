@@ -22,6 +22,8 @@ export const GENRE_COLORS: Record<string, string> = {
   'Blues': '#1e3a8a',           // Deep blue (soulful, late night) - SWAPPED with New Wave
   'World': '#14b8a6',           // Bright teal (global, oceanic) - CHANGED to more vibrant
   'Experimental': '#a855f7',    // Bright purple (weird, avant-garde) - CHANGED for visibility
+  'Post Punk': '#be123c',       // Deep rose red (dark, angular) - NEW
+  'Rockabilly': '#78350f',      // Dark tobacco brown (vintage, retro) - NEW
   'Other': '#6b7280',           // Medium gray (neutral bucket) - CHANGED for better visibility
 } as const
 

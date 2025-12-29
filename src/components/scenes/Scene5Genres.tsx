@@ -474,11 +474,19 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
       .attr('transform', function(d) {
         const angle = (d.x0 + d.x1) / 2
 
-        // For depth 1 (inner genres), position label at bottom center
+        // For depth 1 (inner genres), position label based on view state
         if (d.depth === 1) {
-          // Position at bottom of inner circle (6 o'clock = 1.5π radians)
-          const bottomY = radius * 0.42  // Slightly below center of ring
-          return `translate(0, ${bottomY})`
+          // If zoomed into THIS specific genre, center label at bottom
+          if (expandedGenre && d.data.name === expandedGenre) {
+            const bottomY = radius * 0.42
+            return `translate(0, ${bottomY})`
+          }
+          // Otherwise, position along arc like normal
+          const adjustedRadius = radius * 0.35  // Middle of inner ring
+          const x = Math.cos(angle - Math.PI / 2) * adjustedRadius
+          const y = Math.sin(angle - Math.PI / 2) * adjustedRadius
+          const rotation = angle * 180 / Math.PI - 90
+          return `translate(${x},${y}) rotate(${rotation < 180 ? rotation : rotation + 180})`
         }
 
         // For depth 2+ (artists/small genres), position along arc
