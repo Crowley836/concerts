@@ -4,10 +4,11 @@ This document explains how to configure the various APIs needed for the concert 
 
 ## Overview
 
-The data pipeline uses three services:
+The data pipeline uses four services:
 1. **Google Sheets API** - To fetch concert data from your spreadsheet
-2. **TheAudioDB** - To fetch artist images and metadata (primary source)
-3. **Last.fm API** - To fetch artist data when TheAudioDB doesn't have it (fallback)
+2. **Google Maps Geocoding API** - To get accurate venue coordinates for the map
+3. **TheAudioDB** - To fetch artist images and metadata (primary source)
+4. **Last.fm API** - To fetch artist data when TheAudioDB doesn't have it (fallback)
 
 ## Google Sheets API Setup
 
@@ -106,6 +107,75 @@ GOOGLE_REDIRECT_URI=http://localhost:5173
 GOOGLE_REFRESH_TOKEN=your_refresh_token
 ```
 
+## Google Maps Geocoding API Setup
+
+The Google Maps Geocoding API is used to get accurate venue-specific coordinates for displaying concerts on the map. It uses a cache-first approach to minimize API calls and stay within the free tier.
+
+### 1. Enable the API
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+2. Use the same project you created for Google Sheets (or create a new one)
+3. Go to "APIs & Services" → "Library"
+4. Search for "Geocoding API"
+5. Click "Enable"
+
+### 2. Create API Key
+
+1. Go to "APIs & Services" → "Credentials"
+2. Click "Create Credentials" → "API Key"
+3. Copy the API key immediately
+4. Click "Edit API key" to restrict it (recommended):
+   - **Select restriction type dropdown**: Choose "API restriction" (not "Websites", "IP addresses", etc.)
+   - **Select Maps APIs dropdown**: Click it and check only "Geocoding API"
+   - Click "OK" to confirm the API selection
+5. Click "Restrict key" button to save restrictions
+
+### 3. Add to .env File
+
+```bash
+GOOGLE_MAPS_API_KEY=your_api_key_here
+```
+
+### 4. Enable Billing (Required)
+
+**Important**: Google requires a payment method on file, but you won't be charged for typical usage.
+
+1. Go to "Billing" in Google Cloud Console
+2. Link a payment method (credit card)
+3. You're automatically enrolled in the free tier
+
+### Cost Analysis
+
+- **Pricing**: $5/1,000 requests ($0.005 per request)
+- **Free Tier**: $200/month credit = 40,000 free requests/month
+- **Your Usage**:
+  - Initial run: ~76 unique venues = 76 requests = **$0.38**
+  - Subsequent runs: Only new venues (0-5/month) = **$0.01/month**
+  - Annual estimate: ~100 requests/year = **$0.50/year**
+
+**Expected cost: $0.00** - All usage stays well within the $200/month free tier.
+
+### 5. How Caching Works
+
+The geocoding system uses an intelligent cache stored in `public/data/geocode-cache.json`:
+
+1. **First run**: Geocodes all unique venues (~76 requests)
+2. **Cache created**: Saves all coordinates to cache file
+3. **Subsequent runs**: Uses cached coordinates (0 API calls)
+4. **New venues**: Only geocodes venues not in cache
+
+After the initial run, you'll typically make **zero API calls** during normal operation.
+
+### 6. Manual Geocoding
+
+You can manually geocode all venues from your concerts.json file:
+
+```bash
+npm run geocode
+```
+
+This is useful if you want to pre-populate the cache or update coordinates for all venues.
+
 ## TheAudioDB API Setup
 
 TheAudioDB provides a free test API key.
@@ -160,6 +230,9 @@ GOOGLE_CLIENT_ID=123456789-abc.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=GOCSPX-abc123...
 GOOGLE_REDIRECT_URI=http://localhost:5173
 GOOGLE_REFRESH_TOKEN=1//abc123...
+
+# Google Maps Geocoding API
+GOOGLE_MAPS_API_KEY=your_maps_api_key_here
 
 # Music APIs
 THEAUDIODB_API_KEY=2
@@ -226,6 +299,7 @@ npm run build-data
 ## Rate Limits
 
 - **Google Sheets API**: 100 requests/100 seconds per user (plenty for our use)
+- **Google Maps Geocoding API**: 50 requests/second (enforced by rate limiter with 20ms delays)
 - **TheAudioDB**: 2 requests/second (enforced by rate limiter)
 - **Last.fm**: 5 requests/second (enforced by rate limiter)
 
@@ -239,9 +313,11 @@ npm run build-data
 
 ## Cost
 
-All APIs used are **completely free** for our use case:
-- Google Sheets API: Free tier (60 reads/minute per user)
-- TheAudioDB: Free test key or $2/month for enhanced features
-- Last.fm: Free for non-commercial use
+All APIs used are **free or very low cost** for our use case:
 
-**Total monthly cost: $0-2**
+- **Google Sheets API**: Free tier (60 reads/minute per user)
+- **Google Maps Geocoding API**: $200/month free tier (expected usage: $0/month)
+- **TheAudioDB**: Free test key or $2/month for enhanced features
+- **Last.fm**: Free for non-commercial use
+
+**Total monthly cost: $0-2** (all usage stays within free tiers)

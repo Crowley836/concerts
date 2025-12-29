@@ -1,8 +1,8 @@
 # Concert Archives - Current Status
 
 **Last Updated:** 2025-12-29
-**Current Phase:** Phase 7 (Geography Scene Enhancement - Complete)
-**Last Commit:** 69b1ea2 - "fix: Resolve DC area coordinate geocoding issue"
+**Current Phase:** Phase 8 (Venue-Level Geocoding - Complete, Pending Jitter Removal)
+**Last Commit:** TBD - "feat: Implement venue-level geocoding with Google Maps API"
 
 ---
 
@@ -74,20 +74,64 @@ All major implementation phases are complete:
   - All 32 DC area concerts now display correctly on map
   - Data quality improvements: 54→34 cities (deduplicated), 305→240 artists (deduplicated)
 
+### 🔄 Phase 8: Venue Scene Enhancements (In Progress)
+
+**Pending Items:**
+
+- ⚠️ **9:30 Club parsing bug** - Venue names starting with numbers being incorrectly parsed
+  - Issue: "9:30 Club" appearing as multiple nodes ("9:30Club", "30 Club", etc.) in venue network
+  - Root cause: String parsing issue with venue names containing numbers/colons
+  - Reference: [docs/bugs/44-930.png](bugs/44-930.png)
+  - Impact: Venue network visualization shows duplicate/incorrect nodes
+  - Component: [src/components/scenes/Scene4Bands.tsx](../src/components/scenes/Scene4Bands.tsx)
+
+- ⚠️ **Map interaction improvements** - Enable zoom/pan without scroll hijacking
+  - Current state: Map is completely static (no scroll, zoom, or pan)
+  - Goal: Allow user to explore map without triggering scene scroll
+  - Design challenge: Separate map interaction from viewport scroll behavior
+  - Needs: Plan for UX implementation (modal overlay, click-to-enable, touch zones, etc.)
+  - Component: [src/components/scenes/Scene3Map.tsx](../src/components/scenes/Scene3Map.tsx)
+
+### ✅ Phase 9: Venue-Level Geocoding (Complete)
+
+**Completed Items:**
+
+- ✅ Google Maps Geocoding API integration with cache-first approach
+- ✅ Created `scripts/services/geocoding.ts` - Core geocoding service module
+- ✅ Created `scripts/geocode-venues.ts` - Manual batch geocoding script
+- ✅ Integrated into `scripts/convert-csv-to-json.ts` data pipeline
+- ✅ Added `dotenv` package and environment variable loading
+- ✅ Documented Google Maps API setup in [docs/api-setup.md](api-setup.md)
+- ✅ Created persistent cache at `public/data/geocode-cache.json`
+- ✅ Geocoded 77 unique venues with accurate coordinates
+- ✅ DC map adjustments: center [39.00, -77.03], zoom 10.5
+- ✅ Popup z-index fix: custom pane with z-index 9999
+- ✅ Cost optimization: $0.00 (within $200/month free tier)
+
+**Technical Implementation:**
+
+- **Geocoding Strategy**: "{venue}, {city}, {state}" format using Google Maps venue recognition
+- **Fallback Chain**: Venue-specific geocoding → City-level static → Zero coordinates
+- **Cache Structure**: `{venue}|{city}|{state}` as key, with lat/lng/formattedAddress/geocodedAt
+- **Rate Limiting**: 20ms delay between API calls (50 requests/second limit)
+- **API Usage**: Initial run 77 venues × $0.005 = $0.385 (covered by free tier)
+
+**Files Created/Modified:**
+
+- NEW: `scripts/services/geocoding.ts` - Core service with cache management
+- NEW: `scripts/geocode-venues.ts` - Batch script for manual geocoding
+- NEW: `.env` - Google Maps API key storage
+- NEW: `public/data/geocode-cache.json` - Persistent coordinate cache (77 venues)
+- MODIFIED: `scripts/convert-csv-to-json.ts` - Made async, integrated geocoding
+- MODIFIED: `package.json` - Added dotenv dependency and "geocode" script
+- MODIFIED: `docs/api-setup.md` - Added Google Maps Geocoding API section
+- MODIFIED: `src/components/scenes/Scene3Map.tsx` - DC zoom/center and popup z-index
+
+**Pending Cleanup:**
+
+- ⚠️ Remove jitter logic from Scene3Map.tsx (lines 97-101, 104-105) - no longer needed with venue-specific coordinates
+
 ### 📋 Upcoming Phases
-
-**Phase 8: Venues Scene Enhancement**
-
-- Show top X venues by number of shows
-- Add "View all venues" link/button
-- Design UX style pattern (will be reused in other scenes)
-- Component: [Scene2Venues.tsx](../src/components/scenes/Scene2Venues.tsx)
-
-**Phase 9: Music Scene Enhancement**
-
-- Mock up sunburst visualization
-- Design UX improvements
-- Component: [Scene5Genres.tsx](../src/components/scenes/Scene5Genres.tsx)
 
 **Phase 10: Artists Scene Enhancement**
 

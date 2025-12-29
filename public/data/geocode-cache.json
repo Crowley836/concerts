@@ -1,0 +1,464 @@
+{
+  "irvine meadows|irvine|california": {
+    "lat": 33.6577553,
+    "lng": -117.7293939,
+    "formattedAddress": "Irvine Meadows, Irvine, California",
+    "geocodedAt": "2025-12-29T18:14:17.171Z"
+  },
+  "knots berry farm|buena park|california": {
+    "lat": 33.8443038,
+    "lng": -118.0002265,
+    "formattedAddress": "Knots Berry Farm, Buena Park, California",
+    "geocodedAt": "2025-12-29T18:14:17.447Z"
+  },
+  "pacific amphitheatre|costa mesa|california": {
+    "lat": 33.6658588,
+    "lng": -117.9048811,
+    "formattedAddress": "Pacific Amphitheatre, Costa Mesa, California",
+    "geocodedAt": "2025-12-29T18:14:17.691Z"
+  },
+  "hollywood park racetrack|inglewood|california": {
+    "lat": 33.9535523,
+    "lng": -118.3373253,
+    "formattedAddress": "Hollywood Park Racetrack, Inglewood, California",
+    "geocodedAt": "2025-12-29T18:14:17.857Z"
+  },
+  "los angeles memorial coliseum|los angeles|california": {
+    "lat": 34.0136647,
+    "lng": -118.2878355,
+    "formattedAddress": "Los Angeles Memorial Coliseum, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:14:17.969Z"
+  },
+  "ucla|los angeles|california": {
+    "lat": 34.0699182,
+    "lng": -118.4438495,
+    "formattedAddress": "UCLA, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:14:18.084Z"
+  },
+  "crawford hall|irvine|california": {
+    "lat": 33.6480389,
+    "lng": -117.8480685,
+    "formattedAddress": "Crawford Hall, Irvine, California",
+    "geocodedAt": "2025-12-29T18:14:18.218Z"
+  },
+  "caliente racetrack|tijuana|mexico": {
+    "lat": 32.506736,
+    "lng": -116.9955561,
+    "formattedAddress": "Caliente Racetrack, Tijuana, Mexico",
+    "geocodedAt": "2025-12-29T18:14:18.335Z"
+  },
+  "disneyland|anaheim|california": {
+    "lat": 33.8120918,
+    "lng": -117.9189742,
+    "formattedAddress": "Disneyland, Anaheim, California",
+    "geocodedAt": "2025-12-29T18:14:18.433Z"
+  },
+  "the rose bowl|pasadena|california": {
+    "lat": 34.1613332,
+    "lng": -118.1676304,
+    "formattedAddress": "The Rose Bowl, Pasadena, California",
+    "geocodedAt": "2025-12-29T18:14:18.524Z"
+  },
+  "mesa amphitheatre|mesa|arizona": {
+    "lat": 33.42093,
+    "lng": -111.8301032,
+    "formattedAddress": "Mesa Amphitheatre, Mesa, Arizona",
+    "geocodedAt": "2025-12-29T18:14:18.621Z"
+  },
+  "arizona veterans memorial coliseum|phoenix|arizona": {
+    "lat": 33.469444,
+    "lng": -112.096667,
+    "formattedAddress": "Arizona Veterans Memorial Coliseum, Phoenix, Arizona",
+    "geocodedAt": "2025-12-29T18:14:18.747Z"
+  },
+  "universal amphitheater|los angeles|california": {
+    "lat": 34.1794351,
+    "lng": -118.4729999,
+    "formattedAddress": "Universal Amphitheater, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:14:18.866Z"
+  },
+  "jets|long beach|california": {
+    "lat": 33.7700504,
+    "lng": -118.1937395,
+    "formattedAddress": "Jets, Long Beach, California",
+    "geocodedAt": "2025-12-29T18:14:18.959Z"
+  },
+  "kia forum|inglewood|california": {
+    "lat": 33.9580853,
+    "lng": -118.3420621,
+    "formattedAddress": "Kia Forum, Inglewood, California",
+    "geocodedAt": "2025-12-29T18:14:19.065Z"
+  },
+  "cal state fullerton|fullerton|california": {
+    "lat": 33.8823476,
+    "lng": -117.8851033,
+    "formattedAddress": "Cal State Fullerton, Fullerton, California",
+    "geocodedAt": "2025-12-29T18:14:19.173Z"
+  },
+  "dodger stadium|los angeles|california": {
+    "lat": 34.073851,
+    "lng": -118.2399583,
+    "formattedAddress": "Dodger Stadium, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:14:19.359Z"
+  },
+  "hollywood palladium|hollywood|california": {
+    "lat": 34.098496,
+    "lng": -118.3242781,
+    "formattedAddress": "Hollywood Palladium, Hollywood, California",
+    "geocodedAt": "2025-12-29T18:14:19.451Z"
+  },
+  "long beach arena|long beach|california": {
+    "lat": 33.7648004,
+    "lng": -118.1893688,
+    "formattedAddress": "Long Beach Arena, Long Beach, California",
+    "geocodedAt": "2025-12-29T18:14:19.549Z"
+  },
+  "the celebrity theatre|anaheim|california": {
+    "lat": 33.8365932,
+    "lng": -117.9143012,
+    "formattedAddress": "The Celebrity Theatre, Anaheim, California",
+    "geocodedAt": "2025-12-29T18:14:19.629Z"
+  },
+  "the coach house|san juan capistrano|california": {
+    "lat": 33.4821104,
+    "lng": -117.6714939,
+    "formattedAddress": "The Coach House, San Juan Capistrano, California",
+    "geocodedAt": "2025-12-29T18:14:19.788Z"
+  },
+  "olympic velodrome|carson|california": {
+    "lat": 33.8589817,
+    "lng": -118.2589103,
+    "formattedAddress": "Olympic Velodrome, Carson, California",
+    "geocodedAt": "2025-12-29T18:14:19.882Z"
+  },
+  "hard rock cafe|newport beach|california": {
+    "lat": 33.6150696,
+    "lng": -117.873123,
+    "formattedAddress": "Hard Rock Cafe, Newport Beach, California",
+    "geocodedAt": "2025-12-29T18:14:19.987Z"
+  },
+  "the galaxy theatre|santa ana|california": {
+    "lat": 33.7002183,
+    "lng": -117.919161,
+    "formattedAddress": "The Galaxy Theatre, Santa Ana, California",
+    "geocodedAt": "2025-12-29T18:14:20.099Z"
+  },
+  "paradise rock club|boston|massachusetts": {
+    "lat": 42.3518386,
+    "lng": -71.1194958,
+    "formattedAddress": "Paradise Rock Club, Boston, Massachusetts",
+    "geocodedAt": "2025-12-29T18:14:20.201Z"
+  },
+  "the grove of anaheim|anaheim|california": {
+    "lat": 33.80313,
+    "lng": -117.8859486,
+    "formattedAddress": "The Grove of Anaheim, Anaheim, California",
+    "geocodedAt": "2025-12-29T18:14:20.313Z"
+  },
+  "house of blues anaheim|anaheim|california": {
+    "lat": 33.8066523,
+    "lng": -117.912121,
+    "formattedAddress": "House of Blues Anaheim, Anaheim, California",
+    "geocodedAt": "2025-12-29T18:14:20.420Z"
+  },
+  "hyundai pavilion|san bernardino|california": {
+    "lat": 34.204464,
+    "lng": -117.4024169,
+    "formattedAddress": "Hyundai Pavilion, San Bernardino, California",
+    "geocodedAt": "2025-12-29T18:14:20.523Z"
+  },
+  "hard rock hotel las vegas|las vegas|nevada": {
+    "lat": 36.1102529,
+    "lng": -115.1554332,
+    "formattedAddress": "Hard Rock Hotel Las Vegas, Las Vegas, Nevada",
+    "geocodedAt": "2025-12-29T18:14:20.637Z"
+  },
+  "staples center|los angeles|california": {
+    "lat": 34.0430175,
+    "lng": -118.2672541,
+    "formattedAddress": "Staples Center, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:14:20.741Z"
+  },
+  "nokia center|los angeles|california": {
+    "lat": 34.0446014,
+    "lng": -118.2649917,
+    "formattedAddress": "Nokia Center, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:14:20.852Z"
+  },
+  "doheny|dana point|california": {
+    "lat": 33.4625361,
+    "lng": -117.6856965,
+    "formattedAddress": "Doheny, Dana Point, California",
+    "geocodedAt": "2025-12-29T18:14:20.949Z"
+  },
+  "eaglebank arena|fairfax|virginia": {
+    "lat": 38.8268505,
+    "lng": -77.30967299999999,
+    "formattedAddress": "EagleBank Arena, Fairfax, Virginia",
+    "geocodedAt": "2025-12-29T18:14:21.042Z"
+  },
+  "9:30 club|washington|district of columbia": {
+    "lat": 38.917948,
+    "lng": -77.0237227,
+    "formattedAddress": "9:30 Club, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:06.654Z"
+  },
+  "the black cat|washington|district of columbia": {
+    "lat": 38.9145825,
+    "lng": -77.0317283,
+    "formattedAddress": "The Black Cat, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:06.827Z"
+  },
+  "the ballroom|baltimore|maryland": {
+    "lat": 39.2905023,
+    "lng": -76.6104072,
+    "formattedAddress": "The Ballroom, Baltimore, Maryland",
+    "geocodedAt": "2025-12-29T18:24:07.063Z"
+  },
+  "wolftrap|vienna|virginia": {
+    "lat": 38.9012225,
+    "lng": -77.2652604,
+    "formattedAddress": "Wolftrap, Vienna, Virginia",
+    "geocodedAt": "2025-12-29T18:24:07.163Z"
+  },
+  "rams head live! baltimore|baltimore|maryland": {
+    "lat": 39.2894444,
+    "lng": -76.6072222,
+    "formattedAddress": "Rams Head Live! Baltimore, Baltimore, Maryland",
+    "geocodedAt": "2025-12-29T18:24:07.275Z"
+  },
+  "capitol one arena|washington|district of columbia": {
+    "lat": 38.8981675,
+    "lng": -77.02085679999999,
+    "formattedAddress": "Capitol One Arena, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:07.403Z"
+  },
+  "the fillmore silver spring|silver spring|maryland": {
+    "lat": 38.997449,
+    "lng": -77.027579,
+    "formattedAddress": "The Fillmore Silver Spring, Silver Spring, Maryland",
+    "geocodedAt": "2025-12-29T18:24:07.587Z"
+  },
+  "howard theater|washington|district of columbia": {
+    "lat": 38.9153738,
+    "lng": -77.0210891,
+    "formattedAddress": "Howard Theater, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:07.695Z"
+  },
+  "the strathmore|bethesda|maryland": {
+    "lat": 38.97934,
+    "lng": -77.09280000000001,
+    "formattedAddress": "The Strathmore, Bethesda, Maryland",
+    "geocodedAt": "2025-12-29T18:24:07.835Z"
+  },
+  "the hamilton live|washington|district of columbia": {
+    "lat": 38.8976548,
+    "lng": -77.0322736,
+    "formattedAddress": "The Hamilton Live, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:07.938Z"
+  },
+  "rams head center stage|hanover|maryland": {
+    "lat": 39.19550419999999,
+    "lng": -76.7228227,
+    "formattedAddress": "Rams Head Center Stage, Hanover, Maryland",
+    "geocodedAt": "2025-12-29T18:24:08.111Z"
+  },
+  "pier 6 pavillion|baltimore|maryland": {
+    "lat": 39.2840191,
+    "lng": -76.6044701,
+    "formattedAddress": "Pier 6 Pavillion, Baltimore, Maryland",
+    "geocodedAt": "2025-12-29T18:24:08.256Z"
+  },
+  "dar constitution hall|washington|district of columbia": {
+    "lat": 38.8939024,
+    "lng": -77.0408846,
+    "formattedAddress": "DAR Constitution Hall, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:08.415Z"
+  },
+  "the fillmore silver spring|washington|district of columbia": {
+    "lat": 38.997449,
+    "lng": -77.027579,
+    "formattedAddress": "The Fillmore Silver Spring, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:08.636Z"
+  },
+  "rfk stadium|washington|district of columbia": {
+    "lat": 38.8898525,
+    "lng": -76.9718698,
+    "formattedAddress": "RFK Stadium, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:08.819Z"
+  },
+  "bethesda jazz and blues club|bethesda|maryland": {
+    "lat": 38.9848328,
+    "lng": -77.09431719999999,
+    "formattedAddress": "Bethesda Jazz and Blues Club, Bethesda, Maryland",
+    "geocodedAt": "2025-12-29T18:24:08.914Z"
+  },
+  "birchmere|alexandria|virginia": {
+    "lat": 38.8400039,
+    "lng": -77.0613834,
+    "formattedAddress": "Birchmere, Alexandria, Virginia",
+    "geocodedAt": "2025-12-29T18:24:09.163Z"
+  },
+  "national museum of african american history and culture|washington|district of columbia": {
+    "lat": 38.8910644,
+    "lng": -77.032614,
+    "formattedAddress": "National Museum of African American History and Culture, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:10.427Z"
+  },
+  "mgm national harbor|washington|district of columbia": {
+    "lat": 38.7951722,
+    "lng": -77.0089485,
+    "formattedAddress": "MGM National Harbor, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:10.577Z"
+  },
+  "dc9 nightclub|washington|district of columbia": {
+    "lat": 38.9167095,
+    "lng": -77.0242518,
+    "formattedAddress": "DC9 Nightclub, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:10.996Z"
+  },
+  "sixth & i synagogue|washington|district of columbia": {
+    "lat": 38.9006804,
+    "lng": -77.0203052,
+    "formattedAddress": "Sixth & I Synagogue, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:11.256Z"
+  },
+  "the anthem|washington|district of columbia": {
+    "lat": 38.8800674,
+    "lng": -77.0260611,
+    "formattedAddress": "The Anthem, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:11.442Z"
+  },
+  "lincoln theatre|washington|district of columbia": {
+    "lat": 38.9171557,
+    "lng": -77.0289995,
+    "formattedAddress": "Lincoln Theatre, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:11.539Z"
+  },
+  "warner theatre|washington|district of columbia": {
+    "lat": 38.8964782,
+    "lng": -77.0291601,
+    "formattedAddress": "Warner Theatre, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:11.780Z"
+  },
+  "huntington state beach|huntington beach|california": {
+    "lat": 33.6380444,
+    "lng": -117.9736122,
+    "formattedAddress": "Huntington State Beach, Huntington Beach, California",
+    "geocodedAt": "2025-12-29T18:24:11.967Z"
+  },
+  "carpenter performing arts center|long beach|california": {
+    "lat": 33.7881664,
+    "lng": -118.1116977,
+    "formattedAddress": "Carpenter Performing Arts Center, Long Beach, California",
+    "geocodedAt": "2025-12-29T18:24:12.080Z"
+  },
+  "capital one center|washington|district of columbia": {
+    "lat": 38.8981675,
+    "lng": -77.02085679999999,
+    "formattedAddress": "Capital One Center, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:12.304Z"
+  },
+  "the observatory|santa ana|california": {
+    "lat": 33.699631,
+    "lng": -117.9177051,
+    "formattedAddress": "The Observatory, Santa Ana, California",
+    "geocodedAt": "2025-12-29T18:24:12.488Z"
+  },
+  "the shrine auditorium|los angeles|california": {
+    "lat": 34.0234622,
+    "lng": -118.2812603,
+    "formattedAddress": "The Shrine Auditorium, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:24:12.603Z"
+  },
+  "dolby theatre|hollywood|california": {
+    "lat": 34.1026919,
+    "lng": -118.3404156,
+    "formattedAddress": "Dolby Theatre, Hollywood, California",
+    "geocodedAt": "2025-12-29T18:24:12.830Z"
+  },
+  "mozambique|laguna beach|california": {
+    "lat": 33.5292312,
+    "lng": -117.7715828,
+    "formattedAddress": "Mozambique, Laguna Beach, California",
+    "geocodedAt": "2025-12-29T18:24:13.016Z"
+  },
+  "oc fair & event center|costa mesa|california": {
+    "lat": 33.665951,
+    "lng": -117.9025749,
+    "formattedAddress": "OC Fair & Event Center, Costa Mesa, California",
+    "geocodedAt": "2025-12-29T18:24:13.117Z"
+  },
+  "orpheum theatre|los angeles|california": {
+    "lat": 34.0427692,
+    "lng": -118.2554416,
+    "formattedAddress": "Orpheum Theatre, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:24:13.354Z"
+  },
+  "theatre at the ace hotel|los angeles|california": {
+    "lat": 34.0418769,
+    "lng": -118.2570341,
+    "formattedAddress": "Theatre at the Ace Hotel, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:24:13.538Z"
+  },
+  "youtube theatre|inglewood|california": {
+    "lat": 33.9515762,
+    "lng": -118.3367462,
+    "formattedAddress": "YouTube Theatre, Inglewood, California",
+    "geocodedAt": "2025-12-29T18:24:13.623Z"
+  },
+  "hollywood bowl|hollywood|california": {
+    "lat": 34.112224,
+    "lng": -118.3391279,
+    "formattedAddress": "Hollywood Bowl, Hollywood, California",
+    "geocodedAt": "2025-12-29T18:24:13.717Z"
+  },
+  "the belly up tavern|solana beach|california": {
+    "lat": 32.9905893,
+    "lng": -117.2704865,
+    "formattedAddress": "The Belly Up Tavern, Solana Beach, California",
+    "geocodedAt": "2025-12-29T18:24:13.876Z"
+  },
+  "21st amendment|new orleans|louisiana": {
+    "lat": 29.95453,
+    "lng": -90.06864999999999,
+    "formattedAddress": "21st Amendment, New Orleans, Louisiana",
+    "geocodedAt": "2025-12-29T18:24:14.066Z"
+  },
+  "the wiltern|los angeles|california": {
+    "lat": 34.061501,
+    "lng": -118.308948,
+    "formattedAddress": "The Wiltern, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:24:14.169Z"
+  },
+  "the belasco|los angeles|california": {
+    "lat": 34.0403336,
+    "lng": -118.2593883,
+    "formattedAddress": "The Belasco, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:24:14.402Z"
+  },
+  "peacock theater|los angeles|california": {
+    "lat": 34.0444495,
+    "lng": -118.267151,
+    "formattedAddress": "Peacock Theater, Los Angeles, California",
+    "geocodedAt": "2025-12-29T18:24:14.588Z"
+  },
+  "the roxy|hollywood|california": {
+    "lat": 34.0907315,
+    "lng": -118.3266146,
+    "formattedAddress": "The Roxy, Hollywood, California",
+    "geocodedAt": "2025-12-29T18:24:14.695Z"
+  },
+  "mgm music hall at fenway|boston|massachusetts": {
+    "lat": 42.3470725,
+    "lng": -71.0947767,
+    "formattedAddress": "MGM Music Hall at Fenway, Boston, Massachusetts",
+    "geocodedAt": "2025-12-29T18:24:14.929Z"
+  },
+  "pavilion theatre|glasgow|uk": {
+    "lat": 55.865082,
+    "lng": -4.255724000000001,
+    "formattedAddress": "Pavilion Theatre, Glasgow, UK",
+    "geocodedAt": "2025-12-29T18:24:15.113Z"
+  }
+}

@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { parse } from 'csv-parse/sync'
+import { getVenueCoordinates } from './services/geocoding.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -113,7 +114,7 @@ function getDecade(year: number): string {
   return `${decade}s`
 }
 
-function convertRowToConcert(row: ConcertRow, index: number): Concert | null {
+async function convertRowToConcert(row: ConcertRow, index: number): Promise<Concert | null> {
   if (!row.Headliner || !row.Date) return null
 
   const dateInfo = parseDate(row.Date)
@@ -141,7 +142,14 @@ function convertRowToConcert(row: ConcertRow, index: number): Concert | null {
   )
 
   const cityState = row['City, State'] || `${row.City}, ${row.State}`.trim()
-  const coordinates = CITY_COORDINATES[cityState] || { lat: 0, lng: 0 }
+
+  // Try venue-level geocoding first, then fallback to city-level, then zero coordinates
+  const venueCoordinates = await getVenueCoordinates(
+    row.Venue,
+    row.City || cityState.split(',')[0].trim(),
+    row.State || cityState.split(',')[1]?.trim() || ''
+  )
+  const coordinates = venueCoordinates || CITY_COORDINATES[cityState] || { lat: 0, lng: 0 }
 
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
                       'July', 'August', 'September', 'October', 'November', 'December']
@@ -182,7 +190,7 @@ async function main() {
     // Convert to concerts
     const concerts: Concert[] = []
     for (let i = 0; i < rows.length; i++) {
-      const concert = convertRowToConcert(rows[i], i)
+      const concert = await convertRowToConcert(rows[i], i)
       if (concert) {
         concerts.push(concert)
       }

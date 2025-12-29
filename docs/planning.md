@@ -161,7 +161,9 @@ interface ArtistMetadata {
 
 ### Component Design
 
-#### ConcertCard.tsx - The Heart of the UI
+> **⚠️ HISTORICAL REFERENCE ONLY**: This section describes the original dashboard design that was replaced during Phase 5B. The current implementation uses 5 full-viewport scrolling scenes (Timeline → Venue Network → Map → Genres → Artists) with D3.js visualizations. See "Phase 5B: Immersive Scrolling Experience" and STATUS.md for current architecture.
+
+#### ConcertCard.tsx - The Heart of the UI (ORIGINAL DESIGN - NOT IMPLEMENTED)
 ```tsx
 interface ConcertCardProps {
   concert: Concert;
@@ -1471,6 +1473,157 @@ d3.forceRadial(
   - Current sizing: `min(100vw, calc(100vh - 280px))` with CSS viewport units
   - File: [src/components/scenes/Scene5Genres.tsx](../src/components/scenes/Scene5Genres.tsx:647-654)
 - [ ] Fix viewport clipping in genres scene (if still occurring)
+
+---
+
+### ✅ Phase 9: Venue-Level Geocoding (Complete - December 29, 2025)
+
+**Status**: ✅ Complete (implemented out of order before Phase 8 completion)
+
+**Overview**: Replaced static city-level coordinates with accurate venue-specific coordinates using Google Maps Geocoding API with intelligent caching.
+
+**Completed Items**:
+
+1. ✅ **Google Maps Geocoding API Integration**
+   - Created `scripts/services/geocoding.ts` - Core service with cache management
+   - Implemented cache-first approach: check cache → API call if miss → store result
+   - Rate limiting: 20ms delay between requests (50 requests/second limit)
+   - Fallback chain: Venue geocoding → City-level static → Zero coordinates
+
+2. ✅ **Geocoding Service Module** ([scripts/services/geocoding.ts](../scripts/services/geocoding.ts))
+   - `loadCache()` - Read geocode-cache.json from disk
+   - `saveCache()` - Write cache to disk
+   - `getCacheKey()` - Generate unique key: `venue|city|state`
+   - `geocodeVenue()` - Call Google Maps API with "{venue}, {city}, {state}" format
+   - `getVenueCoordinates()` - Public API with cache-first logic
+   - `batchGeocodeVenues()` - Batch processing with rate limiting
+
+3. ✅ **Data Pipeline Integration**
+   - Modified `scripts/convert-csv-to-json.ts` to be async
+   - Integrated `getVenueCoordinates()` into concert data processing
+   - Added `dotenv` package for environment variable loading
+   - Created `.env` file for Google Maps API key storage
+
+4. ✅ **Manual Geocoding Script** ([scripts/geocode-venues.ts](../scripts/geocode-venues.ts))
+   - Batch geocodes all venues from concerts.json
+   - Added `npm run geocode` script to package.json
+   - Useful for pre-populating cache or updating coordinates
+
+5. ✅ **Persistent Cache File** ([public/data/geocode-cache.json](../public/data/geocode-cache.json))
+   - Git-tracked, auto-created on first run
+   - Cache structure: `{venue}|{city}|{state}` as key
+   - Stores: lat, lng, formattedAddress, geocodedAt timestamp
+   - 77 unique venues geocoded with accurate coordinates
+
+6. ✅ **API Documentation** ([docs/api-setup.md](api-setup.md))
+   - Added comprehensive Google Maps Geocoding API section
+   - Setup instructions with screenshots clarifications
+   - Cost analysis: $0.005/request, $200/month free tier
+   - Expected usage: $0.00 (77 venues = $0.385, within free tier)
+   - Billing setup: "Pay as you go" includes free tier automatically
+
+7. ✅ **Map Display Improvements** ([src/components/scenes/Scene3Map.tsx](../src/components/scenes/Scene3Map.tsx))
+   - DC area adjustments: center [39.00, -77.03], zoom 10.5 (was 11)
+   - Popup z-index fix: custom pane with z-index 9999 (above all UI elements)
+   - Region views: All (zoom 4), California (zoom 9), DC Area (zoom 10.5)
+
+**Technical Details**:
+
+**Geocoding Strategy**:
+```typescript
+// Format: "{venue}, {city}, {state}"
+// Example: "9:30 Club, Washington, District of Columbia"
+// Google Maps recognizes venues by name without full street address
+```
+
+**Cache Structure**:
+```json
+{
+  "9:30 club|washington|district of columbia": {
+    "lat": 38.917948,
+    "lng": -77.0237227,
+    "formattedAddress": "9:30 Club, Washington, District of Columbia",
+    "geocodedAt": "2025-12-29T18:24:06.654Z"
+  }
+}
+```
+
+**Expected Outcomes**:
+
+**Initial Run**:
+```bash
+npm run convert-csv
+# Output:
+⚡ Geocoding: 9:30 Club, Washington, District of Columbia
+⚡ Geocoding: Irvine Meadows, Irvine, California
+...
+✓ Geocoded 77 unique venues
+✓ Converted 175 valid concerts
+# API usage: 77 requests = $0.385 (within free tier)
+```
+
+**Subsequent Runs**:
+```bash
+npm run convert-csv
+# Output:
+✓ Cache hit: 9:30 Club, Washington
+✓ Cache hit: Irvine Meadows, Irvine
+⚡ Geocoding: New Venue, City, State  # Only new venues
+✓ Converted 175 valid concerts
+# API usage: 0-5 requests (only new venues)
+```
+
+**Map Display Impact**:
+
+**Before (city-level + jitter)**:
+- All DC venues at 38.9072, -77.0369 (with artificial jitter)
+- 14 venues rendered in circular pattern around shared coordinate
+
+**After (venue-level)**:
+- 9:30 Club: 38.917948, -77.0237227 (actual V Street location)
+- The Hamilton Live: 38.8977, -77.0365 (actual 14th Street)
+- Capitol One Arena: 38.8980, -77.0209 (actual F Street)
+- Each venue at true location, no jitter needed
+
+**Cost Analysis**:
+- **Pricing**: $5/1,000 requests ($0.005 per request)
+- **Free Tier**: $200/month credit = 40,000 free requests/month
+- **Initial Run**: 77 venues = 77 requests = **$0.385** (within free tier)
+- **Ongoing**: ~2 new venues/month = 2 requests = **$0.01/month** (within free tier)
+- **Annual Estimate**: ~100 requests/year = **$0.50/year** (within free tier)
+- **Expected cost**: **$0.00** - all usage stays well within free $200/month credit
+
+**Files Created/Modified**:
+
+**New Files**:
+- `scripts/services/geocoding.ts` - Core geocoding service (178 lines)
+- `scripts/geocode-venues.ts` - Batch script (58 lines)
+- `.env` - Google Maps API key storage
+- `public/data/geocode-cache.json` - Persistent cache (77 venues, auto-created)
+
+**Modified Files**:
+- `scripts/convert-csv-to-json.ts` - Made async, integrated geocoding (lines 5, 117, 147-152)
+- `package.json` - Added dotenv dependency and "geocode" script
+- `docs/api-setup.md` - Added Google Maps Geocoding API section (lines 109-177)
+- `src/components/scenes/Scene3Map.tsx` - DC zoom/center (lines 26-27) and popup z-index (line 74)
+
+**Pending Cleanup**:
+- ⚠️ Remove jitter logic from Scene3Map.tsx (lines 97-101, 104-105) - no longer needed with venue-specific coordinates
+
+**Testing Results**:
+- ✅ 77 unique venues successfully geocoded
+- ✅ Cache file created and persisted
+- ✅ DC venues display at accurate coordinates (9:30 Club, Black Cat, etc.)
+- ✅ Map zoom and popup z-index working correctly
+- ✅ Cost: $0.385 (within free tier)
+
+**Build Status**: ✅ TypeScript compilation successful
+
+**User Feedback**:
+- ✅ Clarified API restriction settings (select "API restriction" → "Geocoding API")
+- ✅ Confirmed billing setup ("Pay as you go" includes free tier)
+- ✅ Fixed DC map zoom to show northern venues (Fillmore Silver Spring)
+- ✅ Fixed popup z-index to appear above all UI elements (z-index 9999)
 
 ---
 

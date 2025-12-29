@@ -27,7 +27,7 @@ This application transforms a static dashboard into an immersive chronological j
 
 ## Data Source
 
-Concert data is maintained in a Google Sheet and periodically imported via Google Sheets API. Artist metadata is enriched using free APIs (TheAudioDB, Last.fm) and cached locally.
+Concert data is maintained in a Google Sheet and periodically imported via Google Sheets API. Artist metadata is enriched using free APIs (TheAudioDB, Last.fm) and cached locally. Venue coordinates are geocoded using Google Maps Geocoding API with persistent caching for cost optimization ($0.00 monthly cost).
 
 ## Project Structure
 
@@ -61,6 +61,9 @@ npm run build
 
 # Pull and enrich data from Google Sheet
 npm run build-data
+
+# Manually geocode all venues (optional)
+npm run geocode
 ```
 
 ## Deployment

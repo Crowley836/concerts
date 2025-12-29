@@ -23,8 +23,8 @@ const REGION_VIEWS: Record<Region, { center: [number, number]; zoom: number; lab
     filter: (c) => c.state === 'California' || c.state === 'CA'
   },
   dc: {
-    center: [38.85, -77.0369], // Moved south to show Bethesda without clipping
-    zoom: 10, // Slightly wider zoom to fit all DC metro venues
+    center: [39.00, -77.03], // Moved north to include Silver Spring area
+    zoom: 10.5, // Slightly wider to show full metro area
     label: 'DC Area',
     filter: (c) => ['Virginia', 'VA', 'Maryland', 'MD', 'District of Columbia', 'DC'].includes(c.state)
   },
@@ -68,6 +68,10 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
       L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         maxZoom: 19,
       }).addTo(map)
+
+      // Create a custom pane for popups with high z-index
+      map.createPane('popupPane')
+      map.getPane('popupPane')!.style.zIndex = '9999'
 
       // Create layer group for markers
       const markersLayer = L.layerGroup().addTo(map)
@@ -141,6 +145,7 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
         })
           .bindPopup(`<strong>${data.label}</strong><br/>${data.count} concert${data.count !== 1 ? 's' : ''}`, {
             className: 'venue-popup',
+            pane: 'popupPane',
           })
           .addTo(markersLayerRef.current)
       }
