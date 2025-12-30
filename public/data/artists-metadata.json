@@ -1,0 +1,1444 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-12-30T00:05:33.629Z",
+    "totalArtists": 240,
+    "dataSource": "mock",
+    "note": "This file contains mock/placeholder data. Run enrich-spotify-metadata.ts when Spotify API access is available to populate with real album covers, track previews, and artist data."
+  },
+  "artists": {
+    "abc": {
+      "name": "ABC",
+      "normalizedName": "abc",
+      "fetchedAt": "2025-12-30T00:05:33.628Z",
+      "dataSource": "mock"
+    },
+    "awolnation": {
+      "name": "AWOLNATION",
+      "normalizedName": "awolnation",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "aaronleetasjan": {
+      "name": "Aaron Lee Tasjan",
+      "normalizedName": "aaronleetasjan",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "adamant": {
+      "name": "Adam Ant",
+      "normalizedName": "adamant",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "againstme": {
+      "name": "Against Me!",
+      "normalizedName": "againstme",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "alisonmoyet": {
+      "name": "Alison Moyet",
+      "normalizedName": "alisonmoyet",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "andrewtosh": {
+      "name": "Andrew Tosh",
+      "normalizedName": "andrewtosh",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "andystavas": {
+      "name": "Andy Stavas",
+      "normalizedName": "andystavas",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "animotion": {
+      "name": "Animotion",
+      "normalizedName": "animotion",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "aquabats": {
+      "name": "Aquabats",
+      "normalizedName": "aquabats",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "aswad": {
+      "name": "Aswad",
+      "normalizedName": "aswad",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "badreligion": {
+      "name": "Bad Religion",
+      "normalizedName": "badreligion",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "banditsoftheaccousticrevolution": {
+      "name": "Bandits of the Accoustic Revolution",
+      "normalizedName": "banditsoftheaccousticrevolution",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bangles": {
+      "name": "Bangles",
+      "normalizedName": "bangles",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "barroomheroes": {
+      "name": "Barroom Heroes",
+      "normalizedName": "barroomheroes",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "batfangs": {
+      "name": "Bat Fangs",
+      "normalizedName": "batfangs",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "beachboys": {
+      "name": "Beach Boys",
+      "normalizedName": "beachboys",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bearhands": {
+      "name": "Bear Hands",
+      "normalizedName": "bearhands",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "beastieboys": {
+      "name": "Beastie Boys",
+      "normalizedName": "beastieboys",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "belbivdevoe": {
+      "name": "Bel Biv DeVoe",
+      "normalizedName": "belbivdevoe",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "berlin": {
+      "name": "Berlin",
+      "normalizedName": "berlin",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bigaudiodynamite": {
+      "name": "Big Audio Dynamite",
+      "normalizedName": "bigaudiodynamite",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "billyjoel": {
+      "name": "Billy Joel",
+      "normalizedName": "billyjoel",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "blackrebelmotorcycleclub": {
+      "name": "Black Rebel Motorcycle Club",
+      "normalizedName": "blackrebelmotorcycleclub",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "blancmange": {
+      "name": "Blancmange",
+      "normalizedName": "blancmange",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "blondie": {
+      "name": "Blondie",
+      "normalizedName": "blondie",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bloodorwhiskey": {
+      "name": "Blood or Whiskey",
+      "normalizedName": "bloodorwhiskey",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bookoflove": {
+      "name": "Book of Love",
+      "normalizedName": "bookoflove",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bowwowwow": {
+      "name": "Bow Wow Wow",
+      "normalizedName": "bowwowwow",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bowlingforsoup": {
+      "name": "Bowling for Soup",
+      "normalizedName": "bowlingforsoup",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "boyharsher": {
+      "name": "Boy Harsher",
+      "normalizedName": "boyharsher",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "briansetzer": {
+      "name": "Brian Setzer",
+      "normalizedName": "briansetzer",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "briansetzerorchestra": {
+      "name": "Brian Setzer Orchestra",
+      "normalizedName": "briansetzerorchestra",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "briansetzerandthenashvillians": {
+      "name": "Brian Setzer and the Nashvillians",
+      "normalizedName": "briansetzerandthenashvillians",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "briansetzer68comebackspecial": {
+      "name": "Brian Setzer ’68 Comeback Special",
+      "normalizedName": "briansetzer68comebackspecial",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "brucespringsteen": {
+      "name": "Bruce Springsteen",
+      "normalizedName": "brucespringsteen",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "bryanmcpherson": {
+      "name": "Bryan Mcpherson",
+      "normalizedName": "bryanmcpherson",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "buddyguy": {
+      "name": "Buddy Guy",
+      "normalizedName": "buddyguy",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "burningspear": {
+      "name": "Burning Spear",
+      "normalizedName": "burningspear",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "carlenedavis": {
+      "name": "Carlene Davis",
+      "normalizedName": "carlenedavis",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "chakakahn": {
+      "name": "Chaka Kahn",
+      "normalizedName": "chakakahn",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "chrisisaak": {
+      "name": "Chris Isaak",
+      "normalizedName": "chrisisaak",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "chrismurray": {
+      "name": "Chris Murray",
+      "normalizedName": "chrismurray",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "chrisshiflett": {
+      "name": "Chris Shiflett",
+      "normalizedName": "chrisshiflett",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "coldwarkids": {
+      "name": "Cold War Kids",
+      "normalizedName": "coldwarkids",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "colinhay": {
+      "name": "Colin Hay",
+      "normalizedName": "colinhay",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "commonsense": {
+      "name": "Common Sense",
+      "normalizedName": "commonsense",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "crowdedhouse": {
+      "name": "Crowded House",
+      "normalizedName": "crowdedhouse",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "crownofthornz": {
+      "name": "Crown of Thornz",
+      "normalizedName": "crownofthornz",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "cultureclub": {
+      "name": "Culture Club",
+      "normalizedName": "cultureclub",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "djztrip": {
+      "name": "DJ Z-Trip",
+      "normalizedName": "djztrip",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "danpotthast": {
+      "name": "Dan Potthast",
+      "normalizedName": "danpotthast",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dangerpainters": {
+      "name": "Danger Painters",
+      "normalizedName": "dangerpainters",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dannyelfman": {
+      "name": "Danny Elfman",
+      "normalizedName": "dannyelfman",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dashboardconfessional": {
+      "name": "Dashboard Confessional",
+      "normalizedName": "dashboardconfessional",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "davidbyrne": {
+      "name": "David Byrne",
+      "normalizedName": "davidbyrne",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dennisbrown": {
+      "name": "Dennis Brown",
+      "normalizedName": "dennisbrown",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "depechemode": {
+      "name": "Depeche Mode",
+      "normalizedName": "depechemode",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "devo": {
+      "name": "Devo",
+      "normalizedName": "devo",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dirtyheads": {
+      "name": "Dirty Heads",
+      "normalizedName": "dirtyheads",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dirtyvegas": {
+      "name": "Dirty Vegas",
+      "normalizedName": "dirtyvegas",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "drsick": {
+      "name": "Dr Sick",
+      "normalizedName": "drsick",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dragtheriver": {
+      "name": "Drag The River",
+      "normalizedName": "dragtheriver",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dramarama": {
+      "name": "Dramarama",
+      "normalizedName": "dramarama",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "dropkickmurphys": {
+      "name": "Dropkick Murphys",
+      "normalizedName": "dropkickmurphys",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "duranduran": {
+      "name": "Duran Duran",
+      "normalizedName": "duranduran",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "emf": {
+      "name": "EMF",
+      "normalizedName": "emf",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "earthgang": {
+      "name": "EarthGang",
+      "normalizedName": "earthgang",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "echoandthebunnymen": {
+      "name": "Echo and the Bunnymen",
+      "normalizedName": "echoandthebunnymen",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "eekamouse": {
+      "name": "Eek a Mouse",
+      "normalizedName": "eekamouse",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "elteneleven": {
+      "name": "El Ten Eleven",
+      "normalizedName": "elteneleven",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "eltonjohn": {
+      "name": "Elton John",
+      "normalizedName": "eltonjohn",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "englishbeat": {
+      "name": "English Beat",
+      "normalizedName": "englishbeat",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "erasure": {
+      "name": "Erasure",
+      "normalizedName": "erasure",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "fear": {
+      "name": "Fear",
+      "normalizedName": "fear",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "fishbone": {
+      "name": "Fishbone",
+      "normalizedName": "fishbone",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "flockofseagulls": {
+      "name": "Flock of Seagulls",
+      "normalizedName": "flockofseagulls",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "foals": {
+      "name": "Foals",
+      "normalizedName": "foals",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "foofighters": {
+      "name": "Foo Fighters",
+      "normalizedName": "foofighters",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "fountainsofwayne": {
+      "name": "Fountains of Wayne",
+      "normalizedName": "fountainsofwayne",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "futureislands": {
+      "name": "Future Islands",
+      "normalizedName": "futureislands",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "garbage": {
+      "name": "Garbage",
+      "normalizedName": "garbage",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "garyclarkjr": {
+      "name": "Gary Clark Jr.",
+      "normalizedName": "garyclarkjr",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "garynuman": {
+      "name": "Gary Numan",
+      "normalizedName": "garynuman",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "genelovesjezabel": {
+      "name": "Gene Loves Jezabel",
+      "normalizedName": "genelovesjezabel",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "georgemichael": {
+      "name": "George Michael",
+      "normalizedName": "georgemichael",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "gorrillaz": {
+      "name": "Gorrillaz",
+      "normalizedName": "gorrillaz",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "haircut100": {
+      "name": "Haircut 100",
+      "normalizedName": "haircut100",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "hatchamsocial": {
+      "name": "Hatcham Social",
+      "normalizedName": "hatchamsocial",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "heart": {
+      "name": "Heart",
+      "normalizedName": "heart",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "heaven17": {
+      "name": "Heaven 17",
+      "normalizedName": "heaven17",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "hoodoogurus": {
+      "name": "Hoodoo Gurus",
+      "normalizedName": "hoodoogurus",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "hothotheat": {
+      "name": "Hot Hot Heat",
+      "normalizedName": "hothotheat",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "hotrodlincoln": {
+      "name": "Hot Rod Lincoln",
+      "normalizedName": "hotrodlincoln",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "howardjones": {
+      "name": "Howard Jones",
+      "normalizedName": "howardjones",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "husbands": {
+      "name": "Husbands",
+      "normalizedName": "husbands",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "ianmcculloch": {
+      "name": "Ian McCulloch",
+      "normalizedName": "ianmcculloch",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "innerwave": {
+      "name": "Inner Wave",
+      "normalizedName": "innerwave",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "interpol": {
+      "name": "Interpol",
+      "normalizedName": "interpol",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "janeweidlin": {
+      "name": "Jane Weidlin",
+      "normalizedName": "janeweidlin",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "jesusjones": {
+      "name": "Jesus Jones",
+      "normalizedName": "jesusjones",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "jimmybuffett": {
+      "name": "Jimmy Buffett",
+      "normalizedName": "jimmybuffett",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "joanjetttheblackhearts": {
+      "name": "Joan Jett & The Blackhearts",
+      "normalizedName": "joanjetttheblackhearts",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "joejackson": {
+      "name": "Joe Jackson",
+      "normalizedName": "joejackson",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "johndoe": {
+      "name": "John Doe",
+      "normalizedName": "johndoe",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "johnnygill": {
+      "name": "Johnny Gill",
+      "normalizedName": "johnnygill",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kasabian": {
+      "name": "Kasabian",
+      "normalizedName": "kasabian",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "katrinaandthewaves": {
+      "name": "Katrina And the Waves",
+      "normalizedName": "katrinaandthewaves",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kebmo": {
+      "name": "Keb Mo",
+      "normalizedName": "kebmo",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "keithsweat": {
+      "name": "Keith Sweat",
+      "normalizedName": "keithsweat",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kelleystoltz": {
+      "name": "Kelley Stoltz",
+      "normalizedName": "kelleystoltz",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kellyleeowens": {
+      "name": "Kelly Lee Owens",
+      "normalizedName": "kellyleeowens",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kidcongopowers": {
+      "name": "Kid Congo Powers",
+      "normalizedName": "kidcongopowers",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kiev": {
+      "name": "Kiev",
+      "normalizedName": "kiev",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kingsofleon": {
+      "name": "Kings of Leon",
+      "normalizedName": "kingsofleon",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "klangphonics": {
+      "name": "Klangphonics",
+      "normalizedName": "klangphonics",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "kraftwerk": {
+      "name": "Kraftwerk",
+      "normalizedName": "kraftwerk",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "llcoolj": {
+      "name": "LL Cool J",
+      "normalizedName": "llcoolj",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "leerocker": {
+      "name": "Lee Rocker",
+      "normalizedName": "leerocker",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "lennykravitz": {
+      "name": "Lenny Kravitz",
+      "normalizedName": "lennykravitz",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "liamfinn": {
+      "name": "Liam Finn",
+      "normalizedName": "liamfinn",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "lindiortega": {
+      "name": "Lindi Ortega",
+      "normalizedName": "lindiortega",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "littlelenny": {
+      "name": "Little Lenny",
+      "normalizedName": "littlelenny",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "livingcolour": {
+      "name": "Living Colour",
+      "normalizedName": "livingcolour",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "loslobos": {
+      "name": "Los Lobos",
+      "normalizedName": "loslobos",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "madcaddies": {
+      "name": "Mad Caddies",
+      "normalizedName": "madcaddies",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "mahones": {
+      "name": "Mahones",
+      "normalizedName": "mahones",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "marcalmond": {
+      "name": "Marc Almond",
+      "normalizedName": "marcalmond",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "maskedintruder": {
+      "name": "Masked Intruder",
+      "normalizedName": "maskedintruder",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "maxipriest": {
+      "name": "Maxi Priest",
+      "normalizedName": "maxipriest",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "menotyou": {
+      "name": "Me Not You",
+      "normalizedName": "menotyou",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "menatwork": {
+      "name": "Men At Work",
+      "normalizedName": "menatwork",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "midgeure": {
+      "name": "Midge Ure",
+      "normalizedName": "midgeure",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "midnightoil": {
+      "name": "Midnight Oil",
+      "normalizedName": "midnightoil",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "mikeness": {
+      "name": "Mike Ness",
+      "normalizedName": "mikeness",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "minimansions": {
+      "name": "Mini Mansions",
+      "normalizedName": "minimansions",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "molchatdoma": {
+      "name": "Molchat Doma",
+      "normalizedName": "molchatdoma",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "nakedeyes": {
+      "name": "Naked Eyes",
+      "normalizedName": "nakedeyes",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "neworder": {
+      "name": "New Order",
+      "normalizedName": "neworder",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "nikkilane": {
+      "name": "Nikki Lane",
+      "normalizedName": "nikkilane",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "nodoubt": {
+      "name": "No Doubt",
+      "normalizedName": "nodoubt",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "omd": {
+      "name": "OMD",
+      "normalizedName": "omd",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "oingoboingo": {
+      "name": "Oingo Boingo",
+      "normalizedName": "oingoboingo",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "patdinizio": {
+      "name": "Pat DiNizio",
+      "normalizedName": "patdinizio",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "pauloakenfold": {
+      "name": "Paul Oakenfold",
+      "normalizedName": "pauloakenfold",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "pennywise": {
+      "name": "Pennywise",
+      "normalizedName": "pennywise",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "petshopboys": {
+      "name": "Pet Shop Boys",
+      "normalizedName": "petshopboys",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "petergabriel": {
+      "name": "Peter Gabriel",
+      "normalizedName": "petergabriel",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "peterhookandthelight": {
+      "name": "Peter Hook and the Light",
+      "normalizedName": "peterhookandthelight",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "phox": {
+      "name": "Phox",
+      "normalizedName": "phox",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "polarbearclub": {
+      "name": "Polar Bear Club",
+      "normalizedName": "polarbearclub",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "prophetsofrage": {
+      "name": "Prophets of Rage",
+      "normalizedName": "prophetsofrage",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "psychedelicfurs": {
+      "name": "Psychedelic Furs",
+      "normalizedName": "psychedelicfurs",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "publicenemy": {
+      "name": "Public Enemy",
+      "normalizedName": "publicenemy",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "rdgldgrn": {
+      "name": "RDGLDGRN",
+      "normalizedName": "rdgldgrn",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "rancid": {
+      "name": "Rancid",
+      "normalizedName": "rancid",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "ratboy": {
+      "name": "Rat Boy",
+      "normalizedName": "ratboy",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "raveonettes": {
+      "name": "Raveonettes",
+      "normalizedName": "raveonettes",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "rebuilder": {
+      "name": "Rebuilder",
+      "normalizedName": "rebuilder",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "richardcheeseloungeagainstthemachine": {
+      "name": "Richard Cheese & Lounge Against the Machine",
+      "normalizedName": "richardcheeseloungeagainstthemachine",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "riseagainst": {
+      "name": "Rise Against",
+      "normalizedName": "riseagainst",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "robthomas": {
+      "name": "Rob Thomas",
+      "normalizedName": "robthomas",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "royalblood": {
+      "name": "Royal Blood",
+      "normalizedName": "royalblood",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "rundmc": {
+      "name": "Run DMC",
+      "normalizedName": "rundmc",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "saveferris": {
+      "name": "Save Ferris",
+      "normalizedName": "saveferris",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "schooloffish": {
+      "name": "School of Fish",
+      "normalizedName": "schooloffish",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "sextile": {
+      "name": "Sextile",
+      "normalizedName": "sextile",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "shinehead": {
+      "name": "Shinehead",
+      "normalizedName": "shinehead",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "siouxsieandbanshees": {
+      "name": "Siouxsie and Banshees",
+      "normalizedName": "siouxsieandbanshees",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "sleighbells": {
+      "name": "Sleigh Bells",
+      "normalizedName": "sleighbells",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "smashmouth": {
+      "name": "Smash Mouth",
+      "normalizedName": "smashmouth",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "smokemirrorssoundsystem": {
+      "name": "Smoke & Mirrors Sound System",
+      "normalizedName": "smokemirrorssoundsystem",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "snarkypuppy": {
+      "name": "Snarky Puppy",
+      "normalizedName": "snarkypuppy",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "snuff": {
+      "name": "Snuff",
+      "normalizedName": "snuff",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "socialdistortion": {
+      "name": "Social Distortion",
+      "normalizedName": "socialdistortion",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "solemnsun": {
+      "name": "Solemn Sun",
+      "normalizedName": "solemnsun",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "squeeze": {
+      "name": "Squeeze",
+      "normalizedName": "squeeze",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "sting": {
+      "name": "Sting",
+      "normalizedName": "sting",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "straycats": {
+      "name": "Stray Cats",
+      "normalizedName": "straycats",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "streetlightmanifesto": {
+      "name": "Streetlight Manifesto",
+      "normalizedName": "streetlightmanifesto",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "stryper": {
+      "name": "Stryper",
+      "normalizedName": "stryper",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "suicidaltendencies": {
+      "name": "Suicidal Tendencies",
+      "normalizedName": "suicidaltendencies",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "tsol": {
+      "name": "T.S.O.L.",
+      "normalizedName": "tsol",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "teamband": {
+      "name": "Team Band",
+      "normalizedName": "teamband",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "tearsforfears": {
+      "name": "Tears For Fears",
+      "normalizedName": "tearsforfears",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thealarm": {
+      "name": "The Alarm",
+      "normalizedName": "thealarm",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theartofnoise": {
+      "name": "The Art of Noise",
+      "normalizedName": "theartofnoise",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theblackkeys": {
+      "name": "The Black Keys",
+      "normalizedName": "theblackkeys",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theblasters": {
+      "name": "The Blasters",
+      "normalizedName": "theblasters",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thebronx": {
+      "name": "The Bronx",
+      "normalizedName": "thebronx",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thecult": {
+      "name": "The Cult",
+      "normalizedName": "thecult",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thecure": {
+      "name": "The Cure",
+      "normalizedName": "thecure",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thedollyrots": {
+      "name": "The Dollyrots",
+      "normalizedName": "thedollyrots",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theenglishbeat": {
+      "name": "The English Beat",
+      "normalizedName": "theenglishbeat",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thefixx": {
+      "name": "The Fixx",
+      "normalizedName": "thefixx",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thegogos": {
+      "name": "The Go Go's",
+      "normalizedName": "thegogos",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theheadandtheheart": {
+      "name": "The Head and the Heart",
+      "normalizedName": "theheadandtheheart",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thehumanleague": {
+      "name": "The Human League",
+      "normalizedName": "thehumanleague",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theinterrupters": {
+      "name": "The Interrupters",
+      "normalizedName": "theinterrupters",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "themessthetics": {
+      "name": "The Messthetics",
+      "normalizedName": "themessthetics",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "themotels": {
+      "name": "The Motels",
+      "normalizedName": "themotels",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thenylons": {
+      "name": "The Nylons",
+      "normalizedName": "thenylons",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theoffspring": {
+      "name": "The Offspring",
+      "normalizedName": "theoffspring",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thepaladins": {
+      "name": "The Paladins",
+      "normalizedName": "thepaladins",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thepolecats": {
+      "name": "The Polecats",
+      "normalizedName": "thepolecats",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thepsychedelicfurs": {
+      "name": "The Psychedelic Furs",
+      "normalizedName": "thepsychedelicfurs",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theredhotchillipeppers": {
+      "name": "The Red Hot Chilli Peppers",
+      "normalizedName": "theredhotchillipeppers",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thereflex": {
+      "name": "The Reflex",
+      "normalizedName": "thereflex",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theroots": {
+      "name": "The Roots",
+      "normalizedName": "theroots",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theskints": {
+      "name": "The Skints",
+      "normalizedName": "theskints",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thesmithereens": {
+      "name": "The Smithereens",
+      "normalizedName": "thesmithereens",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thestruts": {
+      "name": "The Struts",
+      "normalizedName": "thestruts",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thetubes": {
+      "name": "The Tubes",
+      "normalizedName": "thetubes",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thetwilightsad": {
+      "name": "The Twilight Sad",
+      "normalizedName": "thetwilightsad",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "theuntouchables": {
+      "name": "The Untouchables",
+      "normalizedName": "theuntouchables",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thewonderstuff": {
+      "name": "The Wonderstuff",
+      "normalizedName": "thewonderstuff",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thomasdolby": {
+      "name": "Thomas Dolby",
+      "normalizedName": "thomasdolby",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "thompsontwins": {
+      "name": "Thompson Twins",
+      "normalizedName": "thompsontwins",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "tomcochrane": {
+      "name": "Tom Cochrane",
+      "normalizedName": "tomcochrane",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "toneloc": {
+      "name": "Tone Loc",
+      "normalizedName": "toneloc",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "torres": {
+      "name": "Torres",
+      "normalizedName": "torres",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "transplants": {
+      "name": "Transplants",
+      "normalizedName": "transplants",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "tromboneshortyorleansavenue": {
+      "name": "Trombone Shorty & Orleans Avenue",
+      "normalizedName": "tromboneshortyorleansavenue",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "troublefunk": {
+      "name": "Trouble Funk",
+      "normalizedName": "troublefunk",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "u2": {
+      "name": "U2",
+      "normalizedName": "u2",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "ub40": {
+      "name": "UB40",
+      "normalizedName": "ub40",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "umphreysmcgee": {
+      "name": "Umphrey's McGee",
+      "normalizedName": "umphreysmcgee",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "vandals": {
+      "name": "Vandals",
+      "normalizedName": "vandals",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "violentfemmes": {
+      "name": "Violent Femmes",
+      "normalizedName": "violentfemmes",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "voodooglowskulls": {
+      "name": "Voodoo Glow Skulls",
+      "normalizedName": "voodooglowskulls",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "wham": {
+      "name": "Wham!",
+      "normalizedName": "wham",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "wheninrome": {
+      "name": "When In Rome",
+      "normalizedName": "wheninrome",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "wire": {
+      "name": "Wire",
+      "normalizedName": "wire",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "wrecks": {
+      "name": "Wrecks",
+      "normalizedName": "wrecks",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "x": {
+      "name": "X",
+      "normalizedName": "x",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "yatesmckendree": {
+      "name": "Yates McKendree",
+      "normalizedName": "yatesmckendree",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "yaz": {
+      "name": "Yaz",
+      "normalizedName": "yaz",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "ziggymarley": {
+      "name": "Ziggy Marley",
+      "normalizedName": "ziggymarley",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    },
+    "cleopatrick": {
+      "name": "cleopatrick",
+      "normalizedName": "cleopatrick",
+      "fetchedAt": "2025-12-30T00:05:33.629Z",
+      "dataSource": "mock"
+    }
+  }
+}

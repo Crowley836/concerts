@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import type { ConcertData } from './types/concert'
 import { Scene1Hero } from './components/scenes/Scene1Hero'
-import { Scene2Venues } from './components/scenes/Scene2Venues'
 import { Scene3Map } from './components/scenes/Scene3Map'
 import { Scene4Bands } from './components/scenes/Scene4Bands'
 import { Scene5Genres } from './components/scenes/Scene5Genres'
+import { ArtistScene } from './components/scenes/ArtistScene/ArtistScene'
 import { SceneNavigation } from './components/SceneNavigation'
 
 function App() {
@@ -69,8 +69,8 @@ function App() {
         {/* Scene 4: Genres (sunburst) */}
         <Scene5Genres concerts={concerts} />
 
-        {/* Scene 5: Artist List */}
-        <Scene2Venues concerts={concerts} />
+        {/* Scene 5: Artists (album mosaic) */}
+        <ArtistScene concerts={concerts} />
       </div>
 
       {/* Scene Navigation */}

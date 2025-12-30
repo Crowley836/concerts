@@ -1,8 +1,8 @@
 # Concert Archives - Current Status
 
 **Last Updated:** 2025-12-29
-**Current Phase:** Phase 9b (Venue Scene Enhancement - Complete)
-**Last Commit:** 3020a30 - "feat: Add click-to-expand interaction for venues in All view"
+**Current Phase:** Phase 10 (Artists Scene Enhancement - In Progress)
+**Last Commit:** [pending] - "feat: Implement artist card flip interaction with 2x2 sizing"
 
 ---
 
@@ -16,7 +16,7 @@ Interactive Jamstack SPA showcasing 175 concerts (1984-2026) through 5 full-view
 
 ---
 
-## Current Implementation Status
+## v1.0.0 Implementation Status
 
 ### ✅ Completed Phases (0-5)
 
@@ -115,20 +115,6 @@ All major implementation phases are complete:
   - Changed container from `absolute inset-0` to `w-full h-full`
   - Component: [src/components/scenes/Scene5Genres.tsx](../src/components/scenes/Scene5Genres.tsx)
 
-**Deferred Items (Phase 8.1 - Mobile):**
-
-- 🔄 **Mobile device testing and refinements**
-  - Touch interactions already enabled in code (touchZoom, dragging)
-  - Need testing on actual iOS and Android devices
-  - May need to adjust hint prominence for mobile (no hover state)
-  - May need pinch gesture indicators
-  - Scene nav buttons already sized for touch targets
-
-- 🔄 **Zoom UI buttons (optional)**
-  - Scroll wheel zoom works well for desktop
-  - Could add +/- buttons for users without scroll wheels
-  - Would be hidden on mobile (pinch-to-zoom is native)
-
 ### ✅ Phase 9: Venue-Level Geocoding (Complete)
 
 **Completed Items:**
@@ -203,12 +189,76 @@ All major implementation phases are complete:
 
 - MODIFIED: `src/components/scenes/Scene4Bands.tsx` - Click interaction, force simulation, and label visibility
 
+### 🔄 Phase 10: Artists Scene Enhancement (In Progress)
+
+**Implementation Date:** December 29, 2025
+
+**Completed Items:**
+
+- ✅ **Artist mosaic grid layout** - Album cover mosaic with uniform 200px cards
+  - Flexbox-based responsive grid that centers horizontally
+  - Lazy loading with Intersection Observer (100 initial, batch 50)
+  - Three sort modes: A-Z (alphabetical), Genre, Weighted (by times seen)
+  - Frequency badges show ×N for artists seen multiple times (Weighted mode only)
+  - Component: [src/components/scenes/ArtistScene/](../src/components/scenes/ArtistScene/)
+
+- ✅ **Card flip interaction** - Click cards to flip and expand 2x2 (400px)
+  - 3D flip animation with 0.6s rotation transition
+  - Cards scale 2.0x (200px → 400px) = exactly 2 rows height
+  - Transform origin calculated dynamically based on screen position
+  - Left half of screen: anchor top-right, expand left (INTO viewport)
+  - Right half of screen: anchor top-left, expand right (INTO viewport)
+  - ESC key closes flipped cards
+  - Reduced motion support (instant transitions)
+
+- ✅ **Back card design** - Concert history with scrollable list
+  - Artist name (text-sm) and "Seen X times" (text-[10px])
+  - Scrollable concert list with dates and venues (text-[9px])
+  - Spotify integration section at bottom
+  - Sized at 200px (scales to 400px via transform)
+  - Typography scaled appropriately for 2x transform
+
+**Remaining Items:**
+
+- ⚠️ **Spotify integration** - Connect artist cards to Spotify metadata
+  - Album cover images from Spotify API
+  - Artist profile links
+  - Genre data enrichment
+  - See: [docs/SPOTIFY-INTEGRATION-GUIDE.md](SPOTIFY-INTEGRATION-GUIDE.md)
+
+- ⚠️ **Mini music player** - Design and implement player UI
+  - Placement on flipped card (bottom section?)
+  - 30-second preview playback
+  - Play/pause controls
+  - Track selection for multi-concert artists
+
+- ⚠️ **Scene background** - Change from DARK to LIGHT
+  - Current: `from-indigo-950 to-purple-950` (DARK)
+  - Target: Light background for LIGHT→DARK→DARK→LIGHT→LIGHT rhythm
+
+**Technical Implementation:**
+
+- **Flip Logic**: Uses refs and getBoundingClientRect() to calculate card position
+- **Transform Origin**: `top-right` for left cards, `top-left` for right cards
+- **Scale Math**: 200px base × 2.0 = 400px final (2 rows × 200px)
+- **Typography Scale**: Font sizes chosen for readability at 2x scale
+- **State Management**: Single `activeCardId` tracks which card is flipped
+
+**Files Created/Modified:**
+
+- NEW: `src/components/scenes/ArtistScene/` - Complete artist scene component tree
+  - `ArtistScene.tsx` - Main container with sort controls
+  - `ArtistMosaic.tsx` - Grid layout with lazy loading
+  - `ArtistCard.tsx` - Flip card wrapper with transform logic
+  - `ArtistCardFront.tsx` - Album cover display
+  - `ArtistCardBack.tsx` - Concert history list
+  - `ArtistPlaceholder.tsx` - Colored placeholder for missing covers
+  - `useArtistData.ts` - Data processing and sorting
+  - `types.ts` - TypeScript interfaces
+- MODIFIED: `src/App.tsx` - Integrated ArtistScene component
+- MODIFIED: `public/data/artists-metadata.json` - Artist data structure
+
 ### 📋 Upcoming Phases
-
-**Phase 10: Artists Scene Enhancement**
-
-- Dedicated plan document [Phase 9 Artists Scene v2](phase-9-artist_scene_plan_v2.md)
-- Component: [Scene2Venues.tsx](../src/components/scenes/Scene2Venues.tsx)
 
 **Phase 11: Deployment**
 
@@ -217,11 +267,35 @@ All major implementation phases are complete:
 - Configure build settings
 - Deploy to production
 
-**Phase 12: Data Sources Enhancement**
+
+
+## v1.1 Planning
+
+**v1.1 Phase X: Deferred Items from Phase 8.1 - Mobile):**
+
+- 🔄 **Mobile device testing and refinements**
+  - Touch interactions already enabled in code (touchZoom, dragging)
+  - Need testing on actual iOS and Android devices
+  - May need to adjust hint prominence for mobile (no hover state)
+  - May need pinch gesture indicators
+  - Scene nav buttons already sized for touch targets
+
+- 🔄 **Zoom UI buttons (optional)**
+  - Scroll wheel zoom works well for desktop
+  - Could add +/- buttons for users without scroll wheels
+  - Would be hidden on mobile (pinch-to-zoom is native)
+
+**v1.1 - Phase X: Data Sources Enhancement**
 
 - Review all Google Sheets/API integration work
 - Consider future music API integrations (Spotify, MusicBrainz) for artist cards
 - Enhance data enrichment pipeline
+
+**v1.1. Phase X: Cross-Scene Venue Navigation: Map → Venues
+
+ - Add clickable venue links in the Map (Geography) scene popups that navigate users to The Venues scene and auto-expand the corresponding venue node. This creates a seamless cross-scene connection for exploring venue details.
+ - [See Venue map Cross Scene Navigation](v1.1-venue-map-cross-scene-navigation.md)
+
 
 ---
 
