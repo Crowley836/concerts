@@ -67,31 +67,60 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       const x = xScale(year)
       const radius = sizeScale(count)
 
+      // Draw shadow (for elevation effect)
+      const shadow = g.append('circle')
+        .attr('cx', x)
+        .attr('cy', innerHeight / 2)
+        .attr('r', radius)
+        .attr('fill', '#6366f1')
+        .attr('opacity', 0)
+        .attr('filter', 'blur(8px)')
+        .style('pointer-events', 'none')
+
       // Draw dot
-      g.append('circle')
+      const dot = g.append('circle')
         .attr('cx', x)
         .attr('cy', innerHeight / 2)
         .attr('r', radius)
         .attr('fill', '#6366f1')
         .attr('opacity', 0.8)
-        .attr('class', 'cursor-pointer transition-all hover:opacity-100')
+        .attr('class', 'cursor-pointer')
         .style('cursor', 'pointer')
         .on('mouseenter', function() {
           d3.select(this)
             .transition()
             .duration(200)
+            .attr('r', radius * 1.2)
+            .attr('fill', '#818cf8') // Lighter indigo
+            .attr('opacity', 1)
+
+          // Animate shadow
+          shadow
+            .transition()
+            .duration(200)
             .attr('r', radius * 1.3)
+            .attr('opacity', 0.4)
         })
         .on('mouseleave', function() {
           d3.select(this)
             .transition()
             .duration(200)
             .attr('r', radius)
+            .attr('fill', '#6366f1')
+            .attr('opacity', 0.8)
+
+          // Fade shadow
+          shadow
+            .transition()
+            .duration(200)
+            .attr('r', radius)
+            .attr('opacity', 0)
         })
         .on('click', () => {
           setSelectedYear(year)
         })
-        .append('title')
+
+      dot.append('title')
         .text(`${year}: ${count} concert${count !== 1 ? 's' : ''}`)
     })
 
