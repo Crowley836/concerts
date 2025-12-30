@@ -61,13 +61,13 @@ export function ArtistScene({ concerts }: ArtistSceneProps) {
         className="absolute top-20 left-0 right-0 z-20 text-center px-8"
       >
         <h2
-          className="font-serif text-5xl md:text-7xl text-gray-900 mb-3 tracking-tight"
+          className="font-serif text-5xl md:text-7xl text-white mb-3 tracking-tight"
           style={{ textShadow: '0 2px 20px rgba(0, 0, 0, 0.3)' }}
         >
           The Artists
         </h2>
         <p
-          className="font-sans text-lg md:text-xl text-gray-500 mb-6"
+          className="font-sans text-lg md:text-xl text-white/85 mb-6"
           style={{ textShadow: '0 2px 20px rgba(0, 0, 0, 0.3)' }}
         >
           {artistCount} artists · {totalConcerts} concerts
