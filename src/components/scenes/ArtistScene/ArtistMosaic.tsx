@@ -107,7 +107,7 @@ export function ArtistMosaic({
   }
 
   return (
-    <div className="w-full h-full overflow-y-auto pt-48 pb-32">
+    <div className="w-full h-full overflow-y-auto pb-32">
       {/* Flexbox Container - Centered horizontally, NO GAPS */}
       <motion.div
         layout={!reducedMotion}
