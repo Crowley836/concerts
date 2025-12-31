@@ -359,6 +359,16 @@ Items deferred from v1.0 for future release:
 - Scene background rhythm alignment (current: LIGHT→DARK→DARK→LIGHT→DARK)
 - Consistent spacing per design guide
 
+### Infrastructure & Security
+
+- **Security headers** - Add Cloudflare Pages `_headers` file (nice to have)
+  - Content-Security-Policy for script/style source control
+  - X-Frame-Options to prevent clickjacking
+  - X-Content-Type-Options to prevent MIME sniffing
+  - Referrer-Policy for external link privacy
+  - Permissions-Policy to disable unused browser features
+  - See: [Mozilla Security Headers Guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security)
+
 
 ---
 

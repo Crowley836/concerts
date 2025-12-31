@@ -184,18 +184,20 @@ export function ArtistScene({ concerts }: ArtistSceneProps) {
         aria-hidden="true"
       />
 
-      {/* Footer Instructions */}
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        className="absolute bottom-20 left-0 right-0 z-20 text-center"
-      >
-        <p className="font-sans text-xs text-white/90 font-medium uppercase tracking-widest">
-          Click to flip · Press ESC to close
-        </p>
-      </motion.div>
+      {/* Footer Instructions - Hide when gatefold is open */}
+      {!openArtist && (
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="absolute bottom-20 left-0 right-0 z-20 text-center"
+        >
+          <p className="font-sans text-xs text-white/90 font-medium uppercase tracking-widest">
+            Click to flip · Press ESC to close
+          </p>
+        </motion.div>
+      )}
 
       {/* Spotify Attribution */}
       {artistCards.some(a => a.spotifyArtistUrl) && (

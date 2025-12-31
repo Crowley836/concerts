@@ -37,8 +37,11 @@ lerna-debug.log*
 *.tmp
 .cache/
 
-# Claude plans (keep .claude/ config but ignore plans)
-.claude/plans/
+# Claude Code configuration and plans
+.claude/
 
 # Bug reports and debugging artifacts
 bugs/
+
+# Inspiration and reference materials
+docs/inspiration/
