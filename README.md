@@ -1,8 +1,6 @@
 # Morperhaus Concert Archives
 _A visual love letter to four decades of live music._
 
----
-
 ## What is this?
 ![Morperhaus Concert Archives](/docs/concerts-app.png)
 I've been going to concerts since 1984. My wife and I have been going together since we started dating in the '90s. From packed arena tours to sweaty club shows, from bands we grew up worshipping to ones we discovered opening for someone else entirely.
@@ -53,6 +51,4 @@ If you want to connect your own Google Sheet and run the data pipeline, check [d
 
 The app is feature-complete for v1.0. Next up: mobile optimization, maybe Spotify listening history integration, and—most importantly—more shows to add to the list.
 
----
-
-Built with ❤️ for live music.
+_Built with ❤️ for live music._
