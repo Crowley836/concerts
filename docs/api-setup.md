@@ -4,11 +4,9 @@ This document explains how to configure the various APIs needed for the concert 
 
 ## Overview
 
-The data pipeline uses four services:
+The data pipeline uses two services:
 1. **Google Sheets API** - To fetch concert data from your spreadsheet
 2. **Google Maps Geocoding API** - To get accurate venue coordinates for the map
-3. **TheAudioDB** - To fetch artist images and metadata (primary source)
-4. **Last.fm API** - To fetch artist data when TheAudioDB doesn't have it (fallback)
 
 ## Google Sheets API Setup
 
@@ -176,48 +174,6 @@ npm run geocode
 
 This is useful if you want to pre-populate the cache or update coordinates for all venues.
 
-## TheAudioDB API Setup
-
-TheAudioDB provides a free test API key.
-
-### Option 1: Use Test Key (Easiest)
-
-```bash
-THEAUDIODB_API_KEY=2
-```
-
-The test key "2" works for basic searches with 2 calls/second rate limit.
-
-### Option 2: Get Your Own Key
-
-1. Go to [TheAudioDB.com](https://www.theaudiodb.com/)
-2. Support on Patreon for $2/month: https://www.patreon.com/thedatadb
-3. Get your API key from your Patreon rewards
-4. Add to `.env`:
-
-```bash
-THEAUDIODB_API_KEY=your_api_key
-```
-
-## Last.fm API Setup
-
-Last.fm provides a free API for non-commercial use.
-
-### 1. Create an API Account
-
-1. Go to [Last.fm API](https://www.last.fm/api/account/create)
-2. Fill out the form:
-   - **Application name**: "Concert Archives"
-   - **Application description**: "Personal concert history visualization"
-   - **Callback URL**: Leave empty or use http://localhost:5173
-3. Agree to terms and submit
-4. You'll receive an **API Key** immediately
-
-### 2. Add to .env
-
-```bash
-LASTFM_API_KEY=your_api_key_here
-```
 
 ## Complete .env File
 
@@ -234,10 +190,6 @@ GOOGLE_REFRESH_TOKEN=1//abc123...
 # Google Maps Geocoding API
 GOOGLE_MAPS_API_KEY=your_maps_api_key_here
 
-# Music APIs
-THEAUDIODB_API_KEY=2
-LASTFM_API_KEY=abc123def456...
-
 # Sheet Configuration
 SHEET_RANGE=Sheet1!A2:Z1000
 ```
@@ -247,13 +199,7 @@ SHEET_RANGE=Sheet1!A2:Z1000
 Run the data pipeline:
 
 ```bash
-# Fetch from Google Sheets
-npm run fetch-sheet
-
-# Enrich with artist metadata
-npm run enrich
-
-# Or run both in sequence
+# Fetch from Google Sheets and process data
 npm run build-data
 ```
 
@@ -274,50 +220,24 @@ npm run build-data
 - Verify the GOOGLE_SHEET_ID is correct
 - Make sure your Google account has access to the sheet
 
-### TheAudioDB Errors
-
-**"Rate Limit Exceeded"**
-- The rate limiter enforces 2 calls/second
-- Consider adding delays between requests
-- The script already handles this automatically
-
-**"Artist Not Found"**
-- Not all artists are in TheAudioDB
-- The script falls back to Last.fm automatically
-- Some artists may not have data in either service
-
-### Last.fm Errors
-
-**"Invalid API Key"**
-- Verify the key is correct (check for extra spaces)
-- Make sure you're using the API Key, not the Shared Secret
-
-**"Artist Not Found"**
-- Try the exact artist name as it appears on Last.fm
-- Some artists may use different spellings
 
 ## Rate Limits
 
 - **Google Sheets API**: 100 requests/100 seconds per user (plenty for our use)
 - **Google Maps Geocoding API**: 50 requests/second (enforced by rate limiter with 20ms delays)
-- **TheAudioDB**: 2 requests/second (enforced by rate limiter)
-- **Last.fm**: 5 requests/second (enforced by rate limiter)
 
 ## Best Practices
 
-1. **Run the pipeline during "vibe code" sessions** when you've added new concerts
+1. **Run the pipeline when you've added new concerts** to your Google Sheet
 2. **Don't commit your .env file** - it contains secrets
-3. **Artist metadata is cached** - re-enrichment only updates stale records (>30 days old)
-4. **Commit the generated JSON files** - they're the source of truth for the app
-5. **Keep API keys secure** - treat them like passwords
+3. **Commit the generated JSON files** - they're the source of truth for the app
+4. **Keep API keys secure** - treat them like passwords
 
 ## Cost
 
-All APIs used are **free or very low cost** for our use case:
+Both APIs used are **free** for our use case:
 
 - **Google Sheets API**: Free tier (60 reads/minute per user)
 - **Google Maps Geocoding API**: $200/month free tier (expected usage: $0/month)
-- **TheAudioDB**: Free test key or $2/month for enhanced features
-- **Last.fm**: Free for non-commercial use
 
-**Total monthly cost: $0-2** (all usage stays within free tiers)
+**Total monthly cost: $0** (all usage stays within free tiers)
