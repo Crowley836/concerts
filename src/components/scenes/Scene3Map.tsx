@@ -124,9 +124,8 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
     // Clear existing markers
     markersLayerRef.current.clearLayers()
 
-    // For DC and California regions, aggregate by venue to show multiple venues in same city
-    // For other regions, aggregate by city
-    const showVenues = selectedRegion === 'dc' || selectedRegion === 'california'
+    // Show individual venues for all regions to display venue-level detail when zoomed in
+    const showVenues = true
     const markers = new Map<string, { lat: number; lng: number; count: number; label: string }>()
 
     filteredConcerts.forEach(concert => {
