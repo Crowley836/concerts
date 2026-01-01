@@ -49,6 +49,8 @@ If you want to connect your own Google Sheet and run the data pipeline, check [d
 
 ## What's next
 
-The app is feature-complete for v1.0. Next up: mobile optimization, maybe Spotify listening history integration, and—most importantly—more shows to add to the list.
+**v1.1.0 is live!** iPad optimization is complete—all scenes now work beautifully on tablets with proper touch targets and critical bugs fixed.
+
+Next up: phone optimization (v1.2.0+), Spotify listening history integration, and—most importantly—more shows to add to the list.
 
 _Built with ❤️ for live music._

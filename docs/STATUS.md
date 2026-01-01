@@ -1,16 +1,16 @@
 # Morperhaus Concert Archives - Status
 
-**Version:** v1.0.0 (Production)
-**Last Updated:** 2026-01-01
-**Current Phase:** Post-Release Enhancements
-**Last Commit:** 9b541af - "docs: Add iPad support requirements to mobile optimization spec"
+**Version:** v1.1.0 (Production)
+**Last Updated:** 2025-12-31
+**Current Phase:** iPad Optimization Complete
+**Last Commit:** 2619946 - "feat: Implement v1.1.0 iPad optimization and version tracking"
 **Live URL:** https://concerts.morperhaus.org
 
 ---
 
 ## Release Status
 
-### v1.0.0 Production (Current) 🎉
+### v1.0.0 Production 🎉
 - ✅ Feature complete (all 5 scenes implemented)
 - ✅ Desktop experience polished
 - ✅ Documentation cleanup complete
@@ -22,14 +22,16 @@
 - ✅ Geography Scene venue marker fixes
 - ✅ API documentation cleanup (removed unused services)
 
-### v1.0.0+ Post-Release Improvements (Active)
-- ✅ Boston venue geocoding verification
-- ✅ Individual venue markers in Geography Scene
-- ✅ Claude Code configuration cleanup
-- ✅ Future enhancement planning documentation
+### v1.1.0 iPad Optimization (Current) 🎉
+- ✅ iPad support complete (all scenes functional)
+- ✅ 44px touch targets across all interactive elements
+- ✅ Timeline portrait load bug fixed
+- ✅ Venues scene re-centering bug fixed
+- ✅ Build version tracking system implemented
+- ✅ v1.1.0 GitHub release published
 
-### v1.1.0 Planned
-- Mobile optimization (touch refinements, iPad support)
+### v1.2.0+ Planned
+- Phone optimization (viewports <768px)
 - Timeline artist display enhancements
 - Genre scene opener inclusion (under review)
 - Spotify API integration
@@ -362,18 +364,31 @@ All major implementation phases are complete:
 
 ---
 
-## v1.1 Roadmap
+## v1.1.0 Completed
+
+**Status:** Complete (2025-12-31)
+**GitHub Release:** v1.1.0
+
+**iPad Optimization:**
+- ✅ All scenes functional on iPad (landscape & portrait)
+- ✅ 44px minimum touch targets throughout
+- ✅ Timeline portrait mode load bug fixed
+- ✅ Venues scene persistent re-centering bug fixed
+- ✅ Build version tracking system added
+- ✅ Version display in footer
+
+## v1.2+ Roadmap
 
 Planned enhancements with detailed specifications in [docs/specs/future/](specs/future/):
 
-### 1. Mobile Optimization
+### 1. Phone Optimization
 **Status:** Planned
 **Spec:** [Mobile Optimization](specs/future/mobile-optimization.md)
 
 **Scope:**
 - Artist scene: Bottom sheet instead of gatefold (<768px viewports)
-- Map scene: Touch interaction refinements, iPad support
-- General: Device testing, gesture indicators, responsive improvements
+- Map scene: Further touch refinements for small screens
+- General: Phone-specific gesture indicators, responsive improvements
 
 ### 2. Timeline Artist Display Enhancement
 **Status:** Planned
@@ -655,16 +670,16 @@ For visual reference (actual order):
 
 ---
 
-## Recent Commits (v1.0.0+)
+## Recent Commits (v1.1.0+)
 
+- `2619946` - feat: Implement v1.1.0 iPad optimization and version tracking
+- `b822de6` - docs: Add Timeline Wake Effect spec and update mobile optimization
+- `7d3dfc0` - docs: Update documentation structure to v1.0.0 production state
+- `f3a5554` - docs: Update STATUS.md to reflect v1.0.0 production state
 - `9b541af` - docs: Add iPad support requirements to mobile optimization spec
-- `607a80f` - docs: Add genre scene opener inclusion enhancement specification  
+- `607a80f` - docs: Add genre scene opener inclusion enhancement specification
 - `1b474c6` - feat: Add custom concert ticket stub favicon
 - `78bf3cd` - fix: Show individual venue markers in all Geography Scene regions
-- `f43227c` - chore: Remove .claude directory from git tracking
-- `eb1f772` - docs: Add timeline artist display enhancement specification
-- `28ba2c7` - docs: Remove Last.fm and TheAudioDB references from API setup guide
-- `f081485` - chore: Prepare for v1.0.0 release - clean up and documentation
 
 ---
 

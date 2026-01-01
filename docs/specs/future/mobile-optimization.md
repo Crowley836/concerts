@@ -1,35 +1,84 @@
 # Mobile Optimization Specification
 
-**Status:** Ready for Implementation  
-**Priority:** High  
-**Version:** v1.1.0 (iPad), v1.2.0+ (Phone)  
-**Last Updated:** 2026-01-01  
+**Status:** ✅ v1.1.0 Complete (iPad) | 📋 v1.2.0+ Planned (Phone)
+**Priority:** High
+**Version:** v1.1.0 (iPad - Complete), v1.2.0+ (Phone - Planned)
+**Last Updated:** 2026-01-01
+**Completed:** 2026-01-01
 **Dependencies:** None
 
 ---
 
 ## Overview
 
-This specification details mobile-specific optimizations deferred from v1.0 release, with iPad support targeted for v1.1.0 and phone support planned for v1.2.0+.
+This specification details mobile-specific optimizations deferred from v1.0 release. **iPad support (v1.1.0) is now complete and deployed.** Phone support is planned for v1.2.0+.
 
-### Current iPad Status (iPad Pro 11" Testing)
+### ✅ iPad Status - v1.1.0 Complete (iPad Pro 11" Verified)
 
 | Scene | Landscape | Portrait | Orientation Change |
 |-------|-----------|----------|-------------------|
-| Timeline | ✅ Works | 🔴 Initial load bug | ✅ Works after fix |
-| Venues | ✅ Works | ✅ Works | 🟡 Re-centering bug |
+| Timeline | ✅ Fixed | ✅ Fixed | ✅ Fixed |
+| Venues | ✅ Fixed | ✅ Fixed | ✅ Fixed |
 | Map | ✅ Works | ✅ Works | ✅ Works |
 | Genres | ✅ Works | ✅ Works | ✅ Works |
-| Artists (Gatefold) | ✅ Works | ✅ Works | ✅ Works |
+| Artists (Gatefold) | ✅ Enhanced | ✅ Enhanced | ✅ Enhanced |
+| Navigation Dots | ✅ Enhanced | ✅ Enhanced | ✅ Enhanced |
 
-**Bottom line:** Two bugs to fix, everything else works. Scope is smaller than initially anticipated.
+**Result:** All iPad optimizations complete. All scenes functional in both orientations with 44px touch targets.
 
 ### Release Scope
 
 | Release | Device Targets | Orientation | Status |
 |---------|---------------|-------------|--------|
-| **v1.1.0** | iPad Pro 12.9", iPad Pro 11", iPad Air 10.9" | Landscape (primary), Portrait (functional) | Ready for implementation |
-| **v1.2.0+** | iPhone 12-16 series, Android flagships | Portrait (primary), Landscape (functional) | Research complete |
+| **v1.1.0** | iPad Pro 12.9", iPad Pro 11", iPad Air 10.9" | Landscape & Portrait (both functional) | ✅ **Complete** |
+| **v1.2.0+** | iPhone 12-16 series, Android flagships | Portrait (primary), Landscape (functional) | 📋 Planned |
+
+---
+
+## v1.1.0 iPad Optimization - Implementation Summary
+
+**Release Date:** January 1, 2026
+**GitHub Release:** https://github.com/mmorper/concerts/releases/tag/v1.1.0
+**Commit:** `2619946` - "feat: Implement v1.1.0 iPad optimization and version tracking"
+
+### ✅ Completed Work
+
+**Critical Bug Fixes:**
+- ✅ Timeline portrait initial load bug - Fixed with ResizeObserver pattern
+- ✅ Venues re-centering bug - Fixed force simulation center updates
+
+**Touch Optimizations:**
+- ✅ 44px minimum touch targets implemented across all scenes
+- ✅ Tap-to-reveal navigation dots (first tap shows label, second navigates)
+- ✅ All instruction text updated from "Click" to "Tap"
+- ✅ Touch-friendly button sizing throughout
+
+**Scene-Specific Enhancements:**
+- ✅ Scene 1 (Timeline): ResizeObserver + 44px dots + enhanced modal close
+- ✅ Scene 2 (Venues): ResizeObserver + force re-centering + 44px nodes
+- ✅ Scene 3 (Map): ResizeObserver + invalidateSize() + 44px filter tabs
+- ✅ Scene 4 (Genres): 44px Reset button + tap instructions
+- ✅ Scene 5 (Artists): Orientation handler + 44px sort buttons + tap instructions
+- ✅ Navigation: Tap-to-reveal with 3s auto-dismiss + scroll dismissal
+
+**Developer Tools:**
+- ✅ Build version tracking system (version.json endpoint)
+
+**Testing:**
+- ✅ Verified on iPad Pro 11" in both portrait and landscape
+- ✅ All orientation changes handled smoothly
+- ✅ Touch interactions feel native
+
+### 📊 v1.1.0 Effort Actual
+
+| Phase | Estimated | Actual | Notes |
+|-------|-----------|--------|-------|
+| Critical bug fixes | 3-6 hours | ~4 hours | ResizeObserver pattern worked well |
+| Touch refinements | 2-3 hours | ~2 hours | Straightforward implementation |
+| Layout adjustments | 2-4 hours | ~2 hours | Minimal changes needed |
+| **Total** | **7-13 hours** | **~8 hours** | On target |
+
+---
 
 ### Target Viewports (CSS pixels)
 
@@ -346,9 +395,10 @@ const useArtistDetailMode = () => {
 
 ## Implementation Plan
 
-### Phase 1: Critical Bug Fixes (Priority 1)
+### ✅ Phase 1: Critical Bug Fixes (COMPLETE)
 
 **Goal:** Fix the two identified bugs so app works correctly on iPad
+**Status:** ✅ Complete (v1.1.0)
 
 **Bug 1: Timeline Initial Portrait Load (Critical)**
 
@@ -433,9 +483,10 @@ useEffect(() => {
 
 ---
 
-### Phase 2: Touch Refinements (Priority 2)
+### ✅ Phase 2: Touch Refinements (COMPLETE)
 
 **Goal:** Ensure all interactions work well with touch
+**Status:** ✅ Complete (v1.1.0)
 
 **Implementation checklist:**
 
@@ -482,9 +533,10 @@ useEffect(() => {
 
 ---
 
-### Phase 4: Layout Adjustments (Priority 4)
+### ✅ Phase 4: Layout Adjustments (COMPLETE)
 
 **Goal:** Optimize layouts for different viewport sizes
+**Status:** ✅ Complete (v1.1.0)
 
 **Implementation checklist:**
 
@@ -500,14 +552,14 @@ useEffect(() => {
 
 ---
 
-### v1.1.0 Total Effort Summary
+### ✅ v1.1.0 Total Effort Summary (COMPLETE)
 
-| Phase | Effort | Priority |
-|-------|--------|----------|
-| Phase 1: Bug fixes (Timeline + Venues) | 3-6 hours | Critical |
-| Phase 2: Touch refinements | 2-3 hours | High |
-| Phase 4: Layout adjustments | 2-4 hours | Medium |
-| **Total** | **7-13 hours** | |
+| Phase | Estimated | Actual | Status |
+|-------|-----------|--------|--------|
+| Phase 1: Bug fixes (Timeline + Venues) | 3-6 hours | ~4 hours | ✅ Complete |
+| Phase 2: Touch refinements | 2-3 hours | ~2 hours | ✅ Complete |
+| Phase 4: Layout adjustments | 2-4 hours | ~2 hours | ✅ Complete |
+| **Total** | **7-13 hours** | **~8 hours** | ✅ **Complete** |
 
 **Note:** Phase 3 (Bottom Sheet) is deferred to v1.2.0+ for phones only.
 
