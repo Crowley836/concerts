@@ -7,17 +7,20 @@ const isCIEnvironment = process.env.CI === 'true' || isCloudflarePages
 
 // Get version string
 let gitTag = ''
-if (isCloudflarePages && process.env.CF_PAGES_COMMIT_SHA) {
-  // Cloudflare Pages: use branch name + short commit
-  const cfBranch = process.env.CF_PAGES_BRANCH || 'unknown'
-  const shortCommit = process.env.CF_PAGES_COMMIT_SHA.slice(0, 7)
-  gitTag = `${cfBranch}-${shortCommit}`
-} else if (isCIEnvironment) {
-  // Other CI: fallback to commit hash
+if (isCIEnvironment) {
+  // CI environment: use version from package.json
   try {
-    gitTag = execSync('git rev-parse --short HEAD 2>/dev/null').toString().trim()
-  } catch {
-    gitTag = 'ci-build'
+    const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf-8'))
+    gitTag = `v${packageJson.version}`
+  } catch (error) {
+    // Fallback if package.json read fails
+    if (isCloudflarePages && process.env.CF_PAGES_COMMIT_SHA) {
+      const cfBranch = process.env.CF_PAGES_BRANCH || 'unknown'
+      const shortCommit = process.env.CF_PAGES_COMMIT_SHA.slice(0, 7)
+      gitTag = `${cfBranch}-${shortCommit}`
+    } else {
+      gitTag = 'ci-build'
+    }
   }
 } else {
   // Local development: try to get git tags
