@@ -65,17 +65,27 @@ async function main() {
   await page.waitForSelector('svg', { timeout: 10000 }).catch(() => {})
   await new Promise(resolve => setTimeout(resolve, 2000))
 
-  // Hide "The Venues" title for cleaner OG image
+  // Hide UI elements for cleaner OG image
   await page.evaluate(() => {
+    // Hide title and subtitle
     const title = document.querySelector('h1')
-    if (title) {
-      title.style.display = 'none'
-    }
-    // Also hide subtitle if present
+    if (title) title.style.display = 'none'
+
     const subtitle = document.querySelector('p.text-lg, p.text-xl')
-    if (subtitle) {
-      subtitle.style.display = 'none'
-    }
+    if (subtitle) subtitle.style.display = 'none'
+
+    // Hide buttons
+    const buttons = document.querySelectorAll('button')
+    buttons.forEach(btn => btn.style.display = 'none')
+
+    // Hide footer text (but keep venue node labels in SVG)
+    const footerTexts = document.querySelectorAll('p')
+    footerTexts.forEach(p => {
+      const text = p.textContent?.toLowerCase() || ''
+      if (text.includes('click') || text.includes('drag') || text.includes('explore')) {
+        p.style.display = 'none'
+      }
+    })
   })
 
   // Take screenshot
@@ -115,16 +125,26 @@ async function main() {
         </style>
       </defs>
 
-      <text x="600" y="60" text-anchor="middle" class="title">Morperhaus Concert Archives</text>
-      <text x="600" y="100" text-anchor="middle" class="subtitle">${decades}+ decades. ${stats.concerts} shows. ${stats.artists} artists. ${stats.venues} venues. ${stats.scenes} interactive stories.</text>
+      <text x="600" y="80" text-anchor="middle" class="title">Morperhaus Concert Archives</text>
+      <text x="600" y="120" text-anchor="middle" class="subtitle">${decades}+ decades. ${stats.concerts} shows. ${stats.artists} artists. ${stats.venues} venues. ${stats.scenes} interactive stories.</text>
     </svg>
   `
 
   console.log('\nCreating composite...')
 
-  // Resize screenshot and add text overlay
+  // Resize screenshot with zoom to fill frame and crop out edges
+  // Scale up to 1.4x and crop from slightly lower to eliminate top UI text
   await sharp(screenshotBuffer)
-    .resize(OUTPUT_WIDTH, OUTPUT_HEIGHT, { fit: 'cover', position: 'center' })
+    .resize(Math.round(OUTPUT_WIDTH * 1.4), Math.round(OUTPUT_HEIGHT * 1.4), {
+      fit: 'cover',
+      position: 'center'
+    })
+    .extract({
+      left: Math.round((OUTPUT_WIDTH * 1.4 - OUTPUT_WIDTH) / 2),
+      top: Math.round((OUTPUT_HEIGHT * 1.4 - OUTPUT_HEIGHT) / 2) + 40, // Shift down to crop out top text
+      width: OUTPUT_WIDTH,
+      height: OUTPUT_HEIGHT
+    })
     .composite([
       {
         input: Buffer.from(textOverlay),
