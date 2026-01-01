@@ -1,38 +1,47 @@
 # Morperhaus Concert Archives - Status
 
-**Version:** v0.9.0 (Pre-production)
-**Last Updated:** 2025-12-31
-**Current Phase:** Release Prep
-**Last Commit:** 42cf71a - "docs: Add artist scene implementation tracking document"
+**Version:** v1.0.0 (Production)
+**Last Updated:** 2026-01-01
+**Current Phase:** Post-Release Enhancements
+**Last Commit:** 9b541af - "docs: Add iPad support requirements to mobile optimization spec"
+**Live URL:** https://concerts.morperhaus.org
 
 ---
 
 ## Release Status
 
-### v0.9.0 Pre-production (Current)
+### v1.0.0 Production (Current) 🎉
 - ✅ Feature complete (all 5 scenes implemented)
 - ✅ Desktop experience polished
 - ✅ Documentation cleanup complete
-- ⏳ CI/CD setup (GitHub → Cloudflare Pages)
-- ⏳ Production deployment
+- ✅ CI/CD setup (GitHub → Cloudflare Pages)
+- ✅ Production deployment at concerts.morperhaus.org
+- ✅ Custom domain configured
+- ✅ v1.0.0 GitHub release published
+- ✅ Custom concert ticket favicon implemented
+- ✅ Geography Scene venue marker fixes
+- ✅ API documentation cleanup (removed unused services)
 
-### v1.0.0 Initial Release (Next)
-- Production deployment to Cloudflare Pages
-- Custom domain setup (if applicable)
-- Final QA pass
+### v1.0.0+ Post-Release Improvements (Active)
+- ✅ Boston venue geocoding verification
+- ✅ Individual venue markers in Geography Scene
+- ✅ Claude Code configuration cleanup
+- ✅ Future enhancement planning documentation
 
 ### v1.1.0 Planned
-- Mobile optimization (bottom sheets, touch refinements)
+- Mobile optimization (touch refinements, iPad support)
+- Timeline artist display enhancements
+- Genre scene opener inclusion (under review)
 - Spotify API integration
-- Cross-scene venue navigation
 
 ---
 
 ## Quick Overview
 
-Interactive Jamstack SPA showcasing 175 concerts (1984-2026) through 5 full-viewport scrolling scenes with D3.js visualizations, Leaflet maps, and Framer Motion animations.
+Interactive Jamstack SPA showcasing 175+ concerts (1984-2026) through 5 full-viewport scrolling scenes with D3.js visualizations, Leaflet maps, and Framer Motion animations.
 
-**Live Development:** `npm run dev`
+**Live Production:** https://concerts.morperhaus.org
+**Development:** `npm run dev`
 **Build:** `npm run build`
 **Repository:** https://github.com/mmorper/concerts
 
@@ -320,14 +329,36 @@ All major implementation phases are complete:
   - `useArtistData.ts` - Data processing and sorting
   - `types.ts` - TypeScript interfaces
 
-### 📋 Upcoming Phases
+### ✅ Phase 11: Production Deployment (Complete)
 
-**Phase 11: Deployment**
+**Implementation Date:** January 1, 2026
 
-- Set up Cloudflare Pages
-- Connect GitHub repository
-- Configure build settings
-- Deploy to production
+**Completed Items:**
+
+- ✅ **Cloudflare Pages setup** - Repository connected to GitHub
+- ✅ **Custom domain configuration** - concerts.morperhaus.org live
+- ✅ **Build optimization** - Automatic deployments on push to main
+- ✅ **DNS configuration** - Custom domain with SSL certificate
+- ✅ **v1.0.0 GitHub release** - "🎸 The Grand Opening - Live at concerts.morperhaus.org"
+- ✅ **Production validation** - All 5 scenes functional in production
+
+### 📋 Phase 12: Post-Launch Enhancements (Active)
+
+**Implementation Period:** January 2026+
+
+**Completed Items:**
+
+- ✅ **Custom favicon implementation** - Concert ticket stub design in brand colors
+- ✅ **Geography Scene marker fixes** - Individual venue markers visible when zoomed
+- ✅ **Boston venue verification** - Paradise Rock Club and MGM Music Hall geocoded
+- ✅ **API documentation cleanup** - Removed unused Last.fm and TheAudioDB references
+- ✅ **Claude Code configuration** - Removed .claude/ from git tracking
+
+**Active Planning:**
+
+- 📋 **Future enhancement specifications** - Timeline artist display, genre opener inclusion
+- 📋 **Mobile optimization roadmap** - iPad support requirements added
+- 📋 **Documentation maintenance** - STATUS.md updates for production state
 
 ---
 
@@ -436,9 +467,12 @@ Items deferred from v1.0 for future release:
 
 **Future (v1.1+):**
 
-- [Mobile Optimization](specs/future/mobile-optimization.md) - Bottom sheets, touch refinements
+- [Mobile Optimization](specs/future/mobile-optimization.md) - Touch refinements, iPad support
+- [Timeline Artist Display Enhancement](specs/future/timeline-artist-display-enhancement.md) - Rich artist modals
+- [Genre Scene Opener Inclusion](specs/future/genre-scene-opener-inclusion.md) - Include opener appearances (under review)
 - [Spotify Integration](specs/future/spotify-integration.md) - API integration guide
 - [Venue Cross-Navigation](specs/future/venue-cross-navigation.md) - Map→Venue linking
+- [Visual Testing Suite](specs/future/visual-testing-suite.md) - Automated testing
 
 **Archive:**
 
@@ -578,13 +612,16 @@ For visual reference (actual order):
 
 ---
 
-## Recent Commits
+## Recent Commits (v1.0.0+)
 
-- `20fd916` - feat: Add interactive map exploration mode with click-to-activate UX (Phase 8 - Complete)
-- `ea67089` - fix: Resolve 9:30 Club parsing bug and remove jitter logic
-- `ca6e059` - feat: Implement venue-level geocoding with Google Maps API (Phase 9 - Complete)
-- `69b1ea2` - fix: Resolve DC area coordinate geocoding issue (Phase 7 - Complete)
-- `65688d3` - fix: Add coordinate validation to DC area filter
+- `9b541af` - docs: Add iPad support requirements to mobile optimization spec
+- `607a80f` - docs: Add genre scene opener inclusion enhancement specification  
+- `1b474c6` - feat: Add custom concert ticket stub favicon
+- `78bf3cd` - fix: Show individual venue markers in all Geography Scene regions
+- `f43227c` - chore: Remove .claude directory from git tracking
+- `eb1f772` - docs: Add timeline artist display enhancement specification
+- `28ba2c7` - docs: Remove Last.fm and TheAudioDB references from API setup guide
+- `f081485` - chore: Prepare for v1.0.0 release - clean up and documentation
 
 ---
 
