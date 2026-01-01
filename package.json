@@ -6,7 +6,7 @@
   "description": "Interactive concert history timeline application",
   "scripts": {
     "dev": "vite",
-    "build": "tsx scripts/generate-version.ts && tsc && vite build",
+    "build": "tsx scripts/generate-version.ts && tsc && vite build && npm run og:generate",
     "preview": "vite preview",
     "build-data": "tsx scripts/build-data.ts",
     "fetch-sheet": "tsx scripts/fetch-google-sheet.ts",
@@ -15,7 +15,9 @@
     "generate-mock-spotify": "tsx scripts/generate-mock-spotify-metadata.ts",
     "convert-csv": "tsx scripts/convert-csv-to-json.ts",
     "geocode": "tsx scripts/geocode-venues.ts",
-    "test:sanity": "node test/test-simple.mjs"
+    "test:sanity": "node test/test-simple.mjs",
+    "og:generate": "tsx scripts/generate-og-simple.ts",
+    "og:preview": "tsx scripts/preview-og-crops.ts"
   },
   "dependencies": {
     "@types/d3": "^7.4.3",
