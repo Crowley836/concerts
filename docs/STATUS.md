@@ -364,41 +364,73 @@ All major implementation phases are complete:
 
 ## v1.1 Roadmap
 
-Items deferred from v1.0 for future release:
+Planned enhancements with detailed specifications in [docs/specs/future/](specs/future/):
 
-### Mobile Optimization
+### 1. Mobile Optimization
+**Status:** Planned
+**Spec:** [Mobile Optimization](specs/future/mobile-optimization.md)
 
+**Scope:**
 - Artist scene: Bottom sheet instead of gatefold (<768px viewports)
-- Map scene: Touch interaction refinements
-- General: Device testing, gesture indicators
-- See: [Mobile Optimization Spec](specs/future/mobile-optimization.md)
+- Map scene: Touch interaction refinements, iPad support
+- General: Device testing, gesture indicators, responsive improvements
 
-### Spotify Integration
+### 2. Timeline Artist Display Enhancement
+**Status:** Planned
+**Spec:** [Timeline Artist Display Enhancement](specs/future/timeline-artist-display-enhancement.md)
 
+**Scope:**
+- Rich artist modals on timeline dot clicks
+- Artist photos, biography, genre evolution
+- Full concert history for selected artist
+
+### 3. Genre Scene Opener Inclusion
+**Status:** Under Review
+**Spec:** [Genre Scene Opener Inclusion](specs/future/genre-scene-opener-inclusion.md)
+
+**Scope:**
+- Include opener band appearances in genre chart
+- Adjustable weighting (headliner vs opener)
+- Updated data model to track performance types
+
+### 4. Spotify Integration
+**Status:** Planned
+**Spec:** [Spotify Integration](specs/future/spotify-integration.md)
+
+**Scope:**
 - Album cover images from Spotify API
 - Artist profile links and top tracks
 - 30-second preview playback
-- See: [Spotify Integration Spec](specs/future/spotify-integration.md)
+- OAuth authentication flow
 
-### Cross-Scene Navigation
+### 5. Venue Cross-Navigation
+**Status:** Planned
+**Spec:** [Venue Cross-Navigation](specs/future/venue-cross-navigation.md)
 
+**Scope:**
 - Map popup → Venue scene linking
-- See: [Venue Cross-Navigation Spec](specs/future/venue-cross-navigation.md)
+- Smooth transitions between scenes
+- Venue focus and expansion on arrival
 
-### Design Polish (Optional)
+### 6. Visual Testing Suite
+**Status:** Planned
+**Spec:** [Visual Testing Suite](specs/future/visual-testing-suite.md)
 
+**Scope:**
+- Automated screenshot testing
+- Visual regression detection
+- Scene rendering validation
+
+### Additional Enhancements
+
+**Design Polish (Optional):**
 - Scene background rhythm alignment (current: LIGHT→DARK→DARK→LIGHT→DARK)
 - Consistent spacing per design guide
 
-### Infrastructure & Security
-
-- **Security headers** - Add Cloudflare Pages `_headers` file (nice to have)
-  - Content-Security-Policy for script/style source control
-  - X-Frame-Options to prevent clickjacking
-  - X-Content-Type-Options to prevent MIME sniffing
-  - Referrer-Policy for external link privacy
-  - Permissions-Policy to disable unused browser features
-  - See: [Mozilla Security Headers Guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security)
+**Infrastructure & Security (Nice to Have):**
+- Security headers via Cloudflare Pages `_headers` file
+- Content-Security-Policy, X-Frame-Options, X-Content-Type-Options
+- Referrer-Policy, Permissions-Policy
 
 
 ---
