@@ -74,7 +74,8 @@ function getVenueCoordinates(
   geocodeCache: Map<string, { lat: number; lng: number }>
 ): { lat: number; lng: number } {
   // Try venue-level geocoding first
-  const cacheKey = `${venue}|${city}|${state}`.toLowerCase()
+  // Trim whitespace to handle trailing/leading spaces in data
+  const cacheKey = `${venue.trim()}|${city.trim()}|${state.trim()}`.toLowerCase()
   const cached = geocodeCache.get(cacheKey)
 
   if (cached) {

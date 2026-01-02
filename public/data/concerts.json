@@ -568,8 +568,8 @@
       "dayOfWeek": "Wednesday",
       "decade": "1980s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 34.1794351,
+        "lng": -118.4729999
       }
     },
     {
@@ -842,8 +842,8 @@
       "dayOfWeek": "Saturday",
       "decade": "1990s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 34.1794351,
+        "lng": -118.4729999
       }
     },
     {
@@ -926,8 +926,8 @@
       "dayOfWeek": "Thursday",
       "decade": "1990s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 34.1794351,
+        "lng": -118.4729999
       }
     },
     {
@@ -1143,8 +1143,8 @@
       "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 34.1794351,
+        "lng": -118.4729999
       }
     },
     {
@@ -1332,8 +1332,8 @@
       "dayOfWeek": "Wednesday",
       "decade": "2000s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 34.1794351,
+        "lng": -118.4729999
       }
     },
     {
@@ -2746,8 +2746,8 @@
       "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 38.8981675,
+        "lng": -77.02085679999999
       }
     },
     {
@@ -3469,8 +3469,8 @@
       "dayOfWeek": "Wednesday",
       "decade": "2020s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 29.95453,
+        "lng": -90.06864999999999
       }
     },
     {
@@ -3904,7 +3904,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-02T04:23:17.608Z",
+    "lastUpdated": "2026-01-02T04:31:29.494Z",
     "totalConcerts": 174,
     "dateRange": {
       "earliest": "1984-04-27",
