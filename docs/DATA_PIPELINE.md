@@ -21,6 +21,8 @@ This document describes the data pipeline for fetching, validating, and enrichin
 | `npm run validate-data` | Validate concert data quality | After fetching, before committing |
 | `npm run diff-data` | Compare data changes | See what changed since last backup |
 | `npm run enrich` | Enrich artist metadata from TheAudioDB | Standalone artist enrichment |
+| `npm run export-venues` | Export unique venues to CSV for classification | Manual venue status research |
+| `npm run enrich-venues` | Enrich venue metadata with photos from Google Places API | Venue photo enrichment |
 | `npm run build-data` | Run full pipeline (fetch + validate + enrich) | Complete data refresh |
 | `npm run build-data -- --dry-run` | Preview pipeline without writing files | Test full pipeline safely |
 | `npm run build-data -- --skip-validation` | Skip validation step | Faster builds when data is trusted |
@@ -354,7 +356,233 @@ npm run enrich
 npm run build-data
 ```
 
-### 5. Build Pipeline (`build-data.ts`)
+### 5. Venue Enrichment (`export-venues.ts`, `enrich-venues.ts`)
+
+**What it does:**
+
+- Enriches concert data with venue photos and metadata from Google Places API
+- Handles both active and legacy (closed/demolished) venues
+- Supports manual photo curation for historical venues
+- Caches results to minimize API costs
+
+#### Data Source: Google Places API
+
+- Google Cloud Places API (New)
+- Requires API key (same key used for Geocoding API)
+- API docs: <https://developers.google.com/maps/documentation/places/web-service/overview>
+- Rate limit: 50 requests/second (automatically enforced)
+
+#### Photo Quality and Sources
+
+**Where photos come from:**
+
+- **Google Maps user contributions** - Photos uploaded by visitors (most common source)
+- **Business owners** - Verified venue owners can upload official photos
+- **Google Street View** - Exterior shots from Google's mapping data
+- **Professional photographers** - Some venues have curated collections
+
+**Photo selection:**
+
+- The API returns photos sorted by **popularity and quality** (Google's algorithm)
+- We use the **first photo** returned, which is typically the highest-rated
+- Photos include full attribution metadata (`authorAttributions`) showing photographer name and profile
+- Most photos are **high resolution** (3000-4800px wide) suitable for hero images
+- Photo URLs are generated on-demand from Google's CDN (not stored locally)
+
+**Quality considerations:**
+
+- **Major venues** (Hollywood Bowl, Staples Center) typically have professional-quality photos
+- **Smaller clubs** may have casual user-submitted photos with varying quality
+- **Historical venues** won't have current photos, so manual curation is recommended
+- You can **override any venue** with manual photos if the API result isn't suitable
+
+**Manual override workflow:**
+
+1. Review auto-fetched photos in your app
+2. For venues needing better images, place curated photos in `/public/images/venues/{normalized-name}.jpg`
+3. Re-run `npm run enrich-venues` to detect and use manual photos
+4. Manual photos take precedence over API photos
+
+**Fallback image hierarchy:**
+
+The enrichment script automatically applies fallback images when photos aren't available:
+
+1. **Active venue with API photos** → Use Google Places photo
+2. **Active venue without API photos** → Use `/images/venues/fallback-active.jpg` (generic venue image)
+3. **Active venue with API error** → Use `/images/venues/fallback-active.jpg`
+4. **Legacy venue with manual photo** → Use manual photo
+5. **Legacy venue without manual photo** → Use `/images/venues/fallback.jpg` (closed door image)
+
+**Required fallback images:**
+
+- `/public/images/venues/fallback-active.jpg` - Generic venue/concert hall image (for active venues)
+- `/public/images/venues/fallback.jpg` - "Closed" door image (for legacy venues) ✓ Already created
+
+Create `fallback-active.jpg` with a generic, professional image like:
+
+- Empty concert stage with lighting
+- Modern amphitheater exterior
+- Abstract music/venue artwork
+- Silhouette of crowd at concert
+
+#### Metadata Fields Collected
+
+| Field                | Description                     | Example                          |
+| -------------------- | ------------------------------- | -------------------------------- |
+| `name`               | Venue name                      | "Hollywood Bowl"                 |
+| `normalizedName`     | Key for lookups                 | "hollywoodbowl"                  |
+| `location`           | Coordinates (lat/lng)           | `{lat: 34.1128, lng: -118.3389}` |
+| `status`             | Active/closed/demolished        | "active"                         |
+| `places.placeId`     | Google Place ID                 | "ChIJQ7Kcwsorw4ARjLA4Dpgg-IU"    |
+| `places.photos`      | Photo references                | Array of photo objects           |
+| `places.rating`      | User rating (0-5)               | 4.7                              |
+| `places.websiteUri`  | Official website                | `https://hollywoodbowl.com`      |
+| `photoUrls`          | Generated photo URLs            | thumbnail/medium/large           |
+| `concerts`           | Array of concerts at venue      | `[{id, date, headliner}]`        |
+| `stats`              | Venue statistics                | totalConcerts, uniqueArtists     |
+| `photoCacheExpiry`   | Cache expiration (90 days)      | ISO timestamp                    |
+
+#### Workflow: Venue Photo Integration
+
+**Step 1: Export Venues for Classification**
+
+```bash
+npm run export-venues
+```
+
+This creates `data/venues-to-classify.csv` with all unique venues:
+
+```csv
+venue,city,state,status,closed_date,notes
+Irvine Meadows,Irvine,California,,,
+Hollywood Bowl,Los Angeles,California,,,
+```
+
+**Step 2: Manual Research (Between Sessions)**
+
+Research each venue's current status:
+- **Active**: Still operating (will fetch from Google Places API)
+- **Closed**: No longer operating but building may still exist
+- **Demolished**: Building no longer exists
+- **Renamed**: Operating under a different name
+
+Save research results as `data/venue-status.csv`:
+
+```csv
+venue,city,state,status,closed_date,notes
+Irvine Meadows,Irvine,California,demolished,2016-09-25,Demolished for residential development
+Hollywood Bowl,Los Angeles,California,active,,Still operating
+```
+
+**Step 3: Run Venue Enrichment**
+
+```bash
+npm run enrich-venues
+```
+
+This script:
+1. Loads `concerts.json` and `venue-status.csv`
+2. For **active** venues:
+   - Fetches Place ID from Google Places Text Search API
+   - Fetches place details (photos, rating, website)
+   - Generates photo URLs (thumbnail: 400px, medium: 800px, large: 1200px)
+   - Sets 90-day cache expiry
+3. For **legacy** venues (closed/demolished):
+   - Sets `places = null`
+   - Checks for manual photos in `/public/images/venues/`
+   - Sets `photoCacheExpiry = null` (manual photos don't expire)
+4. Saves output to `public/data/venues-metadata.json`
+
+#### Caching Strategy
+
+**Cache file:** `public/data/venue-photos-cache.json`
+
+- **Active venues**: Cached for 90 days
+- **Legacy venues**: Cached indefinitely (no need to re-check Places API)
+- **Failed lookups**: Cached to avoid repeated failures
+- **Force refresh**: `npm run enrich-venues -- --force` (not yet implemented)
+
+#### Manual Photo Curation
+
+For legacy venues without Google Places data:
+
+1. **Find historical photos:**
+   - Wikipedia Commons
+   - Internet Archive
+   - Local newspaper archives
+   - Concert posters/flyers (fair use)
+
+2. **Photo requirements:**
+   - Minimum 800px wide (1200px+ recommended)
+   - JPEG format (optimized for web)
+   - Attribution/source documented
+
+3. **Save photos:**
+   - Directory: `/public/images/venues/`
+   - Naming: `{normalizedName}-{number}.jpg`
+   - Example: `irvinemeadows-1.jpg`
+
+4. **Re-run enrichment:**
+   ```bash
+   npm run enrich-venues
+   ```
+   The script will automatically detect and include manual photos.
+
+#### Cost Analysis
+
+- **Pricing**:
+  - Text Search: $32.00 per 1,000 requests
+  - Place Details: $17.00 per 1,000 requests
+  - Place Photos: $7.00 per 1,000 requests
+- **Free Tier**: $200/month credit
+- **Your Usage**:
+  - Initial run: ~50 active venues × ($0.032 + $0.017 + $0.007) = **$2.80**
+  - Photo refresh (90-day cache): 50 venues × 4/year = **$11.20/year**
+  - New venues: ~2-5/year = **$0.20/year**
+  - **Annual estimate: ~$15/year**
+
+**Expected cost: $0.00** - All usage stays well within the $200/month free tier.
+
+#### Example Output
+
+```
+=== Venue Enrichment Script ===
+
+Loading data files...
+✓ Loaded 42 venue statuses from ../data/venue-status.csv
+Found 174 concerts
+
+Found 77 unique venues
+
+Processing: Irvine Meadows (Irvine, California)
+  Status: demolished
+  Checking for manual photos...
+  ✓ Found 1 manual photo(s)
+
+Processing: Hollywood Bowl (Los Angeles, California)
+  Status: active
+  Fetching from Google Places API...
+  ✓ Found 3 photo(s)
+
+=== Enrichment Complete ===
+✓ Enriched 77 venues
+  - 48 active venues
+  - 29 legacy venues
+  - 62 venues with photos
+
+Output: public/data/venues-metadata.json
+Cache: public/data/venue-photos-cache.json
+```
+
+#### Current Usage
+
+- Metadata is collected but **not actively displayed** in v1.3.2
+- Data is prepared for future features:
+  - Geography Scene map popups (v1.3.2+)
+  - Venue Network detail modals (v1.4.0+)
+  - Venue filtering and search (v1.4.0+)
+
+### 6. Build Pipeline (`build-data.ts`)
 
 **What it does:**
 - Orchestrates full pipeline
@@ -504,6 +732,8 @@ Google Maps Geocoding API allows 50 requests/second. The geocoding script enforc
 - `public/data/concerts.json` - Processed concert data + metadata
 - `public/data/geocode-cache.json` - Cached venue coordinates
 - `public/data/artists-metadata.json` - Artist metadata from TheAudioDB (photos, bios, genres)
+- `public/data/venues-metadata.json` - Venue metadata with photos (v1.3.2+)
+- `public/data/venue-photos-cache.json` - Cached Google Places API responses (v1.3.2+)
 
 ### Temporary (Not Committed)
 - `public/data/concerts.json.backup` - Created manually for diff comparison

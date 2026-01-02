@@ -4,9 +4,10 @@ This document explains how to configure the various APIs needed for the concert 
 
 ## Overview
 
-The data pipeline uses two services:
+The data pipeline uses three Google Cloud services:
 1. **Google Sheets API** - To fetch concert data from your spreadsheet
 2. **Google Maps Geocoding API** - To get accurate venue coordinates for the map
+3. **Google Places API (New)** - To fetch venue photos and metadata (v1.3.2+)
 
 ## Google Sheets API Setup
 
@@ -195,6 +196,88 @@ npm run build-data
 - **Google Maps Geocoding API**: 50 requests/second (enforced by rate limiter with 20ms delays)
 
 For implementation details on how caching minimizes API calls, see [DATA_PIPELINE.md - Geocoding Strategy](DATA_PIPELINE.md#geocoding-strategy).
+
+## Google Places API Setup (v1.3.2+)
+
+The Google Places API (New) is used to fetch venue photos, ratings, and metadata for displaying in the Geography Scene map popups and venue detail modals.
+
+### 1. Enable the API
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+2. Use the same project you created for Google Sheets/Geocoding
+3. Go to "APIs & Services" → "Library"
+4. Search for "Places API (New)"
+5. Click "Enable"
+
+**Note**: Make sure you enable **"Places API (New)"**, not the legacy "Places API".
+
+### 2. Use Existing API Key
+
+The Places API uses the **same API key** as the Geocoding API.
+
+1. Go to "APIs & Services" → "Credentials"
+2. Find your existing API key (the one used for Geocoding)
+3. Click "Edit API key"
+4. Under "API restrictions":
+   - Click "Select APIs" dropdown
+   - **Add** "Places API (New)" to the list (keep Geocoding API selected)
+   - Click "OK"
+5. Click "Save"
+
+No new environment variable needed - the existing `GOOGLE_MAPS_API_KEY` will work for both Geocoding and Places API.
+
+### 3. Verify Billing is Enabled
+
+Places API requires billing to be enabled (same billing account as Geocoding API).
+
+1. Go to "Billing" in Google Cloud Console
+2. Verify billing is linked to your project
+3. You're automatically enrolled in the free tier ($200/month credit)
+
+### 4. Run Venue Enrichment
+
+Once the API is enabled, you can enrich your venues with photos:
+
+```bash
+# Export venues for classification (one-time setup)
+npm run export-venues
+
+# Manually classify venues in data/venue-status.csv
+# (active/closed/demolished/renamed)
+
+# Run enrichment to fetch photos from Places API
+npm run enrich-venues
+```
+
+### 5. Cost Estimate
+
+Pricing:
+
+- **Text Search**: $32.00 per 1,000 requests
+- **Place Details**: $17.00 per 1,000 requests
+- **Place Photos**: $7.00 per 1,000 requests
+
+Your Usage:
+
+- Initial run: ~50 active venues = **$2.80**
+- Photo refresh (90-day cache): 4×/year = **$11.20/year**
+- New venues: ~5/year = **$0.20/year**
+
+**Annual estimate: ~$15/year** (well within $200/month free tier)
+
+### 6. Photo Attribution and Terms
+
+When using photos from Google Places API, you must comply with Google's terms:
+
+- **Attribution is automatic** - Photos include `authorAttributions` metadata with photographer name/profile
+- **Display attribution in UI** - When showing venue photos, display the photographer's name
+- **Use within Google's ToS** - Photos are licensed for use via Google Maps Platform
+- **No downloads/storage** - Photos are served via CDN URLs (not stored locally)
+- **Flag inappropriate content** - Each photo includes a `flagContentUri` for reporting issues
+
+For venues with sensitive copyright concerns or low-quality photos, use manual photo curation instead.
+
+For detailed implementation and caching strategy, see [DATA_PIPELINE.md - Venue Enrichment](DATA_PIPELINE.md#5-venue-enrichment-export-venuests-enrich-venuests).
 
 ## Best Practices
 
