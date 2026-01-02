@@ -1,9 +1,9 @@
 # Morperhaus Concert Archives - Status
 
-**Version:** v1.2.2 (Ready for Release)
+**Version:** v1.2.3 (Ready for Release)
 **Last Updated:** 2026-01-02
-**Current Phase:** Critical Bug Fixes and Documentation Updates
-**Last Commit:** TBD - "chore: Release v1.2.2 with geocoding fixes"
+**Current Phase:** Geocoding Robustness Improvements
+**Last Commit:** TBD - "chore: Release v1.2.3 with whitespace handling"
 **Live URL:** https://concerts.morperhaus.org
 
 ---
@@ -49,7 +49,7 @@
 - ✅ Updated documentation with comprehensive safety features section
 - ✅ Backup files excluded from git (`.gitignore` updated)
 
-### v1.2.2 Critical Bug Fixes (Current) 🎉
+### v1.2.2 Critical Bug Fixes 🎉
 
 - ✅ **CRITICAL FIX:** Restored venue-specific geocoding from cache
   - Fixed Geography scene showing all concerts in Denver, Colorado
@@ -72,6 +72,26 @@
 - `docs/DATA_PIPELINE.md` - Added TheAudioDB enrichment section
 - `.gitignore` - Updated backup exclusion patterns
 - `public/data/concerts.json` - Regenerated with correct coordinates
+
+### v1.2.3 Geocoding Robustness (Current) 🎉
+
+- ✅ **Whitespace Handling:** Made geocode cache lookup robust to whitespace
+  - Fixed 21st Amendment and Universal Amphitheater showing Denver coordinates
+  - Added `.trim()` to venue, city, state before building cache key
+  - Handles trailing/leading spaces in Google Sheet data
+  - 6 concerts now have correct venue-specific coordinates
+
+**Root Cause:** Venue names with trailing spaces in Google Sheet (e.g., `"Universal Amphitheater  "`) caused cache key mismatches because keys weren't trimmed before lookup.
+
+**Impact:**
+
+- 21st Amendment: New Orleans (29.95, -90.07) ✅
+- Universal Amphitheater: Los Angeles (34.18, -118.47) ✅
+
+**Files Modified:**
+
+- `scripts/fetch-google-sheet.ts` - Added whitespace trimming to cache key generation (line 77)
+- `public/data/concerts.json` - Regenerated with corrected coordinates
 
 ### v1.3.0+ Future
 
