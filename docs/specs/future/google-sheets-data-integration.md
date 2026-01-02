@@ -1,9 +1,9 @@
 # Google Sheets Data Integration Spec
 
 > **Location**: `docs/specs/future/google-sheets-data-integration.md`
-> **Status**: Phase 1 Complete (Core + Enhancements), Phase 2 Planned for v1.2.0
-> **Target Version**: v1.2.0
-> **Last Updated**: 2026-01-01
+> **Status**: Phase 1 Complete (Core + Enhancements + v1.2.1-v1.2.3), Phase 2 Planned for v1.3+
+> **Target Version**: v1.2.0-v1.2.3 (Phase 1), v1.3+ (Phase 2)
+> **Last Updated**: 2026-01-02
 > **Implementation**: [google-sheets-phase1-implementation.md](../implemented/google-sheets-phase1-implementation.md)
 > **User Guide**: [DATA_PIPELINE.md](../../DATA_PIPELINE.md)
 
@@ -90,22 +90,48 @@ This specification defines the complete data integration strategy for the Morper
 
 ## Phase 1: Build-Time Integration (Current)
 
-### Status: ✅ Complete (Core + All Enhancements)
+### Status: ✅ Complete (Core + All Enhancements + v1.2.1-v1.2.3 Improvements)
 
-**Implementation Date:** 2026-01-01
+**Implementation Date:** 2026-01-01 (Core), 2026-01-02 (Improvements)
 **Details:** See [google-sheets-phase1-implementation.md](../implemented/google-sheets-phase1-implementation.md)
 
-Phase 1 uses manual script execution to fetch data from Google Sheets during local builds or CI/CD runs. All Phase 1 Enhancements (1.1, 1.2, 1.3) have been implemented and tested.
+Phase 1 uses manual script execution to fetch data from Google Sheets during local builds or CI/CD runs. All Phase 1 Enhancements (1.1, 1.2, 1.3) have been implemented and tested. Additional improvements in v1.2.1-v1.2.3 added automatic backups, geocode cache integration, and data quality fixes.
 
 ### Components
 
 | Component | File | Purpose |
 |-----------|------|---------|
 | **Google Sheets Client** | `scripts/utils/google-sheets-client.ts` | OAuth 2.0 client wrapper for Google Sheets API |
-| **Fetch Script** | `scripts/fetch-google-sheet.ts` | Main script to fetch and process sheet data |
-| **Build Pipeline** | `scripts/build-data.ts` | Orchestrates fetch → enrich → output |
+| **Fetch Script** | `scripts/fetch-google-sheet.ts` | Main script to fetch and process sheet data with geocode cache integration |
+| **Build Pipeline** | `scripts/build-data.ts` | Orchestrates fetch → validate → enrich with dry-run support |
+| **Backup Utility** | `scripts/utils/backup.ts` | Automatic timestamped backups with retention management (v1.2.1) |
+| **Validation Script** | `scripts/validate-concerts.ts` | Pre-commit data quality validation (Enhancement 1.1) |
+| **Diff Script** | `scripts/diff-concerts.ts` | Change comparison between data fetches (Enhancement 1.3) |
 | **Geocoding Service** | `scripts/services/geocoding.ts` | Venue-level coordinate lookup (Google Maps API) |
 | **Environment Config** | `.env` | API credentials (not committed to git) |
+
+### v1.2.1-v1.2.3 Improvements
+
+#### v1.2.1: Safety Features
+
+- Automatic timestamped backups before all file writes
+- Backup retention management (keeps last 10, automatic cleanup)
+- Dry-run mode for safe testing (`--dry-run` flag)
+- Reusable backup utility module
+
+#### v1.2.2: Critical Geocoding Fix
+
+- Integrated geocode cache (77 venue locations) into fetch pipeline
+- Fixed Geography scene showing all concerts in Denver, Colorado
+- All 174 concerts now have correct venue-specific coordinates
+- Added `loadGeocodeCache()` and `getVenueCoordinates()` functions
+
+#### v1.2.3: Geocoding Robustness
+
+- Made geocode cache lookup robust to whitespace variations
+- Fixed 21st Amendment and Universal Amphitheater coordinate issues
+- Added `.trim()` to venue, city, state before building cache keys
+- Handles trailing/leading spaces in Google Sheet data
 
 ### Current Workflow
 
