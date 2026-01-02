@@ -1,9 +1,9 @@
 # Morperhaus Concert Archives - Status
 
-**Version:** v1.2.1 (Ready for Release)
-**Last Updated:** 2026-01-01
-**Current Phase:** Data Pipeline Safety Features Complete
-**Last Commit:** TBD - "feat: Add automatic backups and dry-run mode (v1.2.1)"
+**Version:** v1.2.2 (Ready for Release)
+**Last Updated:** 2026-01-02
+**Current Phase:** Critical Bug Fixes and Documentation Updates
+**Last Commit:** TBD - "chore: Release v1.2.2 with geocoding fixes"
 **Live URL:** https://concerts.morperhaus.org
 
 ---
@@ -40,7 +40,7 @@
 - ✅ Implementation notes ([specs/implemented/google-sheets-phase1-implementation.md](specs/implemented/google-sheets-phase1-implementation.md))
 - 📝 Phase 2 (webhook automation) out of scope for v1.2.0, spec'd for future
 
-### v1.2.1 Safety Features (Current) 🎉
+### v1.2.1 Safety Features 🎉
 
 - ✅ Automatic timestamped backups before all file writes
 - ✅ Backup retention management (keeps last 10, automatic cleanup)
@@ -48,6 +48,30 @@
 - ✅ Reusable backup utility module (`scripts/utils/backup.ts`)
 - ✅ Updated documentation with comprehensive safety features section
 - ✅ Backup files excluded from git (`.gitignore` updated)
+
+### v1.2.2 Critical Bug Fixes (Current) 🎉
+
+- ✅ **CRITICAL FIX:** Restored venue-specific geocoding from cache
+  - Fixed Geography scene showing all concerts in Denver, Colorado
+  - Integrated geocode cache (77 venue locations) into fetch pipeline
+  - All 174 concerts now have correct venue-specific coordinates
+- ✅ **TheAudioDB Documentation:** Comprehensive artist enrichment documentation
+  - Documented metadata fields (name, image, bio, genres, formed, website)
+  - Added caching strategy (30-day retention) and rate limiting details
+  - Explained why some artists fail to enrich
+- ✅ **Gitignore Fix:** Updated backup exclusion pattern
+  - Fixed pattern to exclude timestamped backups (`*.backup.*`)
+  - Prevents backup files from being committed to git
+- ✅ **Data Quality:** Fixed duplicate venue entries
+  - Corrected Fillmore Silver Spring appearing as two locations on map
+  - Fixed 2 concerts with wrong city/state in Google Sheet
+
+**Files Modified:**
+
+- `scripts/fetch-google-sheet.ts` - Added geocode cache integration
+- `docs/DATA_PIPELINE.md` - Added TheAudioDB enrichment section
+- `.gitignore` - Updated backup exclusion patterns
+- `public/data/concerts.json` - Regenerated with correct coordinates
 
 ### v1.3.0+ Future
 
