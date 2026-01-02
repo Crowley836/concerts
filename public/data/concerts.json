@@ -11,11 +11,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "https://www.concertarchives.org/concerts/adam-ant-4b4a77b7-b951-4fe6-99ad-d2017d67b5b4",
       "year": 1984,
       "month": 4,
       "day": 27,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -38,7 +37,7 @@
       "year": 1984,
       "month": 5,
       "day": 12,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -56,11 +55,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "https://www.concertarchives.org/concerts/echo-the-bunnymen-81f113b0-3f36-4787-afa9-5b9cbd675bc8",
       "year": 1984,
       "month": 9,
       "day": 8,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -81,11 +79,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "http://archives.depechemode.com/past_tours/somegreatrewardtour/dates.html",
       "year": 1985,
       "month": 3,
       "day": 31,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -106,7 +103,7 @@
       "year": 1985,
       "month": 5,
       "day": 17,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1980s",
       "location": {
         "lat": 33.8443038,
@@ -124,11 +121,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "https://www.setlist.fm/setlist/howard-jones/1985/irvine-meadows-amphitheatre-irvine-ca-5bdc63c4.html",
       "year": 1985,
       "month": 6,
       "day": 4,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -146,39 +142,14 @@
       "city": "Costa Mesa",
       "state": "California",
       "cityState": "Costa Mesa, California",
-      "reference": "https://www.concertarchives.org/concerts/tears-for-fears-046ab552-e762-4a60-a0e6-110790ce281e",
       "year": 1985,
       "month": 7,
       "day": 10,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "1980s",
       "location": {
         "lat": 33.6658588,
         "lng": -117.9048811
-      }
-    },
-    {
-      "id": "concert-8",
-      "date": "1985-08-30",
-      "headliner": "Wham!",
-      "headlinerNormalized": "wham-",
-      "genre": "Pop",
-      "openers": [
-        "Chaka Kahn",
-        "Katrina And the Waves"
-      ],
-      "venue": "Hollywood Park Racetrack",
-      "city": "Inglewood",
-      "state": "California",
-      "cityState": "Inglewood, California",
-      "year": 1985,
-      "month": 8,
-      "day": 30,
-      "dayOfWeek": "Thursday",
-      "decade": "1980s",
-      "location": {
-        "lat": 33.9535523,
-        "lng": -118.3373253
       }
     },
     {
@@ -192,15 +163,38 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "http://www.neworderonline.com/Live/Concert.aspx?ConcertID=190",
       "year": 1985,
       "month": 8,
       "day": 23,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
         "lng": -117.7293939
+      }
+    },
+    {
+      "id": "concert-8",
+      "date": "1985-08-30",
+      "headliner": "Wham!",
+      "headlinerNormalized": "wham",
+      "genre": "Pop",
+      "openers": [
+        "Chaka Kahn",
+        "Katrina And the Waves"
+      ],
+      "venue": "Hollywood Park Racetrack",
+      "city": "Inglewood",
+      "state": "California",
+      "cityState": "Inglewood, California",
+      "year": 1985,
+      "month": 8,
+      "day": 30,
+      "dayOfWeek": "Friday",
+      "decade": "1980s",
+      "location": {
+        "lat": 33.9535523,
+        "lng": -118.3373253
       }
     },
     {
@@ -214,11 +208,10 @@
       "city": "Los Angeles",
       "state": "California",
       "cityState": "Los Angeles, California",
-      "reference": "https://www.concertarchives.org/concerts/bruce-springsteen-at-los-angeles-memorial-coliseum-september-29-1985",
       "year": 1985,
       "month": 9,
       "day": 29,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1980s",
       "location": {
         "lat": 34.0136647,
@@ -238,11 +231,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "Concert Archive",
       "year": 1985,
       "month": 11,
       "day": 2,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -260,11 +252,10 @@
       "city": "Los Angeles",
       "state": "California",
       "cityState": "Los Angeles, California",
-      "reference": "https://www.setlist.fm/setlist/the-alarm/1986/ucla-los-angeles-ca-3dda527.html",
       "year": 1986,
       "month": 4,
       "day": 12,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 34.0699182,
@@ -282,11 +273,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "https://www.setlist.fm/setlist/blancmange/1986/crawford-hall-irvine-ca-bfc0dfa.html",
       "year": 1986,
       "month": 4,
       "day": 15,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "1980s",
       "location": {
         "lat": 33.6480389,
@@ -307,7 +297,7 @@
       "year": 1986,
       "month": 7,
       "day": 16,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "1980s",
       "location": {
         "lat": 33.6658588,
@@ -325,11 +315,10 @@
       "city": "Costa Mesa",
       "state": "California",
       "cityState": "Costa Mesa, California",
-      "reference": "https://www.setlist.fm/setlist/art-of-noise/1986/pacific-amphitheatre-costa-mesa-ca-bff113e.html",
       "year": 1986,
       "month": 7,
       "day": 31,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "1980s",
       "location": {
         "lat": 33.6658588,
@@ -349,36 +338,14 @@
       "city": "Costa Mesa",
       "state": "California",
       "cityState": "Costa Mesa, California",
-      "reference": "https://www.setlist.fm/setlist/rundmc/1987/pacific-amphitheatre-costa-mesa-ca-2be3cc0a.html",
       "year": 1987,
       "month": 6,
       "day": 20,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 33.6658588,
         "lng": -117.9048811
-      }
-    },
-    {
-      "id": "concert-17",
-      "date": "1987-07-27",
-      "headliner": "Duran Duran",
-      "headlinerNormalized": "duran-duran",
-      "genre": "New Wave",
-      "openers": [],
-      "venue": "Irvine Meadows",
-      "city": "Irvine",
-      "state": "California",
-      "cityState": "Irvine, California",
-      "year": 1987,
-      "month": 7,
-      "day": 27,
-      "dayOfWeek": "Sunday",
-      "decade": "1980s",
-      "location": {
-        "lat": 33.6577553,
-        "lng": -117.7293939
       }
     },
     {
@@ -398,15 +365,35 @@
       "city": "Tijuana",
       "state": "Mexico",
       "cityState": "Tijuana, Mexico",
-      "reference": "MexFest",
       "year": 1987,
       "month": 6,
       "day": 30,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "1980s",
       "location": {
         "lat": 32.506736,
         "lng": -116.9955561
+      }
+    },
+    {
+      "id": "concert-17",
+      "date": "1987-07-27",
+      "headliner": "Duran Duran",
+      "headlinerNormalized": "duran-duran",
+      "genre": "New Wave",
+      "openers": [],
+      "venue": "Irvine Meadows",
+      "city": "Irvine",
+      "state": "California",
+      "cityState": "Irvine, California",
+      "year": 1987,
+      "month": 7,
+      "day": 27,
+      "dayOfWeek": "Monday",
+      "decade": "1980s",
+      "location": {
+        "lat": 33.6577553,
+        "lng": -117.7293939
       }
     },
     {
@@ -425,7 +412,7 @@
       "year": 1988,
       "month": 3,
       "day": 4,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1980s",
       "location": {
         "lat": 33.8120918,
@@ -450,7 +437,7 @@
       "year": 1988,
       "month": 6,
       "day": 18,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 34.1613332,
@@ -471,7 +458,7 @@
       "year": 1988,
       "month": 9,
       "day": 9,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1980s",
       "location": {
         "lat": 33.6658588,
@@ -492,7 +479,7 @@
       "year": 1988,
       "month": 9,
       "day": 19,
-      "dayOfWeek": "Sunday",
+      "dayOfWeek": "Monday",
       "decade": "1980s",
       "location": {
         "lat": 33.42093,
@@ -513,7 +500,7 @@
       "year": 1988,
       "month": 10,
       "day": 7,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -534,7 +521,7 @@
       "year": 1988,
       "month": 10,
       "day": 15,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 33.469444,
@@ -555,7 +542,7 @@
       "year": 1988,
       "month": 10,
       "day": 29,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1980s",
       "location": {
         "lat": 33.6577553,
@@ -571,19 +558,18 @@
       "openers": [
         "Midge Ure"
       ],
-      "venue": "Universal Amphitheater",
+      "venue": "Universal Amphitheater ",
       "city": "Los Angeles",
       "state": "California",
       "cityState": "Los Angeles, California",
-      "reference": "https://www.setlist.fm/setlist/midge-ure/1989/universal-amphitheatre-universal-city-ca-63ea32ff.html",
       "year": 1989,
       "month": 7,
       "day": 5,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "1980s",
       "location": {
-        "lat": 34.1794351,
-        "lng": -118.4729999
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -600,7 +586,7 @@
       "year": 1990,
       "month": 3,
       "day": 10,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1990s",
       "location": {
         "lat": 33.7700504,
@@ -618,36 +604,14 @@
       "city": "Inglewood",
       "state": "California",
       "cityState": "Inglewood, California",
-      "reference": "https://www.setlist.fm/setlist/erasure/1990/great-western-forum-inglewood-ca-13c21d6d.html",
       "year": 1990,
       "month": 3,
       "day": 11,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1990s",
       "location": {
         "lat": 33.9580853,
         "lng": -118.3420621
-      }
-    },
-    {
-      "id": "concert-29",
-      "date": "1990-09-13",
-      "headliner": "Social Distortion",
-      "headlinerNormalized": "social-distortion",
-      "genre": "Punk",
-      "openers": [],
-      "venue": "Cal State Fullerton",
-      "city": "Fullerton",
-      "state": "California",
-      "cityState": "Fullerton, California",
-      "year": 1990,
-      "month": 9,
-      "day": 13,
-      "dayOfWeek": "Wednesday",
-      "decade": "1990s",
-      "location": {
-        "lat": 33.8823476,
-        "lng": -117.8851033
       }
     },
     {
@@ -661,11 +625,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "https://www.setlist.fm/setlist/erasure/1990/irvine-meadows-amphitheatre-irvine-ca-23c21c7b.html",
       "year": 1990,
       "month": 6,
       "day": 15,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1990s",
       "location": {
         "lat": 33.6577553,
@@ -686,7 +649,7 @@
       "year": 1990,
       "month": 8,
       "day": 5,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1990s",
       "location": {
         "lat": 34.073851,
@@ -709,11 +672,56 @@
       "year": 1990,
       "month": 8,
       "day": 9,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "1990s",
       "location": {
         "lat": 34.098496,
         "lng": -118.3242781
+      }
+    },
+    {
+      "id": "concert-29",
+      "date": "1990-09-13",
+      "headliner": "Social Distortion",
+      "headlinerNormalized": "social-distortion",
+      "genre": "Punk",
+      "openers": [],
+      "venue": "Cal State Fullerton",
+      "city": "Fullerton",
+      "state": "California",
+      "cityState": "Fullerton, California",
+      "year": 1990,
+      "month": 9,
+      "day": 13,
+      "dayOfWeek": "Thursday",
+      "decade": "1990s",
+      "location": {
+        "lat": 33.8823476,
+        "lng": -117.8851033
+      }
+    },
+    {
+      "id": "concert-35",
+      "date": "1991-02-23",
+      "headliner": "Bel Biv DeVoe",
+      "headlinerNormalized": "bel-biv-devoe",
+      "genre": "R&B",
+      "openers": [
+        "Johnny Gill",
+        "Keith Sweat"
+      ],
+      "venue": "Kia Forum",
+      "city": "Inglewood",
+      "state": "California",
+      "cityState": "Inglewood, California",
+      "year": 1991,
+      "month": 2,
+      "day": 23,
+      "dayOfWeek": "Saturday",
+      "decade": "1990s",
+      "location": {
+        "lat": 33.9580853,
+        "lng": -118.3420621
       }
     },
     {
@@ -737,7 +745,7 @@
       "year": 1991,
       "month": 6,
       "day": 2,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1990s",
       "location": {
         "lat": 33.6658588,
@@ -758,35 +766,11 @@
       "year": 1991,
       "month": 6,
       "day": 21,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1990s",
       "location": {
         "lat": 33.6577553,
         "lng": -117.7293939
-      }
-    },
-    {
-      "id": "concert-35",
-      "date": "1991-02-23",
-      "headliner": "Bel Biv DeVoe",
-      "headlinerNormalized": "bel-biv-devoe",
-      "genre": "R&B",
-      "openers": [
-        "Johnny Gill",
-        "Keith Sweat"
-      ],
-      "venue": "Kia Forum",
-      "city": "Inglewood",
-      "state": "California",
-      "cityState": "Inglewood, California",
-      "year": 1991,
-      "month": 2,
-      "day": 23,
-      "dayOfWeek": "Friday",
-      "decade": "1990s",
-      "location": {
-        "lat": 33.9580853,
-        "lng": -118.3420621
       }
     },
     {
@@ -803,11 +787,10 @@
       "city": "Long Beach",
       "state": "California",
       "cityState": "Long Beach, California",
-      "reference": "https://www.concertarchives.org/concerts/burning-spear-eek-a-mouse--4923954",
       "year": 1991,
       "month": 9,
       "day": 8,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1990s",
       "location": {
         "lat": 33.7648004,
@@ -827,15 +810,40 @@
       "city": "Costa Mesa",
       "state": "California",
       "cityState": "Costa Mesa, California",
-      "reference": "https://www.concertarchives.org/concerts/sting-033dc68b-fc69-437e-9fb0-572312d814a3",
       "year": 1991,
       "month": 10,
       "day": 4,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1990s",
       "location": {
         "lat": 33.6658588,
         "lng": -117.9048811
+      }
+    },
+    {
+      "id": "concert-39",
+      "date": "1991-12-21",
+      "headliner": "Siouxsie and the Banshees",
+      "headlinerNormalized": "siouxsie-and-the-banshees",
+      "genre": "Post Punk",
+      "openers": [
+        "Ian McCulloch",
+        "School of Fish",
+        "The Smithereens",
+        "The Wonderstuff"
+      ],
+      "venue": "Universal Amphitheater ",
+      "city": "Los Angeles",
+      "state": "California",
+      "cityState": "Los Angeles, California",
+      "year": 1991,
+      "month": 12,
+      "day": 21,
+      "dayOfWeek": "Saturday",
+      "decade": "1990s",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -844,49 +852,19 @@
       "headliner": "The Smithereens",
       "headlinerNormalized": "the-smithereens",
       "genre": "Pop Rock",
-      "openers": [
-        "Tom Cochrane"
-      ],
+      "openers": [],
       "venue": "The Celebrity Theatre",
       "city": "Anaheim",
       "state": "California",
       "cityState": "Anaheim, California",
-      "reference": "Email from Cindy (band)",
       "year": 1992,
       "month": 6,
       "day": 4,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "1990s",
       "location": {
         "lat": 33.8365932,
         "lng": -117.9143012
-      }
-    },
-    {
-      "id": "concert-39",
-      "date": "1991-12-21",
-      "headliner": "Siouxsie and Banshees",
-      "headlinerNormalized": "siouxsie-and-banshees",
-      "genre": "Post Punk",
-      "openers": [
-        "Ian McCulloch",
-        "School of Fish",
-        "The Smithereens",
-        "The Wonderstuff"
-      ],
-      "venue": "Universal Amphitheater",
-      "city": "Los Angeles",
-      "state": "California",
-      "cityState": "Los Angeles, California",
-      "reference": "https://www.setlist.fm/search?query=KROQ+Almost+Acoustic+Christmas+1991",
-      "year": 1991,
-      "month": 12,
-      "day": 21,
-      "dayOfWeek": "Friday",
-      "decade": "1990s",
-      "location": {
-        "lat": 34.1794351,
-        "lng": -118.4729999
       }
     },
     {
@@ -900,11 +878,10 @@
       "city": "San Juan Capistrano",
       "state": "California",
       "cityState": "San Juan Capistrano, California",
-      "reference": "https://www.concertarchives.org/concerts/adam-ant-4b74ed36-29ab-4759-9fe7-39cea7e19871",
       "year": 1993,
       "month": 2,
       "day": 26,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "1990s",
       "location": {
         "lat": 33.4821104,
@@ -925,7 +902,7 @@
       "year": 1993,
       "month": 9,
       "day": 18,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1990s",
       "location": {
         "lat": 33.8589817,
@@ -939,19 +916,18 @@
       "headlinerNormalized": "tears-for-fears",
       "genre": "New Wave",
       "openers": [],
-      "venue": "Universal Amphitheater",
+      "venue": "Universal Amphitheater ",
       "city": "Los Angeles",
       "state": "California",
       "cityState": "Los Angeles, California",
-      "reference": "https://www.setlist.fm/setlist/tears-for-fears/1993/universal-amphitheatre-universal-city-ca-23dd347b.html",
       "year": 1993,
       "month": 11,
       "day": 4,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "1990s",
       "location": {
-        "lat": 34.1794351,
-        "lng": -118.4729999
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -965,11 +941,10 @@
       "city": "Hollywood",
       "state": "California",
       "cityState": "Hollywood, California",
-      "reference": "https://www.concertarchives.org/concerts/violent-femmes-deb0d821-f150-4a40-a727-d89ebc259086",
       "year": 1995,
       "month": 2,
       "day": 4,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "1990s",
       "location": {
         "lat": 34.098496,
@@ -979,48 +954,22 @@
     {
       "id": "concert-44",
       "date": "1995-03-26",
-      "headliner": "Brian Setzer Orchestra",
-      "headlinerNormalized": "brian-setzer-orchestra",
+      "headliner": "The Brian Setzer Orchestra",
+      "headlinerNormalized": "the-brian-setzer-orchestra",
       "genre": "Swing",
       "openers": [],
       "venue": "Hard Rock Cafe",
       "city": "Newport Beach",
       "state": "California",
       "cityState": "Newport Beach, California",
-      "reference": "https://www.setlist.fm/setlist/the-brian-setzer-orchestra/1995/hard-rock-cafe-newport-beach-ca-3392381d.html",
       "year": 1995,
       "month": 3,
       "day": 26,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "1990s",
       "location": {
         "lat": 33.6150696,
         "lng": -117.873123
-      }
-    },
-    {
-      "id": "concert-45",
-      "date": "1995-10-30",
-      "headliner": "Big Audio Dynamite",
-      "headlinerNormalized": "big-audio-dynamite",
-      "genre": "New Wave",
-      "openers": [
-        "John Doe",
-        "Jane Weidlin"
-      ],
-      "venue": "The Galaxy Theatre",
-      "city": "Santa Ana",
-      "state": "California",
-      "cityState": "Santa Ana, California",
-      "reference": "https://www.setlist.fm/setlist/big-audio-dynamite/1995/galaxy-theatre-santa-ana-ca-2b8b7026.html",
-      "year": 1995,
-      "month": 10,
-      "day": 30,
-      "dayOfWeek": "Sunday",
-      "decade": "1990s",
-      "location": {
-        "lat": 33.7002183,
-        "lng": -117.919161
       }
     },
     {
@@ -1037,7 +986,52 @@
       "year": 1995,
       "month": 10,
       "day": 14,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
+      "decade": "1990s",
+      "location": {
+        "lat": 33.6577553,
+        "lng": -117.7293939
+      }
+    },
+    {
+      "id": "concert-45",
+      "date": "1995-10-30",
+      "headliner": "Big Audio Dynamite",
+      "headlinerNormalized": "big-audio-dynamite",
+      "genre": "New Wave",
+      "openers": [
+        "John Doe",
+        "Jane Weidlin"
+      ],
+      "venue": "The Galaxy Theatre",
+      "city": "Santa Ana",
+      "state": "California",
+      "cityState": "Santa Ana, California",
+      "year": 1995,
+      "month": 10,
+      "day": 30,
+      "dayOfWeek": "Monday",
+      "decade": "1990s",
+      "location": {
+        "lat": 33.7002183,
+        "lng": -117.919161
+      }
+    },
+    {
+      "id": "concert-48",
+      "date": "1997-10-25",
+      "headliner": "Jimmy Buffett",
+      "headlinerNormalized": "jimmy-buffett",
+      "genre": "Gulf and Western Country Rock",
+      "openers": [],
+      "venue": "Irvine Meadows",
+      "city": "Irvine",
+      "state": "California",
+      "cityState": "Irvine, California",
+      "year": 1997,
+      "month": 10,
+      "day": 25,
+      "dayOfWeek": "Saturday",
       "decade": "1990s",
       "location": {
         "lat": 33.6577553,
@@ -1055,36 +1049,14 @@
       "city": "San Juan Capistrano",
       "state": "California",
       "cityState": "San Juan Capistrano, California",
-      "reference": "https://www.setlist.fm/setlist/pat-dinizio/1998/the-coach-house-san-juan-capistrano-ca-438ae3ab.html",
       "year": 1998,
       "month": 2,
       "day": 11,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "1990s",
       "location": {
         "lat": 33.4821104,
         "lng": -117.6714939
-      }
-    },
-    {
-      "id": "concert-48",
-      "date": "1997-10-25",
-      "headliner": "Jimmy Buffett",
-      "headlinerNormalized": "jimmy-buffett",
-      "genre": "Gulf and Western Country Rock",
-      "openers": [],
-      "venue": "Irvine Meadows",
-      "city": "Irvine",
-      "state": "California",
-      "cityState": "Irvine, California",
-      "year": 1997,
-      "month": 10,
-      "day": 25,
-      "dayOfWeek": "Friday",
-      "decade": "1990s",
-      "location": {
-        "lat": 33.6577553,
-        "lng": -117.7293939
       }
     },
     {
@@ -1098,11 +1070,10 @@
       "city": "Boston",
       "state": "Massachusetts",
       "cityState": "Boston, Massachusetts",
-      "reference": "https://www.setlist.fm/setlist/art-of-noise/1999/paradise-rock-club-boston-ma-5b8efba8.html",
       "year": 1999,
       "month": 10,
       "day": 13,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "1990s",
       "location": {
         "lat": 42.3518386,
@@ -1113,18 +1084,17 @@
       "id": "concert-50",
       "date": "2000-11-17",
       "headliner": "Brian Setzer ’68 Comeback Special",
-      "headlinerNormalized": "brian-setzer--68-comeback-special",
+      "headlinerNormalized": "brian-setzer-68-comeback-special",
       "genre": "Rockabilly",
       "openers": [],
       "venue": "The Coach House",
       "city": "San Juan Capistrano",
       "state": "California",
       "cityState": "San Juan Capistrano, California",
-      "reference": "https://www.setlist.fm/setlist/brian-setzer-68-comeback-special/2000/the-coach-house-san-juan-capistrano-ca-b93b14a.html",
       "year": 2000,
       "month": 11,
       "day": 17,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1147,7 +1117,7 @@
       "year": 2001,
       "month": 2,
       "day": 11,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2000s",
       "location": {
         "lat": 33.9580853,
@@ -1157,25 +1127,24 @@
     {
       "id": "concert-52",
       "date": "2002-12-21",
-      "headliner": "Brian Setzer Orchestra",
-      "headlinerNormalized": "brian-setzer-orchestra",
+      "headliner": "The Brian Setzer Orchestra",
+      "headlinerNormalized": "the-brian-setzer-orchestra",
       "genre": "Swing",
       "openers": [
         "Richard Cheese & Lounge Against the Machine"
       ],
-      "venue": "Universal Amphitheater",
+      "venue": "Universal Amphitheater ",
       "city": "Los Angeles",
       "state": "California",
       "cityState": "Los Angeles, California",
-      "reference": "https://www.concertarchives.org/concerts/brian-setzer-orchestra-richard-cheese-lounge-against-the-machine",
       "year": 2002,
       "month": 12,
       "day": 21,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
-        "lat": 34.1794351,
-        "lng": -118.4729999
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -1189,11 +1158,10 @@
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
-      "reference": "https://www.concertarchives.org/concerts/peter-gabriel-64442961-9950-4878-90b2-f7ce2bd51a8a",
       "year": 2003,
       "month": 6,
       "day": 8,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2000s",
       "location": {
         "lat": 33.6577553,
@@ -1213,11 +1181,10 @@
       "city": "Anaheim",
       "state": "California",
       "cityState": "Anaheim, California",
-      "reference": "https://www.concertarchives.org/concerts/the-human-league-66985b97-e59a-4a41-b2a8-7f145fed8f1e and https://www.setlist.fm/setlist/the-beat-starring-dave-wakeling/2003/the-grove-of-anaheim-anaheim-ca-538c271d.html",
       "year": 2003,
       "month": 8,
       "day": 24,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2000s",
       "location": {
         "lat": 33.80313,
@@ -1235,11 +1202,10 @@
       "city": "Anaheim",
       "state": "California",
       "cityState": "Anaheim, California",
-      "reference": "https://www.setlist.fm/setlist/joe-jackson/2003/house-of-blues-anaheim-ca-53eb47b9.html",
       "year": 2003,
       "month": 8,
       "day": 29,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2000s",
       "location": {
         "lat": 33.8066523,
@@ -1272,11 +1238,10 @@
       "city": "San Bernardino",
       "state": "California",
       "cityState": "San Bernardino, California",
-      "reference": "https://www.setlist.fm/setlist/the-cure/2003/hyundai-pavilion-san-bernardino-ca-2bd7e0ea.html",
       "year": 2003,
       "month": 9,
       "day": 20,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
         "lat": 34.204464,
@@ -1294,11 +1259,10 @@
       "city": "Las Vegas",
       "state": "Nevada",
       "cityState": "Las Vegas, Nevada",
-      "reference": "https://www.concertarchives.org/concerts/social-distortion-6d4ba3cf-007d-4666-9038-a55719fe5b07",
       "year": 2005,
       "month": 3,
       "day": 23,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2000s",
       "location": {
         "lat": 36.1102529,
@@ -1316,11 +1280,10 @@
       "city": "Costa Mesa",
       "state": "California",
       "cityState": "Costa Mesa, California",
-      "reference": "https://www.concertarchives.org/concerts/garbage-69bf1e23-9f21-4cec-8e0a-56c9c8cb744f",
       "year": 2005,
       "month": 7,
       "day": 27,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2000s",
       "location": {
         "lat": 33.6658588,
@@ -1343,7 +1306,7 @@
       "year": 2005,
       "month": 11,
       "day": 22,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2000s",
       "location": {
         "lat": 34.0430175,
@@ -1359,19 +1322,18 @@
       "openers": [
         "Dirty Vegas"
       ],
-      "venue": "Universal Amphitheater",
+      "venue": "Universal Amphitheater ",
       "city": "Los Angeles",
       "state": "California",
       "cityState": "Los Angeles, California",
-      "reference": "https://www.concertarchives.org/concerts/tears-for-fears-d9c631c1-1ed1-48d0-a3fe-8d9b8090ebf8",
       "year": 2005,
       "month": 11,
       "day": 23,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2000s",
       "location": {
-        "lat": 34.1794351,
-        "lng": -118.4729999
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -1385,11 +1347,10 @@
       "city": "San Juan Capistrano",
       "state": "California",
       "cityState": "San Juan Capistrano, California",
-      "reference": "https://www.concertarchives.org/concerts/howard-jones-8a9522cc-8d4d-4e56-b825-315b78f76131",
       "year": 2006,
       "month": 2,
       "day": 2,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1411,11 +1372,10 @@
       "city": "Anaheim",
       "state": "California",
       "cityState": "Anaheim, California",
-      "reference": "https://www.setlist.fm/setlist/devo/2006/the-grove-of-anaheim-anaheim-ca-4bd25386.html",
       "year": 2006,
       "month": 10,
       "day": 27,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2000s",
       "location": {
         "lat": 33.80313,
@@ -1436,7 +1396,7 @@
       "year": 2007,
       "month": 2,
       "day": 10,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1457,7 +1417,7 @@
       "year": 2007,
       "month": 6,
       "day": 2,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1478,7 +1438,7 @@
       "year": 2008,
       "month": 5,
       "day": 4,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2000s",
       "location": {
         "lat": 34.0446014,
@@ -1501,7 +1461,7 @@
       "year": 2008,
       "month": 7,
       "day": 22,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2000s",
       "location": {
         "lat": 33.6658588,
@@ -1524,7 +1484,7 @@
       "year": 2008,
       "month": 7,
       "day": 24,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2000s",
       "location": {
         "lat": 33.6658588,
@@ -1545,7 +1505,7 @@
       "year": 2008,
       "month": 9,
       "day": 6,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1566,7 +1526,7 @@
       "year": 2008,
       "month": 11,
       "day": 28,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1587,7 +1547,7 @@
       "year": 2008,
       "month": 12,
       "day": 9,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2000s",
       "location": {
         "lat": 33.4821104,
@@ -1600,18 +1560,15 @@
       "headliner": "Brian Setzer and the Nashvillians",
       "headlinerNormalized": "brian-setzer-and-the-nashvillians",
       "genre": "Rockabilly",
-      "openers": [
-        "Keb Mo"
-      ],
+      "openers": [],
       "venue": "Doheny",
       "city": "Dana Point",
       "state": "California",
       "cityState": "Dana Point, California",
-      "reference": "https://www.setlist.fm/festival/2009/doheny-blues-festival-2009-5bd63bfc.html",
       "year": 2009,
       "month": 5,
       "day": 16,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
         "lat": 33.4625361,
@@ -1632,7 +1589,7 @@
       "year": 2009,
       "month": 11,
       "day": 10,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2000s",
       "location": {
         "lat": 38.8268505,
@@ -1652,11 +1609,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/the-english-beat-fishbone-outlaw-nation-3e7ee4ff-8daf-4141-9c47-afc15257f156",
       "year": 2010,
       "month": 2,
       "day": 22,
-      "dayOfWeek": "Sunday",
+      "dayOfWeek": "Monday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -1677,11 +1633,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/echo-the-bunnymen-hatcham-social-kelley-stoltz-d0285d7a-7a8c-4bbe-99ee-679ead203306",
       "year": 2010,
       "month": 4,
       "day": 30,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.9145825,
@@ -1702,7 +1657,7 @@
       "year": 2010,
       "month": 10,
       "day": 26,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -1722,11 +1677,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/rise-against-with-bad-religion-and-four-year-strong-at-9-30-club-april-26-2011",
       "year": 2011,
       "month": 4,
       "day": 26,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -1746,11 +1700,10 @@
       "city": "Baltimore",
       "state": "Maryland",
       "cityState": "Baltimore, Maryland",
-      "reference": "https://www.concertarchives.org/concerts/ott-sub-swara-bowling-for-soup-the-dollyrots-thenewdeal",
       "year": 2011,
       "month": 5,
       "day": 6,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 39.2905023,
@@ -1760,7 +1713,7 @@
     {
       "id": "concert-78",
       "date": "2011-06-10",
-      "headliner": "The Go Go's",
+      "headliner": "The Go-Go's",
       "headlinerNormalized": "the-go-go-s",
       "genre": "New Wave",
       "openers": [
@@ -1773,7 +1726,7 @@
       "year": 2011,
       "month": 6,
       "day": 10,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.9012225,
@@ -1796,7 +1749,7 @@
       "year": 2012,
       "month": 4,
       "day": 24,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 39.2894444,
@@ -1806,8 +1759,8 @@
     {
       "id": "concert-80",
       "date": "2012-05-10",
-      "headliner": "The Red Hot Chilli Peppers",
-      "headlinerNormalized": "the-red-hot-chilli-peppers",
+      "headliner": "Red Hot Chili Peppers",
+      "headlinerNormalized": "red-hot-chili-peppers",
       "genre": "Funk Rock",
       "openers": [
         "Sleigh Bells"
@@ -1819,7 +1772,7 @@
       "year": 2012,
       "month": 5,
       "day": 10,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2010s",
       "location": {
         "lat": 38.8981675,
@@ -1842,7 +1795,7 @@
       "year": 2012,
       "month": 6,
       "day": 12,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -1860,11 +1813,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/howard-jones-2b3f12ac-9dc2-4559-9ad9-ef571208c0aa",
       "year": 2012,
       "month": 7,
       "day": 5,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2010s",
       "location": {
         "lat": 38.9153738,
@@ -1882,11 +1834,10 @@
       "city": "Bethesda",
       "state": "Maryland",
       "cityState": "Bethesda, Maryland",
-      "reference": "https://www.setlist.fm/setlist/joe-jackson/2012/the-music-center-at-strathmore-north-bethesda-md-2bdd88ee.html",
       "year": 2012,
       "month": 9,
       "day": 15,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.97934,
@@ -1909,7 +1860,7 @@
       "year": 2012,
       "month": 11,
       "day": 6,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -1933,7 +1884,7 @@
       "year": 2013,
       "month": 3,
       "day": 10,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -1955,11 +1906,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/bad-religion-polar-bear-club-the-bronx",
       "year": 2013,
       "month": 3,
       "day": 22,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -1980,7 +1930,7 @@
       "year": 2013,
       "month": 3,
       "day": 24,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2004,7 +1954,7 @@
       "year": 2013,
       "month": 6,
       "day": 1,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2025,7 +1975,7 @@
       "year": 2013,
       "month": 6,
       "day": 2,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.8976548,
@@ -2046,7 +1996,7 @@
       "year": 2013,
       "month": 10,
       "day": 27,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.9145825,
@@ -2067,7 +2017,7 @@
       "year": 2014,
       "month": 4,
       "day": 4,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -2088,7 +2038,7 @@
       "year": 2014,
       "month": 5,
       "day": 2,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 39.19550419999999,
@@ -2106,11 +2056,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/snarky-puppy-db7ca5f2-76d4-474d-8c38-46fb6c38ce9a",
       "year": 2014,
       "month": 6,
       "day": 25,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2010s",
       "location": {
         "lat": 38.8976548,
@@ -2132,11 +2081,10 @@
       "city": "Baltimore",
       "state": "Maryland",
       "cityState": "Baltimore, Maryland",
-      "reference": "https://www.concertarchives.org/concerts/bad-religion-the-offspring-pennywise-the-vandals",
       "year": 2014,
       "month": 7,
       "day": 30,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2010s",
       "location": {
         "lat": 39.2840191,
@@ -2157,11 +2105,10 @@
       "city": "Silver Spring",
       "state": "Maryland",
       "cityState": "Silver Spring, Maryland",
-      "reference": "https://www.songkick.com/concerts/20592563-streetlight-manifesto-at-fillmore-silver-spring",
       "year": 2014,
       "month": 10,
       "day": 26,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2184,7 +2131,7 @@
       "year": 2014,
       "month": 12,
       "day": 9,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.8939024,
@@ -2209,7 +2156,7 @@
       "year": 2015,
       "month": 3,
       "day": 6,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2232,7 +2179,7 @@
       "year": 2015,
       "month": 6,
       "day": 10,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -2253,7 +2200,7 @@
       "year": 2015,
       "month": 6,
       "day": 15,
-      "dayOfWeek": "Sunday",
+      "dayOfWeek": "Monday",
       "decade": "2010s",
       "location": {
         "lat": 38.8976548,
@@ -2281,11 +2228,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.songkick.com/concerts/22136733-foo-fighters-at-rfk-stadium",
       "year": 2015,
       "month": 7,
       "day": 4,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.8898525,
@@ -2306,11 +2252,10 @@
       "city": "Silver Spring",
       "state": "Maryland",
       "cityState": "Silver Spring, Maryland",
-      "reference": "https://www.concertarchives.org/concerts/nikki-lane-social-distortion-drag-the-river",
       "year": 2015,
       "month": 8,
       "day": 25,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2330,11 +2275,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/garbage--40",
       "year": 2015,
       "month": 10,
       "day": 28,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -2354,11 +2298,10 @@
       "city": "Silver Spring",
       "state": "Maryland",
       "cityState": "Silver Spring, Maryland",
-      "reference": "https://www.concertarchives.org/concerts/dirty-heads-rdgldgrn",
       "year": 2016,
       "month": 4,
       "day": 29,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2379,7 +2322,7 @@
       "year": 2016,
       "month": 5,
       "day": 2,
-      "dayOfWeek": "Sunday",
+      "dayOfWeek": "Monday",
       "decade": "2010s",
       "location": {
         "lat": 38.9848328,
@@ -2399,11 +2342,10 @@
       "city": "Fairfax",
       "state": "Virginia",
       "cityState": "Fairfax, Virginia",
-      "reference": "https://www.setlist.fm/setlist/prophets-of-rage/2016/eaglebank-arena-fairfax-va-1bfcd14c.html",
       "year": 2016,
       "month": 8,
       "day": 19,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.8268505,
@@ -2421,11 +2363,10 @@
       "city": "Alexandria",
       "state": "Virginia",
       "cityState": "Alexandria, Virginia",
-      "reference": "https://www.concertarchives.org/concerts/the-smithereens-615cd9fd-8ad3-4098-865c-1fdcaf71891a",
       "year": 2016,
       "month": 8,
       "day": 26,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.8400039,
@@ -2443,11 +2384,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/howard-jones-66a2e3f1-21ac-4539-b15e-94c295752def",
       "year": 2016,
       "month": 9,
       "day": 3,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.8976548,
@@ -2468,11 +2408,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.setlist.fm/setlist/public-enemy/2016/national-museum-of-african-american-history-and-culture-washington-dc-6bfde292.html",
       "year": 2016,
       "month": 9,
       "day": 24,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.8910644,
@@ -2493,7 +2432,7 @@
       "year": 2017,
       "month": 1,
       "day": 1,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.7951722,
@@ -2514,7 +2453,7 @@
       "year": 2017,
       "month": 5,
       "day": 9,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.997449,
@@ -2535,7 +2474,7 @@
       "year": 2017,
       "month": 6,
       "day": 6,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -2556,7 +2495,7 @@
       "year": 2017,
       "month": 6,
       "day": 10,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.9012225,
@@ -2577,7 +2516,7 @@
       "year": 2017,
       "month": 7,
       "day": 13,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2010s",
       "location": {
         "lat": 38.9167095,
@@ -2600,7 +2539,7 @@
       "year": 2017,
       "month": 8,
       "day": 3,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2010s",
       "location": {
         "lat": 38.9012225,
@@ -2621,7 +2560,7 @@
       "year": 2017,
       "month": 9,
       "day": 11,
-      "dayOfWeek": "Sunday",
+      "dayOfWeek": "Monday",
       "decade": "2010s",
       "location": {
         "lat": 38.9006804,
@@ -2643,11 +2582,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "Soft opening",
       "year": 2017,
       "month": 10,
       "day": 8,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 38.8800674,
@@ -2667,11 +2605,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/foo-fighters-with-the-struts-at-the-anthem-october-12-2017",
       "year": 2017,
       "month": 10,
       "day": 12,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2010s",
       "location": {
         "lat": 38.8800674,
@@ -2692,7 +2629,7 @@
       "year": 2017,
       "month": 10,
       "day": 21,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.9171557,
@@ -2702,8 +2639,8 @@
     {
       "id": "concert-119",
       "date": "2017-11-25",
-      "headliner": "Brian Setzer Orchestra",
-      "headlinerNormalized": "brian-setzer-orchestra",
+      "headliner": "The Brian Setzer Orchestra",
+      "headlinerNormalized": "the-brian-setzer-orchestra",
       "genre": "Swing",
       "openers": [],
       "venue": "Warner Theatre",
@@ -2713,7 +2650,7 @@
       "year": 2017,
       "month": 11,
       "day": 25,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.8964782,
@@ -2734,7 +2671,7 @@
       "year": 2017,
       "month": 12,
       "day": 9,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -2761,11 +2698,10 @@
       "city": "Huntington Beach",
       "state": "California",
       "cityState": "Huntington Beach, California",
-      "reference": "https://www.setlist.fm/festival/2018/like-totally-80s-festival-2018-5bd78b90.html",
       "year": 2018,
       "month": 5,
       "day": 12,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 33.6380444,
@@ -2786,7 +2722,7 @@
       "year": 2018,
       "month": 5,
       "day": 19,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 33.7881664,
@@ -2800,19 +2736,18 @@
       "headlinerNormalized": "u2",
       "genre": "Rock",
       "openers": [],
-      "venue": "Capital One Center",
+      "venue": "Capital One Center\t",
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.u2.com/tour/date/45561495",
       "year": 2018,
       "month": 6,
       "day": 17,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
-        "lat": 38.8981675,
-        "lng": -77.02085679999999
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -2831,7 +2766,7 @@
       "year": 2018,
       "month": 8,
       "day": 17,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 33.6658588,
@@ -2851,11 +2786,10 @@
       "city": "Washington",
       "state": "District of Columbia",
       "cityState": "Washington, District of Columbia",
-      "reference": "https://www.concertarchives.org/concerts/gary-numan--62",
       "year": 2018,
       "month": 9,
       "day": 21,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 38.917948,
@@ -2888,11 +2822,10 @@
       "city": "Huntington Beach",
       "state": "California",
       "cityState": "Huntington Beach, California",
-      "reference": "https://www.concertarchives.org/concerts/surf-city-blitz-2018",
       "year": 2018,
       "month": 10,
       "day": 28,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 33.6380444,
@@ -2913,7 +2846,7 @@
       "year": 2018,
       "month": 11,
       "day": 3,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 33.699631,
@@ -2937,7 +2870,7 @@
       "year": 2019,
       "month": 3,
       "day": 24,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 34.0234622,
@@ -2961,7 +2894,7 @@
       "year": 2019,
       "month": 4,
       "day": 14,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 33.699631,
@@ -2982,7 +2915,7 @@
       "year": 2019,
       "month": 5,
       "day": 16,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2010s",
       "location": {
         "lat": 34.0234622,
@@ -2992,8 +2925,8 @@
     {
       "id": "concert-131",
       "date": "2019-05-18",
-      "headliner": "Bandits of the Accoustic Revolution",
-      "headlinerNormalized": "bandits-of-the-accoustic-revolution",
+      "headliner": "Bandits of the Acoustic Revolution",
+      "headlinerNormalized": "bandits-of-the-acoustic-revolution",
       "genre": "Ska",
       "openers": [],
       "venue": "Dolby Theatre",
@@ -3003,7 +2936,7 @@
       "year": 2019,
       "month": 5,
       "day": 18,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 34.1026919,
@@ -3024,7 +2957,7 @@
       "year": 2019,
       "month": 5,
       "day": 26,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 33.5292312,
@@ -3045,7 +2978,7 @@
       "year": 2019,
       "month": 7,
       "day": 19,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 33.665951,
@@ -3066,7 +2999,7 @@
       "year": 2019,
       "month": 7,
       "day": 30,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 33.8066523,
@@ -3087,7 +3020,7 @@
       "year": 2019,
       "month": 9,
       "day": 21,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 34.0234622,
@@ -3108,7 +3041,7 @@
       "year": 2019,
       "month": 10,
       "day": 6,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2010s",
       "location": {
         "lat": 33.4821104,
@@ -3118,8 +3051,8 @@
     {
       "id": "concert-137",
       "date": "2021-08-14",
-      "headliner": "Aquabats",
-      "headlinerNormalized": "aquabats",
+      "headliner": "The Aquabats!",
+      "headlinerNormalized": "the-aquabats",
       "genre": "Ska",
       "openers": [
         "The English Beat"
@@ -3131,11 +3064,32 @@
       "year": 2021,
       "month": 8,
       "day": 14,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 33.6658588,
         "lng": -117.9048811
+      }
+    },
+    {
+      "id": "concert-139",
+      "date": "2021-08-31",
+      "headliner": "Future Islands",
+      "headlinerNormalized": "future-islands",
+      "genre": "Alternative",
+      "openers": [],
+      "venue": "House of Blues Anaheim",
+      "city": "Anaheim",
+      "state": "California",
+      "cityState": "Anaheim, California",
+      "year": 2021,
+      "month": 8,
+      "day": 31,
+      "dayOfWeek": "Tuesday",
+      "decade": "2020s",
+      "location": {
+        "lat": 33.8066523,
+        "lng": -117.912121
       }
     },
     {
@@ -3154,29 +3108,7 @@
       "year": 2022,
       "month": 5,
       "day": 7,
-      "dayOfWeek": "Friday",
-      "decade": "2020s",
-      "location": {
-        "lat": 33.8066523,
-        "lng": -117.912121
-      }
-    },
-    {
-      "id": "concert-139",
-      "date": "2021-08-31",
-      "headliner": "Future Islands",
-      "headlinerNormalized": "future-islands",
-      "genre": "Alternative",
-      "openers": [],
-      "venue": "House of Blues Anaheim",
-      "city": "Anaheim",
-      "state": "California",
-      "cityState": "Anaheim, California",
-      "reference": "https://www.setlist.fm/setlist/future-islands/2021/house-of-blues-anaheim-ca-738ccecd.html",
-      "year": 2021,
-      "month": 8,
-      "day": 31,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 33.8066523,
@@ -3199,7 +3131,7 @@
       "year": 2022,
       "month": 6,
       "day": 4,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 33.9580853,
@@ -3220,7 +3152,7 @@
       "year": 2022,
       "month": 6,
       "day": 10,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 34.0427692,
@@ -3241,7 +3173,7 @@
       "year": 2022,
       "month": 7,
       "day": 5,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 34.0234622,
@@ -3262,7 +3194,7 @@
       "year": 2022,
       "month": 7,
       "day": 12,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 33.8066523,
@@ -3286,7 +3218,7 @@
       "year": 2022,
       "month": 8,
       "day": 1,
-      "dayOfWeek": "Sunday",
+      "dayOfWeek": "Monday",
       "decade": "2020s",
       "location": {
         "lat": 33.6658588,
@@ -3309,7 +3241,7 @@
       "year": 2022,
       "month": 8,
       "day": 18,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2020s",
       "location": {
         "lat": 33.6658588,
@@ -3332,7 +3264,7 @@
       "year": 2022,
       "month": 9,
       "day": 9,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 34.0418769,
@@ -3342,8 +3274,8 @@
     {
       "id": "concert-147",
       "date": "2022-09-25",
-      "headliner": "Gorrillaz",
-      "headlinerNormalized": "gorrillaz",
+      "headliner": "Gorillaz",
+      "headlinerNormalized": "gorillaz",
       "genre": "Alternative Hip Hop",
       "openers": [
         "EarthGang"
@@ -3355,7 +3287,7 @@
       "year": 2022,
       "month": 9,
       "day": 25,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2020s",
       "location": {
         "lat": 33.9515762,
@@ -3376,7 +3308,7 @@
       "year": 2022,
       "month": 10,
       "day": 1,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 33.699631,
@@ -3400,7 +3332,7 @@
       "year": 2022,
       "month": 10,
       "day": 7,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 34.112224,
@@ -3423,7 +3355,7 @@
       "year": 2022,
       "month": 10,
       "day": 28,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 34.112224,
@@ -3446,7 +3378,7 @@
       "year": 2022,
       "month": 11,
       "day": 16,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2020s",
       "location": {
         "lat": 34.098496,
@@ -3469,7 +3401,7 @@
       "year": 2022,
       "month": 12,
       "day": 8,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2020s",
       "location": {
         "lat": 33.8066523,
@@ -3482,9 +3414,7 @@
       "headliner": "The English Beat",
       "headlinerNormalized": "the-english-beat",
       "genre": "Ska",
-      "openers": [
-        "Smoke & Mirrors Sound System"
-      ],
+      "openers": [],
       "venue": "The Belly Up Tavern",
       "city": "Solana Beach",
       "state": "California",
@@ -3492,7 +3422,7 @@
       "year": 2023,
       "month": 3,
       "day": 3,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 32.9905893,
@@ -3515,7 +3445,7 @@
       "year": 2023,
       "month": 3,
       "day": 28,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 33.9580853,
@@ -3529,18 +3459,18 @@
       "headlinerNormalized": "dr-sick",
       "genre": "Jazz",
       "openers": [],
-      "venue": "21st Amendment",
+      "venue": "21st Amendment ",
       "city": "New Orleans",
       "state": "Louisiana",
       "cityState": "New Orleans, Louisiana",
       "year": 2023,
       "month": 4,
       "day": 12,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2020s",
       "location": {
-        "lat": 29.95453,
-        "lng": -90.06864999999999
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -3559,7 +3489,7 @@
       "year": 2023,
       "month": 5,
       "day": 9,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 34.061501,
@@ -3582,7 +3512,7 @@
       "year": 2023,
       "month": 5,
       "day": 24,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2020s",
       "location": {
         "lat": 34.112224,
@@ -3605,7 +3535,7 @@
       "year": 2023,
       "month": 7,
       "day": 18,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 34.0403336,
@@ -3629,7 +3559,7 @@
       "year": 2023,
       "month": 7,
       "day": 21,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 34.0444495,
@@ -3653,7 +3583,7 @@
       "year": 2023,
       "month": 7,
       "day": 30,
-      "dayOfWeek": "Saturday",
+      "dayOfWeek": "Sunday",
       "decade": "2020s",
       "location": {
         "lat": 33.6658588,
@@ -3676,7 +3606,7 @@
       "year": 2023,
       "month": 9,
       "day": 23,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 34.061501,
@@ -3697,7 +3627,7 @@
       "year": 2023,
       "month": 11,
       "day": 16,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2020s",
       "location": {
         "lat": 33.9515762,
@@ -3718,11 +3648,32 @@
       "year": 2023,
       "month": 11,
       "day": 22,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2020s",
       "location": {
         "lat": 34.0403336,
         "lng": -118.2593883
+      }
+    },
+    {
+      "id": "concert-165",
+      "date": "2024-02-15",
+      "headliner": "Umphrey's McGee",
+      "headlinerNormalized": "umphrey-s-mcgee",
+      "genre": "",
+      "openers": [],
+      "venue": "9:30 Club",
+      "city": "Washington",
+      "state": "District of Columbia",
+      "cityState": "Washington, District of Columbia",
+      "year": 2024,
+      "month": 2,
+      "day": 15,
+      "dayOfWeek": "Thursday",
+      "decade": "2020s",
+      "location": {
+        "lat": 38.917948,
+        "lng": -77.0237227
       }
     },
     {
@@ -3741,32 +3692,11 @@
       "year": 2024,
       "month": 2,
       "day": 27,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 34.061501,
         "lng": -118.308948
-      }
-    },
-    {
-      "id": "concert-165",
-      "date": "2024-02-15",
-      "headliner": "Umphrey's McGee",
-      "headlinerNormalized": "umphrey-s-mcgee",
-      "genre": "Unknown",
-      "openers": [],
-      "venue": "9:30 Club",
-      "city": "Washington",
-      "state": "District of Columbia",
-      "cityState": "Washington, District of Columbia",
-      "year": 2024,
-      "month": 2,
-      "day": 15,
-      "dayOfWeek": "Wednesday",
-      "decade": "2020s",
-      "location": {
-        "lat": 38.917948,
-        "lng": -77.0237227
       }
     },
     {
@@ -3786,7 +3716,7 @@
       "year": 2024,
       "month": 7,
       "day": 26,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 33.6658588,
@@ -3810,7 +3740,7 @@
       "year": 2024,
       "month": 8,
       "day": 20,
-      "dayOfWeek": "Monday",
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 33.9515762,
@@ -3833,32 +3763,11 @@
       "year": 2024,
       "month": 11,
       "day": 16,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 33.699631,
         "lng": -117.9177051
-      }
-    },
-    {
-      "id": "concert-169",
-      "date": "2025-03-01",
-      "headliner": "Klangphonics",
-      "headlinerNormalized": "klangphonics",
-      "genre": "Dance/Electronic",
-      "openers": [],
-      "venue": "The Roxy",
-      "city": "Hollywood",
-      "state": "California",
-      "cityState": "Hollywood, California",
-      "year": 2025,
-      "month": 3,
-      "day": 1,
-      "dayOfWeek": "Friday",
-      "decade": "2020s",
-      "location": {
-        "lat": 34.0907315,
-        "lng": -118.3266146
       }
     },
     {
@@ -3875,11 +3784,32 @@
       "year": 2024,
       "month": 12,
       "day": 5,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2020s",
       "location": {
         "lat": 34.0403336,
         "lng": -118.2593883
+      }
+    },
+    {
+      "id": "concert-169",
+      "date": "2025-03-01",
+      "headliner": "Klangphonics",
+      "headlinerNormalized": "klangphonics",
+      "genre": "Dance/Electronic",
+      "openers": [],
+      "venue": "The Roxy",
+      "city": "Hollywood",
+      "state": "California",
+      "cityState": "Hollywood, California",
+      "year": 2025,
+      "month": 3,
+      "day": 1,
+      "dayOfWeek": "Saturday",
+      "decade": "2020s",
+      "location": {
+        "lat": 34.0907315,
+        "lng": -118.3266146
       }
     },
     {
@@ -3898,7 +3828,7 @@
       "year": 2025,
       "month": 3,
       "day": 7,
-      "dayOfWeek": "Thursday",
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 34.098496,
@@ -3921,7 +3851,7 @@
       "year": 2025,
       "month": 8,
       "day": 16,
-      "dayOfWeek": "Friday",
+      "dayOfWeek": "Saturday",
       "decade": "2020s",
       "location": {
         "lat": 42.3470725,
@@ -3942,7 +3872,7 @@
       "year": 2025,
       "month": 11,
       "day": 20,
-      "dayOfWeek": "Wednesday",
+      "dayOfWeek": "Thursday",
       "decade": "2020s",
       "location": {
         "lat": 34.1026919,
@@ -3965,7 +3895,7 @@
       "year": 2026,
       "month": 9,
       "day": 16,
-      "dayOfWeek": "Tuesday",
+      "dayOfWeek": "Wednesday",
       "decade": "2020s",
       "location": {
         "lat": 55.865082,
@@ -3974,13 +3904,13 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2025-12-29T18:24:15.113Z",
+    "lastUpdated": "2026-01-02T04:18:54.602Z",
     "totalConcerts": 174,
     "dateRange": {
-      "earliest": "2026-09-16",
-      "latest": "1984-04-27"
+      "earliest": "1984-04-27",
+      "latest": "2026-09-16"
     },
-    "uniqueArtists": 240,
+    "uniqueArtists": 101,
     "uniqueVenues": 76,
     "uniqueCities": 34
   }

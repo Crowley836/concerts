@@ -1,7 +1,7 @@
 import { GoogleSheetsClient } from './utils/google-sheets-client'
 import { getCityCoordinates, getDefaultCoordinates } from '../src/utils/city-coordinates'
 import { createBackup } from './utils/backup'
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import * as dotenv from 'dotenv'
 
@@ -40,6 +40,49 @@ function normalizeArtistName(name: string): string {
     .replace(/[^a-z0-9]/g, '-')
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
+}
+
+/**
+ * Load geocode cache and get venue coordinates
+ */
+function loadGeocodeCache(): Map<string, { lat: number; lng: number }> {
+  const cachePath = join(process.cwd(), 'public', 'data', 'geocode-cache.json')
+  const cache = new Map<string, { lat: number; lng: number }>()
+
+  try {
+    if (existsSync(cachePath)) {
+      const cacheData = JSON.parse(readFileSync(cachePath, 'utf-8'))
+      Object.entries(cacheData).forEach(([key, value]: [string, any]) => {
+        cache.set(key, { lat: value.lat, lng: value.lng })
+      })
+    }
+  } catch (error) {
+    console.warn('⚠️  Could not load geocode cache:', error)
+  }
+
+  return cache
+}
+
+/**
+ * Get venue coordinates from cache, fallback to city coordinates
+ */
+function getVenueCoordinates(
+  venue: string,
+  city: string,
+  state: string,
+  cityState: string,
+  geocodeCache: Map<string, { lat: number; lng: number }>
+): { lat: number; lng: number } {
+  // Try venue-level geocoding first
+  const cacheKey = `${venue}|${city}|${state}`.toLowerCase()
+  const cached = geocodeCache.get(cacheKey)
+
+  if (cached) {
+    return cached
+  }
+
+  // Fallback to city-level coordinates
+  return getCityCoordinates(cityState) || getDefaultCoordinates()
 }
 
 /**
@@ -122,11 +165,15 @@ async function fetchGoogleSheet(options: { dryRun?: boolean } = {}) {
     }
     console.log()
 
+    // Load geocode cache for venue-level coordinates
+    const geocodeCache = loadGeocodeCache()
+    console.log(`📍 Loaded geocode cache with ${geocodeCache.size} venue locations\n`)
+
     // Process and enrich data
     const concerts: ProcessedConcert[] = validRows.map((row, index) => {
       const date = new Date(row.date)
       const [city, state] = row.cityState.split(',').map(s => s.trim())
-      const coordinates = getCityCoordinates(row.cityState) || getDefaultCoordinates()
+      const coordinates = getVenueCoordinates(row.venue, city, state, row.cityState, geocodeCache)
 
       return {
         id: `concert-${index + 1}`,
