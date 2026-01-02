@@ -42,6 +42,7 @@ public/version.json
 
 # Data pipeline backup files
 public/data/*.backup
+public/data/*.backup.*
 
 # Claude Code configuration and plans
 .claude/
