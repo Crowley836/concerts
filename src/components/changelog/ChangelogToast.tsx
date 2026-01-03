@@ -124,7 +124,7 @@ export function ChangelogToast({
             </div>
 
             <p className="text-slate-400 mb-4">
-              Check out what's new in the concert archive
+              Latest additions to the Morperhaus concert archives
             </p>
 
             <button
