@@ -11,7 +11,7 @@ For a while I had it hooked up to a Google Looker Studio dashboard. It was... fi
 
 This project is my attempt to turn that data into something that actually captures what it feels like to flip through ticket stubs. Five interactive scenes let you explore 175 shows (and counting), each one a different lens on the same history:
 
-**The Timeline** — Every concert laid out chronologically. Scroll through four decades, see the density of shows ebb and flow, click into any year to see what we saw.
+**The Timeline** — Every concert laid out chronologically. Scroll through four decades, see the density of shows ebb and flow. Hover over any year to preview artist imagery and concert counts.
 
 **The Venues** — A network graph connecting venues to the artists who played them. Turns out we've been to Irvine Meadows a *lot*.
 
@@ -49,8 +49,8 @@ If you want to connect your own Google Sheet and run the data pipeline, check [d
 
 ## What's next
 
-**v1.3.4 is live!** Enhanced API key security with separate keys for geocoding and venue photos. Venue photos now appear in Geography Scene map popups—click any venue marker to see photos, legacy badges for closed/demolished venues, and venue stats. 96% of venues have real photos from Google Places API or manual curation.
+**v1.4.0 is live!** Timeline hover previews bring artist imagery to the hero scene. Hover over any year dot to see artist photos with a subtle parallax effect—no more click-to-modal. Replaces the old modal with a smoother "scrubbing through time" experience.
 
-Next up: phone optimization (v1.4.0+), Spotify listening history integration, and—most importantly—more shows to add to the list.
+Next up: phone optimization (v1.5.0+), Spotify listening history integration, and—most importantly—more shows to add to the list.
 
 _Built with ❤️ for live music._

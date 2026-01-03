@@ -1,9 +1,9 @@
 # Morperhaus Concert Archives - Status
 
-**Version:** v1.3.4 (Ready for Release)
+**Version:** v1.4.0 (Ready for Release)
 **Last Updated:** 2026-01-02
-**Current Phase:** API Key Security Enhancement Complete
-**Last Commit:** 4fbdf44 - "security: Separate Geocoding and Places API keys (v1.3.4)"
+**Current Phase:** Timeline Hover Preview Complete
+**Last Commit:** a56b03a - "feat: Window 2 - Timeline Hover Preview integration (v1.4.0)"
 **Live URL:** https://concerts.morperhaus.org
 
 ---
@@ -279,22 +279,22 @@
 - `scripts/utils/google-places-client.ts` - Updated to use GOOGLE_PLACES_API_KEY
 - `docs/api-setup.md` - Added separate key setup sections
 
-### v1.4.0 Timeline Hover Preview (In Progress) 🚧
+### v1.4.0 Timeline Hover Preview (Complete) 🎉
 
-**Status:** Ready to Start
-**Started:** 2026-01-02
+**Status:** Complete
+**Completed:** 2026-01-02
 **Focus:** Hover-triggered preview popups for timeline year dots
 
-**Scope:**
+**Implementation Completed:**
 
 - ✅ **Complete Specifications** - 3-part spec document (2,109 lines)
   - Part 1: Visual Design & Content
   - Part 2: Interaction & Animation
   - Part 3: Technical Implementation
 - ✅ **Project Plan** - Detailed 3-window implementation strategy
-- 🔲 **Context Window 1** - Foundation (types, hooks, content component)
-- 🔲 **Context Window 2** - Integration (main popup, Scene1Hero mods)
-- 🔲 **Context Window 3** - Polish (testing, docs, release)
+- ✅ **Window 1** - Foundation (types, hooks, content component) - 505 lines
+- ✅ **Window 2** - Integration (main popup, Scene1Hero mods) - 149 lines added, 93 removed
+- ✅ **Window 3** - Polish (documentation, version bump)
 
 **Key Features:**
 
@@ -309,22 +309,37 @@
 
 **Design Philosophy:**
 
-The popup serves as a "memory trigger" - a glimpse into a year's musical moments. Large album art creates immediate recognition, while venue anchors the memory in place. Moving across dots feels like "scrubbing through time" rather than discrete open/close actions.
+The popup serves as a "memory trigger" - a glimpse into a year's musical moments. Large artist imagery creates immediate recognition. Moving across dots feels like "scrubbing through time" rather than discrete open/close actions.
 
-**Implementation Plan:**
+**Files Created:**
 
-See [TIMELINE_HOVER_PREVIEW_PROJECT_PLAN.md](specs/TIMELINE_HOVER_PREVIEW_PROJECT_PLAN.md) for complete details.
+- `src/components/TimelineHoverPreview/TimelineHoverPreview.tsx` - Main popup component (119 lines)
+- `src/components/TimelineHoverPreview/TimelineHoverContent.tsx` - Content with parallax (105 lines)
+- `src/components/TimelineHoverPreview/useArtistMetadata.ts` - Metadata loading hook (74 lines)
+- `src/components/TimelineHoverPreview/useTimelineHover.ts` - Hover state management (120 lines)
+- `src/components/TimelineHoverPreview/types.ts` - TypeScript interfaces (43 lines)
+- `src/components/TimelineHoverPreview/constants.ts` - Animation/layout config (69 lines)
+- `src/components/TimelineHoverPreview/index.ts` - Barrel exports (12 lines)
+- `src/components/TimelineHoverPreview/__test__.tsx` - Testing harness (63 lines)
 
-**Files to Create:**
-- `src/components/scenes/TimelineHoverPreview/` (8 new files)
+**Files Modified:**
 
-**Files to Modify:**
-- `src/components/scenes/Scene1Hero.tsx` (remove modal, add hover)
-- `docs/STATUS.md`, `README.md`, `package.json`
+- `src/components/scenes/Scene1Hero.tsx` - Removed modal (82 lines), added hover integration (40 lines)
+- `package.json` - Version bump to 1.4.0
+- `docs/STATUS.md` - Updated with v1.4.0 completion
+- `README.md` - Updated feature description
 
-**Archived:**
-- `timeline-wake-effect-spec.md` → `specs/archive/`
-- `timeline-wake-effect-poc.html` → `specs/archive/`
+**Net Impact:**
+
+- +605 lines new code (8 new files)
+- -42 lines net in Scene1Hero (cleaner component)
+- +2KB production bundle (572KB → 574KB)
+- Replaced click-to-modal with hover-to-preview UX
+
+**Documentation:**
+
+- [TIMELINE_HOVER_PREVIEW_PROJECT_PLAN.md](specs/TIMELINE_HOVER_PREVIEW_PROJECT_PLAN.md) - Complete implementation plan
+- [TIMELINE_HOVER_PREVIEW_SUMMARY.md](specs/TIMELINE_HOVER_PREVIEW_SUMMARY.md) - Executive summary
 
 ---
 
