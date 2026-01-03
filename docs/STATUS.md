@@ -3,8 +3,9 @@
 **Version:** v1.4.0 🎉
 **Last Updated:** 2026-01-03
 **Current Phase:** Production Release
-**Last Commit:** TBD - "release: v1.4.0 Timeline Hover Preview"
+**Last Commit:** 34f9e6a - "release: v1.4.0 Timeline Hover Preview"
 **Live URL:** https://concerts.morperhaus.org
+**GitHub Release:** https://github.com/mmorper/concerts/releases/tag/v1.4.0
 
 ---
 
