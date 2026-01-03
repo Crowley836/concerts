@@ -36,14 +36,14 @@ export function ChangelogRSS() {
  */
 function generateRSSFeed(releases: Release[]): string {
   const siteUrl = 'https://concerts.morperhaus.org'
-  const feedUrl = `${siteUrl}/changelog/rss`
+  const feedUrl = `${siteUrl}/liner-notes/rss`
   const buildDate = new Date().toUTCString()
 
   const items = releases
     .map((release) => {
       const pubDate = new Date(release.date).toUTCString()
       const link = `${siteUrl}${release.route}`
-      const guid = `${siteUrl}/changelog#${release.version}`
+      const guid = `${siteUrl}/liner-notes#${release.version}`
 
       const highlights = release.highlights
         .map((h) => `<li>${escapeXml(h)}</li>`)
@@ -67,8 +67,8 @@ function generateRSSFeed(releases: Release[]): string {
   return `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Morperhaus Concert Archives - What's Playing</title>
-    <link>${siteUrl}/changelog</link>
+    <title>Morperhaus Concert Archives - Liner Notes</title>
+    <link>${siteUrl}/liner-notes</link>
     <description>New features and updates for the Morperhaus Concert Archives</description>
     <language>en-us</language>
     <lastBuildDate>${buildDate}</lastBuildDate>

@@ -15,6 +15,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainScenes />} />
+      <Route path="/liner-notes" element={<ChangelogPage />} />
+      <Route path="/liner-notes/rss" element={<ChangelogRSS />} />
+      {/* Legacy redirects */}
       <Route path="/changelog" element={<ChangelogPage />} />
       <Route path="/changelog/rss" element={<ChangelogRSS />} />
     </Routes>

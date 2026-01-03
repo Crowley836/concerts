@@ -63,7 +63,7 @@ export function ChangelogToast({
   // Handle navigation
   const handleNavigate = () => {
     onNavigate()
-    navigate('/changelog')
+    navigate('/liner-notes')
   }
 
   // Handle click anywhere on toast to navigate

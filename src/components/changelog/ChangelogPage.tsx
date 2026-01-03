@@ -72,7 +72,7 @@ export function ChangelogPage() {
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-6xl font-display text-amber-400 mb-4">
-            What's Playing
+            Liner Notes
           </h1>
           <p className="text-slate-400 mb-8">No updates yet. Check back soon!</p>
           <button
@@ -107,7 +107,7 @@ export function ChangelogPage() {
             transition={{ duration: 0.5 }}
             className="text-5xl lg:text-6xl font-display text-amber-400 mb-3 outline-none"
           >
-            What's Playing
+            Liner Notes
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -10 }}
@@ -115,7 +115,7 @@ export function ChangelogPage() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-slate-400 text-lg"
           >
-            The setlist of new features
+            What's new in the archives
           </motion.p>
         </header>
 
@@ -154,11 +154,11 @@ export function ChangelogPage() {
         >
           <div className="flex flex-col items-end gap-1">
             <a
-              href="/changelog/rss"
+              href="/liner-notes/rss"
               className="text-slate-600 hover:text-slate-400 text-xs flex items-center gap-1.5 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Subscribe to changelog via RSS"
+              aria-label="Subscribe to liner notes via RSS"
             >
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z" />
