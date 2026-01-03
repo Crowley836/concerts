@@ -118,22 +118,25 @@ The Google Maps Geocoding API is used to get accurate venue-specific coordinates
 4. Search for "Geocoding API"
 5. Click "Enable"
 
-### 2. Create API Key
+### 2. Create API Key for Geocoding
 
 1. Go to "APIs & Services" → "Credentials"
 2. Click "Create Credentials" → "API Key"
-3. Copy the API key immediately
-4. Click "Edit API key" to restrict it (recommended):
-   - **Select restriction type dropdown**: Choose "API restriction" (not "Websites", "IP addresses", etc.)
-   - **Select Maps APIs dropdown**: Click it and check only "Geocoding API"
-   - Click "OK" to confirm the API selection
-5. Click "Restrict key" button to save restrictions
+3. Name it "Geocoding API Key (Server-side)"
+4. Copy the API key immediately
+5. Click "Edit API key" to restrict it:
+   - **Application restrictions**: None (this key is only used server-side during builds)
+   - **API restrictions**: Click "Restrict key"
+   - **Select APIs dropdown**: Check only "Geocoding API"
+   - Click "Save"
 
 ### 3. Add to .env File
 
 ```bash
-GOOGLE_MAPS_API_KEY=your_api_key_here
+GOOGLE_MAPS_API_KEY=your_geocoding_api_key_here
 ```
+
+**Security Note**: This key is only used in server-side build scripts (`scripts/geocode-venues.ts`). It is never exposed to browsers or committed to the repository.
 
 ### 4. Enable Billing (Required)
 
@@ -156,8 +159,9 @@ GOOGLE_CLIENT_SECRET=GOCSPX-abc123...
 GOOGLE_REDIRECT_URI=http://localhost:5173
 GOOGLE_REFRESH_TOKEN=1//abc123...
 
-# Google Maps Geocoding API
-GOOGLE_MAPS_API_KEY=your_maps_api_key_here
+# Google Maps APIs (Separate Keys for Security)
+GOOGLE_MAPS_API_KEY=AIzaSyA...    # Geocoding (server-side, API restrictions only)
+GOOGLE_PLACES_API_KEY=AIzaSyB...  # Places Photos (client-side, HTTP referrer restrictions)
 
 # Sheet Configuration
 SHEET_RANGE=Sheet1!A2:Z1000
@@ -211,20 +215,69 @@ The Google Places API (New) is used to fetch venue photos, ratings, and metadata
 
 **Note**: Make sure you enable **"Places API (New)"**, not the legacy "Places API".
 
-### 2. Use Existing API Key
+### 2. Create Separate API Key for Places API
 
-The Places API uses the **same API key** as the Geocoding API.
+⚠️ **IMPORTANT**: Places API requires a **separate API key** from Geocoding because:
+
+- Places photo URLs are embedded in `venues-metadata.json` and served to browsers (client-side)
+- Geocoding runs only server-side during builds (never exposed to browsers)
+- **You cannot use the same key for both** - they require different security restrictions
+
+**Create the Places API Key:**
 
 1. Go to "APIs & Services" → "Credentials"
-2. Find your existing API key (the one used for Geocoding)
-3. Click "Edit API key"
-4. Under "API restrictions":
-   - Click "Select APIs" dropdown
-   - **Add** "Places API (New)" to the list (keep Geocoding API selected)
-   - Click "OK"
-5. Click "Save"
+2. Click "Create Credentials" → "API Key"
+3. Name it "Places API Key (Client-side)"
+4. Copy the API key immediately
+5. Click "Edit API key" to restrict it:
 
-No new environment variable needed - the existing `GOOGLE_MAPS_API_KEY` will work for both Geocoding and Places API.
+   **Application restrictions** (REQUIRED for security):
+
+   - Select "HTTP referrers (web sites)"
+   - Click "Add an item" and enter your production domain:
+
+     ```text
+     https://concerts.morperhaus.org/*
+     ```
+
+   - Click "Add an item" again for localhost development:
+
+     ```text
+     http://localhost:*
+     ```
+
+   - Click "Done"
+
+   **API restrictions**:
+
+   - Select "Restrict key"
+   - Check "Places API (New)" only
+   - Click "Save"
+
+6. Click "Save" to apply all restrictions
+
+**Why HTTP referrer restrictions matter:**
+
+- Places photo URLs contain the API key as a query parameter (`?key=...`)
+- These URLs are visible in `venues-metadata.json` on GitHub and in browser DevTools
+- HTTP referrer restrictions prevent unauthorized domains from using your key
+- Even if someone copies your key, they can only use it on your authorized domains
+
+### 3. Configure Environment Variables
+
+```bash
+GOOGLE_PLACES_API_KEY=your_places_api_key_here
+```
+
+Your complete `.env` should now have separate keys:
+
+```bash
+# Geocoding (server-side only, API restrictions)
+GOOGLE_MAPS_API_KEY=AIzaSyA...
+
+# Places API (client-side, HTTP referrer restrictions)
+GOOGLE_PLACES_API_KEY=AIzaSyB...
+```
 
 ### 3. Verify Billing is Enabled
 

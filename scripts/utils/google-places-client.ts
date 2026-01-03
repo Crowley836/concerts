@@ -44,7 +44,7 @@ interface PlacesCache {
 }
 
 const CACHE_PATH = path.join(__dirname, '../../public/data/venue-photos-cache.json')
-const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || ''
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || ''
 const CACHE_TTL_DAYS = 90
 
 let cache: PlacesCache = {}
@@ -106,8 +106,8 @@ async function findPlace(
   lat?: number,
   lng?: number
 ): Promise<string | null> {
-  if (!GOOGLE_MAPS_API_KEY) {
-    console.warn('Warning: GOOGLE_MAPS_API_KEY not set, skipping Places API call')
+  if (!GOOGLE_PLACES_API_KEY) {
+    console.warn('Warning: GOOGLE_PLACES_API_KEY not set, skipping Places API call')
     return null
   }
 
@@ -133,7 +133,7 @@ async function findPlace(
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Goog-Api-Key': GOOGLE_MAPS_API_KEY,
+        'X-Goog-Api-Key': GOOGLE_PLACES_API_KEY,
         'X-Goog-FieldMask': 'places.id,places.displayName',
       },
       body: JSON.stringify(body),
@@ -162,8 +162,8 @@ async function findPlace(
  * Get place details including photos
  */
 async function getPlaceDetails(placeId: string): Promise<PlaceDetails | null> {
-  if (!GOOGLE_MAPS_API_KEY) {
-    console.warn('Warning: GOOGLE_MAPS_API_KEY not set, skipping Places API call')
+  if (!GOOGLE_PLACES_API_KEY) {
+    console.warn('Warning: GOOGLE_PLACES_API_KEY not set, skipping Places API call')
     return null
   }
 
@@ -172,7 +172,7 @@ async function getPlaceDetails(placeId: string): Promise<PlaceDetails | null> {
   try {
     const response = await fetch(url, {
       headers: {
-        'X-Goog-Api-Key': GOOGLE_MAPS_API_KEY,
+        'X-Goog-Api-Key': GOOGLE_PLACES_API_KEY,
         'X-Goog-FieldMask':
           'id,displayName,formattedAddress,rating,userRatingCount,websiteUri,types,photos',
       },
@@ -196,7 +196,7 @@ async function getPlaceDetails(placeId: string): Promise<PlaceDetails | null> {
  */
 export function getPhotoUrl(photoName: string, maxHeightPx: number): string {
   // photoName already includes the full path like "places/ChIJ.../photos/..."
-  return `https://places.googleapis.com/v1/${photoName}/media?maxHeightPx=${maxHeightPx}&key=${GOOGLE_MAPS_API_KEY}`
+  return `https://places.googleapis.com/v1/${photoName}/media?maxHeightPx=${maxHeightPx}&key=${GOOGLE_PLACES_API_KEY}`
 }
 
 /**

@@ -3,19 +3,19 @@ import { config } from 'dotenv'
 // Load environment variables
 config()
 
-const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || ''
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || ''
 
 async function testPlacesAPI() {
   console.log('=== Google Places API Diagnostic ===\n')
 
   // Check if API key exists
-  if (!GOOGLE_MAPS_API_KEY) {
-    console.error('❌ GOOGLE_MAPS_API_KEY not found in .env file')
+  if (!GOOGLE_PLACES_API_KEY) {
+    console.error('❌ GOOGLE_PLACES_API_KEY not found in .env file')
     process.exit(1)
   }
 
   console.log('✓ API key found in .env')
-  console.log(`  Key starts with: ${GOOGLE_MAPS_API_KEY.substring(0, 10)}...\n`)
+  console.log(`  Key starts with: ${GOOGLE_PLACES_API_KEY.substring(0, 10)}...\n`)
 
   // Test 1: Text Search API
   console.log('Test 1: Text Search API')
@@ -27,7 +27,7 @@ async function testPlacesAPI() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Goog-Api-Key': GOOGLE_MAPS_API_KEY,
+        'X-Goog-Api-Key': GOOGLE_PLACES_API_KEY,
         'X-Goog-FieldMask': 'places.id,places.displayName',
       },
       body: JSON.stringify({
@@ -62,7 +62,7 @@ async function testPlacesAPI() {
     const detailsUrl = `https://places.googleapis.com/v1/places/${placeId}`
     const detailsResponse = await fetch(detailsUrl, {
       headers: {
-        'X-Goog-Api-Key': GOOGLE_MAPS_API_KEY,
+        'X-Goog-Api-Key': GOOGLE_PLACES_API_KEY,
         'X-Goog-FieldMask':
           'id,displayName,formattedAddress,rating,userRatingCount,websiteUri,types,photos',
       },
@@ -107,7 +107,7 @@ async function testPlacesAPI() {
     if (detailsData.photos && detailsData.photos.length > 0) {
       const photoRef = detailsData.photos[0].name
       console.log('Test 3: Photo URL Generation')
-      const photoUrl = `https://places.googleapis.com/v1/${photoRef}/media?maxHeightPx=400&key=${GOOGLE_MAPS_API_KEY}`
+      const photoUrl = `https://places.googleapis.com/v1/${photoRef}/media?maxHeightPx=400&key=${GOOGLE_PLACES_API_KEY}`
       console.log(`✓ Photo URL: ${photoUrl.substring(0, 80)}...\n`)
     }
 

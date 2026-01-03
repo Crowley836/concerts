@@ -43,6 +43,7 @@ public/version.json
 # Data pipeline backup files
 public/data/*.backup
 public/data/*.backup.*
+data/venues-to-classify.csv*
 
 # Claude Code configuration and plans
 .claude/
