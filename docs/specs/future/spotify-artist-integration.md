@@ -1,8 +1,9 @@
 # Spotify Artist Integration Spec
 
-> **Location**: `docs/specs/future/spotify-artist-integration.md`  
-> **Status**: Planned (v1.1)
+> **Location**: `docs/specs/future/spotify-artist-integration.md`
+> **Status**: Planned (v1.5.0+)
 > **Prerequisites**: Gatefold animation (✅ implemented in [artist-scene.md](../implemented/artist-scene.md))
+> **Mobile Note**: 📱 Mini-player requires mobile-specific bottom sheet layout (see [mobile-optimization.md](mobile-optimization.md))
 > **Related**: [spotify-enrichment-runbook.md](./spotify-enrichment-runbook.md) (enrichment script runbook)
 
 ---

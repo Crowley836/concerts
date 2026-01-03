@@ -1,8 +1,10 @@
 # Data Normalization Architecture
 
-> **Status**: Planned for v1.4.0
-> **Dependencies**: Spotify API Integration (v1.3.0 recommended but not required)
-> **Last Updated**: 2026-01-02
+> **Status**: ✅ Partial - Normalization utility complete (v1.4.0), ❌ Full architecture (genre removal, Spotify derivation) still planned
+> **Completed**: Shared normalize utility ([NORMALIZATION_MIGRATION.md](../implemented/NORMALIZATION_MIGRATION.md)) in v1.4.0
+> **Remaining**: Remove genre field from concerts.json, derive from Spotify/TheAudioDB
+> **Dependencies**: Spotify API Integration (v1.3.0+ recommended but not required)
+> **Last Updated**: 2026-01-04
 
 ---
 

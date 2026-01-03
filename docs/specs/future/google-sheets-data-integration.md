@@ -1,10 +1,11 @@
 # Google Sheets Data Integration Spec
 
 > **Location**: `docs/specs/future/google-sheets-data-integration.md`
-> **Status**: Phase 1 Complete (Core + Enhancements + v1.2.1-v1.2.4), Phase 2 Planned for v1.3+
-> **Target Version**: v1.2.0-v1.2.4 (Phase 1), v1.3+ (Phase 2)
-> **Last Updated**: 2026-01-02 (v1.2.4 Flexible Columns)
-> **Implementation**: [google-sheets-phase1-implementation.md](../implemented/google-sheets-phase1-implementation.md)
+> **Status**: ✅ Phase 1 Complete (v1.2.0-v1.2.4), ❌ Phase 2 (Webhook automation) Future
+> **Completed**: Build-time fetch, OAuth 2.0, validation, caching, flexible columns - [Implementation](../implemented/google-sheets-phase1-implementation.md)
+> **Remaining**: Phase 2 - Webhook automation (Google Apps Script → GitHub Action)
+> **Target Version**: v1.2.0-v1.2.4 (Phase 1 ✅), v1.5.0+ (Phase 2)
+> **Last Updated**: 2026-01-04
 > **User Guide**: [DATA_PIPELINE.md](../../DATA_PIPELINE.md)
 
 ---

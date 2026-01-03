@@ -5,6 +5,7 @@
 **Priority:** High
 **Estimated Complexity:** Medium
 **Dependencies:** Artist Scene Gatefold (✅ Complete in v1.4.0)
+**Mobile Note:** 📱 Requires mobile-specific bottom sheet layout (see [mobile-optimization.md](mobile-optimization.md))
 
 ---
 

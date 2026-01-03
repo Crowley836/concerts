@@ -1,5 +1,7 @@
 # Timeline Artist Display Enhancement
 
+> **Mobile Note:** 📱 Modal/popup UI will require responsive design for phone viewports (see [mobile-optimization.md](mobile-optimization.md))
+
 ## Overview
 
 Improve the user experience when clicking on concert circles in the Timeline Scene by enhancing how artist information is displayed and accessed.

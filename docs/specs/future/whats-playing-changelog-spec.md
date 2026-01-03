@@ -3,7 +3,8 @@
 **Version:** 1.0
 **Status:** Planned (for v1.4.1+)
 **Created:** 2026-01-03
-**Last Updated:** 2026-01-03
+**Last Updated:** 2026-01-04
+**Mobile Note:** 📱 Toast notifications need mobile-specific positioning and sizing (see [mobile-optimization.md](mobile-optimization.md))
 
 ---
 
