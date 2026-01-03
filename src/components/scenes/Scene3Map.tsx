@@ -3,6 +3,46 @@ import { motion, AnimatePresence } from 'framer-motion'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import type { Concert } from '../../types/concert'
+import { normalizeVenueName } from '../../utils/normalizeVenueName'
+
+interface VenueMetadata {
+  name: string
+  normalizedName: string
+  city: string
+  state: string
+  cityState: string
+  location?: {
+    lat: number
+    lng: number
+  }
+  concerts: Array<{
+    id: string
+    date: string
+    headliner: string
+  }>
+  stats: {
+    totalConcerts: number
+    firstEvent: string
+    lastEvent: string
+    uniqueArtists: number
+  }
+  status: string
+  closedDate?: string | null
+  notes?: string | null
+  places?: any
+  manualPhotos?: Array<{
+    url: string
+    width: number
+    height: number
+  }> | null
+  photoUrls?: {
+    thumbnail: string
+    medium: string
+    large: string
+  } | null
+  fetchedAt: string
+  photoCacheExpiry?: string | null
+}
 
 interface Scene3MapProps {
   concerts: Concert[]
@@ -42,6 +82,23 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
   const [selectedRegion, setSelectedRegion] = useState<Region>('all')
   const [isMapActive, setIsMapActive] = useState(false)
   const [showHint, setShowHint] = useState(true)
+  const [venuesMetadata, setVenuesMetadata] = useState<Record<string, VenueMetadata> | null>(null)
+
+  // Load venue metadata (lazy load when Scene 3 mounts)
+  useEffect(() => {
+    const loadVenuesMetadata = async () => {
+      try {
+        const response = await fetch('/data/venues-metadata.json')
+        const data = await response.json()
+        setVenuesMetadata(data)
+      } catch (err) {
+        console.warn('Failed to load venue metadata:', err)
+        // Popups gracefully degrade to no-image state
+      }
+    }
+
+    loadVenuesMetadata()
+  }, [])
 
   // Use ResizeObserver to handle orientation changes and call invalidateSize
   useEffect(() => {
@@ -91,6 +148,51 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
     const cities = new Set(filteredConcerts.map(c => c.cityState))
     return cities.size
   }, [filteredConcerts])
+
+  // Helper function to generate popup HTML with photo and legacy badge
+  const generatePopupHTML = (venueName: string, cityState: string, concertCount: number): string => {
+    if (!venuesMetadata) {
+      // Fallback to simple popup if metadata not loaded yet
+      return `<strong>${venueName}<br/><span style="font-size: 11px; color: #9ca3af;">${cityState}</span></strong><br/>${concertCount} concert${concertCount !== 1 ? 's' : ''}`
+    }
+
+    const normalizedName = normalizeVenueName(venueName)
+    const venue = venuesMetadata[normalizedName]
+    const thumbnailUrl = venue?.photoUrls?.thumbnail
+
+    // Legacy badge logic
+    let legacyBadge = ''
+    if (venue?.status && venue.status !== 'active') {
+      const icon = venue.status === 'demolished' ? '🔨' : '🏛️'
+      const label = venue.status === 'demolished' ? 'Demolished' : 'Closed'
+      const year = venue.closedDate ? ` ${venue.closedDate.split('-')[0]}` : ''
+      legacyBadge = `<div class="venue-popup-badge">${icon} ${label}${year}</div>`
+    }
+
+    return `
+      <div class="venue-popup-content">
+        ${thumbnailUrl ? `
+          <div class="venue-popup-image-container">
+            <img
+              src="${thumbnailUrl}"
+              alt="${venueName}"
+              class="venue-popup-image"
+              loading="lazy"
+              onload="this.parentElement.classList.add('loaded')"
+              onerror="this.parentElement.style.display='none'"
+            />
+            <div class="venue-popup-skeleton"></div>
+          </div>
+        ` : ''}
+        <div class="venue-popup-text">
+          <div class="venue-popup-name">${venueName}</div>
+          <div class="venue-popup-location">${cityState}</div>
+          ${legacyBadge}
+          <div class="venue-popup-count">${concertCount} concert${concertCount !== 1 ? 's' : ''}</div>
+        </div>
+      </div>
+    `
+  }
 
   // Initialize map (one-time setup)
   useEffect(() => {
@@ -146,7 +248,7 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
 
     // Show individual venues for all regions to display venue-level detail when zoomed in
     const showVenues = true
-    const markers = new Map<string, { lat: number; lng: number; count: number; label: string }>()
+    const markers = new Map<string, { lat: number; lng: number; count: number; venueName: string; cityState: string }>()
 
     filteredConcerts.forEach(concert => {
       const key = showVenues ? `${concert.venue}|${concert.cityState}` : concert.cityState
@@ -158,7 +260,8 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
           lat: concert.location.lat,
           lng: concert.location.lng,
           count: 1,
-          label: showVenues ? `${concert.venue}<br/><span style="font-size: 11px; color: #9ca3af;">${concert.cityState}</span>` : concert.cityState,
+          venueName: concert.venue,
+          cityState: concert.cityState,
         })
       }
     })
@@ -177,14 +280,15 @@ export function Scene3Map({ concerts }: Scene3MapProps) {
           fillOpacity: 0.6,
           pane: 'markerPane',
         })
-          .bindPopup(`<strong>${data.label}</strong><br/>${data.count} concert${data.count !== 1 ? 's' : ''}`, {
+          .bindPopup(generatePopupHTML(data.venueName, data.cityState, data.count), {
             className: 'venue-popup',
             pane: 'popupPane',
+            maxWidth: 240,
           })
           .addTo(markersLayerRef.current)
       }
     })
-  }, [filteredConcerts, selectedRegion])
+  }, [filteredConcerts, selectedRegion, venuesMetadata])
 
   // Handle region changes
   useEffect(() => {

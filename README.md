@@ -15,7 +15,7 @@ This project is my attempt to turn that data into something that actually captur
 
 **The Venues** — A network graph connecting venues to the artists who played them. Turns out we've been to Irvine Meadows a *lot*.
 
-**The Geography** — A map of everywhere we've seen live music. Filter by region, click a city, see what happened there.
+**The Geography** — A map of everywhere we've seen live music. Filter by region, click a venue marker to see photos and details of where the shows happened.
 
 **The Genres** — A sunburst chart breaking down our musical diet. Click into a genre to see every artist, click an artist to see their shows.
 
@@ -29,7 +29,7 @@ I wanted to see if I could build a real [Jamstack](https://jamstack.org/what-is-
 
 I also wanted to see what was possible using [Claude Code](https://www.anthropic.com/claude-code) as a collaborator—treating AI as a pair programmer rather than just a search engine. Every feature in here was planned, spec'd, and built through that workflow. The `docs/` folder is basically a paper trail of that experiment.
 
-The result is an app that pulls concert data from a Google Sheet, enriches it with artist images from music APIs, geocodes every venue, and renders it all as a smooth, animated single-page app. Zero runtime cost. Zero monthly bills (well, except for my Cloudflare Pages domain).
+The result is an app that pulls concert data from a Google Sheet, enriches it with artist images and venue photos from APIs, geocodes every venue, and renders it all as a smooth, animated single-page app. Zero runtime cost. Zero monthly bills (well, except for my Cloudflare Pages domain).
 
 ## The stack
 
@@ -49,8 +49,8 @@ If you want to connect your own Google Sheet and run the data pipeline, check [d
 
 ## What's next
 
-**v1.1.0 is live!** iPad optimization is complete—all scenes now work beautifully on tablets with proper touch targets and critical bugs fixed.
+**v1.3.3 is live!** Venue photos now appear in Geography Scene map popups—click any venue marker to see photos, legacy badges for closed/demolished venues, and venue stats. 96% of venues have real photos from Google Places API or manual curation.
 
-Next up: phone optimization (v1.2.0+), Spotify listening history integration, and—most importantly—more shows to add to the list.
+Next up: phone optimization (v1.4.0+), Spotify listening history integration, and—most importantly—more shows to add to the list.
 
 _Built with ❤️ for live music._

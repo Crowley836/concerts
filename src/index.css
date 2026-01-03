@@ -40,9 +40,9 @@ body {
   text-wrap: balance;
 }
 
-/* Leaflet popup z-index override to ensure popups are always topmost */
+/* Leaflet popup z-index - high value within map container stacking context */
 .leaflet-popup-pane {
-  z-index: 1100 !important;
+  z-index: 9999 !important;
 }
 
 .venue-popup .leaflet-popup-content-wrapper {
@@ -50,10 +50,101 @@ body {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border-radius: 0.5rem;
   font-family: 'Source Sans 3', system-ui, sans-serif;
+  padding: 0;
+  overflow: hidden;
 }
 
 .venue-popup .leaflet-popup-tip {
   background: white;
+}
+
+.venue-popup .leaflet-popup-content {
+  margin: 0;
+  min-width: 200px;
+}
+
+/* Venue Popup Content Styles */
+.venue-popup-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 240px;
+}
+
+.venue-popup-image-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background-color: #374151; /* gray-700 */
+}
+
+.venue-popup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.venue-popup-image-container.loaded .venue-popup-image {
+  opacity: 1;
+}
+
+.venue-popup-image-container.loaded .venue-popup-skeleton {
+  display: none;
+}
+
+.venue-popup-skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #374151 25%,
+    #4b5563 50%,
+    #374151 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.venue-popup-text {
+  padding: 12px;
+}
+
+.venue-popup-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 2px;
+}
+
+.venue-popup-location {
+  font-size: 12px;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 6px;
+}
+
+.venue-popup-badge {
+  display: inline-block;
+  font-size: 11px;
+  color: #6b7280; /* gray-600 */
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.venue-popup-count {
+  font-size: 12px;
+  color: #6b7280; /* gray-500 */
+  font-weight: 500;
 }
 
 /* Gatefold 3D Transform Utilities */
