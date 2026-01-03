@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import * as d3 from 'd3'
 import type { Concert } from '../../types/concert'
+import { TimelineHoverPreview, useTimelineHover } from '../TimelineHoverPreview'
 
 interface Scene1HeroProps {
   concerts: Concert[]
@@ -9,8 +10,14 @@ interface Scene1HeroProps {
 
 export function Scene1Hero({ concerts }: Scene1HeroProps) {
   const timelineRef = useRef<SVGSVGElement>(null)
-  const [selectedYear, setSelectedYear] = useState<number | null>(null)
   const [dimensions, setDimensions] = useState({ width: 0, height: 200 })
+  const {
+    hoverState,
+    handleMouseEnter,
+    handleMouseLeave,
+    handlePopupMouseEnter,
+    handlePopupMouseLeave,
+  } = useTimelineHover()
 
   // Use ResizeObserver to get accurate dimensions and handle orientation changes
   useEffect(() => {
@@ -138,6 +145,23 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       // Add interactions to touch target
       touchTarget
         .on('mouseenter', function() {
+          // Get the most prominent artist for this year
+          const yearConcerts = concerts.filter(c => c.year === year)
+          const artistCounts = new Map<string, number>()
+          yearConcerts.forEach(c => {
+            artistCounts.set(c.headliner, (artistCounts.get(c.headliner) || 0) + 1)
+          })
+          const mostFrequentArtist = Array.from(artistCounts.entries())
+            .sort((a, b) => b[1] - a[1])[0]?.[0] || yearConcerts[0]?.headliner || 'Unknown'
+
+          // Get screen position of the dot
+          const svgRect = timelineRef.current?.getBoundingClientRect()
+          if (svgRect) {
+            const screenX = svgRect.left + x + margin.left
+            const screenY = svgRect.top + innerHeight / 2 + margin.top
+            handleMouseEnter(mostFrequentArtist, year, count, { x: screenX, y: screenY })
+          }
+
           // Animate the visible dot
           dot
             .transition()
@@ -162,6 +186,8 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
             .attr('opacity', 0.6)
         })
         .on('mouseleave', function() {
+          handleMouseLeave()
+
           // Reset the visible dot
           dot
             .transition()
@@ -184,9 +210,6 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
             .duration(250)
             .attr('r', radius)
             .attr('opacity', 0)
-        })
-        .on('click', () => {
-          setSelectedYear(year)
         })
 
       touchTarget.append('title')
@@ -212,17 +235,12 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       .attr('font-weight', '500')
       .text(d => d)
 
-  }, [concerts, dimensions, setSelectedYear])
+  }, [concerts, dimensions, handleMouseEnter, handleMouseLeave])
 
   // Calculate stats from data
   const totalConcerts = concerts.length
   const years = concerts.map(c => c.year)
   const yearSpan = years.length > 0 ? `${Math.min(...years)}–${Math.max(...years)}` : ''
-
-  // Get concerts for selected year
-  const selectedYearConcerts = selectedYear
-    ? concerts.filter(c => c.year === selectedYear)
-    : []
 
   return (
     <motion.section
@@ -293,88 +311,12 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
         </motion.div>
       </motion.div>
 
-      {/* Concert Details Modal */}
-      <AnimatePresence>
-        {selectedYear && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-8"
-            onClick={() => setSelectedYear(null)}
-          >
-            <motion.div
-              initial={{ scale: 0.9, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.9, y: 20 }}
-              onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[80vh] overflow-hidden"
-            >
-              {/* Header */}
-              <div className="bg-indigo-600 text-white px-8 py-6 flex justify-between items-center">
-                <div>
-                  <h3 className="font-serif text-3xl">{selectedYear}</h3>
-                  <p className="font-sans text-indigo-200 mt-1">
-                    {selectedYearConcerts.length} concert{selectedYearConcerts.length !== 1 ? 's' : ''}
-                  </p>
-                </div>
-                <button
-                  onClick={() => setSelectedYear(null)}
-                  className="text-white hover:text-indigo-200 transition-colors p-2 -m-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
-                  aria-label="Close"
-                >
-                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-
-              {/* Concert List */}
-              <div className="overflow-y-auto max-h-[calc(80vh-100px)] p-8">
-                <div className="space-y-4">
-                  {selectedYearConcerts.map((concert) => (
-                    <div
-                      key={concert.id}
-                      className="border border-gray-200 rounded-lg p-4 hover:border-indigo-300 hover:bg-indigo-50/50 transition-all"
-                    >
-                      <div className="flex justify-between items-start mb-2">
-                        <div>
-                          <h4 className="font-sans text-lg font-semibold text-gray-900">
-                            {concert.headliner}
-                          </h4>
-                          <p className="font-sans text-sm text-gray-600">{concert.genre}</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="font-sans text-sm font-medium text-gray-700">
-                            {new Date(concert.date).toLocaleDateString('en-US', {
-                              month: 'short',
-                              day: 'numeric',
-                            })}
-                          </p>
-                          <p className="font-sans text-xs text-gray-500">{concert.dayOfWeek}</p>
-                        </div>
-                      </div>
-                      <div className="font-sans text-sm text-gray-600">
-                        <p className="mb-1">
-                          <span className="font-medium">Venue:</span> {concert.venue}
-                        </p>
-                        <p className="mb-2">
-                          <span className="font-medium">Location:</span> {concert.cityState}
-                        </p>
-                        {concert.openers.length > 0 && (
-                          <p className="text-xs text-gray-500">
-                            <span className="font-medium">Openers:</span> {concert.openers.join(', ')}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Timeline Hover Preview */}
+      <TimelineHoverPreview
+        hoverState={hoverState}
+        onMouseEnter={handlePopupMouseEnter}
+        onMouseLeave={handlePopupMouseLeave}
+      />
     </motion.section>
   )
 }
