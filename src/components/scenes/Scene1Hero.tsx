@@ -154,12 +154,16 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           const mostFrequentArtist = Array.from(artistCounts.entries())
             .sort((a, b) => b[1] - a[1])[0]?.[0] || yearConcerts[0]?.headliner || 'Unknown'
 
+          // Get the venue for the first show by the most frequent artist
+          const artistConcert = yearConcerts.find(c => c.headliner === mostFrequentArtist)
+          const venueName = artistConcert?.venue || 'Unknown Venue'
+
           // Get screen position of the dot
           const svgRect = timelineRef.current?.getBoundingClientRect()
           if (svgRect) {
             const screenX = svgRect.left + x + margin.left
             const screenY = svgRect.top + innerHeight / 2 + margin.top
-            handleMouseEnter(mostFrequentArtist, year, count, { x: screenX, y: screenY })
+            handleMouseEnter(mostFrequentArtist, year, count, venueName, { x: screenX, y: screenY })
           }
 
           // Animate the visible dot

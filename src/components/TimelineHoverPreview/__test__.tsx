@@ -23,9 +23,9 @@ export function TimelineHoverPreviewTest() {
 
   // Test with a few known artists
   const testArtists = [
-    { name: 'The Cure', year: 1989, count: 2 },
-    { name: 'Depeche Mode', year: 1990, count: 1 },
-    { name: 'U2', year: 1992, count: 1 },
+    { name: 'The Cure', year: 1989, count: 2, venue: 'Irvine Meadows' },
+    { name: 'Depeche Mode', year: 1990, count: 1, venue: 'Dodger Stadium' },
+    { name: 'U2', year: 1992, count: 1, venue: 'The Forum' },
   ]
 
   return (
@@ -54,6 +54,7 @@ export function TimelineHoverPreviewTest() {
                   artistName={artist.name}
                   year={artist.year}
                   concertCount={artist.count}
+                  venue={artist.venue}
                   imageUrl={imageUrl}
                   mousePosition={{ x: 0, y: 0 }}
                 />

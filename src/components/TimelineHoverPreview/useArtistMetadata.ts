@@ -3,12 +3,20 @@ import type { ArtistMetadata } from './types'
 
 /**
  * Normalize artist name to match the format in artists-metadata.json
- * Removes spaces, special characters, converts to lowercase
+ * Tries multiple formats to handle variations in the data
  */
-function normalizeArtistName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, '')
+function normalizeArtistName(name: string): string[] {
+  const lowercase = name.toLowerCase()
+
+  // Return multiple possible normalizations
+  return [
+    // With hyphens (TheAudioDB format): "duran-duran"
+    lowercase.replace(/[^a-z0-9-]/g, '').replace(/\s+/g, '-'),
+    // Without any special chars: "duranduran"
+    lowercase.replace(/[^a-z0-9]/g, ''),
+    // With spaces replaced by hyphens: "duran-duran"
+    lowercase.replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
+  ]
 }
 
 /**
@@ -51,8 +59,16 @@ export function useArtistMetadata() {
    */
   const getArtistMetadata = (artistName: string): ArtistMetadata | null => {
     if (!metadata) return null
-    const normalized = normalizeArtistName(artistName)
-    return metadata[normalized] || null
+    const normalizedVariants = normalizeArtistName(artistName)
+
+    // Try each normalization variant until we find a match
+    for (const normalized of normalizedVariants) {
+      if (metadata[normalized]) {
+        return metadata[normalized]
+      }
+    }
+
+    return null
   }
 
   /**

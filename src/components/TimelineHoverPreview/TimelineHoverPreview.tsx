@@ -103,6 +103,7 @@ export function TimelineHoverPreview({
             artistName={hoverState.artistName}
             year={hoverState.year}
             concertCount={hoverState.concertCount}
+            venue={hoverState.venue}
             imageUrl={imageUrl}
             mousePosition={mousePosition}
           />

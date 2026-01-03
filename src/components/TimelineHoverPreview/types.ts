@@ -22,6 +22,7 @@ export interface TimelineHoverState {
   artistName: string
   year: number
   concertCount: number
+  venue: string
   position: { x: number; y: number }
   isHovering: boolean
 }
@@ -42,6 +43,7 @@ export interface TimelineHoverContentProps {
   artistName: string
   year: number
   concertCount: number
+  venue: string
   imageUrl?: string
   mousePosition: { x: number; y: number }
 }

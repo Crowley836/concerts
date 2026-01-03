@@ -15,6 +15,7 @@ export function TimelineHoverContent({
   artistName,
   year,
   concertCount,
+  venue,
   imageUrl,
 }: TimelineHoverContentProps) {
   const [localMousePosition, setLocalMousePosition] = useState({ x: 0, y: 0 })
@@ -88,18 +89,15 @@ export function TimelineHoverContent({
       {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-end p-4">
         <div className="text-white">
-          {/* Artist name */}
-          <h3 className="font-serif text-xl font-semibold mb-1 leading-tight">
-            {artistName}
+          {/* Artist and venue */}
+          <h3 className="font-serif text-lg font-semibold mb-1 leading-tight">
+            {artistName} at {venue}
+            {concertCount > 1 && ` + ${concertCount - 1} other show${concertCount - 1 !== 1 ? 's' : ''}`}
           </h3>
 
-          {/* Year and concert count */}
-          <div className="font-sans text-sm text-white/90 flex items-center gap-2">
-            <span className="font-medium">{year}</span>
-            <span className="text-white/60">•</span>
-            <span>
-              {concertCount} concert{concertCount !== 1 ? 's' : ''}
-            </span>
+          {/* Year */}
+          <div className="font-sans text-sm text-white/80">
+            {year}
           </div>
         </div>
       </div>

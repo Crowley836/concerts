@@ -36,12 +36,14 @@ export function useTimelineHover() {
    * @param artistName - Name of the artist
    * @param year - Concert year
    * @param concertCount - Number of concerts that year
+   * @param venue - Venue name
    * @param position - Screen position of the dot {x, y}
    */
   const handleMouseEnter = useCallback((
     artistName: string,
     year: number,
     concertCount: number,
+    venue: string,
     position: { x: number; y: number }
   ) => {
     clearTimeouts()
@@ -53,6 +55,7 @@ export function useTimelineHover() {
         artistName,
         year,
         concertCount,
+        venue,
         position,
         isHovering: true,
       })
