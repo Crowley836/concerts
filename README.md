@@ -11,7 +11,7 @@ An interactive web app for exploring personal concert history. Five scenes—Tim
 
 ## What's New
 
-**v1.7.0 is live!** Find any artist instantly with the new search bar—just start typing and jump straight to their gatefold. Plus, artists now sort by times seen by default, so your most-frequented acts appear first.
+**v1.7.0 is live!** Find any artist instantly with the new search bar—just start typing and jump straight to their gatefold. Plus, artists now sort by times seen by default, so my most-frequented acts appear first.
 
 See the full changelog at [/liner-notes](https://concerts.morperhaus.org/liner-notes)
 
