@@ -19,7 +19,7 @@ interface ArtistSceneProps {
 export function ArtistScene({ concerts }: ArtistSceneProps) {
   const { artistCards, isLoading } = useArtistData(concerts)
   const { getArtistImage, loading: artistImageLoading } = useArtistMetadata()
-  const [sortOrder, setSortOrder] = useState<SortOrder>('alphabetical') // Default: A-Z
+  const [sortOrder, setSortOrder] = useState<SortOrder>('timesSeen') // Default: Most Seen
   const [artistCount, setArtistCount] = useState(0)
   const [openArtist, setOpenArtist] = useState<ArtistCard | null>(null)
   const [clickedTileRect, setClickedTileRect] = useState<DOMRect | null>(null)

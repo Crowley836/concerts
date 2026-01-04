@@ -1,6 +1,19 @@
 {
   "releases": [
     {
+      "version": "1.7.0",
+      "date": "2026-01-04",
+      "title": "Artist Search & Smart Sorting",
+      "description": "Find any artist instantly with typeahead search, and see your most-seen artists first by default",
+      "route": "/?scene=artists",
+      "highlights": [
+        "Typeahead search across all 248 artists",
+        "Auto-scroll to artist and open gatefold",
+        "Default sort by times seen (most frequent first)",
+        "Smooth liner notes slide animations"
+      ]
+    },
+    {
       "version": "1.5.1",
       "date": "2026-01-03",
       "title": "Venue Cross-Navigation",

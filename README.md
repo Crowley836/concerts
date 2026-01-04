@@ -11,7 +11,7 @@ An interactive web app for exploring personal concert history. Five scenes—Tim
 
 ## What's New
 
-**v1.6.0 is live!** Click any concert to see the actual setlist from that night—complete with encore breakdowns and song counts. Browse through artist histories and relive what you heard live. All setlist data loads instantly thanks to build-time pre-fetching.
+**v1.7.0 is live!** Find any artist instantly with the new search bar—just start typing and jump straight to their gatefold. Plus, artists now sort by times seen by default, so your most-frequented acts appear first.
 
 See the full changelog at [/liner-notes](https://concerts.morperhaus.org/liner-notes)
 
@@ -86,7 +86,7 @@ A few things I'm thinking about (whenever I get around to them):
 
 **Phone support** — iPad works great. Phones need some love—bottom sheets for artist details, better touch controls, layouts that make sense at 430px wide.
 
-**Artist search** — Quick typeahead search to jump directly to any artist across all 248 performers. No more scrolling through the full list.
+**Cross-scene artist navigation** — Click any artist node in the Venues force graph and jump straight to their gatefold in the Artists scene. Complete the discovery triangle.
 
 **Spotify integration** — Album covers on artist cards, 30-second preview players in the gatefold, "Open in Spotify" links. The vinyl metaphor taken to its logical conclusion.
 
