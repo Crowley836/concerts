@@ -582,23 +582,436 @@ Cache: public/data/venue-photos-cache.json
   - Venue Network detail modals (v1.4.0+)
   - Venue filtering and search (v1.4.0+)
 
-### 6. Build Pipeline (`build-data.ts`)
+### 6. Setlist Pre-fetch (`prefetch-setlists.ts`)
 
 **What it does:**
-- Orchestrates full pipeline
-- Runs fetch → validate → enrich
-- Can skip validation with `--skip-validation` flag
+- Pre-fetches setlists from setlist.fm API at build time
+- Creates static cache file for instant runtime loading
+- Uses intelligent fuzzy matching for venue/location variations
+- Supports incremental updates (reuses existing cache)
+- Handles force refresh to update existing setlists
 
-**Usage:**
+**Data Source**: setlist.fm API
+- Free API with rate limiting (~1 request per second)
+- Community-maintained setlist database
+- API docs: https://api.setlist.fm/docs/1.0/index.html
+
+**Features**:
+- Three-tier caching: Static cache → Memory cache → API fallback
+- Automatic backups before cache updates
+- Fuzzy matching handles venue name variations
+- Graceful degradation for missing setlists
+
+**Example Output**:
+```
+🎵 Pre-fetching setlists for all concerts...
+
+📊 Found 174 concerts to process
+
+📦 Found existing cache with 174 entries
+   Cache generated: 2026-01-03T23:29:47.333Z
+
+[1/174] ✓ Social Distortion - House of Blues (cached)
+[2/174] 🔍 The Cure - Hollywood Bowl...
+[2/174] ✅ Found setlist with 24 songs
+[3/174] ⚪ No setlist found
+
+============================================================
+✨ Pre-fetch complete!
+============================================================
+📊 Total concerts: 174
+📦 Used cached: 145
+🔍 Fetched new: 27
+⚪ Not found: 2
+❌ Errors: 0
+
+💾 Cache saved to: public/data/setlists-cache.json
+📦 Cache size: 502.18 KB
+```
+
+**Usage**:
 ```bash
-# Full pipeline with validation
+# Incremental update (reuses cache)
+npm run prefetch:setlists
+
+# Force refresh (re-fetch everything)
+npm run prefetch:setlists -- --force-refresh
+```
+
+**Current Usage**:
+- Powers Liner Notes panel in Artist Scene gatefold
+- Eliminates CORS issues in production
+- Reduces API quota usage by 99%
+- Instant loading for cached setlists
+
+---
+
+### 7. Spotify Enrichment (`enrich-spotify-metadata.ts`)
+
+**What it does:**
+- Enriches artist metadata with Spotify data
+- Fetches album covers, top tracks, preview URLs
+- Handles ambiguous artist matches with manual overrides
+- Caches results for 90 days
+
+**Data Source**: Spotify Web API
+- Requires Client Credentials (see docs/api-setup.md)
+- Rate limit: ~3 requests/second
+- Free tier: Unlimited API calls
+
+**Metadata Fields Collected**:
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `spotifyArtistId` | Spotify artist ID | "1w5Kfo2jwwIPruYS2UWh56" |
+| `spotifyArtistUrl` | Artist profile URL | "https://open.spotify.com/artist/..." |
+| `mostPopularAlbum` | Top album with cover art | {...} |
+| `topTracks` | Top 3 tracks with previews | [{...}, {...}, {...}] |
+| `genres` | Spotify genre tags | ["punk rock", "ska punk"] |
+| `popularity` | Popularity score (0-100) | 68 |
+
+**Example Output**:
+```
+🎵 Enriching artist metadata with Spotify data...
+
+🔑 Authenticating with Spotify...
+✅ Authenticated
+
+Processing 174 artists...
+
+Fetching: Social Distortion
+  ✅ Enriched (album: Social Distortion)
+
+Fetching: Boston
+  ⚠️  Review match: "Boston" → "Boston Playlist" (popularity: 15)
+  ✅ Enriched (album: Boston)
+
+📊 Enrichment Summary:
+   ✅ Enriched: 145
+   ⏭️  Skipped (cached): 25
+   ❌ Failed: 4
+
+💾 Saved to: public/data/artists-metadata.json
+
+🎉 Done!
+```
+
+**Usage**:
+```bash
+# Enrich with Spotify data
+npm run enrich-spotify
+```
+
+See [docs/specs/future/spotify-enrichment-runbook.md](specs/future/spotify-enrichment-runbook.md) for detailed setup instructions.
+
+---
+
+### 8. Build Pipeline (`build-data.ts`) - Enhanced Orchestrator
+
+**What it does:**
+- Orchestrates the complete data refresh pipeline
+- Runs all enrichment steps in sequence
+- Supports selective execution with skip flags
+- Automatic API credential validation
+- Comprehensive progress tracking and error handling
+
+**Pipeline Steps** (in order):
+
+1. **Fetch Google Sheets** → `concerts.json` (always runs)
+2. **Validate concerts** → Quality checks (optional)
+3. **Enrich artist metadata** → TheAudioDB/Last.fm (always runs)
+4. **Enrich venue metadata** → Google Places API (optional)
+5. **Enrich Spotify data** → Album art, tracks (optional)
+6. **Pre-fetch setlists** → setlist.fm cache (optional)
+
+**Available Flags:**
+
+| Flag | Effect | Use When |
+|------|--------|----------|
+| `--dry-run` | Preview without writing files | Testing changes safely |
+| `--skip-validation` | Skip data quality checks | Faster builds, trusted data |
+| `--skip-venues` | Skip venue enrichment | Saving API quota/cost |
+| `--skip-spotify` | Skip Spotify enrichment | No Spotify credentials |
+| `--skip-setlists` | Skip setlist pre-fetch | No setlist.fm API key |
+| `--force-refresh-setlists` | Re-fetch all setlists | Updating existing setlists |
+
+**Usage Examples:**
+
+```bash
+# Full refresh (all data sources)
 npm run build-data
 
-# Skip validation (faster, less safe)
-npm run build-data -- --skip-validation
-# or
-SKIP_VALIDATION=true npm run build-data
+# Preview changes without writing files
+npm run build-data -- --dry-run
+
+# Quick refresh (skip expensive operations)
+npm run build-data -- --skip-venues --skip-spotify
+
+# Minimal refresh (concerts + artists only)
+npm run build-data -- --skip-venues --skip-spotify --skip-setlists
+
+# Update setlist cache only
+npm run build-data -- --skip-venues --skip-spotify
+
+# Force refresh all setlists (ignore cache)
+npm run build-data -- --force-refresh-setlists
+
+# Fast build for development
+npm run build-data -- --skip-validation --skip-venues --skip-spotify
 ```
+
+**Example Output:**
+
+```
+🎸 Starting Concert Data Pipeline...
+
+============================================================
+
+📋 Pipeline Steps:
+   ✓ Fetch Google Sheets
+   ✓ Validate concerts
+   ✓ Enrich artist metadata
+   ⏭️ Enrich venue metadata (skipped)
+   ✓ Enrich Spotify data
+   ✓ Pre-fetch setlists
+
+============================================================
+Step 1/5: Fetching data from Google Sheets
+------------------------------------------------------------
+[...fetch output...]
+
+============================================================
+Step 2/5: Validating concert data
+------------------------------------------------------------
+[...validation output...]
+
+============================================================
+Step 3/5: Enriching artist metadata
+------------------------------------------------------------
+[...enrichment output...]
+
+============================================================
+Step 4/5: Enriching Spotify metadata
+------------------------------------------------------------
+[...Spotify output...]
+
+============================================================
+Step 5/5: Pre-fetching setlists
+------------------------------------------------------------
+[...setlist output...]
+
+============================================================
+✨ Data pipeline complete!
+============================================================
+
+📁 Output files:
+   - public/data/concerts.json
+   - public/data/artists-metadata.json
+   - public/data/setlists-cache.json
+
+📦 Automatic backups created with .backup.TIMESTAMP extension
+
+Next steps:
+   • Review changes: npm run diff-data
+   • Build site: npm run build
+   • Preview: npm run dev
+```
+
+**API Credential Validation:**
+
+The pipeline automatically checks for required API credentials before running optional steps. If credentials are missing, it skips the step gracefully with a warning:
+
+```
+============================================================
+Step 4/5: Enriching Spotify metadata
+------------------------------------------------------------
+⚠️  Warning: Spotify credentials not configured in .env
+   Skipping Spotify enrichment
+   See docs/api-setup.md for setup instructions
+```
+
+**Error Handling:**
+
+If any step fails, the pipeline:
+1. Displays the error message
+2. Shows troubleshooting tips
+3. Exits with code 1 (prevents bad data)
+4. Keeps previous successful output (doesn't corrupt files)
+
+```
+❌ Pipeline failed: Google Sheets API authentication failed
+
+To troubleshoot:
+   • Check error message above for specific issue
+   • Verify .env file has required API credentials
+   • Try running individual scripts to isolate the problem
+```
+
+**Backup Protection:**
+
+All scripts automatically create timestamped backups before writing files:
+- `concerts.json.backup.2026-01-03T14-30-45`
+- `artists-metadata.json.backup.2026-01-03T14-30-45`
+- `venues-metadata.json.backup.2026-01-03T14-30-45`
+- `setlists-cache.json.backup.2026-01-03T14-30-45`
+
+Keeps last 10 backups automatically. Backups are never overwritten.
+
+---
+
+## Complete Data Refresh Workflow
+
+This section describes the complete workflow for refreshing all concert data from source through deployment.
+
+### When to Run a Full Refresh
+
+Run the complete pipeline when:
+- Adding new concerts to Google Sheets
+- Updating existing concert data
+- Refreshing artist metadata (photos, bios)
+- Updating venue information
+- Fetching new setlists
+- Monthly maintenance refresh
+
+### Step-by-Step Process
+
+**1. Update Source Data** (if needed)
+```bash
+# Edit your Google Sheet with new/updated concerts
+# No command needed - just edit the sheet directly
+```
+
+**2. Preview Changes (recommended)**
+```bash
+# See what will change without writing files
+npm run build-data -- --dry-run
+
+# Review the output:
+# - How many concerts will be processed?
+# - Any validation warnings?
+# - Which API calls will be made?
+```
+
+**3. Run Full Pipeline**
+```bash
+# Option A: Full refresh (all sources)
+npm run build-data
+
+# Option B: Skip expensive operations
+npm run build-data -- --skip-venues --skip-spotify
+
+# Option C: Setlists only (after adding new concerts)
+npm run build-data -- --skip-venues --skip-spotify
+```
+
+**4. Review Changes**
+```bash
+# Compare before/after (uses automatic backups)
+npm run diff-data
+
+# Check specific files
+git status
+git diff public/data/concerts.json
+git diff public/data/setlists-cache.json
+```
+
+**5. Test Locally**
+```bash
+# Start dev server
+npm run dev
+
+# Test in browser:
+# - Do new concerts appear?
+# - Do setlists load?
+# - Any console errors?
+# - Check all 5 scenes
+```
+
+**6. Commit & Deploy**
+```bash
+# Stage changes
+git add public/data/*.json
+
+# Commit with descriptive message
+git commit -m "data: Add 5 concerts from January 2026"
+
+# Push to GitHub (triggers automatic deployment)
+git push origin main
+```
+
+**7. Verify Production**
+```bash
+# Wait 2-3 minutes for deployment
+# Check https://concerts.morperhaus.org
+
+# Verify:
+# - New concerts visible
+# - Setlists loading
+# - No broken features
+```
+
+### Time Estimates
+
+| Operation | First Run | Incremental | Notes |
+|-----------|-----------|-------------|-------|
+| Fetch Google Sheets | ~5s | ~5s | Always fetches all |
+| Validate concerts | ~2s | ~2s | Always validates all |
+| Enrich artists | ~90s | ~10s | Skips cached (<30 days) |
+| Enrich venues | ~50s | ~5s | Skips cached (<90 days) |
+| Enrich Spotify | ~180s | ~20s | Skips cached (<90 days) |
+| Pre-fetch setlists | ~260s | ~30s | Skips existing cache |
+| **Total (full)** | **~10 min** | **~1-2 min** | First time or force refresh |
+| **Total (typical)** | **~2 min** | **~30s** | Adding new concerts |
+
+### Troubleshooting Common Issues
+
+**Issue: Pipeline fails at Google Sheets step**
+```
+❌ Error fetching Google Sheets data: Request failed with status code 401
+```
+**Fix:**
+1. Check `.env` file has all Google credentials
+2. Verify refresh token hasn't expired
+3. See [docs/api-setup.md](api-setup.md) for re-authentication
+
+**Issue: Validation warnings about duplicate concerts**
+```
+⚠️  Duplicate concert found: 2024-03-15 - Social Distortion
+```
+**Fix:**
+1. Open Google Sheet
+2. Search for duplicate date + headliner
+3. Remove duplicate row
+4. Re-run pipeline
+
+**Issue: Setlist pre-fetch takes too long**
+```
+[45/174] 🔍 Fetching...
+[Still running after 5 minutes]
+```
+**Fix:**
+- This is normal for first run (~4-5 minutes total)
+- Incremental runs only fetch new concerts (<30 seconds)
+- Use `--skip-setlists` if you need a fast build
+
+**Issue: Spotify enrichment fails with rate limit**
+```
+❌ Error: 429 Too Many Requests
+```
+**Fix:**
+- Script has built-in rate limiting (350ms between requests)
+- If still hitting limits, wait a few minutes and re-run
+- Already enriched artists will be skipped (cached)
+
+**Issue: Output files not updated after successful run**
+```
+✨ Data pipeline complete!
+[But git diff shows no changes]
+```
+**Fix:**
+- Check if you used `--dry-run` flag (prevents writes)
+- Verify no errors earlier in output
+- Check file timestamps: `ls -l public/data/*.json`
 
 ---
 

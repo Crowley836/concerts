@@ -19,6 +19,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { config as dotenvConfig } from 'dotenv'
+import { createBackup } from './utils/backup.js'
 
 // Load environment variables from .env file
 dotenvConfig()
@@ -294,8 +295,10 @@ function delay(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-async function main() {
-  console.log('🎵 Pre-fetching setlists for all concerts...\n')
+async function main(options: { forceRefresh?: boolean } = {}) {
+  const { forceRefresh = false } = options
+
+  console.log(`🎵 Pre-fetching setlists for all concerts...${forceRefresh ? ' (FORCE REFRESH)' : ''}\n`)
 
   // Get API key from environment
   const apiKey = process.env.VITE_SETLISTFM_API_KEY
@@ -320,7 +323,15 @@ async function main() {
     try {
       existingCache = JSON.parse(fs.readFileSync(cachePath, 'utf-8'))
       console.log(`📦 Found existing cache with ${existingCache.entries.length} entries`)
-      console.log(`   Cache generated: ${existingCache.generatedAt}\n`)
+      console.log(`   Cache generated: ${existingCache.generatedAt}`)
+
+      if (forceRefresh) {
+        console.log('   🔄 Force refresh enabled - will re-fetch all setlists')
+        // Create backup before clearing cache
+        createBackup(cachePath, { maxBackups: 10, verbose: true })
+        existingCache = null
+      }
+      console.log()
     } catch (error) {
       console.warn('⚠️  Warning: Could not read existing cache, starting fresh\n')
     }
@@ -328,7 +339,7 @@ async function main() {
 
   // Build map of existing cache entries
   const existingEntries = new Map<string, SetlistCacheEntry>()
-  if (existingCache) {
+  if (existingCache && !forceRefresh) {
     for (const entry of existingCache.entries) {
       existingEntries.set(entry.concertId, entry)
     }
@@ -444,7 +455,14 @@ async function main() {
   console.log(`📦 Cache size: ${(fs.statSync(cachePath).size / 1024).toFixed(2)} KB`)
 }
 
-main().catch(error => {
-  console.error('\n❌ Fatal error:', error)
-  process.exit(1)
-})
+// Run if called directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const forceRefresh = process.argv.includes('--force-refresh')
+  main({ forceRefresh }).catch(error => {
+    console.error('\n❌ Fatal error:', error)
+    process.exit(1)
+  })
+}
+
+// Export for use in build pipeline
+export default main

@@ -570,6 +570,172 @@ For now, auto-deploy works fine. When the project matures or I want more control
 
 ---
 
+## Phase 6: Data Refresh Day
+
+Every so often, I need to refresh the concert data—either adding new shows I've been to, or updating metadata for existing ones. This workflow has evolved into a reliable routine that takes about 5-10 minutes for a typical update.
+
+### The Mindset Shift
+
+Early on, I treated data updates like delicate surgery. I'd manually backup files, run each script individually, nervously check diffs, and hold my breath hoping nothing broke. Exhausting and error-prone.
+
+The current workflow is different: **trust the automation, but verify the results**. All the scripts create automatic backups. The pipeline validates data quality. Dry-run mode lets me preview changes safely. I've run this dozens of times now—it just works.
+
+### My Typical Data Refresh Flow
+
+Here's what a real session looks like when I'm adding concerts:
+
+**1. Update Google Sheet (2 minutes)**
+
+I open my concert tracking Google Sheet and add new rows:
+- Date, headliner, venue, city/state
+- Openers if I remember them
+- Reference URL if I have a ticket stub photo or flyer
+
+No need to be precious about it—validation will catch any obvious mistakes.
+
+**2. Preview Changes (30 seconds)**
+
+Before running anything for real, I preview:
+
+```bash
+npm run build-data -- --dry-run --skip-venues --skip-spotify
+```
+
+I'm skipping the expensive operations (venues, Spotify) because I just want to see if the new concerts look right. The dry-run output shows:
+- How many concerts will be processed (should match my sheet)
+- Any validation warnings (duplicates, invalid dates, etc.)
+- What would be fetched (new artists, new setlists)
+
+If anything looks wrong, I fix it in the Google Sheet and preview again. No harm done—nothing written yet.
+
+**3. Run the Pipeline (1-2 minutes)**
+
+Once the preview looks good:
+
+```bash
+npm run build-data -- --skip-venues --skip-spotify
+```
+
+This fetches the data, validates it, enriches artist metadata, and pre-fetches setlists for the new concerts. The venue and Spotify stuff can wait—I typically only refresh those monthly since they change rarely.
+
+I watch the output scroll by. Mostly I'm looking for:
+- ✅ All steps complete successfully
+- ✅ New concerts show up in the fetch summary
+- ✅ Setlists found for at least some of them (not all shows have setlists on setlist.fm—that's fine)
+- ❌ No unexpected errors or validation failures
+
+**4. Quick Spot Check (1 minute)**
+
+```bash
+npm run dev
+```
+
+I open localhost:5173 in my browser and:
+- Navigate to the Timeline—do the new concerts appear?
+- Click one—does the Artist Scene load?
+- Check if setlists loaded in the Liner Notes panel
+- Glance at the Geography map—new venue markers showing up?
+
+This isn't exhaustive QA. I'm just making sure nothing obviously broke. If the new concerts are visible and clickable, that's good enough.
+
+**5. Commit & Push (1 minute)**
+
+```bash
+git status
+git diff public/data/concerts.json
+```
+
+I skim the diff to confirm the changes look reasonable—new concert objects added, no weird deletions or modifications to existing data. Then:
+
+```bash
+git add public/data/*.json
+git commit -m "data: Add 3 concerts from January 2026"
+git push origin main
+```
+
+Push triggers the automatic Cloudflare deployment. I'll check the live site in a few minutes, but honestly, if it worked locally, it'll work in production.
+
+**6. Verify Production (2 minutes, optional)**
+
+After deployment completes (~2-3 minutes), I spot-check the live site:
+- https://concerts.morperhaus.org
+- Navigate to one of the new concerts
+- Confirm it's there and functional
+
+That's it. The whole flow—from opening the Google Sheet to seeing changes live—typically takes 5-10 minutes. Most of that is waiting for scripts to run, not active work.
+
+### When to Run the Full Pipeline
+
+The workflow above skips venues and Spotify because those rarely change. But sometimes I do want to refresh everything:
+
+```bash
+# Full refresh (all data sources, first run takes ~10 min)
+npm run build-data
+```
+
+I run this when:
+- **Monthly maintenance** — Refresh all metadata, catch any updates
+- **New venue photos available** — Google Places might have new images
+- **Spotify data outdated** — Album art changed, new popular tracks
+- **Force-refresh setlists** — Correct a setlist error on setlist.fm
+
+For the full refresh, I plan for about 15 minutes total (10 minutes running, 5 minutes for testing and commit). I usually do this on a weekend when I'm not in the middle of other work.
+
+### Available Shortcuts
+
+The pipeline supports flags for different scenarios:
+
+```bash
+# Just concerts + artists (fastest, ~30 seconds)
+npm run build-data -- --skip-venues --skip-spotify --skip-setlists
+
+# Skip validation if I'm confident the data is good
+npm run build-data -- --skip-validation --skip-venues --skip-spotify
+
+# Preview without writing anything
+npm run build-data -- --dry-run
+
+# Force refresh all setlists (if one was corrected online)
+npm run build-data -- --force-refresh-setlists
+```
+
+See [DATA_PIPELINE.md](DATA_PIPELINE.md) for complete flag documentation.
+
+### When Things Go Wrong
+
+**If the pipeline fails halfway through:**
+- Read the error message—it usually tells you exactly what's wrong
+- Common issues: Google Sheets auth expired, rate limit hit, invalid data in sheet
+- Fix the issue and re-run—the incremental caching means you won't redo work
+- Everything creates backups automatically—worst case, restore from `.backup` files
+
+**If validation finds issues:**
+```
+⚠️  Duplicate concert found: 2024-03-15 - Social Distortion
+```
+- Open the Google Sheet and fix the issue (remove duplicate, correct date, etc.)
+- Re-run the pipeline—validation runs again and will confirm the fix
+
+**If local testing reveals a problem:**
+- Check browser console for errors
+- Try the problem concert specifically—does it load?
+- If data looks wrong, check the generated JSON files directly
+- Restore from backups if needed: `cp public/data/concerts.json.backup.2026-01-03T14-30-45 public/data/concerts.json`
+
+The key realization: **mistakes are cheap to fix**. Backups are automatic. Validation catches most issues. And even if something weird makes it to production, I can just roll back the commit and push again. No drama.
+
+### What I've Learned
+
+1. **Dry-run first** — Previewing changes costs nothing and catches problems early
+2. **Skip what you don't need** — Most updates don't require refreshing venues or Spotify
+3. **Trust the automation** — Backups, validation, and caching all work. I don't need to babysit every step
+4. **Spot-check, don't exhaustively test** — If the new concerts show up and click, it's probably fine
+5. **Commit early, iterate fast** — If I notice something off after deploying, I can just fix it and push again
+
+The workflow is now muscle memory. Add concerts to sheet → preview → run → test → commit → push → done. No stress, no drama, just a reliable process that works.
+
+---
+
 ## Quick Reference
 
 All commands run in VS Code's integrated terminal (`` Ctrl+` `` or `` Cmd+` `` to toggle).
