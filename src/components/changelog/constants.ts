@@ -9,7 +9,7 @@
  */
 export const TOAST = {
   /** Toast width in pixels */
-  WIDTH: 450,
+  WIDTH: 320,
 
   /** Minimum toast height */
   MIN_HEIGHT: 120,
@@ -18,7 +18,10 @@ export const TOAST = {
   MAX_HEIGHT: 180,
 
   /** Distance from bottom of viewport */
-  BOTTOM_OFFSET: 80,
+  BOTTOM_OFFSET: 24,
+
+  /** Distance from right edge of viewport */
+  RIGHT_OFFSET: 24,
 
   /** Z-index (above all other elements) */
   Z_INDEX: 9999,

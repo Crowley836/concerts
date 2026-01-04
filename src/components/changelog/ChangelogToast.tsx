@@ -75,20 +75,20 @@ export function ChangelogToast({
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: 100, opacity: 0 }}
           transition={{
             type: 'spring',
             stiffness: 100,
             damping: 20,
             duration: 0.5,
           }}
-          className="fixed left-1/2 z-[9999] cursor-pointer"
+          className="fixed z-[9999] cursor-pointer"
           style={{
             bottom: `${TOAST.BOTTOM_OFFSET}px`,
-            transform: 'translateX(-50%)',
-            width: `min(${TOAST.WIDTH}px, calc(100vw - 32px))`,
+            right: `${TOAST.RIGHT_OFFSET}px`,
+            width: `min(${TOAST.WIDTH}px, calc(100vw - 48px))`,
           }}
           onClick={handleToastClick}
           role="status"
@@ -96,7 +96,7 @@ export function ChangelogToast({
           aria-atomic="true"
         >
           <div
-            className="rounded-xl p-6 backdrop-blur-sm"
+            className="rounded-lg p-4 backdrop-blur-sm"
             style={{
               backgroundColor: TOAST.BG_COLOR,
               borderWidth: '2px',
@@ -104,10 +104,10 @@ export function ChangelogToast({
             }}
           >
             {/* Content */}
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🎵</span>
-                <span className="text-lg font-semibold text-white">
+            <div className="flex items-start justify-between mb-2">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">🎵</span>
+                <span className="text-sm font-semibold text-white">
                   {newFeatureCount} new feature{newFeatureCount !== 1 ? 's' : ''} added!
                 </span>
               </div>
@@ -116,14 +116,14 @@ export function ChangelogToast({
                   e.stopPropagation() // Prevent toast click
                   onDismiss()
                 }}
-                className="text-slate-400 hover:text-white transition-colors text-2xl leading-none -mt-1 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                className="text-slate-400 hover:text-white transition-colors text-xl leading-none -mt-1 min-w-[32px] min-h-[32px] flex items-center justify-center"
                 aria-label="Dismiss notification"
               >
                 ×
               </button>
             </div>
 
-            <p className="text-slate-400 mb-4">
+            <p className="text-xs text-slate-400 mb-3">
               Latest additions to the Morperhaus concert archives
             </p>
 
@@ -132,7 +132,7 @@ export function ChangelogToast({
                 e.stopPropagation() // Prevent double navigation
                 handleNavigate()
               }}
-              className="w-full py-3 rounded-lg font-medium transition-colors min-h-[44px]"
+              className="w-full py-2 rounded-lg text-sm font-medium transition-colors min-h-[36px]"
               style={{
                 backgroundColor: TOAST.BUTTON_BG,
                 color: 'white',
@@ -149,7 +149,7 @@ export function ChangelogToast({
             </button>
 
             {/* Progress bar */}
-            <div className="mt-4 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div className="mt-3 h-1 bg-slate-800 rounded-full overflow-hidden">
               <motion.div
                 className="h-full"
                 style={{

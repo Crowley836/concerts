@@ -1,6 +1,6 @@
 # Morperhaus Concert Archives - Status
 
-**Version:** v1.7.5 🎉
+**Version:** v1.7.6 🎉
 **Last Updated:** 2026-01-04
 **Current Phase:** Production Release - Mobile Polish
 **Live URL:** https://concerts.morperhaus.org
@@ -510,6 +510,39 @@ The popup serves as a "memory trigger" - a glimpse into a year's musical moments
 - Button width: auto-size → full-width (better CTA prominence)
 - Node sizing: multiple iterations to achieve proper visual weight
 - Text refinement: "View in Venues" → "Explore" → "Explore Venue"
+
+### v1.7.6 Toast UX Polish (Complete) 🎉
+
+**Status:** Complete
+**Completed:** 2026-01-04
+**Focus:** Changelog toast notification UX improvements
+
+**Implementation Completed:**
+
+- ✅ **Toast Size Reduction** - Made notification more compact and less intrusive
+  - Width: 450px → 320px (29% smaller)
+  - Padding: p-6 → p-4 (reduced visual weight)
+  - Title text: text-lg → text-sm
+  - Description: regular → text-xs
+  - Button height: min-h-[44px] → min-h-[36px]
+  - Close button: min-w/h-[44px] → [32px]
+- ✅ **Toast Repositioning** - Moved to lower right corner
+  - Changed from bottom-center to bottom-right positioning
+  - Animation: slides in from right (x: 100) instead of bottom (y: 100)
+  - Position: `right: 24px, bottom: 24px`
+  - Matches typical toast notification patterns
+
+**Files Modified:**
+
+- `src/components/changelog/constants.ts` - Updated TOAST width (320px), offsets (24px), added RIGHT_OFFSET
+- `src/components/changelog/ChangelogToast.tsx` - Updated positioning, animation, and sizing classes
+
+**Implementation Stats:**
+
+- 2 files modified
+- Reduced visual footprint by ~40%
+- Less obtrusive positioning
+- Improved mobile experience with smaller size
 
 ### v1.7.5 Mobile Touch Feedback & Haptics (Complete) 🎉
 
