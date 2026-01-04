@@ -115,14 +115,16 @@ The Artist Scene gatefold is complete (v1.4.0) with:
 - src/services/setlistfm.ts (API client, ~150 lines)
 - src/types/setlist.ts (TypeScript interfaces, ~60 lines)
 - src/components/scenes/ArtistScene/LinerNotesPanel.tsx (~200 lines)
-- src/components/scenes/ArtistScene/SetlistButton.tsx (~50 lines)
+- src/components/scenes/ArtistScene/ConcertContextMenu.tsx (~150 lines) - Replaces SetlistButton, adds menu
 
 **Files You'll Modify:**
-- src/components/scenes/ArtistScene/ArtistGatefold.tsx (add liner notes state)
-- src/components/scenes/ArtistScene/ConcertHistoryPanel.tsx (add setlist buttons)
+- src/components/scenes/ArtistScene/ArtistGatefold.tsx (add liner notes state and menu handling)
+- src/components/scenes/ArtistScene/ConcertHistoryPanel.tsx (add contextual menu)
 - src/components/scenes/ArtistScene/SpotifyPanel.tsx (add dimming prop)
-- src/index.css (liner notes styles, scrollbar)
+- src/index.css (liner notes styles, scrollbar, menu styles)
 - .env (add VITE_SETLISTFM_API_KEY)
+
+**Note:** This spec assumes implementation alongside the Upcoming Tour Dates feature (v1.6.0). If implementing setlists alone, the ConcertContextMenu can show only the "View Setlist" option, with the "Upcoming Shows" option added later.
 
 Let's start with Window 1: API Integration. Should I begin by creating the setlist.fm service module?
 ```
@@ -148,7 +150,7 @@ Let's start with Window 1: API Integration. Should I begin by creating the setli
 └─────────────────────────────────────┘
 ```
 
-**Enhanced State (with setlist indicators):**
+**Enhanced State (with contextual menu):**
 ```
 ┌─────────────────────────────────────┐
 │  19 Oct 2023  Brooklyn Steel    ⋮  │ ← Three-dot menu icon
@@ -165,11 +167,38 @@ Let's start with Window 1: API Integration. Should I begin by creating the setli
 - **Hover Effect:** Icon brightens + subtle scale (1.1×)
 - **Cursor:** `cursor: pointer`
 
-**Alternative Icon Options:**
-1. ⋮ Three dots (recommended - universal "more" pattern)
-2. 📋 Clipboard (more literal but less minimal)
-3. 🎵 Music note (thematic but ambiguous)
-4. "Setlist" text label (clear but less elegant)
+**Contextual Menu:**
+
+When clicked, the three-dot icon opens a contextual menu with two options:
+
+```
+┌─────────────────────────────┐
+│ 📋 View Setlist            │  ← Option 1: Historical setlist
+│ 🎫 Upcoming Shows          │  ← Option 2: Future tour dates
+└─────────────────────────────┘
+```
+
+- **Menu Width:** 220px
+- **Menu Background:** `rgba(24, 24, 24, 0.98)`
+- **Menu Border:** 1px solid `rgba(255, 255, 255, 0.15)`
+- **Menu Shadow:** `0 4px 12px rgba(0, 0, 0, 0.5)`
+- **Item Padding:** 12px horizontal, 10px vertical
+- **Position:** Anchored below and to left of three-dot icon
+
+**Menu Item States:**
+
+**Available (clickable):**
+- Text color: `#e5e5e5`
+- Hover background: `rgba(255, 255, 255, 0.08)`
+- Cursor: pointer
+
+**Unavailable (disabled):**
+- Text color: `rgba(255, 255, 255, 0.3)` (dimmed)
+- Text changes: "No Setlist Found" / "No Upcoming Shows"
+- No hover effect
+- Cursor: default
+
+This unified menu pattern makes both setlist and tour dates features discoverable from a single interaction point. See [upcoming-tour-dates.md](./upcoming-tour-dates.md) for the complementary tour dates feature specification.
 
 ### Liner Notes Panel Design
 
@@ -389,25 +418,41 @@ Close animation:
 
 ### Component Architecture
 
-```
+```tsx
 <ArtistGatefold>
-  <ConcertHistoryPanel onSetlistClick={handleSetlistClick}>
+  <ConcertHistoryPanel onMenuClick={handleMenuClick}>
     <ConcertRow>
       <span>Date</span>
       <span>Venue</span>
-      <SetlistButton onClick={() => handleSetlistClick(concert)} />
+      <ConcertContextMenu
+        concert={concert}
+        onSetlistClick={() => handleSetlistClick(concert)}
+        onTourDatesClick={() => handleTourDatesClick(concert)}
+        hasSetlist={checkSetlistAvailability(concert)}
+        hasTourDates={tourDatesCount > 0}
+      />
     </ConcertRow>
   </ConcertHistoryPanel>
 
-  <SpotifyPanel dimmed={isLinerNotesOpen} />
+  <SpotifyPanel dimmed={isPanelOpen} />
 
-  {selectedConcert && (
+  {selectedConcert && showSetlist && (
     <LinerNotesPanel
       concert={selectedConcert}
       setlist={setlistData}
       isLoading={isLoadingSetlist}
       error={setlistError}
-      onClose={handleCloseLinerNotes}
+      onClose={handleClosePanel}
+    />
+  )}
+
+  {selectedArtist && showTourDates && (
+    <TourDatesPanel
+      artistName={selectedArtist}
+      tourDates={tourDatesData}
+      isLoading={isLoadingTourDates}
+      error={tourDatesError}
+      onClose={handleClosePanel}
     />
   )}
 </ArtistGatefold>
@@ -957,15 +1002,277 @@ function normalizeVenueName(name: string): string {
 
 ---
 
+## Production Deployment Strategy
+
+### Development vs Production API Access
+
+**Development (Current):**
+- ✅ Vite dev server proxy handles API calls
+- ✅ Proxy adds API key header automatically
+- ✅ No CORS issues
+
+**Production (Requires Implementation):**
+- ❌ No proxy available (static build)
+- ❌ Direct browser requests blocked by CORS
+- ⚠️ Needs serverless function OR build-time pre-fetch
+
+### Option 1: Cloudflare Functions Proxy (Runtime)
+
+**Implementation:**
+Create `functions/api/setlistfm/[...path].ts`:
+
+```typescript
+export async function onRequest(context) {
+  const { request, env } = context
+  const url = new URL(request.url)
+
+  // Build setlist.fm API URL
+  const apiUrl = `https://api.setlist.fm/rest/1.0${url.pathname.replace('/api/setlistfm', '')}`
+  const apiUrlWithParams = new URL(apiUrl)
+  apiUrlWithParams.search = url.search
+
+  // Proxy request with API key
+  const response = await fetch(apiUrlWithParams.toString(), {
+    headers: {
+      'Accept': 'application/json',
+      'x-api-key': env.SETLISTFM_API_KEY
+    }
+  })
+
+  return new Response(response.body, {
+    status: response.status,
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
+    }
+  })
+}
+```
+
+**Cloudflare Pages Configuration:**
+- Add `SETLISTFM_API_KEY` to environment variables in dashboard
+- Free tier: 500,000 requests/month (plenty for this use case)
+- 10ms CPU time per request (more than enough for proxy)
+- Zero cost for reasonable usage
+
+**Pros:**
+- Dynamic, always up-to-date
+- Works for all concerts
+- Simple implementation
+
+**Cons:**
+- Requires deployment config
+- API rate limits apply at runtime
+
+### Option 2: Build-Time Pre-Fetch + Runtime Fallback (Hybrid - Recommended)
+
+**Implementation:**
+
+**Step 1:** Create build script `scripts/prefetch-setlists.ts`:
+
+```typescript
+import { fetchSetlist } from '../src/services/setlistfm'
+import { readFileSync, writeFileSync } from 'fs'
+
+interface SetlistCacheEntry {
+  concert: {
+    artistName: string
+    date: string
+    venue: string
+    city: string
+  }
+  setlist: Setlist | null
+  fetchedAt: string
+}
+
+async function prefetchSetlists() {
+  // Load artist cards data
+  const artistCards = JSON.parse(
+    readFileSync('public/data/artist-cards.json', 'utf-8')
+  )
+
+  // Load existing cache (if any)
+  let cache: SetlistCacheEntry[] = []
+  try {
+    cache = JSON.parse(
+      readFileSync('public/data/setlists-cache.json', 'utf-8')
+    )
+  } catch {
+    // No cache yet, start fresh
+  }
+
+  const cacheMap = new Map(
+    cache.map(entry => [getCacheKey(entry.concert), entry])
+  )
+
+  // Extract all concerts
+  const allConcerts = artistCards.flatMap(artist =>
+    artist.concerts.map(concert => ({
+      artistName: artist.name,
+      date: concert.date,
+      venue: concert.venue,
+      city: concert.city.split(',')[0].trim()
+    }))
+  )
+
+  console.log(`Found ${allConcerts.length} concerts to check`)
+
+  let fetched = 0
+  let cached = 0
+  let failed = 0
+
+  // Fetch setlists for uncached concerts
+  for (const concert of allConcerts) {
+    const key = getCacheKey(concert)
+
+    // Skip if already in cache (within 30 days)
+    const existing = cacheMap.get(key)
+    if (existing) {
+      const age = Date.now() - new Date(existing.fetchedAt).getTime()
+      const thirtyDays = 30 * 24 * 60 * 60 * 1000
+
+      if (age < thirtyDays) {
+        cached++
+        continue
+      }
+    }
+
+    // Fetch from API
+    try {
+      console.log(`Fetching: ${concert.artistName} - ${concert.venue} (${concert.date})`)
+
+      const setlist = await fetchSetlist(concert)
+
+      cacheMap.set(key, {
+        concert,
+        setlist,
+        fetchedAt: new Date().toISOString()
+      })
+
+      fetched++
+
+      // Rate limit: 1 request per second
+      await new Promise(resolve => setTimeout(resolve, 1000))
+
+    } catch (error) {
+      console.error(`Failed: ${concert.artistName} - ${error.message}`)
+      failed++
+    }
+  }
+
+  // Write updated cache
+  const updatedCache = Array.from(cacheMap.values())
+  writeFileSync(
+    'public/data/setlists-cache.json',
+    JSON.stringify(updatedCache, null, 2)
+  )
+
+  console.log(`\n✅ Setlist pre-fetch complete!`)
+  console.log(`   Fetched: ${fetched} new`)
+  console.log(`   Cached:  ${cached} existing`)
+  console.log(`   Failed:  ${failed}`)
+  console.log(`   Total:   ${updatedCache.length} in cache`)
+}
+
+function getCacheKey(concert: any): string {
+  return `${concert.artistName}|${concert.date}|${concert.venue}|${concert.city}`.toLowerCase()
+}
+
+prefetchSetlists().catch(console.error)
+```
+
+**Step 2:** Update `src/services/setlistfm.ts` to check cache first:
+
+```typescript
+// Try static cache first (build-time pre-fetched)
+async function fetchFromCache(params: SetlistSearchParams): Promise<Setlist | null | undefined> {
+  try {
+    const response = await fetch('/data/setlists-cache.json')
+    if (!response.ok) return undefined
+
+    const cache: SetlistCacheEntry[] = await response.json()
+    const key = getCacheKey(params)
+
+    const entry = cache.find(e => getCacheKey(e.concert) === key)
+    return entry?.setlist ?? undefined
+
+  } catch {
+    return undefined // Cache not available
+  }
+}
+
+// Updated main fetch function
+export async function fetchSetlist(params: SetlistSearchParams): Promise<Setlist | null> {
+  // 1. Check static build-time cache
+  const staticCached = await fetchFromCache(params)
+  if (staticCached !== undefined) {
+    return staticCached // null or Setlist
+  }
+
+  // 2. Check runtime in-memory cache
+  const cacheKey = getCacheKey(params)
+  const memoryCached = setlistCache.get(cacheKey)
+  if (memoryCached && Date.now() - memoryCached.timestamp < memoryCached.ttl) {
+    return memoryCached.data
+  }
+
+  // 3. Fetch from API (requires serverless function in production)
+  const data = await fetchFromAPI(params)
+
+  // Cache in memory for session
+  setlistCache.set(cacheKey, {
+    data,
+    timestamp: Date.now(),
+    ttl: CACHE_TTL
+  })
+
+  return data
+}
+```
+
+**Step 3:** Add npm script to `package.json`:
+
+```json
+{
+  "scripts": {
+    "prefetch-setlists": "tsx scripts/prefetch-setlists.ts",
+    "build": "npm run prefetch-setlists && tsx scripts/generate-version.ts && tsc && vite build"
+  }
+}
+```
+
+**Benefits:**
+- ✅ Historic setlists cached at build time (immutable data)
+- ✅ Zero API calls for 99% of concerts
+- ✅ Instant loading (static JSON)
+- ✅ Fallback to API for uncached concerts
+- ✅ No rate limits for cached data
+
+**Deployment Strategy:**
+1. **Pre-production:** Run `npm run prefetch-setlists` to build initial cache
+2. **Each deployment:** Re-run pre-fetch to capture new concerts
+3. **Production:** Static cache served from CDN, API fallback via Cloudflare Function (if needed)
+
+**Cache Storage:**
+- File: `public/data/setlists-cache.json`
+- Size estimate: ~50-100KB for 174 concerts (many will be null)
+- Served as static asset from CDN
+
+### Recommendation
+
+**Use Hybrid Approach (Option 2):**
+- Build-time pre-fetch for all historical concerts
+- Cloudflare Function fallback for edge cases
+- Best performance with minimal API usage
+
 ## Future Enhancements
 
 ### Phase 2 Improvements (Post-v1.5.0)
 
-1. **Setlist Enrichment at Build Time**
-   - Fetch common setlists during data pipeline
-   - Store in `setlists-cache.json`
-   - Reduces client-side API calls
-   - Still fetch rare setlists on-demand
+1. **Setlist Enrichment at Build Time** ✅ (See Production Deployment Strategy above)
+   - Implemented as hybrid approach
+   - Static cache for historical concerts
+   - Runtime fallback for new data
 
 2. **User Contributions**
    - "Add setlist" button for concerts without data

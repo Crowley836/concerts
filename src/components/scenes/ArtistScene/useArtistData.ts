@@ -61,6 +61,7 @@ export function useArtistData(concerts: Concert[]) {
 
       const headlinerData = artistMap.get(headlinerNorm)!
       headlinerData.concerts.push({
+        concertId: concert.id,
         date: concert.date,
         venue: concert.venue,
         city: concert.cityState,
@@ -89,6 +90,7 @@ export function useArtistData(concerts: Concert[]) {
 
           const openerData = artistMap.get(openerNorm)!
           openerData.concerts.push({
+            concertId: concert.id,
             date: concert.date,
             venue: concert.venue,
             city: concert.cityState,

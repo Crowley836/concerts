@@ -2,7 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import { getGenreColor } from '../../../constants/colors'
 import { ConcertHistoryPanel } from './ConcertHistoryPanel'
 import { SpotifyPanel } from './SpotifyPanel'
-import type { ArtistCard } from './types'
+import { LinerNotesPanel } from './LinerNotesPanel'
+import { fetchSetlist } from '../../../services/setlistfm'
+import type { ArtistCard, ArtistConcert } from './types'
+import type { Setlist } from '../../../types/setlist'
 
 interface ArtistGatefoldProps {
   artist: ArtistCard | null
@@ -32,6 +35,12 @@ export function ArtistGatefold({
   const [showFlyingTile, setShowFlyingTile] = useState(false)
   const [showGatefold, setShowGatefold] = useState(false)
   const [showCloseHint, setShowCloseHint] = useState(false)
+
+  // Liner notes state
+  const [selectedConcert, setSelectedConcert] = useState<ArtistConcert | null>(null)
+  const [setlistData, setSetlistData] = useState<Setlist | null>(null)
+  const [isLoadingSetlist, setIsLoadingSetlist] = useState(false)
+  const [setlistError, setSetlistError] = useState<string | null>(null)
 
   const wrapperRef = useRef<HTMLDivElement>(null)
   const flyingTileRef = useRef<HTMLDivElement>(null)
@@ -145,6 +154,52 @@ export function ArtistGatefold({
     openGatefold()
   }, [artist, clickedTileRect, reducedMotion])
 
+  // Handle setlist click from concert row
+  const handleSetlistClick = async (concert: ArtistConcert) => {
+    // If clicking the same concert, close liner notes
+    if (selectedConcert?.date === concert.date && selectedConcert?.venue === concert.venue) {
+      handleCloseLinerNotes()
+      return
+    }
+
+    // Set selected concert and start loading
+    setSelectedConcert(concert)
+    setSetlistData(null)
+    setIsLoadingSetlist(true)
+    setSetlistError(null)
+
+    try {
+      // Fetch setlist with static cache lookup by concert ID
+      const setlist = await fetchSetlist({
+        concertId: concert.concertId, // Enable static cache lookup
+        artistName: artist?.name || '',
+        date: concert.date,
+        venueName: concert.venue,
+        city: concert.city.split(',')[0].trim() // Extract city from "City, State"
+      })
+
+      setSetlistData(setlist)
+    } catch (error) {
+      // Handle structured errors
+      if (typeof error === 'object' && error !== null && 'type' in error) {
+        const structuredError = error as any
+        setSetlistError(structuredError.message)
+      } else {
+        setSetlistError('Unable to load setlist. Please try again.')
+      }
+    } finally {
+      setIsLoadingSetlist(false)
+    }
+  }
+
+  // Close liner notes panel
+  const handleCloseLinerNotes = () => {
+    setSelectedConcert(null)
+    setSetlistData(null)
+    setSetlistError(null)
+    setIsLoadingSetlist(false)
+  }
+
   // Close animation
   const handleClose = async () => {
     if (isAnimating || !artist) return
@@ -152,6 +207,9 @@ export function ArtistGatefold({
     setIsAnimating(true)
     setShowCloseHint(false)
     setIsOpen(false)
+
+    // Close liner notes if open
+    handleCloseLinerNotes()
 
     if (reducedMotion) {
       // Instant close for reduced motion
@@ -208,13 +266,19 @@ export function ArtistGatefold({
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && artist) {
-        handleClose()
+        // If liner notes are open, close them first
+        if (selectedConcert) {
+          handleCloseLinerNotes()
+        } else {
+          // Otherwise close the entire gatefold
+          handleClose()
+        }
       }
     }
 
     window.addEventListener('keydown', handleEscape)
     return () => window.removeEventListener('keydown', handleEscape)
-  }, [artist, isAnimating])
+  }, [artist, isAnimating, selectedConcert])
 
   // Handle window resize
   useEffect(() => {
@@ -319,7 +383,19 @@ export function ArtistGatefold({
                   />
                 </div>
 
-                <SpotifyPanel artist={artist} />
+                <SpotifyPanel artist={artist} dimmed={!!selectedConcert} />
+
+                {/* Liner Notes Panel - slides over Spotify panel */}
+                {selectedConcert && (
+                  <LinerNotesPanel
+                    concert={selectedConcert}
+                    artistName={artist.name}
+                    setlist={setlistData}
+                    isLoading={isLoadingSetlist}
+                    error={setlistError}
+                    onClose={handleCloseLinerNotes}
+                  />
+                )}
               </div>
 
               {/* Cover (opens to become left panel) */}
@@ -359,7 +435,11 @@ export function ArtistGatefold({
                     transform: 'rotateY(180deg)'
                   }}
                 >
-                  <ConcertHistoryPanel artist={artist} />
+                  <ConcertHistoryPanel
+                    artist={artist}
+                    onSetlistClick={handleSetlistClick}
+                    openSetlistConcert={selectedConcert}
+                  />
                 </div>
               </div>
             </div>

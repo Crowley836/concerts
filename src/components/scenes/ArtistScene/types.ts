@@ -8,6 +8,7 @@ export type SizeClass = 'uniform'
 export type SortOrder = 'timesSeen' | 'alphabetical' | 'genre' | 'chronological'
 
 export interface ArtistConcert {
+  concertId: string // Concert ID from concerts.json (for static cache lookups)
   date: string // ISO date
   venue: string
   city: string

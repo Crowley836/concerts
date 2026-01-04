@@ -23,6 +23,7 @@
     "validate-normalization": "tsx scripts/validate-normalization.ts",
     "validate-data": "tsx scripts/validate-concerts.ts",
     "diff-data": "tsx scripts/diff-concerts.ts",
+    "prefetch:setlists": "tsx scripts/prefetch-setlists.ts",
     "test:sanity": "node test/test-simple.mjs",
     "og:generate": "tsx scripts/generate-og-simple.ts",
     "og:preview": "tsx scripts/preview-og-crops.ts"

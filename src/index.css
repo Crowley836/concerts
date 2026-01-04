@@ -222,3 +222,75 @@ body {
 .delay-300 {
   transition-delay: 300ms;
 }
+
+/* ============================================
+   Liner Notes Panel Styles (v1.5.0)
+   ============================================ */
+
+/* Liner notes panel slide-in animation */
+.liner-notes-panel {
+  animation: slideInFromRight 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Custom scrollbar for liner notes content */
+.liner-notes-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.liner-notes-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.liner-notes-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.liner-notes-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   Inline Setlist Link Styles (v1.5.0)
+   ============================================ */
+
+/* Inline setlist link next to concert rows - always visible */
+.setlist-link {
+  color: rgba(255, 255, 255, 0.35); /* Muted gray - subtle but present */
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.setlist-link:hover {
+  color: rgba(255, 255, 255, 0.8); /* Brighten on hover */
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.setlist-link:focus-visible {
+  outline: 2px solid #1DB954;
+  outline-offset: 2px;
+}
+
+/* Active state - when liner notes are open for this concert */
+.setlist-link-active {
+  color: #1DB954; /* Spotify green */
+  background-color: rgba(29, 185, 84, 0.08);
+}
+
+.setlist-link-active:hover {
+  background-color: rgba(29, 185, 84, 0.12);
+}

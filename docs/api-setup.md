@@ -4,11 +4,12 @@ This document explains how to configure the various APIs needed for the concert 
 
 ## Overview
 
-The data pipeline uses three Google Cloud services and one music metadata service:
+The data pipeline uses three Google Cloud services and two music metadata services:
 1. **Google Sheets API** - To fetch concert data from your spreadsheet
 2. **Google Maps Geocoding API** - To get accurate venue coordinates for the map
 3. **Google Places API (New)** - To fetch venue photos and metadata (v1.3.2+)
 4. **setlist.fm API** - To fetch concert setlists for Artist Scene liner notes (v1.5.0+)
+5. **Bandsintown API** - To fetch upcoming tour dates for artists (v1.6.0+)
 
 ## Google Sheets API Setup
 
@@ -478,6 +479,139 @@ SHEET_RANGE=Sheet1!A2:Z1000
 ```
 
 For implementation details and design specifications, see [docs/specs/future/setlist-liner-notes.md](specs/future/setlist-liner-notes.md).
+
+## Bandsintown API Setup (v1.6.0+)
+
+The Bandsintown API is used to fetch upcoming tour dates for artists in the Artist Scene. This allows users to discover when their favorite artists are touring and get ticket links.
+
+### 1. No API Key Required!
+
+Unlike most APIs, Bandsintown doesn't require a traditional API key or registration. Instead, it uses a simple **app_id** parameter that's just an identifier for your application.
+
+**Benefits:**
+- ✅ No registration or approval process
+- ✅ No rate limits or billing
+- ✅ Free for all use cases
+- ✅ Works immediately
+
+### 2. Configure Environment Variable
+
+Simply add an app identifier to your `.env` file:
+
+```bash
+# Bandsintown API (v1.6.0+)
+VITE_BANDSINTOWN_APP_ID=morperhaus_concert_archives
+```
+
+**App ID Guidelines:**
+- Use your project name, domain, or any unique identifier
+- No spaces (use underscores or hyphens)
+- Examples: `your_project_name`, `your-domain-com`, `concert-tracker`
+- This is just for tracking/analytics purposes on Bandsintown's side
+
+### 3. Verify Setup
+
+Test the API with a simple request:
+
+```bash
+curl -X GET "https://rest.bandsintown.com/artists/Pearl%20Jam/events?app_id=morperhaus_concert_archives"
+```
+
+You should receive a JSON array with upcoming tour dates. If you get an empty array `[]`, the artist either isn't touring or isn't in the Bandsintown database (which is normal).
+
+### 4. API Usage & Rate Limits
+
+**Rate Limits:**
+- No explicit rate limit documented
+- Fair use policy applies - be respectful
+- Recommended self-imposed limit: 5 requests/second max
+- The app implements 24-hour client-side caching to minimize requests
+
+**Expected Usage:**
+- Initial development/testing: ~50-100 requests
+- Typical user session: 2-4 tour date fetches
+- Daily usage (10 users): ~20-40 requests
+- Monthly usage: ~600-1,200 requests
+- **Cost: $0** (completely free)
+
+**Data Availability:**
+- Bandsintown has good coverage for active touring artists
+- Not all artists will be in the database (especially inactive/historical bands)
+- Empty results are normal and not an error condition
+- Best coverage for major and actively touring indie/alternative artists
+
+### 5. API Endpoint
+
+The tour dates feature uses the Artist Events endpoint:
+
+```
+https://rest.bandsintown.com/artists/{artist_name}/events?app_id={your_app_id}
+```
+
+**Parameters:**
+- `artist_name` - Artist name (URL-encoded)
+- `app_id` - Your app identifier
+
+**Response:**
+- JSON array of upcoming events (empty array if none)
+- Each event includes: date, venue, city, region, country, ticket URL
+
+### 6. Development vs Production
+
+**Development:**
+- Use the same app_id for development and production
+- No domain restrictions or CORS issues
+- Test with known touring artists (e.g., Pearl Jam, The National)
+
+**Production:**
+- Same app_id works in production
+- No additional configuration needed
+- Monitor console for API errors
+
+### 7. Troubleshooting
+
+**Empty Array Response `[]`:**
+- Normal - artist has no upcoming tour dates
+- Or artist not in Bandsintown database
+- Show "No upcoming shows" message to users
+
+**HTTP Error (500, 503):**
+- Bandsintown API temporarily unavailable
+- Implement retry logic or show error message
+- Usually resolves quickly
+
+**Invalid Artist Name:**
+- Artist name too generic or misspelled
+- Try normalized version (remove "The", trim spaces)
+- Show "No upcoming shows" gracefully
+
+### Complete .env File
+
+Your `.env` should now include:
+
+```bash
+# Google Sheets API
+GOOGLE_SHEET_ID=1abc123...xyz
+GOOGLE_CLIENT_ID=123456789-abc.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=GOCSPX-abc123...
+GOOGLE_REDIRECT_URI=http://localhost:5173
+GOOGLE_REFRESH_TOKEN=1//abc123...
+
+# Google Maps APIs (Separate Keys for Security)
+GOOGLE_MAPS_API_KEY=AIzaSyA...    # Geocoding (server-side, API restrictions only)
+GOOGLE_PLACES_API_KEY=AIzaSyB...  # Places Photos (client-side, HTTP referrer restrictions)
+
+# setlist.fm API (v1.5.0+)
+VITE_SETLISTFM_API_KEY=your_setlistfm_api_key_here
+
+# Bandsintown API (v1.6.0+)
+VITE_BANDSINTOWN_APP_ID=morperhaus_concert_archives
+
+# Sheet Configuration
+SHEET_RANGE=Sheet1!A2:Z1000
+```
+
+For implementation details and design specifications, see [docs/specs/future/upcoming-tour-dates.md](specs/future/upcoming-tour-dates.md).
 
 ## Best Practices
 

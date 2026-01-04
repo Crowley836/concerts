@@ -1,10 +1,12 @@
 import { format } from 'date-fns'
 import { getGenreColor } from '../../../constants/colors'
 import { useArtistMetadata } from '../../TimelineHoverPreview/useArtistMetadata'
-import type { ArtistCard } from './types'
+import type { ArtistCard, ArtistConcert } from './types'
 
 interface ConcertHistoryPanelProps {
   artist: ArtistCard
+  onSetlistClick?: (concert: ArtistConcert) => void
+  openSetlistConcert?: ArtistConcert | null // Currently open setlist concert
 }
 
 /**
@@ -28,7 +30,11 @@ function getArtistInitials(name: string): string {
  * Displays on the inside of the opened cover (left side)
  * Size: 400×400px
  */
-export function ConcertHistoryPanel({ artist }: ConcertHistoryPanelProps) {
+export function ConcertHistoryPanel({
+  artist,
+  onSetlistClick,
+  openSetlistConcert
+}: ConcertHistoryPanelProps) {
   const { getArtistImage } = useArtistMetadata()
   const artistImage = getArtistImage(artist.name)
   const genreColor = getGenreColor(artist.primaryGenre)
@@ -92,19 +98,45 @@ export function ConcertHistoryPanel({ artist }: ConcertHistoryPanelProps) {
 
         {/* Concert List - Scrollable */}
         <ul className="list-none flex flex-col gap-1.5 overflow-y-auto">
-          {artist.concerts.map((concert, idx) => (
-            <li
-              key={idx}
-              className="flex items-baseline gap-4 text-[0.95rem] text-[#e5e5e5] py-1 border-b border-white/[0.04] last:border-b-0"
-            >
-              <span className="font-sans text-xs text-[#737373] font-medium min-w-[85px] flex-shrink-0 tabular-nums">
-                {format(new Date(concert.date), 'dd MMM yyyy')}
-              </span>
-              <span className="font-sans text-[#e5e5e5]">
-                {concert.venue}
-              </span>
-            </li>
-          ))}
+          {artist.concerts.map((concert, idx) => {
+            const isSetlistOpen = openSetlistConcert?.date === concert.date &&
+                                  openSetlistConcert?.venue === concert.venue
+
+            return (
+              <li
+                key={idx}
+                className="concert-row group flex items-baseline gap-4 text-[0.95rem] text-[#e5e5e5] py-1 border-b border-white/[0.04] last:border-b-0 relative hover:bg-white/[0.04] transition-colors duration-150 rounded px-2 -mx-2"
+              >
+                <span className="font-sans text-xs text-[#737373] font-medium min-w-[85px] flex-shrink-0 tabular-nums">
+                  {format(new Date(concert.date), 'dd MMM yyyy')}
+                </span>
+                <span className="font-sans text-[#e5e5e5] flex-1">
+                  {concert.venue}
+                </span>
+
+                {/* Inline Setlist Link - always visible if callback provided */}
+                {onSetlistClick && (
+                  <button
+                    onClick={() => onSetlistClick(concert)}
+                    className={`setlist-link flex items-center gap-1.5 flex-shrink-0 transition-all duration-150 ${
+                      isSetlistOpen ? 'setlist-link-active' : ''
+                    }`}
+                    aria-label={`View setlist for ${concert.venue}`}
+                  >
+                    {/* Musical note icon */}
+                    <svg
+                      className="w-3.5 h-3.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                    <span className="text-xs font-medium">Setlist</span>
+                  </button>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>
