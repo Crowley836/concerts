@@ -1,10 +1,10 @@
 # Mobile Optimization Specification
 
-**Status:** ✅ v1.1.0 Complete (iPad) | 📋 v1.2.0+ Planned (Phone)
+**Status:** ✅ v1.1.0 Complete (iPad) | ✅ v1.7.5 Tier 1 Complete (Touch Polish) | 📋 v1.8.0+ Planned (Tier 2-3)
 **Priority:** High
-**Version:** v1.1.0 (iPad - Complete), v1.2.0+ (Phone - Planned)
+**Version:** v1.1.0 (iPad - Complete), v1.7.5 (Tier 1 - Complete), v1.8.0+ (Tier 2-3 - Planned)
 **Last Updated:** 2026-01-04
-**Completed:** 2026-01-01
+**Completed:** iPad (2026-01-01), Tier 1 Polish (2026-01-04)
 **Dependencies:** None
 
 ---
@@ -94,14 +94,17 @@ This section identifies high-impact, low-effort mobile UX improvements that can 
 
 ---
 
-### Tier 1: Critical Mobile Polish (v1.6.1)
+### Tier 1: Critical Mobile Polish (v1.7.5) ✅ **COMPLETE**
 
-**Target:** Ship within 1-2 sprints | **Total Effort:** 4-12 hours
+**Status:** ✅ **Shipped** - January 4, 2026
+**Actual Effort:** ~6 hours | **Target:** 4-12 hours ✅ On target
+**Version:** v1.7.5
+**Implementation:** See [docs/STATUS.md](../../STATUS.md#v175-mobile-touch-feedback--haptics-complete-)
 
-#### 1.1 Visual Touch Feedback
-**Effort:** 1-2 hours | **Impact:** High | **Risk:** Low
+#### 1.1 Visual Touch Feedback ✅
+**Effort:** 1-2 hours | **Impact:** High | **Risk:** Low | **Status:** ✅ Complete
 
-Add `:active` states and scale animations to all interactive elements.
+~~Add~~ Added `:active` states and scale animations to all interactive elements.
 
 ```css
 /* Global touch feedback */
@@ -129,10 +132,10 @@ Add `:active` states and scale animations to all interactive elements.
 
 ---
 
-#### 1.2 Haptic Feedback
-**Effort:** 2-3 hours | **Impact:** High | **Risk:** Low
+#### 1.2 Haptic Feedback ✅
+**Effort:** 2-3 hours | **Impact:** High | **Risk:** Low | **Status:** ✅ Complete
 
-Integrate Web Vibration API for tactile feedback on key interactions.
+~~Integrate~~ Integrated Web Vibration API for tactile feedback on key interactions.
 
 ```typescript
 // utils/haptics.ts
@@ -167,10 +170,10 @@ export const haptics = {
 
 ---
 
-#### 1.3 Safe Area Padding
-**Effort:** 1-2 hours | **Impact:** Medium | **Risk:** Low
+#### 1.3 Safe Area Padding ✅
+**Effort:** 1-2 hours | **Impact:** Medium | **Risk:** Low | **Status:** ✅ Complete
 
-Respect iOS safe areas (notch, home indicator) and Android navigation bars.
+~~Respect~~ Respects iOS safe areas (notch, home indicator) and Android navigation bars.
 
 ```css
 /* Add to global styles */

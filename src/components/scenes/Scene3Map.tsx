@@ -4,6 +4,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import type { Concert } from '../../types/concert'
 import { normalizeVenueName } from '../../utils/normalize'
+import { haptics } from '../../utils/haptics'
 
 interface VenueMetadata {
   name: string
@@ -66,7 +67,7 @@ const REGION_VIEWS: Record<Region, { center: [number, number]; zoom: number; lab
     center: [33.8, -118.0], // LA area center
     zoom: 9, // Much tighter zoom
     label: 'California',
-    filter: (c) => c.state === 'California' || c.state === 'CA'
+    filter: (c) => c.state === 'California' || c.state === 'CA' || c.city === 'Tijuana' // Include Tijuana (border city)
   },
   dc: {
     center: [39.00, -77.03], // Moved north to include Silver Spring area
@@ -504,8 +505,11 @@ export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
           {(Object.keys(REGION_VIEWS) as Region[]).map((region) => (
             <button
               key={region}
-              onClick={() => setSelectedRegion(region)}
-              className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] ${
+              onClick={() => {
+                haptics.light() // Haptic feedback on region change
+                setSelectedRegion(region)
+              }}
+              className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] touchable-no-scale ${
                 selectedRegion === region
                   ? 'bg-indigo-600 text-white'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'

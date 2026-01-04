@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from 'react'
 import { format } from 'date-fns'
 import type { Setlist } from '../../../types/setlist'
 import type { ArtistConcert } from './types'
+import { haptics } from '../../../utils/haptics'
 
 interface LinerNotesPanelProps {
   concert: ArtistConcert
@@ -40,6 +41,7 @@ export function LinerNotesPanel({
 
   // Handle close with animation
   const handleClose = () => {
+    haptics.light() // Haptic feedback on close
     setIsClosing(true)
     // Wait for animation to complete before calling onClose
     setTimeout(() => {
@@ -93,7 +95,7 @@ export function LinerNotesPanel({
           <button
             ref={closeButtonRef}
             onClick={handleClose}
-            className="absolute top-[20px] right-[20px] w-6 h-6 flex items-center justify-center text-[#4a4a40] hover:text-[#1DB954] transition-all duration-150 hover:scale-110"
+            className="absolute top-[20px] right-[20px] w-6 h-6 flex items-center justify-center text-[#4a4a40] hover:text-[#1DB954] transition-all duration-150 hover:scale-110 touchable-subtle"
             aria-label="Close setlist"
             style={{ zIndex: 30 }}
           >

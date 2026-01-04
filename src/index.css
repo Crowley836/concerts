@@ -15,6 +15,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  /* Safe area padding for iOS notch and Android navigation bars (v1.6.1) */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 /* Scrollbar styling for dark theme */
@@ -374,4 +379,60 @@ body {
 
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   Mobile Touch Feedback (v1.6.1)
+   ============================================ */
+
+/* Global touch feedback for interactive elements
+   Provides immediate visual confirmation that touch registered
+   Zero JavaScript required - CSS only
+
+   Apply .touchable class to: buttons, artist tiles, venue nodes,
+   timeline dots, genre segments, navigation dots, filter tabs, etc. */
+
+.touchable {
+  /* Smooth transition for transform and opacity */
+  transition: transform 0.1s ease, opacity 0.1s ease;
+  /* Optimize for mobile performance */
+  will-change: transform, opacity;
+  /* Prevent text selection during tap */
+  user-select: none;
+  -webkit-user-select: none;
+  /* Improve tap responsiveness on iOS */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touchable:active {
+  /* Scale down slightly on press */
+  transform: scale(0.95);
+  /* Reduce opacity for feedback */
+  opacity: 0.8;
+}
+
+/* Variant for elements that shouldn't scale (like full-width buttons) */
+.touchable-no-scale {
+  transition: opacity 0.1s ease, background-color 0.1s ease;
+  will-change: opacity, background-color;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touchable-no-scale:active {
+  opacity: 0.8;
+}
+
+/* Variant for elements that should only show opacity change */
+.touchable-subtle {
+  transition: opacity 0.15s ease;
+  will-change: opacity;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touchable-subtle:active {
+  opacity: 0.7;
 }

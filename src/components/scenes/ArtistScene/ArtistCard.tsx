@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { ArtistCardFront } from './ArtistCardFront'
 import type { ArtistCard as ArtistCardType } from './types'
+import { haptics } from '../../../utils/haptics'
 
 interface ArtistCardProps {
   artist: ArtistCardType
@@ -17,6 +18,7 @@ export function ArtistCard({ artist, onClick, getArtistImage, artistImageLoading
   const cardRef = useRef<HTMLDivElement>(null)
 
   const handleClick = () => {
+    haptics.medium() // Medium haptic for opening gatefold (major action)
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect()
       onClick(rect)
@@ -34,7 +36,7 @@ export function ArtistCard({ artist, onClick, getArtistImage, artistImageLoading
   return (
     <div
       ref={cardRef}
-      className="relative w-[200px] h-[200px]"
+      className="relative w-[200px] h-[200px] touchable"
       role="button"
       tabIndex={0}
       onClick={handleClick}

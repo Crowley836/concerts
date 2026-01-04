@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import * as d3 from 'd3'
 import type { Concert } from '../../types/concert'
 import { getGenreColor } from '../../constants/colors'
+import { haptics } from '../../utils/haptics'
 
 interface Scene5GenresProps {
   concerts: Concert[]
@@ -370,6 +371,7 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
       .style('pointer-events', 'all')
       .on('click', function(_event, d) {
         _event.stopPropagation()
+        haptics.light() // Haptic feedback on segment tap
 
         // NEW ZOOM LOGIC:
         // - Depth 1 nodes are either genres (in default view) or a focused genre (in zoomed view)
@@ -754,10 +756,11 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           onClick={() => {
+            haptics.light() // Haptic feedback on reset
             setFocusedNode('All Genres')
             setExpandedGenre(null)
           }}
-          className="absolute top-32 right-8 z-20 px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-900 border border-gray-300 rounded-lg font-sans text-sm font-medium hover:bg-white transition-all duration-200 shadow-sm min-h-[44px]"
+          className="absolute top-32 right-8 z-20 px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-900 border border-gray-300 rounded-lg font-sans text-sm font-medium hover:bg-white transition-all duration-200 shadow-sm min-h-[44px] touchable-no-scale"
         >
           Reset View
         </motion.button>

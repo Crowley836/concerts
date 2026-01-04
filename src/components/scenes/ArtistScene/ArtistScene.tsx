@@ -7,6 +7,7 @@ import { useArtistData } from './useArtistData'
 import { useArtistMetadata } from '../../TimelineHoverPreview/useArtistMetadata'
 import type { Concert } from '../../../types/concert'
 import type { SortOrder, ArtistCard } from './types'
+import { haptics } from '../../../utils/haptics'
 
 interface ArtistSceneProps {
   concerts: Concert[]
@@ -182,8 +183,11 @@ export function ArtistScene({ concerts }: ArtistSceneProps) {
         <div className="flex justify-center gap-2 flex-wrap">
           {/* A-Z Button */}
           <button
-            onClick={() => setSortOrder('alphabetical')}
-            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] ${
+            onClick={() => {
+              haptics.light() // Haptic feedback on sort change
+              setSortOrder('alphabetical')
+            }}
+            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] touchable-no-scale ${
               sortOrder === 'alphabetical'
                 ? 'bg-violet-600 text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
@@ -194,8 +198,11 @@ export function ArtistScene({ concerts }: ArtistSceneProps) {
 
           {/* Most Seen Button */}
           <button
-            onClick={() => setSortOrder('timesSeen')}
-            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] ${
+            onClick={() => {
+              haptics.light() // Haptic feedback on sort change
+              setSortOrder('timesSeen')
+            }}
+            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] touchable-no-scale ${
               sortOrder === 'timesSeen'
                 ? 'bg-violet-600 text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'

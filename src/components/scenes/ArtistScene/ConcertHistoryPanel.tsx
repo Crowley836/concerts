@@ -2,6 +2,7 @@ import { format } from 'date-fns'
 import { getGenreColor } from '../../../constants/colors'
 import { useArtistMetadata } from '../../TimelineHoverPreview/useArtistMetadata'
 import type { ArtistCard, ArtistConcert } from './types'
+import { haptics } from '../../../utils/haptics'
 
 interface ConcertHistoryPanelProps {
   artist: ArtistCard
@@ -119,9 +120,10 @@ export function ConcertHistoryPanel({
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
+                      haptics.light() // Haptic feedback on setlist open
                       onSetlistClick(concert)
                     }}
-                    className={`setlist-link flex items-center gap-1.5 flex-shrink-0 transition-all duration-150 relative ${
+                    className={`setlist-link flex items-center gap-1.5 flex-shrink-0 transition-all duration-150 relative touchable-subtle ${
                       isSetlistOpen ? 'setlist-link-active' : ''
                     }`}
                     aria-label={`View setlist for ${concert.venue}`}

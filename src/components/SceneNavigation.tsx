@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { haptics } from '../utils/haptics'
 
 const scenes = [
   { id: 1, label: 'Timeline', color: 'bg-indigo-500' },
@@ -43,6 +44,7 @@ export function SceneNavigation() {
   }, [revealedLabel])
 
   const scrollToScene = (sceneId: number) => {
+    haptics.light() // Haptic feedback on navigation
     const scrollContainer = document.querySelector('.snap-y')
     if (!scrollContainer) return
 
@@ -70,11 +72,12 @@ export function SceneNavigation() {
                 scrollToScene(scene.id)
                 setRevealedLabel(null)
               } else {
+                haptics.light() // Haptic feedback on label reveal
                 e.stopPropagation()
                 setRevealedLabel(scene.id)
               }
             }}
-            className="group relative flex items-center justify-center min-w-[44px] min-h-[44px]"
+            className="group relative flex items-center justify-center min-w-[44px] min-h-[44px] touchable"
             aria-label={`Go to ${scene.label}`}
           >
             {/* Dot - visually smaller but larger touch target */}
