@@ -57,11 +57,11 @@ Normalize concert and artist data to eliminate redundancy and enable richer arti
       "id": "concert-1",
       "date": "1984-04-27",
       "headliner": "Depeche Mode",
-      "headlinerNormalized": "depechemode",
+      "headlinerNormalized": "depeche-mode",
       "openers": ["The Reflex"],
-      "openersNormalized": ["thereflex"],
+      "openersNormalized": ["the-reflex"],
       "venue": "Irvine Meadows",
-      "venueNormalized": "irvinemeadows",
+      "venueNormalized": "irvine-meadows",
       "city": "Irvine",
       "state": "California",
       "cityState": "Irvine, California",
@@ -177,9 +177,9 @@ Normalize concert and artist data to eliminate redundancy and enable richer arti
 
 ```json
 {
-  "irvinemeadows": {
+  "irvine-meadows": {
     "name": "Irvine Meadows",
-    "normalizedName": "irvinemeadows",
+    "normalizedName": "irvine-meadows",
     "city": "Irvine",
     "state": "California",
     "cityState": "Irvine, California",

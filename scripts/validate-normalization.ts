@@ -14,6 +14,37 @@ import { normalizeArtistName, normalizeVenueName, normalizeGenreName } from '../
  * Exits with code 1 if any issues are found (for CI/CD pipelines)
  */
 
+/**
+ * Intentional artist normalization overrides
+ *
+ * Maps canonical normalization → actual key used in metadata
+ *
+ * These artist keys intentionally differ from canonical normalization for:
+ * - Better URL readability (removing "The" prefix)
+ * - Artist name preferences (US vs UK names)
+ * - Disambiguation (distinguishing similar band names)
+ * - Punctuation handling (maintaining recognizable abbreviations)
+ */
+const ARTIST_NORMALIZATION_OVERRIDES: Record<string, string> = {
+  // Remove "The" prefix for cleaner URLs
+  'the-beach-boys': 'beach-boys',           // The Beach Boys → beach-boys (not the-beach-boys)
+  'art-of-noise': 'the-art-of-noise',       // Art of Noise → the-art-of-noise (manual override)
+
+  // Preserve "and" for readability
+  'echo-the-bunnymen': 'echo-and-the-bunnymen',  // Echo & The Bunnymen → echo-and-the-bunnymen
+  'peter-hook-the-light': 'peter-hook-and-the-light',  // Peter Hook & The Light
+
+  // Disambiguation for band names
+  'the-beat': 'the-english-beat',           // The Beat (UK) vs The Beat (US) → the-english-beat
+
+  // Maintain recognizable abbreviations
+  'run-d-m-c': 'run-dmc',                   // Run-D.M.C. → run-dmc (not run-d-m-c)
+  'tone-l-c': 'tone-loc',                   // Tone-Lōc → tone-loc (not tone-l-c)
+
+  // Artist name preference (US vs UK)
+  'yazoo': 'yaz',                           // Yazoo (UK) known as Yaz (US) → yaz
+}
+
 interface ValidationIssue {
   type: 'duplicate' | 'mismatch' | 'missing'
   severity: 'error' | 'warning'
@@ -60,12 +91,14 @@ function validateArtistNormalization(): ValidationIssue[] {
     artistNameToKeys.get(canonicalKey)!.push(key)
 
     // Check if the key matches the canonical normalization
-    if (key !== canonicalKey) {
+    // Allow intentional overrides from the allowlist
+    const expectedKey = ARTIST_NORMALIZATION_OVERRIDES[canonicalKey] || canonicalKey
+    if (key !== expectedKey) {
       issues.push({
         type: 'mismatch',
         severity: 'error',
         message: `Artist key "${key}" doesn't match canonical normalization "${canonicalKey}"`,
-        details: { artistName: data.name, actualKey: key, expectedKey: canonicalKey },
+        details: { artistName: data.name, actualKey: key, expectedKey },
       })
     }
   }
