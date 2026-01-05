@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import * as d3 from 'd3'
 import type { Concert } from '../../types/concert'
 import { TimelineHoverPreview, useTimelineHover } from '../TimelineHoverPreview'
+import { haptics } from '../../utils/haptics'
 
 interface Scene1HeroProps {
   concerts: Concert[]
@@ -63,7 +64,11 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
 
     const width = dimensions.width
     const height = dimensions.height
-    const margin = { top: 40, right: 60, bottom: 40, left: 60 }
+    // Responsive margins - smaller on mobile to prevent dot overlap
+    const isMobile = width < 768
+    const margin = isMobile
+      ? { top: 40, right: 20, bottom: 40, left: 20 }
+      : { top: 40, right: 60, bottom: 40, left: 60 }
     const innerWidth = width - margin.left - margin.right
     const innerHeight = height - margin.top - margin.bottom
 
@@ -279,6 +284,9 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           // Touching a timeline dot - prevent scrolling for this touch
           event.preventDefault()
 
+          // Trigger haptic feedback
+          haptics.light()
+
           // Trigger initial touch feedback
           const d3Element = d3.select(element)
           const data = d3Element.datum() as any
@@ -335,6 +343,9 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
                     prevData.animateDotLeave()
                   }
                 }
+
+                // Trigger haptic feedback for new dot
+                haptics.light()
 
                 // Animate new dot
                 if (data.animateDotEnter) {

@@ -48,6 +48,8 @@ interface VenueMetadata {
 interface Scene3MapProps {
   concerts: Concert[]
   onVenueNavigate?: (venueName: string) => void
+  pendingVenueFocus?: string | null
+  onVenueFocusComplete?: () => void
 }
 
 type Region = 'all' | 'california' | 'dc'
@@ -77,10 +79,11 @@ const REGION_VIEWS: Record<Region, { center: [number, number]; zoom: number; lab
   },
 }
 
-export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
+export function Scene3Map({ concerts, onVenueNavigate, pendingVenueFocus, onVenueFocusComplete }: Scene3MapProps) {
   const mapRef = useRef<HTMLDivElement>(null)
   const mapInstanceRef = useRef<L.Map | null>(null)
   const markersLayerRef = useRef<L.LayerGroup | null>(null)
+  const venueMarkersRef = useRef<Map<string, L.CircleMarker>>(new Map())
   const [selectedRegion, setSelectedRegion] = useState<Region>('all')
   const [isMapActive, setIsMapActive] = useState(false)
   const [showHint, setShowHint] = useState(true)
@@ -283,12 +286,15 @@ export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
       }
     })
 
+    // Clear previous marker references
+    venueMarkersRef.current.clear()
+
     // Create markers with size based on concert count
     markers.forEach((data) => {
       const radius = Math.sqrt(data.count) * 5
 
       if (markersLayerRef.current) {
-        L.circleMarker([data.lat, data.lng], {
+        const marker = L.circleMarker([data.lat, data.lng], {
           radius,
           fillColor: '#6366f1',
           color: '#818cf8',
@@ -302,10 +308,44 @@ export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
             pane: 'popupPane',
             maxWidth: 240,
           })
+          .on('click', () => {
+            // Haptic feedback when marker is clicked
+            haptics.light()
+          })
           .addTo(markersLayerRef.current)
+
+        // Store marker reference by normalized venue name
+        venueMarkersRef.current.set(normalizeVenueName(data.venueName), marker)
       }
     })
   }, [filteredConcerts, selectedRegion, venuesMetadata])
+
+  // Handle deep link venue focus from URL parameters
+  useEffect(() => {
+    if (!pendingVenueFocus || !mapInstanceRef.current || venueMarkersRef.current.size === 0) return
+
+    const marker = venueMarkersRef.current.get(pendingVenueFocus)
+    if (marker) {
+      // Activate map interactions
+      setIsMapActive(true)
+      setShowHint(false)
+
+      // Fly to marker location and open popup
+      const latlng = marker.getLatLng()
+      mapInstanceRef.current.flyTo(latlng, 13, {
+        duration: 1.5,
+      })
+
+      // Open popup after animation
+      setTimeout(() => {
+        marker.openPopup()
+        onVenueFocusComplete?.()
+      }, 1600)
+    } else {
+      console.warn('Venue marker not found for deep link:', pendingVenueFocus)
+      onVenueFocusComplete?.()
+    }
+  }, [pendingVenueFocus, onVenueFocusComplete])
 
   // Handle region changes
   useEffect(() => {
@@ -385,6 +425,9 @@ export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
         e.preventDefault()
         e.stopPropagation()
 
+        // Haptic feedback for venue navigation
+        haptics.light()
+
         const venueName = target.getAttribute('data-venue-name')
         if (venueName) {
           onVenueNavigate(venueName)
@@ -461,7 +504,10 @@ export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              onClick={() => handleSceneNavigation(2)}
+              onClick={() => {
+                haptics.light()
+                handleSceneNavigation(2)
+              }}
               className="fixed top-8 left-1/2 -translate-x-1/2 z-[1001] bg-gray-900/70 backdrop-blur-sm text-gray-300 hover:text-white px-4 py-2 rounded-full min-h-[44px] flex items-center gap-2 transition-colors"
               aria-label="Go to The Venues scene"
             >
@@ -475,7 +521,10 @@ export function Scene3Map({ concerts, onVenueNavigate }: Scene3MapProps) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              onClick={() => handleSceneNavigation(4)}
+              onClick={() => {
+                haptics.light()
+                handleSceneNavigation(4)
+              }}
               className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[1001] bg-gray-900/70 backdrop-blur-sm text-gray-300 hover:text-white px-4 py-2 rounded-full min-h-[44px] flex items-center gap-2 transition-colors"
               aria-label="Go to The Music scene"
             >
