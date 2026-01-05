@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-04T20:48:27.700Z",
+  "generatedAt": "2026-01-05T06:16:54.056Z",
   "entries": [
     {
       "concertId": "concert-1",
@@ -114,8 +114,79 @@
       "venue": "Irvine Meadows",
       "city": "Irvine",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:43:53.040Z",
+      "fetchedAt": "2026-01-05T06:13:59.806Z",
       "error": "API error: 404 Not Found"
+    },
+    {
+      "concertId": "concert-4",
+      "artistName": "Billy Idol",
+      "date": "1984-08-13",
+      "venue": "Irvine Meadows",
+      "city": "Irvine",
+      "setlist": {
+        "id": "73ffd269",
+        "versionId": "6334f2df",
+        "eventDate": "13-08-1984",
+        "lastUpdated": "2020-02-03T00:53:14.621+0000",
+        "artist": {
+          "mbid": "47c8f88b-987a-4b64-9175-2b1b57809727",
+          "name": "Billy Idol",
+          "sortName": "Idol, Billy",
+          "disambiguation": "English rock singer‐songwriter",
+          "url": "https://www.setlist.fm/setlists/billy-idol-23d68487.html"
+        },
+        "venue": {
+          "id": "3d28187",
+          "name": "Irvine Meadows Amphitheatre",
+          "city": {
+            "id": "5359777",
+            "name": "Irvine",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 33.6694649,
+              "long": -117.8231107
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/irvine-meadows-amphitheatre-irvine-ca-usa-3d28187.html"
+        },
+        "tour": {
+          "name": "Rebel Yell"
+        },
+        "sets": {
+          "set": [
+            {
+              "song": [
+                {
+                  "name": "Blue Highway"
+                },
+                {
+                  "name": "Rebel Yell"
+                },
+                {
+                  "name": "White Wedding"
+                },
+                {
+                  "name": "Dancing With Myself",
+                  "cover": {
+                    "mbid": "4c141ecd-23f9-4881-9a8c-27e7e7af708c",
+                    "name": "Generation X",
+                    "sortName": "Generation X",
+                    "disambiguation": "English post‐punk band aka “Gen X”",
+                    "url": "https://www.setlist.fm/setlists/generation-x-63d6b203.html"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "url": "https://www.setlist.fm/setlist/billy-idol/1984/irvine-meadows-amphitheatre-irvine-ca-73ffd269.html"
+      },
+      "fetchedAt": "2026-01-05T05:40:12.863Z"
     },
     {
       "concertId": "concert-3",
@@ -124,10 +195,10 @@
       "venue": "Irvine Meadows",
       "city": "Irvine",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:43:55.444Z"
+      "fetchedAt": "2026-01-05T06:14:02.154Z"
     },
     {
-      "concertId": "concert-4",
+      "concertId": "concert-5",
       "artistName": "Depeche Mode",
       "date": "1985-03-31",
       "venue": "Irvine Meadows",
@@ -247,10 +318,10 @@
         },
         "url": "https://www.setlist.fm/setlist/depeche-mode/1985/irvine-meadows-amphitheatre-irvine-ca-bd75dbe.html"
       },
-      "fetchedAt": "2026-01-03T23:24:12.958Z"
+      "fetchedAt": "2026-01-05T05:40:16.512Z"
     },
     {
-      "concertId": "concert-4",
+      "concertId": "concert-5",
       "artistName": "Animotion",
       "date": "1985-03-31",
       "venue": "Irvine Meadows",
@@ -291,10 +362,10 @@
         },
         "url": "https://www.setlist.fm/setlist/animotion/1985/irvine-meadows-amphitheatre-irvine-ca-13dc0975.html"
       },
-      "fetchedAt": "2026-01-04T20:43:57.280Z"
+      "fetchedAt": "2026-01-05T05:40:18.365Z"
     },
     {
-      "concertId": "concert-4",
+      "concertId": "concert-5",
       "artistName": "Book of Love",
       "date": "1985-03-31",
       "venue": "Irvine Meadows",
@@ -335,10 +406,10 @@
         },
         "url": "https://www.setlist.fm/setlist/book-of-love/1985/irvine-meadows-amphitheatre-irvine-ca-3dc096b.html"
       },
-      "fetchedAt": "2026-01-04T18:14:34.701Z"
+      "fetchedAt": "2026-01-05T05:40:20.181Z"
     },
     {
-      "concertId": "concert-5",
+      "concertId": "concert-6",
       "artistName": "Stryper",
       "date": "1985-05-17",
       "venue": "Knots Berry Farm",
@@ -383,10 +454,10 @@
         "info": "12:30 show at \"Good Time Theatre\"",
         "url": "https://www.setlist.fm/setlist/stryper/1985/knotts-berry-farm-buena-park-ca-b8e659a.html"
       },
-      "fetchedAt": "2026-01-03T23:24:14.503Z"
+      "fetchedAt": "2026-01-05T05:40:22.029Z"
     },
     {
-      "concertId": "concert-6",
+      "concertId": "concert-7",
       "artistName": "Howard Jones",
       "date": "1985-06-04",
       "venue": "Irvine Meadows",
@@ -427,10 +498,10 @@
         },
         "url": "https://www.setlist.fm/setlist/howard-jones/1985/irvine-meadows-amphitheatre-irvine-ca-5bdc63c4.html"
       },
-      "fetchedAt": "2026-01-03T23:24:16.032Z"
+      "fetchedAt": "2026-01-05T05:40:23.851Z"
     },
     {
-      "concertId": "concert-7",
+      "concertId": "concert-8",
       "artistName": "Tears For Fears",
       "date": "1985-07-10",
       "venue": "Pacific Amphitheatre",
@@ -474,10 +545,10 @@
         },
         "url": "https://www.setlist.fm/setlist/tears-for-fears/1985/pacific-amphitheatre-costa-mesa-ca-1bc13dec.html"
       },
-      "fetchedAt": "2026-01-03T23:24:17.558Z"
+      "fetchedAt": "2026-01-05T05:40:25.690Z"
     },
     {
-      "concertId": "concert-9",
+      "concertId": "concert-10",
       "artistName": "New Order",
       "date": "1985-08-23",
       "venue": "Irvine Meadows",
@@ -577,10 +648,64 @@
         },
         "url": "https://www.setlist.fm/setlist/new-order/1985/irvine-meadows-amphitheatre-irvine-ca-13d7c59d.html"
       },
-      "fetchedAt": "2026-01-03T23:24:19.083Z"
+      "fetchedAt": "2026-01-05T05:40:27.517Z"
     },
     {
-      "concertId": "concert-8",
+      "concertId": "concert-10",
+      "artistName": "A Certain Ratio",
+      "date": "1985-08-23",
+      "venue": "Irvine Meadows",
+      "city": "Irvine",
+      "setlist": null,
+      "fetchedAt": "2026-01-05T06:14:04.101Z",
+      "error": "API error: 404 Not Found"
+    },
+    {
+      "concertId": "concert-10",
+      "artistName": "Abecedarians",
+      "date": "1985-08-23",
+      "venue": "Irvine Meadows",
+      "city": "Irvine",
+      "setlist": {
+        "id": "3e029af",
+        "versionId": "7361de91",
+        "eventDate": "23-08-1985",
+        "lastUpdated": "2018-10-20T20:06:41.914+0000",
+        "artist": {
+          "mbid": "8bf6f99b-21e0-46b0-8c89-5c11ad10a539",
+          "name": "Abecedarians",
+          "sortName": "Abecedarians",
+          "disambiguation": "",
+          "url": "https://www.setlist.fm/setlists/abecedarians-7bd6ee8c.html"
+        },
+        "venue": {
+          "id": "3d28187",
+          "name": "Irvine Meadows Amphitheatre",
+          "city": {
+            "id": "5359777",
+            "name": "Irvine",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 33.6694649,
+              "long": -117.8231107
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/irvine-meadows-amphitheatre-irvine-ca-usa-3d28187.html"
+        },
+        "sets": {
+          "set": []
+        },
+        "url": "https://www.setlist.fm/setlist/abecedarians/1985/irvine-meadows-amphitheatre-irvine-ca-3e029af.html"
+      },
+      "fetchedAt": "2026-01-05T05:40:31.711Z"
+    },
+    {
+      "concertId": "concert-9",
       "artistName": "Wham!",
       "date": "1985-08-30",
       "venue": "Hollywood Park Racetrack",
@@ -673,10 +798,10 @@
         },
         "url": "https://www.setlist.fm/setlist/wham/1985/hollywood-park-racetrack-inglewood-ca-be21562.html"
       },
-      "fetchedAt": "2026-01-03T23:24:20.617Z"
+      "fetchedAt": "2026-01-05T05:40:33.572Z"
     },
     {
-      "concertId": "concert-8",
+      "concertId": "concert-9",
       "artistName": "Chaka Kahn",
       "date": "1985-08-30",
       "venue": "Hollywood Park Racetrack",
@@ -717,10 +842,10 @@
         },
         "url": "https://www.setlist.fm/setlist/chaka-khan/1985/hollywood-park-racetrack-inglewood-ca-2beb0cde.html"
       },
-      "fetchedAt": "2026-01-04T20:43:59.108Z"
+      "fetchedAt": "2026-01-05T05:40:35.383Z"
     },
     {
-      "concertId": "concert-8",
+      "concertId": "concert-9",
       "artistName": "Katrina And the Waves",
       "date": "1985-08-30",
       "venue": "Hollywood Park Racetrack",
@@ -761,10 +886,10 @@
         },
         "url": "https://www.setlist.fm/setlist/katrina-and-the-waves/1985/hollywood-park-racetrack-inglewood-ca-33eb0cd1.html"
       },
-      "fetchedAt": "2026-01-04T18:14:36.528Z"
+      "fetchedAt": "2026-01-05T05:40:37.219Z"
     },
     {
-      "concertId": "concert-10",
+      "concertId": "concert-11",
       "artistName": "Bruce Springsteen",
       "date": "1985-09-29",
       "venue": "Los Angeles Memorial Coliseum",
@@ -989,10 +1114,10 @@
         "info": "The final show of the Born In The U.S.A. Tour. Soundcheck included: \"I Don't Want to Go Home\" and \"Blinded by the Light\".",
         "url": "https://www.setlist.fm/setlist/bruce-springsteen/1985/los-angeles-memorial-coliseum-los-angeles-ca-53d7b355.html"
       },
-      "fetchedAt": "2026-01-03T23:24:22.145Z"
+      "fetchedAt": "2026-01-05T05:40:39.122Z"
     },
     {
-      "concertId": "concert-11",
+      "concertId": "concert-12",
       "artistName": "Thompson Twins",
       "date": "1985-11-02",
       "venue": "Irvine Meadows",
@@ -1036,19 +1161,19 @@
         },
         "url": "https://www.setlist.fm/setlist/thompson-twins/1985/irvine-meadows-amphitheatre-irvine-ca-3bdc3c8c.html"
       },
-      "fetchedAt": "2026-01-03T23:24:23.783Z"
+      "fetchedAt": "2026-01-05T05:40:40.885Z"
     },
     {
-      "concertId": "concert-11",
+      "concertId": "concert-12",
       "artistName": "OMD",
       "date": "1985-11-02",
       "venue": "Irvine Meadows",
       "city": "Irvine",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:00.816Z"
+      "fetchedAt": "2026-01-05T06:14:06.560Z"
     },
     {
-      "concertId": "concert-12",
+      "concertId": "concert-13",
       "artistName": "The Alarm",
       "date": "1986-04-12",
       "venue": "UCLA",
@@ -1146,10 +1271,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-alarm/1986/ucla-los-angeles-ca-3dda527.html"
       },
-      "fetchedAt": "2026-01-03T23:24:25.347Z"
+      "fetchedAt": "2026-01-05T05:40:44.592Z"
     },
     {
-      "concertId": "concert-13",
+      "concertId": "concert-14",
       "artistName": "Blancmange",
       "date": "1986-04-15",
       "venue": "Crawford Hall",
@@ -1190,10 +1315,10 @@
         },
         "url": "https://www.setlist.fm/setlist/blancmange/1986/crawford-hall-irvine-ca-bfc0dfa.html"
       },
-      "fetchedAt": "2026-01-03T23:24:26.941Z"
+      "fetchedAt": "2026-01-05T05:40:46.392Z"
     },
     {
-      "concertId": "concert-14",
+      "concertId": "concert-15",
       "artistName": "Beach Boys",
       "date": "1986-07-16",
       "venue": "Pacific Amphitheatre",
@@ -1234,10 +1359,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-beach-boys/1986/pacific-amphitheatre-costa-mesa-ca-bdb717e.html"
       },
-      "fetchedAt": "2026-01-03T23:24:28.463Z"
+      "fetchedAt": "2026-01-05T05:40:48.229Z"
     },
     {
-      "concertId": "concert-15",
+      "concertId": "concert-16",
       "artistName": "The Art of Noise",
       "date": "1986-07-31",
       "venue": "Pacific Amphitheatre",
@@ -1298,10 +1423,10 @@
         "info": "Setlist incomplete",
         "url": "https://www.setlist.fm/setlist/art-of-noise/1986/pacific-amphitheatre-costa-mesa-ca-bff113e.html"
       },
-      "fetchedAt": "2026-01-03T23:24:30.005Z"
+      "fetchedAt": "2026-01-05T05:40:50.077Z"
     },
     {
-      "concertId": "concert-16",
+      "concertId": "concert-17",
       "artistName": "Run DMC",
       "date": "1987-06-20",
       "venue": "Pacific Amphitheatre",
@@ -1345,10 +1470,10 @@
         },
         "url": "https://www.setlist.fm/setlist/rundmc/1987/pacific-amphitheatre-costa-mesa-ca-2be3cc0a.html"
       },
-      "fetchedAt": "2026-01-03T23:24:31.541Z"
+      "fetchedAt": "2026-01-05T05:40:51.920Z"
     },
     {
-      "concertId": "concert-16",
+      "concertId": "concert-17",
       "artistName": "Beastie Boys",
       "date": "1987-06-20",
       "venue": "Pacific Amphitheatre",
@@ -1392,10 +1517,10 @@
         },
         "url": "https://www.setlist.fm/setlist/beastie-boys/1987/pacific-amphitheatre-costa-mesa-ca-3bcf4894.html"
       },
-      "fetchedAt": "2026-01-04T20:44:02.783Z"
+      "fetchedAt": "2026-01-05T05:40:53.763Z"
     },
     {
-      "concertId": "concert-18",
+      "concertId": "concert-19",
       "artistName": "Oingo Boingo",
       "date": "1987-06-30",
       "venue": "Caliente Racetrack",
@@ -1445,10 +1570,10 @@
         "info": "Setlist incomplete",
         "url": "https://www.setlist.fm/setlist/oingo-boingo/1987/agua-caliente-racetrack-tijuana-mexico-23ce0c43.html"
       },
-      "fetchedAt": "2026-01-03T23:24:33.065Z"
+      "fetchedAt": "2026-01-05T05:40:55.607Z"
     },
     {
-      "concertId": "concert-18",
+      "concertId": "concert-19",
       "artistName": "Hoodoo Gurus",
       "date": "1987-06-30",
       "venue": "Caliente Racetrack",
@@ -1492,10 +1617,10 @@
         },
         "url": "https://www.setlist.fm/setlist/hoodoo-gurus/1987/agua-caliente-racetrack-tijuana-mexico-3bce0c40.html"
       },
-      "fetchedAt": "2026-01-04T20:44:04.515Z"
+      "fetchedAt": "2026-01-05T05:40:57.400Z"
     },
     {
-      "concertId": "concert-18",
+      "concertId": "concert-19",
       "artistName": "Bangles",
       "date": "1987-06-30",
       "venue": "Caliente Racetrack",
@@ -1539,10 +1664,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-bangles/1987/agua-caliente-racetrack-tijuana-mexico-3bce0c4c.html"
       },
-      "fetchedAt": "2026-01-04T18:14:38.313Z"
+      "fetchedAt": "2026-01-05T05:40:59.231Z"
     },
     {
-      "concertId": "concert-18",
+      "concertId": "concert-19",
       "artistName": "Squeeze",
       "date": "1987-06-30",
       "venue": "Caliente Racetrack",
@@ -1583,10 +1708,10 @@
         },
         "url": "https://www.setlist.fm/setlist/squeeze/1987/agua-caliente-racetrack-tijuana-mexico-33ce0c41.html"
       },
-      "fetchedAt": "2026-01-04T18:14:40.167Z"
+      "fetchedAt": "2026-01-05T05:41:01.071Z"
     },
     {
-      "concertId": "concert-18",
+      "concertId": "concert-19",
       "artistName": "Chris Isaak",
       "date": "1987-06-30",
       "venue": "Caliente Racetrack",
@@ -1630,10 +1755,10 @@
         },
         "url": "https://www.setlist.fm/setlist/chris-isaak/1987/agua-caliente-racetrack-tijuana-mexico-2bce0c46.html"
       },
-      "fetchedAt": "2026-01-04T18:14:42.275Z"
+      "fetchedAt": "2026-01-05T05:41:03.000Z"
     },
     {
-      "concertId": "concert-18",
+      "concertId": "concert-19",
       "artistName": "The Fixx",
       "date": "1987-06-30",
       "venue": "Caliente Racetrack",
@@ -1677,10 +1802,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-fixx/1987/agua-caliente-racetrack-tijuana-mexico-4bd13bce.html"
       },
-      "fetchedAt": "2026-01-04T18:14:44.079Z"
+      "fetchedAt": "2026-01-05T05:41:04.770Z"
     },
     {
-      "concertId": "concert-17",
+      "concertId": "concert-18",
       "artistName": "Duran Duran",
       "date": "1987-07-27",
       "venue": "Irvine Meadows",
@@ -1756,10 +1881,10 @@
         },
         "url": "https://www.setlist.fm/setlist/duran-duran/1987/irvine-meadows-amphitheatre-irvine-ca-13dbfde1.html"
       },
-      "fetchedAt": "2026-01-03T23:24:34.590Z"
+      "fetchedAt": "2026-01-05T05:41:06.666Z"
     },
     {
-      "concertId": "concert-19",
+      "concertId": "concert-20",
       "artistName": "No Doubt",
       "date": "1988-03-04",
       "venue": "Disneyland",
@@ -1800,20 +1925,20 @@
         },
         "url": "https://www.setlist.fm/setlist/no-doubt/1988/loara-high-school-anaheim-ca-b97e5ee.html"
       },
-      "fetchedAt": "2026-01-03T23:24:36.141Z"
+      "fetchedAt": "2026-01-05T05:41:08.430Z"
     },
     {
-      "concertId": "concert-19",
+      "concertId": "concert-20",
       "artistName": "The Nylons",
       "date": "1988-03-04",
       "venue": "Disneyland",
       "city": "Anaheim",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:06.443Z",
+      "fetchedAt": "2026-01-05T06:14:08.395Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-20",
+      "concertId": "concert-21",
       "artistName": "Depeche Mode",
       "date": "1988-06-18",
       "venue": "The Rose Bowl",
@@ -1934,10 +2059,10 @@
         "info": "A documentary and double live album, 101, was released of the concert. This concert was also the last performance of the songs: People Are People, Nothing, Blasphemous Rumors, Sacred, and Pleasure, Little Treasure.",
         "url": "https://www.setlist.fm/setlist/depeche-mode/1988/rose-bowl-pasadena-ca-bd7f15a.html"
       },
-      "fetchedAt": "2026-01-03T23:24:37.667Z"
+      "fetchedAt": "2026-01-05T05:41:12.615Z"
     },
     {
-      "concertId": "concert-20",
+      "concertId": "concert-21",
       "artistName": "Thomas Dolby",
       "date": "1988-06-18",
       "venue": "The Rose Bowl",
@@ -1995,10 +2120,10 @@
         },
         "url": "https://www.setlist.fm/setlist/thomas-dolby/1988/rose-bowl-pasadena-ca-5bfc0f9c.html"
       },
-      "fetchedAt": "2026-01-04T20:44:08.720Z"
+      "fetchedAt": "2026-01-05T05:41:14.463Z"
     },
     {
-      "concertId": "concert-20",
+      "concertId": "concert-21",
       "artistName": "Wire",
       "date": "1988-06-18",
       "venue": "The Rose Bowl",
@@ -2053,10 +2178,10 @@
         },
         "url": "https://www.setlist.fm/setlist/wire/1988/rose-bowl-pasadena-ca-53fc0fa5.html"
       },
-      "fetchedAt": "2026-01-04T18:14:45.945Z"
+      "fetchedAt": "2026-01-05T05:41:16.275Z"
     },
     {
-      "concertId": "concert-20",
+      "concertId": "concert-21",
       "artistName": "OMD",
       "date": "1988-06-18",
       "venue": "The Rose Bowl",
@@ -2138,10 +2263,10 @@
         },
         "url": "https://www.setlist.fm/setlist/orchestral-manoeuvres-in-the-dark/1988/rose-bowl-pasadena-ca-23da4cbb.html"
       },
-      "fetchedAt": "2026-01-04T18:14:47.754Z"
+      "fetchedAt": "2026-01-05T05:41:18.104Z"
     },
     {
-      "concertId": "concert-21",
+      "concertId": "concert-22",
       "artistName": "UB40",
       "date": "1988-09-09",
       "venue": "Pacific Amphitheatre",
@@ -2182,10 +2307,10 @@
         },
         "url": "https://www.setlist.fm/setlist/ub40/1988/pacific-amphitheatre-costa-mesa-ca-1b8915fc.html"
       },
-      "fetchedAt": "2026-01-03T23:24:39.191Z"
+      "fetchedAt": "2026-01-05T05:41:19.943Z"
     },
     {
-      "concertId": "concert-22",
+      "concertId": "concert-23",
       "artistName": "Ziggy Marley",
       "date": "1988-09-19",
       "venue": "Mesa Amphitheatre",
@@ -2229,10 +2354,10 @@
         },
         "url": "https://www.setlist.fm/setlist/ziggy-marley-and-the-melody-makers/1988/mesa-amphitheatre-mesa-az-23fc6cef.html"
       },
-      "fetchedAt": "2026-01-03T23:24:40.737Z"
+      "fetchedAt": "2026-01-05T05:41:21.821Z"
     },
     {
-      "concertId": "concert-23",
+      "concertId": "concert-24",
       "artistName": "George Michael",
       "date": "1988-10-07",
       "venue": "Irvine Meadows",
@@ -2376,10 +2501,10 @@
         },
         "url": "https://www.setlist.fm/setlist/george-michael/1988/irvine-meadows-amphitheatre-irvine-ca-53dd9ff1.html"
       },
-      "fetchedAt": "2026-01-03T23:24:42.266Z"
+      "fetchedAt": "2026-01-05T05:41:23.614Z"
     },
     {
-      "concertId": "concert-24",
+      "concertId": "concert-25",
       "artistName": "Beach Boys",
       "date": "1988-10-15",
       "venue": "Arizona Veterans Memorial Coliseum",
@@ -2420,10 +2545,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-beach-boys/1988/arizona-veterans-memorial-coliseum-phoenix-az-53d9dff1.html"
       },
-      "fetchedAt": "2026-01-03T23:24:43.794Z"
+      "fetchedAt": "2026-01-05T05:41:25.463Z"
     },
     {
-      "concertId": "concert-25",
+      "concertId": "concert-26",
       "artistName": "Oingo Boingo",
       "date": "1988-10-29",
       "venue": "Irvine Meadows",
@@ -2541,10 +2666,10 @@
         "info": "Setlist incomplete",
         "url": "https://www.setlist.fm/setlist/oingo-boingo/1988/irvine-meadows-amphitheatre-irvine-ca-5bbe8fcc.html"
       },
-      "fetchedAt": "2026-01-03T23:24:45.425Z"
+      "fetchedAt": "2026-01-05T05:41:27.290Z"
     },
     {
-      "concertId": "concert-26",
+      "concertId": "concert-27",
       "artistName": "Howard Jones",
       "date": "1989-07-05",
       "venue": "Universal Amphitheater",
@@ -2650,10 +2775,10 @@
         },
         "url": "https://www.setlist.fm/setlist/howard-jones/1989/universal-amphitheatre-universal-city-ca-73dd3ebd.html"
       },
-      "fetchedAt": "2026-01-03T23:24:47.009Z"
+      "fetchedAt": "2026-01-05T05:41:29.154Z"
     },
     {
-      "concertId": "concert-26",
+      "concertId": "concert-27",
       "artistName": "Midge Ure",
       "date": "1989-07-05",
       "venue": "Universal Amphitheater",
@@ -2697,20 +2822,20 @@
         },
         "url": "https://www.setlist.fm/setlist/midge-ure/1989/universal-amphitheatre-universal-city-ca-63ea32ff.html"
       },
-      "fetchedAt": "2026-01-04T20:44:10.743Z"
+      "fetchedAt": "2026-01-05T05:41:30.953Z"
     },
     {
-      "concertId": "concert-27",
+      "concertId": "concert-28",
       "artistName": "Tone Loc",
       "date": "1990-03-10",
       "venue": "Jets",
       "city": "Long Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:12.524Z",
+      "fetchedAt": "2026-01-05T06:14:10.751Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-28",
+      "concertId": "concert-29",
       "artistName": "Erasure",
       "date": "1990-03-11",
       "venue": "Kia Forum",
@@ -2865,10 +2990,10 @@
         },
         "url": "https://www.setlist.fm/setlist/erasure/1990/great-western-forum-inglewood-ca-13c21d6d.html"
       },
-      "fetchedAt": "2026-01-03T23:24:51.248Z"
+      "fetchedAt": "2026-01-05T05:41:35.147Z"
     },
     {
-      "concertId": "concert-30",
+      "concertId": "concert-31",
       "artistName": "Erasure",
       "date": "1990-06-15",
       "venue": "Irvine Meadows",
@@ -2912,10 +3037,10 @@
         },
         "url": "https://www.setlist.fm/setlist/erasure/1990/irvine-meadows-amphitheatre-irvine-ca-23c21c7b.html"
       },
-      "fetchedAt": "2026-01-03T23:24:53.091Z"
+      "fetchedAt": "2026-01-05T05:41:36.971Z"
     },
     {
-      "concertId": "concert-31",
+      "concertId": "concert-32",
       "artistName": "Depeche Mode",
       "date": "1990-08-05",
       "venue": "Dodger Stadium",
@@ -3045,10 +3170,10 @@
         },
         "url": "https://www.setlist.fm/setlist/depeche-mode/1990/dodger-stadium-los-angeles-ca-13d615e1.html"
       },
-      "fetchedAt": "2026-01-03T23:24:54.862Z"
+      "fetchedAt": "2026-01-05T05:41:38.822Z"
     },
     {
-      "concertId": "concert-32",
+      "concertId": "concert-33",
       "artistName": "Jesus Jones",
       "date": "1990-08-09",
       "venue": "Hollywood Palladium",
@@ -3089,39 +3214,77 @@
         },
         "url": "https://www.setlist.fm/setlist/jesus-jones/1990/hollywood-live-los-angeles-ca-2b86c0f6.html"
       },
-      "fetchedAt": "2026-01-03T23:24:56.666Z"
+      "fetchedAt": "2026-01-05T05:41:40.663Z"
     },
     {
-      "concertId": "concert-32",
+      "concertId": "concert-33",
       "artistName": "EMF",
       "date": "1990-08-09",
       "venue": "Hollywood Palladium",
       "city": "Hollywood",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:14.998Z",
+      "fetchedAt": "2026-01-05T06:14:13.119Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-29",
+      "concertId": "concert-30",
       "artistName": "Social Distortion",
       "date": "1990-09-13",
       "venue": "Cal State Fullerton",
       "city": "Fullerton",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:17.455Z",
+      "fetchedAt": "2026-01-05T06:14:15.469Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-35",
-      "artistName": "Bel Biv DeVoe",
+      "concertId": "concert-36",
+      "artistName": "Bell Biv DeVoe",
       "date": "1991-02-23",
       "venue": "Kia Forum",
       "city": "Inglewood",
-      "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:19.885Z"
+      "setlist": {
+        "id": "43f1e7a3",
+        "versionId": "g23947c0f",
+        "eventDate": "24-02-1991",
+        "lastUpdated": "2023-05-19T02:53:51.411+0000",
+        "artist": {
+          "mbid": "9b16908a-a78c-45a7-8366-d2a41967f745",
+          "name": "Bell Biv DeVoe",
+          "sortName": "Bell Biv DeVoe",
+          "disambiguation": "",
+          "url": "https://www.setlist.fm/setlists/bell-biv-devoe-5bd69f88.html"
+        },
+        "venue": {
+          "id": "bd63db6",
+          "name": "Great Western Forum",
+          "city": {
+            "id": "5359488",
+            "name": "Inglewood",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 33.9616801,
+              "long": -118.3531311
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/great-western-forum-inglewood-ca-usa-bd63db6.html"
+        },
+        "tour": {
+          "name": "Poison Tour"
+        },
+        "sets": {
+          "set": []
+        },
+        "url": "https://www.setlist.fm/setlist/bell-biv-devoe/1991/great-western-forum-inglewood-ca-43f1e7a3.html"
+      },
+      "fetchedAt": "2026-01-05T06:14:17.736Z"
     },
     {
-      "concertId": "concert-35",
+      "concertId": "concert-36",
       "artistName": "Johnny Gill",
       "date": "1991-02-23",
       "venue": "Kia Forum",
@@ -3162,10 +3325,10 @@
         },
         "url": "https://www.setlist.fm/setlist/johnny-gill/1991/great-western-forum-inglewood-ca-b9fb1c6.html"
       },
-      "fetchedAt": "2026-01-04T20:44:21.651Z"
+      "fetchedAt": "2026-01-05T05:41:49.043Z"
     },
     {
-      "concertId": "concert-35",
+      "concertId": "concert-36",
       "artistName": "Keith Sweat",
       "date": "1991-02-23",
       "venue": "Kia Forum",
@@ -3206,10 +3369,10 @@
         },
         "url": "https://www.setlist.fm/setlist/keith-sweat/1991/great-western-forum-inglewood-ca-139fb1c1.html"
       },
-      "fetchedAt": "2026-01-04T18:14:56.249Z"
+      "fetchedAt": "2026-01-05T05:41:50.877Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Maxi Priest",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3250,10 +3413,10 @@
         },
         "url": "https://www.setlist.fm/setlist/maxi-priest/1991/pacific-amphitheatre-costa-mesa-ca-7b844a34.html"
       },
-      "fetchedAt": "2026-01-03T23:25:04.209Z"
+      "fetchedAt": "2026-01-05T05:41:52.746Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Andrew Tosh",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3294,10 +3457,10 @@
         },
         "url": "https://www.setlist.fm/setlist/andrew-tosh/1991/pacific-amphitheatre-costa-mesa-ca-63844a2f.html"
       },
-      "fetchedAt": "2026-01-04T20:44:23.482Z"
+      "fetchedAt": "2026-01-05T05:41:54.547Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Carlene Davis",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3338,10 +3501,10 @@
         },
         "url": "https://www.setlist.fm/setlist/carlene-davis/1991/pacific-amphitheatre-costa-mesa-ca-73844a2d.html"
       },
-      "fetchedAt": "2026-01-04T18:14:57.877Z"
+      "fetchedAt": "2026-01-05T05:41:56.432Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Dennis Brown",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3382,10 +3545,10 @@
         },
         "url": "https://www.setlist.fm/setlist/dennis-brown/1991/pacific-amphitheatre-costa-mesa-ca-6b844a22.html"
       },
-      "fetchedAt": "2026-01-04T18:14:59.638Z"
+      "fetchedAt": "2026-01-05T05:41:58.217Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Little Lenny",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3426,10 +3589,10 @@
         },
         "url": "https://www.setlist.fm/setlist/little-lenny/1991/pacific-amphitheatre-costa-mesa-ca-7b844a20.html"
       },
-      "fetchedAt": "2026-01-04T18:15:01.501Z"
+      "fetchedAt": "2026-01-05T05:42:00.067Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Shinehead",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3470,10 +3633,10 @@
         },
         "url": "https://www.setlist.fm/setlist/shinehead/1991/pacific-amphitheatre-costa-mesa-ca-6b844a26.html"
       },
-      "fetchedAt": "2026-01-04T18:15:03.649Z"
+      "fetchedAt": "2026-01-05T05:42:01.930Z"
     },
     {
-      "concertId": "concert-33",
+      "concertId": "concert-34",
       "artistName": "Team Band",
       "date": "1991-06-02",
       "venue": "Pacific Amphitheatre",
@@ -3514,10 +3677,10 @@
         },
         "url": "https://www.setlist.fm/setlist/team-band/1991/pacific-amphitheatre-costa-mesa-ca-7b844a24.html"
       },
-      "fetchedAt": "2026-01-04T18:15:05.572Z"
+      "fetchedAt": "2026-01-05T05:42:03.719Z"
     },
     {
-      "concertId": "concert-34",
+      "concertId": "concert-35",
       "artistName": "Jimmy Buffett",
       "date": "1991-06-21",
       "venue": "Irvine Meadows",
@@ -3651,20 +3814,64 @@
         },
         "url": "https://www.setlist.fm/setlist/jimmy-buffett/1991/irvine-meadows-amphitheatre-irvine-ca-63d29a83.html"
       },
-      "fetchedAt": "2026-01-03T23:25:07.466Z"
+      "fetchedAt": "2026-01-05T05:42:05.559Z"
     },
     {
-      "concertId": "concert-36",
+      "concertId": "concert-37",
       "artistName": "Burning Spear",
       "date": "1991-09-08",
       "venue": "Long Beach Arena",
       "city": "Long Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:25.321Z",
+      "fetchedAt": "2026-01-05T06:14:19.509Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-36",
+      "concertId": "concert-37",
+      "artistName": "Maxi Priest",
+      "date": "1991-09-08",
+      "venue": "Long Beach Arena",
+      "city": "Long Beach",
+      "setlist": {
+        "id": "1b84a1d8",
+        "versionId": "6339a25f",
+        "eventDate": "24-02-1991",
+        "lastUpdated": "2020-06-27T05:25:19.085+0000",
+        "artist": {
+          "mbid": "fc6548d9-cc7e-4311-bd6c-6eba9c0cd06f",
+          "name": "Maxi Priest",
+          "sortName": "Priest, Maxi",
+          "disambiguation": "British reggae vocalist of Jamaican descent",
+          "url": "https://www.setlist.fm/setlists/maxi-priest-1bd6d900.html"
+        },
+        "venue": {
+          "id": "bd63982",
+          "name": "Long Beach Arena",
+          "city": {
+            "id": "5367929",
+            "name": "Long Beach",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 33.7669623,
+              "long": -118.1892348
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/long-beach-arena-long-beach-ca-usa-bd63982.html"
+        },
+        "sets": {
+          "set": []
+        },
+        "url": "https://www.setlist.fm/setlist/maxi-priest/1991/long-beach-arena-long-beach-ca-1b84a1d8.html"
+      },
+      "fetchedAt": "2026-01-05T06:14:21.796Z"
+    },
+    {
+      "concertId": "concert-37",
       "artistName": "Aswad",
       "date": "1991-09-08",
       "venue": "Long Beach Arena",
@@ -3705,20 +3912,20 @@
         },
         "url": "https://www.setlist.fm/setlist/aswad/1991/long-beach-arena-long-beach-ca-384a1db.html"
       },
-      "fetchedAt": "2026-01-04T20:44:27.584Z"
+      "fetchedAt": "2026-01-05T05:42:09.656Z"
     },
     {
-      "concertId": "concert-36",
-      "artistName": "Eek a Mouse",
+      "concertId": "concert-37",
+      "artistName": "Eek A Mouse",
       "date": "1991-09-08",
       "venue": "Long Beach Arena",
       "city": "Long Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:29.411Z",
+      "fetchedAt": "2026-01-05T06:14:23.592Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-37",
+      "concertId": "concert-38",
       "artistName": "Sting",
       "date": "1991-10-04",
       "venue": "Pacific Amphitheatre",
@@ -3762,10 +3969,10 @@
         },
         "url": "https://www.setlist.fm/setlist/sting/1991/pacific-amphitheatre-costa-mesa-ca-5bfc7fdc.html"
       },
-      "fetchedAt": "2026-01-03T23:25:12.222Z"
+      "fetchedAt": "2026-01-05T05:42:13.707Z"
     },
     {
-      "concertId": "concert-37",
+      "concertId": "concert-38",
       "artistName": "Squeeze",
       "date": "1991-10-04",
       "venue": "Pacific Amphitheatre",
@@ -3806,10 +4013,10 @@
         },
         "url": "https://www.setlist.fm/setlist/squeeze/1991/pacific-amphitheatre-costa-mesa-ca-13eb0d85.html"
       },
-      "fetchedAt": "2026-01-04T20:44:31.612Z"
+      "fetchedAt": "2026-01-05T05:42:15.518Z"
     },
     {
-      "concertId": "concert-39",
+      "concertId": "concert-40",
       "artistName": "Siouxsie and the Banshees",
       "date": "1991-12-21",
       "venue": "Universal Amphitheater",
@@ -3916,10 +4123,10 @@
         },
         "url": "https://www.setlist.fm/setlist/siouxsie-and-the-banshees/1991/universal-amphitheatre-universal-city-ca-6bd44a76.html"
       },
-      "fetchedAt": "2026-01-03T23:25:14.696Z"
+      "fetchedAt": "2026-01-05T05:42:17.360Z"
     },
     {
-      "concertId": "concert-39",
+      "concertId": "concert-40",
       "artistName": "Ian McCulloch",
       "date": "1991-12-21",
       "venue": "Universal Amphitheater",
@@ -3963,10 +4170,10 @@
         },
         "url": "https://www.setlist.fm/setlist/ian-mcculloch/1991/universal-amphitheatre-universal-city-ca-538d5749.html"
       },
-      "fetchedAt": "2026-01-04T20:44:33.472Z"
+      "fetchedAt": "2026-01-05T05:42:19.189Z"
     },
     {
-      "concertId": "concert-39",
+      "concertId": "concert-40",
       "artistName": "School of Fish",
       "date": "1991-12-21",
       "venue": "Universal Amphitheater",
@@ -4010,7 +4217,95 @@
         },
         "url": "https://www.setlist.fm/setlist/school-of-fish/1991/universal-amphitheatre-universal-city-ca-438d574b.html"
       },
-      "fetchedAt": "2026-01-04T18:15:11.895Z"
+      "fetchedAt": "2026-01-05T05:42:21.029Z"
+    },
+    {
+      "concertId": "concert-40",
+      "artistName": "The Smithereens",
+      "date": "1991-12-21",
+      "venue": "Universal Amphitheater",
+      "city": "Los Angeles",
+      "setlist": {
+        "id": "bb19552",
+        "versionId": "g33fb9c35",
+        "eventDate": "21-12-1991",
+        "lastUpdated": "2022-09-27T07:13:59.395+0000",
+        "artist": {
+          "mbid": "fae2cd4c-f847-4cb3-b311-60c8906cdb0b",
+          "name": "The Smithereens",
+          "sortName": "Smithereens, The",
+          "disambiguation": "New Jersey power pop band",
+          "url": "https://www.setlist.fm/setlists/the-smithereens-2bd7b41e.html"
+        },
+        "venue": {
+          "id": "bd6c9a6",
+          "name": "Universal Amphitheatre",
+          "city": {
+            "id": "5404794",
+            "name": "Universal City",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 34.1388962,
+              "long": -118.3534115
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/universal-amphitheatre-universal-city-ca-usa-bd6c9a6.html"
+        },
+        "sets": {
+          "set": []
+        },
+        "url": "https://www.setlist.fm/setlist/the-smithereens/1991/universal-amphitheatre-universal-city-ca-bb19552.html"
+      },
+      "fetchedAt": "2026-01-05T05:42:22.867Z"
+    },
+    {
+      "concertId": "concert-40",
+      "artistName": "The Wonderstuff",
+      "date": "1991-12-21",
+      "venue": "Universal Amphitheater",
+      "city": "Los Angeles",
+      "setlist": {
+        "id": "4388ffbf",
+        "versionId": "g33fb9c31",
+        "eventDate": "21-12-1991",
+        "lastUpdated": "2022-09-27T07:12:38.981+0000",
+        "artist": {
+          "mbid": "323c9a5b-ca01-49ad-be39-046223a0c9ae",
+          "name": "The Wonder Stuff",
+          "sortName": "Wonder Stuff, The",
+          "disambiguation": "UK alternative rock band",
+          "url": "https://www.setlist.fm/setlists/the-wonder-stuff-33d6049d.html"
+        },
+        "venue": {
+          "id": "bd6c9a6",
+          "name": "Universal Amphitheatre",
+          "city": {
+            "id": "5404794",
+            "name": "Universal City",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 34.1388962,
+              "long": -118.3534115
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/universal-amphitheatre-universal-city-ca-usa-bd6c9a6.html"
+        },
+        "sets": {
+          "set": []
+        },
+        "url": "https://www.setlist.fm/setlist/the-wonder-stuff/1991/universal-amphitheatre-universal-city-ca-4388ffbf.html"
+      },
+      "fetchedAt": "2026-01-05T05:42:24.798Z"
     },
     {
       "concertId": "concert-39",
@@ -4057,61 +4352,7 @@
       "fetchedAt": "2026-01-04T18:15:13.569Z"
     },
     {
-      "concertId": "concert-39",
-      "artistName": "The Wonderstuff",
-      "date": "1991-12-21",
-      "venue": "Universal Amphitheater",
-      "city": "Los Angeles",
-      "setlist": {
-        "id": "4388ffbf",
-        "versionId": "g33fb9c31",
-        "eventDate": "21-12-1991",
-        "lastUpdated": "2022-09-27T07:12:38.981+0000",
-        "artist": {
-          "mbid": "323c9a5b-ca01-49ad-be39-046223a0c9ae",
-          "name": "The Wonder Stuff",
-          "sortName": "Wonder Stuff, The",
-          "disambiguation": "UK alternative rock band",
-          "url": "https://www.setlist.fm/setlists/the-wonder-stuff-33d6049d.html"
-        },
-        "venue": {
-          "id": "bd6c9a6",
-          "name": "Universal Amphitheatre",
-          "city": {
-            "id": "5404794",
-            "name": "Universal City",
-            "state": "California",
-            "stateCode": "CA",
-            "coords": {
-              "lat": 34.1388962,
-              "long": -118.3534115
-            },
-            "country": {
-              "code": "US",
-              "name": "United States"
-            }
-          },
-          "url": "https://www.setlist.fm/venue/universal-amphitheatre-universal-city-ca-usa-bd6c9a6.html"
-        },
-        "sets": {
-          "set": []
-        },
-        "url": "https://www.setlist.fm/setlist/the-wonder-stuff/1991/universal-amphitheatre-universal-city-ca-4388ffbf.html"
-      },
-      "fetchedAt": "2026-01-04T18:15:15.402Z"
-    },
-    {
-      "concertId": "concert-38",
-      "artistName": "The Smithereens",
-      "date": "1992-06-04",
-      "venue": "The Celebrity Theatre",
-      "city": "Anaheim",
-      "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:35.281Z",
-      "error": "API error: 404 Not Found"
-    },
-    {
-      "concertId": "concert-40",
+      "concertId": "concert-41",
       "artistName": "Adam Ant",
       "date": "1993-02-26",
       "venue": "The Coach House",
@@ -4152,10 +4393,10 @@
         },
         "url": "https://www.setlist.fm/setlist/adam-ant/1993/the-coach-house-san-juan-capistrano-ca-b908922.html"
       },
-      "fetchedAt": "2026-01-03T23:25:19.224Z"
+      "fetchedAt": "2026-01-05T05:42:26.575Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Peter Gabriel",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4262,10 +4503,10 @@
         },
         "url": "https://www.setlist.fm/setlist/peter-gabriel/1993/olympic-velodrome-carson-ca-4bd3937a.html"
       },
-      "fetchedAt": "2026-01-03T23:25:21.085Z"
+      "fetchedAt": "2026-01-05T05:42:28.387Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Crowded House",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4341,10 +4582,10 @@
         },
         "url": "https://www.setlist.fm/setlist/crowded-house/1993/california-state-university-dominguez-hills-carson-ca-4bd1c322.html"
       },
-      "fetchedAt": "2026-01-04T20:44:37.494Z"
+      "fetchedAt": "2026-01-05T05:42:30.204Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Inner Circle",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4385,19 +4626,19 @@
         },
         "url": "https://www.setlist.fm/setlist/inner-circle/1993/california-state-university-dominguez-hills-carson-ca-53d1c315.html"
       },
-      "fetchedAt": "2026-01-04T20:21:46.999Z"
+      "fetchedAt": "2026-01-05T05:42:32.045Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Jah Wobble's Invaders of the Heart",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
       "city": "Carson",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:39.279Z"
+      "fetchedAt": "2026-01-05T06:14:25.958Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "James",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4473,10 +4714,10 @@
         },
         "url": "https://www.setlist.fm/setlist/james/1993/california-state-university-dominguez-hills-carson-ca-53d1c321.html"
       },
-      "fetchedAt": "2026-01-04T20:21:50.864Z"
+      "fetchedAt": "2026-01-05T05:42:35.707Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "P.M. Dawn",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4517,10 +4758,10 @@
         },
         "url": "https://www.setlist.fm/setlist/pm-dawn/1993/california-state-university-dominguez-hills-carson-ca-5bd1c320.html"
       },
-      "fetchedAt": "2026-01-04T20:21:52.953Z"
+      "fetchedAt": "2026-01-05T05:42:37.540Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Sheila Chandra",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4561,10 +4802,10 @@
         },
         "url": "https://www.setlist.fm/setlist/sheila-chandra/1993/california-state-university-dominguez-hills-carson-ca-43916f37.html"
       },
-      "fetchedAt": "2026-01-04T20:21:55.056Z"
+      "fetchedAt": "2026-01-05T05:42:39.365Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Sinéad O'Connor",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4605,63 +4846,28 @@
         },
         "url": "https://www.setlist.fm/setlist/peter-gabriel-feat-sinead-oconnor/1993/olympic-velodrome-carson-ca-1b5bf954.html"
       },
-      "fetchedAt": "2026-01-04T20:21:56.884Z"
+      "fetchedAt": "2026-01-05T05:42:41.211Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Stereo MC's",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
       "city": "Carson",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:41.215Z"
+      "fetchedAt": "2026-01-05T06:14:27.860Z"
     },
     {
-      "concertId": "concert-41",
-      "artistName": "Ziggy Marley and the Melody Makers",
+      "concertId": "concert-42",
+      "artistName": "Ziggy Marley",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
       "city": "Carson",
-      "setlist": {
-        "id": "5bd1c32c",
-        "versionId": "531ec315",
-        "eventDate": "18-09-1993",
-        "lastUpdated": "2019-05-02T00:30:58.209+0000",
-        "artist": {
-          "mbid": "7b5239b1-07ff-41ce-834b-29fe98de9970",
-          "name": "Ziggy Marley and the Melody Makers",
-          "sortName": "Marley, Ziggy & Melody Makers, The",
-          "disambiguation": "Jamaican reggae family group",
-          "url": "https://www.setlist.fm/setlists/ziggy-marley-and-the-melody-makers-5bd6d38c.html"
-        },
-        "venue": {
-          "id": "23d3a40b",
-          "name": "California State University, Dominguez Hills",
-          "city": {
-            "id": "5334519",
-            "name": "Carson",
-            "state": "California",
-            "stateCode": "CA",
-            "coords": {
-              "lat": 33.8314058,
-              "long": -118.2820165
-            },
-            "country": {
-              "code": "US",
-              "name": "United States"
-            }
-          },
-          "url": "https://www.setlist.fm/venue/california-state-university-dominguez-hills-carson-ca-usa-23d3a40b.html"
-        },
-        "sets": {
-          "set": []
-        },
-        "url": "https://www.setlist.fm/setlist/ziggy-marley-and-the-melody-makers/1993/california-state-university-dominguez-hills-carson-ca-5bd1c32c.html"
-      },
-      "fetchedAt": "2026-01-04T20:22:00.555Z"
+      "setlist": null,
+      "fetchedAt": "2026-01-05T06:14:29.639Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "Terem Quartet",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4702,10 +4908,10 @@
         },
         "url": "https://www.setlist.fm/setlist/terem-quartet/1993/olympic-velodrome-carson-ca-b5bf926.html"
       },
-      "fetchedAt": "2026-01-04T20:22:02.649Z"
+      "fetchedAt": "2026-01-05T05:42:46.715Z"
     },
     {
-      "concertId": "concert-41",
+      "concertId": "concert-42",
       "artistName": "The Drummers of Burundi",
       "date": "1993-09-18",
       "venue": "Olympic Velodrome",
@@ -4746,10 +4952,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-drummers-of-burundi/1993/olympic-velodrome-carson-ca-13ef153d.html"
       },
-      "fetchedAt": "2026-01-04T20:22:04.520Z"
+      "fetchedAt": "2026-01-05T05:42:48.545Z"
     },
     {
-      "concertId": "concert-42",
+      "concertId": "concert-43",
       "artistName": "Tears For Fears",
       "date": "1993-11-04",
       "venue": "Universal Amphitheater",
@@ -4793,10 +4999,10 @@
         },
         "url": "https://www.setlist.fm/setlist/tears-for-fears/1993/universal-amphitheatre-universal-city-ca-2beb0cee.html"
       },
-      "fetchedAt": "2026-01-03T23:25:23.418Z"
+      "fetchedAt": "2026-01-05T05:42:50.384Z"
     },
     {
-      "concertId": "concert-43",
+      "concertId": "concert-44",
       "artistName": "Violent Femmes",
       "date": "1995-02-04",
       "venue": "Hollywood Palladium",
@@ -4837,10 +5043,10 @@
         },
         "url": "https://www.setlist.fm/setlist/violent-femmes/1995/hollywood-palladium-los-angeles-ca-43dfc767.html"
       },
-      "fetchedAt": "2026-01-03T23:25:25.242Z"
+      "fetchedAt": "2026-01-05T05:42:52.225Z"
     },
     {
-      "concertId": "concert-44",
+      "concertId": "concert-45",
       "artistName": "The Brian Setzer Orchestra",
       "date": "1995-03-26",
       "venue": "Hard Rock Cafe",
@@ -4881,10 +5087,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-brian-setzer-orchestra/1995/hard-rock-cafe-newport-beach-ca-3392381d.html"
       },
-      "fetchedAt": "2026-01-03T23:25:27.088Z"
+      "fetchedAt": "2026-01-05T05:42:54.062Z"
     },
     {
-      "concertId": "concert-46",
+      "concertId": "concert-47",
       "artistName": "Jimmy Buffett",
       "date": "1995-10-14",
       "venue": "Irvine Meadows",
@@ -4928,10 +5134,10 @@
         },
         "url": "https://www.setlist.fm/setlist/jimmy-buffett/1995/irvine-meadows-amphitheatre-irvine-ca-2bf1fc06.html"
       },
-      "fetchedAt": "2026-01-03T23:25:28.931Z"
+      "fetchedAt": "2026-01-05T05:42:55.927Z"
     },
     {
-      "concertId": "concert-45",
+      "concertId": "concert-46",
       "artistName": "Big Audio Dynamite",
       "date": "1995-10-30",
       "venue": "The Galaxy Theatre",
@@ -4972,30 +5178,30 @@
         },
         "url": "https://www.setlist.fm/setlist/big-audio-dynamite/1995/galaxy-theatre-santa-ana-ca-2b8b7026.html"
       },
-      "fetchedAt": "2026-01-03T23:25:30.839Z"
+      "fetchedAt": "2026-01-05T05:42:57.759Z"
     },
     {
-      "concertId": "concert-45",
+      "concertId": "concert-46",
       "artistName": "John Doe",
       "date": "1995-10-30",
       "venue": "The Galaxy Theatre",
       "city": "Santa Ana",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:43.043Z",
+      "fetchedAt": "2026-01-05T06:14:31.476Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-45",
+      "concertId": "concert-46",
       "artistName": "Jane Weidlin",
       "date": "1995-10-30",
       "venue": "The Galaxy Theatre",
       "city": "Santa Ana",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:45.301Z",
+      "fetchedAt": "2026-01-05T06:14:33.923Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-48",
+      "concertId": "concert-49",
       "artistName": "Jimmy Buffett",
       "date": "1997-10-25",
       "venue": "Irvine Meadows",
@@ -5177,10 +5383,10 @@
         },
         "url": "https://www.setlist.fm/setlist/jimmy-buffett/1997/irvine-meadows-amphitheatre-irvine-ca-7bd24e54.html"
       },
-      "fetchedAt": "2026-01-03T23:25:32.597Z"
+      "fetchedAt": "2026-01-05T05:43:04.276Z"
     },
     {
-      "concertId": "concert-47",
+      "concertId": "concert-48",
       "artistName": "Pat DiNizio",
       "date": "1998-02-11",
       "venue": "The Coach House",
@@ -5221,10 +5427,20 @@
         },
         "url": "https://www.setlist.fm/setlist/pat-dinizio/1998/the-coach-house-san-juan-capistrano-ca-438ae3ab.html"
       },
-      "fetchedAt": "2026-01-03T23:25:34.426Z"
+      "fetchedAt": "2026-01-05T05:43:06.125Z"
     },
     {
-      "concertId": "concert-49",
+      "concertId": "concert-50",
+      "artistName": "Alien Fashion Show",
+      "date": "1999-04-02",
+      "venue": "Club Caprice",
+      "city": "Redondo Beach",
+      "setlist": null,
+      "fetchedAt": "2026-01-05T06:14:36.277Z",
+      "error": "API error: 404 Not Found"
+    },
+    {
+      "concertId": "concert-51",
       "artistName": "The Art of Noise",
       "date": "1999-10-13",
       "venue": "Paradise Rock Club",
@@ -5265,10 +5481,10 @@
         },
         "url": "https://www.setlist.fm/setlist/art-of-noise/1999/paradise-rock-club-boston-ma-5b8efba8.html"
       },
-      "fetchedAt": "2026-01-03T23:25:36.526Z"
+      "fetchedAt": "2026-01-05T05:43:10.300Z"
     },
     {
-      "concertId": "concert-50",
+      "concertId": "concert-52",
       "artistName": "Brian Setzer ’68 Comeback Special",
       "date": "2000-11-17",
       "venue": "The Coach House",
@@ -5554,28 +5770,28 @@
         },
         "url": "https://www.setlist.fm/setlist/brian-setzer-68-comeback-special/2000/the-coach-house-san-juan-capistrano-ca-b93b14a.html"
       },
-      "fetchedAt": "2026-01-03T23:25:38.624Z"
+      "fetchedAt": "2026-01-05T05:43:12.210Z"
     },
     {
-      "concertId": "concert-51",
+      "concertId": "concert-53",
       "artistName": "Elton John",
       "date": "2001-02-11",
       "venue": "Kia Forum",
       "city": "Inglewood",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:47.636Z"
+      "fetchedAt": "2026-01-05T06:14:39.067Z"
     },
     {
-      "concertId": "concert-51",
+      "concertId": "concert-53",
       "artistName": "Billy Joel",
       "date": "2001-02-11",
       "venue": "Kia Forum",
       "city": "Inglewood",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:49.438Z"
+      "fetchedAt": "2026-01-05T06:14:40.935Z"
     },
     {
-      "concertId": "concert-52",
+      "concertId": "concert-54",
       "artistName": "The Brian Setzer Orchestra",
       "date": "2002-12-21",
       "venue": "Universal Amphitheater",
@@ -5616,20 +5832,20 @@
         },
         "url": "https://www.setlist.fm/setlist/the-brian-setzer-orchestra/2002/universal-amphitheatre-universal-city-ca-7bf5d278.html"
       },
-      "fetchedAt": "2026-01-03T23:25:42.292Z"
+      "fetchedAt": "2026-01-05T05:43:17.714Z"
     },
     {
-      "concertId": "concert-52",
+      "concertId": "concert-54",
       "artistName": "Richard Cheese & Lounge Against the Machine",
       "date": "2002-12-21",
       "venue": "Universal Amphitheater",
       "city": "Los Angeles",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:51.292Z",
+      "fetchedAt": "2026-01-05T06:14:43.052Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-53",
+      "concertId": "concert-55",
       "artistName": "Peter Gabriel",
       "date": "2003-06-08",
       "venue": "Irvine Meadows",
@@ -5734,10 +5950,10 @@
         },
         "url": "https://www.setlist.fm/setlist/peter-gabriel/2003/verizon-wireless-amphitheatre-irvine-ca-1bd481d4.html"
       },
-      "fetchedAt": "2026-01-03T23:25:44.135Z"
+      "fetchedAt": "2026-01-05T05:43:21.832Z"
     },
     {
-      "concertId": "concert-54",
+      "concertId": "concert-56",
       "artistName": "The Human League",
       "date": "2003-08-24",
       "venue": "The Grove of Anaheim",
@@ -5841,20 +6057,20 @@
         },
         "url": "https://www.setlist.fm/setlist/the-human-league/2003/the-grove-of-anaheim-anaheim-ca-1ba0c574.html"
       },
-      "fetchedAt": "2026-01-03T23:25:46.125Z"
+      "fetchedAt": "2026-01-05T05:43:23.679Z"
     },
     {
-      "concertId": "concert-54",
+      "concertId": "concert-56",
       "artistName": "The English Beat",
       "date": "2003-08-24",
       "venue": "The Grove of Anaheim",
       "city": "Anaheim",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:53.630Z",
+      "fetchedAt": "2026-01-05T06:14:45.355Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-55",
+      "concertId": "concert-57",
       "artistName": "Joe Jackson",
       "date": "2003-08-29",
       "venue": "House of Blues Anaheim",
@@ -6017,10 +6233,10 @@
         },
         "url": "https://www.setlist.fm/setlist/joe-jackson/2003/house-of-blues-anaheim-ca-53eb47b9.html"
       },
-      "fetchedAt": "2026-01-03T23:25:47.895Z"
+      "fetchedAt": "2026-01-05T05:43:27.779Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "The Cure",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6153,10 +6369,10 @@
         "info": "The main set was in chronological order",
         "url": "https://www.setlist.fm/setlist/the-cure/2003/hyundai-pavilion-san-bernardino-ca-2bd7e0ea.html"
       },
-      "fetchedAt": "2026-01-03T23:25:49.799Z"
+      "fetchedAt": "2026-01-05T05:43:29.556Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Marc Almond",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6254,10 +6470,10 @@
         },
         "url": "https://www.setlist.fm/setlist/marc-almond/2003/hyundai-pavilion-san-bernardino-ca-73d22641.html"
       },
-      "fetchedAt": "2026-01-04T20:44:56.678Z"
+      "fetchedAt": "2026-01-05T05:43:31.340Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Berlin",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6324,10 +6540,10 @@
         },
         "url": "https://www.setlist.fm/setlist/berlin/2003/hyundai-pavilion-san-bernardino-ca-13c8f179.html"
       },
-      "fetchedAt": "2026-01-04T18:15:23.926Z"
+      "fetchedAt": "2026-01-05T05:43:33.135Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Bow Wow Wow",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6384,10 +6600,10 @@
         "info": "With Adrian Young (No Doubt) on drums and Phil Gough (Novacaine) on guitar; setlist incomplete",
         "url": "https://www.setlist.fm/setlist/bow-wow-wow/2003/hyundai-pavilion-san-bernardino-ca-63d22647.html"
       },
-      "fetchedAt": "2026-01-04T18:15:25.761Z"
+      "fetchedAt": "2026-01-05T05:43:34.951Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Dashboard Confessional",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6431,10 +6647,10 @@
         },
         "url": "https://www.setlist.fm/setlist/dashboard-confessional/2003/hyundai-pavilion-san-bernardino-ca-73d22645.html"
       },
-      "fetchedAt": "2026-01-04T18:15:27.770Z"
+      "fetchedAt": "2026-01-05T05:43:36.783Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Dramarama",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6483,10 +6699,10 @@
         },
         "url": "https://www.setlist.fm/setlist/dramarama/2003/hyundai-pavilion-san-bernardino-ca-63d2263b.html"
       },
-      "fetchedAt": "2026-01-04T18:15:29.690Z"
+      "fetchedAt": "2026-01-05T05:43:38.623Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Duran Duran",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6592,10 +6808,10 @@
         },
         "url": "https://www.setlist.fm/setlist/duran-duran/2003/hyundai-pavilion-san-bernardino-ca-7bd22648.html"
       },
-      "fetchedAt": "2026-01-04T18:15:31.521Z"
+      "fetchedAt": "2026-01-05T05:43:40.456Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Echo and the Bunnymen",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6682,10 +6898,10 @@
         },
         "url": "https://www.setlist.fm/setlist/echo-and-the-bunnymen/2003/hyundai-pavilion-san-bernardino-ca-73d2264d.html"
       },
-      "fetchedAt": "2026-01-04T18:15:33.360Z"
+      "fetchedAt": "2026-01-05T05:43:42.284Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Fountains of Wayne",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6738,20 +6954,20 @@
         "info": "Setlist incomplete.",
         "url": "https://www.setlist.fm/setlist/fountains-of-wayne/2003/hyundai-pavilion-san-bernardino-ca-7bd22640.html"
       },
-      "fetchedAt": "2026-01-04T18:15:35.195Z"
+      "fetchedAt": "2026-01-05T05:43:44.127Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "The English Beat",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
       "city": "San Bernardino",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:44:58.448Z",
+      "fetchedAt": "2026-01-05T06:14:47.605Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Hot Hot Heat",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6800,10 +7016,10 @@
         },
         "url": "https://www.setlist.fm/setlist/hot-hot-heat/2003/hyundai-pavilion-san-bernardino-ca-63d2264f.html"
       },
-      "fetchedAt": "2026-01-04T18:15:39.255Z"
+      "fetchedAt": "2026-01-05T05:43:48.319Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Interpol",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6870,10 +7086,10 @@
         },
         "url": "https://www.setlist.fm/setlist/interpol/2003/hyundai-pavilion-san-bernardino-ca-1bd7d990.html"
       },
-      "fetchedAt": "2026-01-04T18:15:41.226Z"
+      "fetchedAt": "2026-01-05T05:43:50.154Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Kings of Leon",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6917,10 +7133,10 @@
         },
         "url": "https://www.setlist.fm/setlist/kings-of-leon/2003/hyundai-pavilion-san-bernardino-ca-6bd2263a.html"
       },
-      "fetchedAt": "2026-01-04T18:15:43.072Z"
+      "fetchedAt": "2026-01-05T05:43:51.989Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Psychedelic Furs",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -6990,10 +7206,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-psychedelic-furs/2003/hyundai-pavilion-san-bernardino-ca-6bd22642.html"
       },
-      "fetchedAt": "2026-01-04T18:15:45.061Z"
+      "fetchedAt": "2026-01-05T05:43:53.858Z"
     },
     {
-      "concertId": "concert-56",
+      "concertId": "concert-58",
       "artistName": "Violent Femmes",
       "date": "2003-09-20",
       "venue": "Hyundai Pavilion",
@@ -7063,10 +7279,10 @@
         },
         "url": "https://www.setlist.fm/setlist/violent-femmes/2003/hyundai-pavilion-san-bernardino-ca-7bd2264c.html"
       },
-      "fetchedAt": "2026-01-04T18:15:46.818Z"
+      "fetchedAt": "2026-01-05T05:43:55.658Z"
     },
     {
-      "concertId": "concert-57",
+      "concertId": "concert-59",
       "artistName": "Social Distortion",
       "date": "2005-03-23",
       "venue": "Hard Rock Hotel Las Vegas",
@@ -7193,10 +7409,10 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2005/desert-breeze-skate-park-las-vegas-nv-13db3d4d.html"
       },
-      "fetchedAt": "2026-01-03T23:25:51.728Z"
+      "fetchedAt": "2026-01-05T05:43:57.508Z"
     },
     {
-      "concertId": "concert-58",
+      "concertId": "concert-60",
       "artistName": "Garbage",
       "date": "2005-07-27",
       "venue": "Pacific Amphitheatre",
@@ -7305,10 +7521,10 @@
         },
         "url": "https://www.setlist.fm/setlist/garbage/2005/pacific-amphitheatre-costa-mesa-ca-73d7ea11.html"
       },
-      "fetchedAt": "2026-01-03T23:25:53.565Z"
+      "fetchedAt": "2026-01-05T05:43:59.416Z"
     },
     {
-      "concertId": "concert-59",
+      "concertId": "concert-61",
       "artistName": "Depeche Mode",
       "date": "2005-11-22",
       "venue": "Staples Center",
@@ -7436,10 +7652,10 @@
         },
         "url": "https://www.setlist.fm/setlist/depeche-mode/2005/staples-center-los-angeles-ca-53d6b799.html"
       },
-      "fetchedAt": "2026-01-03T23:25:55.416Z"
+      "fetchedAt": "2026-01-05T05:44:01.259Z"
     },
     {
-      "concertId": "concert-59",
+      "concertId": "concert-61",
       "artistName": "Raveonettes",
       "date": "2005-11-22",
       "venue": "Staples Center",
@@ -7483,40 +7699,247 @@
         },
         "url": "https://www.setlist.fm/setlist/the-raveonettes/2005/staples-center-los-angeles-ca-5be6eb30.html"
       },
-      "fetchedAt": "2026-01-04T20:45:01.499Z"
+      "fetchedAt": "2026-01-05T05:44:03.121Z"
     },
     {
-      "concertId": "concert-60",
+      "concertId": "concert-62",
       "artistName": "Tears For Fears",
       "date": "2005-11-23",
       "venue": "Universal Amphitheater",
       "city": "Los Angeles",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:03.362Z",
+      "fetchedAt": "2026-01-05T06:14:49.887Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-60",
+      "concertId": "concert-62",
       "artistName": "Dirty Vegas",
       "date": "2005-11-23",
       "venue": "Universal Amphitheater",
       "city": "Los Angeles",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:05.687Z",
+      "fetchedAt": "2026-01-05T06:14:52.340Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-61",
+      "concertId": "concert-63",
       "artistName": "Howard Jones",
       "date": "2006-02-02",
       "venue": "The Coach House",
       "city": "San Juan Capistrano",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:08.114Z",
+      "fetchedAt": "2026-01-05T06:14:54.795Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-62",
+      "concertId": "concert-64",
+      "artistName": "Joe Satriani",
+      "date": "2006-05-03",
+      "venue": "The Grove of Anaheim",
+      "city": "Anaheim",
+      "setlist": {
+        "id": "63d8e25f",
+        "versionId": "g3b57c4ac",
+        "eventDate": "02-05-2006",
+        "lastUpdated": "2024-10-15T13:31:35.915+0000",
+        "artist": {
+          "mbid": "29762c82-bb92-4acd-b1fb-09cc4da250d2",
+          "name": "Joe Satriani",
+          "sortName": "Satriani, Joe",
+          "disambiguation": "",
+          "url": "https://www.setlist.fm/setlists/joe-satriani-7bd6aa60.html"
+        },
+        "venue": {
+          "id": "bd7350e",
+          "name": "The Grove of Anaheim",
+          "city": {
+            "id": "5323810",
+            "name": "Anaheim",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 33.8352932,
+              "long": -117.9145036
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/the-grove-of-anaheim-anaheim-ca-usa-bd7350e.html"
+        },
+        "tour": {
+          "name": "Super Colossal"
+        },
+        "sets": {
+          "set": [
+            {
+              "song": [
+                {
+                  "name": "Flying in a Blue Dream"
+                },
+                {
+                  "name": "The Extremist"
+                },
+                {
+                  "name": "Redshift Riders"
+                },
+                {
+                  "name": "Cool #9"
+                },
+                {
+                  "name": "A Cool New Way"
+                },
+                {
+                  "name": "Satch Boogie"
+                },
+                {
+                  "name": "Super Colossal"
+                },
+                {
+                  "name": "Just Like Lightnin'"
+                },
+                {
+                  "name": "Ice 9"
+                },
+                {
+                  "name": "One Robot's Dream"
+                },
+                {
+                  "name": "Ten Words"
+                },
+                {
+                  "name": "The Mystical Potato Head Groove Thing"
+                },
+                {
+                  "name": "The Meaning of Love"
+                },
+                {
+                  "name": "Made of Tears"
+                },
+                {
+                  "name": "Circles"
+                },
+                {
+                  "name": "Always With Me, Always With You"
+                },
+                {
+                  "name": "Surfing With the Alien"
+                },
+                {
+                  "name": "Crowd Chant"
+                },
+                {
+                  "name": "Summer Song"
+                }
+              ]
+            }
+          ]
+        },
+        "info": "filmed and relased on 2CD and DVD as \"Satriani Live!\"",
+        "url": "https://www.setlist.fm/setlist/joe-satriani/2006/the-grove-of-anaheim-anaheim-ca-63d8e25f.html"
+      },
+      "fetchedAt": "2026-01-05T05:44:11.909Z"
+    },
+    {
+      "concertId": "concert-64",
+      "artistName": "Eric Johnson",
+      "date": "2006-05-03",
+      "venue": "The Grove of Anaheim",
+      "city": "Anaheim",
+      "setlist": {
+        "id": "23f4fc3b",
+        "versionId": "5331f735",
+        "eventDate": "03-05-2006",
+        "lastUpdated": "2020-03-31T17:11:32.437+0000",
+        "artist": {
+          "mbid": "b53868c8-3654-41d3-91db-3c5a1237f0c3",
+          "name": "Eric Johnson",
+          "sortName": "Johnson, Eric",
+          "disambiguation": "guitarist and recording artist from Austin, Texas",
+          "url": "https://www.setlist.fm/setlists/eric-johnson-4bd6b3fa.html"
+        },
+        "venue": {
+          "id": "bd7350e",
+          "name": "The Grove of Anaheim",
+          "city": {
+            "id": "5323810",
+            "name": "Anaheim",
+            "state": "California",
+            "stateCode": "CA",
+            "coords": {
+              "lat": 33.8352932,
+              "long": -117.9145036
+            },
+            "country": {
+              "code": "US",
+              "name": "United States"
+            }
+          },
+          "url": "https://www.setlist.fm/venue/the-grove-of-anaheim-anaheim-ca-usa-bd7350e.html"
+        },
+        "sets": {
+          "set": [
+            {
+              "song": [
+                {
+                  "name": "Summer Jam"
+                },
+                {
+                  "name": "My Back Pages",
+                  "cover": {
+                    "mbid": "72c536dc-7137-4477-a521-567eeb840fa8",
+                    "name": "Bob Dylan",
+                    "sortName": "Dylan, Bob",
+                    "disambiguation": "",
+                    "url": "https://www.setlist.fm/setlists/bob-dylan-1bd6adb8.html"
+                  }
+                },
+                {
+                  "name": "Trademark"
+                },
+                {
+                  "name": "Manic Depression",
+                  "cover": {
+                    "mbid": "33b3c323-77c2-417c-a5b4-af7e6a111cc9",
+                    "name": "The Jimi Hendrix Experience",
+                    "sortName": "Hendrix, Jimi, Experience, The",
+                    "disambiguation": "",
+                    "url": "https://www.setlist.fm/setlists/the-jimi-hendrix-experience-3d6ad57.html"
+                  }
+                },
+                {
+                  "name": "On the Way to Love"
+                },
+                {
+                  "name": "Rocktopus"
+                },
+                {
+                  "name": "S.R.V."
+                },
+                {
+                  "name": "A Little Bit Me, a Little Bit You",
+                  "cover": {
+                    "mbid": "b8549efe-f4fd-4dc0-8ef1-226e9c400233",
+                    "name": "The Monkees",
+                    "sortName": "Monkees, The",
+                    "disambiguation": "",
+                    "url": "https://www.setlist.fm/setlists/the-monkees-23d6b0cb.html"
+                  }
+                },
+                {
+                  "name": "Cliffs of Dover"
+                }
+              ]
+            }
+          ]
+        },
+        "url": "https://www.setlist.fm/setlist/eric-johnson/2006/the-grove-of-anaheim-anaheim-ca-23f4fc3b.html"
+      },
+      "fetchedAt": "2026-01-05T05:44:13.739Z"
+    },
+    {
+      "concertId": "concert-65",
       "artistName": "Devo",
       "date": "2006-10-27",
       "venue": "The Grove of Anaheim",
@@ -7641,10 +8064,10 @@
         },
         "url": "https://www.setlist.fm/setlist/devo/2006/the-grove-of-anaheim-anaheim-ca-4bd25386.html"
       },
-      "fetchedAt": "2026-01-03T23:26:02.214Z"
+      "fetchedAt": "2026-01-05T05:44:15.370Z"
     },
     {
-      "concertId": "concert-62",
+      "concertId": "concert-65",
       "artistName": "Bow Wow Wow",
       "date": "2006-10-27",
       "venue": "The Grove of Anaheim",
@@ -7703,10 +8126,10 @@
         },
         "url": "https://www.setlist.fm/setlist/bow-wow-wow/2006/the-grove-of-anaheim-anaheim-ca-43947f1b.html"
       },
-      "fetchedAt": "2026-01-04T20:45:10.426Z"
+      "fetchedAt": "2026-01-05T05:44:17.155Z"
     },
     {
-      "concertId": "concert-62",
+      "concertId": "concert-65",
       "artistName": "Flock of Seagulls",
       "date": "2006-10-27",
       "venue": "The Grove of Anaheim",
@@ -7761,10 +8184,10 @@
         },
         "url": "https://www.setlist.fm/setlist/a-flock-of-seagulls/2006/the-grove-of-anaheim-anaheim-ca-5b947f24.html"
       },
-      "fetchedAt": "2026-01-04T18:15:53.283Z"
+      "fetchedAt": "2026-01-05T05:44:19.001Z"
     },
     {
-      "concertId": "concert-62",
+      "concertId": "concert-65",
       "artistName": "When In Rome",
       "date": "2006-10-27",
       "venue": "The Grove of Anaheim",
@@ -7805,10 +8228,10 @@
         },
         "url": "https://www.setlist.fm/setlist/when-in-rome/2006/the-grove-of-anaheim-anaheim-ca-4b947f1a.html"
       },
-      "fetchedAt": "2026-01-04T18:15:55.385Z"
+      "fetchedAt": "2026-01-05T05:44:20.824Z"
     },
     {
-      "concertId": "concert-63",
+      "concertId": "concert-66",
       "artistName": "The Tubes",
       "date": "2007-02-10",
       "venue": "The Coach House",
@@ -7849,10 +8272,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-tubes/2007/the-coach-house-san-juan-capistrano-ca-5b969ba4.html"
       },
-      "fetchedAt": "2026-01-03T23:26:04.322Z"
+      "fetchedAt": "2026-01-05T05:44:22.655Z"
     },
     {
-      "concertId": "concert-64",
+      "concertId": "concert-67",
       "artistName": "Berlin",
       "date": "2007-06-02",
       "venue": "The Coach House",
@@ -7893,10 +8316,20 @@
         },
         "url": "https://www.setlist.fm/setlist/berlin/2007/the-coach-house-san-juan-capistrano-ca-4b992b6e.html"
       },
-      "fetchedAt": "2026-01-03T23:26:06.144Z"
+      "fetchedAt": "2026-01-05T05:44:24.494Z"
     },
     {
-      "concertId": "concert-65",
+      "concertId": "concert-68",
+      "artistName": "Lee Rocker",
+      "date": "2007-11-16",
+      "venue": "The Galaxy Theatre",
+      "city": "Santa Ana",
+      "setlist": null,
+      "fetchedAt": "2026-01-05T06:14:57.155Z",
+      "error": "API error: 404 Not Found"
+    },
+    {
+      "concertId": "concert-69",
       "artistName": "Duran Duran",
       "date": "2008-05-04",
       "venue": "Nokia Center",
@@ -8026,10 +8459,10 @@
         },
         "url": "https://www.setlist.fm/setlist/duran-duran/2008/nokia-theatre-la-live-los-angeles-ca-13dd359d.html"
       },
-      "fetchedAt": "2026-01-03T23:26:07.984Z"
+      "fetchedAt": "2026-01-05T05:44:28.689Z"
     },
     {
-      "concertId": "concert-66",
+      "concertId": "concert-70",
       "artistName": "Stray Cats",
       "date": "2008-07-22",
       "venue": "Pacific Amphitheatre",
@@ -8178,20 +8611,20 @@
         },
         "url": "https://www.setlist.fm/setlist/stray-cats/2008/pacific-amphitheatre-costa-mesa-ca-6bd466fa.html"
       },
-      "fetchedAt": "2026-01-03T23:26:09.841Z"
+      "fetchedAt": "2026-01-05T05:44:30.540Z"
     },
     {
-      "concertId": "concert-66",
+      "concertId": "concert-70",
       "artistName": "Hot Rod Lincoln",
       "date": "2008-07-22",
       "venue": "Pacific Amphitheatre",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:12.283Z",
+      "fetchedAt": "2026-01-05T06:14:59.514Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-67",
+      "concertId": "concert-71",
       "artistName": "Yaz",
       "date": "2008-07-24",
       "venue": "Pacific Amphitheatre",
@@ -8309,10 +8742,10 @@
         },
         "url": "https://www.setlist.fm/setlist/yazoo/2008/pacific-amphitheatre-costa-mesa-ca-1bf1c924.html"
       },
-      "fetchedAt": "2026-01-03T23:26:11.655Z"
+      "fetchedAt": "2026-01-05T05:44:34.740Z"
     },
     {
-      "concertId": "concert-67",
+      "concertId": "concert-71",
       "artistName": "The Psychedelic Furs",
       "date": "2008-07-24",
       "venue": "Pacific Amphitheatre",
@@ -8353,20 +8786,20 @@
         },
         "url": "https://www.setlist.fm/setlist/the-psychedelic-furs/2008/pacific-amphitheatre-costa-mesa-ca-3f1c91b.html"
       },
-      "fetchedAt": "2026-01-04T20:45:14.599Z"
+      "fetchedAt": "2026-01-05T05:44:36.553Z"
     },
     {
-      "concertId": "concert-68",
+      "concertId": "concert-72",
       "artistName": "The English Beat",
       "date": "2008-09-06",
       "venue": "The Coach House",
       "city": "San Juan Capistrano",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:16.458Z",
+      "fetchedAt": "2026-01-05T06:15:01.672Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-69",
+      "concertId": "concert-73",
       "artistName": "Berlin",
       "date": "2008-11-28",
       "venue": "The Coach House",
@@ -8408,10 +8841,10 @@
         "info": "With The English Beat",
         "url": "https://www.setlist.fm/setlist/berlin/2008/the-coach-house-san-juan-capistrano-ca-2b9928da.html"
       },
-      "fetchedAt": "2026-01-03T23:26:16.374Z"
+      "fetchedAt": "2026-01-05T05:44:40.746Z"
     },
     {
-      "concertId": "concert-70",
+      "concertId": "concert-74",
       "artistName": "Mike Ness",
       "date": "2008-12-09",
       "venue": "The Coach House",
@@ -8452,20 +8885,20 @@
         },
         "url": "https://www.setlist.fm/setlist/mike-ness/2008/the-coach-house-san-juan-capistrano-ca-3384ac29.html"
       },
-      "fetchedAt": "2026-01-03T23:26:18.472Z"
+      "fetchedAt": "2026-01-05T05:44:42.596Z"
     },
     {
-      "concertId": "concert-71",
+      "concertId": "concert-75",
       "artistName": "Brian Setzer and the Nashvillians",
       "date": "2009-05-16",
       "venue": "Doheny",
       "city": "Dana Point",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:18.791Z",
+      "fetchedAt": "2026-01-05T06:15:04.036Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-72",
+      "concertId": "concert-76",
       "artistName": "Rob Thomas",
       "date": "2009-11-10",
       "venue": "EagleBank Arena",
@@ -8620,20 +9053,20 @@
         },
         "url": "https://www.setlist.fm/setlist/rob-thomas/2009/patriot-center-fairfax-va-63d73ab3.html"
       },
-      "fetchedAt": "2026-01-03T23:26:22.926Z"
+      "fetchedAt": "2026-01-05T05:44:46.725Z"
     },
     {
-      "concertId": "concert-73",
+      "concertId": "concert-77",
       "artistName": "The English Beat",
       "date": "2010-02-22",
       "venue": "9:30 Club",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:21.251Z",
+      "fetchedAt": "2026-01-05T06:15:06.329Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-73",
+      "concertId": "concert-77",
       "artistName": "Fishbone",
       "date": "2010-02-22",
       "venue": "9:30 Club",
@@ -8737,10 +9170,10 @@
         "info": "With The English Beat feat. Dave Wakeling",
         "url": "https://www.setlist.fm/setlist/fishbone/2010/930-club-washington-dc-33d744f9.html"
       },
-      "fetchedAt": "2026-01-04T20:45:23.542Z"
+      "fetchedAt": "2026-01-05T05:44:51.024Z"
     },
     {
-      "concertId": "concert-74",
+      "concertId": "concert-78",
       "artistName": "Echo and the Bunnymen",
       "date": "2010-04-30",
       "venue": "The Black Cat",
@@ -8856,20 +9289,20 @@
         },
         "url": "https://www.setlist.fm/setlist/echo-and-the-bunnymen/2010/black-cat-washington-dc-73d73245.html"
       },
-      "fetchedAt": "2026-01-03T23:26:27.100Z"
+      "fetchedAt": "2026-01-05T05:44:52.808Z"
     },
     {
-      "concertId": "concert-74",
+      "concertId": "concert-78",
       "artistName": "Hatcham Social",
       "date": "2010-04-30",
       "venue": "The Black Cat",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:25.422Z",
+      "fetchedAt": "2026-01-05T06:15:08.693Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-74",
+      "concertId": "concert-78",
       "artistName": "Kelley Stoltz",
       "date": "2010-04-30",
       "venue": "The Black Cat",
@@ -8914,10 +9347,10 @@
         "info": "Opened for Echo & The Bunnymen",
         "url": "https://www.setlist.fm/setlist/kelley-stoltz/2010/black-cat-washington-dc-5b806784.html"
       },
-      "fetchedAt": "2026-01-04T18:16:04.297Z"
+      "fetchedAt": "2026-01-05T05:44:56.998Z"
     },
     {
-      "concertId": "concert-75",
+      "concertId": "concert-79",
       "artistName": "Social Distortion",
       "date": "2010-10-26",
       "venue": "9:30 Club",
@@ -9039,10 +9472,10 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2010/930-club-washington-dc-3bd57c80.html"
       },
-      "fetchedAt": "2026-01-03T23:26:28.951Z"
+      "fetchedAt": "2026-01-05T05:44:58.871Z"
     },
     {
-      "concertId": "concert-76",
+      "concertId": "concert-80",
       "artistName": "Bad Religion",
       "date": "2011-04-26",
       "venue": "9:30 Club",
@@ -9136,10 +9569,10 @@
         },
         "url": "https://www.setlist.fm/setlist/bad-religion/2011/930-club-washington-dc-3bd3888c.html"
       },
-      "fetchedAt": "2026-01-03T23:26:31.052Z"
+      "fetchedAt": "2026-01-05T05:45:00.672Z"
     },
     {
-      "concertId": "concert-76",
+      "concertId": "concert-80",
       "artistName": "Rise Against",
       "date": "2011-04-26",
       "venue": "9:30 Club",
@@ -9250,10 +9683,10 @@
         },
         "url": "https://www.setlist.fm/setlist/rise-against/2011/930-club-washington-dc-6bd38ec2.html"
       },
-      "fetchedAt": "2026-01-04T20:45:27.712Z"
+      "fetchedAt": "2026-01-05T05:45:02.542Z"
     },
     {
-      "concertId": "concert-77",
+      "concertId": "concert-81",
       "artistName": "The Dollyrots",
       "date": "2011-05-06",
       "venue": "The Ballroom",
@@ -9297,10 +9730,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-dollyrots/2011/ottobar-baltimore-md-7b84e63c.html"
       },
-      "fetchedAt": "2026-01-03T23:26:32.894Z"
+      "fetchedAt": "2026-01-05T05:45:04.864Z"
     },
     {
-      "concertId": "concert-77",
+      "concertId": "concert-81",
       "artistName": "Bowling for Soup",
       "date": "2011-05-06",
       "venue": "The Ballroom",
@@ -9341,19 +9774,19 @@
         },
         "url": "https://www.setlist.fm/setlist/bowling-for-soup/2011/sonar-baltimore-md-2ba3bc3e.html"
       },
-      "fetchedAt": "2026-01-04T20:45:29.536Z"
+      "fetchedAt": "2026-01-05T05:45:06.784Z"
     },
     {
-      "concertId": "concert-78",
+      "concertId": "concert-82",
       "artistName": "The Go-Go's",
       "date": "2011-06-10",
       "venue": "Wolftrap",
       "city": "Vienna",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:31.386Z"
+      "fetchedAt": "2026-01-05T06:15:11.051Z"
     },
     {
-      "concertId": "concert-78",
+      "concertId": "concert-82",
       "artistName": "The Dollyrots",
       "date": "2011-06-10",
       "venue": "Wolftrap",
@@ -9398,10 +9831,10 @@
         "info": "Opened for The Go-Go's",
         "url": "https://www.setlist.fm/setlist/the-dollyrots/2011/filene-center-at-wolf-trap-vienna-va-6384e637.html"
       },
-      "fetchedAt": "2026-01-04T20:45:33.281Z"
+      "fetchedAt": "2026-01-05T05:45:10.365Z"
     },
     {
-      "concertId": "concert-79",
+      "concertId": "concert-83",
       "artistName": "Squeeze",
       "date": "2012-04-24",
       "venue": "Rams Head Live! Baltimore",
@@ -9518,20 +9951,20 @@
         },
         "url": "https://www.setlist.fm/setlist/squeeze/2012/rams-head-live-baltimore-md-23de48ff.html"
       },
-      "fetchedAt": "2026-01-03T23:26:36.566Z"
+      "fetchedAt": "2026-01-05T05:45:12.210Z"
     },
     {
-      "concertId": "concert-79",
+      "concertId": "concert-83",
       "artistName": "The English Beat",
       "date": "2012-04-24",
       "venue": "Rams Head Live! Baltimore",
       "city": "Baltimore",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:35.050Z",
+      "fetchedAt": "2026-01-05T06:15:12.881Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-80",
+      "concertId": "concert-84",
       "artistName": "Red Hot Chili Peppers",
       "date": "2012-05-10",
       "venue": "Capitol One Arena",
@@ -9651,10 +10084,10 @@
         "info": "\"Universally Speaking\" and \"Meet Me at the Corner\" were on the setlist, but was not played.",
         "url": "https://www.setlist.fm/setlist/red-hot-chili-peppers/2012/verizon-center-washington-dc-7bdfaef0.html"
       },
-      "fetchedAt": "2026-01-03T23:26:38.394Z"
+      "fetchedAt": "2026-01-05T05:45:16.398Z"
     },
     {
-      "concertId": "concert-80",
+      "concertId": "concert-84",
       "artistName": "Sleigh Bells",
       "date": "2012-05-10",
       "venue": "Capitol One Arena",
@@ -9698,10 +10131,10 @@
         },
         "url": "https://www.setlist.fm/setlist/sleigh-bells/2012/verizon-center-washington-dc-bcdb5ea.html"
       },
-      "fetchedAt": "2026-01-04T20:45:37.398Z"
+      "fetchedAt": "2026-01-05T05:45:18.267Z"
     },
     {
-      "concertId": "concert-81",
+      "concertId": "concert-85",
       "artistName": "The Cult",
       "date": "2012-06-12",
       "venue": "The Fillmore Silver Spring",
@@ -9800,10 +10233,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-cult/2012/the-fillmore-silver-spring-silver-spring-md-3bdf3898.html"
       },
-      "fetchedAt": "2026-01-03T23:26:40.492Z"
+      "fetchedAt": "2026-01-05T05:45:20.069Z"
     },
     {
-      "concertId": "concert-81",
+      "concertId": "concert-85",
       "artistName": "Against Me!",
       "date": "2012-06-12",
       "venue": "The Fillmore Silver Spring",
@@ -9844,10 +10277,10 @@
         },
         "url": "https://www.setlist.fm/setlist/against-me/2012/the-fillmore-silver-spring-silver-spring-md-2bf35cc6.html"
       },
-      "fetchedAt": "2026-01-04T20:45:39.319Z"
+      "fetchedAt": "2026-01-05T05:45:22.054Z"
     },
     {
-      "concertId": "concert-82",
+      "concertId": "concert-86",
       "artistName": "Howard Jones",
       "date": "2012-07-05",
       "venue": "Howard Theater",
@@ -9888,19 +10321,19 @@
         },
         "url": "https://www.setlist.fm/setlist/howard-jones/2012/the-howard-theatre-washington-dc-33dc68a1.html"
       },
-      "fetchedAt": "2026-01-03T23:26:42.592Z"
+      "fetchedAt": "2026-01-05T05:45:23.812Z"
     },
     {
-      "concertId": "concert-83",
+      "concertId": "concert-87",
       "artistName": "Joe Jackson",
       "date": "2012-09-15",
       "venue": "The Strathmore",
       "city": "Bethesda",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:41.092Z"
+      "fetchedAt": "2026-01-05T06:15:15.248Z"
     },
     {
-      "concertId": "concert-84",
+      "concertId": "concert-88",
       "artistName": "Social Distortion",
       "date": "2012-11-06",
       "venue": "9:30 Club",
@@ -10028,20 +10461,20 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2012/930-club-washington-dc-23daa4e3.html"
       },
-      "fetchedAt": "2026-01-03T23:26:46.561Z"
+      "fetchedAt": "2026-01-05T05:45:27.405Z"
     },
     {
-      "concertId": "concert-84",
+      "concertId": "concert-88",
       "artistName": "Lindi Ortega",
       "date": "2012-11-06",
       "venue": "9:30 Club",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:43.032Z",
+      "fetchedAt": "2026-01-05T06:15:17.082Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-85",
+      "concertId": "concert-89",
       "artistName": "Dropkick Murphys",
       "date": "2013-03-10",
       "venue": "9:30 Club",
@@ -10128,20 +10561,20 @@
         },
         "url": "https://www.setlist.fm/setlist/dropkick-murphys/2013/930-club-washington-dc-73d8ae9d.html"
       },
-      "fetchedAt": "2026-01-03T23:26:48.360Z"
+      "fetchedAt": "2026-01-05T05:45:31.603Z"
     },
     {
-      "concertId": "concert-85",
+      "concertId": "concert-89",
       "artistName": "Solemn Sun",
       "date": "2013-03-10",
       "venue": "9:30 Club",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:45.295Z",
+      "fetchedAt": "2026-01-05T06:15:19.440Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-85",
+      "concertId": "concert-89",
       "artistName": "Barroom Heroes",
       "date": "2013-03-10",
       "venue": "9:30 Club",
@@ -10219,10 +10652,10 @@
         "info": "supporting Dropkick Murphys",
         "url": "https://www.setlist.fm/setlist/barroom-heroes/2013/930-club-washington-dc-3bdb4c54.html"
       },
-      "fetchedAt": "2026-01-04T18:16:10.062Z"
+      "fetchedAt": "2026-01-05T05:45:35.861Z"
     },
     {
-      "concertId": "concert-86",
+      "concertId": "concert-90",
       "artistName": "Bad Religion",
       "date": "2013-03-22",
       "venue": "9:30 Club",
@@ -10295,20 +10728,20 @@
         },
         "url": "https://www.setlist.fm/setlist/bad-religion/2013/930-club-washington-dc-33d8a87d.html"
       },
-      "fetchedAt": "2026-01-03T23:26:50.242Z"
+      "fetchedAt": "2026-01-05T05:45:37.696Z"
     },
     {
-      "concertId": "concert-86",
+      "concertId": "concert-90",
       "artistName": "Against Me!",
       "date": "2013-03-22",
       "venue": "9:30 Club",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:47.631Z",
+      "fetchedAt": "2026-01-05T06:15:21.795Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-86",
+      "concertId": "concert-90",
       "artistName": "The Bronx",
       "date": "2013-03-22",
       "venue": "9:30 Club",
@@ -10349,10 +10782,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-bronx/2013/930-club-washington-dc-438defbb.html"
       },
-      "fetchedAt": "2026-01-04T18:16:11.938Z"
+      "fetchedAt": "2026-01-05T05:45:41.898Z"
     },
     {
-      "concertId": "concert-86",
+      "concertId": "concert-90",
       "artistName": "Polar Bear Club",
       "date": "2013-03-22",
       "venue": "9:30 Club",
@@ -10396,10 +10829,10 @@
         },
         "url": "https://www.setlist.fm/setlist/polar-bear-club/2013/930-club-washington-dc-3bd8a87c.html"
       },
-      "fetchedAt": "2026-01-04T18:16:13.740Z"
+      "fetchedAt": "2026-01-05T05:45:43.724Z"
     },
     {
-      "concertId": "concert-87",
+      "concertId": "concert-91",
       "artistName": "Garbage",
       "date": "2013-03-24",
       "venue": "The Fillmore Silver Spring",
@@ -10517,10 +10950,10 @@
         },
         "url": "https://www.setlist.fm/setlist/garbage/2013/the-fillmore-silver-spring-silver-spring-md-bd89dfa.html"
       },
-      "fetchedAt": "2026-01-03T23:26:52.194Z"
+      "fetchedAt": "2026-01-05T05:45:45.574Z"
     },
     {
-      "concertId": "concert-88",
+      "concertId": "concert-92",
       "artistName": "Rancid",
       "date": "2013-06-01",
       "venue": "The Fillmore Silver Spring",
@@ -10661,10 +11094,10 @@
         },
         "url": "https://www.setlist.fm/setlist/rancid/2013/the-fillmore-silver-spring-silver-spring-md-13d93951.html"
       },
-      "fetchedAt": "2026-01-03T23:26:54.024Z"
+      "fetchedAt": "2026-01-05T05:45:47.404Z"
     },
     {
-      "concertId": "concert-88",
+      "concertId": "concert-92",
       "artistName": "Transplants",
       "date": "2013-06-01",
       "venue": "The Fillmore Silver Spring",
@@ -10782,29 +11215,29 @@
         },
         "url": "https://www.setlist.fm/setlist/transplants/2013/the-fillmore-silver-spring-silver-spring-md-63d93a6f.html"
       },
-      "fetchedAt": "2026-01-04T20:45:49.987Z"
+      "fetchedAt": "2026-01-05T05:45:49.230Z"
     },
     {
-      "concertId": "concert-88",
+      "concertId": "concert-92",
       "artistName": "Crown of Thornz",
       "date": "2013-06-01",
       "venue": "The Fillmore Silver Spring",
       "city": "Silver Spring",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:51.823Z",
+      "fetchedAt": "2026-01-05T06:15:24.054Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-89",
+      "concertId": "concert-93",
       "artistName": "The Smithereens",
       "date": "2013-06-02",
       "venue": "The Hamilton Live",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:54.217Z"
+      "fetchedAt": "2026-01-05T06:15:26.333Z"
     },
     {
-      "concertId": "concert-90",
+      "concertId": "concert-94",
       "artistName": "Gary Numan",
       "date": "2013-10-27",
       "venue": "The Black Cat",
@@ -10929,10 +11362,10 @@
         },
         "url": "https://www.setlist.fm/setlist/gary-numan/2013/the-black-cat-mainstage-washington-dc-43c75f1f.html"
       },
-      "fetchedAt": "2026-01-03T23:26:57.585Z"
+      "fetchedAt": "2026-01-05T05:45:55.037Z"
     },
     {
-      "concertId": "concert-91",
+      "concertId": "concert-95",
       "artistName": "Kraftwerk",
       "date": "2014-04-04",
       "venue": "9:30 Club",
@@ -11051,10 +11484,10 @@
         "info": "Early show",
         "url": "https://www.setlist.fm/setlist/kraftwerk/2014/930-club-washington-dc-6bc24e42.html"
       },
-      "fetchedAt": "2026-01-03T23:26:59.533Z"
+      "fetchedAt": "2026-01-05T05:45:56.839Z"
     },
     {
-      "concertId": "concert-92",
+      "concertId": "concert-96",
       "artistName": "Berlin",
       "date": "2014-05-02",
       "venue": "Rams Head Center Stage",
@@ -11118,10 +11551,10 @@
         },
         "url": "https://www.setlist.fm/setlist/berlin/2014/event-center-at-live-casino-and-hotel-maryland-hanover-md-5bcc2744.html"
       },
-      "fetchedAt": "2026-01-03T23:27:01.474Z"
+      "fetchedAt": "2026-01-05T05:45:58.756Z"
     },
     {
-      "concertId": "concert-93",
+      "concertId": "concert-97",
       "artistName": "Snarky Puppy",
       "date": "2014-06-25",
       "venue": "The Hamilton Live",
@@ -11205,10 +11638,10 @@
         },
         "url": "https://www.setlist.fm/setlist/snarky-puppy/2014/the-hamilton-live-washington-dc-1bc1b5f4.html"
       },
-      "fetchedAt": "2026-01-03T23:27:03.559Z"
+      "fetchedAt": "2026-01-05T05:46:00.536Z"
     },
     {
-      "concertId": "concert-94",
+      "concertId": "concert-98",
       "artistName": "The Offspring",
       "date": "2014-07-30",
       "venue": "Pier 6 Pavillion",
@@ -11340,10 +11773,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-offspring/2014/pier-six-concert-pavilion-baltimore-md-63c1465f.html"
       },
-      "fetchedAt": "2026-01-03T23:27:05.480Z"
+      "fetchedAt": "2026-01-05T05:46:02.601Z"
     },
     {
-      "concertId": "concert-94",
+      "concertId": "concert-98",
       "artistName": "Pennywise",
       "date": "2014-07-30",
       "venue": "Pier 6 Pavillion",
@@ -11449,19 +11882,19 @@
         },
         "url": "https://www.setlist.fm/setlist/pennywise/2014/pier-six-concert-pavilion-baltimore-md-73c14641.html"
       },
-      "fetchedAt": "2026-01-04T20:45:56.188Z"
+      "fetchedAt": "2026-01-05T05:46:04.710Z"
     },
     {
-      "concertId": "concert-94",
+      "concertId": "concert-98",
       "artistName": "Vandals",
       "date": "2014-07-30",
       "venue": "Pier 6 Pavillion",
       "city": "Baltimore",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:58.117Z"
+      "fetchedAt": "2026-01-05T06:15:28.109Z"
     },
     {
-      "concertId": "concert-94",
+      "concertId": "concert-98",
       "artistName": "Bad Religion",
       "date": "2014-07-30",
       "venue": "Pier 6 Pavillion",
@@ -11564,10 +11997,10 @@
         },
         "url": "https://www.setlist.fm/setlist/bad-religion/2014/pier-six-concert-pavilion-baltimore-md-6bc14652.html"
       },
-      "fetchedAt": "2026-01-04T18:16:21.595Z"
+      "fetchedAt": "2026-01-05T05:46:08.369Z"
     },
     {
-      "concertId": "concert-95",
+      "concertId": "concert-99",
       "artistName": "Streetlight Manifesto",
       "date": "2014-10-26",
       "venue": "The Fillmore Silver Spring",
@@ -11690,50 +12123,50 @@
         },
         "url": "https://www.setlist.fm/setlist/streetlight-manifesto/2014/the-fillmore-silver-spring-silver-spring-md-63cc364f.html"
       },
-      "fetchedAt": "2026-01-03T23:27:07.273Z"
+      "fetchedAt": "2026-01-05T05:46:10.195Z"
     },
     {
-      "concertId": "concert-95",
+      "concertId": "concert-99",
       "artistName": "Dan Potthast",
       "date": "2014-10-26",
       "venue": "The Fillmore Silver Spring",
       "city": "Silver Spring",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:45:59.940Z",
+      "fetchedAt": "2026-01-05T06:15:30.089Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-95",
+      "concertId": "concert-99",
       "artistName": "Chris Murray",
       "date": "2014-10-26",
       "venue": "The Fillmore Silver Spring",
       "city": "Silver Spring",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:02.309Z",
+      "fetchedAt": "2026-01-05T06:15:32.544Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-96",
+      "concertId": "concert-100",
       "artistName": "The Head and the Heart",
       "date": "2014-12-09",
       "venue": "DAR Constitution Hall",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:04.719Z",
+      "fetchedAt": "2026-01-05T06:15:34.920Z",
       "error": "Cannot read properties of undefined (reading 'toLowerCase')"
     },
     {
-      "concertId": "concert-96",
+      "concertId": "concert-100",
       "artistName": "Phox",
       "date": "2014-12-09",
       "venue": "DAR Constitution Hall",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:07.023Z",
+      "fetchedAt": "2026-01-05T06:15:37.264Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-97",
+      "concertId": "concert-101",
       "artistName": "Dropkick Murphys",
       "date": "2015-03-06",
       "venue": "The Fillmore Silver Spring",
@@ -11945,10 +12378,10 @@
         "info": "might be slightly out of order/An 8 year old named Patrick was pulled on stage for most of the band's set and sang with the band on The Boys Are Back",
         "url": "https://www.setlist.fm/setlist/dropkick-murphys/2015/the-fillmore-silver-spring-silver-spring-md-6bcb8aaa.html"
       },
-      "fetchedAt": "2026-01-03T23:27:11.425Z"
+      "fetchedAt": "2026-01-05T05:46:21.478Z"
     },
     {
-      "concertId": "concert-97",
+      "concertId": "concert-101",
       "artistName": "Mahones",
       "date": "2015-03-06",
       "venue": "The Fillmore Silver Spring",
@@ -12025,10 +12458,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-mahones/2015/the-fillmore-silver-spring-silver-spring-md-63cb8aaf.html"
       },
-      "fetchedAt": "2026-01-04T20:46:09.387Z"
+      "fetchedAt": "2026-01-05T05:46:23.310Z"
     },
     {
-      "concertId": "concert-97",
+      "concertId": "concert-101",
       "artistName": "Blood or Whiskey",
       "date": "2015-03-06",
       "venue": "The Fillmore Silver Spring",
@@ -12081,10 +12514,10 @@
         "info": "incomplete",
         "url": "https://www.setlist.fm/setlist/blood-or-whiskey/2015/the-fillmore-silver-spring-silver-spring-md-6bcb8aae.html"
       },
-      "fetchedAt": "2026-01-04T18:16:28.178Z"
+      "fetchedAt": "2026-01-05T05:46:25.149Z"
     },
     {
-      "concertId": "concert-97",
+      "concertId": "concert-101",
       "artistName": "Bryan Mcpherson",
       "date": "2015-03-06",
       "venue": "The Fillmore Silver Spring",
@@ -12137,10 +12570,10 @@
         "info": "incomplete",
         "url": "https://www.setlist.fm/setlist/bryan-mcpherson/2015/the-fillmore-silver-spring-silver-spring-md-73cb8aa9.html"
       },
-      "fetchedAt": "2026-01-04T18:16:30.001Z"
+      "fetchedAt": "2026-01-05T05:46:26.991Z"
     },
     {
-      "concertId": "concert-98",
+      "concertId": "concert-102",
       "artistName": "Royal Blood",
       "date": "2015-06-10",
       "venue": "9:30 Club",
@@ -12230,10 +12663,10 @@
         },
         "url": "https://www.setlist.fm/setlist/royal-blood/2015/930-club-washington-dc-1bc9d124.html"
       },
-      "fetchedAt": "2026-01-03T23:27:13.302Z"
+      "fetchedAt": "2026-01-05T05:46:28.814Z"
     },
     {
-      "concertId": "concert-98",
+      "concertId": "concert-102",
       "artistName": "Mini Mansions",
       "date": "2015-06-10",
       "venue": "9:30 Club",
@@ -12326,10 +12759,10 @@
         },
         "url": "https://www.setlist.fm/setlist/mini-mansions/2015/930-club-washington-dc-23c9d043.html"
       },
-      "fetchedAt": "2026-01-04T20:46:11.488Z"
+      "fetchedAt": "2026-01-05T05:46:30.647Z"
     },
     {
-      "concertId": "concert-99",
+      "concertId": "concert-103",
       "artistName": "Snarky Puppy",
       "date": "2015-06-15",
       "venue": "The Hamilton Live",
@@ -12413,10 +12846,10 @@
         },
         "url": "https://www.setlist.fm/setlist/snarky-puppy/2015/the-hamilton-live-washington-dc-6bc912fa.html"
       },
-      "fetchedAt": "2026-01-03T23:27:15.097Z"
+      "fetchedAt": "2026-01-05T05:46:32.484Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Foo Fighters",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -12569,10 +13002,10 @@
         "info": "First show back after Dave Grohl broke his leg, Dave sat through the show on a special designed throne. \"I'll Stick Around\" was on the setlist, but was replaced by \"Generator\".",
         "url": "https://www.setlist.fm/setlist/foo-fighters/2015/robert-f-kennedy-memorial-stadium-washington-dc-6bf6b66a.html"
       },
-      "fetchedAt": "2026-01-03T23:27:16.997Z"
+      "fetchedAt": "2026-01-05T05:46:34.313Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Buddy Guy",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -12721,10 +13154,10 @@
         },
         "url": "https://www.setlist.fm/setlist/buddy-guy/2015/robert-f-kennedy-memorial-stadium-washington-dc-2bf6acf6.html"
       },
-      "fetchedAt": "2026-01-04T20:46:13.317Z"
+      "fetchedAt": "2026-01-05T05:46:36.155Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Gary Clark Jr.",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -12795,10 +13228,10 @@
         },
         "url": "https://www.setlist.fm/setlist/gary-clark-jr/2015/robert-f-kennedy-memorial-stadium-washington-dc-bf6a5b6.html"
       },
-      "fetchedAt": "2026-01-04T18:16:31.886Z"
+      "fetchedAt": "2026-01-05T05:46:38.274Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Heart",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -12883,10 +13316,10 @@
         "info": "Set shortened due to severe weather",
         "url": "https://www.setlist.fm/setlist/heart/2015/robert-f-kennedy-memorial-stadium-washington-dc-1bf6a5a8.html"
       },
-      "fetchedAt": "2026-01-04T18:16:33.663Z"
+      "fetchedAt": "2026-01-05T05:46:39.944Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Joan Jett & The Blackhearts",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -13017,10 +13450,10 @@
         },
         "url": "https://www.setlist.fm/setlist/joan-jett-and-the-blackhearts/2015/robert-f-kennedy-memorial-stadium-washington-dc-3f6a5ab.html"
       },
-      "fetchedAt": "2026-01-04T18:16:35.494Z"
+      "fetchedAt": "2026-01-05T05:46:41.926Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "LL Cool J",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -13133,19 +13566,19 @@
         },
         "url": "https://www.setlist.fm/setlist/ll-cool-j/2015/robert-f-kennedy-memorial-stadium-washington-dc-63f6a65b.html"
       },
-      "fetchedAt": "2026-01-04T18:16:37.328Z"
+      "fetchedAt": "2026-01-05T05:46:43.752Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "DJ Z-Trip",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:15.164Z"
+      "fetchedAt": "2026-01-05T06:15:39.659Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Trouble Funk",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -13186,10 +13619,10 @@
         },
         "url": "https://www.setlist.fm/setlist/trouble-funk/2015/930-club-washington-dc-2b427c36.html"
       },
-      "fetchedAt": "2026-01-04T18:16:40.997Z"
+      "fetchedAt": "2026-01-05T05:46:47.440Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "Trombone Shorty & Orleans Avenue",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -13230,10 +13663,10 @@
         },
         "url": "https://www.setlist.fm/setlist/trombone-shorty-and-orleans-avenue/2015/the-ellipse-washington-dc-7bf28210.html"
       },
-      "fetchedAt": "2026-01-04T18:16:42.925Z"
+      "fetchedAt": "2026-01-05T05:46:49.258Z"
     },
     {
-      "concertId": "concert-100",
+      "concertId": "concert-104",
       "artistName": "RDGLDGRN",
       "date": "2015-07-04",
       "venue": "RFK Stadium",
@@ -13365,10 +13798,10 @@
         "info": "To celebrate the end of RDGLDGRN's first headlining tour and the release of Star Wars: The Force Awakens, a fan from Ohio bought over 300 red, gold, and green \"lightsaber\" glow sticks to distribute throughout the crowd at the sold-out hometown show",
         "url": "https://www.setlist.fm/setlist/rdgldgrn/2015/u-street-music-hall-washington-dc-2bf224b6.html"
       },
-      "fetchedAt": "2026-01-04T18:16:44.779Z"
+      "fetchedAt": "2026-01-05T05:46:51.087Z"
     },
     {
-      "concertId": "concert-101",
+      "concertId": "concert-105",
       "artistName": "Social Distortion",
       "date": "2015-08-25",
       "venue": "The Fillmore Silver Spring",
@@ -13516,10 +13949,10 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2015/the-fillmore-silver-spring-silver-spring-md-2bf7381a.html"
       },
-      "fetchedAt": "2026-01-03T23:27:18.771Z"
+      "fetchedAt": "2026-01-05T05:46:52.930Z"
     },
     {
-      "concertId": "concert-101",
+      "concertId": "concert-105",
       "artistName": "Nikki Lane",
       "date": "2015-08-25",
       "venue": "The Fillmore Silver Spring",
@@ -13560,10 +13993,10 @@
         },
         "url": "https://www.setlist.fm/setlist/nikki-lane/2015/the-fillmore-silver-spring-silver-spring-md-3395f001.html"
       },
-      "fetchedAt": "2026-01-04T20:46:16.991Z"
+      "fetchedAt": "2026-01-05T05:46:54.806Z"
     },
     {
-      "concertId": "concert-101",
+      "concertId": "concert-105",
       "artistName": "Drag The River",
       "date": "2015-08-25",
       "venue": "The Fillmore Silver Spring",
@@ -13604,10 +14037,10 @@
         },
         "url": "https://www.setlist.fm/setlist/drag-the-river/2015/the-fillmore-silver-spring-silver-spring-md-3b95f00c.html"
       },
-      "fetchedAt": "2026-01-04T18:16:46.764Z"
+      "fetchedAt": "2026-01-05T05:46:56.606Z"
     },
     {
-      "concertId": "concert-102",
+      "concertId": "concert-106",
       "artistName": "Garbage",
       "date": "2015-10-28",
       "venue": "9:30 Club",
@@ -13741,10 +14174,10 @@
         },
         "url": "https://www.setlist.fm/setlist/garbage/2015/930-club-washington-dc-4bf5eb46.html"
       },
-      "fetchedAt": "2026-01-03T23:27:20.608Z"
+      "fetchedAt": "2026-01-05T05:46:58.435Z"
     },
     {
-      "concertId": "concert-102",
+      "concertId": "concert-106",
       "artistName": "Torres",
       "date": "2015-10-28",
       "venue": "9:30 Club",
@@ -13785,40 +14218,40 @@
         },
         "url": "https://www.setlist.fm/setlist/torres/2015/930-club-washington-dc-bf5dd92.html"
       },
-      "fetchedAt": "2026-01-04T20:46:18.860Z"
+      "fetchedAt": "2026-01-05T05:47:00.268Z"
     },
     {
-      "concertId": "concert-103",
+      "concertId": "concert-107",
       "artistName": "Dirty Heads",
       "date": "2016-04-29",
       "venue": "The Fillmore Silver Spring",
       "city": "Silver Spring",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:20.659Z",
+      "fetchedAt": "2026-01-05T06:15:41.621Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-103",
+      "concertId": "concert-107",
       "artistName": "RDGLDGRN",
       "date": "2016-04-29",
       "venue": "The Fillmore Silver Spring",
       "city": "Silver Spring",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:23.022Z",
+      "fetchedAt": "2026-01-05T06:15:44.080Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-104",
+      "concertId": "concert-108",
       "artistName": "Snarky Puppy",
       "date": "2016-05-02",
       "venue": "Bethesda Jazz and Blues Club",
       "city": "Bethesda",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:25.417Z",
+      "fetchedAt": "2026-01-05T06:15:46.338Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-105",
+      "concertId": "concert-109",
       "artistName": "Prophets of Rage",
       "date": "2016-08-19",
       "venue": "EagleBank Arena",
@@ -14028,10 +14461,10 @@
         },
         "url": "https://www.setlist.fm/setlist/prophets-of-rage/2016/eaglebank-arena-fairfax-va-1bfcd14c.html"
       },
-      "fetchedAt": "2026-01-03T23:27:27.683Z"
+      "fetchedAt": "2026-01-05T05:47:09.184Z"
     },
     {
-      "concertId": "concert-105",
+      "concertId": "concert-109",
       "artistName": "AWOLNATION",
       "date": "2016-08-19",
       "venue": "EagleBank Arena",
@@ -14111,10 +14544,10 @@
         },
         "url": "https://www.setlist.fm/setlist/awolnation/2016/eaglebank-arena-fairfax-va-13fcd14d.html"
       },
-      "fetchedAt": "2026-01-04T20:46:27.732Z"
+      "fetchedAt": "2026-01-05T05:47:11.110Z"
     },
     {
-      "concertId": "concert-106",
+      "concertId": "concert-110",
       "artistName": "The Smithereens",
       "date": "2016-08-26",
       "venue": "Birchmere",
@@ -14163,10 +14596,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-smithereens/2016/the-birchmere-alexandria-va-1bfc29f4.html"
       },
-      "fetchedAt": "2026-01-03T23:27:29.565Z"
+      "fetchedAt": "2026-01-05T05:47:12.902Z"
     },
     {
-      "concertId": "concert-107",
+      "concertId": "concert-111",
       "artistName": "Howard Jones",
       "date": "2016-09-03",
       "venue": "The Hamilton Live",
@@ -14207,10 +14640,10 @@
         },
         "url": "https://www.setlist.fm/setlist/howard-jones/2016/the-hamilton-live-washington-dc-1346b189.html"
       },
-      "fetchedAt": "2026-01-03T23:27:31.351Z"
+      "fetchedAt": "2026-01-05T05:47:14.709Z"
     },
     {
-      "concertId": "concert-108",
+      "concertId": "concert-112",
       "artistName": "The Roots",
       "date": "2016-09-24",
       "venue": "National Museum of African American History and Culture",
@@ -14361,10 +14794,10 @@
         "info": "The Roots: Black Thought | Questlove | Captain Kirk Douglas | Frank \"Knuckles\" Walker | Damon \"Tuba Gooding Jr.\" Bryson | Mark Kelley | Kamal Gray || Featuring: Ray Angry (in place of James Poyser) | Jeremy Ellis (beat box) | Ian Hendrickson-Smith (saxophone) | Dave Guy (trumpet)",
         "url": "https://www.setlist.fm/setlist/the-roots/2016/national-museum-of-african-american-history-and-culture-washington-dc-73fde291.html"
       },
-      "fetchedAt": "2026-01-03T23:27:33.449Z"
+      "fetchedAt": "2026-01-05T05:47:16.521Z"
     },
     {
-      "concertId": "concert-108",
+      "concertId": "concert-112",
       "artistName": "Living Colour",
       "date": "2016-09-24",
       "venue": "National Museum of African American History and Culture",
@@ -14475,10 +14908,10 @@
         },
         "url": "https://www.setlist.fm/setlist/living-colour/2016/national-museum-of-african-american-history-and-culture-washington-dc-63fde293.html"
       },
-      "fetchedAt": "2026-01-04T20:46:29.572Z"
+      "fetchedAt": "2026-01-05T05:47:18.354Z"
     },
     {
-      "concertId": "concert-108",
+      "concertId": "concert-112",
       "artistName": "Public Enemy",
       "date": "2016-09-24",
       "venue": "National Museum of African American History and Culture",
@@ -14568,20 +15001,20 @@
         },
         "url": "https://www.setlist.fm/setlist/public-enemy/2016/national-museum-of-african-american-history-and-culture-washington-dc-6bfde292.html"
       },
-      "fetchedAt": "2026-01-04T18:16:53.124Z"
+      "fetchedAt": "2026-01-05T05:47:20.192Z"
     },
     {
-      "concertId": "concert-109",
+      "concertId": "concert-113",
       "artistName": "Duran Duran",
       "date": "2017-01-01",
       "venue": "MGM National Harbor",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:31.414Z",
+      "fetchedAt": "2026-01-05T06:15:48.594Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-110",
+      "concertId": "concert-114",
       "artistName": "Midnight Oil",
       "date": "2017-05-09",
       "venue": "The Fillmore Silver Spring",
@@ -14712,10 +15145,10 @@
         },
         "url": "https://www.setlist.fm/setlist/midnight-oil/2017/the-fillmore-silver-spring-silver-spring-md-73e7b635.html"
       },
-      "fetchedAt": "2026-01-03T23:27:37.649Z"
+      "fetchedAt": "2026-01-05T05:47:24.390Z"
     },
     {
-      "concertId": "concert-111",
+      "concertId": "concert-115",
       "artistName": "Royal Blood",
       "date": "2017-06-06",
       "venue": "9:30 Club",
@@ -14815,10 +15248,10 @@
         },
         "url": "https://www.setlist.fm/setlist/royal-blood/2017/930-club-washington-dc-53e77bfd.html"
       },
-      "fetchedAt": "2026-01-03T23:27:39.646Z"
+      "fetchedAt": "2026-01-05T05:47:26.266Z"
     },
     {
-      "concertId": "concert-112",
+      "concertId": "concert-116",
       "artistName": "Joe Jackson",
       "date": "2017-06-10",
       "venue": "Wolftrap",
@@ -14933,10 +15366,10 @@
         },
         "url": "https://www.setlist.fm/setlist/joe-jackson/2017/filene-center-at-wolf-trap-vienna-va-3e75947.html"
       },
-      "fetchedAt": "2026-01-03T23:27:41.424Z"
+      "fetchedAt": "2026-01-05T05:47:28.057Z"
     },
     {
-      "concertId": "concert-113",
+      "concertId": "concert-117",
       "artistName": "The Skints",
       "date": "2017-07-13",
       "venue": "DC9 Nightclub",
@@ -14977,10 +15410,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-skints/2017/dc9-washington-dc-3390ec25.html"
       },
-      "fetchedAt": "2026-01-03T23:27:43.212Z"
+      "fetchedAt": "2026-01-05T05:47:29.888Z"
     },
     {
-      "concertId": "concert-114",
+      "concertId": "concert-118",
       "artistName": "Blondie",
       "date": "2017-08-03",
       "venue": "Wolftrap",
@@ -15101,10 +15534,10 @@
         },
         "url": "https://www.setlist.fm/setlist/blondie/2017/filene-center-at-wolf-trap-vienna-va-23e5c873.html"
       },
-      "fetchedAt": "2026-01-03T23:27:45.001Z"
+      "fetchedAt": "2026-01-05T05:47:31.727Z"
     },
     {
-      "concertId": "concert-114",
+      "concertId": "concert-118",
       "artistName": "Garbage",
       "date": "2017-08-03",
       "venue": "Wolftrap",
@@ -15198,10 +15631,10 @@
         },
         "url": "https://www.setlist.fm/setlist/garbage/2017/filene-center-at-wolf-trap-vienna-va-2be5c872.html"
       },
-      "fetchedAt": "2026-01-04T20:46:33.769Z"
+      "fetchedAt": "2026-01-05T05:47:33.552Z"
     },
     {
-      "concertId": "concert-115",
+      "concertId": "concert-119",
       "artistName": "Alison Moyet",
       "date": "2017-09-11",
       "venue": "Sixth & I Synagogue",
@@ -15367,10 +15800,10 @@
         },
         "url": "https://www.setlist.fm/setlist/alison-moyet/2017/sixth-and-i-historic-synagogue-washington-dc-2be23822.html"
       },
-      "fetchedAt": "2026-01-03T23:27:46.814Z"
+      "fetchedAt": "2026-01-05T05:47:35.397Z"
     },
     {
-      "concertId": "concert-116",
+      "concertId": "concert-120",
       "artistName": "Bat Fangs",
       "date": "2017-10-08",
       "venue": "The Anthem",
@@ -15443,10 +15876,10 @@
         },
         "url": "https://www.setlist.fm/setlist/bat-fangs/2017/the-anthem-washington-dc-73e3f671.html"
       },
-      "fetchedAt": "2026-01-03T23:27:48.652Z"
+      "fetchedAt": "2026-01-05T05:47:37.337Z"
     },
     {
-      "concertId": "concert-116",
+      "concertId": "concert-120",
       "artistName": "The Messthetics",
       "date": "2017-10-08",
       "venue": "The Anthem",
@@ -15487,30 +15920,30 @@
         },
         "url": "https://www.setlist.fm/setlist/the-messthetics/2017/the-anthem-washington-dc-becf562.html"
       },
-      "fetchedAt": "2026-01-04T20:46:35.586Z"
+      "fetchedAt": "2026-01-05T05:47:39.138Z"
     },
     {
-      "concertId": "concert-116",
+      "concertId": "concert-120",
       "artistName": "Danger Painters",
       "date": "2017-10-08",
       "venue": "The Anthem",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:37.478Z",
+      "fetchedAt": "2026-01-05T06:15:50.897Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-116",
+      "concertId": "concert-120",
       "artistName": "Kid Congo Powers",
       "date": "2017-10-08",
       "venue": "The Anthem",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:39.780Z",
+      "fetchedAt": "2026-01-05T06:15:53.245Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-117",
+      "concertId": "concert-121",
       "artistName": "Foo Fighters",
       "date": "2017-10-12",
       "venue": "The Anthem",
@@ -15639,10 +16072,10 @@
         "info": "\"Cold Day in the Sun\", \"This Is a Call\", and AC/DC's \"Let There Be Rock\" were on the setlist, but were not played.",
         "url": "https://www.setlist.fm/setlist/foo-fighters/2017/the-anthem-washington-dc-13e3f139.html"
       },
-      "fetchedAt": "2026-01-03T23:27:50.490Z"
+      "fetchedAt": "2026-01-05T05:47:45.656Z"
     },
     {
-      "concertId": "concert-117",
+      "concertId": "concert-121",
       "artistName": "The Struts",
       "date": "2017-10-12",
       "venue": "The Anthem",
@@ -15713,10 +16146,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-struts/2017/the-anthem-washington-dc-3e3dd43.html"
       },
-      "fetchedAt": "2026-01-04T20:46:42.193Z"
+      "fetchedAt": "2026-01-05T05:47:47.455Z"
     },
     {
-      "concertId": "concert-118",
+      "concertId": "concert-122",
       "artistName": "Colin Hay",
       "date": "2017-10-21",
       "venue": "Lincoln Theatre",
@@ -15845,10 +16278,10 @@
         },
         "url": "https://www.setlist.fm/setlist/colin-hay/2017/lincoln-theatre-washington-dc-23e3382f.html"
       },
-      "fetchedAt": "2026-01-03T23:27:52.331Z"
+      "fetchedAt": "2026-01-05T05:47:49.284Z"
     },
     {
-      "concertId": "concert-119",
+      "concertId": "concert-123",
       "artistName": "The Brian Setzer Orchestra",
       "date": "2017-11-25",
       "venue": "Warner Theatre",
@@ -16078,10 +16511,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-brian-setzer-orchestra/2017/warner-theatre-washington-dc-53e03fe9.html"
       },
-      "fetchedAt": "2026-01-03T23:27:54.160Z"
+      "fetchedAt": "2026-01-05T05:47:51.124Z"
     },
     {
-      "concertId": "concert-120",
+      "concertId": "concert-124",
       "artistName": "Gary Numan",
       "date": "2017-12-09",
       "venue": "9:30 Club",
@@ -16212,10 +16645,10 @@
         },
         "url": "https://www.setlist.fm/setlist/gary-numan/2017/930-club-washington-dc-2be054b2.html"
       },
-      "fetchedAt": "2026-01-03T23:27:56.160Z"
+      "fetchedAt": "2026-01-05T05:47:52.989Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "The Human League",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
@@ -16256,10 +16689,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-human-league/2018/huntington-state-beach-huntington-beach-ca-53edfb09.html"
       },
-      "fetchedAt": "2026-01-03T23:27:57.938Z"
+      "fetchedAt": "2026-01-05T05:47:54.794Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "The Alarm",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
@@ -16326,10 +16759,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-alarm/2018/huntington-state-beach-huntington-beach-ca-5bedfb08.html"
       },
-      "fetchedAt": "2026-01-04T20:46:43.994Z"
+      "fetchedAt": "2026-01-05T05:47:56.705Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "Dramarama",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
@@ -16370,10 +16803,10 @@
         },
         "url": "https://www.setlist.fm/setlist/dramarama/2018/huntington-state-beach-huntington-beach-ca-43edfb0f.html"
       },
-      "fetchedAt": "2026-01-04T18:17:01.872Z"
+      "fetchedAt": "2026-01-05T05:47:58.467Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "The Motels",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
@@ -16414,10 +16847,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-motels/2018/huntington-state-beach-huntington-beach-ca-4bedfb0e.html"
       },
-      "fetchedAt": "2026-01-04T18:17:03.632Z"
+      "fetchedAt": "2026-01-05T05:48:00.305Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "Naked Eyes",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
@@ -16458,10 +16891,10 @@
         },
         "url": "https://www.setlist.fm/setlist/naked-eyes/2018/huntington-state-beach-huntington-beach-ca-53edfb0d.html"
       },
-      "fetchedAt": "2026-01-04T18:17:05.410Z"
+      "fetchedAt": "2026-01-05T05:48:02.135Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "The Untouchables",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
@@ -16502,50 +16935,50 @@
         },
         "url": "https://www.setlist.fm/setlist/the-untouchables/2018/huntington-state-beach-huntington-beach-ca-23ed38cb.html"
       },
-      "fetchedAt": "2026-01-04T18:17:07.212Z"
+      "fetchedAt": "2026-01-05T05:48:03.964Z"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "Gene Loves Jezabel",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
       "city": "Huntington Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:45.823Z",
+      "fetchedAt": "2026-01-05T06:15:55.615Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "When In Rome",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
       "city": "Huntington Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:48.288Z",
+      "fetchedAt": "2026-01-05T06:15:57.972Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-121",
+      "concertId": "concert-125",
       "artistName": "The Polecats",
       "date": "2018-05-12",
       "venue": "Huntington State Beach",
       "city": "Huntington Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:50.563Z",
+      "fetchedAt": "2026-01-05T06:16:00.337Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-122",
+      "concertId": "concert-126",
       "artistName": "Lee Rocker",
       "date": "2018-05-19",
       "venue": "Carpenter Performing Arts Center",
       "city": "Long Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:52.904Z",
+      "fetchedAt": "2026-01-05T06:16:02.734Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-123",
+      "concertId": "concert-127",
       "artistName": "U2",
       "date": "2018-06-17",
       "venue": "Capital One Center",
@@ -16757,10 +17190,10 @@
         },
         "url": "https://www.setlist.fm/setlist/u2/2018/capital-one-arena-washington-dc-43eaeb8b.html"
       },
-      "fetchedAt": "2026-01-03T23:28:03.339Z"
+      "fetchedAt": "2026-01-05T05:48:15.247Z"
     },
     {
-      "concertId": "concert-124",
+      "concertId": "concert-128",
       "artistName": "Stray Cats",
       "date": "2018-08-17",
       "venue": "Pacific Amphitheatre",
@@ -16908,10 +17341,10 @@
         },
         "url": "https://www.setlist.fm/setlist/stray-cats/2018/pacific-amphitheatre-costa-mesa-ca-3e881b7.html"
       },
-      "fetchedAt": "2026-01-03T23:28:05.439Z"
+      "fetchedAt": "2026-01-05T05:48:17.084Z"
     },
     {
-      "concertId": "concert-124",
+      "concertId": "concert-128",
       "artistName": "The Paladins",
       "date": "2018-08-17",
       "venue": "Pacific Amphitheatre",
@@ -16952,10 +17385,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-paladins/2018/pacific-amphitheatre-costa-mesa-ca-13e881b5.html"
       },
-      "fetchedAt": "2026-01-04T20:46:55.177Z"
+      "fetchedAt": "2026-01-05T05:48:18.917Z"
     },
     {
-      "concertId": "concert-125",
+      "concertId": "concert-129",
       "artistName": "Gary Numan",
       "date": "2018-09-21",
       "venue": "9:30 Club",
@@ -17088,20 +17521,20 @@
         },
         "url": "https://www.setlist.fm/setlist/gary-numan/2018/930-club-washington-dc-33e9dc21.html"
       },
-      "fetchedAt": "2026-01-03T23:28:07.340Z"
+      "fetchedAt": "2026-01-05T05:48:20.744Z"
     },
     {
-      "concertId": "concert-125",
+      "concertId": "concert-129",
       "artistName": "Me Not You",
       "date": "2018-09-21",
       "venue": "9:30 Club",
       "city": "Washington",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:46:57.159Z",
+      "fetchedAt": "2026-01-05T06:16:05.078Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Social Distortion",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17202,10 +17635,10 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2018/huntington-state-beach-huntington-beach-ca-3396109d.html"
       },
-      "fetchedAt": "2026-01-03T23:28:09.107Z"
+      "fetchedAt": "2026-01-05T05:48:24.934Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Bad Religion",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17312,10 +17745,10 @@
         },
         "url": "https://www.setlist.fm/setlist/bad-religion/2018/huntington-state-beach-huntington-beach-ca-439623c7.html"
       },
-      "fetchedAt": "2026-01-04T20:46:59.619Z"
+      "fetchedAt": "2026-01-05T05:48:26.776Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "The Offspring",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17423,10 +17856,10 @@
         "info": "last peformance with bassist and founding member Greg K.",
         "url": "https://www.setlist.fm/setlist/the-offspring/2018/huntington-state-beach-huntington-beach-ca-b962946.html"
       },
-      "fetchedAt": "2026-01-04T18:17:18.493Z"
+      "fetchedAt": "2026-01-05T05:48:28.628Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Pennywise",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17536,10 +17969,10 @@
         },
         "url": "https://www.setlist.fm/setlist/pennywise/2018/huntington-state-beach-huntington-beach-ca-1b962938.html"
       },
-      "fetchedAt": "2026-01-04T18:17:20.403Z"
+      "fetchedAt": "2026-01-05T05:48:30.450Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Suicidal Tendencies",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17618,10 +18051,10 @@
         },
         "url": "https://www.setlist.fm/setlist/suicidal-tendencies/2018/huntington-state-beach-huntington-beach-ca-1b96293c.html"
       },
-      "fetchedAt": "2026-01-04T18:17:22.171Z"
+      "fetchedAt": "2026-01-05T05:48:32.275Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Voodoo Glow Skulls",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17662,10 +18095,10 @@
         },
         "url": "https://www.setlist.fm/setlist/voodoo-glow-skulls/2018/huntington-state-beach-huntington-beach-ca-13962929.html"
       },
-      "fetchedAt": "2026-01-04T18:17:23.990Z"
+      "fetchedAt": "2026-01-05T05:48:34.118Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "T.S.O.L.",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17738,10 +18171,10 @@
         },
         "url": "https://www.setlist.fm/setlist/tsol/2018/huntington-state-beach-huntington-beach-ca-1b962930.html"
       },
-      "fetchedAt": "2026-01-04T18:17:25.832Z"
+      "fetchedAt": "2026-01-05T05:48:35.944Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Black Rebel Motorcycle Club",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17811,20 +18244,20 @@
         },
         "url": "https://www.setlist.fm/setlist/black-rebel-motorcycle-club/2018/huntington-state-beach-huntington-beach-ca-13960db5.html"
       },
-      "fetchedAt": "2026-01-04T18:17:27.653Z"
+      "fetchedAt": "2026-01-05T05:48:37.786Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Snuff",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
       "city": "Huntington Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:01.551Z",
+      "fetchedAt": "2026-01-05T06:16:07.480Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Fear",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17922,10 +18355,10 @@
         },
         "url": "https://www.setlist.fm/setlist/fear/2018/huntington-state-beach-huntington-beach-ca-13962931.html"
       },
-      "fetchedAt": "2026-01-04T18:17:31.669Z"
+      "fetchedAt": "2026-01-05T05:48:41.984Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Mad Caddies",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -17966,10 +18399,10 @@
         },
         "url": "https://www.setlist.fm/setlist/mad-caddies/2018/huntington-state-beach-huntington-beach-ca-13962935.html"
       },
-      "fetchedAt": "2026-01-04T18:17:33.448Z"
+      "fetchedAt": "2026-01-05T05:48:43.886Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Rancid",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -18078,30 +18511,30 @@
         },
         "url": "https://www.setlist.fm/setlist/rancid/2018/huntington-state-beach-huntington-beach-ca-3b96109c.html"
       },
-      "fetchedAt": "2026-01-04T18:17:35.263Z"
+      "fetchedAt": "2026-01-05T05:48:45.653Z"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Aaron Lee Tasjan",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
       "city": "Huntington Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:03.933Z",
+      "fetchedAt": "2026-01-05T06:16:09.937Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "Wrecks",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
       "city": "Huntington Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:06.270Z",
+      "fetchedAt": "2026-01-05T06:16:12.227Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-126",
+      "concertId": "concert-130",
       "artistName": "The Interrupters",
       "date": "2018-10-28",
       "venue": "Huntington State Beach",
@@ -18156,10 +18589,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-interrupters/2018/huntington-state-beach-huntington-beach-ca-b960daa.html"
       },
-      "fetchedAt": "2026-01-04T18:17:41.869Z"
+      "fetchedAt": "2026-01-05T05:48:52.198Z"
     },
     {
-      "concertId": "concert-127",
+      "concertId": "concert-131",
       "artistName": "Streetlight Manifesto",
       "date": "2018-11-03",
       "venue": "The Observatory",
@@ -18271,10 +18704,10 @@
         },
         "url": "https://www.setlist.fm/setlist/streetlight-manifesto/2018/the-observatory-santa-ana-ca-13a149dd.html"
       },
-      "fetchedAt": "2026-01-03T23:28:11.036Z"
+      "fetchedAt": "2026-01-05T05:48:54.037Z"
     },
     {
-      "concertId": "concert-128",
+      "concertId": "concert-132",
       "artistName": "Foals",
       "date": "2019-03-24",
       "venue": "The Shrine Auditorium",
@@ -18377,10 +18810,10 @@
         },
         "url": "https://www.setlist.fm/setlist/foals/2019/shrine-exposition-hall-los-angeles-ca-73924a15.html"
       },
-      "fetchedAt": "2026-01-03T23:28:12.871Z"
+      "fetchedAt": "2026-01-05T05:48:55.893Z"
     },
     {
-      "concertId": "concert-128",
+      "concertId": "concert-132",
       "artistName": "Bear Hands",
       "date": "2019-03-24",
       "venue": "The Shrine Auditorium",
@@ -18459,10 +18892,10 @@
         },
         "url": "https://www.setlist.fm/setlist/bear-hands/2019/hollywood-palladium-los-angeles-ca-5b9ae7c4.html"
       },
-      "fetchedAt": "2026-01-04T20:47:08.898Z"
+      "fetchedAt": "2026-01-05T05:48:57.707Z"
     },
     {
-      "concertId": "concert-128",
+      "concertId": "concert-132",
       "artistName": "Kiev",
       "date": "2019-03-24",
       "venue": "The Shrine Auditorium",
@@ -18503,10 +18936,10 @@
         },
         "url": "https://www.setlist.fm/setlist/kiev/2019/shrine-exposition-hall-los-angeles-ca-392419b.html"
       },
-      "fetchedAt": "2026-01-04T18:17:43.749Z"
+      "fetchedAt": "2026-01-05T05:48:59.805Z"
     },
     {
-      "concertId": "concert-129",
+      "concertId": "concert-133",
       "artistName": "The Interrupters",
       "date": "2019-04-14",
       "venue": "The Observatory",
@@ -18627,10 +19060,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-interrupters/2019/the-observatory-santa-ana-ca-1b93298c.html"
       },
-      "fetchedAt": "2026-01-03T23:28:14.658Z"
+      "fetchedAt": "2026-01-05T05:49:01.687Z"
     },
     {
-      "concertId": "concert-129",
+      "concertId": "concert-133",
       "artistName": "Masked Intruder",
       "date": "2019-04-14",
       "venue": "The Observatory",
@@ -18727,20 +19160,20 @@
         },
         "url": "https://www.setlist.fm/setlist/masked-intruder/2019/the-observatory-santa-ana-ca-33af94e9.html"
       },
-      "fetchedAt": "2026-01-04T20:47:10.993Z"
+      "fetchedAt": "2026-01-05T05:49:03.474Z"
     },
     {
-      "concertId": "concert-129",
+      "concertId": "concert-133",
       "artistName": "Rat Boy",
       "date": "2019-04-14",
       "venue": "The Observatory",
       "city": "Santa Ana",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:12.888Z",
+      "fetchedAt": "2026-01-05T06:16:14.492Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-130",
+      "concertId": "concert-134",
       "artistName": "Garbage",
       "date": "2019-05-16",
       "venue": "The Shrine Auditorium",
@@ -18868,40 +19301,40 @@
         },
         "url": "https://www.setlist.fm/setlist/garbage/2019/shrine-auditorium-los-angeles-ca-3903167.html"
       },
-      "fetchedAt": "2026-01-03T23:28:16.576Z"
+      "fetchedAt": "2026-01-05T05:49:07.670Z"
     },
     {
-      "concertId": "concert-131",
+      "concertId": "concert-135",
       "artistName": "Bandits of the Acoustic Revolution",
       "date": "2019-05-18",
       "venue": "Dolby Theatre",
       "city": "Hollywood",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:15.183Z",
+      "fetchedAt": "2026-01-05T06:16:16.893Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-132",
+      "concertId": "concert-136",
       "artistName": "The Skints",
       "date": "2019-05-26",
       "venue": "Mozambique",
       "city": "Laguna Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:17.442Z",
+      "fetchedAt": "2026-01-05T06:16:19.461Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-133",
+      "concertId": "concert-137",
       "artistName": "The English Beat",
       "date": "2019-07-19",
       "venue": "OC Fair & Event Center",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:19.773Z",
+      "fetchedAt": "2026-01-05T06:16:21.831Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-134",
+      "concertId": "concert-138",
       "artistName": "Streetlight Manifesto",
       "date": "2019-07-30",
       "venue": "House of Blues Anaheim",
@@ -19028,10 +19461,10 @@
         },
         "url": "https://www.setlist.fm/setlist/streetlight-manifesto/2019/house-of-blues-anaheim-ca-639e5657.html"
       },
-      "fetchedAt": "2026-01-03T23:28:25.536Z"
+      "fetchedAt": "2026-01-05T05:49:16.583Z"
     },
     {
-      "concertId": "concert-135",
+      "concertId": "concert-139",
       "artistName": "Lenny Kravitz",
       "date": "2019-09-21",
       "venue": "The Shrine Auditorium",
@@ -19159,20 +19592,20 @@
         },
         "url": "https://www.setlist.fm/setlist/lenny-kravitz/2019/shrine-auditorium-los-angeles-ca-339ccc29.html"
       },
-      "fetchedAt": "2026-01-03T23:28:27.343Z"
+      "fetchedAt": "2026-01-05T05:49:18.427Z"
     },
     {
-      "concertId": "concert-136",
+      "concertId": "concert-140",
       "artistName": "Lee Rocker",
       "date": "2019-10-06",
       "venue": "The Coach House",
       "city": "San Juan Capistrano",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:22.523Z",
+      "fetchedAt": "2026-01-05T06:16:24.196Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-137",
+      "concertId": "concert-141",
       "artistName": "The Aquabats!",
       "date": "2021-08-14",
       "venue": "Pacific Amphitheatre",
@@ -19263,20 +19696,20 @@
         },
         "url": "https://www.setlist.fm/setlist/the-aquabats/2021/pacific-amphitheatre-costa-mesa-ca-4b8f4b32.html"
       },
-      "fetchedAt": "2026-01-03T23:28:31.662Z"
+      "fetchedAt": "2026-01-05T05:49:22.608Z"
     },
     {
-      "concertId": "concert-137",
+      "concertId": "concert-141",
       "artistName": "The English Beat",
       "date": "2021-08-14",
       "venue": "Pacific Amphitheatre",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:24.887Z",
+      "fetchedAt": "2026-01-05T06:16:26.456Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-139",
+      "concertId": "concert-143",
       "artistName": "Future Islands",
       "date": "2021-08-31",
       "venue": "House of Blues Anaheim",
@@ -19403,10 +19836,10 @@
         },
         "url": "https://www.setlist.fm/setlist/future-islands/2021/house-of-blues-anaheim-ca-738ccecd.html"
       },
-      "fetchedAt": "2026-01-03T23:28:33.756Z"
+      "fetchedAt": "2026-01-05T05:49:26.799Z"
     },
     {
-      "concertId": "concert-138",
+      "concertId": "concert-142",
       "artistName": "Royal Blood",
       "date": "2022-05-07",
       "venue": "House of Blues Anaheim",
@@ -19512,10 +19945,10 @@
         },
         "url": "https://www.setlist.fm/setlist/royal-blood/2022/house-of-blues-anaheim-ca-5bb78b3c.html"
       },
-      "fetchedAt": "2026-01-03T23:28:35.659Z"
+      "fetchedAt": "2026-01-05T05:49:28.639Z"
     },
     {
-      "concertId": "concert-138",
+      "concertId": "concert-142",
       "artistName": "cleopatrick",
       "date": "2022-05-07",
       "venue": "House of Blues Anaheim",
@@ -19594,10 +20027,10 @@
         },
         "url": "https://www.setlist.fm/setlist/cleopatrick/2022/house-of-blues-anaheim-ca-13b785d5.html"
       },
-      "fetchedAt": "2026-01-04T20:47:27.242Z"
+      "fetchedAt": "2026-01-05T05:49:30.470Z"
     },
     {
-      "concertId": "concert-140",
+      "concertId": "concert-144",
       "artistName": "Tears For Fears",
       "date": "2022-06-04",
       "venue": "Kia Forum",
@@ -19724,10 +20157,10 @@
         },
         "url": "https://www.setlist.fm/setlist/tears-for-fears/2022/kia-forum-inglewood-ca-7bb4f620.html"
       },
-      "fetchedAt": "2026-01-03T23:28:37.429Z"
+      "fetchedAt": "2026-01-05T05:49:32.313Z"
     },
     {
-      "concertId": "concert-140",
+      "concertId": "concert-144",
       "artistName": "Garbage",
       "date": "2022-06-04",
       "venue": "Kia Forum",
@@ -19824,10 +20257,10 @@
         "info": "Opened for Tears for Fears",
         "url": "https://www.setlist.fm/setlist/garbage/2022/kia-forum-inglewood-ca-63b4f627.html"
       },
-      "fetchedAt": "2026-01-04T20:47:29.075Z"
+      "fetchedAt": "2026-01-05T05:49:34.164Z"
     },
     {
-      "concertId": "concert-141",
+      "concertId": "concert-145",
       "artistName": "Joe Jackson",
       "date": "2022-06-10",
       "venue": "Orpheum Theatre",
@@ -19959,10 +20392,10 @@
         },
         "url": "https://www.setlist.fm/setlist/joe-jackson/2022/orpheum-theatre-los-angeles-ca-43b4179f.html"
       },
-      "fetchedAt": "2026-01-03T23:28:39.301Z"
+      "fetchedAt": "2026-01-05T05:49:35.981Z"
     },
     {
-      "concertId": "concert-142",
+      "concertId": "concert-146",
       "artistName": "Kraftwerk",
       "date": "2022-07-05",
       "venue": "The Shrine Auditorium",
@@ -20119,10 +20552,10 @@
         },
         "url": "https://www.setlist.fm/setlist/kraftwerk/2022/shrine-auditorium-los-angeles-ca-63b536b3.html"
       },
-      "fetchedAt": "2026-01-03T23:28:41.113Z"
+      "fetchedAt": "2026-01-05T05:49:37.814Z"
     },
     {
-      "concertId": "concert-143",
+      "concertId": "concert-147",
       "artistName": "Streetlight Manifesto",
       "date": "2022-07-12",
       "venue": "House of Blues Anaheim",
@@ -20226,10 +20659,10 @@
         },
         "url": "https://www.setlist.fm/setlist/streetlight-manifesto/2022/house-of-blues-anaheim-ca-1bb2edd0.html"
       },
-      "fetchedAt": "2026-01-03T23:28:43.197Z"
+      "fetchedAt": "2026-01-05T05:49:39.651Z"
     },
     {
-      "concertId": "concert-144",
+      "concertId": "concert-148",
       "artistName": "X",
       "date": "2022-08-01",
       "venue": "Pacific Amphitheatre",
@@ -20355,30 +20788,30 @@
         "info": "Opened for The Psychedelic Furs",
         "url": "https://www.setlist.fm/setlist/x/2022/pacific-amphitheatre-costa-mesa-ca-1bb3f1cc.html"
       },
-      "fetchedAt": "2026-01-03T23:28:45.294Z"
+      "fetchedAt": "2026-01-05T05:49:41.488Z"
     },
     {
-      "concertId": "concert-144",
+      "concertId": "concert-148",
       "artistName": "The Blasters",
       "date": "2022-08-01",
       "venue": "Pacific Amphitheatre",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:30.914Z",
+      "fetchedAt": "2026-01-05T06:16:28.711Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-144",
+      "concertId": "concert-148",
       "artistName": "Los Lobos",
       "date": "2022-08-01",
       "venue": "Pacific Amphitheatre",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:33.303Z",
+      "fetchedAt": "2026-01-05T06:16:30.999Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-145",
+      "concertId": "concert-149",
       "artistName": "Culture Club",
       "date": "2022-08-18",
       "venue": "Pacific Amphitheatre",
@@ -20422,10 +20855,10 @@
         },
         "url": "https://www.setlist.fm/setlist/culture-club/2022/pacific-amphitheatre-costa-mesa-ca-4bb3cbca.html"
       },
-      "fetchedAt": "2026-01-03T23:28:47.163Z"
+      "fetchedAt": "2026-01-05T05:49:48.043Z"
     },
     {
-      "concertId": "concert-145",
+      "concertId": "concert-149",
       "artistName": "Berlin",
       "date": "2022-08-18",
       "venue": "Pacific Amphitheatre",
@@ -20467,20 +20900,20 @@
         "info": "Opening act for Boy George & Culture Club",
         "url": "https://www.setlist.fm/setlist/berlin/2022/pacific-amphitheatre-costa-mesa-ca-4bb3cbce.html"
       },
-      "fetchedAt": "2026-01-04T20:47:35.632Z"
+      "fetchedAt": "2026-01-05T05:49:49.939Z"
     },
     {
-      "concertId": "concert-146",
+      "concertId": "concert-150",
       "artistName": "Peter Hook and the Light",
       "date": "2022-09-09",
       "venue": "Theatre at the Ace Hotel",
       "city": "Los Angeles",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:37.465Z",
+      "fetchedAt": "2026-01-05T06:16:33.365Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-146",
+      "concertId": "concert-150",
       "artistName": "El Ten Eleven",
       "date": "2022-09-09",
       "venue": "Theatre at the Ace Hotel",
@@ -20539,10 +20972,10 @@
         "info": "Setlist incomplete",
         "url": "https://www.setlist.fm/setlist/el-ten-eleven/2022/the-theatre-at-ace-hotel-los-angeles-ca-13b0e915.html"
       },
-      "fetchedAt": "2026-01-04T20:47:39.828Z"
+      "fetchedAt": "2026-01-05T05:49:54.085Z"
     },
     {
-      "concertId": "concert-147",
+      "concertId": "concert-151",
       "artistName": "Gorillaz",
       "date": "2022-09-25",
       "venue": "YouTube Theatre",
@@ -20757,10 +21190,10 @@
         },
         "url": "https://www.setlist.fm/setlist/gorillaz/2022/youtube-theater-inglewood-ca-7bb04a8c.html"
       },
-      "fetchedAt": "2026-01-03T23:28:51.323Z"
+      "fetchedAt": "2026-01-05T05:49:55.911Z"
     },
     {
-      "concertId": "concert-147",
+      "concertId": "concert-151",
       "artistName": "EarthGang",
       "date": "2022-09-25",
       "venue": "YouTube Theatre",
@@ -20802,10 +21235,10 @@
         "info": "Supporting Gorillaz",
         "url": "https://www.setlist.fm/setlist/earthgang/2022/youtube-theater-inglewood-ca-3b04513.html"
       },
-      "fetchedAt": "2026-01-04T20:47:41.650Z"
+      "fetchedAt": "2026-01-05T05:49:57.750Z"
     },
     {
-      "concertId": "concert-148",
+      "concertId": "concert-152",
       "artistName": "Heaven 17",
       "date": "2022-10-01",
       "venue": "The Observatory",
@@ -20931,10 +21364,10 @@
         },
         "url": "https://www.setlist.fm/setlist/heaven-17/2022/the-observatory-santa-ana-ca-6bb186ba.html"
       },
-      "fetchedAt": "2026-01-03T23:28:53.157Z"
+      "fetchedAt": "2026-01-05T05:49:59.575Z"
     },
     {
-      "concertId": "concert-149",
+      "concertId": "concert-153",
       "artistName": "New Order",
       "date": "2022-10-07",
       "venue": "Hollywood Bowl",
@@ -21062,10 +21495,10 @@
         },
         "url": "https://www.setlist.fm/setlist/new-order/2022/hollywood-bowl-los-angeles-ca-63b1c6ff.html"
       },
-      "fetchedAt": "2026-01-03T23:28:54.996Z"
+      "fetchedAt": "2026-01-05T05:50:01.672Z"
     },
     {
-      "concertId": "concert-149",
+      "concertId": "concert-153",
       "artistName": "Pet Shop Boys",
       "date": "2022-10-07",
       "venue": "Hollywood Bowl",
@@ -21192,10 +21625,10 @@
         },
         "url": "https://www.setlist.fm/setlist/pet-shop-boys/2022/hollywood-bowl-los-angeles-ca-73b1c6f5.html"
       },
-      "fetchedAt": "2026-01-04T20:47:43.494Z"
+      "fetchedAt": "2026-01-05T05:50:03.548Z"
     },
     {
-      "concertId": "concert-149",
+      "concertId": "concert-153",
       "artistName": "Paul Oakenfold",
       "date": "2022-10-07",
       "venue": "Hollywood Bowl",
@@ -21352,10 +21785,10 @@
         },
         "url": "https://www.setlist.fm/setlist/paul-oakenfold/2022/hollywood-bowl-los-angeles-ca-73b1c6e9.html"
       },
-      "fetchedAt": "2026-01-04T18:18:02.801Z"
+      "fetchedAt": "2026-01-05T05:50:05.599Z"
     },
     {
-      "concertId": "concert-150",
+      "concertId": "concert-154",
       "artistName": "Danny Elfman",
       "date": "2022-10-28",
       "venue": "Hollywood Bowl",
@@ -21573,10 +22006,10 @@
         },
         "url": "https://www.setlist.fm/setlist/danny-elfman/2022/hollywood-bowl-los-angeles-ca-13bedd59.html"
       },
-      "fetchedAt": "2026-01-03T23:28:56.993Z"
+      "fetchedAt": "2026-01-05T05:50:07.434Z"
     },
     {
-      "concertId": "concert-150",
+      "concertId": "concert-154",
       "artistName": "Boy Harsher",
       "date": "2022-10-28",
       "venue": "Hollywood Bowl",
@@ -21647,10 +22080,10 @@
         "info": "Opening for Danny Elfman",
         "url": "https://www.setlist.fm/setlist/boy-harsher/2022/hollywood-bowl-los-angeles-ca-3bedd5f.html"
       },
-      "fetchedAt": "2026-01-04T20:47:45.328Z"
+      "fetchedAt": "2026-01-05T05:50:09.281Z"
     },
     {
-      "concertId": "concert-151",
+      "concertId": "concert-155",
       "artistName": "Foals",
       "date": "2022-11-16",
       "venue": "Hollywood Palladium",
@@ -21756,10 +22189,10 @@
         },
         "url": "https://www.setlist.fm/setlist/foals/2022/hollywood-palladium-los-angeles-ca-5bbfb7ec.html"
       },
-      "fetchedAt": "2026-01-03T23:28:58.647Z"
+      "fetchedAt": "2026-01-05T05:50:11.104Z"
     },
     {
-      "concertId": "concert-151",
+      "concertId": "concert-155",
       "artistName": "Inner Wave",
       "date": "2022-11-16",
       "venue": "Hollywood Palladium",
@@ -21832,10 +22265,10 @@
         },
         "url": "https://www.setlist.fm/setlist/inner-wave/2022/hollywood-palladium-los-angeles-ca-6bbf9ada.html"
       },
-      "fetchedAt": "2026-01-04T20:47:47.162Z"
+      "fetchedAt": "2026-01-05T05:50:12.948Z"
     },
     {
-      "concertId": "concert-152",
+      "concertId": "concert-156",
       "artistName": "Social Distortion",
       "date": "2022-12-08",
       "venue": "House of Blues Anaheim",
@@ -21951,30 +22384,30 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2022/house-of-blues-anaheim-ca-53bc8be1.html"
       },
-      "fetchedAt": "2026-01-03T23:29:00.557Z"
+      "fetchedAt": "2026-01-05T05:50:14.778Z"
     },
     {
-      "concertId": "concert-152",
+      "concertId": "concert-156",
       "artistName": "Chris Shiflett",
       "date": "2022-12-08",
       "venue": "House of Blues Anaheim",
       "city": "Anaheim",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:49.001Z",
+      "fetchedAt": "2026-01-05T06:16:35.633Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-153",
+      "concertId": "concert-157",
       "artistName": "The English Beat",
       "date": "2023-03-03",
       "venue": "The Belly Up Tavern",
       "city": "Solana Beach",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:51.354Z",
+      "fetchedAt": "2026-01-05T06:16:37.928Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-154",
+      "concertId": "concert-158",
       "artistName": "Depeche Mode",
       "date": "2023-03-28",
       "venue": "Kia Forum",
@@ -22107,10 +22540,10 @@
         },
         "url": "https://www.setlist.fm/setlist/depeche-mode/2023/kia-forum-inglewood-ca-43ae179b.html"
       },
-      "fetchedAt": "2026-01-03T23:29:05.017Z"
+      "fetchedAt": "2026-01-05T05:50:21.375Z"
     },
     {
-      "concertId": "concert-154",
+      "concertId": "concert-158",
       "artistName": "Kelly Lee Owens",
       "date": "2023-03-28",
       "venue": "Kia Forum",
@@ -22184,20 +22617,20 @@
         },
         "url": "https://www.setlist.fm/setlist/kelly-lee-owens/2023/kia-forum-inglewood-ca-7bbbc22c.html"
       },
-      "fetchedAt": "2026-01-04T20:47:53.728Z"
+      "fetchedAt": "2026-01-05T05:50:23.165Z"
     },
     {
-      "concertId": "concert-155",
+      "concertId": "concert-159",
       "artistName": "Dr Sick",
       "date": "2023-04-12",
       "venue": "21st Amendment",
       "city": "New Orleans",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:47:55.553Z",
+      "fetchedAt": "2026-01-05T06:16:40.210Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-156",
+      "concertId": "concert-160",
       "artistName": "Crowded House",
       "date": "2023-05-09",
       "venue": "The Wiltern",
@@ -22384,10 +22817,10 @@
         },
         "url": "https://www.setlist.fm/setlist/crowded-house/2023/wiltern-theatre-los-angeles-ca-4bb9ab42.html"
       },
-      "fetchedAt": "2026-01-03T23:29:09.180Z"
+      "fetchedAt": "2026-01-05T05:50:27.360Z"
     },
     {
-      "concertId": "concert-156",
+      "concertId": "concert-160",
       "artistName": "Liam Finn",
       "date": "2023-05-09",
       "venue": "The Wiltern",
@@ -22456,10 +22889,10 @@
         "info": "Opened for Crowded House; in person and streaming on Twitch",
         "url": "https://www.setlist.fm/setlist/liam-finn/2023/wiltern-theatre-los-angeles-ca-5bb9ab40.html"
       },
-      "fetchedAt": "2026-01-04T20:47:57.930Z"
+      "fetchedAt": "2026-01-05T05:50:29.200Z"
     },
     {
-      "concertId": "concert-157",
+      "concertId": "concert-161",
       "artistName": "The Cure",
       "date": "2023-05-24",
       "venue": "Hollywood Bowl",
@@ -22605,10 +23038,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-cure/2023/hollywood-bowl-los-angeles-ca-bb9153a.html"
       },
-      "fetchedAt": "2026-01-03T23:29:10.980Z"
+      "fetchedAt": "2026-01-05T05:50:31.028Z"
     },
     {
-      "concertId": "concert-157",
+      "concertId": "concert-161",
       "artistName": "The Twilight Sad",
       "date": "2023-05-24",
       "venue": "Hollywood Bowl",
@@ -22679,10 +23112,10 @@
         "info": "Opening act for The Cure",
         "url": "https://www.setlist.fm/setlist/the-twilight-sad/2023/hollywood-bowl-los-angeles-ca-13b91535.html"
       },
-      "fetchedAt": "2026-01-04T20:47:59.567Z"
+      "fetchedAt": "2026-01-05T05:50:32.905Z"
     },
     {
-      "concertId": "concert-158",
+      "concertId": "concert-162",
       "artistName": "Foals",
       "date": "2023-07-18",
       "venue": "The Belasco",
@@ -22793,20 +23226,20 @@
         },
         "url": "https://www.setlist.fm/setlist/foals/2023/the-belasco-los-angeles-ca-3a741df.html"
       },
-      "fetchedAt": "2026-01-03T23:29:12.855Z"
+      "fetchedAt": "2026-01-05T05:50:34.701Z"
     },
     {
-      "concertId": "concert-158",
+      "concertId": "concert-162",
       "artistName": "Andy Stavas",
       "date": "2023-07-18",
       "venue": "The Belasco",
       "city": "Los Angeles",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:48:01.484Z",
+      "fetchedAt": "2026-01-05T06:16:42.555Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-159",
+      "concertId": "concert-163",
       "artistName": "UB40",
       "date": "2023-07-21",
       "venue": "Peacock Theater",
@@ -22988,10 +23421,10 @@
         },
         "url": "https://www.setlist.fm/setlist/ub40/2023/peacock-theater-los-angeles-ca-2ba4b8b6.html"
       },
-      "fetchedAt": "2026-01-03T23:29:14.911Z"
+      "fetchedAt": "2026-01-05T05:50:38.907Z"
     },
     {
-      "concertId": "concert-159",
+      "concertId": "concert-163",
       "artistName": "Men At Work",
       "date": "2023-07-21",
       "venue": "Peacock Theater",
@@ -23088,10 +23521,10 @@
         "info": "Opening for UB40",
         "url": "https://www.setlist.fm/setlist/men-at-work/2023/peacock-theater-los-angeles-ca-23a4b8ab.html"
       },
-      "fetchedAt": "2026-01-04T20:48:03.938Z"
+      "fetchedAt": "2026-01-05T05:50:40.739Z"
     },
     {
-      "concertId": "concert-159",
+      "concertId": "concert-163",
       "artistName": "Smash Mouth",
       "date": "2023-07-21",
       "venue": "Peacock Theater",
@@ -23186,10 +23619,10 @@
         "info": "Opening for UB40",
         "url": "https://www.setlist.fm/setlist/smash-mouth/2023/peacock-theater-los-angeles-ca-23a4b8b3.html"
       },
-      "fetchedAt": "2026-01-04T18:18:09.359Z"
+      "fetchedAt": "2026-01-05T05:50:42.567Z"
     },
     {
-      "concertId": "concert-160",
+      "concertId": "concert-164",
       "artistName": "X",
       "date": "2023-07-30",
       "venue": "Pacific Amphitheatre",
@@ -23331,20 +23764,20 @@
         },
         "url": "https://www.setlist.fm/setlist/x/2023/pacific-amphitheatre-costa-mesa-ca-63a4d627.html"
       },
-      "fetchedAt": "2026-01-03T23:29:16.859Z"
+      "fetchedAt": "2026-01-05T05:50:44.412Z"
     },
     {
-      "concertId": "concert-160",
+      "concertId": "concert-164",
       "artistName": "The English Beat",
       "date": "2023-07-30",
       "venue": "Pacific Amphitheatre",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:48:05.763Z",
+      "fetchedAt": "2026-01-05T06:16:44.897Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-160",
+      "concertId": "concert-164",
       "artistName": "Save Ferris",
       "date": "2023-07-30",
       "venue": "Pacific Amphitheatre",
@@ -23440,10 +23873,10 @@
         },
         "url": "https://www.setlist.fm/setlist/save-ferris/2023/pacific-amphitheatre-costa-mesa-ca-63a4d61b.html"
       },
-      "fetchedAt": "2026-01-04T18:18:11.183Z"
+      "fetchedAt": "2026-01-05T05:50:48.604Z"
     },
     {
-      "concertId": "concert-161",
+      "concertId": "concert-165",
       "artistName": "Streetlight Manifesto",
       "date": "2023-09-23",
       "venue": "The Wiltern",
@@ -23577,10 +24010,10 @@
         },
         "url": "https://www.setlist.fm/setlist/streetlight-manifesto/2023/wiltern-theatre-los-angeles-ca-13a3a105.html"
       },
-      "fetchedAt": "2026-01-03T23:29:18.679Z"
+      "fetchedAt": "2026-01-05T05:50:50.430Z"
     },
     {
-      "concertId": "concert-161",
+      "concertId": "concert-165",
       "artistName": "Rebuilder",
       "date": "2023-09-23",
       "venue": "The Wiltern",
@@ -23621,10 +24054,10 @@
         },
         "url": "https://www.setlist.fm/setlist/rebuilder/2023/wiltern-theatre-los-angeles-ca-ba3a1fa.html"
       },
-      "fetchedAt": "2026-01-04T20:48:08.135Z"
+      "fetchedAt": "2026-01-05T05:50:52.198Z"
     },
     {
-      "concertId": "concert-162",
+      "concertId": "concert-166",
       "artistName": "Devo",
       "date": "2023-11-16",
       "venue": "YouTube Theatre",
@@ -23761,10 +24194,10 @@
         "info": "Terri Nunn's appearance represents the first guest vocalist with Devo since 2012",
         "url": "https://www.setlist.fm/setlist/devo/2023/youtube-theater-inglewood-ca-63a1364b.html"
       },
-      "fetchedAt": "2026-01-03T23:29:20.443Z"
+      "fetchedAt": "2026-01-05T05:50:54.099Z"
     },
     {
-      "concertId": "concert-163",
+      "concertId": "concert-167",
       "artistName": "Kasabian",
       "date": "2023-11-22",
       "venue": "The Belasco",
@@ -23867,10 +24300,10 @@
         },
         "url": "https://www.setlist.fm/setlist/kasabian/2023/the-belasco-los-angeles-ca-2ba16856.html"
       },
-      "fetchedAt": "2026-01-03T23:29:22.265Z"
+      "fetchedAt": "2026-01-05T05:50:55.930Z"
     },
     {
-      "concertId": "concert-165",
+      "concertId": "concert-169",
       "artistName": "Umphrey's McGee",
       "date": "2024-02-15",
       "venue": "9:30 Club",
@@ -23981,10 +24414,10 @@
         "info": "'Eminence Front' by The Who was on the printed setlist, but not played.",
         "url": "https://www.setlist.fm/setlist/umphreys-mcgee/2024/930-club-washington-dc-3ad99c7.html"
       },
-      "fetchedAt": "2026-01-03T23:29:25.336Z"
+      "fetchedAt": "2026-01-05T05:50:57.770Z"
     },
     {
-      "concertId": "concert-164",
+      "concertId": "concert-168",
       "artistName": "Brian Setzer",
       "date": "2024-02-27",
       "venue": "The Wiltern",
@@ -24170,10 +24603,10 @@
         },
         "url": "https://www.setlist.fm/setlist/brian-setzer/2024/wiltern-theatre-los-angeles-ca-5bad1b60.html"
       },
-      "fetchedAt": "2026-01-03T23:29:27.231Z"
+      "fetchedAt": "2026-01-05T05:50:59.618Z"
     },
     {
-      "concertId": "concert-164",
+      "concertId": "concert-168",
       "artistName": "Yates McKendree",
       "date": "2024-02-27",
       "venue": "The Wiltern",
@@ -24223,20 +24656,20 @@
         "info": "opening act for Brian Setzer",
         "url": "https://www.setlist.fm/setlist/yates-mckendree/2024/wiltern-theatre-los-angeles-ca-53ad1b65.html"
       },
-      "fetchedAt": "2026-01-04T20:48:09.967Z"
+      "fetchedAt": "2026-01-05T05:51:01.442Z"
     },
     {
-      "concertId": "concert-166",
+      "concertId": "concert-170",
       "artistName": "The English Beat",
       "date": "2024-07-26",
       "venue": "Pacific Amphitheatre",
       "city": "Costa Mesa",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:48:11.802Z",
+      "fetchedAt": "2026-01-05T06:16:47.520Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-166",
+      "concertId": "concert-170",
       "artistName": "Common Sense",
       "date": "2024-07-26",
       "venue": "Pacific Amphitheatre",
@@ -24277,10 +24710,10 @@
         },
         "url": "https://www.setlist.fm/setlist/common-sense/2024/pacific-amphitheatre-costa-mesa-ca-1b545950.html"
       },
-      "fetchedAt": "2026-01-04T20:48:14.070Z"
+      "fetchedAt": "2026-01-05T05:51:05.915Z"
     },
     {
-      "concertId": "concert-166",
+      "concertId": "concert-170",
       "artistName": "Smoke & Mirrors Sound System",
       "date": "2024-07-26",
       "venue": "Pacific Amphitheatre",
@@ -24321,10 +24754,10 @@
         },
         "url": "https://www.setlist.fm/setlist/smoke-and-mirrors-sound-system/2024/pacific-amphitheatre-costa-mesa-ca-3545957.html"
       },
-      "fetchedAt": "2026-01-04T18:18:15.369Z"
+      "fetchedAt": "2026-01-05T05:51:07.730Z"
     },
     {
-      "concertId": "concert-167",
+      "concertId": "concert-171",
       "artistName": "Howard Jones",
       "date": "2024-08-20",
       "venue": "YouTube Theatre",
@@ -24424,10 +24857,10 @@
         },
         "url": "https://www.setlist.fm/setlist/howard-jones/2024/youtube-theater-inglewood-ca-4ba9071a.html"
       },
-      "fetchedAt": "2026-01-03T23:29:31.589Z"
+      "fetchedAt": "2026-01-05T05:51:09.571Z"
     },
     {
-      "concertId": "concert-167",
+      "concertId": "concert-171",
       "artistName": "ABC",
       "date": "2024-08-20",
       "venue": "YouTube Theatre",
@@ -24513,10 +24946,10 @@
         },
         "url": "https://www.setlist.fm/setlist/abc/2024/youtube-theater-inglewood-ca-43a9071f.html"
       },
-      "fetchedAt": "2026-01-04T20:48:15.999Z"
+      "fetchedAt": "2026-01-05T05:51:11.399Z"
     },
     {
-      "concertId": "concert-167",
+      "concertId": "concert-171",
       "artistName": "Haircut 100",
       "date": "2024-08-20",
       "venue": "YouTube Theatre",
@@ -24577,10 +25010,10 @@
         },
         "url": "https://www.setlist.fm/setlist/haircut-one-hundred/2024/youtube-theater-inglewood-ca-53a9071d.html"
       },
-      "fetchedAt": "2026-01-04T18:18:17.203Z"
+      "fetchedAt": "2026-01-05T05:51:13.223Z"
     },
     {
-      "concertId": "concert-168",
+      "concertId": "concert-172",
       "artistName": "Cold War Kids",
       "date": "2024-11-16",
       "venue": "The Observatory",
@@ -24694,10 +25127,10 @@
         },
         "url": "https://www.setlist.fm/setlist/cold-war-kids/2024/the-observatory-santa-ana-ca-435eab67.html"
       },
-      "fetchedAt": "2026-01-03T23:29:33.524Z"
+      "fetchedAt": "2026-01-05T05:51:15.069Z"
     },
     {
-      "concertId": "concert-168",
+      "concertId": "concert-172",
       "artistName": "Husbands",
       "date": "2024-11-16",
       "venue": "The Observatory",
@@ -24785,10 +25218,10 @@
         },
         "url": "https://www.setlist.fm/setlist/husbands/2024/the-observatory-santa-ana-ca-5b5ec740.html"
       },
-      "fetchedAt": "2026-01-04T20:48:17.847Z"
+      "fetchedAt": "2026-01-05T05:51:16.911Z"
     },
     {
-      "concertId": "concert-170",
+      "concertId": "concert-174",
       "artistName": "Social Distortion",
       "date": "2024-12-05",
       "venue": "The Belasco",
@@ -24903,10 +25336,10 @@
         },
         "url": "https://www.setlist.fm/setlist/social-distortion/2024/the-belasco-los-angeles-ca-635e46e3.html"
       },
-      "fetchedAt": "2026-01-03T23:29:35.430Z"
+      "fetchedAt": "2026-01-05T05:51:18.740Z"
     },
     {
-      "concertId": "concert-169",
+      "concertId": "concert-173",
       "artistName": "Klangphonics",
       "date": "2025-03-01",
       "venue": "The Roxy",
@@ -24965,10 +25398,10 @@
         "info": "Setlist incomplete and out of order",
         "url": "https://www.setlist.fm/setlist/klangphonics/2025/the-roxy-west-hollywood-ca-1b5b11f4.html"
       },
-      "fetchedAt": "2026-01-03T23:29:37.190Z"
+      "fetchedAt": "2026-01-05T05:51:20.443Z"
     },
     {
-      "concertId": "concert-171",
+      "concertId": "concert-175",
       "artistName": "Molchat Doma",
       "date": "2025-03-07",
       "venue": "Hollywood Palladium",
@@ -25077,10 +25510,10 @@
         "info": "",
         "url": "https://www.setlist.fm/setlist/molchat-doma/2025/hollywood-palladium-los-angeles-ca-33531071.html"
       },
-      "fetchedAt": "2026-01-03T23:29:39.026Z"
+      "fetchedAt": "2026-01-05T05:51:22.214Z"
     },
     {
-      "concertId": "concert-171",
+      "concertId": "concert-175",
       "artistName": "Sextile",
       "date": "2025-03-07",
       "venue": "Hollywood Palladium",
@@ -25142,10 +25575,10 @@
         "info": "Setlist incomplete",
         "url": "https://www.setlist.fm/setlist/sextile/2025/hollywood-palladium-los-angeles-ca-1b5ae1d4.html"
       },
-      "fetchedAt": "2026-01-04T20:48:19.670Z"
+      "fetchedAt": "2026-01-05T05:51:23.988Z"
     },
     {
-      "concertId": "concert-172",
+      "concertId": "concert-176",
       "artistName": "The Black Keys",
       "date": "2025-08-16",
       "venue": "MGM Music Hall at Fenway",
@@ -25269,10 +25702,10 @@
         },
         "url": "https://www.setlist.fm/setlist/the-black-keys/2025/mgm-music-hall-at-fenway-boston-ma-53467f21.html"
       },
-      "fetchedAt": "2026-01-03T23:29:40.863Z"
+      "fetchedAt": "2026-01-05T05:51:25.824Z"
     },
     {
-      "concertId": "concert-172",
+      "concertId": "concert-176",
       "artistName": "Gary Clark Jr.",
       "date": "2025-08-16",
       "venue": "MGM Music Hall at Fenway",
@@ -25342,10 +25775,10 @@
         },
         "url": "https://www.setlist.fm/setlist/gary-clark-jr/2025/mgm-music-hall-at-fenway-boston-ma-53467f25.html"
       },
-      "fetchedAt": "2026-01-04T20:48:21.514Z"
+      "fetchedAt": "2026-01-05T05:51:27.652Z"
     },
     {
-      "concertId": "concert-173",
+      "concertId": "concert-177",
       "artistName": "David Byrne",
       "date": "2025-11-20",
       "venue": "Dolby Theatre",
@@ -25546,26 +25979,26 @@
         },
         "url": "https://www.setlist.fm/setlist/david-byrne/2025/dolby-theatre-los-angeles-ca-6b44d64a.html"
       },
-      "fetchedAt": "2026-01-03T23:29:42.717Z"
+      "fetchedAt": "2026-01-05T05:51:29.494Z"
     },
     {
-      "concertId": "concert-174",
+      "concertId": "concert-178",
       "artistName": "Thompson Twins",
       "date": "2026-09-16",
       "venue": "Pavilion Theatre",
       "city": "Glasgow",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:48:23.341Z",
+      "fetchedAt": "2026-01-05T06:16:49.792Z",
       "error": "API error: 404 Not Found"
     },
     {
-      "concertId": "concert-174",
+      "concertId": "concert-178",
       "artistName": "Blancmange",
       "date": "2026-09-16",
       "venue": "Pavilion Theatre",
       "city": "Glasgow",
       "setlist": null,
-      "fetchedAt": "2026-01-04T20:48:25.699Z",
+      "fetchedAt": "2026-01-05T06:16:52.054Z",
       "error": "API error: 404 Not Found"
     }
   ]

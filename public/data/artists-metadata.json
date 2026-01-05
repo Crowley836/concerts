@@ -2104,5 +2104,44 @@
     "website": "",
     "source": "theaudiodb",
     "fetchedAt": "2026-01-03T04:30:36.063Z"
+  },
+  "billy-idol": {
+    "name": "Billy Idol",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qprtqv1342815862.jpg",
+    "bio": "Born William Michael Albert Broad in Middlesex, England, in 1955, the first child of Bill and Joan Broad. When he was 2, his father moved the family to Long Island, New York, in pursuit of the American dream. They returned 4 years later (now with a baby sister, Jane) to Dorking. America made a big impression on Billy; he loved the big cars and rock music. The family moved next to the Running Horses Public House in Mickleham, until 1963, while their home in Goring, Sussex, was being built.\n\nThe t",
+    "genres": [
+      "Post-Punk",
+      "Rock/Pop"
+    ],
+    "formed": "1976",
+    "website": "billyidol.net",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-05T05:39:56.503Z"
+  },
+  "joe-satriani": {
+    "name": "Joe Satriani",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/xxxxtu1385856091.jpg",
+    "bio": "Joseph \"Joe\" Satriani (born July 15, 1956) is an American instrumental rock guitarist, multi-instrumentalist and multiple Grammy Award nominee. Early in his career, Satriani worked as a guitar instructor; many of his former students have achieved fame, such as Steve Vai, Larry LaLonde, Rick Hunolt, Kirk Hammett, Andy Timmons, Charlie Hunter, Kevin Cadogan and Alex Skolnick.\nIn 1988, Satriani was recruited by Mick Jagger as lead guitarist for his first solo tour.In 1994, Satriani was the lead gui",
+    "genres": [
+      "Guitarist",
+      "Rock/Pop"
+    ],
+    "formed": "1978",
+    "website": "www.satriani.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-05T05:39:58.941Z"
+  },
+  "bell-biv-devoe": {
+    "name": "Bell Biv DeVoe",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/j1riuq1681646207.jpg",
+    "bio": "Bell Biv DeVoe is an American R&B musical group that branched off from New Edition. It consists of three of New Edition's previous members, Ricky Bell, Michael Bivins, and Ronnie DeVoe.\nAfter closing the doors for 1980's R&B act New Edition, Bell, Bivins, and DeVoe went on to form Bell Biv Devoe, at the suggestion of producers Jimmy Jam & Terry Lewis. Upon accepting the idea, MCA records wrote down the name Bell Bivins Devoe, but Bivins suggested they remove the ins from his name and just call t",
+    "genres": [
+      "R&B",
+      "Urban/R&B"
+    ],
+    "formed": "1989",
+    "website": "www.bellbivdevoe.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-05T06:13:47.446Z"
   }
 }

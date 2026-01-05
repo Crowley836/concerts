@@ -10649,5 +10649,71 @@
     },
     "searchedAt": "2026-01-02T21:34:13.603Z",
     "expiresAt": "2026-04-02T20:34:13.603Z"
+  },
+  "irvine meadows|irvine|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:01.563Z",
+    "expiresAt": null
+  },
+  "hollywood park racetrack|inglewood|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:01.923Z",
+    "expiresAt": null
+  },
+  "universal amphitheater|los angeles|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:02.932Z",
+    "expiresAt": null
+  },
+  "jets|long beach|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:03.085Z",
+    "expiresAt": null
+  },
+  "the celebrity theatre|anaheim|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:03.739Z",
+    "expiresAt": null
+  },
+  "olympic velodrome|carson|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:03.992Z",
+    "expiresAt": null
+  },
+  "the galaxy theatre|santa ana|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:04.257Z",
+    "expiresAt": null
+  },
+  "club caprice|redondo beach|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:04.497Z",
+    "expiresAt": null
+  },
+  "staples center|los angeles|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:05.162Z",
+    "expiresAt": null
+  },
+  "nokia center|los angeles|california": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:05.319Z",
+    "expiresAt": null
+  },
+  "rfk stadium|washington|district of columbia": {
+    "placeId": null,
+    "placeDetails": null,
+    "searchedAt": "2026-01-05T05:40:07.073Z",
+    "expiresAt": null
   }
 }

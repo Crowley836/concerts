@@ -460,5 +460,11 @@
     "lng": -4.255724000000001,
     "formattedAddress": "Pavilion Theatre, Glasgow, UK",
     "geocodedAt": "2025-12-29T18:24:15.113Z"
+  },
+  "club caprice|redondo beach|california": {
+    "lat": 33.8303,
+    "lng": -118.3895,
+    "formattedAddress": "1700 S. Pacific Coast Hwy, Redondo Beach, CA 90277",
+    "geocodedAt": "2026-01-05T05:45:00.000Z"
   }
 }
