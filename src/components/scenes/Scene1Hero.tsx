@@ -90,10 +90,12 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
     )
 
     // Create size scale for dots (based on concert count)
+    // Mobile: larger base size (6-20px) for better visibility
+    // Desktop: standard size (4-16px)
     const maxConcerts = Math.max(...concertsByYear.values())
     const sizeScale = d3.scaleSqrt()
       .domain([0, maxConcerts])
-      .range([4, 16])
+      .range(isMobile ? [6, 20] : [4, 16])
 
     // Minimum touch target size (44px / 2 = 22px radius)
     const minTouchRadius = 22
@@ -193,14 +195,15 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           .transition()
           .duration(250)
           .attr('r', radius * (scaleMultiplier + 0.3))
-          .attr('stroke-width', 3)
-          .attr('opacity', 0.6)
+          .attr('stroke-width', isMobile ? 4 : 3)
+          .attr('opacity', isMobile ? 0.8 : 0.6)
 
         shadow
           .transition()
           .duration(250)
           .attr('r', radius * (scaleMultiplier + 0.1))
-          .attr('opacity', 0.6)
+          .attr('opacity', isMobile ? 0.8 : 0.6)
+          .attr('filter', isMobile ? 'blur(16px)' : 'blur(12px)')
       }
 
       // Helper function to reset dot animation
