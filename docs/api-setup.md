@@ -297,8 +297,11 @@ Once the API is enabled, you can enrich your venues with photos:
 # Export venues for classification (one-time setup)
 npm run export-venues
 
-# Manually classify venues in data/venue-status.csv
+# Copy the example file and classify your venues
+# cp data/example-venue-status.csv data/venue-status.csv
+# Edit data/venue-status.csv with your venue classifications
 # (active/closed/demolished/renamed)
+# See data/README.md for column specifications
 
 # Run enrichment to fetch photos from Places API
 npm run enrich-venues

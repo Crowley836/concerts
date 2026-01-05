@@ -45,6 +45,9 @@ public/data/*.backup
 public/data/*.backup.*
 data/venues-to-classify.csv*
 
+# Personal data files (keep examples in git)
+data/venue-status.csv
+
 # Claude Code configuration and plans
 .claude/
 

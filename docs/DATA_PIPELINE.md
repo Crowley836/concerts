@@ -33,28 +33,33 @@ This document describes the data pipeline for fetching, validating, and enrichin
 
 ### First Time Setup
 
-1. **Configure environment variables:**
+1. **Prepare your concert data:**
+   - Create a Google Sheet with your concert data
+   - See [../data/README.md](../data/README.md) for required format and column specifications
+   - Use [../data/example-concert-data.csv](../data/example-concert-data.csv) as a template
+
+2. **Configure environment variables:**
    ```bash
    cp .env.example .env
    # Edit .env and add your Google Sheets API credentials
    ```
 
-2. **Preview what will be fetched (safe, no writes):**
+3. **Preview what will be fetched (safe, no writes):**
    ```bash
    npm run fetch-sheet -- --dry-run
    ```
 
-3. **Fetch concert data (automatic backup created):**
+4. **Fetch concert data (automatic backup created):**
    ```bash
    npm run fetch-sheet
    ```
 
-4. **Validate data quality:**
+5. **Validate data quality:**
    ```bash
    npm run validate-data
    ```
 
-5. **Build the site:**
+6. **Build the site:**
    ```bash
    npm run build
    ```
@@ -467,12 +472,17 @@ Research each venue's current status:
 - **Renamed**: Operating under a different name
 
 Save research results as `data/venue-status.csv`:
+- Copy [data/example-venue-status.csv](../data/example-venue-status.csv) to `data/venue-status.csv`
+- Edit with your venue classifications
+- See [data/README.md](../data/README.md) for column specifications
 
 ```csv
 venue,city,state,status,closed_date,notes
 Irvine Meadows,Irvine,California,demolished,2016-09-25,Demolished for residential development
 Hollywood Bowl,Los Angeles,California,active,,Still operating
 ```
+
+**Note:** The `venue-status.csv` file is optional. If missing, all venues default to "active" status.
 
 **Step 3: Run Venue Enrichment**
 

@@ -1,6 +1,19 @@
 {
   "releases": [
     {
+      "version": "1.8.0",
+      "date": "2026-01-05",
+      "title": "Developer Experience & Documentation Overhaul",
+      "description": "Comprehensive documentation improvements and example templates for building your own concert archive",
+      "route": "/",
+      "highlights": [
+        "Two-path getting started guide (Quick Start vs Your Own Data)",
+        "Example CSV templates for concert data and venue status",
+        "Unified data format specifications in data/README.md",
+        "Privacy-first: Personal data files now gitignored with examples in repo"
+      ]
+    },
+    {
       "version": "1.7.6",
       "date": "2026-01-04",
       "title": "Changelog Toast UX & Gatefold Refinements",

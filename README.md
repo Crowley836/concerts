@@ -71,14 +71,57 @@ If you care about that sort of thing, the full technical breakdown is in [docs/S
 
 ## Running it yourself
 
+### Quick Start (Using Example Data)
+
+Want to see how it works first? Just run it:
+
 ```bash
+git clone https://github.com/yourusername/concerts.git
+cd concerts
 npm install
 npm run dev
 ```
 
-That's it. Concert data is already baked in as static JSON—no API keys needed to run locally. Of course, its my concert data.
+The app includes my concert data as static JSON—no setup required. Browse 174+ shows to see how it works.
 
-If you want to connect your own Google Sheet and run the data pipeline, check [docs/api-setup.md](docs/api-setup.md).
+### Using Your Own Concert Data
+
+Ready to build your own concert archive? Follow these steps:
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/concerts.git
+cd concerts
+npm install
+```
+
+**2. Prepare your concert data**
+
+Create a Google Sheet with your concerts using the required format:
+- See [data/example-concert-data.csv](data/example-concert-data.csv) for the template
+- Read [data/README.md](data/README.md) for column requirements
+
+**Required columns**: Date, Headliner, Venue, City, State
+**Optional columns**: Opener_1 through Opener_15, Reference
+
+**3. Set up API credentials**
+
+Configure the APIs needed for the data pipeline:
+- Google Sheets API (to fetch your data)
+- Google Maps/Places APIs (for geocoding and venue photos)
+- setlist.fm API (for concert setlists)
+
+Follow the complete setup guide: [docs/api-setup.md](docs/api-setup.md)
+
+**4. Run the data pipeline**
+
+```bash
+npm run build-data  # Fetches from Google Sheets and enriches data
+npm run dev         # Starts the dev server
+```
+
+For details on the data pipeline and enrichment process, see [docs/DATA_PIPELINE.md](docs/DATA_PIPELINE.md).
 
 ## What's Next
 
