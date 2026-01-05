@@ -337,7 +337,7 @@ body {
   background: none;
   border: none;
   border-radius: 4px;
-  padding: 6px 10px; /* Increased from 4px 8px for better click target */
+  padding: 6px 10px; /* Compact for desktop */
   cursor: pointer;
   font-family: var(--font-sans);
   /* Ensure button is clickable and above other elements */
@@ -345,6 +345,17 @@ body {
   z-index: 10; /* Increased from 1 to ensure it's above scrollbar and row hover */
   /* Ensure hover states work correctly */
   pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Touch device optimization - larger touch targets for tablets and phones */
+@media (pointer: coarse) {
+  .setlist-link {
+    padding: 12px 10px; /* Increased vertical padding for 44px+ touch target */
+    min-height: 44px; /* Ensure minimum touch target height for accessibility */
+  }
 }
 
 .setlist-link:hover {
