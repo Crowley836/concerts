@@ -9,7 +9,7 @@ An interactive web app for exploring personal concert history. Five scenes—Tim
 
 **Live at [concerts.morperhaus.org](https://concerts.morperhaus.org)** • 174 shows • 248 artists • 77 venues • 5+ decades
 
-## What's New
+## What's new
 
 **v1.7.0 is live!** Find any artist instantly with the new search bar—just start typing and jump straight to their gatefold. Plus, artists now sort by times seen by default, so my most-frequented acts appear first.
 
@@ -35,7 +35,7 @@ Five interactive scenes, each one a different lens on the same history:
 
 **The Geography** — A map of everywhere we've seen live music. Filter by region, click a venue marker to see photos and details of where the shows happened. Legacy badges mark closed or demolished venues.
 
-**The Genres** — A sunburst chart breaking down our musical diet. Click into a genre to see every artist, click an artist to see their shows.
+**The Genres** — A sunburst chart breaking down our musical diet. Click into a genre to see every artist.
 
 **The Artists** — Browse everyone we've seen, from headliners to openers. Gatefold album art vibes with artist photos, concert histories, and setlist integration.
 
@@ -76,7 +76,7 @@ npm install
 npm run dev
 ```
 
-That's it. Concert data is already baked in as static JSON—no API keys needed to run locally.
+That's it. Concert data is already baked in as static JSON—no API keys needed to run locally. Of course, its my concert data.
 
 If you want to connect your own Google Sheet and run the data pipeline, check [docs/api-setup.md](docs/api-setup.md).
 
