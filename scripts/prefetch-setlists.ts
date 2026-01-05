@@ -20,6 +20,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { config as dotenvConfig } from 'dotenv'
 import { createBackup } from './utils/backup.js'
+import { normalizeVenueName } from '../src/utils/normalize.js'
 
 // Load environment variables from .env file
 dotenvConfig()
@@ -162,16 +163,6 @@ function stringSimilarity(str1: string, str2: string): number {
   const distance = matrix[len2][len1]
   const maxLen = Math.max(len1, len2)
   return 1 - (distance / maxLen)
-}
-
-// Normalize venue name
-function normalizeVenueName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/^the\s+/i, '')
-    .replace(/[^\w\s]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
 }
 
 // Calculate match score for a setlist result

@@ -36,15 +36,18 @@ export function normalizeArtistName(name: string): string {
 /**
  * Normalize venue name for cache key lookups
  *
+ * ✨ UPDATED in v1.9.0 to use hyphens (previously removed all special chars)
+ *
  * Rules:
  * - Convert to lowercase
- * - Remove ALL non-alphanumeric characters (no hyphens)
- * - Trim whitespace
+ * - Replace all non-alphanumeric characters with hyphens
+ * - Collapse multiple hyphens into one
+ * - Remove leading/trailing hyphens
  *
  * @example
- * normalizeVenueName("The Coach House") // => "thecoachhouse"
- * normalizeVenueName("Irvine Meadows") // => "irvinemeadows"
- * normalizeVenueName("9:30 Club") // => "930club"
+ * normalizeVenueName("The Coach House") // => "the-coach-house"
+ * normalizeVenueName("Irvine Meadows") // => "irvine-meadows"
+ * normalizeVenueName("9:30 Club") // => "9-30-club"
  *
  * @param name - The venue name to normalize
  * @returns Normalized venue name
@@ -52,6 +55,34 @@ export function normalizeArtistName(name: string): string {
 export function normalizeVenueName(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '')  // Remove all special chars (no hyphens for venues)
-    .trim()
+    .replace(/[^a-z0-9]/g, '-')   // Replace all special chars with hyphens
+    .replace(/-+/g, '-')           // Collapse multiple hyphens
+    .replace(/^-|-$/g, '')         // Remove leading/trailing hyphens
+}
+
+/**
+ * Normalize genre name for metadata key lookups
+ *
+ * ✨ NEW in v1.9.0
+ *
+ * Rules:
+ * - Convert to lowercase
+ * - Replace all non-alphanumeric characters with hyphens
+ * - Collapse multiple hyphens into one
+ * - Remove leading/trailing hyphens
+ *
+ * @example
+ * normalizeGenreName("Alternative Rock") // => "alternative-rock"
+ * normalizeGenreName("New Wave/Synth-pop") // => "new-wave-synth-pop"
+ * normalizeGenreName("Hip-Hop") // => "hip-hop"
+ *
+ * @param name - The genre name to normalize
+ * @returns Normalized genre name
+ */
+export function normalizeGenreName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
 }

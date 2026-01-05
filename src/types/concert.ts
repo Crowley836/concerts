@@ -4,8 +4,10 @@ export interface Concert {
   headliner: string;
   headlinerNormalized: string;
   genre: string;
+  genreNormalized: string; // ✨ NEW in v1.9.0
   openers: string[];
   venue: string;
+  venueNormalized: string; // ✨ NEW in v1.9.0
   city: string;
   state: string;
   cityState: string;

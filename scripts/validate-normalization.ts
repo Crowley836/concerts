@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
-import { normalizeArtistName, normalizeVenueName } from '../src/utils/normalize.js'
+import { normalizeArtistName, normalizeVenueName, normalizeGenreName } from '../src/utils/normalize.js'
 
 /**
  * Validate that all data files use consistent normalization
@@ -185,6 +185,94 @@ function validateVenueNormalization(): ValidationIssue[] {
   return issues
 }
 
+function validateGenreNormalization(): ValidationIssue[] {
+  const issues: ValidationIssue[] = []
+
+  // Load concerts.json
+  const concertsPath = join(process.cwd(), 'public', 'data', 'concerts.json')
+  if (!existsSync(concertsPath)) {
+    issues.push({
+      type: 'missing',
+      severity: 'error',
+      message: 'concerts.json not found',
+    })
+    return issues
+  }
+
+  const concertsData = JSON.parse(readFileSync(concertsPath, 'utf-8'))
+  const concerts = concertsData.concerts
+
+  // Check that genreNormalized matches our normalization function
+  for (const concert of concerts) {
+    // Skip validation if genreNormalized doesn't exist (for backwards compatibility)
+    if (!concert.hasOwnProperty('genreNormalized')) {
+      continue
+    }
+
+    const expectedNormalized = normalizeGenreName(concert.genre)
+
+    if (concert.genreNormalized !== expectedNormalized) {
+      issues.push({
+        type: 'mismatch',
+        severity: 'error',
+        message: `Concert ${concert.id} genre normalization mismatch`,
+        details: {
+          concertId: concert.id,
+          genre: concert.genre,
+          actual: concert.genreNormalized,
+          expected: expectedNormalized,
+        },
+      })
+    }
+  }
+
+  return issues
+}
+
+function validateVenueNormalized(): ValidationIssue[] {
+  const issues: ValidationIssue[] = []
+
+  // Load concerts.json
+  const concertsPath = join(process.cwd(), 'public', 'data', 'concerts.json')
+  if (!existsSync(concertsPath)) {
+    issues.push({
+      type: 'missing',
+      severity: 'error',
+      message: 'concerts.json not found',
+    })
+    return issues
+  }
+
+  const concertsData = JSON.parse(readFileSync(concertsPath, 'utf-8'))
+  const concerts = concertsData.concerts
+
+  // Check that venueNormalized matches our normalization function
+  for (const concert of concerts) {
+    // Skip validation if venueNormalized doesn't exist (for backwards compatibility)
+    if (!concert.hasOwnProperty('venueNormalized')) {
+      continue
+    }
+
+    const expectedNormalized = normalizeVenueName(concert.venue)
+
+    if (concert.venueNormalized !== expectedNormalized) {
+      issues.push({
+        type: 'mismatch',
+        severity: 'error',
+        message: `Concert ${concert.id} venue normalization mismatch`,
+        details: {
+          concertId: concert.id,
+          venue: concert.venue,
+          actual: concert.venueNormalized,
+          expected: expectedNormalized,
+        },
+      })
+    }
+  }
+
+  return issues
+}
+
 function main() {
   console.log('🔍 Validating data normalization consistency...\n')
 
@@ -218,6 +306,26 @@ function main() {
     console.log('   ✅ No issues found\n')
   } else {
     console.log(`   ⚠️  Found ${venueIssues.length} issue(s)\n`)
+  }
+
+  // Validate venueNormalized field in concerts.json
+  console.log('🎪 Checking venueNormalized field in concerts.json...')
+  const venueNormalizedIssues = validateVenueNormalized()
+  allIssues.push(...venueNormalizedIssues)
+  if (venueNormalizedIssues.length === 0) {
+    console.log('   ✅ No issues found\n')
+  } else {
+    console.log(`   ⚠️  Found ${venueNormalizedIssues.length} issue(s)\n`)
+  }
+
+  // Validate genreNormalized field in concerts.json
+  console.log('🎵 Checking genreNormalized field in concerts.json...')
+  const genreIssues = validateGenreNormalization()
+  allIssues.push(...genreIssues)
+  if (genreIssues.length === 0) {
+    console.log('   ✅ No issues found\n')
+  } else {
+    console.log(`   ⚠️  Found ${genreIssues.length} issue(s)\n`)
   }
 
   // Print detailed issues

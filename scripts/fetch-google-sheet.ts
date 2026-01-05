@@ -1,6 +1,6 @@
 import { GoogleSheetsClient } from './utils/google-sheets-client'
 import { getCityCoordinates, getDefaultCoordinates } from '../src/utils/city-coordinates'
-import { normalizeArtistName } from '../src/utils/normalize.js'
+import { normalizeArtistName, normalizeVenueName, normalizeGenreName } from '../src/utils/normalize.js'
 import { createBackup } from './utils/backup'
 import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { join } from 'path'
@@ -15,8 +15,10 @@ interface ProcessedConcert {
   headliner: string
   headlinerNormalized: string
   genre: string
+  genreNormalized: string  // ✨ NEW in v1.9.0
   openers: string[]
   venue: string
+  venueNormalized: string  // ✨ NEW in v1.9.0
   city: string
   state: string
   cityState: string
@@ -178,8 +180,10 @@ async function fetchGoogleSheet(options: { dryRun?: boolean } = {}) {
         headliner: row.headliner,
         headlinerNormalized: normalizeArtistName(row.headliner),
         genre: row.genre,
+        genreNormalized: normalizeGenreName(row.genre),  // ✨ NEW in v1.9.0
         openers: row.openers,
         venue: row.venue,
+        venueNormalized: normalizeVenueName(row.venue),  // ✨ NEW in v1.9.0
         city,
         state,
         cityState: row.cityState,

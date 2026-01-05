@@ -1,7 +1,7 @@
 # Deep Linking Guide
 
-**Version:** 1.0 (v1.7.6+)
-**Last Updated:** 2026-01-04
+**Version:** 1.1 (v1.9.0+)
+**Last Updated:** 2026-01-05
 
 ---
 
@@ -95,7 +95,7 @@ https://concerts.morperhaus.org/?scene=venues&venue={normalized-name}
 
 ```
 # 9:30 Club - expands with child artists in graph
-https://concerts.morperhaus.org/?scene=venues&venue=930club
+https://concerts.morperhaus.org/?scene=venues&venue=9-30-club
 
 # Hollywood Palladium
 https://concerts.morperhaus.org/?scene=venues&venue=hollywood-palladium
@@ -121,7 +121,7 @@ https://concerts.morperhaus.org/?scene=geography&venue={normalized-name}
 
 ```
 # 9:30 Club - flies to DC area, opens popup
-https://concerts.morperhaus.org/?scene=geography&venue=930club
+https://concerts.morperhaus.org/?scene=geography&venue=9-30-club
 
 # Pacific Amphitheatre - flies to Orange County
 https://concerts.morperhaus.org/?scene=geography&venue=pacific-amphitheatre
@@ -153,26 +153,41 @@ Entity names are normalized for URL compatibility:
 | Display Name | Normalized Name |
 | ------------ | --------------- |
 | Depeche Mode | `depeche-mode` |
-| 9:30 Club | `930club` |
+| 9:30 Club | `9-30-club` |
+| Irvine Meadows | `irvine-meadows` |
 | The English Beat | `the-english-beat` |
 | Social Distortion | `social-distortion` |
 | Hollywood Palladium | `hollywood-palladium` |
+| Alternative Rock | `alternative-rock` |
 
 ### Implementation
 
-```typescript
-function normalizeVenueName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-}
+**✨ Updated in v1.9.0** - All entity normalization now uses hyphens consistently.
 
+```typescript
+// Artists, venues, and genres all use the same normalization pattern
 function normalizeArtistName(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
+    .replace(/[^a-z0-9]/g, '-')    // Replace special chars with hyphens
+    .replace(/-+/g, '-')            // Collapse multiple hyphens
+    .replace(/^-|-$/g, '')          // Remove leading/trailing hyphens
+}
+
+function normalizeVenueName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '-')    // Replace special chars with hyphens
+    .replace(/-+/g, '-')            // Collapse multiple hyphens
+    .replace(/^-|-$/g, '')          // Remove leading/trailing hyphens
+}
+
+function normalizeGenreName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '-')    // Replace special chars with hyphens
+    .replace(/-+/g, '-')            // Collapse multiple hyphens
+    .replace(/^-|-$/g, '')          // Remove leading/trailing hyphens
 }
 ```
 
@@ -189,7 +204,7 @@ Share specific discoveries with friends:
 https://concerts.morperhaus.org/?scene=artists&artist=depeche-mode
 
 "The 9:30 Club has hosted 13 shows!"
-https://concerts.morperhaus.org/?scene=venues&venue=930club
+https://concerts.morperhaus.org/?scene=venues&venue=9-30-club
 ```
 
 ### Changelog Integration
