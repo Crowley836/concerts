@@ -13,7 +13,7 @@ An interactive web app for exploring personal concert history. Five scenes—Tim
 
 **v1.8.0 is live!** We've overhauled the documentation to make it easier than ever to fork this project and build your own concert archive. New example data templates, comprehensive format specifications, and a two-path getting started guide (Quick Start vs Your Own Data) mean you can go from clone to customized archive in minutes.
 
-**Artist search just got better** (v1.7.0) — Find any artist instantly with typeahead search. Just start typing and jump straight to their gatefold. Artists now sort by times seen by default, so your most-frequented acts appear first.
+**Artist search just got better** (v1.7.0) — Find any artist instantly with [typeahead search](https://concerts.morperhaus.org/?scene=artists). Just start typing and jump straight to their gatefold. Artists now sort by times seen by default, so your most-frequented acts appear first.
 
 See the full changelog at [/liner-notes](https://concerts.morperhaus.org/liner-notes)
 
@@ -31,15 +31,15 @@ This project is my attempt to turn that data into something that actually captur
 
 Five interactive scenes, each one a different lens on the same history:
 
-**The Timeline** — Every concert laid out chronologically. Scroll through four decades, see the density of shows ebb and flow. Hover over any year to preview artist imagery and concert counts with subtle parallax effects.
+**[The Timeline](https://concerts.morperhaus.org/?scene=timeline)** — Every concert laid out chronologically. Scroll through four decades, see the density of shows ebb and flow. Hover over any year to preview artist imagery and concert counts with subtle parallax effects.
 
-**The Venues** — A network graph connecting venues to the artists who played them. Turns out we've been to Irvine Meadows a *lot*. Click any venue to see photos, stats, and concert history.
+**[The Venues](https://concerts.morperhaus.org/?scene=venues)** — A network graph connecting venues to the artists who played them. Turns out [we've been to Irvine Meadows](https://concerts.morperhaus.org/?scene=venues&venue=irvine-meadows) a *lot*. Click any venue to see photos, stats, and concert history.
 
-**The Geography** — A map of everywhere we've seen live music. Filter by region, click a venue marker to see photos and details of where the shows happened. Legacy badges mark closed or demolished venues.
+**[The Geography](https://concerts.morperhaus.org/?scene=geography)** — A map of everywhere we've seen live music. Filter by region, click a venue marker to see photos and details of where the shows happened. Legacy badges mark closed or demolished venues.
 
-**The Genres** — A sunburst chart breaking down our musical diet. Click into a genre to see every artist.
+**[The Genres](https://concerts.morperhaus.org/?scene=genres)** — A sunburst chart breaking down our musical diet. Click into a genre to see every artist.
 
-**The Artists** — Browse everyone we've seen, from headliners to openers. Gatefold album art vibes with artist photos, concert histories, and setlist integration.
+**[The Artists](https://concerts.morperhaus.org/?scene=artists)** — Browse everyone we've seen, from headliners to openers. [Gatefold album art vibes](https://concerts.morperhaus.org/?scene=artists&artist=depeche-mode) with artist photos, concert histories, and setlist integration.
 
 ## Where the data comes from
 
