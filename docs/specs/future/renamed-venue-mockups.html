@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renamed Venue Badge Design Options</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f9fafb;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f2937;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+
+    .option {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .option-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .option-description {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .pros-cons {
+      font-size: 12px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .pros-cons .label {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .pros {
+      color: #059669;
+      margin-bottom: 8px;
+    }
+
+    .cons {
+      color: #dc2626;
+    }
+
+    /* Popup styling */
+    .venue-popup-content {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      max-width: 240px;
+      margin: 0 auto;
+    }
+
+    .venue-popup-image-container {
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+    }
+
+    .venue-popup-image-container::after {
+      content: '📷 Venue Photo';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    .venue-popup-text {
+      padding: 16px;
+    }
+
+    .venue-popup-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: #1f2937;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .venue-popup-location {
+      font-size: 11px;
+      color: #9ca3af;
+      margin-bottom: 8px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .venue-popup-badge {
+      display: inline-block;
+      font-size: 11px;
+      color: #6b7280;
+      background-color: #f3f4f6;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .venue-popup-badge-block {
+      display: block;
+      font-size: 11px;
+      color: #6b7280;
+      background-color: #f3f4f6;
+      padding: 6px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .venue-popup-badge .new-name {
+      font-style: italic;
+      color: #9ca3af;
+      font-size: 10px;
+    }
+
+    .venue-popup-badge-block .new-name {
+      font-style: italic;
+      color: #9ca3af;
+      font-size: 10px;
+      display: block;
+      margin-top: 2px;
+      margin-left: 16px;
+    }
+
+    .venue-popup-count {
+      font-size: 13px;
+      color: #374151;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .venue-popup-link {
+      width: 100%;
+      padding: 10px 16px;
+      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+      min-height: 40px;
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+    }
+
+    .venue-popup-link:hover {
+      background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    }
+
+    /* Test cases section */
+    .test-cases {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .test-cases h2 {
+      font-size: 18px;
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+
+    .test-case {
+      margin-bottom: 32px;
+    }
+
+    .test-case-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .comparison-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .comparison-label {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 8px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎭 Renamed Venue Badge Design Options</h1>
+    <p class="subtitle">Visual comparison for Geography Scene map popups</p>
+
+    <div class="options-grid">
+      <!-- Option 1: Current (Baseline) -->
+      <div class="option">
+        <div class="option-title">Current (Baseline)</div>
+        <div class="option-description">
+          What renamed venues look like today - same as closed venues
+        </div>
+        <div class="venue-popup-content">
+          <div class="venue-popup-image-container"></div>
+          <div class="venue-popup-text">
+            <div class="venue-popup-name">Staples Center</div>
+            <div class="venue-popup-location">Los Angeles, California</div>
+            <div class="venue-popup-badge">🏛️ Closed 2021</div>
+            <div class="venue-popup-count">1 concert</div>
+            <button class="venue-popup-link">View in Venues →</button>
+          </div>
+        </div>
+        <div class="pros-cons">
+          <div class="cons">
+            <div class="label">❌ Issues:</div>
+            <div>• Misleading - venue still operates</div>
+            <div>• New name is hidden</div>
+            <div>• Same badge as truly closed venues</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option A: Two-Line Block -->
+      <div class="option">
+        <div class="option-title">Option A: Two-Line Block</div>
+        <div class="option-description">
+          Block badge with new name on second line (recommended)
+        </div>
+        <div class="venue-popup-content">
+          <div class="venue-popup-image-container"></div>
+          <div class="venue-popup-text">
+            <div class="venue-popup-name">Staples Center</div>
+            <div class="venue-popup-location">Los Angeles, California</div>
+            <div class="venue-popup-badge-block">
+              ♻️ Renamed 2021
+              <span class="new-name">Now: Crypto.com Arena</span>
+            </div>
+            <div class="venue-popup-count">1 concert</div>
+            <button class="venue-popup-link">View in Venues →</button>
+          </div>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="label">✅ Pros:</div>
+            <div>• Clear two-tier hierarchy</div>
+            <div>• Handles long names well</div>
+            <div>• Mobile-friendly (no wrapping)</div>
+          </div>
+          <div class="cons">
+            <div class="label">⚠️ Cons:</div>
+            <div>• Takes more vertical space</div>
+            <div>• Badge taller than others</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option B: Single-Line Arrow -->
+      <div class="option">
+        <div class="option-title">Option B: Single-Line Arrow</div>
+        <div class="option-description">
+          Compact inline format with arrow separator
+        </div>
+        <div class="venue-popup-content">
+          <div class="venue-popup-image-container"></div>
+          <div class="venue-popup-text">
+            <div class="venue-popup-name">Staples Center</div>
+            <div class="venue-popup-location">Los Angeles, California</div>
+            <div class="venue-popup-badge">
+              ♻️ Renamed 2021 → <span class="new-name">Crypto.com Arena</span>
+            </div>
+            <div class="venue-popup-count">1 concert</div>
+            <button class="venue-popup-link">View in Venues →</button>
+          </div>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="label">✅ Pros:</div>
+            <div>• Compact, saves space</div>
+            <div>• Visual flow (left → right)</div>
+            <div>• Same height as other badges</div>
+          </div>
+          <div class="cons">
+            <div class="label">⚠️ Cons:</div>
+            <div>• Wraps awkwardly on long names</div>
+            <div>• Hard to read on mobile</div>
+            <div>• Badge becomes very wide</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option C: Badge + Subtitle -->
+      <div class="option">
+        <div class="option-title">Option C: Badge + Subtitle</div>
+        <div class="option-description">
+          Simple badge with new name as separate gray line
+        </div>
+        <div class="venue-popup-content">
+          <div class="venue-popup-image-container"></div>
+          <div class="venue-popup-text">
+            <div class="venue-popup-name">Staples Center</div>
+            <div class="venue-popup-location">Los Angeles, California</div>
+            <div class="venue-popup-badge">♻️ Renamed 2021</div>
+            <div style="font-size: 10px; color: #9ca3af; font-style: italic; margin-bottom: 8px;">
+              Now: Crypto.com Arena
+            </div>
+            <div class="venue-popup-count">1 concert</div>
+            <button class="venue-popup-link">View in Venues →</button>
+          </div>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="label">✅ Pros:</div>
+            <div>• Clean visual separation</div>
+            <div>• Consistent badge height</div>
+            <div>• Easy to scan</div>
+          </div>
+          <div class="cons">
+            <div class="label">⚠️ Cons:</div>
+            <div>• New name less connected to badge</div>
+            <div>• More total vertical space</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option D: Badge Only -->
+      <div class="option">
+        <div class="option-title">Option D: Badge Only (Minimal)</div>
+        <div class="option-description">
+          Just the badge, new name omitted or in tooltip
+        </div>
+        <div class="venue-popup-content">
+          <div class="venue-popup-image-container"></div>
+          <div class="venue-popup-text">
+            <div class="venue-popup-name">Staples Center</div>
+            <div class="venue-popup-location">Los Angeles, California</div>
+            <div class="venue-popup-badge">♻️ Renamed 2021</div>
+            <div class="venue-popup-count">1 concert</div>
+            <button class="venue-popup-link">View in Venues →</button>
+          </div>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="label">✅ Pros:</div>
+            <div>• Most compact</div>
+            <div>• Consistent with other badges</div>
+            <div>• Clean, uncluttered</div>
+          </div>
+          <div class="cons">
+            <div class="label">⚠️ Cons:</div>
+            <div>• Missing key information</div>
+            <div>• User has to guess new name</div>
+            <div>• Defeats purpose of feature</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option E: Reverse (New Name Primary) -->
+      <div class="option">
+        <div class="option-title">Option E: New Name Primary</div>
+        <div class="option-description">
+          Show current name as primary, old name as subtitle
+        </div>
+        <div class="venue-popup-content">
+          <div class="venue-popup-image-container"></div>
+          <div class="venue-popup-text">
+            <div class="venue-popup-name">Crypto.com Arena</div>
+            <div class="venue-popup-location" style="margin-bottom: 4px;">Los Angeles, California</div>
+            <div style="font-size: 10px; color: #9ca3af; font-style: italic; margin-bottom: 8px;">
+              Formerly: Staples Center
+            </div>
+            <div class="venue-popup-badge">♻️ Renamed 2021</div>
+            <div class="venue-popup-count">1 concert</div>
+            <button class="venue-popup-link">View in Venues →</button>
+          </div>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="label">✅ Pros:</div>
+            <div>• Emphasizes current status</div>
+            <div>• Logical hierarchy</div>
+            <div>• Future-focused</div>
+          </div>
+          <div class="cons">
+            <div class="label">⚠️ Cons:</div>
+            <div>• Loses historical name prominence</div>
+            <div>• Concerts were at "Staples Center"</div>
+            <div>• Requires data change</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Cases with Long Names -->
+    <div class="test-cases">
+      <h2>🧪 Stress Test: Long Venue Names</h2>
+
+      <div class="test-case">
+        <div class="test-case-title">Test Case 1: Nokia Center → Microsoft Theater (now Peacock Theater)</div>
+        <div class="comparison-grid">
+          <div class="comparison-item">
+            <div class="venue-popup-content">
+              <div class="venue-popup-text">
+                <div class="venue-popup-name">Nokia Center</div>
+                <div class="venue-popup-location">Los Angeles, California</div>
+                <div class="venue-popup-badge-block">
+                  ♻️ Renamed 2015
+                  <span class="new-name">Now: Microsoft Theater (now Peacock Theater)</span>
+                </div>
+                <div class="venue-popup-count">2 concerts</div>
+              </div>
+            </div>
+            <div class="comparison-label">Option A (Two-Line)</div>
+          </div>
+
+          <div class="comparison-item">
+            <div class="venue-popup-content">
+              <div class="venue-popup-text">
+                <div class="venue-popup-name">Nokia Center</div>
+                <div class="venue-popup-location">Los Angeles, California</div>
+                <div class="venue-popup-badge">
+                  ♻️ Renamed 2015 → <span class="new-name">Microsoft Theater (now Peacock Theater)</span>
+                </div>
+                <div class="venue-popup-count">2 concerts</div>
+              </div>
+            </div>
+            <div class="comparison-label">Option B (Arrow) - ⚠️ Wraps badly</div>
+          </div>
+
+          <div class="comparison-item">
+            <div class="venue-popup-content">
+              <div class="venue-popup-text">
+                <div class="venue-popup-name">Nokia Center</div>
+                <div class="venue-popup-location">Los Angeles, California</div>
+                <div class="venue-popup-badge">♻️ Renamed 2015</div>
+                <div style="font-size: 10px; color: #9ca3af; font-style: italic; margin-bottom: 8px;">
+                  Now: Microsoft Theater (now Peacock Theater)
+                </div>
+                <div class="venue-popup-count">2 concerts</div>
+              </div>
+            </div>
+            <div class="comparison-label">Option C (Subtitle)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-case">
+        <div class="test-case-title">Test Case 2: Short Name (The Galaxy Theatre → The Observatory)</div>
+        <div class="comparison-grid">
+          <div class="comparison-item">
+            <div class="venue-popup-content">
+              <div class="venue-popup-text">
+                <div class="venue-popup-name">The Galaxy Theatre</div>
+                <div class="venue-popup-location">Santa Ana, California</div>
+                <div class="venue-popup-badge-block">
+                  ♻️ Renamed 2011
+                  <span class="new-name">Now: The Observatory</span>
+                </div>
+                <div class="venue-popup-count">3 concerts</div>
+              </div>
+            </div>
+            <div class="comparison-label">Option A (Two-Line)</div>
+          </div>
+
+          <div class="comparison-item">
+            <div class="venue-popup-content">
+              <div class="venue-popup-text">
+                <div class="venue-popup-name">The Galaxy Theatre</div>
+                <div class="venue-popup-location">Santa Ana, California</div>
+                <div class="venue-popup-badge">
+                  ♻️ Renamed 2011 → <span class="new-name">The Observatory</span>
+                </div>
+                <div class="venue-popup-count">3 concerts</div>
+              </div>
+            </div>
+            <div class="comparison-label">Option B (Arrow) - ✅ Works well</div>
+          </div>
+
+          <div class="comparison-item">
+            <div class="venue-popup-content">
+              <div class="venue-popup-text">
+                <div class="venue-popup-name">The Galaxy Theatre</div>
+                <div class="venue-popup-location">Santa Ana, California</div>
+                <div class="venue-popup-badge">♻️ Renamed 2011</div>
+                <div style="font-size: 10px; color: #9ca3af; font-style: italic; margin-bottom: 8px;">
+                  Now: The Observatory
+                </div>
+                <div class="venue-popup-count">3 concerts</div>
+              </div>
+            </div>
+            <div class="comparison-label">Option C (Subtitle)</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; padding: 20px; background: #fef3c7; border-radius: 8px; border: 1px solid #fbbf24;">
+        <div style="font-weight: 600; color: #92400e; margin-bottom: 8px;">💡 Recommendation</div>
+        <div style="font-size: 14px; color: #78350f; line-height: 1.6;">
+          <strong>Option A (Two-Line Block)</strong> is most robust:<br>
+          • Handles all name lengths gracefully<br>
+          • Maintains visual hierarchy<br>
+          • Mobile-friendly without wrapping issues<br>
+          • Slight vertical space cost is acceptable
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

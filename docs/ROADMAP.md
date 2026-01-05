@@ -31,6 +31,7 @@ Display upcoming tour dates for artists in the collection using Bandsintown API 
 **Related Specs**:
 - [mobile-optimization.md](specs/future/mobile-optimization.md)
 - [popup-z-index-fix.md](specs/future/popup-z-index-fix.md)
+- [renamed-venue-display.md](specs/future/renamed-venue-display.md)
 
 Refinements to interaction patterns and navigation across the app.
 
@@ -39,6 +40,7 @@ Refinements to interaction patterns and navigation across the app.
 - Add hyperlinks in gatefold content (venue names, related artists)
 - Improved button states and loading indicators
 - Better keyboard navigation support
+- Display renamed venues with ♻️ badge and new name
 
 ---
 
@@ -57,6 +59,21 @@ Improve artist imagery and information presentation in the Timeline scene.
 ---
 
 ## Medium-Term Roadmap
+
+### Venue Name Change Detection & CLI Management
+**Status**: Planned
+**Spec**: [venue-name-change-detection.md](specs/future/venue-name-change-detection.md)
+
+Automatically detect when venue names change and provide CLI tools to manage venue status updates.
+
+**Key Features**:
+- Automatic detection during venue enrichment (compare Google Places name vs data)
+- Interactive CLI: `npm run venue-review` to process detected changes
+- Manual management: `npm run venue-update` and `npm run venue-add`
+- Safe CSV updates with validation and atomic writes
+- Guided workflow with next-step recommendations
+
+---
 
 ### Spotify Integration & Unified Image Sourcing
 **Status**: Planned
