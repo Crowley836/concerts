@@ -35,6 +35,7 @@ This directory contains all data pipeline, build, and utility scripts for the Mo
 | geocode-venues.ts | `npm run geocode` | Geocode venue coordinates manually | One-time setup (cache exists) |
 | export-venues.ts | `npm run export-venues` | Export venues to CSV for status research | One-time venue classification |
 | deduplicate-artists.ts | `npm run deduplicate-artists` | Remove duplicate artists from metadata | Data cleanup (rare) |
+| cleanup-backups.ts | `npm run cleanup:backups` | Clean old backup files (keeps 3 most recent) | Maintenance (monthly) |
 | validate-normalization.ts | `npm run validate-normalization` | Verify artist name normalization | Testing normalization logic |
 | generate-mock-spotify-metadata.ts | `npm run generate-mock-spotify` | Generate mock Spotify data (for testing) | Development only |
 | review-venue-photos.ts | `npm run review-venue-photos` | Review venue photo cache entries | Debugging venue enrichment |
@@ -132,6 +133,7 @@ See [docs/DATA_PIPELINE.md](../docs/DATA_PIPELINE.md) for complete pipeline docu
 
 **Data Cleanup:**
 - `deduplicate-artists.ts` - Remove duplicate artist entries
+- `cleanup-backups.ts` - Clean old backup files (keeps 3 most recent per file type)
 - `convert-csv-to-json.ts` - **DEPRECATED** - CSV import (replaced by Google Sheets)
 
 **Development:**
@@ -183,6 +185,7 @@ npx tsx scripts/test-setlistfm.ts
 - geocode-venues.ts
 - export-venues.ts
 - deduplicate-artists.ts
+- cleanup-backups.ts
 - validate-normalization.ts
 - review-venue-photos.ts
 
@@ -233,6 +236,9 @@ git push
 ```bash
 # Refresh everything (takes ~10 minutes)
 npm run build-data
+
+# Clean up old backup files
+npm run cleanup:backups
 
 # Or specific parts only
 npm run enrich-venues          # Venue photos
@@ -363,4 +369,4 @@ export { myScript }
 ---
 
 **Last Updated**: 2026-01-04
-**Total Scripts**: 20 (17 active, 2 test, 1 deprecated)
+**Total Scripts**: 21 (18 active, 2 test, 1 deprecated)

@@ -341,17 +341,109 @@ https://concerts.morperhaus.org/?scene=timeline"
 https://concerts.morperhaus.org/?scene=geography"
 ```
 
-**Future Enhancements (Out of Scope):**
+### Entity-Level Deep Linking (v1.7.6+)
+
+**Extended URL Structure:**
+```
+https://concerts.morperhaus.org/?scene={scene_name}&{entity_type}={normalized_name}
+```
+
+**Supported Entity Parameters:**
+
+| Entity Type | Scenes | Description | Example |
+| ----------- | ------ | ----------- | ------- |
+| `artist` | Scene 5 (Artists) | Auto-scrolls to artist and opens gatefold | `?scene=artists&artist=depeche-mode` |
+| `venue` | Scene 2 (Venues) | Auto-expands venue in force graph with spotlight | `?scene=venues&venue=930club` |
+| `venue` | Scene 3 (Geography) | Flies to venue on map and opens popup | `?scene=geography&venue=930club` |
+
+**Real Examples:**
+
+```
+# Artist gatefold with photo and concert history
+https://concerts.morperhaus.org/?scene=artists&artist=depeche-mode
+https://concerts.morperhaus.org/?scene=artists&artist=social-distortion
+
+# Venue in force-directed graph (Scene 2)
+https://concerts.morperhaus.org/?scene=venues&venue=930club
+
+# Venue on map with popup (Scene 3)
+https://concerts.morperhaus.org/?scene=geography&venue=930club
+https://concerts.morperhaus.org/?scene=geography&venue=hollywood-palladium
+```
+
+**Normalized Name Format:**
+
+- Lowercase with hyphens
+- Strip non-alphanumeric characters except hyphens
+- Examples: `depeche-mode`, `930club`, `hollywood-palladium`
+
+**Implementation Details:**
 
 ```typescript
-// Anchor-based deep linking (future)
-/?scene=timeline#year-2024
+// App.tsx deep link handler
+useEffect(() => {
+  const params = new URLSearchParams(location.search)
+  const sceneParam = params.get('scene')
+  const artistParam = params.get('artist')
+  const venueParam = params.get('venue')
 
-// Multi-param deep linking (future)
-/?scene=geography&region=southern-california
+  if (sceneParam && SCENE_MAP[sceneParam]) {
+    const sceneId = SCENE_MAP[sceneParam]
 
-// Artist deep linking (future)
-/?scene=artists&artist=pearl-jam
+    // Artist deep linking (Scene 5)
+    if (artistParam && sceneId === 5) {
+      setPendingArtistFocus(artistParam)
+    }
+
+    // Venue deep linking (Scene 2)
+    if (venueParam && sceneId === 2) {
+      setPendingVenueFocus(venueParam)
+    }
+
+    // Venue deep linking (Scene 3)
+    if (venueParam && sceneId === 3) {
+      setPendingMapVenueFocus(venueParam)
+    }
+
+    // Scroll to scene
+    setTimeout(() => {
+      scrollToScene(sceneId)
+    }, 100)
+  }
+}, [location.search, loading])
+```
+
+**Scene-Level Handling:**
+
+Each scene receives a `pendingEntityFocus` prop and handles the deep link:
+
+- **ArtistScene**: Finds card element, scrolls into view, opens gatefold
+- **Scene4Bands** (Venues): Expands venue node, centers graph, applies spotlight
+- **Scene3Map** (Geography): Flies to marker location, opens popup
+
+**Changelog Integration:**
+
+All changelog routes now use entity-level deep links to showcase features:
+
+```json
+{
+  "version": "1.7.6",
+  "title": "Changelog Toast UX & Gatefold Refinements",
+  "route": "/?scene=artists&artist=depeche-mode"
+}
+```
+
+**Future Enhancements:**
+
+```typescript
+// Timeline year focus (future)
+/?scene=timeline&year=2024
+
+// Region filtering on map (future)
+/?scene=geography&region=california
+
+// Genre selection (future)
+/?scene=genres&genre=alternative-rock
 ```
 
 ---

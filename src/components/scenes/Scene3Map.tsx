@@ -55,7 +55,7 @@ interface Scene3MapProps {
 type Region = 'all' | 'california' | 'dc'
 
 const ZOOM_BOUNDS = {
-  min: 4,   // Continental US (matches "All" region view)
+  min: 3.5, // Mobile: wider view to show both coasts
   max: 16,  // Street-level with context
 }
 
@@ -219,9 +219,13 @@ export function Scene3Map({ concerts, onVenueNavigate, pendingVenueFocus, onVenu
     if (!mapRef.current || concerts.length === 0) return
 
     if (!mapInstanceRef.current) {
+      // Use wider zoom on mobile to show both coasts
+      const isMobile = window.innerWidth < 768
+      const initialZoom = isMobile ? 3.5 : REGION_VIEWS.all.zoom
+
       const map = L.map(mapRef.current, {
         center: REGION_VIEWS.all.center,
-        zoom: REGION_VIEWS.all.zoom,
+        zoom: initialZoom,
         minZoom: ZOOM_BOUNDS.min,
         maxZoom: ZOOM_BOUNDS.max,
         zoomControl: false,
@@ -410,7 +414,11 @@ export function Scene3Map({ concerts, onVenueNavigate, pendingVenueFocus, onVenu
   useEffect(() => {
     if (mapInstanceRef.current) {
       const view = REGION_VIEWS[selectedRegion]
-      mapInstanceRef.current.flyTo(view.center, view.zoom, {
+      // Use wider zoom on mobile for "All" region to show both coasts
+      const isMobile = window.innerWidth < 768
+      const zoom = selectedRegion === 'all' && isMobile ? 3.5 : view.zoom
+
+      mapInstanceRef.current.flyTo(view.center, zoom, {
         duration: 1.5,
       })
     }

@@ -104,7 +104,7 @@ export function ConcertHistoryPanel({
             </h2>
             <button
               onClick={handleCopyLink}
-              className="mt-1.5 text-white/40 hover:text-white/90 transition-colors duration-150 flex-shrink-0"
+              className="text-white/40 hover:text-white/90 transition-colors duration-150 flex-shrink-0 p-3 -m-3 min-w-[44px] min-h-[44px] flex items-center justify-center touchable-subtle"
               aria-label={`Copy link to ${artist.name}`}
               title="Copy link"
             >

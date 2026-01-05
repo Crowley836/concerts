@@ -29,6 +29,17 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [focusedNode, setFocusedNode] = useState<string>('All Genres')
   const [expandedGenre, setExpandedGenre] = useState<string | null>(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Detect mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768 || 'ontouchstart' in window)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   // Build hierarchical genre data with zoom-in effect
   const genreHierarchy = useMemo((): GenreNode => {
@@ -373,6 +384,20 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         _event.stopPropagation()
         haptics.light() // Haptic feedback on segment tap
 
+        // On mobile, provide visual feedback on click since touchstart/touchend might not fire reliably
+        if (isMobile) {
+          const currentPath = d3.select(this)
+          currentPath
+            .transition()
+            .duration(100)
+            .attr('fill-opacity', 1)
+            .attr('stroke-width', 4)
+            .transition()
+            .duration(200)
+            .attr('fill-opacity', 0.9)
+            .attr('stroke-width', 3)
+        }
+
         // NEW ZOOM LOGIC:
         // - Depth 1 nodes are either genres (in default view) or a focused genre (in zoomed view)
         // - Depth 2 nodes are either artists (zoomed into genre) or small genres (zoomed into "Other")
@@ -405,6 +430,9 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         }
       })
       .on('mouseover', function(event, d) {
+        // Skip hover effects on mobile - only use tap
+        if (isMobile) return
+
         const currentPath = d3.select(this)
 
         // Dramatic expansion (removed .raise() to prevent z-index issues)
@@ -464,6 +492,9 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           .style('opacity', 1)
       })
       .on('mouseleave', function(_event, d) {
+        // Skip hover effects on mobile - only use tap
+        if (isMobile) return
+
         const currentPath = d3.select(this)
         const angle = d.x1 - d.x0
 
@@ -618,11 +649,17 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
 
     const totalGenres = genreHierarchy.children?.length || 0
 
+    // Responsive font sizing based on viewport width
+    const viewportWidth = window.innerWidth
+    const centerCountSize = Math.max(36, Math.min(56, viewportWidth * 0.12))
+    const centerLabelSize = Math.max(11, Math.min(13, viewportWidth * 0.03))
+    const centerGenreSize = Math.max(9, Math.min(11, viewportWidth * 0.025))
+
     centerText.append('text')
       .attr('class', 'center-count')
       .attr('text-anchor', 'middle')
       .attr('dy', '-0.2em')
-      .attr('font-size', '56px')
+      .attr('font-size', `${centerCountSize}px`)
       .attr('font-weight', '400')
       .attr('fill', '#1f2937')
       .attr('font-family', 'Playfair Display, Georgia, serif')
@@ -632,7 +669,7 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
       .attr('class', 'center-label')
       .attr('text-anchor', 'middle')
       .attr('dy', '1.8em')
-      .attr('font-size', '13px')
+      .attr('font-size', `${centerLabelSize}px`)
       .attr('font-weight', '500')
       .attr('fill', '#6b7280')
       .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
@@ -644,7 +681,7 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
       .attr('class', 'center-genre')
       .attr('text-anchor', 'middle')
       .attr('dy', '3.4em')
-      .attr('font-size', '11px')
+      .attr('font-size', `${centerGenreSize}px`)
       .attr('font-weight', '400')
       .attr('fill', '#9ca3af')
       .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
@@ -660,7 +697,7 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
     return () => {
       window.removeEventListener('resize', renderSunburst)
     }
-  }, [genreHierarchy, concerts, expandedGenre]) // Rebuild when hierarchy changes
+  }, [genreHierarchy, concerts, expandedGenre, isMobile]) // Rebuild when hierarchy or mobile state changes
 
   // Separate effect to update visuals when focus changes
   useEffect(() => {
@@ -736,12 +773,12 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="absolute top-20 left-0 right-0 z-20 text-center px-8"
+        className="absolute top-16 md:top-20 left-0 right-0 z-20 text-center px-4 md:px-8"
       >
-        <h2 className="font-serif text-5xl md:text-7xl text-gray-900 mb-3 tracking-tight">
+        <h2 className="font-serif text-4xl md:text-7xl text-gray-900 mb-2 md:mb-3 tracking-tight">
           The Music
         </h2>
-        <p className="font-sans text-lg md:text-xl text-gray-500">
+        <p className="font-sans text-base md:text-xl text-gray-500">
           {focusedNode === 'All Genres'
             ? 'A diverse sonic journey'
             : `Exploring ${focusedNode}`
@@ -760,7 +797,7 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
             setFocusedNode('All Genres')
             setExpandedGenre(null)
           }}
-          className="absolute top-32 right-8 z-20 px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-900 border border-gray-300 rounded-lg font-sans text-sm font-medium hover:bg-white transition-all duration-200 shadow-sm min-h-[44px] touchable-no-scale"
+          className="absolute top-24 md:top-32 right-4 md:right-8 z-20 px-4 md:px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-900 border border-gray-300 rounded-lg font-sans text-sm font-medium hover:bg-white transition-all duration-200 shadow-sm min-h-[44px] touchable-no-scale"
         >
           Reset View
         </motion.button>
@@ -779,8 +816,8 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
           ref={svgRef}
           className="pointer-events-auto"
           style={{
-            width: 'min(85vw, 85vh)',
-            height: 'min(85vw, 85vh)',
+            width: isMobile ? 'min(95vw, 85vh)' : 'min(85vw, 75vh)',
+            height: isMobile ? 'min(95vw, 85vh)' : 'min(85vw, 75vh)',
             maxWidth: '800px',
             maxHeight: '800px'
           }}
@@ -793,9 +830,9 @@ export function Scene5Genres({ concerts }: Scene5GenresProps) {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="absolute bottom-20 left-0 right-0 z-20 text-center"
+        className="absolute bottom-16 md:bottom-20 left-0 right-0 z-20 text-center px-4"
       >
-        <p className="font-sans text-xs text-gray-500 font-medium uppercase tracking-widest">
+        <p className="font-sans text-sm md:text-xs text-gray-500 font-medium uppercase tracking-widest">
           {expandedGenre
             ? 'Tap inner ring to zoom out · Tap outer segments to drill deeper'
             : 'Tap to zoom into a genre'
