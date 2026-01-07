@@ -52,7 +52,7 @@ interface Scene3MapProps {
   onVenueFocusComplete?: () => void
 }
 
-type Region = 'all' | 'california' | 'dc'
+type Region = 'all'
 
 const ZOOM_BOUNDS = {
   min: 3.5, // Mobile: wider view to show both coasts
@@ -64,18 +64,6 @@ const REGION_VIEWS: Record<Region, { center: [number, number]; zoom: number; lab
     center: [39.8283, -98.5795],
     zoom: 4,
     label: 'All',
-  },
-  california: {
-    center: [33.8, -118.0], // LA area center
-    zoom: 9, // Much tighter zoom
-    label: 'California',
-    filter: (c) => c.state === 'California' || c.state === 'CA' || c.city === 'Tijuana' // Include Tijuana (border city)
-  },
-  dc: {
-    center: [39.00, -77.03], // Moved north to include Silver Spring area
-    zoom: 10.5, // Slightly wider to show full metro area
-    label: 'DC Area',
-    filter: (c) => ['Virginia', 'VA', 'Maryland', 'MD', 'District of Columbia', 'DC'].includes(c.state)
   },
 }
 
@@ -625,11 +613,10 @@ export function Scene3Map({ concerts, onVenueNavigate, pendingVenueFocus, onVenu
                 haptics.light() // Haptic feedback on region change
                 setSelectedRegion(region)
               }}
-              className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] touchable-no-scale ${
-                selectedRegion === region
+              className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] touchable-no-scale ${selectedRegion === region
                   ? 'bg-indigo-600 text-white'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
-              }`}
+                }`}
             >
               {REGION_VIEWS[region].label}
             </button>

@@ -97,10 +97,10 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
     // Mobile-only: Custom scale function for visual hierarchy
     const sizeScale = isMobile
       ? ((count: number) => {
-          if (count <= 2) return 3 // Tiny dots for sparse years
-          // Scale 3+ concerts from 8-20px
-          return 8 + Math.sqrt((count - 3) / (maxConcerts - 3)) * 12
-        })
+        if (count <= 2) return 3 // Tiny dots for sparse years
+        // Scale 3+ concerts from 8-20px
+        return 8 + Math.sqrt((count - 3) / (maxConcerts - 3)) * 12
+      })
       : d3.scaleSqrt().domain([0, maxConcerts]).range([4, 16])
 
     // Minimum touch target size (44px / 2 = 22px radius)
@@ -248,7 +248,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       // Add mouse interactions only to significant dots
       if (isSignificant) {
         touchTarget
-          .on('mouseenter', function() {
+          .on('mouseenter', function () {
             // Don't trigger mouse events during touch
             if (isTouchingRef.current) return
 
@@ -262,7 +262,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
 
             animateDotEnter()
           })
-          .on('mouseleave', function() {
+          .on('mouseleave', function () {
             // Don't trigger mouse events during touch
             if (isTouchingRef.current) return
 
@@ -293,7 +293,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
 
     // Add touch event handlers to SVG
     svg
-      .on('touchstart', function(event: TouchEvent) {
+      .on('touchstart', function (event: TouchEvent) {
         isTouchingRef.current = true
         // Don't prevent default on touchstart - let the browser handle scrolling
         // unless we're touching a dot
@@ -331,7 +331,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           }
         }
       })
-      .on('touchmove', function(event: TouchEvent) {
+      .on('touchmove', function (event: TouchEvent) {
         if (!isTouchingRef.current) return
 
         const touch = event.touches[0]
@@ -393,7 +393,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           })
         }
       })
-      .on('touchend', function() {
+      .on('touchend', function () {
         isTouchingRef.current = false
 
         // Reset animation on last touched dot
@@ -415,7 +415,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
         // Hide preview
         handleMouseLeave()
       })
-      .on('touchcancel', function() {
+      .on('touchcancel', function () {
         // Handle touch cancel same as touch end
         isTouchingRef.current = false
 
@@ -461,7 +461,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           className="text-center mb-12"
         >
           <h1 className="font-serif text-5xl md:text-7xl text-gray-900 mb-4 tracking-tight">
-            Concert Archive
+            CrowleysAltar
           </h1>
           <p className="font-sans text-lg md:text-xl text-gray-500">
             {totalConcerts} shows across {yearSpan}

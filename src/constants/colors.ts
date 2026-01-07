@@ -14,14 +14,34 @@ export const GENRE_COLORS: Record<string, string> = {
   'Classic Rock': '#92400e',    // Dark brown leather (vintage, worn) - CHANGED for differentiation
   'Jazz': '#4338ca',            // Rich indigo (smoky, sophisticated) - CHANGED from midnight
   'Reggae': '#16a34a',          // Vibrant green (roots, earth) - CHANGED to brighter green
-  'Metal': '#18181b',           // Near-black (heavy, dark) - CHANGED to true dark
-  'Hip Hop': '#ea580c',         // Bright orange (street, bold) - CHANGED for visibility
-  'R&B/Soul': '#7c3aed',        // Electric purple (smooth, rich) - CHANGED to violet-purple
-  'Folk/Country': '#a16207',    // Golden brown (acoustic, earthy) - SWAPPED with Funk
-  'Funk': '#d97706',            // Rich gold (groove, 70s) - CHANGED to brighter gold
+
+  // Expanded Metal & Rock Palette (Vibrant)
+  'Metal': '#64748b',           // Slate (generic metal)
+  'Thrash Metal': '#ef4444',    // Bright Red (aggressive)
+  'Death Metal': '#b91c1c',     // Blood Red (intense)
+  'Black Metal': '#1f2937',     // Dark Grey (grim)
+  'Heavy Metal': '#9333ea',     // Electric Purple (classic)
+  'Nu Metal': '#84cc16',        // Lime Green (toxic/modern)
+  'Industrial Metal': '#f97316',// Bright Orange (mechanical)
+  'Doom Metal': '#4c1d95',      // Deep Purple (slow/heavy)
+  'Groove Metal': '#d97706',    // Amber (rhythmic)
+  'Progressive Metal': '#06b6d4', // Cyan (technical)
+  'Sludge Metal': '#78350f',    // Deep Brown (murky)
+  'Metalcore': '#db2777',       // Pink (modern aggressive)
+  'Grindcore': '#be123c',       // Dark Rose (fast/violent)
+  'Stoner Metal': '#15803d',    // Green (hazy)
+
+  'Hard Rock': '#e11d48',       // Rose Red (energetic)
+  'Rock': '#2563eb',            // Royal Blue (classic)
+  'Blues Rock': '#1d4ed8',      // Blue (bluesy)
+
+  'Hip Hop': '#ea580c',         // Bright orange (street, bold)
+  'R&B/Soul': '#7c3aed',        // Electric purple (smooth, rich)
+  'Folk/Country': '#a16207',    // Golden brown (acoustic, earthy)
+  'Funk': '#ca8a04',            // Yellow Gold (groove)
   'Blues': '#1e3a8a',           // Deep blue (soulful, late night) - SWAPPED with New Wave
   'World': '#14b8a6',           // Bright teal (global, oceanic) - CHANGED to more vibrant
-  'Experimental': '#a855f7',    // Bright purple (weird, avant-garde) - CHANGED for visibility
+  'Experimental': '#d8b4fe',    // Lavender (weird)
   'Post Punk': '#be123c',       // Deep rose red (dark, angular) - NEW
   'Rockabilly': '#78350f',      // Dark tobacco brown (vintage, retro) - NEW
   'Other': '#6b7280',           // Medium gray (neutral bucket) - CHANGED for better visibility

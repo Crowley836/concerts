@@ -5,6 +5,7 @@ import { Scene1Hero } from './components/scenes/Scene1Hero'
 import { Scene3Map } from './components/scenes/Scene3Map'
 import { Scene4Bands } from './components/scenes/Scene4Bands'
 import { Scene5Genres } from './components/scenes/Scene5Genres'
+import { Scene6Festivals } from './components/scenes/Scene6Festivals'
 import { ArtistScene } from './components/scenes/ArtistScene/ArtistScene'
 import { SceneNavigation } from './components/SceneNavigation'
 import { ChangelogPage, ChangelogToast, ChangelogRSS } from './components/changelog'
@@ -82,7 +83,7 @@ function MainScenes() {
       const scrollPosition = scrollContainer.scrollTop
       const windowHeight = window.innerHeight
       const sceneIndex = Math.round(scrollPosition / windowHeight) + 1
-      setCurrentScene(Math.min(Math.max(sceneIndex, 1), 5))
+      setCurrentScene(Math.min(Math.max(sceneIndex, 1), 6))
     }
 
     scrollContainer.addEventListener('scroll', handleScroll, { passive: true })
@@ -191,7 +192,10 @@ function MainScenes() {
           onVenueFocusComplete={() => setPendingMapVenueFocus(null)}
         />
 
-        {/* Scene 4: Genres (sunburst) */}
+        {/* Scene 6: Festivals (Now 4) */}
+        <Scene6Festivals concerts={concerts} />
+
+        {/* Scene 4: Genres (sunburst) (Now 5) */}
         <Scene5Genres concerts={concerts} />
 
         {/* Scene 5: Artists (album mosaic) */}
@@ -200,6 +204,8 @@ function MainScenes() {
           pendingArtistFocus={pendingArtistFocus}
           onArtistFocusComplete={() => setPendingArtistFocus(null)}
         />
+
+
       </div>
 
       {/* Scene Navigation */}

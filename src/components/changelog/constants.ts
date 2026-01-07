@@ -125,14 +125,15 @@ export const SCENE_MAP: Record<string, number> = {
   timeline: 1,
   venues: 2,
   geography: 3,
-  genres: 4,
-  artists: 5,
+  festivals: 4,
+  genres: 5,
+  artists: 6,
 }
 
 /**
  * Scene names array (index 0 = scene 1)
  */
-export const SCENE_NAMES = ['timeline', 'venues', 'geography', 'genres', 'artists']
+export const SCENE_NAMES = ['timeline', 'venues', 'geography', 'festivals', 'genres', 'artists']
 
 /**
  * Get scene number from scene name

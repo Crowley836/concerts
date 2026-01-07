@@ -330,12 +330,13 @@ async function main(options: { forceRefresh?: boolean } = {}) {
     }
   }
 
-  // Build map of existing cache entries using composite key (concertId:artistName)
+  // Build map of existing cache entries using composite key (date:artistName)
+  // This allows us to "rescue" the cache even if concert IDs change (e.g. integer to stable ID)
   const existingEntries = new Map<string, SetlistCacheEntry>()
   if (existingCache && !forceRefresh) {
     for (const entry of existingCache.entries) {
-      // Use composite key to support multiple artists per concert
-      const cacheKey = `${entry.concertId}:${entry.artistName}`
+      // Use date+artist key which survives ID changes
+      const cacheKey = `${entry.date}:${entry.artistName}`
       existingEntries.set(cacheKey, entry)
     }
   }
@@ -385,12 +386,17 @@ async function main(options: { forceRefresh?: boolean } = {}) {
     const artistType = isHeadliner ? '🎤' : '🎸'
 
     // Build cache key for this specific artist at this concert
-    const cacheKey = `${concert.id}:${artistName}`
+    // Look up by date+artist to find existing data regardless of ID changes
+    const cacheKey = `${concert.date}:${artistName}`
 
     // Check if we already have this in cache
     const existing = existingEntries.get(cacheKey)
     if (existing && existing.setlist !== null) {
       // We have a valid cached setlist - reuse it
+      // IMPORTANT: Update the concertId to match the current (stable) ID
+      // This migrates old integer IDs (concert-1) to new stable IDs (1994-pink-floyd)
+      existing.concertId = concert.id
+
       cacheEntries.push(existing)
       cacheHitCount++
       console.log(`${progress} ${artistType} ✓ ${artistName} at ${concert.venue} (cached)`)

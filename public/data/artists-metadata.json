@@ -2143,5 +2143,1448 @@
     "website": "www.bellbivdevoe.com",
     "source": "theaudiodb",
     "fetchedAt": "2026-01-05T06:13:47.446Z"
+  },
+  "pink-floyd": {
+    "name": "Pink Floyd",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/uhsmur1713812514.jpg",
+    "bio": "Pink Floyd were an English rock band that achieved international success with their progressive and psychedelic rock music marked by the use of philosophical lyrics, sonic experimentation, and elaborate live shows. One of the most commercially successful and influential rock groups in the history of popular music, they have sold over 250 million records worldwide, including 74.5 million certified units in the United States. They were inducted into the US Rock and Roll Hall of Fame in 1996, and t",
+    "genres": [
+      "Progressive Rock",
+      "Rock/Pop"
+    ],
+    "formed": "1965",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:27.809Z"
+  },
+  "collective-soul": {
+    "name": "Collective Soul",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/sxywpy1341520784.jpg",
+    "bio": "Hailing from the city of Atlanta, Georgia, Collective Soul shot to international fame with their 1993 release Hints, Allegations and Things Left Unsaid, and their mega #1 hit \"Shine.\" The album was a collection of Ed Roland’s demos that spread quickly through the college underground circuit and caught fire, going on to achieve Double-Platinum status. After having been invited to the 25th Anniversary Woodstock concert, Collective Soul went into the studio to record their sophomore follow up. The ",
+    "genres": [
+      "Rock"
+    ],
+    "formed": "1992",
+    "website": "www.collectivesoul.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:28.166Z"
+  },
+  "candlebox": {
+    "name": "Candlebox",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/a4tedh1759436693.jpg",
+    "bio": "Candlebox is an American alternative rock band from Seattle, Washington. Since its formation in 1990, the group has released five studio albums, which have achieved multi-platinum and gold certification, as well as numerous charting singles, a compilation, and a CD+DVD.\n\nCandlebox was the first successful act on Madonna's Maverick Records, which went on to sign Alanis Morissette, Deftones and The Prodigy. They found immediate success with the release of their self-titled debut album in July 1993",
+    "genres": [
+      "Grunge",
+      "Rock/Pop"
+    ],
+    "formed": "1990",
+    "website": "www.candleboxrocks.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:28.668Z"
+  },
+  "slayer": {
+    "name": "Slayer",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/slayer-4fb3b42a28c10.jpg",
+    "bio": "Slayer was an American thrash metal band from Huntington Park, California. The band was formed in 1981 by guitarists Kerry King and Jeff Hanneman, drummer Dave Lombardo and bassist/vocalist Tom Araya. Slayer's fast and aggressive musical style made them one of the \"big four\" bands of thrash metal, alongside Metallica, Megadeth, and Anthrax. Slayer's final lineup comprised Araya, King, drummer Paul Bostaph (who replaced Lombardo in 1992 and again in 2013) and guitarist Gary Holt (who replaced Han",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1981",
+    "website": "www.slayer.net/us/home",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:29.202Z"
+  },
+  "marilyn-manson": {
+    "name": "Marilyn Manson",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/rutyxy1340838546.jpg",
+    "bio": "Marilyn Manson is an American rock band from Fort Lauderdale, Florida. Formed in 1989 by Marilyn Manson and Daisy Berkowitz, the group was originally named Marilyn Manson & the Spooky Kids with their uniquely theatrical performances gathering a local cult following in the early 1990s. This attention subsequently developed into a worldwide fanbase. The band's lineup has changed between many of their album releases. The current members of Marilyn Manson are the eponymous lead singer, guitarist Twi",
+    "genres": [
+      "Industrial Metal",
+      "Metal"
+    ],
+    "formed": "1989",
+    "website": "www.marilynmanson.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:29.674Z"
+  },
+  "ozzy-osbourne": {
+    "name": "Ozzy Osbourne",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/osbourne-ozzy-4fd0a787e0707.jpg",
+    "bio": "John Michael \"Ozzy\" Osbourne (born 3 December 1948) is an English heavy metal vocalist and songwriter, whose musical career has spanned over 40 years. Osbourne rose to prominence as lead singer of the pioneering English band Black Sabbath, whose dark and hard sound helped spawn the heavy metal genre. Due to Sabbath's dark style, Osbourne became known as the \"Prince of Darkness\". Osbourne is also known as the \"Godfather of Heavy Metal\".\n\nIn the early 2000s, Osbourne's career expanded when he beca",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "1968",
+    "website": "ozzy.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:30.188Z"
+  },
+  "crowbar": {
+    "name": "Crowbar",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/u5sl221738954974.jpg",
+    "bio": "Crowbar is an American sludge metal band from New Orleans, Louisiana, characterized by their extremely slow, low-keyed, heavy and brooding songs that also contain fast hardcore punk passages. Crowbar is considered to be one of the most influential metal bands to come out of the New Orleans metal scene. Their slow, heavy, and brooding style of metal is known to be influential in the sludge metal, doom metal, and stoner metal genres.",
+    "genres": [
+      "Sludge Metal",
+      "Metal"
+    ],
+    "formed": "1989",
+    "website": "www.crowbarmusic.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:30.684Z"
+  },
+  "neurosis": {
+    "name": "Neurosis",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wpptxu1344854334.jpg",
+    "bio": "Neurosis is an experimental metal band, based in Oakland, CA. Their unique sound draws from influences ranging from hardcore punk and doom metal to dark ambient, progressive rock and industrial music as well as incorporating elements of post-punk and folk music. The band is highly regarded as the primary pioneer of its genre, sometimes referred to as atmospheric sludge. Critic Brian Russ has described them as \"atmospheric hardcore\".\n\nIn late 1985, Scott Kelly, Dave Edwardson and Jason Roeder (fo",
+    "genres": [
+      "Post-Hardcore",
+      "Metal"
+    ],
+    "formed": "1985",
+    "website": "www.neurosis.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:31.175Z"
+  },
+  "coal-chamber": {
+    "name": "Coal Chamber",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wurwur1359150959.jpg",
+    "bio": "Coal Chamber is an American nu metal band formed in Los Angeles, California, in 1993. Prior to Coal Chamber, Dez Fafara and Meegs Rascón formed the band She's In Pain in 1992. The two decided to create Coal Chamber. They disbanded in 2003 after ten years together, but announced a reunion in September 2011. Their first drummer, Jon Tor, was eventually replaced by Mike Cox (who beat out his older brother for the spot). After bass guitarist Rayna Foss joined, the Coal Chamber lineup was complete.\n\n",
+    "genres": [
+      "Nu Metal",
+      "Metal"
+    ],
+    "formed": "1995",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:31.684Z"
+  },
+  "fear-factory": {
+    "name": "Fear Factory",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/zy9l0s1622627836.jpg",
+    "bio": "Fear Factory is an American industrial metal band that formed in 1989 and has released eight full-length albums. Over the course of their career they have evolved from a succession of styles, frequenting industrial metal with flavors of death metal, groove metal, and thrash metal. Fear Factory proved to be enormously influential on the metal scene in the mid- to late-1990s. Fear Factory disbanded in March 2002 following some internal disputes, but reformed later that year without founding member",
+    "genres": [
+      "Industrial Metal",
+      "Metal"
+    ],
+    "formed": "1989",
+    "website": "fearfactory.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:32.266Z"
+  },
+  "deicide": {
+    "name": "Deicide",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/deicide-5003af50b6bc3.jpg",
+    "bio": "Deicide is an American death metal band formed in 1987. Their first two albums, Deicide and Legion, are ranked second and third place in best-selling death metal albums of the SoundScan era. Deicide was formed in Tampa, Florida on July 21, 1987, after guitarist Brian Hoffman called Glen Benton, replying to an advertisement the latter had placed in a local music magazine. They are influenced by bands such as Destruction, Sodom, Venom, Bathory, Mayhem, Possessed, Death, Autopsy, and Slayer.The ban",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1987",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:32.685Z"
+  },
+  "pantera": {
+    "name": "Pantera",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/twxqwv1366802909.jpg",
+    "bio": "No band affected the metal world more so than Pantera during the early to mid-'90s. Beginning with its 1990 album Cowboys From Hell, the post-thrash band put to rest any and all remnants of the '80s metal scene, almost single-handedly demolishing any notion that hair metal, speed metal, power metal, et al., were anything but passé. Sure, a lot of critics point toward Nirvana's \"Smells Like Teen Spirit\" and the subsequent alternative rock explosion as the death knell of '80s-style metal, but you ",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "www.pantera.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:33.193Z"
+  },
+  "six-feet-under": {
+    "name": "Six Feet Under",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/trvqry1365743569.jpg",
+    "bio": "Six Feet Under is an American death metal band from Tampa, Florida, formed in 1993. The band was originally a side project by Cannibal Corpse vocalist Chris Barnes with guitarist Allen West of Obituary. They were joined by bassist Terry Butler (formerly of Massacre and Death) and drummer Greg Gall, Butler's brother-in-law.\n\nSix Feet Under have released ten albums, and are listed by Nielsen Soundscan as the fourth best-selling death metal act in the U.S., with album sales over 370,000(NOTE sales ",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1993",
+    "website": "www.sfu420.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:33.681Z"
+  },
+  "gwar": {
+    "name": "GWAR",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/xyxryt1359283014.jpg",
+    "bio": "Gwar is a satirical heavy metal band formed in Richmond, Virginia in 1984. The band is well known for its elaborate science fiction/horror film inspired costumes, obscene lyrics and graphic stage performances, which feature humorous enactments of politically and morally taboo themes.\n\n\"Eons ago, there existed an elite group of chaos warriors who ravaged the galaxy with a boundless hatred of all things alive. They were called the Scumdogs of the Universe, and they grew in might and fury, the grea",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1984",
+    "website": "www.gwar.net",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:34.177Z"
+  },
+  "superjoint-ritual": {
+    "name": "Superjoint Ritual",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/rxrvwu1360287956.jpg",
+    "bio": "Superjoint Ritual was an American heavy metal band formed by Phil Anselmo, Joe Fazzio, and Jimmy Bower in the early 1990s, later to be joined by Hank Williams III, and Kevin Bond. Their style can be considered a mix of Pantera's style of groove metal and hardcore punk. A small trace of black metal can be heard too. Bands like Venom, Slayer, Celtic Frost, Voivod, and Darkthrone have been noted as influences also. The name Superjoint Ritual comes from a lyric in the Darkthrone song \"The Pagan Wint",
+    "genres": [],
+    "formed": "1993",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:34.688Z"
+  },
+  "down": {
+    "name": "Down",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/txwuyw1359127697.jpg",
+    "bio": "Down is an American heavy metal supergroup that formed in 1991 in New Orleans, Louisiana. The band's current lineup consists of vocalist Phil Anselmo, guitarist Pepper Keenan, guitarist Kirk Windstein, bassist Pat Bruders and drummer Jimmy Bower. Since their formation, Down has gone on hiatus twice. To date, Down has released three studio albums, NOLA (1995), Down II: A Bustle in Your Hedgerow (2002), and Down III: Over the Under (2007). Since 2008, the band has been working on new material, whi",
+    "genres": [
+      "Metal",
+      "Rock/Pop"
+    ],
+    "formed": "1991",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:35.185Z"
+  },
+  "soulfly": {
+    "name": "Soulfly",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/soulfly-500839fa3b158.jpg",
+    "bio": "Soulfly is a metal band formed in 1997 based in Phoenix, Arizona. The original lyrical content revolved around spirituality and religious themes, with later albums encompassing other themes including war, violence, aggression, hatred and anger. Soulfly is led by former Sepultura frontman Max Cavalera, who formed the band after he left the Brazilian group in 1996. The band has released eight studio albums, one tour EP, several singles, and one DVD video. Their eighth album Enslaved was released o",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1997",
+    "website": "www.soulflyweb.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:35.683Z"
+  },
+  "dying-fetus": {
+    "name": "Dying Fetus",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/r2q3o91701966190.jpg",
+    "bio": "Dying Fetus is an American death metal band originally from Upper Marlboro, Maryland. Formed in 1991, the group is known for their consistently hook-laden song structures, characterized by blast beats, complex riffing and hardcore-style breakdowns. Additionally, their reality-based lyrics characterized by political/modern themes are notable in death metal. Various line-up changes throughout the years have left John Gallagher the remaining original member, as well as the band's driving force.",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:36.212Z"
+  },
+  "morbid-angel": {
+    "name": "Morbid Angel",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/morbid-angel-5012d25d53365.jpg",
+    "bio": "Morbid Angel is an American death metal band based in Tampa, Florida. UK music magazine Terrorizer ranked Morbid Angel's 1989 debut Altars of Madness first in its list \"Top 40 greatest death metal albums\". Decibel Magazine also rated guitarist Trey Azagthoth as the number one \"death metal guitarist ever\". The band′s songs are complex in arrangement, owing to the considerable technical skills of both Azagthoth and drummer Pete Sandoval, who also played in the grindcore band Terrorizer. According ",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1984",
+    "website": "www.morbidangel.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:36.699Z"
+  },
+  "suffocation": {
+    "name": "Suffocation",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/3qgbvf1617911005.jpg",
+    "bio": "Suffocation is an American death metal band that was formed in 1988 in Long Island, New York. The band comprises vocalist Frank Mullen, guitarists Terrance Hobbs and Guy Marchais, drummer Dave Culross and bassist Derek Boyer. Suffocation rose to prominence of death metal and created a blueprint for the genre for the 1990s with their 1991 debut album Effigy of the Forgotten. Suffocation have released seven studio albums as of 2013.\n\nThe band's raw death metal style uses guttural vocals with a dow",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:37.192Z"
+  },
+  "machine-head": {
+    "name": "Machine Head",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ko2s091745334190.jpg",
+    "bio": "Machine Head is an American heavy metal band from Oakland, California. Formed on October 12, 1991, the group was founded by Robb Flynn and Adam Duce. There have been 4 member changes since their inception. The current lineup of the band comprises Flynn (vocals, guitar), Duce (bass), ex-Vio-Lence guitarist Phil Demmel (guitar), and Dave McClain (drums). Machine Head is one of the pioneering bands in the New Wave of American Heavy Metal.\nMachine Head was formed by member Robb Flynn, previously par",
+    "genres": [
+      "Alternative Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "www.machinehead1.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:37.686Z"
+  },
+  "black-sabbath": {
+    "name": "Black Sabbath",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/bue9rg1674179059.jpg",
+    "bio": "Black Sabbath were an English rock band formed in Birmingham in 1968 by guitarist Tony Iommi, drummer Bill Ward, bassist Geezer Butler and vocalist Ozzy Osbourne. They are often cited as pioneers of heavy metal music. The band helped define the genre with releases such as Black Sabbath (1970), Paranoid (1970) and Master of Reality (1971). The band had multiple line-up changes following Osbourne's departure in 1979 and Iommi is the only constant member throughout their history.\n\nAfter previous it",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "1969",
+    "website": "www.blacksabbath.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:38.197Z"
+  },
+  "cannibal-corpse": {
+    "name": "Cannibal Corpse",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wvwpst1366194458.jpg",
+    "bio": "Cannibal Corpse is an American death metal band from Buffalo, New York. Formed in 1988, the band has released twelve studio albums, one box set, and one live album. Throughout the years the band has been established, they have had little radio or television exposure, although a cult following began to build behind the group with the release of albums such as 1991's Butchered at Birth and 1992's Tomb of the Mutilated which both reached over one million in worldwide sales by 2003, including 558,92",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1988",
+    "website": "www.cannibalcorpse.net",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:38.710Z"
+  },
+  "corrosion-of-conformity": {
+    "name": "Corrosion of Conformity",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wpqrut1366271040.jpg",
+    "bio": "C.O.C. started out as a punk band. The members were all teenagers during its original formation in 1981. On their later releases, they became a crossover/thrash metal band, and then turned into their modern sound, blending heavy metal with southern rock and Blues.\n\nC.O.C. has been on hiatus many times, mostly due to the members concentrating on their own projects. Their last hiatus took place from 2006 to 2010. They have not released an official statement regarding Pepper's status in the band. T",
+    "genres": [
+      "Sludge Metal",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:39.196Z"
+  },
+  "soilent-green": {
+    "name": "Soilent Green",
+    "image": "https://r2.theaudiodb.com/images/media/artist/logo/soilent-green-4fd8a99287735.png",
+    "bio": "Founded in 1988 Soilent Green is a sludge/grindcore/death metal band hailing from New Orleans, Louisiana.  The band's debut album wasn't released until 1995, when Pussysoul came out on Dwell Records. The following four albums were released by relapse records, until they signed with Metal Blade Records for their 2008 album, Inevitable Collapse In The Presence Of Conviction.  The band have had their share of tribulations, even violence. On 26 April 2004, bassist Scott Williams was killed in an app",
+    "genres": [],
+    "formed": "1988",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:40.693Z"
+  },
+  "alice-in-chains": {
+    "name": "Alice in Chains",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/hl80nu1759312876.jpg",
+    "bio": "Alice in Chains (often abbreviated as AIC) is an American rock band from Seattle, Washington, formed in 1987 by guitarist and vocalist Jerry Cantrell and drummer Sean Kinney, who later recruited bassist Mike Starr and lead vocalist Layne Staley.Starr was replaced by Mike Inez in 1993. William DuVall joined the band in 2006 as co-lead vocalist and rhythm guitarist, replacing Staley, who died in 2002. The band took its name from Staley's previous group, the glam metal band Alice N' Chains.\n\nOften ",
+    "genres": [
+      "Alternative Metal",
+      "Rock/Pop"
+    ],
+    "formed": "1987",
+    "website": "aliceinchains.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:41.204Z"
+  },
+  "necrophagist": {
+    "name": "Necrophagist",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/yupwus1371168718.jpg",
+    "bio": "Necrophagist was founded in early 1992 in Karlsruhe, Germany to integrate the fury of grinding, fast death metal with technical music. In April 2008, Necrophagist announced that Romain Goulon would be joining the band as their new drummer, replacing Minnemann, who would still be working with Muhammed Suiçmez on a side project. The band is writing a new, yet untitled album. Muhammed Suiçmez stated that the band would be using seven-string guitars on the album. Muhammed Suiçmez himself will be rec",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1992",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:43.205Z"
+  },
+  "amon-amarth": {
+    "name": "Amon Amarth",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/amon-amarth-4fda0b940272d.jpg",
+    "bio": "Amon Amarth is a melodic death metal band from Tumba, Sweden founded in 1992. It takes its name from the Sindarin name of Mount Doom, a volcano in J. R. R. Tolkien′s Middle-earth. Their lyrics mostly deal with the Vikings, their mythology and their history. The band comprises vocalist Johan Hegg, guitarists Olavi Mikkonen and Johan Söderberg, bassist Ted Lundström and drummer Fredrik Andersson. Amon Amarth has released eight studio albums, one EP, one DVD, and seven music videos.",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1992",
+    "website": "www.amonamarth.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:43.701Z"
+  },
+  "clutch": {
+    "name": "Clutch",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/clutch-4fae7c9b92107.jpg",
+    "bio": "Clutch is an American rock band from Germantown, Maryland. Since its formation in 1991, the band line-up has included Tim Sult (lead guitar), Dan Maines (bass), Jean-Paul Gaster (drums), and Neil Fallon (vocals, rhythm guitar, keyboards). To date, Clutch has released thirteen studio albums, and several rarities and live albums. Since 2008, the band has been signed to their own record label, Weathermaker Music.",
+    "genres": [
+      "Hard Rock",
+      "Rock/Pop"
+    ],
+    "formed": "1990",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:44.205Z"
+  },
+  "kingdom-of-sorrow": {
+    "name": "Kingdom of Sorrow",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/duyoy91611654519.jpg",
+    "bio": "Boasting a line up that includes members of such influential metal bands as Hatebreed, Down, Crowbar, and more, Kingdom of Sorrow has arrived to stake its claim as the band that lives up to its super group status.  The seeds of Kingdom of Sorrow were sown over a decade ago when a 16 year old Hatebreed front man (and avid Crowbar fan) Jamey Jasta introduced himself to Down / Crowbar guitarist Kirk Windstein at a show at Pearl Street in Northampton, Massachusetts.   A short time later Jasta, who a",
+    "genres": [
+      "Hardcore"
+    ],
+    "formed": "2005",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:44.709Z"
+  },
+  "testament": {
+    "name": "Testament",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/6kgcen1709457751.jpg",
+    "bio": "Testament is an American thrash metal band from Berkeley, California. Formed in 1983 under the name Legacy, the band's current lineup comprises guitarists Eric Peterson and Alex Skolnick, lead vocalist Chuck Billy, drummer Gene Hoglan, and bassist Steve Di Giorgio. Testament has experienced many lineup changes over the years, with Peterson being the only remaining original member, though they have since been rejoined by one of its songwriters Skolnick, who was out of the band from 1992 to 2005. ",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1983",
+    "website": "www.testamentlegions.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:45.214Z"
+  },
+  "carcass": {
+    "name": "Carcass",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/xrtvsp1488484514.jpg",
+    "bio": "Carcass are an English extreme metal band from Liverpool that was formed in 1986. The band have gone through several line-up changes, leaving guitarist Bill Steer and bassist and vocalist Jeff Walker as the only constant members. They broke up in 1996, but reformed in 2007 without one of its original members, drummer Ken Owen, due to health reasons. To date, the band have released six studio albums, two compilation albums, four EPs, two demo albums, one video album, and six music videos.\n\nCarcas",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1985",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:46.714Z"
+  },
+  "vital-remains": {
+    "name": "Vital Remains",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wytyyu1368967547.jpg",
+    "bio": "Vital Remains is a death metal band hailing from Providence, Rhode Island in 1989. Originally comprised of guitarists Paul Flynn and Tony Lazaro, vocalist Jeff Gruslin, bassist Tom Supkow, and drummer Chris Dupont, the group has been through several line-up changes and record labels over the years. A pair of demos (1989's \"Reduced to Ashes\" and 1990's \"Excruciating Pain\") led to a contract with French label Thrash Records, who in turn released \"The Black Mass\" in 1991.  A pair of releases follow",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1989",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:47.223Z"
+  },
+  "misery-index": {
+    "name": "Misery Index",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/misery-index-514c532bdecdf.jpg",
+    "bio": "Misery Index is an American death metal band formed in 2001 in Baltimore, Maryland by Jason Netherton (bass, vocals), Mike Harrison (guitar, vocals) and Kevin Talley (drums). Some say the band is named after Assück’s last album of the same name (1996), however the socio-political theme featured in many of the lyrics also point towards the economic term (both increasing inflation and unemployment result in the rise of the misery index). As of 2010, its line-up consists of Jason Netherton (bass, v",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "2001",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:47.714Z"
+  },
+  "alex-skolnick-trio": {
+    "name": "Alex Skolnick Trio",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/alex-skolnick-trio-53610079c1260.jpg",
+    "bio": "The Alex Skolnick Trio is an American jazz music trio comprising the guitarist Alex Skolnick, Matt Zebroski on drums, and Nathan Peck on bass. Previously, John Davis played bass for the group. The Trio is known for its inventive jazz take on hard rock and heavy metal \"standards\". Alex Skolnick himself is a member of thrash metal band Testament.",
+    "genres": [],
+    "formed": "2001",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:48.716Z"
+  },
+  "hank-3": {
+    "name": "Hank Williams III",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qvyrqs1572079369.jpg",
+    "bio": "Shelton Hank Williams, also known as Hank Williams III and Hank 3 (born December 12, 1972), is an American musician, singer and multi-instrumentalist. The instruments he can play include guitar, bass, drums, and vocals. In addition to his honky tonk recordings, Williams' style alternates between country, punk and metal. He is the principal member of the punk metal band Assjack, the drummer for the Southern hardcore punk band Arson Anthem, and was the bassist for Pantera singer Phil Anselmo's ban",
+    "genres": [
+      "Country",
+      "Country"
+    ],
+    "formed": "1991",
+    "website": "hank3.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:49.214Z"
+  },
+  "satyricon": {
+    "name": "Satyricon",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/satyricon-4faf1323211e6.jpg",
+    "bio": "Satyricon are a Norwegian black metal band, formed in 1990 in Oslo. The band currently consist of core long-term members Satyr and Frost. Satyricon were the first black metal band to join a multi-national record label (EMI).\n\nThe band were formed in 1990 as Eczema by the bassist Wargod and drummer Exhurtum. In 1991, they decided to start playing black metal, so the name was changed to Satyricon. Satyr (Sigurd Wongraven) then joined the band. After the first demo All Evil, Exhurtum was kicked out",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:50.224Z"
+  },
+  "god-dethroned": {
+    "name": "God Dethroned",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ytqtwp1368024651.jpg",
+    "bio": "God Dethroned was a death metal band from the Netherlands. The band was formed in 1991 by singer and guitar player Henri Sattler, with Hans Leegstra (guitar) and Ard de Weerd. Sattler and Leegstra had previously been in Dysentery; Leegstra, quickly after the band formed, left the music scene altogether. Sattler announced that 2011 will be the last year of the band and their final show will be in December, but they performed at 70000 Tons of Metal-festival in January 2012, after which they offici",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "www.goddethroned.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:50.726Z"
+  },
+  "eyehategod": {
+    "name": "Eyehategod",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/rvvqyu1389869990.jpg",
+    "bio": "Eyehategod (also abbreviated and referred to as EHG) is an American sludge band from New Orleans, Louisiana, which formed in 1988. The band is known for their dark, sludgy riffs combined with equally dark lyrics. Like many sludge metal bands, Eyehategod’s sound is influenced by doom metal, as well as hardcore punk.\n\nEyehategod have noted Melvins, Black Flag, Saint Vitus, Swans, Flipper and Black Sabbath as key influences to their sound. This, combined with heavy, detuned, and bluesy riffs domina",
+    "genres": [
+      "Sludge Metal"
+    ],
+    "formed": "1988",
+    "website": "https://eyehategod.ee",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:51.223Z"
+  },
+  "nile": {
+    "name": "Nile",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ytpuyq1342047610.jpg",
+    "bio": "Nile is an American technical death metal band from Greenville, South Carolina, formed in 1993. Their music and lyrics are inspired by Ancient Egyptian/Near Eastern mysticism, history, religion, and art, as well as stories by H. P. \n\nNile formed in their hometown of Greenville in 1993. With their self-proclaimed trademark of \"Ithyphallic metal,\" Karl Sanders (guitar/vocals), Chief Spires (bass/vocals), and Pete Hammoura (drums) debuted with their Festivals of Atonement EP in 1995, leading Nile t",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1993",
+    "website": "https://www.nile-official.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:51.716Z"
+  },
+  "goatwhore": {
+    "name": "Goatwhore",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/goatwhore-506cda77bc37c.jpg",
+    "bio": "Goatwhore is a blackened death metal band from the swamps of New Orleans, LA. They were formed by well known musicians from the Louisiana metal scene. They first came together in 1996/97 when Sammy Duet (former Acid Bath/Crowbar guitarist) and Zak Nolan (former drummer of Goatwhore, now replaced by Zack Simmons) jammed together as a little sideproject when Acid Bath was taking a break. They soon made some four track demos. When Acid Bath fell apart in 1997 (due to the loss of bassist Audie Pitre",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1997",
+    "website": "www.goatwhore.net",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:52.229Z"
+  },
+  "megadeth": {
+    "name": "Megadeth",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/tusqxr1549701229.jpg",
+    "bio": "Megadeth is an American thrash/heavy metal band from Los Angeles, California which was formed in 1983 by Dave Mustaine and Dave Ellefson, after Mustaine's expulsion from Metallica. The band has since released 13 studio albums. A pioneer of the American thrash metal movement, Megadeth rose to international fame in the 1980s and was ranked as one of the \"Big Four of Thrash\" along with Metallica, Slayer and Anthrax, who were responsible for creating, developing and popularizing the thrash metal sub",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1983",
+    "website": "www.megadeth.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:52.732Z"
+  },
+  "mastodon": {
+    "name": "Mastodon",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/tptptv1342458859.jpg",
+    "bio": "Mastodon is an American Progressive Metal band from Atlanta, Georgia, formed in early 2000 and composed of bassist/vocalist Troy Sanders, guitarist/vocalist Brent Hinds, guitarist Bill Kelliher and drummer/vocalist Brann Dailor. Many of their songs feature heavy and unique instrumentation with a mix of clean vocals and harsh screams. They have released five full-length albums to date, with their latest album, 2011's The Hunter, debuting at No. 10 on The Billboard 200 chart.\nMastodon was formed o",
+    "genres": [
+      "Progressive Metal",
+      "Metal"
+    ],
+    "formed": "1999",
+    "website": "www.mastodonrocks.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:53.229Z"
+  },
+  "grave": {
+    "name": "Grave",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/51k3dx1696184375.jpg",
+    "bio": "Grave is a Swedish death metal band that was formed in 1986 by vocalist and guitarist Ola Lindgren who is their only constant member. The band had particular success in the early 1990s, and their first four albums, Into the Grave, You'll Never See..., Soulless and Hating Life, cemented their reputation as one of Sweden's foremost death metal bands. Grave went on hiatus in 1997, but got back together two years later. Since then, they have released seven more albums, making a total of eleven studi",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1988",
+    "website": "www.grave.se",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:55.233Z"
+  },
+  "immolation": {
+    "name": "Immolation",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/immolation-500fd58e7d322.jpg",
+    "bio": "Immolation is a death metal band from Yonkers, New York. They were formed in 1986 as Rigor Mortis. The name was changed to Immolation in late 1987, between the “Warriors of Doom” demo which was done as Rigor Mortis and “Demo I” which was done as Immolation. The band recorded 4 songs on the “Demo II” 1989 sessions, but only 3 were finally released: “Internal decadence”, “Burial Ground” and “Despondent Souls”. The remaining song is “Infectious Blood” (later re-named “Fall in Disease” on the “Dawn ",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1986",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:55.739Z"
+  },
+  "cavalera-conspiracy": {
+    "name": "Cavalera Conspiracy",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/3dztjj1714546783.jpg",
+    "bio": "All begins on August 17, 2006, when brothers Max and Igor Cavalera were reunited for the first time in 10 years at the 10th annual D-Low Memorial at the Marquee Theatre in Tempe, AZ. Igor joined Soulfly on drums for renditions of the Sepultura classics \"Attitude\" and \"Roots Bloody Roots\". After this show they decided to form a new band.\n\nCavalera Conspiracy marks the reunion of the Cavalera brothers after 12 years and is the first time they have made music together since the infamous Sepultura b",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "2007",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:56.237Z"
+  },
+  "judas-priest": {
+    "name": "Judas Priest",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ysqvqp1366309271.jpg",
+    "bio": "Judas Priest are a British heavy metal band formed in Birmingham, England in 1969. Known for twin lead guitars, a wide operatic vocal style, and for introducing the S&M leather-and-studs look into heavy metal, they have sold over 50 million albums worldwide.\nAfter an early career as a secondary act dogged by unsympathetic producers and lineup changes, the band found considerable commercial success in the 1980s. In 1989, they were named as defendants in an unsuccessful lawsuit alleging that subli",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "1969",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:56.739Z"
+  },
+  "kreator": {
+    "name": "Kreator",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/kreator-4ff030da1fe6b.jpg",
+    "bio": "Kreator is a thrash metal band from Essen, Germany, formed in 1982 with no name, but decided on Tormentor in 1984. They originally performed a speed metal style with Venom influences. Their style of music is similar to their compatriots Destruction and Sodom, the other two big German thrash metal bands. All three of these bands are often credited with helping pioneer death metal, by containing several elements of what was to become the genre. Kreator's work began in the vein of pure thrash metal",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "www.kreator-terrorzone.de",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:58.246Z"
+  },
+  "shadows-fall": {
+    "name": "Shadows Fall",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/shadows-fall-4fef026a1f090.jpg",
+    "bio": "Shadows Fall is an American heavy metal band from Boston, Massachusetts, formed in 1996. Although Shadows Fall has experienced several line-up changes, for most of its recording career, Shadows Fall has been composed of Jon Donais (lead guitar, backing vocals), Matt Bachand (rhythm guitar, clean vocals), Paul Romanko (bass), Brian Fair (lead vocals), and Jason Bittner (drums).\nShadows Fall has released seven studio albums, two compilation albums, and two DVDs. The band's first album featured Phi",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "1995",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:58.743Z"
+  },
+  "hatebreed": {
+    "name": "Hatebreed",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/hatebreed-4fb06970cfb61.jpg",
+    "bio": "Hatebreed is a metallic hardcore band from Bridgeport and New Haven, Connecticut. The band was founded in November 1994 by Jamey Jasta, Dave Russo, Larry Dwyer, and Chris Beattie. Hatebreed’s sound can be classified as metallic hardcore, they are influenced by death and groove metal and their sound has heavily influenced many modern metalcore, hardcore and crossover bands.\n\nThey began by recording a three song demo and selling it to locals. Those three songs would eventually be released on a spl",
+    "genres": [
+      "Metalcore",
+      "Metal"
+    ],
+    "formed": "1995",
+    "website": "hatebreed.com/home",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:38:59.764Z"
+  },
+  "hate-eternal": {
+    "name": "Hate Eternal",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/hate-eternal-500eb0901922a.jpg",
+    "bio": "They were formed in 1997, while founder/frontman Erik Rutan was touring and recording as guitarist for death metal legends, Morbid Angel. The group’s original line-up included bassist and co-vocalist Jared Anderson, drummer Tim Yeung, and guitarist Doug Cerrito of the band Suffocation.\n\n In 2002, drummer Derek Roddy (formerly of Nile, Divine Empire, and Malevolent Creation) replaced Tim Yeung, and the band set forth to record their second album, King of All Kings as a trio with Erik, Jared and D",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1997",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:00.247Z"
+  },
+  "melvins": {
+    "name": "Melvins",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vqrpqw1358071923.jpg",
+    "bio": "The Melvins are an American band that formed in 1983. They usually perform as a trio, but in recent years have performed as a four piece with two drummers. Since 1984, singer and guitarist Buzz Osborne (also known as King Buzzo) and drummer Dale Crover have been the band's ongoing members. The band was named after a supervisor at a Thriftway in Montesano, Washington, where Osborne also worked as a clerk. \"Melvin\" was despised by other employees, and the band's members felt it to be an appropriat",
+    "genres": [
+      "Sludge Metal",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "www.melvins.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:01.248Z"
+  },
+  "high-on-fire": {
+    "name": "High on Fire",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/rtvpsu1352770401.jpg",
+    "bio": "High on Fire is a stoner metal band from Oakland, California, that was formed in 1998. Matt Pike, the band's frontman and founder, also plays guitar for the influential stoner doom band Sleep.\nHigh On Fire was founded in 1998 by former Sleep guitarist Matt Pike, drummer Des Kensel, and bassist George Rice (from Dear Deceased, who originally auditioned to be the band's vocalist). The band's first full-length album The Art of Self Defense was released on 12th Records, and released later on Man's R",
+    "genres": [
+      "Sludge Metal",
+      "Metal"
+    ],
+    "formed": "1998",
+    "website": "www.highonfire.net",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:02.257Z"
+  },
+  "king-buzzo": {
+    "name": "King Buzzo",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/0kz6qs1604703455.jpg",
+    "bio": "Roger \"Buzz\" Osborne, also known as King Buzzo (born March 25, 1964), is an American guitarist, vocalist and songwriter. He is a founding member of the Melvins, as well as Fantômas and Venomous Concept.\n\nBiography\nBorn in Morton, Washington, Osborne moved to Montesano at the age of 12 and first started listening to the music of Aerosmith and Ted Nugent, then became greatly interested in punk rock after a few years. In the early 1980s Osborne founded the Melvins with Matt Lukin and Mike Dillard w",
+    "genres": [
+      "Grunge",
+      "Metal"
+    ],
+    "formed": "1983",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:03.260Z"
+  },
+  "king-diamond": {
+    "name": "King Diamond",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/r78qti1611653473.jpg",
+    "bio": "The band was launched with the single \"No Presents for Christmas\", in 1985. It was followed by the album Fatal Portrait, which featured the guitar talents of Andy LaRocque, who would become King Diamond's longest running collaborator. In 1987, the band released Abigail, which is often considered his best solo work. The album tells the tale of an 18th-century house that is inherited by a young couple who soon discover its dark secrets. Abigail was followed by \"Them\" and its sequel Conspiracy, whi",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "1985",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:03.761Z"
+  },
+  "mayhem": {
+    "name": "Mayhem",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/mayhem-4fdf3bbbbfee3.jpg",
+    "bio": "Mayhem are a Norwegian black metal band formed in 1984 in Oslo long regarded as one of the pioneers of the Norwegian black metal scene. Mayhem's career has been highly controversial, primarily due to their violent stage performances, the 1991 suicide of vocalist Per Yngve Ohlin (\"Dead\") and 1993 murder of guitarist Øystein Aarseth (\"Euronymous\") by former member Varg Vikernes (\"Count Grishnackh\"), also of Burzum.\n \nThe group released a demo and an EP that were highly influential, and amassed a l",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1984",
+    "website": "www.thetruemayhem.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:04.782Z"
+  },
+  "napalm-death": {
+    "name": "Napalm Death",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vwquvs1365002518.jpg",
+    "bio": "Napalm Death are an extreme metal band formed in Birmingham, England in 1981. While none of its original members remain in the group, the lineup of vocalist Mark \"Barney\" Greenway, bassist Shane Embury, guitarist Mitch Harris and drummer Danny Herrera has remained consistent for most of the band's career.\nNapalm Death are credited with defining the grindcore genre by incorporating elements of hardcore punk and death metal, short songs, fast tempos, deep guttural vocals and sociopolitical lyrics.",
+    "genres": [
+      "Grindcore",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "www.napalmdeath.org",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:05.260Z"
+  },
+  "at-the-gates": {
+    "name": "At the Gates",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qvqqsx1358835218.jpg",
+    "bio": "At the Gates is a Swedish death metal band from Gothenburg, formed in 1990. The band was a major progenitor of Gothenburg-style melodic death metal. Prior to their first disbandment in 1996, At the Gates released four albums, ending with and including Slaughter of the Soul (1995), which has been seen as a landmark in the mid-1990s Swedish death metal scene. After reuniting for a one-off tour in 2008, the band reformed once again in 2011, and they have since released three more albums: At War wit",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "www.atthegates.se",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:06.768Z"
+  },
+  "vastum": {
+    "name": "Vastum",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/xuy3g81699464377.jpg",
+    "bio": "Vastum is an American death metal band, formed in 2009 in San Francisco, California. The current line-up of the band consists of bassist Luca Indrio, guitarist and vocalist Leila Abdul-Rauf, vocalist Daniel Butler, drummer Adam Perry, and guitarist Shelby Lermo.\nThe band is noted for its lyrics, which deal with themes such as sexuality and eroticism, and are influenced by French writer Georges Bataille and psychoanalyst Jean Laplanche. Musically, the band's releases feature a death metal sound b",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "2009",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:07.777Z"
+  },
+  "belphegor": {
+    "name": "Belphegor",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/belphegor-4ffe66c5b4ffc.jpg",
+    "bio": "Belphegor is a black/death metal band from Salzburg, Austria. They originally formed in 1991 under the name Betrayer before changing their name in 1993. They are named after the demon Belphegor.",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1993",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:08.271Z"
+  },
+  "mortuary-drape": {
+    "name": "Mortuary Drape",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/7rviw11599128010.jpg",
+    "bio": "It's 1986 when Mortuary Drape are founded by the aim of the central core of three people, one of which is still in the group (Wildness Perversion). Musical and inspirational trends that inspired the founders are 'black metal' with an esoteric-necromantic current both for the lyrics and for the stage design impact: they decided to baptize their style as 'black-occult metal'.\n\nIn 1987 they publish 'Necromancy', the first demo tape that gets a great response in the most intransigent underground sce",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1986",
+    "website": "www.mortuary13drape.com/Default.aspx",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:08.778Z"
+  },
+  "taake": {
+    "name": "Taake",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/0g8yrj1690634602.jpg",
+    "bio": "Taake (Norwegian pronunciation: [ˈtoːkə]) is the solo vehicle of Ulvhedin Høst (Ørjan Stedjeberg), also known as Høst or Hoest. The band was formed in Norway (Bergen, Hordaland). During 1993, originally billed as Thule, Hoest proceeded to issue a brace of demos in 1993’s ‘Der Vinterstormene Rast’ and 1994’s ‘Omfarnet Av Svarte Vinger’ prior to adopting the new title of Taake. Billed as Taake, Hoest, together with Svartulv and Dim, the group cut the 1995 cassette ‘Manndaudsvinter’. A three track ",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1993",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:09.273Z"
+  },
+  "profanatica": {
+    "name": "Profanatica",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ika3371695414578.jpg",
+    "bio": "Profanatica is a black metal band from New York. They are one of the first black metal bands from the United States (alongside Von formed in 1987), and are among the major American black metal bands to have emerged early during the second wave of black metal. Under the direction of Paul Ledney, they have placed profound emphasis on blasphemous themes.",
+    "genres": [
+      "Black Metal"
+    ],
+    "formed": "1990",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:10.273Z"
+  },
+  "dragged-into-sunlight": {
+    "name": "Dragged Into Sunlight",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vswyws1569976621.jpg",
+    "bio": "Dragged Into Sunlight is a British extreme metal band formed in 2006. The band consists of four balaclava-wearing individuals who haven't disclosed their identity, and live they play with their backs to the audience, often accompanied by candles and a single stroboscope for lighting and large amounts of smoke. Their intense sound combines influences from all major extreme metal genres. Their debut album, Hatred for Mankind, was produced by the acclaimed Billy Anderson. Following the release of t",
+    "genres": [],
+    "formed": "2006",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:11.277Z"
+  },
+  "zakk-wylde": {
+    "name": "Zakk Wylde",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wylde-zakk-4fd0a7ebb22d5.jpg",
+    "bio": "Zachary Phillip \"Zakk\" Wylde (born Jeffrey Phillip Wielandt, January 14, 1967), is an American musician, songwriter, and occasional actor who is best known as the former guitarist for Ozzy Osbourne and founder of the heavy metal band Black Label Society. He was the lead guitarist and vocalist in Pride & Glory, who released one self-titled album in 1994 before disbanding. As a solo artist he released Book of Shadows in 1996.\n\nWylde was born in Bayonne, New Jersey. Wylde started playing the guitar",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "1994",
+    "website": "www.zakkwylde.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:11.772Z"
+  },
+  "william-elliott-whitmore": {
+    "name": "William Elliott Whitmore",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/zldoae1690628562.jpg",
+    "bio": "",
+    "genres": [
+      "Folk"
+    ],
+    "formed": "1978",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:12.268Z"
+  },
+  "marduk": {
+    "name": "Marduk",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/marduk-501135af94b90.jpg",
+    "bio": "Marduk is a black metal band from Norrköping, Sweden. The band formed in 1990 and released their first record in 1991. Their name is derived from the Babylonian god Marduk, patron deity of Babylon.",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "www.marduk.nu",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:12.778Z"
+  },
+  "brujeria": {
+    "name": "Brujería",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/73liji1694802124.jpg",
+    "bio": "Brujeria is an American extreme metal band formed in Los Angeles, California in 1989. Their name comes from the Spanish word for \"witchcraft\". Their songs, which are sung in Spanish, are focused on Satanism, anti-Christianity, sex, immigration, narcotics smuggling, and politics. Ironically, despite Spanish lyrics, portraying a Mexican image and with a heavy anti-American stance, the majority of the band's members are actually American-born, and with some being Swedish or British. Furthermore, th",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1989",
+    "website": "www.brujeria.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:13.278Z"
+  },
+  "armored-saint": {
+    "name": "Armored Saint",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/80tkya1625317625.jpg",
+    "bio": "Armored Saint is a heavy metal band originating from Los Angeles, California.\n\nArmored Saint was formed in 1982 by brothers Phil Sandoval (guitar) and Gonzo Sandoval (drums), and guitarist David Prichard, while attending South Pasadena High School. Next to join were singer John Bush also a South Pasadena High School Alumni and bassist Joey Vera. Gonzo Sandoval came up with the name after getting stoned with the other band members and seeing the film Excalibur at a theater in Monterey Park. Armor",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "www.armoredsaint.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:13.786Z"
+  },
+  "abbath": {
+    "name": "Abbath",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/tcq94e1730372502.jpg",
+    "bio": "Abbath (stylized as ABBATH) is a black metal band formed in 2015 by former Immortal guitarist and vocalist Abbath Doom Occulta after departing from Immortal earlier in 2015. The band released their first album, Abbath, on January 22, 2016, and played live for the first time at Tuska Open Air 2015.",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "2015",
+    "website": "www.abbath.net",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:14.290Z"
+  },
+  "cognitive": {
+    "name": "Cognitive",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/tw1q241716062636.jpg",
+    "bio": "​COGNITIVE was born in 2011 with the sole intent to create heavy, intensely technical music, while maintaining an edge of creativity that separates them from the over-produced sea of sub-genres. Hailing from South Jersey, combining technicality, guitar solos, grooves, and abstract ideas with song writing, COGNITIVE are continually pushing themselves to think outside of the box while maintaining a sheer brutal edge.",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "2011",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:14.783Z"
+  },
+  "shining": {
+    "name": "Shining",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/wptqsx1366464949.jpg",
+    "bio": "Shining is a Swedish black metal band originally formed back in 1996 by Niklas Kvarforth in the city Halmstad. Their lyrical themes are often based on depression, anger, suicide and angst, but also man’s immoral behavior. Their live performances often contain self-mutilation that they invite the audience to take part in. The band’s name does not refer to the book The Shining or the film based on it, but rather according to Kvarforth, it means “the path to enlightenment”.",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1996",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:15.281Z"
+  },
+  "metallica": {
+    "name": "Metallica",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qyuqvy1375623610.jpg",
+    "bio": "Metallica is an American heavy metal band formed in Los Angeles, California. Metallica was formed in 1981 when vocalist/guitarist James Hetfield responded to an advertisement posted by drummer Lars Ulrich in a local newspaper. The band's current line-up comprises founding members Hetfield and Ulrich, longtime lead guitarist Kirk Hammett and bassist Robert Trujillo. Lead guitarist Dave Mustaine and bassists Ron McGovney, Cliff Burton and Jason Newsted are former members of the band. Metallica col",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1981",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:15.792Z"
+  },
+  "the-obsessed": {
+    "name": "The Obsessed",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/36f2w71620983875.jpg",
+    "bio": "The Obsessed is a heavy metal band from Maryland led by Scott \"Wino\" Weinrich which combines elements of doom metal, stoner rock and punk rock. Formed in 1980, they recorded a few demos and played a handful of live shows until they first split up in 1986 when Weinrich joined as lead vocalist for Saint Vitus, but reformed four years later. After releasing three albums (including the one that was originally recorded in 1985), The Obsessed broke up for a second time in 1995. After briefly reuniting",
+    "genres": [
+      "Doom Metal"
+    ],
+    "formed": "1980",
+    "website": "https://www.theobsessedofficial.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:16.284Z"
+  },
+  "necrot": {
+    "name": "Necrot",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/q53xi81712947342.jpg",
+    "bio": "Death metal band from Oakland, California, USA. Founded in 2011. Necrot are as old-school death metal as old-school death metal gets.",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "2011",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:17.289Z"
+  },
+  "obituary": {
+    "name": "Obituary",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qnjvcf1672496788.jpg",
+    "bio": "Obituary is an American death metal band formed in 1984 in Tampa, Florida under the name Executioner, then changed the name's spelling to Xecutioner, and later changed their name to Obituary in 1988. The band comprises vocalist John Tardy, drummer Donald Tardy, guitarist Trevor Peres and bassist Terry Butler. The band is a fundamental act in the development of death metal music and one of the most successful death metal bands in the world.\nThe End Complete Has sold more than 550,000 copies in Wo",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1988",
+    "website": "www.obituary.cc",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:17.799Z"
+  },
+  "wolves-in-the-throne-room": {
+    "name": "Wolves in the Throne Room",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/p0l5t41622207663.jpg",
+    "bio": "Wolves in the Throne Room is a metal band which formed in Olympia, Washington, United States in 2004. The band currently consists of brothers Nathan Weaver (vocals, guitar) and Aaron Weaver (drums, other instruments). The band has released four albums, 2006’s “Diadem of 12 Stars”, 2007’s “Two Hunters”, 2009’s “Black Cascade” and 2011’s “Celestial Lineage”.",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "2004",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:18.795Z"
+  },
+  "primus": {
+    "name": "Primus",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/surwyu1387405121.jpg",
+    "bio": "Primus is an American rock band based in San Francisco, California, currently composed of bassist/vocalist Les Claypool, guitarist Larry \"Ler\" LaLonde and drummer Jay Lane. Primus originally formed in 1984 with Claypool and guitarist Todd Huth, later joined by Lane, though the latter two departed the band at the end of 1988. Featuring LaLonde and drummer Tim \"Herb\" Alexander, Primus recorded their debut, Suck on This in 1989, followed by four studio albums; Frizzle Fry, Sailing the Seas of Chees",
+    "genres": [
+      "Alternative Metal",
+      "Metal"
+    ],
+    "formed": "1984",
+    "website": "primusville.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:19.334Z"
+  },
+  "tim-barry": {
+    "name": "Tim Barry",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vvsrtq1510746291.jpg",
+    "bio": "Tim Barry is a solo folk singer who was the vocalist in the Richmond, VA melodic hardcore band Avail. He released an album titled \"Rivanna Junction\" on the label Suburban Home Records in the fourth quarter of 2006. In 2008, Tim recorded a album titled Manchester.  Recently he has recorded 28th & Stonewall, again on Suburban Home Records.",
+    "genres": [],
+    "formed": "0",
+    "website": "www.timbarryrva.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:19.799Z"
+  },
+  "watain": {
+    "name": "Watain",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/usulyw1713099746.jpg",
+    "bio": "Watain are a Swedish black metal band from Uppsala, formed in 1998. The band's name is taken from a recording by the American black metal group Von.",
+    "genres": [
+      "Black Metal",
+      "Rock/Pop"
+    ],
+    "formed": "1998",
+    "website": "www.templeofwatain.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:20.299Z"
+  },
+  "ministry": {
+    "name": "Ministry",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/c1eu7u1707559674.jpg",
+    "bio": "Ministry is an American industrial metal band founded by lead singer Al Jourgensen in 1981. Originally a new wave - synthpop outfit, Ministry changed its style to industrial metal in the late 1980s. Ministry found mainstream success in the early 1990s with its most successful album Psalm 69: The Way to Succeed and the Way to Suck Eggs (1992) and touring as part of the Lollapalooza festival.\n\nAfter 27 years of performing, Jourgensen decided to end the band in 2008, and since then stated that a re",
+    "genres": [
+      "Industrial Metal",
+      "Metal"
+    ],
+    "formed": "1981",
+    "website": "www.ministrymusic.org",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:20.806Z"
+  },
+  "demilich": {
+    "name": "Demilich",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vvvxqr1369374550.jpg",
+    "bio": "Demilich is a death metal band from Finland which formed in the early 1990s and currently consists of vocalist/guitarist Antti Boman, guitarist Aki Hytönen, bassist Jarkko Luomajoki and drummer Mikko Virnes.",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:21.302Z"
+  },
+  "aborted": {
+    "name": "Aborted",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/sqyupv1364516754.jpg",
+    "bio": "Aborted is a Belgian death metal band formed in Waregem, in 1995. The group comprises vocalist, founder, and only constant member since the band's inception, Sven de Caluwé, guitarists Danny Tunker and Mendel Bij De Leij, bassist J.B. Van Der Wal, and drummer Ken Bedene. The band members of Aborted are from Belgium, The Netherlands and the United States. Aborted has released six studio albums, two EPs and one live performance video album.\n\nAllmusic stated that Aborted \"had grown into the role of",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1995",
+    "website": "www.goremageddon.be",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:22.321Z"
+  },
+  "demolition-hammer": {
+    "name": "Demolition Hammer",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/tuqrsr1388512816.jpg",
+    "bio": "Demolition Hammer was a thrash metal band from the Bronx, New York. The band formed in 1986 and released three full-length albums between 1990 and 1994. Century Media Records made a complete anthology available in 2008.\n\nDemolition Hammer arrived on the East Coast thrash metal scene circa 1986. The original line-up consisted of Steve Reynolds as the vocalist and on bass, James Reilly on guitar, and John Salerno on drums. Their first demo tape, Skull Fracturing Nightmare, was released in 1988. It",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1986",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:22.812Z"
+  },
+  "paradise-lost": {
+    "name": "Paradise Lost",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/xtyyrv1363638882.jpg",
+    "bio": "More than three decades into their career, and with over two million albums sold, Paradise Lost remain the undisputed kings of metal’s dark side. Formed in Halifax in 1988, the band quickly became noted as the pioneers of gothic metal through their early groundbreaking albums like 1991’s aptly-titled Gothic, a mixture of heaviness intertwined with shadowy melody and atmosphere.\nNever a group to remain creatively static, across their career they’ve explored a myriad of avenues of dark music, from",
+    "genres": [
+      "Metal",
+      "Gothic"
+    ],
+    "formed": "1988",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:24.319Z"
+  },
+  "amorphis": {
+    "name": "Amorphis",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ywrupv1364947599.jpg",
+    "bio": "Amorphis is a Finnish progressive metal (formerly a melodic death metal band) band founded by Jan Rechberger, Tomi Koivusaari, and Esa Holopainen in 1990. Initially, the band was a death metal act, but on later albums they evolved into playing other genres, including heavy metal, progressive metal, and folk metal. They frequently use the Kalevala, the Epic Poem of Finland, as a source for their lyrics.",
+    "genres": [
+      "Progressive Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:24.811Z"
+  },
+  "behemoth": {
+    "name": "Behemoth",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/l5baak1643116588.jpg",
+    "bio": "Behemoth is a Polish blackened death metal band from Gdańsk, formed in 1991. They are considered to have played an important role in establishing the Polish extreme metal underground.\n\nUntil the late 1990s, the band played a traditional black metal style with heathen lyrical content, but soon changed to that of occult and thelemic themes written by their lead vocalist Nergal and Krzysztof Azarewicz. With the 1999 release of Satanica, the band demonstrated their presence in the death metal scene,",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "www.behemoth.pl/site",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:25.316Z"
+  },
+  "joe-bonamassa": {
+    "name": "Joe Bonamassa",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qswutu1415921224.jpg",
+    "bio": "He began his career playing guitar in the band Bloodline, which featured the offspring of several famous musicians (such as Miles Davis, Robby Krieger of The Doors, and Berry Oakley of The Allman Brothers Band). He released his first solo album A New Day Yesterday in 2000, and has since released nine more solo studio albums, four live albums and three live DVDs, along with two albums with the band Black Country Communion and one album in collaboration with vocalist Beth Hart. He tours the world ",
+    "genres": [
+      "Rock",
+      "Rock/Pop"
+    ],
+    "formed": null,
+    "website": "jbonamassa.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:26.315Z"
+  },
+  "dark-funeral": {
+    "name": "Dark Funeral",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vsqyxu1366802953.jpg",
+    "bio": "Dark Funeral is a black metal band from Stockholm, Sweden, founded by guitarists Blackmoon and Lord Ahriman in 1993. They are one of the bands to have emerged in Sweden during the Second wave of black metal.\n\nTheir lyrical themes have traditionally pertained to Satanism and anti-Christianity. Certain past and present members including Blackmoon, Ahriman, Caligula and Chaq Mol have each declared an affinity for Satanism, with Ahriman and Caligula notably being practitioners of LaVeyan Satanism. I",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1993",
+    "website": "www.darkfuneral.se",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:27.324Z"
+  },
+  "chris-stapleton": {
+    "name": "Chris Stapleton",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vttuyr1431612725.jpg",
+    "bio": "Christopher Alvin \"Chris\" Stapleton (born April 15, 1978 in Lexington, Kentucky) is an American country, bluegrass, and rock musician signed to Universal Music Group Nashville. He is an established songwriter. with four number one songs including the 5-week number one \"Never Wanted Nothing More\" recorded by Kenny Chesney, “Love's Gonna Make It Alright” recorded by George Strait and \"Come Back Song\" recorded by Darius Rucker. As a writer for Sea Gayle Music, over 150 of Stapleton's songs have app",
+    "genres": [
+      "BlueGrass",
+      "Country"
+    ],
+    "formed": "2000",
+    "website": "www.chrisstapleton.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:28.319Z"
+  },
+  "tab-benoit": {
+    "name": "Tab Benoit",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/benoit-tab-5267fc6871816.jpg",
+    "bio": "Tab Benoit (pronounced ben-wah) (born November 17, 1967, Baton Rouge, Louisiana) is an American blues guitarist, musician, and singer. His playing combines a number of blues styles, primarily Delta blues. He plays a Fender Telecaster Thinline electric guitar and writes his own musical compositions. Benoit graduated from Vandebilt Catholic High School in Houma, Louisiana in May 1985. In 2003, he formed \"Voice of the Wetlands,\" an organization promoting awareness of coastal wetlands preservation. ",
+    "genres": [],
+    "formed": null,
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:28.829Z"
+  },
+  "integrity": {
+    "name": "Integrity",
+    "image": "https://r2.theaudiodb.com/images/media/artist/logo/integrity-5aac7cd48ff32.png",
+    "bio": "The group originally formed in Cleveland, Ohio in 1988, but founding member Dwid relocated to Belgium in 2003. Their lyrical themes include religion, the supernatural, mental illness, individualism, and the occult. \n\nBand members:\nCurrent members \nDwid Hellion - vocals (1988-present), \nRob Orr - lead/rhythm guitar, bass, drums (2009-present), \nLive members \nAndrew Ransom - bass (2010-present), \nAlex \"The Beast\" Henderson - drums (2011-present), \nJon Pearcy - guitar (2011-present), \nFormer member",
+    "genres": [],
+    "formed": "1989",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:29.832Z"
+  },
+  "carnivore-a-d": {
+    "name": "Carnivore",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vuusxv1367829574.jpg",
+    "bio": "Carnivore was an American crossover thrash band from Brooklyn, New York by singer and bassist Peter Steele, and was formed out of the breakup of the Brooklyn metal group Fallout in 1982.\n\nCarnivore released their self-titled debut album Carnivore in January of 1985. For this album, the band spelled their names in what they thought were \"exotic\" ways. In September of 1987 they released their second album, Retaliation. Soon after their second album was released, the band broke up and Peter Steele ",
+    "genres": [
+      "Thrash Metal",
+      "Metal"
+    ],
+    "formed": "1982",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:30.831Z"
+  },
+  "ghost": {
+    "name": "Ghost",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/gnmu5f1622640483.jpg",
+    "bio": "Ghost, also formerly known as Ghost B.C. in the United States, is a Swedish rock band that was formed in Linköping in 2006. In 2010, they released a three-track demo followed by a 7-inch vinyl titled \"Elizabeth\", and later their debut full-length album Opus Eponymous. The song Ritual was chosen by Kerrang! as one of \"The 50 Most Evil Songs Ever.\" The Grammis-nominated album was widely praised and significantly increased their popularity. Their second album and major label debut, Infestissumam, w",
+    "genres": [
+      "Heavy Metal",
+      "Metal"
+    ],
+    "formed": "2008",
+    "website": "ghost-official.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:31.840Z"
+  },
+  "ulcerate": {
+    "name": "Ulcerate",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/bfpk6c1718375412.jpg",
+    "bio": "",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "2000",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:32.335Z"
+  },
+  "jackyl": {
+    "name": "Jackyl",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/jackyl-5117f99d6804d.jpg",
+    "bio": "Jackyl is an American rock band formed in 1987. Their sound has been described as hard rock, heavy metal and Southern metal.\n\nThe band is best known for its song \"The Lumberjack\", which features a chainsaw solo by lead singer Jesse James Dupree. On the recording, Dupree alternately revs the chainsaw's engine or uses the chain brake to slow the engine down to change the pitch. He also performs this stunt live and the number typically climaxes with Dupree slicing up a wooden stool onstage, smashin",
+    "genres": [
+      "Hard Rock",
+      "Rock/Pop"
+    ],
+    "formed": "1987",
+    "website": "jackyl.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:33.354Z"
+  },
+  "emperor": {
+    "name": "Emperor",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vxqrxv1364859740.jpg",
+    "bio": "Emperor is an influential Norwegian black metal band that represents a synth laden, progressive yet brutally aggressive and chaotic part of the genre, something quite different from the minimalism of other originators of the Norwegian black metal sound (e.g. Darkthrone). \n\nThe band was formed around the core members Samoth (Tomas Thormodsæter Haugen) and Ihsahn (Vegard Sverre Tveitan) of the death metal band Thou Shalt Suffer and bass player Mortiis (Håvard Ellefsen) in Notodden, Norway, 1991. \n",
+    "genres": [
+      "Black Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "www.emperorhorde.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:34.847Z"
+  },
+  "mortician": {
+    "name": "Mortician",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/yvsqtp1379301670.jpg",
+    "bio": "Mortician is a death metal/deathgrind two piece band from Yonkers, New York founded in 1989. They have released most of their albums since the House by the Cemetery EP on Relapse Records but have released their latest album on their own label, Mortician Records. They have toured several times through America and Europe. The band is heavily inspired by horror movies, which is expressed in the lyrics, the artwork and the use of samples throughout their discography.",
+    "genres": [
+      "Grindcore",
+      "Metal"
+    ],
+    "formed": "1989",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:35.847Z"
+  },
+  "acid-bath": {
+    "name": "Acid Bath",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/tsxvrv1348674090.jpg",
+    "bio": "Acid Bath was a seminal American sludge metal band from Houma, Louisiana that was active from 1991 to 1997. Acid Bath combined doom metal roots with influences from black metal, death metal, gothic rock, blues, folk, and country. In a Pit Magazine interview, vocalist Dax Riggs classified their sound as \"death rock\" (referring to death as a dominant lyrical theme, rather than deathrock), and also classified the band's music as a blending of stoner metal and doom metal. In another interview, guita",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:36.345Z"
+  },
+  "vader": {
+    "name": "Vader",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/vader-506b6c5af11c9.jpg",
+    "bio": "Vader is a death metal band from Olsztyn, Poland founded in 1983. They stand as one of the best-known European death metal bands utilizing a style of death metal different from that of their American counterparts, but their approach is firmly based upon the template created by Morbid Angel. For example, many bands of this genre tend to play guitar solos and lead parts which do not adhere strictly to traditional musical principles and make extensive use of tremolo bar, creating a rather dissonant",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1986",
+    "website": "www.vader.pl",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:37.343Z"
+  },
+  "krisiun": {
+    "name": "Krisiun",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qttwqt1368957558.jpg",
+    "bio": "Krisiun is a Brazilian death metal band, founded by Alex Camargo (bass, vocals), Moyses Kolesne (guitars), and Max Kolesne (drums). Since its formation, in 1990, the group recorded two demos, Evil Age in 1991, and Curse of the Evil One in 1992, and self-released an extended play (EP) titled Unmerciful Order in 1993. After signing with Dynamo Records (a Brazilian label), Krisiun released the debut full-length Black Force Domain in 1995, followed by Apocalyptic Revelation, in 1998. They signed wit",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1990",
+    "website": "www.krisiun.com.br",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-07T01:39:37.852Z"
+  },
+  "godbelow": {
+    "name": "Godbelow",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "1. Godbelow was a 90s metalcore band from Syracuse, New York.\n\n2. Godbelow is a post-black metal band from Mexico. Read more on Last.fm",
+    "genres": [
+      "hardcore",
+      "metalcore",
+      "90s",
+      "crossover",
+      "mexico"
+    ],
+    "url": "https://www.last.fm/music/Godbelow",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:16.430Z"
+  },
+  "death-to-all": {
+    "name": "Death To All",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Death To All is a touring band founded in 2012 by former Death members to pay tribute to their previous band. It features Gene Hoglan (Strapping Young Lad, Testament, Fear Factory, ...), Danny Walker (Intronaut, Bereft), Sean Reinert (Cynic), Steve DiGiorgio (Sadus, Testament, ...), Scott Clendenin, Paul Masvidal (Cynic), Shannon Hamm (Control Denied) and Bobby Koelble with singers Matt Harvey (Exhumed) and Charles Elliott (Abysmal Dawn, Bereft). Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Death+To+All",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:23.043Z"
+  },
+  "bls": {
+    "name": "bls",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": " Read more on Last.fm",
+    "genres": [
+      "underground hip-hop",
+      "Hip-Hop",
+      "badline syndicate",
+      "rap",
+      "Black Label Society"
+    ],
+    "url": "https://www.last.fm/music/bls",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:23.865Z"
+  },
+  "archgoat": {
+    "name": "Archgoat",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Archgoat is a Finnish black/death metal band formed in 1989 in Turku. Their initial period of activity was between 1989 and 1993, when they released two demos - \"Jesus Spawn \" and \"Penis Perversor \" - and an EP titled \"Angelcunt (Tales of Desecration) \". They split up until about 2005 when an old recording was released as the \"Angelslaying Black Fucking Metal \" EP. Since their reformation they have released: four full-length albums, \"Whore of Bethlehem \" in 2006 Read more on Last.fm",
+    "genres": [
+      "black metal",
+      "Blackened Death Metal",
+      "death metal",
+      "Finnish Black Metal",
+      "finnish"
+    ],
+    "url": "https://www.last.fm/music/Archgoat",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:24.883Z"
+  },
+  "wino": {
+    "name": "Wino",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Wino can refer to an American metal band, an American noise rock band, a Japanese alternative rock band, or a Louisiana awesome band.\n\n1) Wino is the name of the new band of Scott 'Wino' Weinrich of Saint Vitus, The Obsessed, Spirit Caravan and The Hidden Hand-fame.  They have released one album 'Punctuated Equilibrium' in 2009. Shortly after the supporting European tour in April Wino's bass player Jon Blank died of an overdose. The follow up to Punctuated Equilibrium Read more on Last.fm",
+    "genres": [
+      "doom metal",
+      "Stoner Rock",
+      "stoner metal",
+      "Doom",
+      "Traditional Doom Metal"
+    ],
+    "url": "https://www.last.fm/music/Wino",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:27.921Z"
+  },
+  "the-chasm": {
+    "name": "The Chasm",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "The Chasm came to be in December 1992, in Mexico City. Daniel Corchado left his old band Cenotaph to embark on a dark journey: the procreation of a unique form of obscure and bizarre Metal of Death. Corchado carried with him the inspiration of the ancient masters: Celtic Frost, Slayer, Black Sabbath, Sacrifice, Destruction and the pure essence of traditional heavy metal plus an infusion of more contemporary acts like Carnage, Winter, Autopsy, early Mayhem, and Dismember. Read more on Last.fm",
+    "genres": [
+      "death metal",
+      "progressive death metal",
+      "old school death metal",
+      "Technical Death Metal",
+      "mexican"
+    ],
+    "url": "https://www.last.fm/music/The+Chasm",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:28.185Z"
+  },
+  "full-of-hell": {
+    "name": "Full of Hell",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Full of Hell is a grindcore band formed in 2009 and based in Ocean City, Maryland and central Pennsylvania. Their sound is an amalgam of 90s grindcore/metalcore, sludge metal and noise; in addition, Full of Hell incorporates industrial and power electronics, which is usually interspersed throughout their relentless grinding death, although they have released a handful of power electronics-only recordings. They were signed to A389 Recordings, through which they released two full length albums Rea",
+    "genres": [
+      "powerviolence",
+      "hardcore",
+      "grindcore",
+      "Sludge",
+      "noise"
+    ],
+    "url": "https://www.last.fm/music/Full+of+Hell",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:28.724Z"
+  },
+  "matt-anderson": {
+    "name": "Matt Anderson",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "MATT ANDERSEN: Breaking Through, One Audience at a Time\n\nThe best performing songwriters, the ones who sound like they really mean what they’re singing about, tend to come from areas known for hard times and hard work. Like say, Perth-Andover, a rural blue-collar village in the Canadian Maritime province of New Brunswick—the home of acclaimed singer-songwriter and guitarist Matt Andersen.\n\n“Perth-Andover’s a really small, family-oriented community,” says Matt. Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Matt+Anderson",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:29.861Z"
+  },
+  "cerebral-rot": {
+    "name": "Cerebral Rot",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "There are a couple of bands named Cerebral Rot:\n\n1) Seattle reeking death metal formed in 2016. “Cessation of Life” demo released in 2018, Odious Descent into Decay, their first full-length record, was released in 2019 on 20 Buck Spin.\n\n2) Cerebral Rot is a TXDM band formed in Katy TX in 2005. They play a straight forward TX style Death Metal in the vein of Viral Load, Insidious Decrepancy, Grotesque Formation, Braced For Nails, Sect Of Execration,  Devourment(early), Infernal Dominion etc. Read",
+    "genres": [
+      "death metal",
+      "old school death metal",
+      "Brutal Death Metal",
+      "metal",
+      "new wave of old school death metal"
+    ],
+    "url": "https://www.last.fm/music/Cerebral+Rot",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:30.712Z"
+  },
+  "max-iggor-cavalera": {
+    "name": "Max & Iggor Cavalera",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Max+&+Iggor+Cavalera",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:32.353Z"
+  },
+  "dirtwire": {
+    "name": "Dirtwire",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "dirtwire sits on the back porch of Americana’s future, conjuring up a gris-gris of sound with an amalgamation of traditional instrumentation, world-beat percussion, and electronic soundscapes. Comprised of multi-instrumentalist David Satori (Beats Antique) and Evan Fraser (Hamsa Lila; Stallamara), each performance brings the audience to a mysterious crossroads at an imaginative and seductive moment in time. The result is a rebirth of Americana and beacon for a post-millennial return to downhome ",
+    "genres": [
+      "folk",
+      "electronic",
+      "experimental",
+      "instrumental",
+      "World Music"
+    ],
+    "url": "https://www.last.fm/music/Dirtwire",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:33.107Z"
+  },
+  "beheaded": {
+    "name": "Beheaded",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Beheaded is a brutal death metal band.\n\nThey formed back in 1991, with the sole intention of being one blistering death/grind act, Beheaded has breathed fire ever since. Set in Fgura, Malta, an island, in the middle of the Mediterranean Sea, the quintet stood firm, against all the odds, and confrontations such an environment generated. Beheaded toughened after each clash, and molded into a beast of tenacity and inhuman determination. \n\nFounded by Chris Brincat – drums and David Bugeja – guitars ",
+    "genres": [
+      "Brutal Death Metal",
+      "death metal",
+      "Technical Death Metal",
+      "maltese",
+      "Technical Brutal Death Metal"
+    ],
+    "url": "https://www.last.fm/music/Beheaded",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-07T02:10:35.677Z"
   }
 }

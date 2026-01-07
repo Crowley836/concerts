@@ -6,8 +6,9 @@ const scenes = [
   { id: 1, label: 'Timeline', color: 'bg-indigo-500' },
   { id: 2, label: 'Venues', color: 'bg-slate-600' },
   { id: 3, label: 'Map', color: 'bg-gray-800' },
-  { id: 4, label: 'Genres', color: 'bg-rose-500' },
-  { id: 5, label: 'Artists', color: 'bg-gray-400' },
+  { id: 4, label: 'Festivals', color: 'bg-purple-500' },
+  { id: 5, label: 'Genres', color: 'bg-rose-500' },
+  { id: 6, label: 'Artists', color: 'bg-gray-400' }, // Shifted to make room for Festivals
 ]
 
 export function SceneNavigation() {
@@ -82,11 +83,10 @@ export function SceneNavigation() {
           >
             {/* Dot - visually smaller but larger touch target */}
             <motion.div
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                activeScene === scene.id
-                  ? `${scene.color} scale-125`
-                  : 'bg-gray-400/50 group-hover:bg-gray-400 group-active:bg-gray-400'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${activeScene === scene.id
+                ? `${scene.color} scale-125`
+                : 'bg-gray-400/50 group-hover:bg-gray-400 group-active:bg-gray-400'
+                }`}
               animate={revealedLabel === scene.id ? { scale: 1.3 } : { scale: 1 }}
               transition={{ duration: 0.2 }}
             />

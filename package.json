@@ -1,5 +1,5 @@
 {
-  "name": "morperhaus-concerts",
+  "name": "crowleys-altar-concerts",
   "version": "2.0.0",
   "private": true,
   "type": "module",
@@ -9,6 +9,7 @@
     "build": "tsx scripts/generate-version.ts && tsc && vite build",
     "preview": "vite preview",
     "build-data": "tsx scripts/build-data.ts",
+    "import-csv": "tsx scripts/import-csv.ts",
     "fetch-sheet": "tsx scripts/fetch-google-sheet.ts",
     "enrich": "tsx scripts/enrich-artists.ts",
     "enrich-spotify": "tsx scripts/enrich-spotify-metadata.ts",

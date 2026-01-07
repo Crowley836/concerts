@@ -12,6 +12,7 @@ export interface Concert {
   state: string;
   cityState: string;
   reference?: string;
+  isFestival: boolean;
 
   // Parsed date fields
   year: number;

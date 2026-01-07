@@ -466,5 +466,503 @@
     "lng": -118.3895,
     "formattedAddress": "1700 S. Pacific Coast Hwy, Redondo Beach, CA 90277",
     "geocodedAt": "2026-01-05T05:45:00.000Z"
+  },
+  "carrier dome|syracuse|ny": {
+    "lat": 43.036233,
+    "lng": -76.1362931,
+    "formattedAddress": "Carrier Dome, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:50.918Z"
+  },
+  "vernon downs|vernon|ny": {
+    "lat": 43.0667873,
+    "lng": -75.52795499999999,
+    "formattedAddress": "Vernon Downs, Vernon, NY",
+    "geocodedAt": "2026-01-07T02:05:51.115Z"
+  },
+  "landmark theatre|syracuse|ny": {
+    "lat": 43.04737250000001,
+    "lng": -76.1525762,
+    "formattedAddress": "Landmark Theatre, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:51.313Z"
+  },
+  "harro east ballroom|rochester|ny": {
+    "lat": 43.1604263,
+    "lng": -77.6037566,
+    "formattedAddress": "Harro East Ballroom, Rochester, NY",
+    "geocodedAt": "2026-01-07T02:05:51.510Z"
+  },
+  "lost horizon|syracuse|ny": {
+    "lat": 43.0546386,
+    "lng": -76.0830593,
+    "formattedAddress": "Lost Horizon, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:51.727Z"
+  },
+  "war memorial auditorium|syracuse|ny": {
+    "lat": 43.0448,
+    "lng": -76.1482,
+    "formattedAddress": "War Memorial Auditorium, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:51.928Z"
+  },
+  "planet 505|syracuse|ny": {
+    "lat": 43.0413232,
+    "lng": -76.1190964,
+    "formattedAddress": "Planet 505, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:52.138Z"
+  },
+  "first union spectrum|philadelphia|pa": {
+    "lat": 39.9012015,
+    "lng": -75.17197949999999,
+    "formattedAddress": "First Union Spectrum, Philadelphia, PA",
+    "geocodedAt": "2026-01-07T02:05:52.322Z"
+  },
+  "the icon|buffalo|ny": {
+    "lat": 42.8890559,
+    "lng": -78.87051799999999,
+    "formattedAddress": "The Icon, Buffalo, NY",
+    "geocodedAt": "2026-01-07T02:05:52.524Z"
+  },
+  "trocadero theatre|philadelphia|pa": {
+    "lat": 39.9537813,
+    "lng": -75.1565409,
+    "formattedAddress": "Trocadero Theatre, Philadelphia, PA",
+    "geocodedAt": "2026-01-07T02:05:52.727Z"
+  },
+  "water street music hall|rochester|ny": {
+    "lat": 43.1605527,
+    "lng": -77.6116928,
+    "formattedAddress": "Water Street Music Hall, Rochester, NY",
+    "geocodedAt": "2026-01-07T02:05:52.871Z"
+  },
+  "the chance|poughkeepsie|ny": {
+    "lat": 41.702792,
+    "lng": -73.9244069,
+    "formattedAddress": "The Chance, Poughkeepsie, NY",
+    "geocodedAt": "2026-01-07T02:05:53.069Z"
+  },
+  "showplace theatre|buffalo|ny": {
+    "lat": 42.941089,
+    "lng": -78.8914594,
+    "formattedAddress": "Showplace Theatre, Buffalo, NY",
+    "geocodedAt": "2026-01-07T02:05:53.263Z"
+  },
+  "darien lake pac|darien center|ny": {
+    "lat": 42.9267942,
+    "lng": -78.37932169999999,
+    "formattedAddress": "Darien Lake PAC, Darien Center, NY",
+    "geocodedAt": "2026-01-07T02:05:53.381Z"
+  },
+  "ottobar|baltimore|md": {
+    "lat": 39.318881,
+    "lng": -76.61958179999999,
+    "formattedAddress": "Ottobar, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:53.525Z"
+  },
+  "thunderdome|baltimore|md": {
+    "lat": 39.2905023,
+    "lng": -76.6104072,
+    "formattedAddress": "Thunderdome, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:53.647Z"
+  },
+  "tla|philadelphia|pa": {
+    "lat": 39.9414026,
+    "lng": -75.14872059999999,
+    "formattedAddress": "TLA, Philadelphia, PA",
+    "geocodedAt": "2026-01-07T02:05:53.792Z"
+  },
+  "nissan pavilion|bristow|va": {
+    "lat": 38.7851679,
+    "lng": -77.5866573,
+    "formattedAddress": "Nissan Pavilion, Bristow, VA",
+    "geocodedAt": "2026-01-07T02:05:53.923Z"
+  },
+  "recher theatre|towson|md": {
+    "lat": 39.4009392,
+    "lng": -76.60210959999999,
+    "formattedAddress": "Recher Theatre, Towson, MD",
+    "geocodedAt": "2026-01-07T02:05:54.054Z"
+  },
+  "festival pier|philadelphia|pa": {
+    "lat": 39.9585136,
+    "lng": -75.1373301,
+    "formattedAddress": "Festival Pier, Philadelphia, PA",
+    "geocodedAt": "2026-01-07T02:05:54.194Z"
+  },
+  "sonar|baltimore|md": {
+    "lat": 39.2922465,
+    "lng": -76.6095586,
+    "formattedAddress": "Sonar, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:54.333Z"
+  },
+  "rams head live|baltimore|md": {
+    "lat": 39.2894444,
+    "lng": -76.6072222,
+    "formattedAddress": "Rams Head Live, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:54.472Z"
+  },
+  "jaxx|springfield|va": {
+    "lat": 38.7782724,
+    "lng": -77.2315315,
+    "formattedAddress": "Jaxx, Springfield, VA",
+    "geocodedAt": "2026-01-07T02:05:54.617Z"
+  },
+  "merriweather post pav.|columbia|md": {
+    "lat": 39.2088816,
+    "lng": -76.86269949999999,
+    "formattedAddress": "Merriweather Post Pav., Columbia, MD",
+    "geocodedAt": "2026-01-07T02:05:54.770Z"
+  },
+  "downtown|hagerstown|md": {
+    "lat": 39.6417629,
+    "lng": -77.71999319999999,
+    "formattedAddress": "Downtown, Hagerstown, MD",
+    "geocodedAt": "2026-01-07T02:05:54.898Z"
+  },
+  "9:30 club|washington|dc": {
+    "lat": 38.917948,
+    "lng": -77.0237227,
+    "formattedAddress": "9:30 Club, Washington, DC",
+    "geocodedAt": "2026-01-07T02:05:55.035Z"
+  },
+  "starland ballroom|sayreville|nj": {
+    "lat": 40.44041,
+    "lng": -74.355218,
+    "formattedAddress": "Starland Ballroom, Sayreville, NJ",
+    "geocodedAt": "2026-01-07T02:05:55.176Z"
+  },
+  "fletchers|baltimore|md": {
+    "lat": 39.2833154,
+    "lng": -76.5949607,
+    "formattedAddress": "Fletchers, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:55.303Z"
+  },
+  "spac|saratoga|ny": {
+    "lat": 43.055381,
+    "lng": -73.80593,
+    "formattedAddress": "SPAC, Saratoga, NY",
+    "geocodedAt": "2026-01-07T02:05:55.456Z"
+  },
+  "electric factory|philadelphia|pa": {
+    "lat": 39.95915979999999,
+    "lng": -75.1497116,
+    "formattedAddress": "Electric Factory, Philadelphia, PA",
+    "geocodedAt": "2026-01-07T02:05:55.583Z"
+  },
+  "sidebar|baltimore|md": {
+    "lat": 39.2905023,
+    "lng": -76.6104072,
+    "formattedAddress": "Sidebar, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:55.725Z"
+  },
+  "talking head|baltimore|md": {
+    "lat": 39.2905023,
+    "lng": -76.6104072,
+    "formattedAddress": "Talking Head, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:55.878Z"
+  },
+  "susquehanna bank center|camden|nj": {
+    "lat": 39.9404754,
+    "lng": -75.13001249999999,
+    "formattedAddress": "Susquehanna Bank Center, Camden, NJ",
+    "geocodedAt": "2026-01-07T02:05:56.044Z"
+  },
+  "ms nieuw amsterdam|fort lauderdale|fl": {
+    "lat": 26.2091278,
+    "lng": -80.1405577,
+    "formattedAddress": "ms Nieuw Amsterdam, Fort Lauderdale, FL",
+    "geocodedAt": "2026-01-07T02:05:56.183Z"
+  },
+  "montage music hall|rochester|ny": {
+    "lat": 43.1560851,
+    "lng": -77.6023304,
+    "formattedAddress": "Montage Music Hall, Rochester, NY",
+    "geocodedAt": "2026-01-07T02:05:56.329Z"
+  },
+  "gramercy theatre|new york city|ny": {
+    "lat": 40.7398753,
+    "lng": -73.9849625,
+    "formattedAddress": "Gramercy Theatre, New York City, NY",
+    "geocodedAt": "2026-01-07T02:05:56.488Z"
+  },
+  "main st. armory|rochester|ny": {
+    "lat": 43.161492,
+    "lng": -77.5880473,
+    "formattedAddress": "Main St. Armory, Rochester, NY",
+    "geocodedAt": "2026-01-07T02:05:56.642Z"
+  },
+  "westcott theater|syracuse|ny": {
+    "lat": 43.0410937,
+    "lng": -76.1196614,
+    "formattedAddress": "Westcott Theater, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:56.767Z"
+  },
+  "station 58|syracuse|ny": {
+    "lat": 43.0494832,
+    "lng": -76.14739770000001,
+    "formattedAddress": "Station 58, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:05:56.904Z"
+  },
+  "the palladium|worcester|ma": {
+    "lat": 42.266725,
+    "lng": -71.80065560000001,
+    "formattedAddress": "The Palladium, Worcester, MA",
+    "geocodedAt": "2026-01-07T02:05:57.042Z"
+  },
+  "soundstage|baltimore|md": {
+    "lat": 39.2876463,
+    "lng": -76.60706859999999,
+    "formattedAddress": "Soundstage, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:57.188Z"
+  },
+  "edison lot / soundstage|baltimore|md": {
+    "lat": 39.29585,
+    "lng": -76.6093571,
+    "formattedAddress": "Edison Lot / Soundstage, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:57.326Z"
+  },
+  "infest|austin|tx": {
+    "lat": 30.2675285,
+    "lng": -97.7454473,
+    "formattedAddress": "Infest, Austin, TX",
+    "geocodedAt": "2026-01-07T02:05:57.488Z"
+  },
+  "emo’s / antone’s|austin|tx": {
+    "lat": 30.2660457,
+    "lng": -97.7403947,
+    "formattedAddress": "Emo’s / Antone’s, Austin, TX",
+    "geocodedAt": "2026-01-07T02:05:57.660Z"
+  },
+  "metro gallery|baltimore|md": {
+    "lat": 39.3088425,
+    "lng": -76.6165858,
+    "formattedAddress": "Metro Gallery, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:57.808Z"
+  },
+  "water st. music hall|rochester|ny": {
+    "lat": 43.1605527,
+    "lng": -77.6116928,
+    "formattedAddress": "Water St. Music Hall, Rochester, NY",
+    "geocodedAt": "2026-01-07T02:05:57.938Z"
+  },
+  "siberia|new orleans|la": {
+    "lat": 29.9688892,
+    "lng": -90.0559387,
+    "formattedAddress": "Siberia, New Orleans, LA",
+    "geocodedAt": "2026-01-07T02:05:58.063Z"
+  },
+  "edison lot / rams head|baltimore|md": {
+    "lat": 39.29585,
+    "lng": -76.6093571,
+    "formattedAddress": "Edison Lot / Rams Head, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:58.196Z"
+  },
+  "empire (jaxx)|springfield|va": {
+    "lat": 38.7782724,
+    "lng": -77.2315315,
+    "formattedAddress": "Empire (Jaxx), Springfield, VA",
+    "geocodedAt": "2026-01-07T02:05:58.315Z"
+  },
+  "the fillmore|silver spring|md": {
+    "lat": 38.997449,
+    "lng": -77.027579,
+    "formattedAddress": "The Fillmore, Silver Spring, MD",
+    "geocodedAt": "2026-01-07T02:05:58.430Z"
+  },
+  "baltimore soundstage|baltimore|md": {
+    "lat": 39.2876463,
+    "lng": -76.60706859999999,
+    "formattedAddress": "Baltimore Soundstage, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:58.552Z"
+  },
+  "union transfer|philadelphia|pa": {
+    "lat": 39.96138759999999,
+    "lng": -75.1553236,
+    "formattedAddress": "Union Transfer, Philadelphia, PA",
+    "geocodedAt": "2026-01-07T02:05:58.696Z"
+  },
+  "pimlico race course|baltimore|md": {
+    "lat": 39.3532015,
+    "lng": -76.6731909,
+    "formattedAddress": "Pimlico Race Course, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:58.832Z"
+  },
+  "the pinch|washington|dc": {
+    "lat": 38.935853,
+    "lng": -77.03314689999999,
+    "formattedAddress": "The Pinch, Washington, DC",
+    "geocodedAt": "2026-01-07T02:05:58.959Z"
+  },
+  "carroll park|baltimore|md": {
+    "lat": 39.2789522,
+    "lng": -76.6429804,
+    "formattedAddress": "Carroll Park, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:59.076Z"
+  },
+  "club orpheus|baltimore|md": {
+    "lat": 39.2879179,
+    "lng": -76.6013852,
+    "formattedAddress": "Club Orpheus, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:59.213Z"
+  },
+  "bb&t pavilion|camden|nj": {
+    "lat": 39.9404754,
+    "lng": -75.13001249999999,
+    "formattedAddress": "BB&T Pavilion, Camden, NJ",
+    "geocodedAt": "2026-01-07T02:05:59.349Z"
+  },
+  "rock & roll hotel|washington|dc": {
+    "lat": 38.899994,
+    "lng": -76.986572,
+    "formattedAddress": "Rock & Roll Hotel, Washington, DC",
+    "geocodedAt": "2026-01-07T02:05:59.483Z"
+  },
+  "bossanova ballroom|portland|or": {
+    "lat": 45.52281000000001,
+    "lng": -122.6581342,
+    "formattedAddress": "Bossanova Ballroom, Portland, OR",
+    "geocodedAt": "2026-01-07T02:05:59.677Z"
+  },
+  "howard theatre|washington|dc": {
+    "lat": 38.9153738,
+    "lng": -77.0210891,
+    "formattedAddress": "Howard Theatre, Washington, DC",
+    "geocodedAt": "2026-01-07T02:05:59.799Z"
+  },
+  "sparta inn|baltimore|md": {
+    "lat": 39.2453315,
+    "lng": -76.45400819999999,
+    "formattedAddress": "Sparta Inn, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:05:59.952Z"
+  },
+  "m&t bank stadium|baltimore|md": {
+    "lat": 39.2778666,
+    "lng": -76.6229437,
+    "formattedAddress": "M&T Bank Stadium, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:06:00.141Z"
+  },
+  "the anthem|washington|dc": {
+    "lat": 38.8800674,
+    "lng": -77.0260611,
+    "formattedAddress": "The Anthem, Washington, DC",
+    "geocodedAt": "2026-01-07T02:06:00.296Z"
+  },
+  "jannus live|st. petersburg|fl": {
+    "lat": 27.7719257,
+    "lng": -82.636271,
+    "formattedAddress": "Jannus Live, St. Petersburg, FL",
+    "geocodedAt": "2026-01-07T02:06:00.430Z"
+  },
+  "rams head / soundstage|baltimore|md": {
+    "lat": 39.2876463,
+    "lng": -76.60706859999999,
+    "formattedAddress": "Rams Head / Soundstage, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:06:00.584Z"
+  },
+  "jiffy lube live|bristow|va": {
+    "lat": 38.7851679,
+    "lng": -77.5866573,
+    "formattedAddress": "Jiffy Lube Live, Bristow, VA",
+    "geocodedAt": "2026-01-07T02:06:00.740Z"
+  },
+  "lakeview amphitheater|syracuse|ny": {
+    "lat": 43.0881925,
+    "lng": -76.2228415,
+    "formattedAddress": "Lakeview Amphitheater, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:00.887Z"
+  },
+  "the lyric|baltimore|md": {
+    "lat": 39.305934,
+    "lng": -76.6179164,
+    "formattedAddress": "The Lyric, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:06:01.039Z"
+  },
+  "pier 6|baltimore|md": {
+    "lat": 39.2851273,
+    "lng": -76.6061117,
+    "formattedAddress": "Pier 6, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:06:01.242Z"
+  },
+  "atlas brew works|washington|dc": {
+    "lat": 38.914866,
+    "lng": -76.9816091,
+    "formattedAddress": "Atlas Brew Works, Washington, DC",
+    "geocodedAt": "2026-01-07T02:06:01.404Z"
+  },
+  "black cat|washington|dc": {
+    "lat": 38.9145825,
+    "lng": -77.0317283,
+    "formattedAddress": "Black Cat, Washington, DC",
+    "geocodedAt": "2026-01-07T02:06:01.531Z"
+  },
+  "st. joseph's amp|syracuse|ny": {
+    "lat": 43.0881925,
+    "lng": -76.2228415,
+    "formattedAddress": "St. Joseph's Amp, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:01.692Z"
+  },
+  "sharkey's|liverpool|ny": {
+    "lat": 43.1218034,
+    "lng": -76.2135503,
+    "formattedAddress": "Sharkey's, Liverpool, NY",
+    "geocodedAt": "2026-01-07T02:06:01.816Z"
+  },
+  "song & dance|syracuse|ny": {
+    "lat": 43.0471919,
+    "lng": -76.15170789999999,
+    "formattedAddress": "Song & Dance, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:01.971Z"
+  },
+  "club 443|syracuse|ny": {
+    "lat": 43.0524321,
+    "lng": -76.14030819999999,
+    "formattedAddress": "Club 443, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:02.100Z"
+  },
+  "reggie's|chicago|il": {
+    "lat": 41.853918,
+    "lng": -87.6268523,
+    "formattedAddress": "Reggie's, Chicago, IL",
+    "geocodedAt": "2026-01-07T02:06:02.223Z"
+  },
+  "market st / soundstage|baltimore|md": {
+    "lat": 39.2876463,
+    "lng": -76.60706859999999,
+    "formattedAddress": "Market St / Soundstage, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:06:02.356Z"
+  },
+  "nys fair|syracuse|ny": {
+    "lat": 43.074122,
+    "lng": -76.2217213,
+    "formattedAddress": "NYS Fair, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:02.494Z"
+  },
+  "the jugg|syracuse|ny": {
+    "lat": 43.0797422,
+    "lng": -76.1229639,
+    "formattedAddress": "The Jugg, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:02.646Z"
+  },
+  "jma wireless dome|syracuse|ny": {
+    "lat": 43.036233,
+    "lng": -76.1362931,
+    "formattedAddress": "JMA Wireless Dome, Syracuse, NY",
+    "geocodedAt": "2026-01-07T02:06:02.777Z"
+  },
+  "downtown venues|baltimore|md": {
+    "lat": 39.2904278,
+    "lng": -76.6139017,
+    "formattedAddress": "Downtown Venues, Baltimore, MD",
+    "geocodedAt": "2026-01-07T02:06:02.924Z"
+  },
+  "sharkey's event center|liverpool|ny": {
+    "lat": 43.1218637,
+    "lng": -76.21341629999999,
+    "formattedAddress": "Sharkey's Event Center, Liverpool, NY",
+    "geocodedAt": "2026-01-07T02:06:03.088Z"
+  },
+  "hersheypark stadium|hershey|pa": {
+    "lat": 40.2899769,
+    "lng": -76.6587942,
+    "formattedAddress": "Hersheypark Stadium, Hershey, PA",
+    "geocodedAt": "2026-01-07T02:06:03.217Z"
   }
 }
