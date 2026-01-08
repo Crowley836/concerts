@@ -1,4 +1,17 @@
 {
+  "1349": {
+    "name": "1349",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/1349-4fd8a3b46df77.jpg",
+    "bio": "1349 is a Norwegian black metal band from Oslo, Norway, formed in 1997. Their name comes from the year the Black Death reached Norway. The band comprises several former members of the band Alvheim. Their drummer, Frost, is also a member of Satyricon.",
+    "genres": [
+      "Black Metal",
+      "Rock/Pop"
+    ],
+    "formed": "1997",
+    "website": "www.legion1349.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:56.388Z"
+  },
   "abc": {
     "name": "ABC",
     "normalizedName": "abc",
@@ -3586,5 +3599,169 @@
     "url": "https://www.last.fm/music/Beheaded",
     "source": "lastfm",
     "fetchedAt": "2026-01-07T02:10:35.677Z"
+  },
+  "woodstock-99": {
+    "name": "Woodstock '99",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Woodstock+%2799",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-08T01:57:39.209Z"
+  },
+  "insane-clown-posse": {
+    "name": "Insane Clown Posse",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/rxrtuu1362700106.jpg",
+    "bio": "Insane Clown Posse (ICP) is an American hip hop duo from Detroit, Michigan. The group is composed of Joseph Bruce and Joseph Utsler, who perform under the respective personas of the \"wicked clowns\" Violent J and Shaggy 2 Dope. Insane Clown Posse performs a style of hardcore hip hop known as horrorcore and is known for its elaborate live performances. The duo has earned two platinum and five gold albums. According to Nielsen SoundScan, the entire catalog of the group has sold 6.5 million units in",
+    "genres": [
+      "Hip-Hop",
+      "Rock/Pop"
+    ],
+    "formed": "1991",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:39.338Z"
+  },
+  "black-label-society": {
+    "name": "Black Label Society",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/black-label-society-4fde53d6c80cd.jpg",
+    "bio": "Black Label Society is a heavy metal band from Los Angeles, California formed by Zakk Wylde. The band has, thus far, released nine studio albums, one live album, two compilation albums, one EP, and three video albums.\nIn the early 1990s, Wylde had formed his own solo band Pride & Glory, playing a mixture of bluesy southern rock with heavy metal. However, they disbanded in December 1994 after having released only one album. Wylde subsequently recorded an acoustic solo album, Book of Shadows (rele",
+    "genres": [
+      "Sludge Metal",
+      "Metal"
+    ],
+    "formed": "1998",
+    "website": "www.blacklabelsociety.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:50.384Z"
+  },
+  "funebrarum": {
+    "name": "Funebrarum",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/lfo9sq1610622900.jpg",
+    "bio": "Funebrarum was formed by guitarist / doom legend, Nick Orlando (Evoken, Putrifact, Asmodeus) and vocalist Daryl Kahan (Disma,   Abazagorath guitarist, Citizens Arrest, Assück) in April of 1999 with the goal of creating heavy old school death metal. With fellow Abazagorath and Evoken member, Dario Derna (also of Meat Shits, Infester) joining on drums, the band recorded their debut demo \"Triumphant Ascent\" later that same year. A raw and ugly sounding tape which received good reviews from the unde",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "1999",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:52.890Z"
+  },
+  "morta-skuld": {
+    "name": "Morta Skuld",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ls75851708719670.jpg",
+    "bio": "Formed in Milwaukee, Wisconsin in 1990, Morta Skuld has been in the American Death Metal scene for 25 years, and has played with such bands as Death, Obituary, Slayer, and Napalm Death. Morta Skuld went on to sign with England’s Peaceville Records. After breaking up for number of years, the band reformed with a new breed and take on their genre.",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "1990",
+    "website": null,
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:54.384Z"
+  },
+  "nails": {
+    "name": "Nails",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/qjga241663790871.jpg",
+    "bio": "\"Nails\" started as a 3-piece grindcore/powerviolence band form California, until the inclusion of Andrew Saba (formerly of Bad Seed and Harm's Way). Formed by Todd Jones, who had previously played in Carry On, Terror, and still an active member of both Internal Affairs and Snake Eyes). They released \"Obscene Humanity\" in the summer of 2009 on Six Feet Under Records. 2010 saw the release of the \"Unsilent Death\" LP on Six Feet Under Records and in 2013 the band released \"Abandon All Life\" on South",
+    "genres": [
+      "Grindcore"
+    ],
+    "formed": "2010",
+    "website": "abandonalllife.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:55.877Z"
+  },
+  "go-ahead-and-die": {
+    "name": "Go Ahead and Die",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/ehcwa41698094604.jpg",
+    "bio": "The band features vocalist and guitarist Max Cavalera joining forces with his son, singer, guitar and bass player, Igor Amadeus Cavalera as well as Zach Coleman on drums to produce a sound that mixes elements of Death and Thrash Metal with early CELTIC FROST influences and a punk rock attitude.",
+    "genres": [
+      "Thrash Metal"
+    ],
+    "formed": "2021",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:57.384Z"
+  },
+  "cattle-decapitation": {
+    "name": "Cattle Decapitation",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/cattle-decapitation-506cd4fa7c0cc.jpg",
+    "bio": "Cattle Decapitation is an American deathgrind band from San Diego, California, formed in 1996.\n\nOriginally founded in 1996, Cattle Decapitation's songs protest the mistreatment and consumption of animals, the abuse of the environment and touchy subjects such as misanthropy and genocide of the human race. Much of their music is based on putting humans in the situations that animals are subjected to (animal testing, slaughter, etc.). While the band started with an entirely vegetarian lineup, only ",
+    "genres": [
+      "Death Metal",
+      "Rock/Pop"
+    ],
+    "formed": "1996",
+    "website": "www.cattledecapitation.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:57.883Z"
+  },
+  "internal-bleeding": {
+    "name": "Internal Bleeding",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/spj6tc1600691502.jpg",
+    "bio": "After the breakup of his original band Autumn Reign, guitarist Chris Pervelis went on to create the first INTERNAL BLEEDING lineup in mid-1991. That winter, a case of 300 blank tapes were “found” at a local university and provided the impetus to set up a 4-track recorder and record their first demo, titled The One Dollar Demo. It was a crude recording, but underneath all the noise and hiss lay the seeds of a new genre of death metal.\n\nIn the winter of 1992, the band released its now-iconic Invoc",
+    "genres": [
+      "Death Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "internal-bleeding.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:58.389Z"
+  },
+  "frozen-soul": {
+    "name": "Frozen Soul",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/kl8byc1639820359.jpg",
+    "bio": "Frozen Soul is a death metal band from Fort Worth, Texas.\nThey formed in 2018, and after releasing a demo and a few split singles got the attention of Century Media records, with whom they signed a three-record deal.\nTheir debut album Crypt of Ice was released January 8th, 2021.",
+    "genres": [
+      "Death Metal"
+    ],
+    "formed": "2018",
+    "website": "https://www.frozensoultx.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:57:59.384Z"
+  },
+  "sulaco": {
+    "name": "Sulaco",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "There are 3 Sulacos.\n\n(1) Sulaco can be seen as an evolution from guitarist Erik Burke's previous band, Lethargy, who played a seminal role in shaping the musical climate of Rochester's underground metal scene. Lethargy was legendary in the Rochester area during the mid 90s for crafting an often imitated but never duplicated style of ridiculously intricate carnival-esque metal that showcased cross-eyed guitar antics and blistering jazz-fusion rhythms over 10 years before it became popular in the",
+    "genres": [
+      "mathcore",
+      "Technical Death Metal",
+      "death metal",
+      "grindcore",
+      "trance"
+    ],
+    "url": "https://www.last.fm/music/Sulaco",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-08T01:58:00.060Z"
+  },
+  "alice-cooper": {
+    "name": "Alice Cooper",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/uysrps1478088856.jpg",
+    "bio": "Alice Cooper (the musician Vincent Damon Furnier)\n\nAlice Cooper (born Vincent Damon Furnier; February 4, 1948) is an American rock singer, songwriter, and musician whose career spans more than four decades. With a stage show that features guillotines, electric chairs, fake blood, boa constrictors, and baby dolls, Cooper has drawn equally from horror movies, vaudeville, and garage rock to pioneer a grandly theatrical and violent brand of heavy metal designed to shock people.\n\nOriginating in Detro",
+    "genres": [
+      "Hard Rock",
+      "Rock/Pop"
+    ],
+    "formed": "1963",
+    "website": "",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-01-08T01:58:00.394Z"
+  },
+  "malignancy": {
+    "name": "Malignancy",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Malignancy plays very intense, crushing brutal death metal out of Yonkers, NY (US)  since 1992 and are known for their seamless variations between hyper-technical riffing and unsurpassable NYDM style breakdowns.  With each release, Malignancy increases speed, technicality, eccentric intensity and originality. Read more on Last.fm",
+    "genres": [
+      "Brutal Death Metal",
+      "Technical Death Metal",
+      "death metal",
+      "Technical Brutal Death Metal",
+      "grindcore"
+    ],
+    "url": "https://www.last.fm/music/Malignancy",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-08T01:58:01.015Z"
   }
 }

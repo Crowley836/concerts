@@ -4,13 +4,12 @@ import { ConcertHistoryPanel } from './ConcertHistoryPanel'
 import { SpotifyPanel } from './SpotifyPanel'
 import { LinerNotesPanel } from './LinerNotesPanel'
 import { TourDatesPanel } from './TourDatesPanel'
-import { fetchSetlist } from '../../../services/setlistfm'
-import { useTourDates } from '../../../hooks/useTourDates'
 import type { ArtistCard, ArtistConcert } from './types'
 import type { Setlist } from '../../../types/setlist'
 
 // Active panel type - only one panel can be visible at a time
-type ActivePanel = 'none' | 'setlist' | 'tour-dates'
+// Active panel type - only one panel visible at a time
+type ActivePanel = 'none' | 'setlist'
 
 interface ArtistGatefoldProps {
   artist: ArtistCard | null
@@ -52,12 +51,6 @@ export function ArtistGatefold({
   const [setlistData, setSetlistData] = useState<Setlist | null>(null)
   const [isLoadingSetlist, setIsLoadingSetlist] = useState(false)
   const [setlistError, setSetlistError] = useState<string | null>(null)
-
-  // Tour dates eager loading (v1.6.0)
-  const { tourDates, tourCount, isLoading: isLoadingTourDates, error: tourDatesError } = useTourDates(
-    artist?.name || null,
-    { delay: 100, enabled: !!artist }
-  )
 
   const wrapperRef = useRef<HTMLDivElement>(null)
   const flyingTileRef = useRef<HTMLDivElement>(null)
@@ -188,27 +181,20 @@ export function ArtistGatefold({
   const handleSetlistClick = async (concert: ArtistConcert) => {
     // If clicking the same concert AND setlist is active, close it (toggle)
     if (activePanel === 'setlist' &&
-        selectedConcert?.date === concert.date &&
-        selectedConcert?.venue === concert.venue) {
+      selectedConcert?.date === concert.date &&
+      selectedConcert?.venue === concert.venue) {
       handleClosePanel()
       return
     }
 
-    // If tour panel is open, trigger crossfade transition
-    if (activePanel === 'tour-dates' && !isTransitioning) {
-      setIsTransitioning(true)
-      // Wait 100ms (crossfade overlap), then switch panels
-      setTimeout(() => {
-        setActivePanel('none')
-        setTimeout(() => {
-          openSetlistPanel(concert)
-          setIsTransitioning(false)
-        }, 100)
-      }, 100)
+    // If setlist is already active for this concert, close it
+    if (activePanel === 'setlist' &&
+      selectedConcert?.date === concert.date &&
+      selectedConcert?.venue === concert.venue) {
+      handleClosePanel()
       return
     }
 
-    // Otherwise, open setlist panel normally
     openSetlistPanel(concert)
   }
 
@@ -241,31 +227,6 @@ export function ArtistGatefold({
     }
   }
 
-  // Handle tour badge click (v1.6.0)
-  const handleTourBadgeClick = () => {
-    // If tour panel already open, close it (toggle)
-    if (activePanel === 'tour-dates') {
-      handleClosePanel()
-      return
-    }
-
-    // If setlist panel is open, trigger crossfade transition
-    if (activePanel === 'setlist' && !isTransitioning) {
-      setIsTransitioning(true)
-      // Wait 100ms (crossfade overlap), then switch panels
-      setTimeout(() => {
-        setActivePanel('none')
-        setTimeout(() => {
-          setActivePanel('tour-dates')
-          setIsTransitioning(false)
-        }, 100)
-      }, 100)
-      return
-    }
-
-    // Otherwise, open tour panel normally
-    setActivePanel('tour-dates')
-  }
 
   // Close active panel (unified handler for v1.6.0)
   const handleClosePanel = () => {
@@ -458,9 +419,8 @@ export function ArtistGatefold({
             >
               {/* Right Panel (Spotify) - revealed by cover opening */}
               <div
-                className={`transform-gpu transition-transform duration-800 ${
-                  isOpen ? 'rotate-y-[-15deg]' : 'rotate-y-0'
-                }`}
+                className={`transform-gpu transition-transform duration-800 ${isOpen ? 'rotate-y-[-15deg]' : 'rotate-y-0'
+                  }`}
                 style={{
                   transformStyle: 'preserve-3d',
                   transformOrigin: 'left center',
@@ -469,9 +429,8 @@ export function ArtistGatefold({
               >
                 {/* Spine */}
                 <div
-                  className={`absolute left-[-6px] top-0 w-[12px] h-[400px] rounded-sm transition-opacity duration-400 ${
-                    isOpen ? 'opacity-100 delay-300' : 'opacity-0'
-                  }`}
+                  className={`absolute left-[-6px] top-0 w-[12px] h-[400px] rounded-sm transition-opacity duration-400 ${isOpen ? 'opacity-100 delay-300' : 'opacity-0'
+                    }`}
                   style={{
                     background: 'linear-gradient(to right, #0a0a0a 0%, #1a1a1a 20%, #0a0a0a 50%, #1a1a1a 80%, #0a0a0a 100%)',
                     boxShadow: 'inset 0 0 10px rgba(0, 0, 0, 0.8)',
@@ -500,23 +459,12 @@ export function ArtistGatefold({
                   />
                 )}
 
-                {/* Tour Dates Panel - slides over Spotify panel (v1.6.0) */}
-                {activePanel === 'tour-dates' && (
-                  <TourDatesPanel
-                    artistName={artist.name}
-                    tourDates={tourDates}
-                    isLoading={isLoadingTourDates}
-                    error={tourDatesError}
-                    onClose={handleClosePanel}
-                  />
-                )}
               </div>
 
               {/* Cover (opens to become left panel) */}
               <div
-                className={`absolute top-0 left-0 transform-gpu transition-transform duration-800 ${
-                  isOpen ? 'rotate-y-[-165deg]' : 'rotate-y-0'
-                }`}
+                className={`absolute top-0 left-0 transform-gpu transition-transform duration-800 ${isOpen ? 'rotate-y-[-165deg]' : 'rotate-y-0'
+                  }`}
                 style={{
                   width: PANEL_SIZE,
                   height: PANEL_SIZE,
@@ -550,9 +498,8 @@ export function ArtistGatefold({
                       key={artist.name} // Force new image element for each artist
                       src={imageUrl}
                       alt={artist.name}
-                      className={`absolute inset-0 w-full h-full object-cover ${
-                        coverImageLoaded ? 'opacity-100' : 'opacity-0 transition-opacity duration-300'
-                      }`}
+                      className={`absolute inset-0 w-full h-full object-cover ${coverImageLoaded ? 'opacity-100' : 'opacity-0 transition-opacity duration-300'
+                        }`}
                       onLoad={() => setCoverImageLoaded(true)}
                       onError={() => {
                         // Keep image hidden on error so initials remain visible
@@ -575,9 +522,6 @@ export function ArtistGatefold({
                     artist={artist}
                     onSetlistClick={handleSetlistClick}
                     openSetlistConcert={selectedConcert}
-                    tourCount={tourCount}
-                    isTourPanelActive={activePanel === 'tour-dates'}
-                    onTourBadgeClick={handleTourBadgeClick}
                   />
                 </div>
               </div>

@@ -252,6 +252,36 @@
       }
     },
     {
+      "id": "1999-07-23-woodstock-99",
+      "date": "1999-07-23",
+      "headliner": "Woodstock '99",
+      "headlinerNormalized": "woodstock-99",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Rage Against the Machine",
+        "Megadeth",
+        "ICP",
+        "Sevendust",
+        "Godsmack"
+      ],
+      "venue": "Griffiss AFB",
+      "venueNormalized": "griffiss-afb",
+      "city": "Rome",
+      "state": "NY",
+      "cityState": "Rome, NY",
+      "isFestival": true,
+      "year": 1999,
+      "month": 7,
+      "day": 23,
+      "dayOfWeek": "Friday",
+      "decade": "1990s",
+      "location": {
+        "lat": 43.2258402,
+        "lng": -75.4051114
+      }
+    },
+    {
       "id": "2000-11-30-deicide",
       "date": "2000-11-30",
       "headliner": "Deicide",
@@ -275,6 +305,30 @@
       "location": {
         "lat": 43.0413232,
         "lng": -76.1190964
+      }
+    },
+    {
+      "id": "2001-01-18-insane-clown-posse",
+      "date": "2001-01-18",
+      "headliner": "Insane Clown Posse",
+      "headlinerNormalized": "insane-clown-posse",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [],
+      "venue": "Water St. Music Hall",
+      "venueNormalized": "water-st-music-hall",
+      "city": "Rochester",
+      "state": "NY",
+      "cityState": "Rochester, NY",
+      "isFestival": false,
+      "year": 2001,
+      "month": 1,
+      "day": 18,
+      "dayOfWeek": "Thursday",
+      "decade": "2000s",
+      "location": {
+        "lat": 43.1605527,
+        "lng": -77.6116928
       }
     },
     {
@@ -506,16 +560,16 @@
       }
     },
     {
-      "id": "2003-08-11-ozzy-osbourne",
+      "id": "2003-08-11-ozzfest-2003",
       "date": "2003-08-11",
-      "headliner": "Ozzy Osbourne",
-      "headlinerNormalized": "ozzy-osbourne",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "headliner": "Ozzfest 2003",
+      "headlinerNormalized": "ozzfest-2003",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
+        "Ozzy Osbourne",
         "Korn",
-        "Marilyn Manson",
-        "Disturbed"
+        "Marilyn Manson"
       ],
       "venue": "Darien Lake PAC",
       "venueNormalized": "darien-lake-pac",
@@ -531,6 +585,37 @@
       "location": {
         "lat": 42.9267942,
         "lng": -78.37932169999999
+      }
+    },
+    {
+      "id": "2003-11-14-new-jersey-metal-and-hardcore-festival",
+      "date": "2003-11-14",
+      "headliner": "New Jersey Metal and Hardcore Festival",
+      "headlinerNormalized": "new-jersey-metal-and-hardcore-festival",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Deicide",
+        "Nile",
+        "Superjoin Ritual",
+        "Hypocrisy",
+        "Suffocation",
+        "Morbid Angel"
+      ],
+      "venue": "Convention Hall",
+      "venueNormalized": "convention-hall",
+      "city": "Asbury Park",
+      "state": "NJ",
+      "cityState": "Asbury Park, NJ",
+      "isFestival": true,
+      "year": 2003,
+      "month": 11,
+      "day": 14,
+      "dayOfWeek": "Friday",
+      "decade": "2000s",
+      "location": {
+        "lat": 40.2237327,
+        "lng": -73.9980485
       }
     },
     {
@@ -629,7 +714,7 @@
       "city": "Baltimore",
       "state": "MD",
       "cityState": "Baltimore, MD",
-      "isFestival": true,
+      "isFestival": false,
       "year": 2004,
       "month": 5,
       "day": 30,
@@ -667,13 +752,14 @@
       }
     },
     {
-      "id": "2004-08-24-black-sabbath",
+      "id": "2004-08-24-ozzfest-2004",
       "date": "2004-08-24",
-      "headliner": "Black Sabbath",
-      "headlinerNormalized": "black-sabbath",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "headliner": "Ozzfest 2004",
+      "headlinerNormalized": "ozzfest-2004",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
+        "Black Sabbath",
         "Judas Priest",
         "Slayer"
       ],
@@ -829,13 +915,14 @@
       }
     },
     {
-      "id": "2005-07-24-black-sabbath",
+      "id": "2005-07-24-ozzfest-2005",
       "date": "2005-07-24",
-      "headliner": "Black Sabbath",
-      "headlinerNormalized": "black-sabbath",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "headliner": "Ozzfest 2005",
+      "headlinerNormalized": "ozzfest-2005",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
+        "Black Sabbath",
         "Iron Maiden"
       ],
       "venue": "Nissan Pavilion",
@@ -1386,6 +1473,32 @@
       }
     },
     {
+      "id": "2009-01-17-metallica",
+      "date": "2009-01-17",
+      "headliner": "Metallica",
+      "headlinerNormalized": "metallica",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Machine Head"
+      ],
+      "venue": "Wells Fargo Center",
+      "venueNormalized": "wells-fargo-center",
+      "city": "Philadelphia",
+      "state": "PA",
+      "cityState": "Philadelphia, PA",
+      "isFestival": false,
+      "year": 2009,
+      "month": 1,
+      "day": 17,
+      "dayOfWeek": "Saturday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.9012015,
+        "lng": -75.17197949999999
+      }
+    },
+    {
       "id": "2009-02-11-vital-remains",
       "date": "2009-02-11",
       "headliner": "Vital Remains",
@@ -1421,30 +1534,6 @@
       "openers": [
         "Vital Remains"
       ],
-      "venue": "Sonar",
-      "venueNormalized": "sonar",
-      "city": "Baltimore",
-      "state": "MD",
-      "cityState": "Baltimore, MD",
-      "isFestival": false,
-      "year": 2009,
-      "month": 3,
-      "day": 14,
-      "dayOfWeek": "Saturday",
-      "decade": "2000s",
-      "location": {
-        "lat": 39.2922465,
-        "lng": -76.6095586
-      }
-    },
-    {
-      "id": "2009-03-14-misery-index",
-      "date": "2009-03-14",
-      "headliner": "Misery Index",
-      "headlinerNormalized": "misery-index",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
-      "openers": [],
       "venue": "Sonar",
       "venueNormalized": "sonar",
       "city": "Baltimore",
@@ -1539,30 +1628,29 @@
       }
     },
     {
-      "id": "2009-08-14-marilyn-manson-slayer",
-      "date": "2009-08-14",
-      "headliner": "Marilyn Manson / Slayer",
-      "headlinerNormalized": "marilyn-manson-slayer",
-      "genre": "Industrial Metal",
-      "genreNormalized": "industrial-metal",
+      "id": "2009-07-30-slayer",
+      "date": "2009-07-30",
+      "headliner": "Slayer",
+      "headlinerNormalized": "slayer",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
       "openers": [
-        "Cannibal Corpse",
-        "Behemoth"
+        "Marilyn Manson"
       ],
-      "venue": "SPAC",
-      "venueNormalized": "spac",
-      "city": "Saratoga",
-      "state": "NY",
-      "cityState": "Saratoga, NY",
-      "isFestival": true,
+      "venue": "Merriweather Post Pav.",
+      "venueNormalized": "merriweather-post-pav",
+      "city": "Columbia",
+      "state": "MD",
+      "cityState": "Columbia, MD",
+      "isFestival": false,
       "year": 2009,
-      "month": 8,
-      "day": 14,
-      "dayOfWeek": "Friday",
+      "month": 7,
+      "day": 30,
+      "dayOfWeek": "Thursday",
       "decade": "2000s",
       "location": {
-        "lat": 43.055381,
-        "lng": -73.80593
+        "lat": 39.2088816,
+        "lng": -76.86269949999999
       }
     },
     {
@@ -2240,6 +2328,30 @@
       }
     },
     {
+      "id": "2011-11-05-mayhem",
+      "date": "2011-11-05",
+      "headliner": "Mayhem",
+      "headlinerNormalized": "mayhem",
+      "genre": "Black Metal",
+      "genreNormalized": "black-metal",
+      "openers": [],
+      "venue": "Montage Music Hall",
+      "venueNormalized": "montage-music-hall",
+      "city": "Rochester",
+      "state": "NY",
+      "cityState": "Rochester, NY",
+      "isFestival": false,
+      "year": 2011,
+      "month": 11,
+      "day": 5,
+      "dayOfWeek": "Saturday",
+      "decade": "2010s",
+      "location": {
+        "lat": 43.1560851,
+        "lng": -77.6023304
+      }
+    },
+    {
       "id": "2011-11-16-judas-priest",
       "date": "2011-11-16",
       "headliner": "Judas Priest",
@@ -2350,33 +2462,6 @@
       }
     },
     {
-      "id": "2012-07-20-cannibal-corpse",
-      "date": "2012-07-20",
-      "headliner": "Cannibal Corpse",
-      "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
-      "openers": [
-        "Down",
-        "Morbid Angel"
-      ],
-      "venue": "Electric Factory",
-      "venueNormalized": "electric-factory",
-      "city": "Philadelphia",
-      "state": "PA",
-      "cityState": "Philadelphia, PA",
-      "isFestival": true,
-      "year": 2012,
-      "month": 7,
-      "day": 20,
-      "dayOfWeek": "Friday",
-      "decade": "2010s",
-      "location": {
-        "lat": 39.95915979999999,
-        "lng": -75.1497116
-      }
-    },
-    {
       "id": "2012-09-13-kreator",
       "date": "2012-09-13",
       "headliner": "Kreator",
@@ -2400,6 +2485,30 @@
       "location": {
         "lat": 43.0494832,
         "lng": -76.14739770000001
+      }
+    },
+    {
+      "id": "2012-09-26-down",
+      "date": "2012-09-26",
+      "headliner": "Down",
+      "headlinerNormalized": "down",
+      "genre": "Metal",
+      "genreNormalized": "metal",
+      "openers": [],
+      "venue": "Electric Factory",
+      "venueNormalized": "electric-factory",
+      "city": "Philadelphia",
+      "state": "PA",
+      "cityState": "Philadelphia, PA",
+      "isFestival": false,
+      "year": 2012,
+      "month": 9,
+      "day": 26,
+      "dayOfWeek": "Wednesday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.95915979999999,
+        "lng": -75.1497116
       }
     },
     {
@@ -3030,30 +3139,6 @@
       }
     },
     {
-      "id": "2015-01-20-mayhem",
-      "date": "2015-01-20",
-      "headliner": "Mayhem",
-      "headlinerNormalized": "mayhem",
-      "genre": "Black Metal",
-      "genreNormalized": "black-metal",
-      "openers": [],
-      "venue": "Montage Music Hall",
-      "venueNormalized": "montage-music-hall",
-      "city": "Rochester",
-      "state": "NY",
-      "cityState": "Rochester, NY",
-      "isFestival": false,
-      "year": 2015,
-      "month": 1,
-      "day": 20,
-      "dayOfWeek": "Tuesday",
-      "decade": "2010s",
-      "location": {
-        "lat": 43.1560851,
-        "lng": -77.6023304
-      }
-    },
-    {
       "id": "2015-01-28-machine-head",
       "date": "2015-01-28",
       "headliner": "Machine Head",
@@ -3160,12 +3245,12 @@
       }
     },
     {
-      "id": "2015-04-08-bls",
+      "id": "2015-04-08-black-label-society",
       "date": "2015-04-08",
-      "headliner": "BLS",
-      "headlinerNormalized": "bls",
-      "genre": "Groove Metal",
-      "genreNormalized": "groove-metal",
+      "headliner": "Black Label Society",
+      "headlinerNormalized": "black-label-society",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
         "Wino (Acoustic)"
       ],
@@ -3244,9 +3329,11 @@
       "headlinerNormalized": "clutch",
       "genre": "Hard Rock",
       "genreNormalized": "hard-rock",
-      "openers": [],
-      "venue": "Pimlico Race Course",
-      "venueNormalized": "pimlico-race-course",
+      "openers": [
+        "Mastodon"
+      ],
+      "venue": "Pier 6",
+      "venueNormalized": "pier-6",
       "city": "Baltimore",
       "state": "MD",
       "cityState": "Baltimore, MD",
@@ -3257,8 +3344,8 @@
       "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
-        "lat": 39.3532015,
-        "lng": -76.6731909
+        "lat": 39.2851273,
+        "lng": -76.6061117
       }
     },
     {
@@ -3315,13 +3402,14 @@
       }
     },
     {
-      "id": "2015-09-19-clutch",
+      "id": "2015-09-19-shindig-festival",
       "date": "2015-09-19",
-      "headliner": "Clutch",
-      "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "headliner": "Shindig Festival",
+      "headlinerNormalized": "shindig-festival",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
+        "Clutch",
         "Anthrax",
         "Helmet"
       ],
@@ -3520,6 +3608,36 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
+      }
+    },
+    {
+      "id": "2016-01-30-florida-metal-fest",
+      "date": "2016-01-30",
+      "headliner": "Florida Metal Fest",
+      "headlinerNormalized": "florida-metal-fest",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Obituary",
+        "Deicide",
+        "Broken Hope",
+        "Corrosion of Conformity",
+        "Malevolent Creation"
+      ],
+      "venue": "The Cuban Club",
+      "venueNormalized": "the-cuban-club",
+      "city": "Tampa",
+      "state": "FL",
+      "cityState": "Tampa, FL",
+      "isFestival": true,
+      "year": 2016,
+      "month": 1,
+      "day": 30,
+      "dayOfWeek": "Saturday",
+      "decade": "2010s",
+      "location": {
+        "lat": 27.9621515,
+        "lng": -82.4446267
       }
     },
     {
@@ -3738,7 +3856,7 @@
       "city": "Baltimore",
       "state": "MD",
       "cityState": "Baltimore, MD",
-      "isFestival": true,
+      "isFestival": false,
       "year": 2016,
       "month": 5,
       "day": 25,
@@ -3805,6 +3923,30 @@
       }
     },
     {
+      "id": "2016-07-01-funebrarum",
+      "date": "2016-07-01",
+      "headliner": "Funebrarum",
+      "headlinerNormalized": "funebrarum",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [],
+      "venue": "Metro Gallery",
+      "venueNormalized": "metro-gallery",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2016,
+      "month": 7,
+      "day": 1,
+      "dayOfWeek": "Friday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.3088425,
+        "lng": -76.6165858
+      }
+    },
+    {
       "id": "2016-07-26-cannibal-corpse",
       "date": "2016-07-26",
       "headliner": "Cannibal Corpse",
@@ -3821,7 +3963,7 @@
       "city": "Baltimore",
       "state": "MD",
       "cityState": "Baltimore, MD",
-      "isFestival": true,
+      "isFestival": false,
       "year": 2016,
       "month": 7,
       "day": 26,
@@ -4109,6 +4251,59 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
+      }
+    },
+    {
+      "id": "2017-02-01-mayhem",
+      "date": "2017-02-01",
+      "headliner": "Mayhem",
+      "headlinerNormalized": "mayhem",
+      "genre": "Black Metal",
+      "genreNormalized": "black-metal",
+      "openers": [
+        "Inquisition",
+        "Black Anvil"
+      ],
+      "venue": "Howard Theatre",
+      "venueNormalized": "howard-theatre",
+      "city": "Washington",
+      "state": "DC",
+      "cityState": "Washington, DC",
+      "isFestival": false,
+      "year": 2017,
+      "month": 2,
+      "day": 1,
+      "dayOfWeek": "Wednesday",
+      "decade": "2010s",
+      "location": {
+        "lat": 38.9153738,
+        "lng": -77.0210891
+      }
+    },
+    {
+      "id": "2017-02-01-cavalera-conspiracy",
+      "date": "2017-02-01",
+      "headliner": "Cavalera Conspiracy",
+      "headlinerNormalized": "cavalera-conspiracy",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Immolation"
+      ],
+      "venue": "Baltimore Soundstage",
+      "venueNormalized": "baltimore-soundstage",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2017,
+      "month": 2,
+      "day": 1,
+      "dayOfWeek": "Wednesday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2876463,
+        "lng": -76.60706859999999
       }
     },
     {
@@ -4473,6 +4668,33 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
+      }
+    },
+    {
+      "id": "2017-12-01-morta-skuld",
+      "date": "2017-12-01",
+      "headliner": "Morta Skuld",
+      "headlinerNormalized": "morta-skuld",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Embalmed",
+        "Scorched"
+      ],
+      "venue": "Sidebar",
+      "venueNormalized": "sidebar",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2017,
+      "month": 12,
+      "day": 1,
+      "dayOfWeek": "Friday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2905023,
+        "lng": -76.6104072
       }
     },
     {
@@ -5006,6 +5228,33 @@
       }
     },
     {
+      "id": "2019-02-01-corrosion-of-conformity",
+      "date": "2019-02-01",
+      "headliner": "Corrosion of Conformity",
+      "headlinerNormalized": "corrosion-of-conformity",
+      "genre": "Sludge Metal",
+      "genreNormalized": "sludge-metal",
+      "openers": [
+        "Crowbar",
+        "The Obsessed"
+      ],
+      "venue": "Ottobar",
+      "venueNormalized": "ottobar",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2019,
+      "month": 2,
+      "day": 1,
+      "dayOfWeek": "Friday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.318881,
+        "lng": -76.61958179999999
+      }
+    },
+    {
       "id": "2019-03-01-morbid-angel",
       "date": "2019-03-01",
       "headliner": "Morbid Angel",
@@ -5057,8 +5306,8 @@
       }
     },
     {
-      "id": "2019-05-01-slayer",
-      "date": "2019-05-01",
+      "id": "2019-05-14-slayer",
+      "date": "2019-05-14",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
       "genre": "Thrash Metal",
@@ -5075,8 +5324,8 @@
       "isFestival": false,
       "year": 2019,
       "month": 5,
-      "day": 1,
-      "dayOfWeek": "Wednesday",
+      "day": 14,
+      "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
         "lat": 39.2088816,
@@ -5106,6 +5355,33 @@
       "month": 5,
       "day": 23,
       "dayOfWeek": "Thursday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2876463,
+        "lng": -76.60706859999999
+      }
+    },
+    {
+      "id": "2019-06-01-nails",
+      "date": "2019-06-01",
+      "headliner": "Nails",
+      "headlinerNormalized": "nails",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Misery Index",
+        "Outer Heaven"
+      ],
+      "venue": "Baltimore Soundstage",
+      "venueNormalized": "baltimore-soundstage",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2019,
+      "month": 6,
+      "day": 1,
+      "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
         "lat": 39.2876463,
@@ -5240,6 +5516,32 @@
       }
     },
     {
+      "id": "2019-10-01-1349",
+      "date": "2019-10-01",
+      "headliner": "1349",
+      "headlinerNormalized": "1349",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Uada"
+      ],
+      "venue": "Baltimore Soundstage",
+      "venueNormalized": "baltimore-soundstage",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2019,
+      "month": 10,
+      "day": 1,
+      "dayOfWeek": "Tuesday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2876463,
+        "lng": -76.60706859999999
+      }
+    },
+    {
       "id": "2019-10-22-obituary",
       "date": "2019-10-22",
       "headliner": "Obituary",
@@ -5260,6 +5562,32 @@
       "month": 10,
       "day": 22,
       "dayOfWeek": "Tuesday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2876463,
+        "lng": -76.60706859999999
+      }
+    },
+    {
+      "id": "2019-11-01-nile",
+      "date": "2019-11-01",
+      "headliner": "Nile",
+      "headlinerNormalized": "nile",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [
+        "Terrorizer"
+      ],
+      "venue": "Baltimore Soundstage",
+      "venueNormalized": "baltimore-soundstage",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "year": 2019,
+      "month": 11,
+      "day": 1,
+      "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
         "lat": 39.2876463,
@@ -5404,7 +5732,8 @@
         "Carcass",
         "Dismember",
         "Hypocrisy",
-        "Autopsy"
+        "Autopsy",
+        "Deicide"
       ],
       "venue": "Edison Lot / Rams Head",
       "venueNormalized": "edison-lot-rams-head",
@@ -5597,33 +5926,6 @@
       }
     },
     {
-      "id": "2023-04-01-morbid-angel",
-      "date": "2023-04-01",
-      "headliner": "Morbid Angel",
-      "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
-      "openers": [
-        "Revocation",
-        "Crypta"
-      ],
-      "venue": "Montage Music Hall",
-      "venueNormalized": "montage-music-hall",
-      "city": "Rochester",
-      "state": "NY",
-      "cityState": "Rochester, NY",
-      "isFestival": false,
-      "year": 2023,
-      "month": 4,
-      "day": 1,
-      "dayOfWeek": "Saturday",
-      "decade": "2020s",
-      "location": {
-        "lat": 43.1560851,
-        "lng": -77.6023304
-      }
-    },
-    {
       "id": "2023-04-01-william-elliott-whitmore",
       "date": "2023-04-01",
       "headliner": "William Elliott Whitmore",
@@ -5645,6 +5947,33 @@
       "location": {
         "lat": 43.0524321,
         "lng": -76.14030819999999
+      }
+    },
+    {
+      "id": "2023-04-13-morbid-angel",
+      "date": "2023-04-13",
+      "headliner": "Morbid Angel",
+      "headlinerNormalized": "morbid-angel",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [
+        "Revocation",
+        "Crypta"
+      ],
+      "venue": "Montage Music Hall",
+      "venueNormalized": "montage-music-hall",
+      "city": "Rochester",
+      "state": "NY",
+      "cityState": "Rochester, NY",
+      "isFestival": false,
+      "year": 2023,
+      "month": 4,
+      "day": 13,
+      "dayOfWeek": "Thursday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.1560851,
+        "lng": -77.6023304
       }
     },
     {
@@ -5828,6 +6157,32 @@
       }
     },
     {
+      "id": "2024-02-15-go-ahead-and-die",
+      "date": "2024-02-15",
+      "headliner": "Go Ahead And Die",
+      "headlinerNormalized": "go-ahead-and-die",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Primitive Man"
+      ],
+      "venue": "Song & Dance",
+      "venueNormalized": "song-dance",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 2,
+      "day": 15,
+      "dayOfWeek": "Thursday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0471919,
+        "lng": -76.15170789999999
+      }
+    },
+    {
       "id": "2024-03-07-cannibal-corpse",
       "date": "2024-03-07",
       "headliner": "Cannibal Corpse",
@@ -5856,6 +6211,86 @@
       }
     },
     {
+      "id": "2024-04-01-dying-fetus",
+      "date": "2024-04-01",
+      "headliner": "Dying Fetus",
+      "headlinerNormalized": "dying-fetus",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [
+        "Full of Hell",
+        "200 Stab Wounds"
+      ],
+      "venue": "Song & Dance",
+      "venueNormalized": "song-dance",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 4,
+      "day": 1,
+      "dayOfWeek": "Monday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0471919,
+        "lng": -76.15170789999999
+      }
+    },
+    {
+      "id": "2024-05-01-cattle-decapitation",
+      "date": "2024-05-01",
+      "headliner": "Cattle Decapitation",
+      "headlinerNormalized": "cattle-decapitation",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Carnifex"
+      ],
+      "venue": "Sharkey's",
+      "venueNormalized": "sharkey-s",
+      "city": "Liverpool",
+      "state": "NY",
+      "cityState": "Liverpool, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 5,
+      "day": 1,
+      "dayOfWeek": "Wednesday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.1218034,
+        "lng": -76.2135503
+      }
+    },
+    {
+      "id": "2024-05-01-internal-bleeding",
+      "date": "2024-05-01",
+      "headliner": "Internal Bleeding",
+      "headlinerNormalized": "internal-bleeding",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Cenotaph",
+        "Mutilatred"
+      ],
+      "venue": "Lost Horizon",
+      "venueNormalized": "lost-horizon",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 5,
+      "day": 1,
+      "dayOfWeek": "Wednesday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0546386,
+        "lng": -76.0830593
+      }
+    },
+    {
       "id": "2024-05-23-mdf-xix",
       "date": "2024-05-23",
       "headliner": "MDF XIX",
@@ -5866,7 +6301,9 @@
         "Sodom",
         "Dismember",
         "Abbath",
-        "Bloodbath"
+        "Bloodbath",
+        "Deicide",
+        "Soilent Green"
       ],
       "venue": "Market St / Soundstage",
       "venueNormalized": "market-st-soundstage",
@@ -5882,6 +6319,58 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
+      }
+    },
+    {
+      "id": "2024-07-01-frozen-soul",
+      "date": "2024-07-01",
+      "headliner": "Frozen Soul",
+      "headlinerNormalized": "frozen-soul",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Creeping Death"
+      ],
+      "venue": "Song & Dance",
+      "venueNormalized": "song-dance",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 7,
+      "day": 1,
+      "dayOfWeek": "Monday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0471919,
+        "lng": -76.15170789999999
+      }
+    },
+    {
+      "id": "2024-08-01-sulaco",
+      "date": "2024-08-01",
+      "headliner": "Sulaco",
+      "headlinerNormalized": "sulaco",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Order of the Dead"
+      ],
+      "venue": "Lost Horizon",
+      "venueNormalized": "lost-horizon",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 8,
+      "day": 1,
+      "dayOfWeek": "Thursday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0546386,
+        "lng": -76.0830593
       }
     },
     {
@@ -5906,6 +6395,84 @@
       "location": {
         "lat": 43.074122,
         "lng": -76.2217213
+      }
+    },
+    {
+      "id": "2024-09-01-william-elliott-whitmore",
+      "date": "2024-09-01",
+      "headliner": "William Elliott Whitmore",
+      "headlinerNormalized": "william-elliott-whitmore",
+      "genre": "Folk",
+      "genreNormalized": "folk",
+      "openers": [],
+      "venue": "Club 443",
+      "venueNormalized": "club-443",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 9,
+      "day": 1,
+      "dayOfWeek": "Sunday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0524321,
+        "lng": -76.14030819999999
+      }
+    },
+    {
+      "id": "2024-09-16-alice-cooper",
+      "date": "2024-09-16",
+      "headliner": "Alice Cooper",
+      "headlinerNormalized": "alice-cooper",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Ministry",
+        "Filter"
+      ],
+      "venue": "St. Joseph's Amp",
+      "venueNormalized": "st-joseph-s-amp",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 9,
+      "day": 16,
+      "dayOfWeek": "Monday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0881925,
+        "lng": -76.2228415
+      }
+    },
+    {
+      "id": "2024-09-22-goatwhore",
+      "date": "2024-09-22",
+      "headliner": "Goatwhore",
+      "headlinerNormalized": "goatwhore",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [
+        "Vitriol",
+        "Necrofier"
+      ],
+      "venue": "Song & Dance",
+      "venueNormalized": "song-dance",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2024,
+      "month": 9,
+      "day": 22,
+      "dayOfWeek": "Sunday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0471919,
+        "lng": -76.15170789999999
       }
     },
     {
@@ -5935,8 +6502,8 @@
       }
     },
     {
-      "id": "2025-03-01-dirtwire",
-      "date": "2025-03-01",
+      "id": "2025-03-21-dirtwire",
+      "date": "2025-03-21",
       "headliner": "Dirtwire",
       "headlinerNormalized": "dirtwire",
       "genre": "Experimental",
@@ -5950,8 +6517,8 @@
       "isFestival": false,
       "year": 2025,
       "month": 3,
-      "day": 1,
-      "dayOfWeek": "Saturday",
+      "day": 21,
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 43.0410937,
@@ -5959,8 +6526,34 @@
       }
     },
     {
-      "id": "2025-03-01-hendrix-tribute",
-      "date": "2025-03-01",
+      "id": "2025-03-22-malignancy",
+      "date": "2025-03-22",
+      "headliner": "Malignancy",
+      "headlinerNormalized": "malignancy",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Concrete"
+      ],
+      "venue": "The Jugg",
+      "venueNormalized": "the-jugg",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2025,
+      "month": 3,
+      "day": 22,
+      "dayOfWeek": "Saturday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0797422,
+        "lng": -76.1229639
+      }
+    },
+    {
+      "id": "2025-03-25-hendrix-tribute",
+      "date": "2025-03-25",
       "headliner": "Hendrix Tribute",
       "headlinerNormalized": "hendrix-tribute",
       "genre": "Blues Rock",
@@ -5977,8 +6570,8 @@
       "isFestival": false,
       "year": 2025,
       "month": 3,
-      "day": 1,
-      "dayOfWeek": "Saturday",
+      "day": 25,
+      "dayOfWeek": "Tuesday",
       "decade": "2020s",
       "location": {
         "lat": 43.04737250000001,
@@ -5986,8 +6579,35 @@
       }
     },
     {
-      "id": "2025-05-01-emperor",
-      "date": "2025-05-01",
+      "id": "2025-04-19-metallica",
+      "date": "2025-04-19",
+      "headliner": "Metallica",
+      "headlinerNormalized": "metallica",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Pantera",
+        "Suicidal Tendencies"
+      ],
+      "venue": "JMA Wireless Dome",
+      "venueNormalized": "jma-wireless-dome",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "year": 2025,
+      "month": 4,
+      "day": 19,
+      "dayOfWeek": "Saturday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.036233,
+        "lng": -76.1362931
+      }
+    },
+    {
+      "id": "2025-05-09-emperor",
+      "date": "2025-05-09",
       "headliner": "Emperor",
       "headlinerNormalized": "emperor",
       "genre": "Black Metal",
@@ -6003,8 +6623,8 @@
       "isFestival": false,
       "year": 2025,
       "month": 5,
-      "day": 1,
-      "dayOfWeek": "Thursday",
+      "day": 9,
+      "dayOfWeek": "Friday",
       "decade": "2020s",
       "location": {
         "lat": 42.266725,
@@ -6205,14 +6825,14 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-07T02:25:39.815Z",
-    "totalConcerts": 239,
+    "lastUpdated": "2026-01-08T01:56:59.049Z",
+    "totalConcerts": 262,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
-    "uniqueArtists": 142,
-    "uniqueVenues": 79,
-    "uniqueCities": 27
+    "uniqueArtists": 160,
+    "uniqueVenues": 84,
+    "uniqueCities": 29
   }
 }

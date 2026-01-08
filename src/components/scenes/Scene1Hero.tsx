@@ -461,7 +461,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           className="text-center mb-12"
         >
           <h1 className="font-serif text-5xl md:text-7xl text-gray-900 mb-4 tracking-tight">
-            CrowleysAltar
+            Mr. Crowleys Vault
           </h1>
           <p className="font-sans text-lg md:text-xl text-gray-500">
             {totalConcerts} shows across {yearSpan}

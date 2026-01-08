@@ -964,5 +964,29 @@
     "lng": -76.6587942,
     "formattedAddress": "Hersheypark Stadium, Hershey, PA",
     "geocodedAt": "2026-01-07T02:06:03.217Z"
+  },
+  "griffiss afb|rome|ny": {
+    "lat": 43.2258402,
+    "lng": -75.4051114,
+    "formattedAddress": "Griffiss AFB, Rome, NY",
+    "geocodedAt": "2026-01-08T01:06:40.044Z"
+  },
+  "wells fargo center|philadelphia|pa": {
+    "lat": 39.9012015,
+    "lng": -75.17197949999999,
+    "formattedAddress": "Wells Fargo Center, Philadelphia, PA",
+    "geocodedAt": "2026-01-08T01:06:40.751Z"
+  },
+  "the cuban club|tampa|fl": {
+    "lat": 27.9621515,
+    "lng": -82.4446267,
+    "formattedAddress": "The Cuban Club, Tampa, FL",
+    "geocodedAt": "2026-01-08T01:06:41.545Z"
+  },
+  "convention hall|asbury park|nj": {
+    "lat": 40.2237327,
+    "lng": -73.9980485,
+    "formattedAddress": "Convention Hall, Asbury Park, NJ",
+    "geocodedAt": "2026-01-08T01:29:00.439Z"
   }
 }

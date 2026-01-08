@@ -13,7 +13,7 @@ export function Scene6Festivals({ concerts }: Scene6FestivalsProps) {
     // Let's go Newest First.
     const festivals = concerts
         .filter(c => c.isFestival)
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
     const scrollRef = useRef<HTMLDivElement>(null)
     const [activeCard, setActiveCard] = useState<string | null>(null)
@@ -94,9 +94,75 @@ export function Scene6Festivals({ concerts }: Scene6FestivalsProps) {
 
                         {/* Content */}
                         <div className="flex-grow flex flex-col justify-center text-center">
-                            <h3 className="font-serif text-3xl md:text-4xl text-white mb-4 leading-none">
-                                {festival.headliner}
-                            </h3>
+                            {/* Title - Link logic: Reference > MDF Special > Wikipedia Fallback */}
+                            {(() => {
+                                // 1. Priority: Explicit Reference from Google Sheet
+                                if (festival.reference) {
+                                    return (
+                                        <a
+                                            href={festival.reference}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="font-serif text-3xl md:text-4xl text-white mb-4 leading-none hover:text-purple-300 transition-colors underline decoration-purple-500/50 underline-offset-4"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {festival.headliner}
+                                        </a>
+                                    )
+                                }
+
+                                // 2. Special Case: Maryland Deathfest
+                                if (festival.headliner.toLowerCase().includes('maryland deathfest') || festival.headliner.toLowerCase().includes('mdf')) {
+                                    return (
+                                        <a
+                                            href="https://deathfests.com/history/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="font-serif text-3xl md:text-4xl text-white mb-4 leading-none hover:text-purple-300 transition-colors underline decoration-purple-500/50 underline-offset-4"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {festival.headliner}
+                                        </a>
+                                    )
+                                }
+
+                                // 3. Special Case: Ozzfest
+                                if (festival.headliner.toLowerCase().includes('ozzfest')) {
+                                    return (
+                                        <a
+                                            href={`https://en.wikipedia.org/wiki/Ozzfest_lineups_by_year#${festival.year}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="font-serif text-3xl md:text-4xl text-white mb-4 leading-none hover:text-purple-300 transition-colors underline decoration-purple-500/50 underline-offset-4"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {festival.headliner}
+                                        </a>
+                                    )
+                                }
+
+                                // 4. Special Case: Woodstock
+                                if (festival.headliner.toLowerCase().includes('woodstock')) {
+                                    return (
+                                        <a
+                                            href="https://en.wikipedia.org/wiki/Woodstock_%2799"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="font-serif text-3xl md:text-4xl text-white mb-4 leading-none hover:text-purple-300 transition-colors underline decoration-purple-500/50 underline-offset-4"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {festival.headliner}
+                                        </a>
+                                    )
+                                }
+
+                                // 5. Fallback: No Link
+                                return (
+                                    <h3 className="font-serif text-3xl md:text-4xl text-white mb-4 leading-none">
+                                        {festival.headliner}
+                                    </h3>
+                                )
+                            })()}
 
                             <div className="w-12 h-0.5 bg-purple-400 mx-auto mb-6 opacity-50" />
 

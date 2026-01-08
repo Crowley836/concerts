@@ -3,7 +3,6 @@ import { format } from 'date-fns'
 import { Link2 } from 'lucide-react'
 import { getGenreColor } from '../../../constants/colors'
 import { useArtistMetadata } from '../../TimelineHoverPreview/useArtistMetadata'
-import { TourBadge } from './TourBadge'
 import type { ArtistCard, ArtistConcert } from './types'
 import { haptics } from '../../../utils/haptics'
 
@@ -11,9 +10,6 @@ interface ConcertHistoryPanelProps {
   artist: ArtistCard
   onSetlistClick?: (concert: ArtistConcert) => void
   openSetlistConcert?: ArtistConcert | null // Currently open setlist concert
-  tourCount?: number // v1.6.0 - Number of upcoming tour dates
-  isTourPanelActive?: boolean // v1.6.0 - Whether tour panel is currently open
-  onTourBadgeClick?: () => void // v1.6.0 - Handler for tour badge click
 }
 
 /**
@@ -41,9 +37,6 @@ export function ConcertHistoryPanel({
   artist,
   onSetlistClick,
   openSetlistConcert,
-  tourCount = 0,
-  isTourPanelActive = false,
-  onTourBadgeClick
 }: ConcertHistoryPanelProps) {
   const { getArtistImage } = useArtistMetadata()
   const artistImage = getArtistImage(artist.name)
@@ -133,17 +126,7 @@ export function ConcertHistoryPanel({
             {artist.primaryGenre} · {artist.timesSeen} {artist.timesSeen === 1 ? 'show' : 'shows'}
           </p>
 
-          {/* Tour Badge (v1.6.0) - Only shows if artist has upcoming dates */}
-          {tourCount > 0 && onTourBadgeClick && (
-            <div className="mt-2">
-              <TourBadge
-                tourCount={tourCount}
-                isActive={isTourPanelActive}
-                onClick={onTourBadgeClick}
-                show={true}
-              />
-            </div>
-          )}
+          {/* Tour Badge removed */}
         </div>
       </div>
 
@@ -157,7 +140,7 @@ export function ConcertHistoryPanel({
         <ul className="list-none flex flex-col gap-1.5 overflow-y-auto pr-2">
           {artist.concerts.map((concert, idx) => {
             const isSetlistOpen = openSetlistConcert?.date === concert.date &&
-                                  openSetlistConcert?.venue === concert.venue
+              openSetlistConcert?.venue === concert.venue
 
             return (
               <li
@@ -184,9 +167,8 @@ export function ConcertHistoryPanel({
                       haptics.light() // Haptic feedback on setlist open
                       onSetlistClick(concert)
                     }}
-                    className={`setlist-link flex items-center gap-1.5 flex-shrink-0 transition-all duration-150 relative touchable-subtle ${
-                      isSetlistOpen ? 'setlist-link-active' : ''
-                    }`}
+                    className={`setlist-link flex items-center gap-1.5 flex-shrink-0 transition-all duration-150 relative touchable-subtle ${isSetlistOpen ? 'setlist-link-active' : ''
+                      }`}
                     aria-label={`View setlist for ${concert.venue}`}
                   >
                     {/* Musical note icon */}
@@ -195,7 +177,7 @@ export function ConcertHistoryPanel({
                       viewBox="0 0 24 24"
                       fill="currentColor"
                     >
-                      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
                     </svg>
                     <span className="text-xs font-medium pointer-events-none">Setlist</span>
                   </button>

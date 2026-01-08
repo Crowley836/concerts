@@ -13,6 +13,7 @@ export interface RawConcertRow {
   venue: string
   cityState: string
   reference?: string
+  festival?: string
   openers: string[] // Parsed from Opener_ columns
 }
 
@@ -70,6 +71,21 @@ export class GoogleSheetsClient {
   }
 
   /**
+   * Fetch spreadsheet metadata to get sheet names
+   */
+  async getSpreadsheetDetails(spreadsheetId: string) {
+    try {
+      const response = await this.sheets.spreadsheets.get({
+        spreadsheetId,
+      })
+      return response.data
+    } catch (error) {
+      console.error('Failed to fetch spreadsheet details:', error)
+      throw error
+    }
+  }
+
+  /**
    * Fetch concert data from Google Sheet
    */
   async fetchConcerts(spreadsheetId: string, range: string): Promise<RawConcertRow[]> {
@@ -91,7 +107,7 @@ export class GoogleSheetsClient {
 
       // Identify required columns
       const dateCol = this.getColumnIndex(columnMap, 'date')
-      const headlinerCol = this.getColumnIndex(columnMap, 'headliner')
+      const headlinerCol = this.getColumnIndex(columnMap, 'headliner', 'artist name - headliner')
       const venueCol = this.getColumnIndex(columnMap, 'venue')
 
       // City/State can be either a combined column or separate columns
@@ -119,8 +135,9 @@ export class GoogleSheetsClient {
 
       // Identify optional columns
       const genreCol = this.getColumnIndex(columnMap, 'genre_headliner', 'genre')
-      const openerCol = this.getColumnIndex(columnMap, 'opener')
+      const openerCol = this.getColumnIndex(columnMap, 'opener', 'artist name - opener(s)', 'artist name - opener', 'openers')
       const referenceCol = this.getColumnIndex(columnMap, 'reference')
+      const festivalCol = this.getColumnIndex(columnMap, 'festival')
 
       // Log warnings for missing optional columns
       if (genreCol === undefined) {
@@ -146,7 +163,7 @@ export class GoogleSheetsClient {
       } else {
         console.log(`   Location: City(${cityCol}), State(${stateCol}) [separate columns]`)
       }
-      console.log(`   Optional: Genre(${genreCol ?? 'missing'}), Opener(${openerCol ?? 'missing'}), Reference(${referenceCol ?? 'missing'})`)
+      console.log(`   Optional: Genre(${genreCol ?? 'missing'}), Opener(${openerCol ?? 'missing'}), Reference(${referenceCol ?? 'missing'}), Festival(${festivalCol ?? 'missing'})`)
       console.log(`   Found ${openerColumns.length} Opener_N columns`)
 
       // Skip header row, parse data rows
@@ -157,6 +174,7 @@ export class GoogleSheetsClient {
           const genre = genreCol !== undefined ? (row[genreCol] || '').trim() : ''
           const opener = openerCol !== undefined ? (row[openerCol] || '').trim() : ''
           const venue = (row[venueCol!] || '').trim()
+          const festivalRaw = festivalCol !== undefined ? (row[festivalCol] || '').trim() : ''
 
           // Get cityState from either combined column or separate City + State columns
           let cityState = ''
@@ -178,21 +196,6 @@ export class GoogleSheetsClient {
             }
           }
 
-          // Debug: Log Howard Jones concert opener data
-          if (headliner.includes('Howard') && date.includes('2024')) {
-            console.log(`\n🐛 DEBUG: ${headliner} @ ${date}`)
-            console.log(`   Venue: "${venue}"`)
-            console.log(`   Opener column value: "${opener}"`)
-            console.log(`   Opener_N columns (indices): ${JSON.stringify(openerColumns.slice(0, 5))}`)
-            console.log(`   Parsed openers array: ${JSON.stringify(openers)}`)
-            console.log(`   Raw row length: ${row.length}`)
-            for (let i = 0; i < Math.min(5, openerColumns.length); i++) {
-              const colIdx = openerColumns[i]
-              const val = row[colIdx]
-              console.log(`   Opener_${i+1} (col ${colIdx}): "${val}" [type: ${typeof val}, empty: ${!val}]`)
-            }
-          }
-
           return {
             date,
             headliner,
@@ -202,6 +205,7 @@ export class GoogleSheetsClient {
             cityState,
             reference,
             openers,
+            festival: festivalRaw // pass generic string for now
           } as RawConcertRow
         } catch (error) {
           console.error(`Error parsing row ${index + 2}:`, error) // +2 because we skipped header

@@ -178,6 +178,8 @@ async function importCsv() {
             if (!cityCoords) {
                 if (cityState && cityState.length > 2) {
                     console.warn(`⚠️  Missing coordinates for: "${venue}" in "${cityState}" - defaulting to Denver`)
+                } else {
+                    console.warn(`⚠️  Empty location for: "${venue}" (Headliner: ${headliner}) - defaulting to Denver`)
                 }
             } else {
                 coordinates = cityCoords
@@ -212,6 +214,7 @@ async function importCsv() {
             dayOfWeek: date.toLocaleDateString('en-US', { weekday: 'long' }),
             decade: `${Math.floor(date.getFullYear() / 10) * 10}s`,
             location: coordinates,
+            reference: row['Reference'] || undefined
         }
 
         // checking if genre exists in existing data and not in new data is hard because we regenerate it every time.
