@@ -3,7 +3,7 @@ import { getGenreColor } from '../../../constants/colors'
 import { ConcertHistoryPanel } from './ConcertHistoryPanel'
 import { SpotifyPanel } from './SpotifyPanel'
 import { LinerNotesPanel } from './LinerNotesPanel'
-import { TourDatesPanel } from './TourDatesPanel'
+import { fetchSetlist } from '../../../services/setlistfm'
 import type { ArtistCard, ArtistConcert } from './types'
 import type { Setlist } from '../../../types/setlist'
 
@@ -44,7 +44,6 @@ export function ArtistGatefold({
 
   // Active panel state (v1.6.0) - only one panel visible at a time
   const [activePanel, setActivePanel] = useState<ActivePanel>('none')
-  const [isTransitioning, setIsTransitioning] = useState(false)
 
   // Liner notes state
   const [selectedConcert, setSelectedConcert] = useState<ArtistConcert | null>(null)

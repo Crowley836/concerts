@@ -57,7 +57,7 @@ export function Scene6Festivals({ concerts }: Scene6FestivalsProps) {
                     perspective: '1000px',
                 }}
             >
-                {festivals.map((festival, index) => (
+                {festivals.map((festival) => (
                     <motion.div
                         key={festival.id}
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -66,7 +66,7 @@ export function Scene6Festivals({ concerts }: Scene6FestivalsProps) {
                         transition={{ duration: 0.5 }}
                         onClick={() => {
                             setActiveCard(activeCard === festival.id ? null : festival.id)
-                            haptics.selection()
+                            haptics.light()
                         }}
                         className={`
               relative flex-shrink-0 snap-center
