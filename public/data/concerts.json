@@ -1042,9 +1042,10 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Dismember",
+        "Haemorrhage",
         "Vital Remains",
-        "Necrophagist"
+        "Necrophagist",
+        "Demilich"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -1246,7 +1247,9 @@
       "openers": [
         "Zyklon",
         "Brutal Truth",
-        "Malevolent Creation"
+        "Malevolent Creation",
+        "Ghoul",
+        "Misery Index"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -1469,9 +1472,12 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Anaal Nathrakh",
-        "Nuclear Assault",
-        "Grave"
+        "Dying Fetus",
+        "Grave",
+        "Disfear",
+        "Fuck I’m Dead",
+        "Impaled",
+        "Engorged"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -1678,7 +1684,10 @@
         "Bolt Thrower",
         "Asphyx",
         "Pestilence",
-        "Marduk"
+        "Mayhem",
+        "Marduk",
+        "Brutal Truth",
+        "Immolation"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -2232,10 +2241,11 @@
       "genreNormalized": "death-metal",
       "openers": [
         "Autopsy",
-        "Sodom",
         "Obituary",
-        "Pentagram",
-        "Gorguts"
+        "Gorguts",
+        "Asphyx",
+        "Melechesh",
+        "Entombed"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -2370,10 +2380,13 @@
       "genreNormalized": "death-metal",
       "openers": [
         "Neurosis",
-        "Voivod",
-        "Coroner",
-        "Cathedral",
-        "Ghost"
+        "Acid Witch",
+        "Avulsed",
+        "Blood Freak",
+        "Nails",
+        "Inquisition",
+        "Hail of Bullets",
+        "Hooded Menace"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -2585,9 +2598,13 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Electric Wizard",
-        "Saint Vitus",
-        "Morbid Angel"
+        "Morbid Angel",
+        "Archgoat",
+        "Autopsy",
+        "Haemorrhage",
+        "Suffocation",
+        "Disma",
+        "Dragged into Sunlight"
       ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
@@ -6946,7 +6963,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-09T17:53:23.982Z",
+    "lastUpdated": "2026-01-09T18:30:18.371Z",
     "totalConcerts": 267,
     "dateRange": {
       "earliest": "1994-06-06",
