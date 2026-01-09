@@ -8,7 +8,8 @@ const scenes = [
   { id: 3, label: 'Map', color: 'bg-gray-800' },
   { id: 4, label: 'Festivals', color: 'bg-purple-500' },
   { id: 5, label: 'Genres', color: 'bg-rose-500' },
-  { id: 6, label: 'Artists', color: 'bg-gray-400' }, // Shifted to make room for Festivals
+  { id: 6, label: 'Artists', color: 'bg-gray-400' },
+  { id: 7, label: 'Data', color: 'bg-teal-500' },
 ]
 
 export function SceneNavigation() {

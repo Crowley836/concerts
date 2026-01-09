@@ -7,6 +7,7 @@ import { Scene4Bands } from './components/scenes/Scene4Bands'
 import { Scene5Genres } from './components/scenes/Scene5Genres'
 import { Scene6Festivals } from './components/scenes/Scene6Festivals'
 import { ArtistScene } from './components/scenes/ArtistScene/ArtistScene'
+import { Scene7Data } from './components/scenes/Scene7Data'
 import { SceneNavigation } from './components/SceneNavigation'
 import { ChangelogPage, ChangelogToast, ChangelogRSS } from './components/changelog'
 import { SCENE_MAP, TOAST } from './components/changelog/constants'
@@ -83,7 +84,7 @@ function MainScenes() {
       const scrollPosition = scrollContainer.scrollTop
       const windowHeight = window.innerHeight
       const sceneIndex = Math.round(scrollPosition / windowHeight) + 1
-      setCurrentScene(Math.min(Math.max(sceneIndex, 1), 6))
+      setCurrentScene(Math.min(Math.max(sceneIndex, 1), 7))
     }
 
     scrollContainer.addEventListener('scroll', handleScroll, { passive: true })
@@ -204,6 +205,9 @@ function MainScenes() {
           pendingArtistFocus={pendingArtistFocus}
           onArtistFocusComplete={() => setPendingArtistFocus(null)}
         />
+
+        {/* Scene 7: Data Table */}
+        <Scene7Data concerts={concerts} />
 
 
       </div>
