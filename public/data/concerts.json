@@ -2916,7 +2916,11 @@
         "Venom",
         "Carcass",
         "Down",
-        "The Melvins"
+        "The Melvins",
+        "Bolt Thrower",
+        "Broken Hope",
+        "Cobalt",
+        "Ihsahn"
       ],
       "venue": "Edison Lot / Soundstage",
       "venueNormalized": "edison-lot-soundstage",
@@ -3175,10 +3179,15 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Dark Angel",
-        "Candlemass",
         "Triptykon",
-        "At The Gates"
+        "At The Gates",
+        "Unleashed",
+        "Soilent Green",
+        "Bolzer",
+        "Cancer",
+        "Asphyx",
+        "MIsery Index",
+        "Immolation"
       ],
       "venue": "Edison Lot / Rams Head",
       "venueNormalized": "edison-lot-rams-head",
@@ -3544,10 +3553,12 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Bloodbath",
-        "Neurosis",
-        "Sodom",
-        "Amorphis"
+        "Blood Red Throne",
+        "Suffocation",
+        "Vallenfyre",
+        "Primordial",
+        "Obituary",
+        "Demilich"
       ],
       "venue": "Edison Lot / Rams Head",
       "venueNormalized": "edison-lot-rams-head",
@@ -4066,7 +4077,11 @@
         "Venom",
         "Testament",
         "Mayhem",
-        "Samael"
+        "Samael",
+        "The Haunted",
+        "Paradise Lost",
+        "Hail of Bullets",
+        "Haemorrhage"
       ],
       "venue": "Edison Lot / Soundstage",
       "venueNormalized": "edison-lot-soundstage",
@@ -4607,8 +4622,11 @@
       "openers": [
         "Tiamat",
         "Autopsy",
-        "Candlemass",
-        "Morbid Saint"
+        "Terrorizer",
+        "Torture Rack",
+        "UADA",
+        "Morbid Angel",
+        "Vader"
       ],
       "venue": "Edison Lot / Soundstage",
       "venueNormalized": "edison-lot-soundstage",
@@ -4998,10 +5016,11 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Satyricon",
-        "Bloodbath",
-        "Godflesh",
-        "EyeHateGod"
+        "Misery Index",
+        "EyeHateGod",
+        "The Ruins of Beverast",
+        "Suffocation",
+        "Violation Wound"
       ],
       "venue": "Rams Head / Soundstage",
       "venueNormalized": "rams-head-soundstage",
@@ -5504,10 +5523,12 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Voivod",
+        "Brutality",
         "Immolation",
         "Pestilence",
-        "Unleashed"
+        "Unleashed",
+        "Deicide",
+        "Rippikoulu"
       ],
       "venue": "Rams Head / Soundstage",
       "venueNormalized": "rams-head-soundstage",
@@ -5871,7 +5892,10 @@
         "Dismember",
         "Hypocrisy",
         "Autopsy",
-        "Deicide"
+        "Deicide",
+        "Massacre",
+        "Immolation",
+        "Monstrosity"
       ],
       "venue": "Edison Lot / Rams Head",
       "venueNormalized": "edison-lot-rams-head",
@@ -6436,12 +6460,12 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [
-        "Sodom",
+        "Avulsed",
+        "Soilent Green",
         "Dismember",
-        "Abbath",
-        "Bloodbath",
-        "Deicide",
-        "Soilent Green"
+        "Haemorrhage",
+        "Severe Torture",
+        "Skinless"
       ],
       "venue": "Market St / Soundstage",
       "venueNormalized": "market-st-soundstage",
@@ -6781,7 +6805,9 @@
         "Asphyx",
         "Benediction",
         "LIK",
-        "Cynic"
+        "Gorgasm",
+        "Paradise Lost",
+        "hulder"
       ],
       "venue": "Downtown Venues",
       "venueNormalized": "downtown-venues",
@@ -6963,7 +6989,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-09T18:30:18.371Z",
+    "lastUpdated": "2026-01-09T19:17:03.390Z",
     "totalConcerts": 267,
     "dateRange": {
       "earliest": "1994-06-06",
