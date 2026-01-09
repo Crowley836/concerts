@@ -3,7 +3,7 @@ name: Sync Concert Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # Runs at midnight UTC every day
+    - cron: '0 0 * * 0' # Runs at midnight UTC every Sunday
 
 permissions:
   contents: write
