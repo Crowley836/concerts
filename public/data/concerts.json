@@ -312,8 +312,8 @@
       "date": "2001-01-18",
       "headliner": "Insane Clown Posse",
       "headlinerNormalized": "insane-clown-posse",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Hip-Hop",
+      "genreNormalized": "hip-hop",
       "openers": [],
       "venue": "Water St. Music Hall",
       "venueNormalized": "water-st-music-hall",
@@ -560,6 +560,30 @@
       }
     },
     {
+      "id": "2003-05-12-soulfly",
+      "date": "2003-05-12",
+      "headliner": "Soulfly",
+      "headlinerNormalized": "soulfly",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "year": 2003,
+      "month": 5,
+      "day": 12,
+      "dayOfWeek": "Monday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
+      }
+    },
+    {
       "id": "2003-08-11-ozzfest-2003",
       "date": "2003-08-11",
       "headliner": "Ozzfest 2003",
@@ -619,6 +643,30 @@
       }
     },
     {
+      "id": "2004-02-04-six-feet-under",
+      "date": "2004-02-04",
+      "headliner": "Six Feet Under",
+      "headlinerNormalized": "six-feet-under",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "year": 2004,
+      "month": 2,
+      "day": 4,
+      "dayOfWeek": "Wednesday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
+      }
+    },
+    {
       "id": "2004-04-04-dying-fetus",
       "date": "2004-04-04",
       "headliner": "Dying Fetus",
@@ -655,33 +703,6 @@
         "Suffocation",
         "Satyricon",
         "Premonitions of War"
-      ],
-      "venue": "Thunderdome",
-      "venueNormalized": "thunderdome",
-      "city": "Baltimore",
-      "state": "MD",
-      "cityState": "Baltimore, MD",
-      "isFestival": false,
-      "year": 2004,
-      "month": 4,
-      "day": 15,
-      "dayOfWeek": "Thursday",
-      "decade": "2000s",
-      "location": {
-        "lat": 39.2905023,
-        "lng": -76.6104072
-      }
-    },
-    {
-      "id": "2004-04-15-morbid-angel",
-      "date": "2004-04-15",
-      "headliner": "Morbid Angel",
-      "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
-      "openers": [
-        "Suffocation",
-        "Satyricon"
       ],
       "venue": "Thunderdome",
       "venueNormalized": "thunderdome",
@@ -799,6 +820,54 @@
       "month": 8,
       "day": 29,
       "dayOfWeek": "Sunday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
+      }
+    },
+    {
+      "id": "2004-09-18-soulfly",
+      "date": "2004-09-18",
+      "headliner": "Soulfly",
+      "headlinerNormalized": "soulfly",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "year": 2004,
+      "month": 9,
+      "day": 18,
+      "dayOfWeek": "Saturday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
+      }
+    },
+    {
+      "id": "2004-10-23-soulfly",
+      "date": "2004-10-23",
+      "headliner": "Soulfly",
+      "headlinerNormalized": "soulfly",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "year": 2004,
+      "month": 10,
+      "day": 23,
+      "dayOfWeek": "Saturday",
       "decade": "2000s",
       "location": {
         "lat": 39.4009392,
@@ -939,6 +1008,30 @@
       "location": {
         "lat": 38.7851679,
         "lng": -77.5866573
+      }
+    },
+    {
+      "id": "2005-08-14-six-feet-under",
+      "date": "2005-08-14",
+      "headliner": "Six Feet Under",
+      "headlinerNormalized": "six-feet-under",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "year": 2005,
+      "month": 8,
+      "day": 14,
+      "dayOfWeek": "Sunday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
       }
     },
     {
@@ -1778,6 +1871,33 @@
       }
     },
     {
+      "id": "2009-10-20-soulfly",
+      "date": "2009-10-20",
+      "headliner": "Soulfly",
+      "headlinerNormalized": "soulfly",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Prong",
+        "Cattle Decapitation"
+      ],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "year": 2009,
+      "month": 10,
+      "day": 20,
+      "dayOfWeek": "Tuesday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
+      }
+    },
+    {
       "id": "2009-10-23-eyehategod",
       "date": "2009-10-23",
       "headliner": "EyeHateGod",
@@ -2459,6 +2579,33 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
+      }
+    },
+    {
+      "id": "2012-07-24-slayer",
+      "date": "2012-07-24",
+      "headliner": "Slayer",
+      "headlinerNormalized": "slayer",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Motorhead",
+        "Anthrax"
+      ],
+      "venue": "Montage Mountain",
+      "venueNormalized": "montage-mountain",
+      "city": "Scranton",
+      "state": "PA",
+      "cityState": "Scranton, PA",
+      "isFestival": false,
+      "year": 2012,
+      "month": 7,
+      "day": 24,
+      "dayOfWeek": "Tuesday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     },
     {
@@ -3249,8 +3396,8 @@
       "date": "2015-04-08",
       "headliner": "Black Label Society",
       "headlinerNormalized": "black-label-society",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Sludge Metal",
+      "genreNormalized": "sludge-metal",
       "openers": [
         "Wino (Acoustic)"
       ],
@@ -3927,8 +4074,8 @@
       "date": "2016-07-01",
       "headliner": "Funebrarum",
       "headlinerNormalized": "funebrarum",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Metro Gallery",
       "venueNormalized": "metro-gallery",
@@ -4187,30 +4334,6 @@
       "openers": [
         "High on Fire"
       ],
-      "venue": "Baltimore Soundstage",
-      "venueNormalized": "baltimore-soundstage",
-      "city": "Baltimore",
-      "state": "MD",
-      "cityState": "Baltimore, MD",
-      "isFestival": false,
-      "year": 2016,
-      "month": 12,
-      "day": 16,
-      "dayOfWeek": "Friday",
-      "decade": "2010s",
-      "location": {
-        "lat": 39.2876463,
-        "lng": -76.60706859999999
-      }
-    },
-    {
-      "id": "2016-12-16-abbath",
-      "date": "2016-12-16",
-      "headliner": "Abbath",
-      "headlinerNormalized": "abbath",
-      "genre": "Black Metal",
-      "genreNormalized": "black-metal",
-      "openers": [],
       "venue": "Baltimore Soundstage",
       "venueNormalized": "baltimore-soundstage",
       "city": "Baltimore",
@@ -4675,8 +4798,8 @@
       "date": "2017-12-01",
       "headliner": "Morta Skuld",
       "headlinerNormalized": "morta-skuld",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
       "openers": [
         "Embalmed",
         "Scorched"
@@ -5366,8 +5489,8 @@
       "date": "2019-06-01",
       "headliner": "Nails",
       "headlinerNormalized": "nails",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Grindcore",
+      "genreNormalized": "grindcore",
       "openers": [
         "Misery Index",
         "Outer Heaven"
@@ -5520,8 +5643,8 @@
       "date": "2019-10-01",
       "headliner": "1349",
       "headlinerNormalized": "1349",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Black Metal",
+      "genreNormalized": "black-metal",
       "openers": [
         "Uada"
       ],
@@ -5669,32 +5792,6 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
-    },
-    {
-      "id": "2021-10-07-chris-stapleton",
-      "date": "2021-10-07",
-      "headliner": "Chris Stapleton",
-      "headlinerNormalized": "chris-stapleton",
-      "genre": "BlueGrass",
-      "genreNormalized": "bluegrass",
-      "openers": [
-        "Sheryl Crow"
-      ],
-      "venue": "St. Joseph's Amp",
-      "venueNormalized": "st-joseph-s-amp",
-      "city": "Syracuse",
-      "state": "NY",
-      "cityState": "Syracuse, NY",
-      "isFestival": false,
-      "year": 2021,
-      "month": 10,
-      "day": 7,
-      "dayOfWeek": "Thursday",
-      "decade": "2020s",
-      "location": {
-        "lat": 43.0881925,
-        "lng": -76.2228415
       }
     },
     {
@@ -6161,8 +6258,8 @@
       "date": "2024-02-15",
       "headliner": "Go Ahead And Die",
       "headlinerNormalized": "go-ahead-and-die",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
       "openers": [
         "Primitive Man"
       ],
@@ -6242,8 +6339,8 @@
       "date": "2024-05-01",
       "headliner": "Cattle Decapitation",
       "headlinerNormalized": "cattle-decapitation",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
       "openers": [
         "Carnifex"
       ],
@@ -6268,8 +6365,8 @@
       "date": "2024-05-01",
       "headliner": "Internal Bleeding",
       "headlinerNormalized": "internal-bleeding",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
       "openers": [
         "Cenotaph",
         "Mutilatred"
@@ -6326,8 +6423,8 @@
       "date": "2024-07-01",
       "headliner": "Frozen Soul",
       "headlinerNormalized": "frozen-soul",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
       "openers": [
         "Creeping Death"
       ],
@@ -6352,8 +6449,8 @@
       "date": "2024-08-01",
       "headliner": "Sulaco",
       "headlinerNormalized": "sulaco",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "mathcore",
+      "genreNormalized": "mathcore",
       "openers": [
         "Order of the Dead"
       ],
@@ -6426,8 +6523,8 @@
       "date": "2024-09-16",
       "headliner": "Alice Cooper",
       "headlinerNormalized": "alice-cooper",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Hard Rock",
+      "genreNormalized": "hard-rock",
       "openers": [
         "Ministry",
         "Filter"
@@ -6530,8 +6627,8 @@
       "date": "2025-03-22",
       "headliner": "Malignancy",
       "headlinerNormalized": "malignancy",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Brutal Death Metal",
+      "genreNormalized": "brutal-death-metal",
       "openers": [
         "Concrete"
       ],
@@ -6825,14 +6922,14 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-08T01:56:59.049Z",
-    "totalConcerts": 262,
+    "lastUpdated": "2026-01-09T14:28:08.676Z",
+    "totalConcerts": 266,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
     "uniqueArtists": 160,
-    "uniqueVenues": 84,
-    "uniqueCities": 29
+    "uniqueVenues": 85,
+    "uniqueCities": 30
   }
 }
