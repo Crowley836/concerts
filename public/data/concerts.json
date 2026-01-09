@@ -1390,6 +1390,30 @@
       }
     },
     {
+      "id": "2008-02-09-down",
+      "date": "2008-02-09",
+      "headliner": "Down",
+      "headlinerNormalized": "down",
+      "genre": "Metal",
+      "genreNormalized": "metal",
+      "openers": [],
+      "venue": "Starland Ballroom",
+      "venueNormalized": "starland-ballroom",
+      "city": "Sayreville",
+      "state": "NJ",
+      "cityState": "Sayreville, NJ",
+      "isFestival": false,
+      "year": 2008,
+      "month": 2,
+      "day": 9,
+      "dayOfWeek": "Saturday",
+      "decade": "2000s",
+      "location": {
+        "lat": 40.44041,
+        "lng": -74.355218
+      }
+    },
+    {
       "id": "2008-02-28-kingdom-of-sorrow",
       "date": "2008-02-28",
       "headliner": "Kingdom of Sorrow",
@@ -6922,8 +6946,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-09T15:09:59.904Z",
-    "totalConcerts": 266,
+    "lastUpdated": "2026-01-09T17:53:23.982Z",
+    "totalConcerts": 267,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
