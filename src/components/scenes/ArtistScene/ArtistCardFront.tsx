@@ -8,6 +8,7 @@ interface ArtistCardFrontProps {
   genre: string
   getArtistImage: (artistName: string) => string | undefined
   artistImageLoading: boolean
+  timesSeen: number
 }
 
 /**
@@ -19,7 +20,8 @@ export function ArtistCardFront({
   albumCover,
   genre,
   getArtistImage,
-  artistImageLoading
+  artistImageLoading,
+  timesSeen
 }: ArtistCardFrontProps) {
   const [imageLoaded, setImageLoaded] = useState(false)
   const genreColor = getGenreColor(genre)
@@ -55,15 +57,21 @@ export function ArtistCardFront({
           <img
             src={imageUrl}
             alt={altText}
-            className={`w-full h-full object-cover transition-opacity duration-300 ${
-              imageLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
             loading="lazy"
             onLoad={() => setImageLoaded(true)}
           />
         </>
       ) : (
         <ArtistPlaceholder artistName={artistName} genre={genre} />
+      )}
+
+      {/* Times Seen Badge */}
+      {timesSeen > 1 && (
+        <div className="absolute top-2 right-2 bg-violet-600 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow-md z-10">
+          ×{timesSeen}
+        </div>
       )}
 
       {/* Hover overlay */}

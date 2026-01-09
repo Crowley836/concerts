@@ -50,6 +50,7 @@ export function ArtistCard({ artist, onClick, getArtistImage, artistImageLoading
         genre={artist.primaryGenre}
         getArtistImage={getArtistImage}
         artistImageLoading={artistImageLoading}
+        timesSeen={artist.timesSeen}
       />
     </div>
   )

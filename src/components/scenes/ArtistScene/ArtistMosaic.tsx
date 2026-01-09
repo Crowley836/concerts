@@ -42,8 +42,8 @@ export function ArtistMosaic({
       const loadAll = () => {
         setVisibleCount(artists.length)
       }
-      // Store it so parent can call it
-      ;(window as any).__loadAllArtistCards = loadAll
+        // Store it so parent can call it
+        ; (window as any).__loadAllArtistCards = loadAll
     }
   }, [artists.length, onLoadAllCards])
 
@@ -75,9 +75,12 @@ export function ArtistMosaic({
     return () => observer.disconnect()
   }, [visibleCount, processedArtists.length])
 
-  // Reset visible count when sort changes
+  // Reset visible count and scroll to top when sort changes
   useEffect(() => {
     setVisibleCount(INITIAL_LOAD)
+    if (containerRef.current) {
+      containerRef.current.scrollTo({ top: 0, behavior: 'instant' })
+    }
   }, [sortOrder])
 
   const visibleArtists = processedArtists.slice(0, visibleCount)
@@ -88,9 +91,8 @@ export function ArtistMosaic({
       {/* Mosaic Grid */}
       <div
         ref={containerRef}
-        className={`w-full h-full overflow-y-auto pb-32 transition-opacity duration-400 transition-filter duration-400 ${
-          openArtistName ? 'opacity-30 blur-md' : 'opacity-100 blur-0'
-        }`}
+        className={`w-full h-full overflow-y-auto pb-32 transition-opacity duration-400 transition-filter duration-400 ${openArtistName ? 'opacity-30 blur-md' : 'opacity-100 blur-0'
+          }`}
         style={{ transition: 'opacity 0.4s ease, filter 0.4s ease' }}
       >
         {/* Flexbox Container - Centered horizontally, NO GAPS */}
