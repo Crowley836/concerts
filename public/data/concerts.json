@@ -2604,8 +2604,8 @@
       "dayOfWeek": "Tuesday",
       "decade": "2010s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 41.3533,
+        "lng": -75.6592
       }
     },
     {
@@ -6922,7 +6922,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-09T14:28:08.676Z",
+    "lastUpdated": "2026-01-09T15:09:59.904Z",
     "totalConcerts": 266,
     "dateRange": {
       "earliest": "1994-06-06",

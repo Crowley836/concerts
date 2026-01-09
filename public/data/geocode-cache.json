@@ -1,4 +1,10 @@
 {
+  "montage mountain|scranton|pa": {
+    "lat": 41.3533,
+    "lng": -75.6592,
+    "formattedAddress": "Montage Mountain, Scranton, PA",
+    "geocodedAt": "2024-01-09T15:00:00.000Z"
+  },
   "irvine meadows|irvine|california": {
     "lat": 33.6577553,
     "lng": -117.7293939,
