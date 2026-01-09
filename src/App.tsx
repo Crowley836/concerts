@@ -63,7 +63,8 @@ function MainScenes() {
   }
 
   useEffect(() => {
-    fetch('/data/concerts.json')
+    // Add timestamp to prevent caching of data
+    fetch(`/data/concerts.json?t=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
         setData(data)
