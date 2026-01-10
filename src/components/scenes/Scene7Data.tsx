@@ -40,9 +40,9 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                     {/* Table Header */}
                     <div className="grid grid-cols-12 gap-4 p-4 border-b border-white/10 bg-black/20 text-xs md:text-sm font-medium text-gray-400 uppercase tracking-wider sticky top-0 z-10">
                         <div className="col-span-3 md:col-span-2">Date</div>
-                        <div className="col-span-4 md:col-span-3">Headliner</div>
-                        <div className="col-span-5 md:col-span-2 hidden md:block">Openers</div>
-                        <div className="col-span-5 md:col-span-3 text-right md:text-left">Venue</div>
+                        <div className="col-span-3 md:col-span-3">Headliner</div>
+                        <div className="col-span-2 md:col-span-2">Openers</div>
+                        <div className="col-span-4 md:col-span-3 text-right md:text-left">Venue</div>
                         <div className="hidden md:block col-span-2">Attended With</div>
                     </div>
 
@@ -63,17 +63,33 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                 </div>
 
                                 {/* Headliner */}
-                                <div className="col-span-4 md:col-span-3 font-semibold text-white truncate" title={concert.headliner}>
+                                <div className="col-span-3 md:col-span-3 font-semibold text-white truncate" title={concert.headliner}>
                                     {concert.headliner}
                                 </div>
 
-                                {/* Openers (Desktop only) */}
-                                <div className="hidden md:block col-span-2 text-gray-400 truncate" title={concert.openers.join(', ')}>
-                                    {concert.openers.length > 0 ? concert.openers.join(', ') : '-'}
+                                {/* Openers */}
+                                <div className="col-span-2 md:col-span-2 text-gray-400 text-xs md:text-sm truncate">
+                                    <span className="hidden md:inline" title={concert.openers.join(', ')}>
+                                        {concert.openers.length > 0 ? concert.openers.join(', ') : '-'}
+                                    </span>
+                                    <span className="md:hidden flex items-center gap-1">
+                                        {concert.openers.length > 0 ? (
+                                            <>
+                                                <span className="truncate">{concert.openers[0]}</span>
+                                                {concert.openers.length > 1 && (
+                                                    <span className="text-[10px] bg-slate-700 px-1 py-0.5 rounded text-gray-300 font-medium">
+                                                        +{concert.openers.length - 1}
+                                                    </span>
+                                                )}
+                                            </>
+                                        ) : (
+                                            '-'
+                                        )}
+                                    </span>
                                 </div>
 
                                 {/* Venue & City */}
-                                <div className="col-span-5 md:col-span-3 text-right md:text-left flex flex-col md:flex-row md:items-center justify-end md:justify-start gap-1">
+                                <div className="col-span-4 md:col-span-3 text-right md:text-left flex flex-col md:flex-row md:items-center justify-end md:justify-start gap-1">
                                     <span className="text-indigo-300 truncate" title={concert.venue}>{concert.venue}</span>
                                     <span className="hidden md:inline text-gray-600">•</span>
                                     <span className="text-gray-500 text-xs md:text-sm truncate" title={concert.city}>{concert.city}</span>
