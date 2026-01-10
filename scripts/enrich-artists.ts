@@ -1,5 +1,6 @@
 import { TheAudioDBClient } from './utils/theaudiodb-client'
 import { LastFmClient } from './utils/lastfm-client'
+import { SpotifyClient } from './services/spotify-client'
 import { RateLimiter } from './utils/rate-limiter'
 import { normalizeArtistName } from '../src/utils/normalize.js'
 import { createBackup } from './utils/backup'
@@ -58,6 +59,13 @@ async function enrichArtists(options: { dryRun?: boolean } = {}) {
     ? new LastFmClient(process.env.LASTFM_API_KEY)
     : null
 
+  const spotify = new SpotifyClient()
+  if (spotify.isConfigured) {
+    console.log('✅ Spotify Client configured')
+  } else {
+    console.log('⚠️  Spotify credentials missing (skipping Spotify)')
+  }
+
   const rateLimiter = new RateLimiter(2) // TheAudioDB: 2 calls/sec
 
   let enriched = 0
@@ -86,7 +94,33 @@ async function enrichArtists(options: { dryRun?: boolean } = {}) {
       // Rate limit
       await rateLimiter.wait()
 
-      // Try TheAudioDB first
+      // 1. Try Spotify first (High Quality)
+      if (spotify.isConfigured) {
+        // Rate limit roughly (Spotify is generous but let's be safe)
+        await new Promise(r => setTimeout(r, 200))
+
+        const spotifyArtist = await spotify.searchArtist(artistName)
+        if (spotifyArtist && spotifyArtist.images && spotifyArtist.images.length > 0) {
+          // Get the best image (usually the second one is ~300x300, or first is 640x640)
+          // We prefer medium/large for detail
+          const image = spotifyArtist.images[0]?.url
+
+          if (image) {
+            metadata[normalized] = {
+              name: spotifyArtist.name,
+              image: image,
+              genres: spotifyArtist.genres,
+              source: 'spotify', // Use 'spotify' NOT 'theaudiodb'
+              fetchedAt: new Date().toISOString()
+            } as any // Cast to satisfy strict typing if needed, but structure matches roughly
+            console.log(`  ✅ Found on Spotify`)
+            enriched++
+            continue
+          }
+        }
+      }
+
+      // 2. Try TheAudioDB
       const audioDbInfo = await audioDb.getArtistInfo(artistName)
 
       if (audioDbInfo && audioDbInfo.image) {
@@ -118,9 +152,9 @@ async function enrichArtists(options: { dryRun?: boolean } = {}) {
 
   // Save metadata
   if (dryRun) {
-    console.log('\n=' .repeat(30))
+    console.log('\n='.repeat(30))
     console.log('🔍 DRY RUN MODE - No files will be modified')
-    console.log('=' .repeat(30))
+    console.log('='.repeat(30))
     console.log(`\nWould write to: ${metadataPath}`)
     console.log(`File size: ${JSON.stringify(metadata, null, 2).length} bytes`)
   } else {

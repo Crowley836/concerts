@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import * as d3 from 'd3'
 import type { Concert } from '../../types/concert'
 import { TimelineHoverPreview, useTimelineHover } from '../TimelineHoverPreview'
-import { FireIntro } from '../effects/FireIntro'
 import { haptics } from '../../utils/haptics'
 
 interface Scene1HeroProps {
@@ -13,7 +12,6 @@ interface Scene1HeroProps {
 export function Scene1Hero({ concerts }: Scene1HeroProps) {
   const timelineRef = useRef<SVGSVGElement>(null)
   const [dimensions, setDimensions] = useState({ width: 0, height: 200 })
-  const [showIntro, setShowIntro] = useState(true)
   const {
     hoverState,
     handleMouseEnter,
@@ -457,7 +455,6 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       transition={{ duration: 0.8 }}
       className="h-screen flex flex-col items-center justify-center bg-slate-900 snap-start snap-always relative"
     >
-      {showIntro && <FireIntro onComplete={() => setShowIntro(false)} />}
       <div className="max-w-6xl w-full px-8">
         {/* Title */}
         <motion.div

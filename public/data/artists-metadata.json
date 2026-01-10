@@ -3763,5 +3763,107 @@
     "url": "https://www.last.fm/music/Malignancy",
     "source": "lastfm",
     "fetchedAt": "2026-01-08T01:58:01.015Z"
+  },
+  "obituary-unleashed": {
+    "name": "Obituary",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebe040db93e9828cc23848fc32",
+    "genres": [
+      "death metal",
+      "metal",
+      "thrash metal",
+      "grindcore"
+    ],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:20:50.509Z"
+  },
+  "heaven-hell-dio": {
+    "name": "Heaven & Hell",
+    "image": "https://i.scdn.co/image/efaf546ae3e4bcadcadff23508feb742dc469637",
+    "genres": [
+      "metal",
+      "heavy metal",
+      "doom metal"
+    ],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:20:51.085Z"
+  },
+  "mdf-vi": {
+    "name": "MDF",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb9505d9645ff6eae94eb42dc5",
+    "genres": [],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:20:52.471Z"
+  },
+  "mdf-viii": {
+    "name": "MDF",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb9505d9645ff6eae94eb42dc5",
+    "genres": [],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:20:56.226Z"
+  },
+  "mdf-ix": {
+    "name": "MDF",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb9505d9645ff6eae94eb42dc5",
+    "genres": [],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:20:57.633Z"
+  },
+  "mdf-xi": {
+    "name": "MDF",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb9505d9645ff6eae94eb42dc5",
+    "genres": [],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:21:00.831Z"
+  },
+  "mdf-xii": {
+    "name": "MDF",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb9505d9645ff6eae94eb42dc5",
+    "genres": [],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:21:02.371Z"
+  },
+  "eyehategod-coc": {
+    "name": "Eyehategod",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb6443b92ebda9686281aa2275",
+    "genres": [
+      "sludge metal",
+      "stoner metal",
+      "doom metal",
+      "drone metal",
+      "stoner rock",
+      "drone"
+    ],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:21:03.083Z"
+  },
+  "shindig-festival": {
+    "name": "Shindig",
+    "image": "https://i.scdn.co/image/ab67616d0000b2733c806f931e87ecffa544c89d",
+    "genres": [
+      "future bass"
+    ],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:21:05.846Z"
+  },
+  "soulfly-nailbomb-set": {
+    "name": "Soulfly",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebe2eccbfac0e8f9961ea544ff",
+    "genres": [
+      "groove metal",
+      "nu metal",
+      "metal",
+      "rap metal",
+      "alternative metal",
+      "thrash metal"
+    ],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:21:16.368Z"
+  },
+  "mdf-xx": {
+    "name": "MDF",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb9505d9645ff6eae94eb42dc5",
+    "genres": [],
+    "source": "spotify",
+    "fetchedAt": "2026-01-10T02:21:34.414Z"
   }
 }

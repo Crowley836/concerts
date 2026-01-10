@@ -20,7 +20,10 @@ interface ArtistSceneProps {
  * Album mosaic visualization with flip cards
  */
 export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplete }: ArtistSceneProps) {
-  const { artistCards, isLoading } = useArtistData(concerts)
+  const { artistCards: allArtistCards, isLoading } = useArtistData(concerts)
+  // Filter out "alternate" versions of artists (e.g. "Band Name (Acoustic)")
+  const artistCards = allArtistCards.filter(name => !name.name.includes('('))
+
   const { getArtistImage, loading: artistImageLoading } = useArtistMetadata()
   const [sortOrder, setSortOrder] = useState<SortOrder>('timesSeen') // Default: Most Seen
   const [artistCount, setArtistCount] = useState(0)
