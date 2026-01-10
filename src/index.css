@@ -65,16 +65,17 @@ body {
 }
 
 .venue-popup .leaflet-popup-content-wrapper {
-  background: white;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background: #1f2937; /* gray-800 */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.3);
   border-radius: 0.5rem;
   font-family: 'Source Sans 3', system-ui, sans-serif;
   padding: 0;
   overflow: hidden;
+  border: 1px solid #374151; /* gray-700 */
 }
 
 .venue-popup .leaflet-popup-tip {
-  background: white;
+  background: #1f2937; /* gray-800 */
 }
 
 .venue-popup .leaflet-popup-content {
@@ -95,7 +96,7 @@ body {
   width: 100%;
   height: 140px;
   overflow: hidden;
-  background-color: #374151; /* gray-700 */
+  background-color: #111827; /* gray-900 */
 }
 
 .venue-popup-image {
@@ -120,9 +121,9 @@ body {
   inset: 0;
   background: linear-gradient(
     90deg,
-    #374151 25%,
-    #4b5563 50%,
-    #374151 75%
+    #1f2937 25%,
+    #374151 50%,
+    #1f2937 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
@@ -140,14 +141,14 @@ body {
 .venue-popup-name {
   font-weight: 600;
   font-size: 15px;
-  color: #1f2937; /* gray-800 */
+  color: #f9fafb; /* gray-50 */
   margin-bottom: 4px;
   line-height: 1.3;
 }
 
 .venue-popup-location {
   font-size: 11px;
-  color: #9ca3af; /* gray-400 - lighter for hierarchy */
+  color: #9ca3af; /* gray-400 */
   margin-bottom: 8px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -156,8 +157,8 @@ body {
 .venue-popup-badge {
   display: inline-block;
   font-size: 11px;
-  color: #6b7280; /* gray-600 */
-  background-color: #f3f4f6; /* gray-100 */
+  color: #d1d5db; /* gray-300 */
+  background-color: #374151; /* gray-700 */
   padding: 2px 8px;
   border-radius: 4px;
   margin-bottom: 6px;
@@ -165,7 +166,7 @@ body {
 
 .venue-popup-count {
   font-size: 13px;
-  color: #374151; /* gray-700 - stronger */
+  color: #f3f4f6; /* gray-100 */
   font-weight: 600;
   margin-bottom: 12px;
 }

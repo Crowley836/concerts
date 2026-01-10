@@ -12,7 +12,7 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
     )
 
     return (
-        <section className="relative min-h-screen w-full snap-start bg-zinc-900 flex flex-col pt-16 md:pt-20 pb-8 px-4 md:px-8 overflow-hidden">
+        <section className="relative min-h-screen w-full snap-start bg-slate-900 flex flex-col pt-16 md:pt-20 pb-8 px-4 md:px-8 overflow-hidden">
             <div className="max-w-7xl mx-auto w-full flex-1 flex flex-col min-h-0">
 
                 {/* Header */}
@@ -25,7 +25,7 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
                         The Archive
                     </h2>
-                    <p className="text-zinc-400 text-sm md:text-base">
+                    <p className="text-gray-400 text-sm md:text-base">
                         {concerts.length} shows and counting.
                     </p>
                 </motion.div>
@@ -35,14 +35,15 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="flex-1 min-h-0 bg-zinc-800/50 rounded-2xl border border-white/5 overflow-hidden flex flex-col backdrop-blur-sm"
+                    className="flex-1 min-h-0 bg-slate-800/50 rounded-2xl border border-white/5 overflow-hidden flex flex-col backdrop-blur-sm"
                 >
                     {/* Table Header */}
-                    <div className="grid grid-cols-12 gap-4 p-4 border-b border-white/10 bg-black/20 text-xs md:text-sm font-medium text-zinc-400 uppercase tracking-wider sticky top-0 z-10">
+                    <div className="grid grid-cols-12 gap-4 p-4 border-b border-white/10 bg-black/20 text-xs md:text-sm font-medium text-gray-400 uppercase tracking-wider sticky top-0 z-10">
                         <div className="col-span-3 md:col-span-2">Date</div>
                         <div className="col-span-4 md:col-span-3">Headliner</div>
-                        <div className="col-span-5 md:col-span-4 hidden md:block">Openers</div>
+                        <div className="col-span-5 md:col-span-2 hidden md:block">Openers</div>
                         <div className="col-span-5 md:col-span-3 text-right md:text-left">Venue</div>
+                        <div className="hidden md:block col-span-2">Attended With</div>
                     </div>
 
                     {/* Table Body - Scrollable Area */}
@@ -58,24 +59,29 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                 {/* Date */}
                                 <div className="col-span-3 md:col-span-2 flex flex-col">
                                     <span className="text-white font-medium">{concert.date}</span>
-                                    <span className="text-zinc-500 text-xs md:hidden">{concert.dayOfWeek}</span>
+                                    <span className="text-gray-500 text-xs md:hidden">{concert.dayOfWeek}</span>
                                 </div>
 
                                 {/* Headliner */}
-                                <div className="col-span-4 md:col-span-3 font-semibold text-white truncate">
+                                <div className="col-span-4 md:col-span-3 font-semibold text-white truncate" title={concert.headliner}>
                                     {concert.headliner}
                                 </div>
 
                                 {/* Openers (Desktop only) */}
-                                <div className="hidden md:block col-span-4 text-zinc-400 truncate">
+                                <div className="hidden md:block col-span-2 text-gray-400 truncate" title={concert.openers.join(', ')}>
                                     {concert.openers.length > 0 ? concert.openers.join(', ') : '-'}
                                 </div>
 
                                 {/* Venue & City */}
                                 <div className="col-span-5 md:col-span-3 text-right md:text-left flex flex-col md:flex-row md:items-center justify-end md:justify-start gap-1">
-                                    <span className="text-indigo-300 truncate">{concert.venue}</span>
-                                    <span className="hidden md:inline text-zinc-600">•</span>
-                                    <span className="text-zinc-500 text-xs md:text-sm truncate">{concert.city}</span>
+                                    <span className="text-indigo-300 truncate" title={concert.venue}>{concert.venue}</span>
+                                    <span className="hidden md:inline text-gray-600">•</span>
+                                    <span className="text-gray-500 text-xs md:text-sm truncate" title={concert.city}>{concert.city}</span>
+                                </div>
+
+                                {/* Attended With (Desktop only) */}
+                                <div className="hidden md:block col-span-2 text-gray-400 truncate" title={concert.attendedWith}>
+                                    {concert.attendedWith || '-'}
                                 </div>
                             </motion.div>
                         ))}

@@ -121,6 +121,7 @@ async function syncSheetToCsv() {
                 'Venue': row.venue,
                 'City/State': row.cityState,
                 'Festival': row.festival || 'No',
+                'Attended With': row.attendedWith || '',
                 'Reference': row.reference || ''
             }
         })
@@ -138,6 +139,7 @@ async function syncSheetToCsv() {
                 'Venue',
                 'City/State',
                 'Festival',
+                'Attended With',
                 'Reference'
             ]
         })

@@ -439,7 +439,7 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
         const sourceId = typeof d.source === 'object' ? d.source.id : d.source
         const targetId = typeof d.target === 'object' ? d.target.id : d.target
         if (sourceId === focusedNodeId || targetId === focusedNodeId ||
-            relatedNodes.has(sourceId) || relatedNodes.has(targetId)) {
+          relatedNodes.has(sourceId) || relatedNodes.has(targetId)) {
           return baseOpacity
         }
         return baseOpacity * 0.15
@@ -497,7 +497,7 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
       .attr('r', d => Math.max(getNodeSize(d), 22))
       .attr('fill', 'transparent')
       .style('cursor', 'pointer')
-      .on('click', function(_event, d) {
+      .on('click', function (_event, d) {
         // In "all" mode, clicking a venue expands/collapses it and centers it
         if (viewMode === 'all' && d.type === 'venue') {
           const venueName = d.id.replace('venue|', '')
@@ -562,14 +562,14 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
       })
       .style('pointer-events', 'none') // Touch handled by invisible target
       .attr('class', 'visual-circle')
-      .each(function(_d, i, nodes) {
+      .each(function (_d, i, nodes) {
         // Add click feedback class to parent node for hover effects
         const parentNode = nodes[i].parentNode as Element
         d3.select(parentNode).classed('node-group', true)
       })
 
     // Add hover effects to the node groups
-    node.on('mouseenter', function(_event, d) {
+    node.on('mouseenter', function (_event, d) {
       const circle = d3.select(this).select('.visual-circle')
       if (!d3.select(this).classed('clicking')) {
         circle
@@ -587,24 +587,24 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
           .attr('fill-opacity', 1)
       }
     })
-    .on('mouseleave', function(_event, d) {
-      const circle = d3.select(this).select('.visual-circle')
-      if (!d3.select(this).classed('clicking')) {
-        circle
-          .transition()
-          .duration(200)
-          .attr('fill-opacity', 0.85)
-      }
+      .on('mouseleave', function (_event, d) {
+        const circle = d3.select(this).select('.visual-circle')
+        if (!d3.select(this).classed('clicking')) {
+          circle
+            .transition()
+            .duration(200)
+            .attr('fill-opacity', 0.85)
+        }
 
-      // Hide hover label for small venues in "all" mode
-      if (viewMode === 'all' && d.type === 'venue' && d.count < 3) {
-        d3.select(this)
-          .select('.hover-label')
-          .transition()
-          .duration(200)
-          .attr('fill-opacity', 0)
-      }
-    })
+        // Hide hover label for small venues in "all" mode
+        if (viewMode === 'all' && d.type === 'venue' && d.count < 3) {
+          d3.select(this)
+            .select('.hover-label')
+            .transition()
+            .duration(200)
+            .attr('fill-opacity', 0)
+        }
+      })
 
     // Add labels for venue nodes
     // In "all" mode: only show labels for venues with 3+ shows (others show on hover)
@@ -662,16 +662,16 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
 
     // Add labels for band nodes (headliners and openers)
     node.filter(d => {
-        if (d.type === 'venue') return false
+      if (d.type === 'venue') return false
 
-        // Show labels for focused hierarchy
-        if (focusedNodeId && relatedNodes.has(d.id)) return true
+      // Show labels for focused hierarchy
+      if (focusedNodeId && relatedNodes.has(d.id)) return true
 
-        // Show labels for expanded venues in "all" mode
-        if (viewMode === 'all' && d.parentVenue && expandedVenues.has(d.parentVenue)) return true
+      // Show labels for expanded venues in "all" mode
+      if (viewMode === 'all' && d.parentVenue && expandedVenues.has(d.parentVenue)) return true
 
-        return false
-      })
+      return false
+    })
       .append('text')
       .text(d => {
         // Extract band name from the id
@@ -689,7 +689,7 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
       .attr('font-size', d => {
         // Larger font for focused/expanded nodes
         const isHighlighted = (focusedNodeId && relatedNodes.has(d.id)) ||
-                              (viewMode === 'all' && d.parentVenue && expandedVenues.has(d.parentVenue))
+          (viewMode === 'all' && d.parentVenue && expandedVenues.has(d.parentVenue))
         return isHighlighted ? '10px' : '9px'
       })
       .attr('fill', 'white')
@@ -789,7 +789,7 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, margin: '-20%' }}
       transition={{ duration: 0.8 }}
-      className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-950 to-purple-950 relative overflow-hidden snap-start snap-always"
+      className="h-screen flex flex-col items-center justify-center bg-slate-900 relative overflow-hidden snap-start snap-always"
     >
       {/* Title */}
       <motion.div
@@ -802,7 +802,7 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
         <h2 className="font-serif text-5xl md:text-7xl text-white mb-3 tracking-tight">
           The Venues
         </h2>
-        <p className="font-sans text-lg md:text-xl text-gray-400 mb-6">
+        <p className="font-sans text-lg md:text-xl text-gray-300 mb-6">
           {viewMode === 'top10'
             ? '10 most-visited venues'
             : `${totalVenues} concert halls and amphitheaters`}
@@ -817,11 +817,10 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
               setFocusedNodeId(null)
               setCenteredVenue(null)
             }}
-            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] ${
-              viewMode === 'top10'
-                ? 'bg-indigo-600 text-white'
-                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
-            }`}
+            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] ${viewMode === 'top10'
+              ? 'bg-indigo-600 text-white'
+              : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+              }`}
           >
             Top 10
           </button>
@@ -832,11 +831,10 @@ export function Scene4Bands({ concerts, pendingVenueFocus, onVenueFocusComplete 
               setFocusedNodeId(null)
               setCenteredVenue(null)
             }}
-            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] ${
-              viewMode === 'all'
-                ? 'bg-indigo-600 text-white'
-                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
-            }`}
+            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] ${viewMode === 'all'
+              ? 'bg-indigo-600 text-white'
+              : 'bg-slate-800 text-gray-300 hover:bg-slate-700'
+              }`}
           >
             All Venues
           </button>

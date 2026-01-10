@@ -88,7 +88,7 @@ export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplet
       console.log('Card not in DOM yet, loading all cards...')
       // Load all cards first
       if ((window as any).__loadAllArtistCards) {
-        ;(window as any).__loadAllArtistCards()
+        ; (window as any).__loadAllArtistCards()
       }
 
       // Wait for cards to render, then try again
@@ -133,7 +133,7 @@ export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplet
   if (isLoading) {
     return (
       <motion.section
-        className="h-screen flex items-center justify-center bg-stone-50 snap-start snap-always"
+        className="h-screen flex items-center justify-center bg-slate-900 snap-start snap-always"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, margin: '-20%' }}
@@ -155,7 +155,7 @@ export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplet
 
   return (
     <motion.section
-      className="h-screen flex flex-col items-center justify-center bg-stone-50 snap-start snap-always relative overflow-hidden"
+      className="h-screen flex flex-col items-center justify-center bg-slate-900 snap-start snap-always relative overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, margin: '-20%' }}
@@ -200,11 +200,10 @@ export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplet
               haptics.light() // Haptic feedback on sort change
               setSortOrder('alphabetical')
             }}
-            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] touchable-no-scale ${
-              sortOrder === 'alphabetical'
-                ? 'bg-violet-600 text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
-            }`}
+            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] touchable-no-scale ${sortOrder === 'alphabetical'
+              ? 'bg-violet-600 text-white'
+              : 'bg-slate-800 text-gray-300 hover:bg-slate-700 border border-slate-600'
+              }`}
           >
             A–Z
           </button>
@@ -215,11 +214,10 @@ export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplet
               haptics.light() // Haptic feedback on sort change
               setSortOrder('timesSeen')
             }}
-            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] touchable-no-scale ${
-              sortOrder === 'timesSeen'
-                ? 'bg-violet-600 text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
-            }`}
+            className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 pointer-events-auto min-h-[44px] touchable-no-scale ${sortOrder === 'timesSeen'
+              ? 'bg-violet-600 text-white'
+              : 'bg-slate-800 text-gray-300 hover:bg-slate-700 border border-slate-600'
+              }`}
           >
             Most Seen
           </button>
@@ -257,7 +255,7 @@ export function ArtistScene({ concerts, pendingArtistFocus, onArtistFocusComplet
           openArtistName={openArtist?.normalizedName}
           getArtistImage={getArtistImage}
           artistImageLoading={artistImageLoading}
-          onLoadAllCards={() => {}}
+          onLoadAllCards={() => { }}
         />
       </motion.div>
 

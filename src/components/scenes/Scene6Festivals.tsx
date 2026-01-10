@@ -24,9 +24,10 @@ export function Scene6Festivals({ concerts }: Scene6FestivalsProps) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, margin: '-20%' }}
             transition={{ duration: 0.8 }}
-            className="h-screen flex flex-col items-center justify-center relative snap-start snap-always overflow-hidden"
+            className="h-screen flex flex-col items-center justify-center relative snap-start snap-always overflow-hidden bg-slate-900"
             style={{
-                background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%)', // Indigo/Deep Purple
+                // Subtle gradient for depth, keeping it consistent with the slate theme
+                background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)', // Slate 900 -> Slate 800 -> Slate 900
             }}
         >
             {/* Background Decor */}

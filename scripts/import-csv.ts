@@ -22,6 +22,7 @@ interface ProcessedConcert {
     cityState: string
     reference?: string
     isFestival: boolean // New field
+    attendedWith?: string
     year: number
     month: number
     day: number
@@ -189,7 +190,10 @@ async function importCsv() {
         // 6. Festival
         const isFestival = row['Festival']?.toLowerCase().includes('yes')
 
-        // 7. Stable ID & Merge Logic
+        // 7. Attended With
+        const attendedWith = row['Attended With']
+
+        // 8. Stable ID & Merge Logic
         const stableKey = `${isoDate}-${headlinerNormalized}`
         const existing = existingConcertsMap.get(stableKey)
 
@@ -208,6 +212,7 @@ async function importCsv() {
             state: state,
             cityState: cityState,
             isFestival: isFestival,
+            attendedWith: attendedWith,
             year: date.getFullYear(),
             month: date.getMonth() + 1,
             day: date.getDate(),

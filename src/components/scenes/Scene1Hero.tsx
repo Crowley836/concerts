@@ -285,7 +285,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       .attr('x', d => xScale(d))
       .attr('y', innerHeight / 2 + 30)
       .attr('text-anchor', 'middle')
-      .attr('fill', '#6b7280')
+      .attr('fill', '#9ca3af') // gray-400
       .attr('font-family', 'Source Sans 3, system-ui, sans-serif')
       .attr('font-size', '12px')
       .attr('font-weight', '500')
@@ -449,7 +449,7 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, margin: '-20%' }}
       transition={{ duration: 0.8 }}
-      className="h-screen flex flex-col items-center justify-center bg-white snap-start snap-always relative"
+      className="h-screen flex flex-col items-center justify-center bg-slate-900 snap-start snap-always relative"
     >
       <div className="max-w-6xl w-full px-8">
         {/* Title */}
@@ -460,10 +460,10 @@ export function Scene1Hero({ concerts }: Scene1HeroProps) {
           transition={{ duration: 0.8, delay: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="font-serif text-5xl md:text-7xl text-gray-900 mb-4 tracking-tight">
+          <h1 className="font-serif text-5xl md:text-7xl text-white mb-4 tracking-tight">
             Mr. Crowleys Vault
           </h1>
-          <p className="font-sans text-lg md:text-xl text-gray-500">
+          <p className="font-sans text-lg md:text-xl text-gray-300">
             {totalConcerts} shows across {yearSpan}
           </p>
         </motion.div>

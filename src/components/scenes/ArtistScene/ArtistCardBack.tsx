@@ -20,17 +20,17 @@ export function ArtistCardBack({ artist }: ArtistCardBackProps) {
 
   return (
     <div
-      className={`${dimension} bg-white p-2 flex flex-col overflow-hidden border border-gray-300`}
+      className={`${dimension} bg-slate-800 p-2 flex flex-col overflow-hidden border border-gray-600`}
       style={{
         boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
       }}
     >
       {/* Header */}
-      <div className="mb-1.5 pb-1.5 border-b border-gray-200">
-        <h3 className={`${sizes.name} font-sans font-semibold text-gray-900 leading-tight truncate`}>
+      <div className="mb-1.5 pb-1.5 border-b border-gray-700">
+        <h3 className={`${sizes.name} font-sans font-semibold text-white leading-tight truncate`}>
           {artist.name}
         </h3>
-        <p className={`${sizes.times} text-gray-500 mt-0.5`}>
+        <p className={`${sizes.times} text-gray-400 mt-0.5`}>
           Seen {artist.timesSeen} {artist.timesSeen === 1 ? 'time' : 'times'}
         </p>
       </div>
@@ -39,18 +39,18 @@ export function ArtistCardBack({ artist }: ArtistCardBackProps) {
       <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
         <div className="space-y-0.5">
           {artist.concerts.map((concert, idx) => (
-            <div key={idx} className="text-gray-700">
+            <div key={idx} className="text-gray-300">
               <div className={`${sizes.concert} font-medium`}>
                 {format(new Date(concert.date), 'MMM yyyy')}
               </div>
-              <div className={`${sizes.concert} text-gray-500`}>{concert.venue}</div>
+              <div className={`${sizes.concert} text-gray-400`}>{concert.venue}</div>
             </div>
           ))}
         </div>
       </div>
 
       {/* Spotify Section */}
-      <div className="mt-1.5 pt-1.5 border-t border-gray-200">
+      <div className="mt-1.5 pt-1.5 border-t border-gray-700">
         {artist.spotifyArtistUrl ? (
           <a
             href={artist.spotifyArtistUrl}

@@ -145,14 +145,14 @@ function MainScenes() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
           <div className="relative w-24 h-24 mx-auto mb-6">
             {/* Spinning loader */}
-            <div className="absolute inset-0 rounded-full border-4 border-gray-200"></div>
+            <div className="absolute inset-0 rounded-full border-4 border-gray-700"></div>
             <div className="absolute inset-0 rounded-full border-4 border-indigo-500 border-t-transparent animate-spin"></div>
           </div>
-          <p className="text-gray-600 font-light text-sm tracking-wide animate-pulse">
+          <p className="text-gray-300 font-light text-sm tracking-wide animate-pulse">
             Loading concert archive...
           </p>
         </div>
@@ -162,10 +162,10 @@ function MainScenes() {
 
   if (!data) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
-        <div className="text-center text-red-600">
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+        <div className="text-center text-red-500">
           <p className="text-xl font-semibold mb-2">Failed to load concert data</p>
-          <p className="text-gray-500">Please check the console for errors</p>
+          <p className="text-gray-400">Please check the console for errors</p>
         </div>
       </div>
     )

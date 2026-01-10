@@ -614,8 +614,8 @@ export function Scene3Map({ concerts, onVenueNavigate, pendingVenueFocus, onVenu
                 setSelectedRegion(region)
               }}
               className={`font-sans px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 min-h-[44px] touchable-no-scale ${selectedRegion === region
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+                ? 'bg-indigo-600 text-white'
+                : 'bg-slate-800 text-gray-400 hover:bg-slate-700'
                 }`}
             >
               {REGION_VIEWS[region].label}

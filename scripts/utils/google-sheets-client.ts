@@ -14,6 +14,7 @@ export interface RawConcertRow {
   cityState: string
   reference?: string
   festival?: string
+  attendedWith?: string
   openers: string[] // Parsed from Opener_ columns
 }
 
@@ -138,6 +139,7 @@ export class GoogleSheetsClient {
       const openerCol = this.getColumnIndex(columnMap, 'opener', 'artist name - opener(s)', 'artist name - opener', 'openers')
       const referenceCol = this.getColumnIndex(columnMap, 'reference')
       const festivalCol = this.getColumnIndex(columnMap, 'festival')
+      const attendedWithCol = this.getColumnIndex(columnMap, 'attended with', 'attendedwith')
 
       // Log warnings for missing optional columns
       if (genreCol === undefined) {
@@ -163,7 +165,7 @@ export class GoogleSheetsClient {
       } else {
         console.log(`   Location: City(${cityCol}), State(${stateCol}) [separate columns]`)
       }
-      console.log(`   Optional: Genre(${genreCol ?? 'missing'}), Opener(${openerCol ?? 'missing'}), Reference(${referenceCol ?? 'missing'}), Festival(${festivalCol ?? 'missing'})`)
+      console.log(`   Optional: Genre(${genreCol ?? 'missing'}), Opener(${openerCol ?? 'missing'}), Reference(${referenceCol ?? 'missing'}), Festival(${festivalCol ?? 'missing'}), AttendedWith(${attendedWithCol ?? 'missing'})`)
       console.log(`   Found ${openerColumns.length} Opener_N columns`)
 
       // Skip header row, parse data rows
@@ -187,6 +189,7 @@ export class GoogleSheetsClient {
           }
 
           const reference = referenceCol !== undefined ? row[referenceCol] : undefined
+          const attendedWith = attendedWithCol !== undefined ? (row[attendedWithCol] || '').trim() : undefined
 
           // Parse additional openers from Opener_1 through Opener_N columns
           const openers: string[] = []
@@ -204,6 +207,7 @@ export class GoogleSheetsClient {
             venue,
             cityState,
             reference,
+            attendedWith,
             openers,
             festival: festivalRaw // pass generic string for now
           } as RawConcertRow

@@ -51,13 +51,12 @@ export function LinerNotesPanel({
 
   return (
     <div
-      className={`absolute top-0 right-0 w-[400px] h-[400px] ${
-        isClosing ? 'liner-notes-panel-closing' : 'liner-notes-panel'
-      }`}
+      className={`absolute top-0 right-0 w-[400px] h-[400px] ${isClosing ? 'liner-notes-panel-closing' : 'liner-notes-panel'
+        }`}
       style={{
         zIndex: 25, // Above Spotify panel (20) but below cover (30)
         // Always use solid background to prevent bleed-through during animation
-        background: 'linear-gradient(135deg, #f5f5f0 0%, #e8e8e0 100%)',
+        background: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)',
         padding: '10px'
       }}
       role="dialog"
@@ -69,8 +68,8 @@ export function LinerNotesPanel({
         style={{
           background: 'transparent', // Parent now provides background
           borderRadius: '4px',
-          boxShadow: '-10px 0 40px rgba(0, 0, 0, 0.6), inset -2px 0 8px rgba(0, 0, 0, 0.08)',
-          border: '1px solid rgba(180, 170, 150, 0.3)',
+          boxShadow: '-10px 0 40px rgba(0, 0, 0, 0.6), inset -2px 0 8px rgba(0, 0, 0, 0.2)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
           position: 'relative'
         }}
       >
@@ -80,7 +79,8 @@ export function LinerNotesPanel({
           style={{
             background: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' /%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.03\' /%3E%3C/svg%3E")',
             borderRadius: '4px',
-            mixBlendMode: 'multiply'
+            mixBlendMode: 'overlay',
+            opacity: '0.05'
           }}
         />
 
@@ -98,7 +98,7 @@ export function LinerNotesPanel({
           <button
             ref={closeButtonRef}
             onClick={handleClose}
-            className="absolute top-[20px] right-[20px] w-6 h-6 flex items-center justify-center text-[#4a4a40] hover:text-[#1DB954] transition-all duration-150 hover:scale-110 touchable-subtle"
+            className="absolute top-[20px] right-[20px] w-6 h-6 flex items-center justify-center text-gray-400 hover:text-[#1DB954] transition-all duration-150 hover:scale-110 touchable-subtle"
             aria-label="Close setlist"
             style={{ zIndex: 30 }}
           >
@@ -109,7 +109,7 @@ export function LinerNotesPanel({
 
           {/* Compact Header - Just date and venue */}
           <div className="flex-shrink-0 pt-6 px-7 pb-3">
-            <p className="font-sans text-[0.8125rem] text-[#6a6a60] tracking-wide">
+            <p className="font-sans text-[0.8125rem] text-gray-400 tracking-wide">
               {format(new Date(concert.date), 'MMMM d, yyyy')} · {concert.venue}
             </p>
           </div>
@@ -119,7 +119,7 @@ export function LinerNotesPanel({
             className="flex-shrink-0 mx-7 mb-4"
             style={{
               height: '1px',
-              background: 'linear-gradient(to right, transparent, rgba(100, 100, 90, 0.2) 20%, rgba(100, 100, 90, 0.2) 80%, transparent)'
+              background: 'linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.1) 80%, transparent)'
             }}
           />
 
@@ -226,7 +226,7 @@ function SetlistContent({ setlist }: { setlist: Setlist }) {
       {/* Tour Info (if available) */}
       {showTourInfo && (
         <div className="pb-2">
-          <p className="font-sans text-xs text-[#7a7a70] italic">
+          <p className="font-sans text-xs text-gray-400 italic">
             {setlist.tour!.name}
           </p>
         </div>
@@ -235,7 +235,7 @@ function SetlistContent({ setlist }: { setlist: Setlist }) {
       {/* Show Notes (if available) */}
       {setlist.info && (
         <div className="pb-2">
-          <p className="font-sans text-sm text-[#5a5a50] italic leading-relaxed">
+          <p className="font-sans text-sm text-gray-300 italic leading-relaxed">
             "{setlist.info}"
           </p>
         </div>
@@ -257,7 +257,7 @@ function SetlistContent({ setlist }: { setlist: Setlist }) {
           return (
             <div key={setIdx} className="space-y-3">
               {/* Set Header */}
-              <h3 className="font-sans text-[0.75rem] font-bold text-[#2a5a2a] uppercase tracking-wider">
+              <h3 className="font-sans text-[0.75rem] font-bold text-[#4ade80] uppercase tracking-wider">
                 {setName}
               </h3>
 
@@ -266,30 +266,30 @@ function SetlistContent({ setlist }: { setlist: Setlist }) {
                 {set.song.map((song, songIdx) => (
                   <li
                     key={songIdx}
-                    className="flex items-baseline gap-3 font-sans text-[0.9375rem] text-[#2a2a25]"
+                    className="flex items-baseline gap-3 font-sans text-[0.9375rem] text-gray-200"
                   >
-                    <span className="font-sans text-[0.875rem] font-medium text-[#8a8a80] min-w-[20px] tabular-nums">
+                    <span className="font-sans text-[0.875rem] font-medium text-gray-500 min-w-[20px] tabular-nums">
                       {songIdx + 1}.
                     </span>
                     <span className="flex-1">
                       {song.name}
                       {song.cover && (
-                        <span className="text-[#7a7a70] text-[0.8125rem] ml-2">
+                        <span className="text-gray-500 text-[0.8125rem] ml-2">
                           ({song.cover.name} cover)
                         </span>
                       )}
                       {song.with && (
-                        <span className="text-[#7a7a70] text-[0.8125rem] ml-2">
+                        <span className="text-gray-500 text-[0.8125rem] ml-2">
                           (with {song.with.name})
                         </span>
                       )}
                       {song.tape && (
-                        <span className="text-[#7a7a70] text-[0.8125rem] ml-2">
+                        <span className="text-gray-500 text-[0.8125rem] ml-2">
                           (tape)
                         </span>
                       )}
                       {song.info && (
-                        <span className="text-[#7a7a70] text-[0.8125rem] block ml-[32px] mt-0.5">
+                        <span className="text-gray-500 text-[0.8125rem] block ml-[32px] mt-0.5">
                           {song.info}
                         </span>
                       )}
@@ -301,19 +301,19 @@ function SetlistContent({ setlist }: { setlist: Setlist }) {
           )
         })
       ) : (
-        <p className="font-sans text-sm text-[#7a7a70] text-center py-4">
+        <p className="font-sans text-sm text-gray-500 text-center py-4">
           No songs listed for this show
         </p>
       )}
 
       {/* Attribution Footer */}
-      <div className="pt-6 border-t border-[rgba(100,100,90,0.15)]">
+      <div className="pt-6 border-t border-white/10">
         <div className="flex items-center justify-between">
-          <p className="font-sans text-[0.6875rem] text-[#8a8a80]">
+          <p className="font-sans text-[0.6875rem] text-gray-500">
             via setlist.fm
           </p>
           {totalSongs > 0 && (
-            <p className="font-sans text-[0.6875rem] text-[#8a8a80]">
+            <p className="font-sans text-[0.6875rem] text-gray-500">
               {totalSongs} {totalSongs === 1 ? 'song' : 'songs'}
             </p>
           )}
@@ -323,7 +323,7 @@ function SetlistContent({ setlist }: { setlist: Setlist }) {
             href={setlist.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-sans text-[0.6875rem] text-[#2a5a2a] hover:text-[#1DB954] hover:underline inline-block mt-1 transition-colors"
+            className="font-sans text-[0.6875rem] text-[#4ade80] hover:text-[#1DB954] hover:underline inline-block mt-1 transition-colors"
           >
             View on setlist.fm →
           </a>
