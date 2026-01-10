@@ -179,12 +179,14 @@ function MainScenes() {
         {/* Scene 1: Hero/Timeline */}
         <Scene1Hero concerts={concerts} />
 
-        {/* Scene 2: Venues (force-directed graph) */}
-        <Scene4Bands
-          concerts={concerts}
-          pendingVenueFocus={pendingVenueFocus}
-          onVenueFocusComplete={() => setPendingVenueFocus(null)}
-        />
+        {/* Scene 2: Venues (force-directed graph) - Desktop Only */}
+        <div className="hidden md:block">
+          <Scene4Bands
+            concerts={concerts}
+            pendingVenueFocus={pendingVenueFocus}
+            onVenueFocusComplete={() => setPendingVenueFocus(null)}
+          />
+        </div>
 
         {/* Scene 3: Map */}
         <Scene3Map
@@ -197,8 +199,10 @@ function MainScenes() {
         {/* Scene 6: Festivals (Now 4) */}
         <Scene6Festivals concerts={concerts} />
 
-        {/* Scene 4: Genres (sunburst) (Now 5) */}
-        <Scene5Genres concerts={concerts} />
+        {/* Scene 4: Genres (sunburst) (Now 5) - Desktop Only */}
+        <div className="hidden md:block">
+          <Scene5Genres concerts={concerts} />
+        </div>
 
         {/* Scene 5: Artists (album mosaic) */}
         <ArtistScene
