@@ -3301,7 +3301,7 @@
         "lat": 43.0410937,
         "lng": -76.1196614
       },
-      "attendedWith": ""
+      "attendedWith": "Gates"
     },
     {
       "id": "2014-10-10-suffocation",
@@ -3467,13 +3467,14 @@
       "attendedWith": ""
     },
     {
-      "id": "2015-02-08-eyehategod-coc",
+      "id": "2015-02-08-eyehategod",
       "date": "2015-02-08",
-      "headliner": "EyeHateGod & COC",
-      "headlinerNormalized": "eyehategod-coc",
+      "headliner": "EyeHateGod",
+      "headlinerNormalized": "eyehategod",
       "genre": "Sludge Metal",
       "genreNormalized": "sludge-metal",
       "openers": [
+        "Corrosion of Conformity",
         "Cro-Mags",
         "Misery Index"
       ],
@@ -3483,6 +3484,7 @@
       "state": "MD",
       "cityState": "Baltimore, MD",
       "isFestival": false,
+      "attendedWith": "",
       "year": 2015,
       "month": 2,
       "day": 8,
@@ -3491,8 +3493,7 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      },
-      "attendedWith": ""
+      }
     },
     {
       "id": "2015-03-02-cannibal-corpse",
@@ -3691,8 +3692,8 @@
       "date": "2015-09-19",
       "headliner": "Shindig Festival",
       "headlinerNormalized": "shindig-festival",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "future bass",
+      "genreNormalized": "future-bass",
       "openers": [
         "Clutch",
         "Anthrax",
@@ -7200,13 +7201,13 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-10T01:48:02.949Z",
+    "lastUpdated": "2026-01-10T02:24:11.837Z",
     "totalConcerts": 265,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
-    "uniqueArtists": 159,
+    "uniqueArtists": 158,
     "uniqueVenues": 85,
     "uniqueCities": 30
   }
