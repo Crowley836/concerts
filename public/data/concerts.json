@@ -2412,10 +2412,12 @@
       "genre": "Blues",
       "genreNormalized": "blues",
       "openers": [
-        "Taj Mahal Trio",
-        "Tedeschi Trucks Band",
-        "Buckwheat Zydeco",
-        "Bobby Rush"
+        "Taj Mahal",
+        "Matt Andersen",
+        "Damon Fowler",
+        "Zac Harmon",
+        "Ronnie Baker Brooks",
+        "Kenny Wayne Shepherd"
       ],
       "venue": "ms Nieuw Amsterdam",
       "venueNormalized": "ms-nieuw-amsterdam",
@@ -2639,9 +2641,10 @@
       "genreNormalized": "blues",
       "openers": [
         "Taj Mahal",
-        "Tommy Castro",
-        "Shemekia Copeland",
-        "Chris Cain"
+        "Coco Montoya",
+        "Chris Cain",
+        "Kenny Neal",
+        "Matt Andersen"
       ],
       "venue": "ms Nieuw Amsterdam",
       "venueNormalized": "ms-nieuw-amsterdam",
@@ -2887,11 +2890,11 @@
       "genre": "Blues",
       "genreNormalized": "blues",
       "openers": [
-        "Mavis Staples",
-        "Taj Mahal",
-        "Elvin Bishop",
         "Tab Benoit",
-        "Rod Piazza"
+        "Otis Taylor",
+        "Southern Hospitality",
+        "MonkeyJunk",
+        "Taj Mahal"
       ],
       "venue": "ms Nieuw Amsterdam",
       "venueNormalized": "ms-nieuw-amsterdam",
@@ -7200,7 +7203,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-10T16:11:50.001Z",
+    "lastUpdated": "2026-01-10T20:10:00.172Z",
     "totalConcerts": 265,
     "dateRange": {
       "earliest": "1994-06-06",
