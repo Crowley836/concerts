@@ -47,30 +47,33 @@ export function useArtistData(concerts: Concert[]) {
 
     // Process all concerts (headliners AND openers)
     concerts.forEach(concert => {
-      // Add headliner
-      const headlinerNorm = normalizeArtistName(concert.headliner)
+      // Add headliner (ONLY if not a festival)
+      // For festivals, the "headliner" is the festival name (e.g. "Ozzfest"), which is not an artist.
+      if (!concert.isFestival) {
+        const headlinerNorm = normalizeArtistName(concert.headliner)
 
-      if (!artistMap.has(headlinerNorm)) {
-        artistMap.set(headlinerNorm, {
-          name: concert.headliner,
-          normalizedName: headlinerNorm,
-          concerts: [],
-          genres: new Map()
+        if (!artistMap.has(headlinerNorm)) {
+          artistMap.set(headlinerNorm, {
+            name: concert.headliner,
+            normalizedName: headlinerNorm,
+            concerts: [],
+            genres: new Map()
+          })
+        }
+
+        const headlinerData = artistMap.get(headlinerNorm)!
+        headlinerData.concerts.push({
+          concertId: concert.id,
+          date: concert.date,
+          venue: concert.venue,
+          city: concert.cityState,
+          isHeadliner: true
         })
+
+        // Track genre
+        const genreCount = headlinerData.genres.get(concert.genre) || 0
+        headlinerData.genres.set(concert.genre, genreCount + 1)
       }
-
-      const headlinerData = artistMap.get(headlinerNorm)!
-      headlinerData.concerts.push({
-        concertId: concert.id,
-        date: concert.date,
-        venue: concert.venue,
-        city: concert.cityState,
-        isHeadliner: true
-      })
-
-      // Track genre
-      const genreCount = headlinerData.genres.get(concert.genre) || 0
-      headlinerData.genres.set(concert.genre, genreCount + 1)
 
       // Add openers
       if (concert.openers && concert.openers.length > 0) {
