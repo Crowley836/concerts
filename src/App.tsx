@@ -9,6 +9,7 @@ import { Scene6Festivals } from './components/scenes/Scene6Festivals'
 import { ArtistScene } from './components/scenes/ArtistScene/ArtistScene'
 import { Scene7Data } from './components/scenes/Scene7Data'
 import { SceneNavigation } from './components/SceneNavigation'
+import { MobileMenu } from './components/MobileMenu'
 import { ChangelogPage, ChangelogToast, ChangelogRSS } from './components/changelog'
 import { SCENE_MAP, TOAST } from './components/changelog/constants'
 import { useChangelogCheck } from './hooks/useChangelogCheck'
@@ -219,6 +220,7 @@ function MainScenes() {
 
       {/* Scene Navigation */}
       <SceneNavigation />
+      <MobileMenu />
 
       {/* Changelog Toast (only on Scene 1) */}
       {latestRelease && (
