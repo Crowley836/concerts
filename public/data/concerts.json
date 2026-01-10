@@ -2911,15 +2911,14 @@
       "attendedWith": "Dad, Dewey"
     },
     {
-      "id": "2013-02-16-hatebreed",
+      "id": "2013-02-16-dying-fetus",
       "date": "2013-02-16",
-      "headliner": "Hatebreed",
-      "headlinerNormalized": "hatebreed",
-      "genre": "Metalcore",
-      "genreNormalized": "metalcore",
+      "headliner": "Dying Fetus",
+      "headlinerNormalized": "dying-fetus",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
       "openers": [
-        "Shadows Fall",
-        "Dying Fetus"
+        "Shadows Fall"
       ],
       "venue": "Westcott Theater",
       "venueNormalized": "westcott-theater",
@@ -2927,6 +2926,7 @@
       "state": "NY",
       "cityState": "Syracuse, NY",
       "isFestival": false,
+      "attendedWith": "",
       "year": 2013,
       "month": 2,
       "day": 16,
@@ -2935,8 +2935,7 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      },
-      "attendedWith": ""
+      }
     },
     {
       "id": "2013-03-08-nile",
@@ -7201,13 +7200,13 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-10T02:24:11.837Z",
+    "lastUpdated": "2026-01-10T16:11:50.001Z",
     "totalConcerts": 265,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
-    "uniqueArtists": 158,
+    "uniqueArtists": 157,
     "uniqueVenues": 85,
     "uniqueCities": 30
   }
