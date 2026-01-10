@@ -22,7 +22,8 @@
       "location": {
         "lat": 43.036233,
         "lng": -76.1362931
-      }
+      },
+      "attendedWith": "Dad, Adam"
     },
     {
       "id": "1994-08-07-collective-soul",
@@ -46,7 +47,8 @@
       "location": {
         "lat": 43.0667873,
         "lng": -75.52795499999999
-      }
+      },
+      "attendedWith": "Dad, Adam"
     },
     {
       "id": "1994-11-12-candlebox",
@@ -72,7 +74,8 @@
       "location": {
         "lat": 43.04737250000001,
         "lng": -76.1525762
-      }
+      },
+      "attendedWith": "Adam, Gates"
     },
     {
       "id": "1995-02-14-slayer",
@@ -98,7 +101,8 @@
       "location": {
         "lat": 43.1604263,
         "lng": -77.6037566
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "1996-01-15-marilyn-manson",
@@ -122,7 +126,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "1996-01-25-ozzy-osbourne",
@@ -149,7 +154,8 @@
       "location": {
         "lat": 43.0448,
         "lng": -76.1482
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "1996-03-03-crowbar",
@@ -173,7 +179,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "1997-05-18-neurosis",
@@ -201,7 +208,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "1997-08-06-coal-chamber",
@@ -225,7 +233,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "1998-11-25-fear-factory",
@@ -249,7 +258,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "1999-07-23-woodstock-99",
@@ -279,7 +289,8 @@
       "location": {
         "lat": 43.2258402,
         "lng": -75.4051114
-      }
+      },
+      "attendedWith": "Dewey"
     },
     {
       "id": "2000-11-30-deicide",
@@ -305,7 +316,8 @@
       "location": {
         "lat": 43.0413232,
         "lng": -76.1190964
-      }
+      },
+      "attendedWith": "Tim, Kevin"
     },
     {
       "id": "2001-01-18-insane-clown-posse",
@@ -329,7 +341,8 @@
       "location": {
         "lat": 43.1605527,
         "lng": -77.6116928
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2001-03-11-pantera",
@@ -356,7 +369,8 @@
       "location": {
         "lat": 39.9012015,
         "lng": -75.17197949999999
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2001-10-12-six-feet-under",
@@ -383,7 +397,8 @@
       "location": {
         "lat": 42.8890559,
         "lng": -78.87051799999999
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2002-04-18-gwar",
@@ -407,7 +422,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2002-06-09-superjoint-ritual",
@@ -434,7 +450,8 @@
       "location": {
         "lat": 39.9537813,
         "lng": -75.1565409
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2002-07-09-down",
@@ -458,7 +475,8 @@
       "location": {
         "lat": 43.1605527,
         "lng": -77.6116928
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2002-10-13-superjoint-ritual",
@@ -482,7 +500,8 @@
       "location": {
         "lat": 41.702792,
         "lng": -73.9244069
-      }
+      },
+      "attendedWith": "Tim, Kevin"
     },
     {
       "id": "2002-11-12-gwar",
@@ -506,7 +525,8 @@
       "location": {
         "lat": 42.941089,
         "lng": -78.8914594
-      }
+      },
+      "attendedWith": "Karin"
     },
     {
       "id": "2002-11-20-down",
@@ -530,7 +550,8 @@
       "location": {
         "lat": 39.9537813,
         "lng": -75.1565409
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2003-05-03-soulfly",
@@ -557,7 +578,8 @@
       "location": {
         "lat": 42.941089,
         "lng": -78.8914594
-      }
+      },
+      "attendedWith": "Karin"
     },
     {
       "id": "2003-05-12-soulfly",
@@ -581,7 +603,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2003-08-11-ozzfest-2003",
@@ -609,7 +632,8 @@
       "location": {
         "lat": 42.9267942,
         "lng": -78.37932169999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2003-11-14-new-jersey-metal-and-hardcore-festival",
@@ -640,7 +664,8 @@
       "location": {
         "lat": 40.2237327,
         "lng": -73.9980485
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2004-02-04-six-feet-under",
@@ -664,7 +689,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2004-04-04-dying-fetus",
@@ -690,7 +716,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2004-04-15-morbid-angel",
@@ -718,7 +745,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2004-05-30-suffocation",
@@ -744,7 +772,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2004-08-08-machine-head",
@@ -770,7 +799,8 @@
       "location": {
         "lat": 39.9414026,
         "lng": -75.14872059999999
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2004-08-24-ozzfest-2004",
@@ -798,7 +828,8 @@
       "location": {
         "lat": 38.7851679,
         "lng": -77.5866573
-      }
+      },
+      "attendedWith": "Tim, Dewey"
     },
     {
       "id": "2004-08-29-six-feet-under",
@@ -824,7 +855,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2004-09-18-soulfly",
@@ -848,7 +880,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2004-10-23-soulfly",
@@ -872,7 +905,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": "Dewey"
     },
     {
       "id": "2004-12-08-cannibal-corpse",
@@ -898,7 +932,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2005-02-25-morbid-angel",
@@ -924,7 +959,8 @@
       "location": {
         "lat": 39.9537813,
         "lng": -75.1565409
-      }
+      },
+      "attendedWith": "Wallace"
     },
     {
       "id": "2005-06-09-corrosion-of-conformity",
@@ -951,7 +987,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2005-06-26-sounds-of-the-underground",
@@ -981,7 +1018,8 @@
       "location": {
         "lat": 39.9585136,
         "lng": -75.1373301
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2005-07-24-ozzfest-2005",
@@ -1008,7 +1046,8 @@
       "location": {
         "lat": 38.7851679,
         "lng": -77.5866573
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2005-08-14-six-feet-under",
@@ -1032,7 +1071,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2006-05-26-mdf-iv",
@@ -1061,7 +1101,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2006-07-06-soilent-green",
@@ -1085,7 +1126,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2006-10-24-alice-in-chains",
@@ -1109,7 +1151,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2006-11-10-cannibal-corpse",
@@ -1136,7 +1179,8 @@
       "location": {
         "lat": 38.7782724,
         "lng": -77.2315315
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2006-11-14-obituary-unleashed",
@@ -1160,7 +1204,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2007-02-20-slayer",
@@ -1184,7 +1229,8 @@
       "location": {
         "lat": 38.917948,
         "lng": -77.0237227
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2007-05-01-cannibal-corpse",
@@ -1208,7 +1254,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2007-05-18-heaven-hell-dio",
@@ -1235,7 +1282,8 @@
       "location": {
         "lat": 39.2088816,
         "lng": -76.86269949999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2007-05-24-mdf-v",
@@ -1265,7 +1313,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2007-07-07-necrophagist",
@@ -1289,7 +1338,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2007-07-12-amon-amarth",
@@ -1315,7 +1365,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2007-10-20-clutch",
@@ -1339,7 +1390,8 @@
       "location": {
         "lat": 39.6417629,
         "lng": -77.71999319999999
-      }
+      },
+      "attendedWith": "Dewey"
     },
     {
       "id": "2007-10-31-down",
@@ -1366,7 +1418,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2007-12-31-clutch",
@@ -1390,7 +1443,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2008-02-09-down",
@@ -1414,7 +1468,8 @@
       "location": {
         "lat": 40.44041,
         "lng": -74.355218
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2008-02-28-kingdom-of-sorrow",
@@ -1438,7 +1493,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": "Adam, Gates"
     },
     {
       "id": "2008-04-12-testament",
@@ -1462,7 +1518,8 @@
       "location": {
         "lat": 40.44041,
         "lng": -74.355218
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2008-05-23-mdf-vi",
@@ -1493,7 +1550,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2008-07-12-godbelow",
@@ -1517,7 +1575,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2008-09-10-carcass",
@@ -1545,7 +1604,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2008-12-01-clutch",
@@ -1569,7 +1629,8 @@
       "location": {
         "lat": 38.917948,
         "lng": -77.0237227
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2008-12-31-clutch",
@@ -1593,7 +1654,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-01-17-metallica",
@@ -1619,7 +1681,8 @@
       "location": {
         "lat": 39.9012015,
         "lng": -75.17197949999999
-      }
+      },
+      "attendedWith": "Adam, Miller"
     },
     {
       "id": "2009-02-11-vital-remains",
@@ -1645,7 +1708,8 @@
       "location": {
         "lat": 38.7782724,
         "lng": -77.2315315
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-03-14-misery-index",
@@ -1671,7 +1735,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-05-21-mdf-vii",
@@ -1703,7 +1768,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "2009-06-26-alex-skolnick-trio",
@@ -1727,7 +1793,8 @@
       "location": {
         "lat": 39.2833154,
         "lng": -76.5949607
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2009-06-30-hank-3",
@@ -1751,7 +1818,8 @@
       "location": {
         "lat": 38.917948,
         "lng": -77.0237227
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2009-07-30-slayer",
@@ -1777,7 +1845,8 @@
       "location": {
         "lat": 39.2088816,
         "lng": -76.86269949999999
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2009-09-08-down",
@@ -1803,7 +1872,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2009-09-12-clutch",
@@ -1827,7 +1897,8 @@
       "location": {
         "lat": 39.95915979999999,
         "lng": -75.1497116
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2009-09-25-satyricon",
@@ -1836,9 +1907,7 @@
       "headlinerNormalized": "satyricon",
       "genre": "Black Metal",
       "genreNormalized": "black-metal",
-      "openers": [
-        "Bleeding Through"
-      ],
+      "openers": [],
       "venue": "Sonar",
       "venueNormalized": "sonar",
       "city": "Baltimore",
@@ -1853,7 +1922,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-09-27-gwar",
@@ -1877,7 +1947,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-10-19-god-dethroned",
@@ -1901,7 +1972,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-10-20-soulfly",
@@ -1928,7 +2000,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-10-23-eyehategod",
@@ -1955,7 +2028,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2009-11-09-cannibal-corpse",
@@ -1981,7 +2055,8 @@
       "location": {
         "lat": 39.4009392,
         "lng": -76.60210959999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-11-29-dying-fetus",
@@ -2007,7 +2082,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2009-12-10-gwar",
@@ -2031,7 +2107,8 @@
       "location": {
         "lat": 38.917948,
         "lng": -77.0237227
-      }
+      },
+      "attendedWith": "Karin"
     },
     {
       "id": "2009-12-28-clutch",
@@ -2055,7 +2132,8 @@
       "location": {
         "lat": 38.917948,
         "lng": -77.0237227
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2010-01-15-nile",
@@ -2082,7 +2160,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-03-09-goatwhore",
@@ -2106,7 +2185,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-03-16-testament",
@@ -2115,7 +2195,9 @@
       "headlinerNormalized": "testament",
       "genre": "Thrash Metal",
       "genreNormalized": "thrash-metal",
-      "openers": [],
+      "openers": [
+        "Exodus"
+      ],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
       "city": "Baltimore",
@@ -2130,7 +2212,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": "Chimber"
     },
     {
       "id": "2010-03-17-megadeth",
@@ -2154,7 +2237,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-03-21-misery-index",
@@ -2178,7 +2262,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-04-20-mastodon",
@@ -2187,9 +2272,7 @@
       "headlinerNormalized": "mastodon",
       "genre": "Progressive Metal",
       "genreNormalized": "progressive-metal",
-      "openers": [
-        "Between the Buried and Me"
-      ],
+      "openers": [],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
       "city": "Baltimore",
@@ -2204,7 +2287,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-05-06-dying-fetus",
@@ -2230,7 +2314,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-05-27-mdf-viii",
@@ -2261,7 +2346,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "2010-06-11-goatwhore",
@@ -2287,7 +2373,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2010-08-15-slayer",
@@ -2314,7 +2401,8 @@
       "location": {
         "lat": 39.9404754,
         "lng": -75.13001249999999
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2011-01-22-legendary-rhythm-blues-cruise-16",
@@ -2343,7 +2431,8 @@
       "location": {
         "lat": 26.2091278,
         "lng": -80.1405577
-      }
+      },
+      "attendedWith": "Dad"
     },
     {
       "id": "2011-02-19-deicide",
@@ -2369,7 +2458,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2011-05-26-mdf-ix",
@@ -2402,7 +2492,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "2011-09-11-grave",
@@ -2430,7 +2521,8 @@
       "location": {
         "lat": 40.7398753,
         "lng": -73.9849625
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2011-10-08-immolation",
@@ -2456,7 +2548,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2011-10-18-cavalera-conspiracy",
@@ -2482,7 +2575,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2011-11-05-mayhem",
@@ -2506,7 +2600,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2011-11-16-judas-priest",
@@ -2532,7 +2627,8 @@
       "location": {
         "lat": 43.161492,
         "lng": -77.5880473
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2012-01-22-legendary-rhythm-blues-cruise-18",
@@ -2561,7 +2657,8 @@
       "location": {
         "lat": 26.2091278,
         "lng": -80.1405577
-      }
+      },
+      "attendedWith": "Dad"
     },
     {
       "id": "2012-03-22-gwar",
@@ -2588,7 +2685,8 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2012-05-24-mdf-x",
@@ -2620,7 +2718,8 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2012-07-24-slayer",
@@ -2647,7 +2746,8 @@
       "location": {
         "lat": 41.3533,
         "lng": -75.6592
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2012-09-13-kreator",
@@ -2673,7 +2773,8 @@
       "location": {
         "lat": 43.0494832,
         "lng": -76.14739770000001
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2012-09-26-down",
@@ -2697,7 +2798,8 @@
       "location": {
         "lat": 39.95915979999999,
         "lng": -75.1497116
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2012-09-29-morbid-angel",
@@ -2724,7 +2826,8 @@
       "location": {
         "lat": 42.266725,
         "lng": -71.80065560000001
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2012-10-13-shadows-fall",
@@ -2748,7 +2851,8 @@
       "location": {
         "lat": 43.0494832,
         "lng": -76.14739770000001
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2012-11-10-deicide",
@@ -2772,7 +2876,8 @@
       "location": {
         "lat": 43.0494832,
         "lng": -76.14739770000001
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2013-01-20-legendary-rhythm-blues-cruise-20",
@@ -2802,7 +2907,8 @@
       "location": {
         "lat": 26.2091278,
         "lng": -80.1405577
-      }
+      },
+      "attendedWith": "Dad, Dewey"
     },
     {
       "id": "2013-02-16-hatebreed",
@@ -2829,7 +2935,8 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2013-03-08-nile",
@@ -2853,7 +2960,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2013-04-28-fear-factory",
@@ -2879,31 +2987,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
-    },
-    {
-      "id": "2013-05-05-hate-eternal",
-      "date": "2013-05-05",
-      "headliner": "Hate Eternal",
-      "headlinerNormalized": "hate-eternal",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
-      "openers": [],
-      "venue": "Soundstage",
-      "venueNormalized": "soundstage",
-      "city": "Baltimore",
-      "state": "MD",
-      "cityState": "Baltimore, MD",
-      "isFestival": false,
-      "year": 2013,
-      "month": 5,
-      "day": 5,
-      "dayOfWeek": "Sunday",
-      "decade": "2010s",
-      "location": {
-        "lat": 39.2876463,
-        "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2013-05-23-mdf-xi",
@@ -2936,7 +3021,8 @@
       "location": {
         "lat": 39.29585,
         "lng": -76.6093571
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "2013-07-27-melvins",
@@ -2960,7 +3046,8 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2013-10-13-soulfly",
@@ -2984,7 +3071,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Karin"
     },
     {
       "id": "2013-10-24-deicide",
@@ -3010,7 +3098,8 @@
       "location": {
         "lat": 30.2675285,
         "lng": -97.7454473
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "2013-10-24-housecore-horror-film-festival-i",
@@ -3040,31 +3129,8 @@
       "location": {
         "lat": 30.2660457,
         "lng": -97.7403947
-      }
-    },
-    {
-      "id": "2014-02-01-suffocation",
-      "date": "2014-02-01",
-      "headliner": "Suffocation",
-      "headlinerNormalized": "suffocation",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
-      "openers": [],
-      "venue": "Metro Gallery",
-      "venueNormalized": "metro-gallery",
-      "city": "Baltimore",
-      "state": "MD",
-      "cityState": "Baltimore, MD",
-      "isFestival": false,
-      "year": 2014,
-      "month": 2,
-      "day": 1,
-      "dayOfWeek": "Saturday",
-      "decade": "2010s",
-      "location": {
-        "lat": 39.3088425,
-        "lng": -76.6165858
-      }
+      },
+      "attendedWith": "Tim, Gates"
     },
     {
       "id": "2014-02-01-amon-amarth",
@@ -3091,7 +3157,8 @@
       "location": {
         "lat": 43.1605527,
         "lng": -77.6116928
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2014-04-27-high-on-fire",
@@ -3118,7 +3185,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2014-05-14-nile",
@@ -3142,7 +3210,8 @@
       "location": {
         "lat": 29.9688892,
         "lng": -90.0559387
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2014-05-15-amon-amarth",
@@ -3169,7 +3238,8 @@
       "location": {
         "lat": 39.95915979999999,
         "lng": -75.1497116
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2014-05-22-mdf-xii",
@@ -3203,7 +3273,8 @@
       "location": {
         "lat": 39.29585,
         "lng": -76.6093571
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2014-07-05-king-buzzo",
@@ -3229,7 +3300,8 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2014-10-10-suffocation",
@@ -3256,7 +3328,8 @@
       "location": {
         "lat": 38.7782724,
         "lng": -77.2315315
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2014-10-13-king-diamond",
@@ -3280,7 +3353,8 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2014-12-03-death-to-all",
@@ -3307,7 +3381,8 @@
       "location": {
         "lat": 38.7782724,
         "lng": -77.2315315
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2014-12-13-gwar",
@@ -3333,7 +3408,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2015-01-28-machine-head",
@@ -3359,7 +3435,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2015-01-31-napalm-death",
@@ -3386,7 +3463,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-02-08-eyehategod-coc",
@@ -3413,7 +3491,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-03-02-cannibal-corpse",
@@ -3439,7 +3518,8 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-04-08-black-label-society",
@@ -3465,7 +3545,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2015-04-11-at-the-gates",
@@ -3491,7 +3572,8 @@
       "location": {
         "lat": 39.96138759999999,
         "lng": -75.1553236
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-04-28-testament",
@@ -3517,7 +3599,8 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-05-16-clutch",
@@ -3543,7 +3626,8 @@
       "location": {
         "lat": 39.2851273,
         "lng": -76.6061117
-      }
+      },
+      "attendedWith": "Taylor, Chimber"
     },
     {
       "id": "2015-05-21-mdf-xiii",
@@ -3574,7 +3658,8 @@
       "location": {
         "lat": 39.29585,
         "lng": -76.6093571
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-08-04-dying-fetus",
@@ -3598,7 +3683,8 @@
       "location": {
         "lat": 38.935853,
         "lng": -77.03314689999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-09-19-shindig-festival",
@@ -3626,7 +3712,8 @@
       "location": {
         "lat": 39.2789522,
         "lng": -76.6429804
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2015-10-17-cannibal-corpse",
@@ -3652,7 +3739,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-10-21-soulfly",
@@ -3679,7 +3767,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-10-28-misery-index",
@@ -3705,7 +3794,8 @@
       "location": {
         "lat": 39.2879179,
         "lng": -76.6013852
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-11-06-vastum",
@@ -3729,7 +3819,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-11-08-belphegor",
@@ -3753,7 +3844,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-11-10-mortuary-drape",
@@ -3780,7 +3872,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2015-11-25-mayhem",
@@ -3807,7 +3900,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2016-01-30-florida-metal-fest",
@@ -3837,7 +3931,8 @@
       "location": {
         "lat": 27.9621515,
         "lng": -82.4446267
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-02-02-cannibal-corpse",
@@ -3863,7 +3958,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-03-04-taake",
@@ -3887,7 +3983,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-03-16-slayer",
@@ -3914,7 +4011,8 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-04-01-fear-factory",
@@ -3940,7 +4038,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-04-01-archgoat",
@@ -3964,7 +4063,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-04-22-eyehategod",
@@ -3988,7 +4088,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-04-28-soulfly",
@@ -4014,7 +4115,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-04-29-dying-fetus",
@@ -4040,7 +4142,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-05-25-profanatica",
@@ -4064,7 +4167,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-05-26-mdf-xiv",
@@ -4097,7 +4201,8 @@
       "location": {
         "lat": 39.29585,
         "lng": -76.6093571
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-06-16-dragged-into-sunlight",
@@ -4123,7 +4228,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-07-01-funebrarum",
@@ -4133,8 +4239,8 @@
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
       "openers": [],
-      "venue": "Metro Gallery",
-      "venueNormalized": "metro-gallery",
+      "venue": "Sidebar",
+      "venueNormalized": "sidebar",
       "city": "Baltimore",
       "state": "MD",
       "cityState": "Baltimore, MD",
@@ -4145,9 +4251,10 @@
       "dayOfWeek": "Friday",
       "decade": "2010s",
       "location": {
-        "lat": 39.3088425,
-        "lng": -76.6165858
-      }
+        "lat": 39.2905023,
+        "lng": -76.6104072
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-07-26-cannibal-corpse",
@@ -4175,7 +4282,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-08-01-carcass",
@@ -4202,7 +4310,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-08-02-zakk-wylde",
@@ -4228,7 +4337,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-08-19-black-sabbath",
@@ -4252,7 +4362,8 @@
       "location": {
         "lat": 39.9404754,
         "lng": -75.13001249999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-08-27-william-elliott-whitmore",
@@ -4276,7 +4387,8 @@
       "location": {
         "lat": 38.899994,
         "lng": -76.986572
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-09-01-belphegor",
@@ -4302,7 +4414,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-09-18-marduk",
@@ -4328,7 +4441,8 @@
       "location": {
         "lat": 45.52281000000001,
         "lng": -122.6581342
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-10-01-brujeria",
@@ -4354,7 +4468,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-12-03-armored-saint",
@@ -4378,7 +4493,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2016-12-16-abbath",
@@ -4404,7 +4520,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-01-01-cognitive",
@@ -4430,7 +4547,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-02-01-mayhem",
@@ -4457,7 +4575,8 @@
       "location": {
         "lat": 38.9153738,
         "lng": -77.0210891
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-02-01-cavalera-conspiracy",
@@ -4483,7 +4602,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-04-01-testament",
@@ -4510,7 +4630,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-05-01-shining",
@@ -4536,7 +4657,8 @@
       "location": {
         "lat": 39.2453315,
         "lng": -76.45400819999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-05-10-metallica",
@@ -4560,7 +4682,8 @@
       "location": {
         "lat": 39.2778666,
         "lng": -76.6229437
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-05-19-suffocation",
@@ -4586,7 +4709,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-05-20-the-obsessed",
@@ -4610,7 +4734,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2017-05-25-mdf-xv",
@@ -4642,7 +4767,8 @@
       "location": {
         "lat": 39.29585,
         "lng": -76.6093571
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-06-01-necrot",
@@ -4669,7 +4795,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-08-01-obituary",
@@ -4695,7 +4822,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-10-01-soulfly-nailbomb-set",
@@ -4722,7 +4850,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-10-01-the-obsessed",
@@ -4748,7 +4877,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-10-12-wolves-in-the-throne-room",
@@ -4774,7 +4904,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-10-28-primus",
@@ -4800,7 +4931,8 @@
       "location": {
         "lat": 38.8800674,
         "lng": -77.0260611
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-11-01-belphegor",
@@ -4824,7 +4956,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-12-01-mayhem",
@@ -4850,7 +4983,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2017-12-01-morta-skuld",
@@ -4877,7 +5011,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-01-01-corrosion-of-conformity",
@@ -4903,7 +5038,8 @@
       "location": {
         "lat": 27.7719257,
         "lng": -82.636271
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-02-01-tim-barry",
@@ -4927,7 +5063,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-02-01-watain",
@@ -4953,7 +5090,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-04-01-ministry",
@@ -4979,7 +5117,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-05-01-demilich",
@@ -5006,7 +5145,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-05-24-mdf-xvi",
@@ -5036,7 +5176,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": "Gates"
     },
     {
       "id": "2018-06-01-slayer",
@@ -5064,7 +5205,8 @@
       "location": {
         "lat": 38.7851679,
         "lng": -77.5866573
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-06-01-aborted",
@@ -5091,7 +5233,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-07-01-demolition-hammer",
@@ -5118,7 +5261,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-08-02-wino",
@@ -5144,7 +5288,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-08-04-slayer",
@@ -5172,7 +5317,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2018-08-18-the-chasm",
@@ -5198,7 +5344,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-09-05-obituary",
@@ -5224,7 +5371,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-10-01-paradise-lost",
@@ -5250,7 +5398,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-10-01-dying-fetus",
@@ -5277,7 +5426,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-10-11-amorphis",
@@ -5304,7 +5454,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-11-01-behemoth",
@@ -5330,7 +5481,8 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-11-15-suffocation",
@@ -5357,7 +5509,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2018-12-28-clutch",
@@ -5381,7 +5534,8 @@
       "location": {
         "lat": 39.2894444,
         "lng": -76.6072222
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-01-11-full-of-hell",
@@ -5408,7 +5562,8 @@
       "location": {
         "lat": 39.3088425,
         "lng": -76.6165858
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-02-01-corrosion-of-conformity",
@@ -5435,7 +5590,8 @@
       "location": {
         "lat": 39.318881,
         "lng": -76.61958179999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-03-01-morbid-angel",
@@ -5462,7 +5618,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-03-15-joe-bonamassa",
@@ -5486,7 +5643,8 @@
       "location": {
         "lat": 39.305934,
         "lng": -76.6179164
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2019-05-14-slayer",
@@ -5513,7 +5671,8 @@
       "location": {
         "lat": 39.2088816,
         "lng": -76.86269949999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-05-23-mdf-xvii",
@@ -5544,7 +5703,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-06-01-nails",
@@ -5571,7 +5731,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-06-01-dark-funeral",
@@ -5598,7 +5759,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-07-01-matt-anderson",
@@ -5622,7 +5784,8 @@
       "location": {
         "lat": 39.2851273,
         "lng": -76.6061117
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-08-01-chris-stapleton",
@@ -5646,7 +5809,8 @@
       "location": {
         "lat": 39.2088816,
         "lng": -76.86269949999999
-      }
+      },
+      "attendedWith": "Taylor, Chimber"
     },
     {
       "id": "2019-08-29-tab-benoit",
@@ -5670,7 +5834,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-09-24-cerebral-rot",
@@ -5698,7 +5863,8 @@
       "location": {
         "lat": 38.914866,
         "lng": -76.9816091
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-10-01-1349",
@@ -5724,7 +5890,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-10-22-obituary",
@@ -5751,7 +5918,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-11-01-nile",
@@ -5777,7 +5945,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-11-01-integrity",
@@ -5804,7 +5973,8 @@
       "location": {
         "lat": 39.2905023,
         "lng": -76.6104072
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2019-11-01-william-elliott-whitmore",
@@ -5828,7 +5998,8 @@
       "location": {
         "lat": 38.9145825,
         "lng": -77.0317283
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2020-01-01-machine-head",
@@ -5854,7 +6025,8 @@
       "location": {
         "lat": 38.997449,
         "lng": -77.027579
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2022-03-01-crowbar",
@@ -5878,7 +6050,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2022-05-26-mdf-xviii",
@@ -5911,7 +6084,8 @@
       "location": {
         "lat": 39.29585,
         "lng": -76.6093571
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2022-06-01-carnivore-a-d",
@@ -5935,7 +6109,8 @@
       "location": {
         "lat": 43.1218034,
         "lng": -76.2135503
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2022-08-01-goatwhore",
@@ -5961,7 +6136,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2022-08-13-alice-in-chains",
@@ -5987,7 +6163,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2022-09-01-dying-fetus",
@@ -6011,7 +6188,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2022-09-20-megadeth",
@@ -6020,9 +6198,7 @@
       "headlinerNormalized": "megadeth",
       "genre": "Thrash Metal",
       "genreNormalized": "thrash-metal",
-      "openers": [
-        "Five Finger Death Punch"
-      ],
+      "openers": [],
       "venue": "St. Joseph's Amp",
       "venueNormalized": "st-joseph-s-amp",
       "city": "Syracuse",
@@ -6037,7 +6213,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2022-10-13-max-iggor-cavalera",
@@ -6061,7 +6238,8 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2023-02-01-soulfly",
@@ -6085,7 +6263,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2023-04-01-william-elliott-whitmore",
@@ -6109,7 +6288,8 @@
       "location": {
         "lat": 43.0524321,
         "lng": -76.14030819999999
-      }
+      },
+      "attendedWith": "Taylor, Adam"
     },
     {
       "id": "2023-04-13-morbid-angel",
@@ -6136,7 +6316,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2023-06-11-chris-stapleton",
@@ -6145,9 +6326,7 @@
       "headlinerNormalized": "chris-stapleton",
       "genre": "BlueGrass",
       "genreNormalized": "bluegrass",
-      "openers": [
-        "The War and Treaty"
-      ],
+      "openers": [],
       "venue": "St. Joseph's Amp",
       "venueNormalized": "st-joseph-s-amp",
       "city": "Syracuse",
@@ -6162,7 +6341,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2023-08-01-pantera",
@@ -6188,7 +6368,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2023-08-01-ghost",
@@ -6214,7 +6395,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2023-09-20-crowbar",
@@ -6240,7 +6422,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2023-11-01-goatwhore",
@@ -6266,7 +6449,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2023-11-01-dying-fetus",
@@ -6290,7 +6474,8 @@
       "location": {
         "lat": 43.1605527,
         "lng": -77.6116928
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2023-11-20-ulcerate",
@@ -6316,7 +6501,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-02-15-go-ahead-and-die",
@@ -6342,7 +6528,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-03-07-cannibal-corpse",
@@ -6370,7 +6557,8 @@
       "location": {
         "lat": 39.9537813,
         "lng": -75.1565409
-      }
+      },
+      "attendedWith": "Tim"
     },
     {
       "id": "2024-04-01-dying-fetus",
@@ -6397,7 +6585,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-05-01-cattle-decapitation",
@@ -6423,7 +6612,8 @@
       "location": {
         "lat": 43.1218034,
         "lng": -76.2135503
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-05-01-internal-bleeding",
@@ -6450,7 +6640,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-05-23-mdf-xix",
@@ -6481,7 +6672,8 @@
       "location": {
         "lat": 39.2876463,
         "lng": -76.60706859999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-07-01-frozen-soul",
@@ -6507,7 +6699,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-08-01-sulaco",
@@ -6533,7 +6726,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-08-01-jackyl",
@@ -6557,7 +6751,8 @@
       "location": {
         "lat": 43.074122,
         "lng": -76.2217213
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2024-09-01-william-elliott-whitmore",
@@ -6581,7 +6776,8 @@
       "location": {
         "lat": 43.0524321,
         "lng": -76.14030819999999
-      }
+      },
+      "attendedWith": "Taylor, Adam"
     },
     {
       "id": "2024-09-16-alice-cooper",
@@ -6608,7 +6804,8 @@
       "location": {
         "lat": 43.0881925,
         "lng": -76.2228415
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2024-09-22-goatwhore",
@@ -6635,7 +6832,8 @@
       "location": {
         "lat": 43.0471919,
         "lng": -76.15170789999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-01-22-six-feet-under",
@@ -6661,7 +6859,8 @@
       "location": {
         "lat": 43.1560851,
         "lng": -77.6023304
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-03-21-dirtwire",
@@ -6685,7 +6884,8 @@
       "location": {
         "lat": 43.0410937,
         "lng": -76.1196614
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2025-03-22-malignancy",
@@ -6711,7 +6911,8 @@
       "location": {
         "lat": 43.0797422,
         "lng": -76.1229639
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-03-25-hendrix-tribute",
@@ -6722,7 +6923,7 @@
       "genreNormalized": "blues-rock",
       "openers": [
         "Kenny Wayne Shepherd",
-        "Allman"
+        "Duane Allman"
       ],
       "venue": "Landmark Theatre",
       "venueNormalized": "landmark-theatre",
@@ -6738,7 +6939,8 @@
       "location": {
         "lat": 43.04737250000001,
         "lng": -76.1525762
-      }
+      },
+      "attendedWith": "Dad, Adam, Taylor"
     },
     {
       "id": "2025-04-19-metallica",
@@ -6765,7 +6967,8 @@
       "location": {
         "lat": 43.036233,
         "lng": -76.1362931
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2025-05-09-emperor",
@@ -6791,7 +6994,8 @@
       "location": {
         "lat": 42.266725,
         "lng": -71.80065560000001
-      }
+      },
+      "attendedWith": "Taylor"
     },
     {
       "id": "2025-05-22-mdf-xx",
@@ -6823,7 +7027,8 @@
       "location": {
         "lat": 39.2904278,
         "lng": -76.6139017
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-08-25-mortician",
@@ -6849,7 +7054,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-09-13-acid-bath",
@@ -6876,7 +7082,8 @@
       "location": {
         "lat": 43.1218637,
         "lng": -76.21341629999999
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-09-20-slayer",
@@ -6904,7 +7111,8 @@
       "location": {
         "lat": 40.2899769,
         "lng": -76.6587942
-      }
+      },
+      "attendedWith": "Adam"
     },
     {
       "id": "2025-10-17-beheaded",
@@ -6931,7 +7139,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-10-25-vader",
@@ -6958,7 +7167,8 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     },
     {
       "id": "2025-11-26-krisiun",
@@ -6985,17 +7195,18 @@
       "location": {
         "lat": 43.0546386,
         "lng": -76.0830593
-      }
+      },
+      "attendedWith": ""
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-09T19:17:03.390Z",
-    "totalConcerts": 267,
+    "lastUpdated": "2026-01-10T01:48:02.949Z",
+    "totalConcerts": 265,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
-    "uniqueArtists": 160,
+    "uniqueArtists": 159,
     "uniqueVenues": 85,
     "uniqueCities": 30
   }
