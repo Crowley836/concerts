@@ -67,9 +67,9 @@ function generateRSSFeed(releases: Release[]): string {
   return `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Morperhaus Concert Archives - Liner Notes</title>
+    <title>Mr. Crowley's Vault - Liner Notes</title>
     <link>${siteUrl}/liner-notes</link>
-    <description>New features and updates for the Morperhaus Concert Archives</description>
+    <description>New features and updates for the Mr. Crowley's Vault</description>
     <language>en-us</language>
     <lastBuildDate>${buildDate}</lastBuildDate>
     <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />

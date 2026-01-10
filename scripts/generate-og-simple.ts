@@ -62,7 +62,7 @@ async function main() {
 
   // Wait for force graph to render
   await new Promise(resolve => setTimeout(resolve, 6000))
-  await page.waitForSelector('svg', { timeout: 10000 }).catch(() => {})
+  await page.waitForSelector('svg', { timeout: 10000 }).catch(() => { })
   await new Promise(resolve => setTimeout(resolve, 2000))
 
   // Hide UI elements for cleaner OG image
@@ -128,7 +128,7 @@ async function main() {
       </defs>
 
       <!-- Vertically centered text (630/2 = 315, adjusted for text baseline) -->
-      <text x="600" y="285" text-anchor="middle" class="title">Morperhaus Concert Archives</text>
+      <text x="600" y="285" text-anchor="middle" class="title">Mr. Crowley's Vault</text>
       <text x="600" y="325" text-anchor="middle" class="subtitle">${decades}+ decades. ${stats.concerts} shows. ${stats.artists} artists. ${stats.venues} venues. ${stats.scenes} interactive stories.</text>
     </svg>
   `

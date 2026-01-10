@@ -1,6 +1,6 @@
 // Genre Colors - Concert Poster Palette
 // Deep jewel tones at 35-45% lightness, 65-80% saturation
-// Source: docs/design/Morperhaus-Color-Specification-Guide.md
+// Source: docs/design/Color-Specification-Guide.md
 
 export const GENRE_COLORS: Record<string, string> = {
   'New Wave': '#1e40af',        // Deep navy blue (synth, 80s)
