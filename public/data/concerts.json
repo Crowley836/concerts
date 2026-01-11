@@ -2719,6 +2719,31 @@
       "attendedWith": ""
     },
     {
+      "id": "2012-05-17-joe-bonamassa",
+      "date": "2012-05-17",
+      "headliner": "Joe Bonamassa",
+      "headlinerNormalized": "joe-bonamassa",
+      "genre": "Rock",
+      "genreNormalized": "rock",
+      "openers": [],
+      "venue": "Landmark Theatre",
+      "venueNormalized": "landmark-theatre",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "attendedWith": "Dad, Petrone",
+      "year": 2012,
+      "month": 5,
+      "day": 17,
+      "dayOfWeek": "Thursday",
+      "decade": "2010s",
+      "location": {
+        "lat": 43.04737250000001,
+        "lng": -76.1525762
+      }
+    },
+    {
       "id": "2012-05-24-mdf-x",
       "date": "2012-05-24",
       "headliner": "MDF X",
@@ -7230,8 +7255,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-11T00:53:20.060Z",
-    "totalConcerts": 266,
+    "lastUpdated": "2026-01-11T13:23:55.207Z",
+    "totalConcerts": 267,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
