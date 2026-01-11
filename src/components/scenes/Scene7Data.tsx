@@ -7,8 +7,15 @@ interface Scene7DataProps {
 }
 
 export function Scene7Data({ concerts }: Scene7DataProps) {
-    // State for mobile openers modal
-    const [activeOpeners, setActiveOpeners] = useState<string[] | null>(null)
+    // State for mobile details modal
+    type ModalState = { title: string; content: string[] } | null
+    const [activeModal, setActiveModal] = useState<ModalState>(null)
+
+    // Helper to open modal
+    const showModal = (title: string, content: string | string[]) => {
+        const items = Array.isArray(content) ? content : [content]
+        setActiveModal({ title, content: items })
+    }
 
     // Sort concerts by date descending (newest first)
     const sortedConcerts = [...concerts].sort((a, b) =>
@@ -67,7 +74,11 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                 </div>
 
                                 {/* Headliner */}
-                                <div className="col-span-3 md:col-span-3 font-semibold text-white truncate" title={concert.headliner}>
+                                <div
+                                    className="col-span-3 md:col-span-3 font-semibold text-white truncate md:cursor-default cursor-pointer active:opacity-70"
+                                    title={concert.headliner}
+                                    onClick={() => showModal('Headliner', concert.headliner)}
+                                >
                                     {concert.headliner}
                                 </div>
 
@@ -78,7 +89,7 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                     </span>
                                     <span
                                         className="md:hidden flex items-center gap-1 cursor-pointer active:opacity-70"
-                                        onClick={() => concert.openers.length > 0 && setActiveOpeners(concert.openers)}
+                                        onClick={() => concert.openers.length > 0 && showModal('Openers', concert.openers)}
                                     >
                                         {concert.openers.length > 0 ? (
                                             <>
@@ -97,9 +108,21 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
 
                                 {/* Venue & City */}
                                 <div className="col-span-4 md:col-span-3 text-right md:text-left flex flex-col md:flex-row md:items-center justify-end md:justify-start gap-1">
-                                    <span className="text-indigo-300 truncate" title={concert.venue}>{concert.venue}</span>
+                                    <span
+                                        className="text-indigo-300 truncate cursor-pointer md:cursor-default active:opacity-70"
+                                        title={concert.venue}
+                                        onClick={() => showModal('Venue', concert.venue)}
+                                    >
+                                        {concert.venue}
+                                    </span>
                                     <span className="hidden md:inline text-gray-600">•</span>
-                                    <span className="text-gray-500 text-xs md:text-sm truncate" title={concert.city}>{concert.city}</span>
+                                    <span
+                                        className="text-gray-500 text-xs md:text-sm truncate cursor-pointer md:cursor-default active:opacity-70"
+                                        title={concert.city}
+                                        onClick={() => showModal('City', concert.city)}
+                                    >
+                                        {concert.city}
+                                    </span>
                                 </div>
 
                                 {/* Attended With (Desktop only) */}
@@ -111,16 +134,16 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                     </div>
                 </motion.div>
 
-                {/* Mobile Openers Modal */}
+                {/* Mobile Details Modal */}
                 <AnimatePresence>
-                    {activeOpeners && (
+                    {activeModal && (
                         <div className="fixed inset-0 z-50 flex items-center justify-center px-4 md:hidden">
                             {/* Backdrop */}
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                onClick={() => setActiveOpeners(null)}
+                                onClick={() => setActiveModal(null)}
                                 className="absolute inset-0 bg-black/80 backdrop-blur-sm"
                             />
 
@@ -133,21 +156,23 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                             >
                                 <div className="p-6">
                                     <div className="flex justify-between items-center mb-4">
-                                        <h3 className="text-xl font-bold text-white">Openers</h3>
+                                        <h3 className="text-xl font-bold text-white">{activeModal.title}</h3>
                                         <button
-                                            onClick={() => setActiveOpeners(null)}
+                                            onClick={() => setActiveModal(null)}
                                             className="p-1 text-gray-400 hover:text-white transition-colors"
                                         >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                         </button>
                                     </div>
                                     <ul className="space-y-3 max-h-[60vh] overflow-y-auto custom-scrollbar">
-                                        {activeOpeners.map((opener, i) => (
+                                        {activeModal.content.map((item, i) => (
                                             <li key={i} className="flex items-center gap-3 text-gray-300 p-2 rounded-lg bg-white/5">
-                                                <span className="w-6 h-6 flex items-center justify-center bg-white/10 rounded-full text-xs font-medium text-gray-400">
-                                                    {i + 1}
-                                                </span>
-                                                <span className="font-medium">{opener}</span>
+                                                {activeModal.content.length > 1 && (
+                                                    <span className="w-6 h-6 flex items-center justify-center bg-white/10 rounded-full text-xs font-medium text-gray-400">
+                                                        {i + 1}
+                                                    </span>
+                                                )}
+                                                <span className="font-medium text-lg leading-snug">{item}</span>
                                             </li>
                                         ))}
                                     </ul>
