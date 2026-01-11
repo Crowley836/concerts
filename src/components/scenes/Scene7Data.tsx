@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import type { Concert } from '../../types/concert'
 
 interface Scene7DataProps {
@@ -6,6 +7,9 @@ interface Scene7DataProps {
 }
 
 export function Scene7Data({ concerts }: Scene7DataProps) {
+    // State for mobile openers modal
+    const [activeOpeners, setActiveOpeners] = useState<string[] | null>(null)
+
     // Sort concerts by date descending (newest first)
     const sortedConcerts = [...concerts].sort((a, b) =>
         new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -72,12 +76,15 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                     <span className="hidden md:inline" title={concert.openers.join(', ')}>
                                         {concert.openers.length > 0 ? concert.openers.join(', ') : '-'}
                                     </span>
-                                    <span className="md:hidden flex items-center gap-1">
+                                    <span
+                                        className="md:hidden flex items-center gap-1 cursor-pointer active:opacity-70"
+                                        onClick={() => concert.openers.length > 0 && setActiveOpeners(concert.openers)}
+                                    >
                                         {concert.openers.length > 0 ? (
                                             <>
                                                 <span className="truncate">{concert.openers[0]}</span>
                                                 {concert.openers.length > 1 && (
-                                                    <span className="text-[10px] bg-slate-700 px-1 py-0.5 rounded text-gray-300 font-medium">
+                                                    <span className="text-[10px] bg-slate-700 px-1 py-0.5 rounded text-gray-300 font-medium whitespace-nowrap">
                                                         +{concert.openers.length - 1}
                                                     </span>
                                                 )}
@@ -103,6 +110,52 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                         ))}
                     </div>
                 </motion.div>
+
+                {/* Mobile Openers Modal */}
+                <AnimatePresence>
+                    {activeOpeners && (
+                        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 md:hidden">
+                            {/* Backdrop */}
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                onClick={() => setActiveOpeners(null)}
+                                className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+                            />
+
+                            {/* Modal Content */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                                className="relative w-full max-w-sm bg-slate-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden"
+                            >
+                                <div className="p-6">
+                                    <div className="flex justify-between items-center mb-4">
+                                        <h3 className="text-xl font-bold text-white">Openers</h3>
+                                        <button
+                                            onClick={() => setActiveOpeners(null)}
+                                            className="p-1 text-gray-400 hover:text-white transition-colors"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </button>
+                                    </div>
+                                    <ul className="space-y-3 max-h-[60vh] overflow-y-auto custom-scrollbar">
+                                        {activeOpeners.map((opener, i) => (
+                                            <li key={i} className="flex items-center gap-3 text-gray-300 p-2 rounded-lg bg-white/5">
+                                                <span className="w-6 h-6 flex items-center justify-center bg-white/10 rounded-full text-xs font-medium text-gray-400">
+                                                    {i + 1}
+                                                </span>
+                                                <span className="font-medium">{opener}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </motion.div>
+                        </div>
+                    )}
+                </AnimatePresence>
             </div>
         </section>
     )
