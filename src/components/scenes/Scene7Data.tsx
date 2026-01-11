@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { Concert } from '../../types/concert'
 
@@ -134,53 +135,56 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                     </div>
                 </motion.div>
 
-                {/* Mobile Details Modal */}
-                <AnimatePresence>
-                    {activeModal && (
-                        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 md:hidden">
-                            {/* Backdrop */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                onClick={() => setActiveModal(null)}
-                                className="absolute inset-0 bg-black/80 backdrop-blur-sm"
-                            />
+                {/* Mobile Details Modal - Portalled to body to escape overflow/stacking issues */}
+                {createPortal(
+                    <AnimatePresence>
+                        {activeModal && (
+                            <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 md:hidden">
+                                {/* Backdrop */}
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    onClick={() => setActiveModal(null)}
+                                    className="absolute inset-0 bg-black/80 backdrop-blur-sm touch-none"
+                                />
 
-                            {/* Modal Content */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.95, y: 20 }}
-                                animate={{ opacity: 1, scale: 1, y: 0 }}
-                                exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                                className="relative w-full max-w-sm bg-slate-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden"
-                            >
-                                <div className="p-6">
-                                    <div className="flex justify-between items-center mb-4">
-                                        <h3 className="text-xl font-bold text-white">{activeModal.title}</h3>
-                                        <button
-                                            onClick={() => setActiveModal(null)}
-                                            className="p-1 text-gray-400 hover:text-white transition-colors"
-                                        >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                                        </button>
+                                {/* Modal Content */}
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    className="relative w-full max-w-sm bg-slate-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-[101]"
+                                >
+                                    <div className="p-6">
+                                        <div className="flex justify-between items-center mb-4">
+                                            <h3 className="text-xl font-bold text-white">{activeModal.title}</h3>
+                                            <button
+                                                onClick={() => setActiveModal(null)}
+                                                className="p-1 text-gray-400 hover:text-white transition-colors"
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                            </button>
+                                        </div>
+                                        <ul className="space-y-3 max-h-[60vh] overflow-y-auto custom-scrollbar">
+                                            {activeModal.content.map((item, i) => (
+                                                <li key={i} className="flex items-center gap-3 text-gray-300 p-2 rounded-lg bg-white/5">
+                                                    {activeModal.content.length > 1 && (
+                                                        <span className="w-6 h-6 flex items-center justify-center bg-white/10 rounded-full text-xs font-medium text-gray-400">
+                                                            {i + 1}
+                                                        </span>
+                                                    )}
+                                                    <span className="font-medium text-lg leading-snug">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <ul className="space-y-3 max-h-[60vh] overflow-y-auto custom-scrollbar">
-                                        {activeModal.content.map((item, i) => (
-                                            <li key={i} className="flex items-center gap-3 text-gray-300 p-2 rounded-lg bg-white/5">
-                                                {activeModal.content.length > 1 && (
-                                                    <span className="w-6 h-6 flex items-center justify-center bg-white/10 rounded-full text-xs font-medium text-gray-400">
-                                                        {i + 1}
-                                                    </span>
-                                                )}
-                                                <span className="font-medium text-lg leading-snug">{item}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </motion.div>
-                        </div>
-                    )}
-                </AnimatePresence>
+                                </motion.div>
+                            </div>
+                        )}
+                    </AnimatePresence>,
+                    document.body
+                )}
             </div>
         </section>
     )
