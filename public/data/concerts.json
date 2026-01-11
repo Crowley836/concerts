@@ -1075,6 +1075,33 @@
       "attendedWith": ""
     },
     {
+      "id": "2005-11-15-fear-factory",
+      "date": "2005-11-15",
+      "headliner": "Fear Factory",
+      "headlinerNormalized": "fear-factory",
+      "genre": "Industrial Metal",
+      "genreNormalized": "industrial-metal",
+      "openers": [
+        "Strapping Young Lad"
+      ],
+      "venue": "Recher Theatre",
+      "venueNormalized": "recher-theatre",
+      "city": "Towson",
+      "state": "MD",
+      "cityState": "Towson, MD",
+      "isFestival": false,
+      "attendedWith": "",
+      "year": 2005,
+      "month": 11,
+      "day": 15,
+      "dayOfWeek": "Tuesday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.4009392,
+        "lng": -76.60210959999999
+      }
+    },
+    {
       "id": "2006-05-26-mdf-iv",
       "date": "2006-05-26",
       "headliner": "MDF IV",
@@ -7203,8 +7230,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-10T20:10:00.172Z",
-    "totalConcerts": 265,
+    "lastUpdated": "2026-01-11T00:23:46.231Z",
+    "totalConcerts": 266,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
