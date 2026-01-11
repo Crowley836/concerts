@@ -66,31 +66,31 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                 initial={{ opacity: 0, x: -10 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true, margin: "50px" }}
-                                className="grid grid-cols-12 gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors text-sm items-center group"
+                                className="grid grid-cols-12 gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors text-sm items-center group relative"
                             >
                                 {/* Date */}
-                                <div className="col-span-3 md:col-span-2 flex flex-col">
+                                <div className="col-span-3 md:col-span-2 flex flex-col pointer-events-none">
                                     <span className="text-white font-medium">{concert.date}</span>
                                     <span className="text-gray-500 text-xs md:hidden">{concert.dayOfWeek}</span>
                                 </div>
 
                                 {/* Headliner */}
                                 <div
-                                    className="col-span-3 md:col-span-3 font-semibold text-white truncate md:cursor-default cursor-pointer active:opacity-70"
+                                    className="col-span-3 md:col-span-3 font-semibold text-white truncate md:cursor-default cursor-pointer active:opacity-70 relative z-10 touch-manipulation"
                                     title={concert.headliner}
-                                    onClick={() => showModal('Headliner', concert.headliner)}
+                                    onClick={(e) => { e.stopPropagation(); showModal('Headliner', concert.headliner) }}
                                 >
                                     {concert.headliner}
                                 </div>
 
                                 {/* Openers */}
-                                <div className="col-span-2 md:col-span-2 text-gray-400 text-xs md:text-sm truncate">
+                                <div className="col-span-2 md:col-span-2 text-gray-400 text-xs md:text-sm truncate relative z-10">
                                     <span className="hidden md:inline" title={concert.openers.join(', ')}>
                                         {concert.openers.length > 0 ? concert.openers.join(', ') : '-'}
                                     </span>
                                     <span
-                                        className="md:hidden flex items-center gap-1 cursor-pointer active:opacity-70"
-                                        onClick={() => concert.openers.length > 0 && showModal('Openers', concert.openers)}
+                                        className="md:hidden flex items-center gap-1 cursor-pointer active:opacity-70 touch-manipulation"
+                                        onClick={(e) => { e.stopPropagation(); concert.openers.length > 0 && showModal('Openers', concert.openers) }}
                                     >
                                         {concert.openers.length > 0 ? (
                                             <>
@@ -108,19 +108,19 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                 </div>
 
                                 {/* Venue & City */}
-                                <div className="col-span-4 md:col-span-3 text-right md:text-left flex flex-col md:flex-row md:items-center justify-end md:justify-start gap-1">
+                                <div className="col-span-4 md:col-span-3 text-right md:text-left flex flex-col md:flex-row md:items-center justify-end md:justify-start gap-1 relative z-10">
                                     <span
-                                        className="text-indigo-300 truncate cursor-pointer md:cursor-default active:opacity-70"
+                                        className="text-indigo-300 truncate cursor-pointer md:cursor-default active:opacity-70 touch-manipulation inline-block"
                                         title={concert.venue}
-                                        onClick={() => showModal('Venue', concert.venue)}
+                                        onClick={(e) => { e.stopPropagation(); showModal('Venue', concert.venue) }}
                                     >
                                         {concert.venue}
                                     </span>
-                                    <span className="hidden md:inline text-gray-600">•</span>
+                                    <span className="hidden md:inline text-gray-600 mx-1">•</span>
                                     <span
-                                        className="text-gray-500 text-xs md:text-sm truncate cursor-pointer md:cursor-default active:opacity-70"
+                                        className="text-gray-500 text-xs md:text-sm truncate cursor-pointer md:cursor-default active:opacity-70 touch-manipulation inline-block"
                                         title={concert.city}
-                                        onClick={() => showModal('City', concert.city)}
+                                        onClick={(e) => { e.stopPropagation(); showModal('City', concert.city) }}
                                     >
                                         {concert.city}
                                     </span>
@@ -139,7 +139,7 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                 {createPortal(
                     <AnimatePresence>
                         {activeModal && (
-                            <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 md:hidden">
+                            <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4 md:hidden">
                                 {/* Backdrop */}
                                 <motion.div
                                     initial={{ opacity: 0 }}
@@ -154,7 +154,7 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                                     initial={{ opacity: 0, scale: 0.95, y: 20 }}
                                     animate={{ opacity: 1, scale: 1, y: 0 }}
                                     exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                                    className="relative w-full max-w-sm bg-slate-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-[101]"
+                                    className="relative w-full max-w-sm bg-slate-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-[10000]"
                                 >
                                     <div className="p-6">
                                         <div className="flex justify-between items-center mb-4">
