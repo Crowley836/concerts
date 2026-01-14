@@ -10,6 +10,7 @@ import { ArtistScene } from './components/scenes/ArtistScene/ArtistScene'
 import { Scene7Data } from './components/scenes/Scene7Data'
 import { SceneNavigation } from './components/SceneNavigation'
 import { MobileMenu } from './components/MobileMenu'
+import { MobileStats } from './components/MobileStats/MobileStats'
 import { ChangelogPage, ChangelogToast, ChangelogRSS } from './components/changelog'
 import { SCENE_MAP, TOAST } from './components/changelog/constants'
 import { useChangelogCheck } from './hooks/useChangelogCheck'
@@ -196,6 +197,9 @@ function MainScenes() {
           pendingVenueFocus={pendingMapVenueFocus}
           onVenueFocusComplete={() => setPendingMapVenueFocus(null)}
         />
+
+        {/* Mobile Stats Cards (replaces Scenes 4 & 5 on mobile) */}
+        <MobileStats concerts={concerts} />
 
         {/* Scene 6: Festivals (Now 4) */}
         <Scene6Festivals concerts={concerts} />
