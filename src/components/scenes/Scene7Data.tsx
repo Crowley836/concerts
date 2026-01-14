@@ -54,6 +54,9 @@ export function Scene7Data({ concerts }: Scene7DataProps) {
                 c.headliner.toLowerCase().includes(query) ||
                 c.venue.toLowerCase().includes(query) ||
                 c.city.toLowerCase().includes(query) ||
+                c.year.toString().includes(query) ||
+                c.date.includes(query) ||
+                c.attendedWith?.toLowerCase().includes(query) ||
                 c.openers.some(o => o.toLowerCase().includes(query))
             )
         }
