@@ -3,48 +3,30 @@
 // Source: docs/design/Color-Specification-Guide.md
 
 export const GENRE_COLORS: Record<string, string> = {
-  'New Wave': '#1e40af',        // Deep navy blue (synth, 80s)
-  'Punk': '#991b1b',            // Dried blood red (raw, aggressive)
-  'Alternative': '#5b21b6',     // Deep violet (moody, introspective)
-  'Ska': '#f59e0b',             // Bright amber (brass, sunshine) - CHANGED for visibility
-  'Indie Rock': '#0ea5e9',      // Sky blue (melodic, expansive) - CHANGED from royal blue
-  'Electronic': '#06b6d4',      // Bright cyan (synthetic, club lights) - CHANGED for differentiation
-  'Pop Rock': '#dc2626',        // Bright red (warm, accessible) - CHANGED from burnt sienna
-  'Pop Punk': '#ec4899',        // Hot pink (youthful, loud) - CHANGED to brighter magenta
-  'Classic Rock': '#92400e',    // Dark brown leather (vintage, worn) - CHANGED for differentiation
-  'Jazz': '#4338ca',            // Rich indigo (smoky, sophisticated) - CHANGED from midnight
-  'Reggae': '#16a34a',          // Vibrant green (roots, earth) - CHANGED to brighter green
+  // Vibrant, Modern Base
+  'Indie Rock': '#06b6d4',      // Cyan-500 (Electric Cyan)
+  'Alternative': '#8b5cf6',     // Violet-500 (Vibrant Purple)
+  'Rock': '#3b82f6',            // Blue-500 (Royal Blue)
+  'Pop': '#f43f5e',             // Rose-500 (Coral Red)
+  'Pop Rock': '#f43f5e',        // Rose-500 (Coral Red)
+  'Electronic': '#10b981',      // Emerald-500 (Neon Green) - Distinct from Cyan
+  'Hip Hop': '#f97316',         // Orange-500 (Bright Orange)
+  'Folk/Country': '#eab308',    // Yellow-500 (Goldenrod) - Readable Gold
+  'Jazz': '#6366f1',            // Indigo-500 (Periwinkle)
+  'Metal': '#94a3b8',           // Slate-400 (Cool Grey) - Modern Neutral
 
-  // Expanded Metal & Rock Palette (Vibrant)
-  'Metal': '#64748b',           // Slate (generic metal)
-  'Thrash Metal': '#ef4444',    // Bright Red (aggressive)
-  'Death Metal': '#b91c1c',     // Blood Red (intense)
-  'Black Metal': '#1f2937',     // Dark Grey (grim)
-  'Heavy Metal': '#9333ea',     // Electric Purple (classic)
-  'Nu Metal': '#84cc16',        // Lime Green (toxic/modern)
-  'Industrial Metal': '#f97316',// Bright Orange (mechanical)
-  'Doom Metal': '#4c1d95',      // Deep Purple (slow/heavy)
-  'Groove Metal': '#d97706',    // Amber (rhythmic)
-  'Progressive Metal': '#06b6d4', // Cyan (technical)
-  'Sludge Metal': '#78350f',    // Deep Brown (murky)
-  'Metalcore': '#db2777',       // Pink (modern aggressive)
-  'Grindcore': '#be123c',       // Dark Rose (fast/violent)
-  'Stoner Metal': '#15803d',    // Green (hazy)
-
-  'Hard Rock': '#e11d48',       // Rose Red (energetic)
-  'Rock': '#2563eb',            // Royal Blue (classic)
-  'Blues Rock': '#1d4ed8',      // Blue (bluesy)
-
-  'Hip Hop': '#ea580c',         // Bright orange (street, bold)
-  'R&B/Soul': '#7c3aed',        // Electric purple (smooth, rich)
-  'Folk/Country': '#a16207',    // Golden brown (acoustic, earthy)
-  'Funk': '#ca8a04',            // Yellow Gold (groove)
-  'Blues': '#1e3a8a',           // Deep blue (soulful, late night) - SWAPPED with New Wave
-  'World': '#14b8a6',           // Bright teal (global, oceanic) - CHANGED to more vibrant
-  'Experimental': '#d8b4fe',    // Lavender (weird)
-  'Post Punk': '#be123c',       // Deep rose red (dark, angular) - NEW
-  'Rockabilly': '#78350f',      // Dark tobacco brown (vintage, retro) - NEW
-  'Other': '#6b7280',           // Medium gray (neutral bucket) - CHANGED for better visibility
+  // Specific Subgenres
+  'New Wave': '#0ea5e9',        // Sky-500
+  'Punk': '#dc2626',            // Red-600 (Aggressive Red)
+  'Post Punk': '#be123c',       // Rose-700 (Deep Pink)
+  'Classic Rock': '#d97706',    // Amber-600 (Bronze)
+  'Blues': '#2563eb',           // Blue-600
+  'Reggae': '#22c55e',          // Green-500
+  'Ska': '#f59e0b',             // Amber-500
+  'Funk': '#8b5cf6',            // Violet-500 (Funky Purple)
+  'R&B/Soul': '#a855f7',        // Purple-500
+  'Experimental': '#d8b4fe',    // Lavender
+  'Other': '#64748b',           // Slate-500 (Balanced Grey)
 } as const
 
 export const BACKGROUNDS = {
