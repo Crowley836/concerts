@@ -11,16 +11,34 @@ export function MobileStats({ concerts }: MobileStatsProps) {
     const stats = useConcertStats(concerts)
 
     return (
-        <div className="w-full md:hidden h-full flex flex-col justify-center py-8 px-4 space-y-4">
+        <div className="w-full md:hidden h-full flex flex-col justify-center py-8 px-4 space-y-8 relative overflow-hidden">
+            {/* Background enhancement for premium feel */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-900/10 to-transparent pointer-events-none" />
+
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.8 }}
+                className="text-center space-y-2 z-10"
             >
-                <span className="text-indigo-400 text-xs font-bold uppercase tracking-wider mb-2 block px-2">
+                <span className="text-indigo-400 text-xs font-bold uppercase tracking-widest block">
                     Your Highlights
                 </span>
+                <h2 className="font-serif text-4xl text-white tracking-tight">
+                    Top Stats
+                </h2>
+                <p className="font-sans text-base text-gray-400 max-w-[280px] mx-auto leading-relaxed">
+                    A quick glance at your most frequented artists and venues.
+                </p>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+            >
 
                 {/* Horizontal Scroll Container */}
                 <div className="flex overflow-x-auto gap-4 pb-6 -mx-4 px-4 snap-x snap-mandatory custom-scrollbar">
