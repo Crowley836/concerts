@@ -1157,6 +1157,31 @@
       "attendedWith": ""
     },
     {
+      "id": "2006-07-14-emperor",
+      "date": "2006-07-14",
+      "headliner": "Emperor",
+      "headlinerNormalized": "emperor",
+      "genre": "Black Metal",
+      "genreNormalized": "black-metal",
+      "openers": [],
+      "venue": "B.B. King Blues Club & Grill",
+      "venueNormalized": "b-b-king-blues-club-grill",
+      "city": "New York City",
+      "state": "NY",
+      "cityState": "New York City, NY",
+      "isFestival": false,
+      "attendedWith": "Tim",
+      "year": 2006,
+      "month": 7,
+      "day": 14,
+      "dayOfWeek": "Friday",
+      "decade": "2000s",
+      "location": {
+        "lat": 40.7128,
+        "lng": -74.006
+      }
+    },
+    {
       "id": "2006-10-24-alice-in-chains",
       "date": "2006-10-24",
       "headliner": "Alice In Chains",
@@ -7255,14 +7280,14 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-11T13:23:55.207Z",
-    "totalConcerts": 267,
+    "lastUpdated": "2026-01-14T18:20:56.142Z",
+    "totalConcerts": 268,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
     "uniqueArtists": 157,
-    "uniqueVenues": 85,
+    "uniqueVenues": 86,
     "uniqueCities": 30
   }
 }
