@@ -181,7 +181,10 @@ function MainScenes() {
         {/* Scene 1: Hero/Timeline */}
         <Scene1Hero concerts={concerts} />
 
-        {/* Scene 2: Venues (force-directed graph) - Desktop Only */}
+        {/* Scene 2: Venues (Desktop) / Highlights (Mobile) */}
+        <div className="md:hidden snap-start h-screen">
+          <MobileStats concerts={concerts} />
+        </div>
         <div className="hidden md:block">
           <Scene4Bands
             concerts={concerts}
@@ -198,8 +201,7 @@ function MainScenes() {
           onVenueFocusComplete={() => setPendingMapVenueFocus(null)}
         />
 
-        {/* Mobile Stats Cards (replaces Scenes 4 & 5 on mobile) */}
-        <MobileStats concerts={concerts} />
+
 
         {/* Scene 6: Festivals (Now 4) */}
         <Scene6Festivals concerts={concerts} />

@@ -70,15 +70,15 @@ export function MobileMenu() {
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: 10 }}
                                     transition={{ delay: index * 0.05, duration: 0.3 }}
-                                    onClick={() => !scene.hiddenOnMobile && scrollToScene(scene.id)}
+                                    onClick={() => scrollToScene(scene.id)}
                                     className={`group flex items-center gap-4 w-full p-4 rounded-xl border transition-all text-left transform active:scale-98 ${scene.hiddenOnMobile
-                                            ? 'bg-white/5 border-transparent opacity-40 cursor-not-allowed'
-                                            : 'bg-white/5 active:bg-white/10 border-white/5'
+                                        ? 'bg-white/5 border-transparent opacity-40 cursor-not-allowed'
+                                        : 'bg-white/5 active:bg-white/10 border-white/5'
                                         }`}
                                 >
                                     <div className={`w-3 h-3 rounded-full ${scene.color} shadow-[0_0_10px_currentColor]`} />
                                     <span className="text-xl font-medium text-white/90 tracking-wide">
-                                        {scene.label} {scene.hiddenOnMobile && <span className="text-xs ml-2 opacity-60">(Desktop Only)</span>}
+                                        {(scene as any).mobileLabel || scene.label} {scene.hiddenOnMobile && <span className="text-xs ml-2 opacity-60">(Desktop Only)</span>}
                                     </span>
                                 </motion.button>
                             ))}

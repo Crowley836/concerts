@@ -11,7 +11,7 @@ export function MobileStats({ concerts }: MobileStatsProps) {
     const stats = useConcertStats(concerts)
 
     return (
-        <div className="w-full md:hidden py-8 px-4 space-y-4">
+        <div className="w-full md:hidden h-full flex flex-col justify-center py-8 px-4 space-y-4">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
