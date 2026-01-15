@@ -11,7 +11,7 @@ export function MobileStats({ concerts }: MobileStatsProps) {
     const stats = useConcertStats(concerts)
 
     return (
-        <div className="w-full md:hidden h-full flex flex-col justify-center py-8 px-4 space-y-8 relative overflow-hidden">
+        <div className="w-full md:hidden h-full flex flex-col justify-center py-8 px-4 space-y-8 relative overflow-hidden bg-gray-900">
             {/* Background enhancement for premium feel */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-900/10 to-transparent pointer-events-none" />
 
