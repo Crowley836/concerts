@@ -3865,5 +3865,20 @@
     "genres": [],
     "source": "spotify",
     "fetchedAt": "2026-01-10T02:21:34.414Z"
+  },
+  "southern-hospitality": {
+    "name": "Southern Hospitality",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "There is more than one artist with this name, including: \n1) Southern Hospitality is an American blues band. \n2) Southern Hospitality is a British DJ collective. \n\n1) Southern Hospitality is an American blues band comprising Damon Fowler (lap steel guitar), J.P. Soars (guitar), and Victor Wainwright (keyboards).\nThe three artists are musician’s musicians, each bringing a unique style and fresh translation of the great Southern soul, blues, and rock music that came before them. Read more on Last.",
+    "genres": [
+      "blues",
+      "Southern Rock",
+      "blues rock",
+      "keyboards",
+      "piano blues"
+    ],
+    "url": "https://www.last.fm/music/Southern+Hospitality",
+    "source": "lastfm",
+    "fetchedAt": "2026-01-21T14:22:14.805Z"
   }
 }

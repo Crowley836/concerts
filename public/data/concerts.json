@@ -3240,6 +3240,31 @@
       "attendedWith": "Adam"
     },
     {
+      "id": "2014-02-08-southern-hospitality",
+      "date": "2014-02-08",
+      "headliner": "Southern Hospitality",
+      "headlinerNormalized": "southern-hospitality",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [],
+      "venue": "ArtsQuest’s SteelStacks",
+      "venueNormalized": "artsquest-s-steelstacks",
+      "city": "Bethlehem",
+      "state": "PA",
+      "cityState": "Bethlehem, PA",
+      "isFestival": false,
+      "attendedWith": "Taylor, Dad",
+      "year": 2014,
+      "month": 2,
+      "day": 8,
+      "dayOfWeek": "Saturday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903
+      }
+    },
+    {
       "id": "2014-04-27-high-on-fire",
       "date": "2014-04-27",
       "headliner": "High on Fire",
@@ -7279,14 +7304,14 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-14T20:17:57.541Z",
-    "totalConcerts": 268,
+    "lastUpdated": "2026-01-21T14:22:05.219Z",
+    "totalConcerts": 269,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
     },
-    "uniqueArtists": 157,
-    "uniqueVenues": 86,
-    "uniqueCities": 30
+    "uniqueArtists": 158,
+    "uniqueVenues": 87,
+    "uniqueCities": 31
   }
 }
