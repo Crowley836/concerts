@@ -4009,6 +4009,33 @@
       "attendedWith": "Gates"
     },
     {
+      "id": "2015-12-17-deicide",
+      "date": "2015-12-17",
+      "headliner": "Deicide",
+      "headlinerNormalized": "deicide",
+      "genre": "Death Metal",
+      "genreNormalized": "death-metal",
+      "openers": [
+        "Season of Suffering"
+      ],
+      "venue": "Metro Gallery",
+      "venueNormalized": "metro-gallery",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "attendedWith": "",
+      "year": 2015,
+      "month": 12,
+      "day": 17,
+      "dayOfWeek": "Thursday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.3088425,
+        "lng": -76.6165858
+      }
+    },
+    {
       "id": "2016-01-30-florida-metal-fest",
       "date": "2016-01-30",
       "headliner": "Florida Metal Fest",
@@ -7304,8 +7331,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-25T00:54:01.713Z",
-    "totalConcerts": 269,
+    "lastUpdated": "2026-01-27T20:57:35.667Z",
+    "totalConcerts": 270,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
