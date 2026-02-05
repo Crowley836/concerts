@@ -88,104 +88,136 @@ async function getSpotifyAccessToken(): Promise<string> {
   return data.access_token
 }
 
-/**
- * Search for artist on Spotify
- */
-async function searchSpotifyArtist(
-  artistName: string,
-  accessToken: string
-): Promise<any | null> {
-  const encodedName = encodeURIComponent(artistName)
-  const url = `https://api.spotify.com/v1/search?type=artist&q=${encodedName}&limit=5`
-
-  const response = await fetch(url, {
-    headers: { Authorization: `Bearer ${accessToken}` }
-  })
-
-  if (!response.ok) {
-    console.warn(`  ⚠️  Spotify search failed for "${artistName}": ${response.status}`)
-    return null
-  }
-
-  const data = await response.json()
-  const artists = data.artists?.items || []
-
-  if (artists.length === 0) {
-    return null
-  }
-
-  // Return top result and log warnings if confidence is low
-  const topResult = artists[0]
-  const nameMatch = fuzzyMatch(artistName, topResult.name)
-  const isPopular = topResult.popularity >= 30
-
-  if (!nameMatch || !isPopular) {
-    console.warn(
-      `  ⚠️  Review match: "${artistName}" → "${topResult.name}" (popularity: ${topResult.popularity})`
-    )
-  }
-
-  return topResult
-}
 
 /**
- * Fetch artist's most popular album
+ * Search for an artist on Spotify with retry logic
  */
-async function getArtistTopAlbum(artistId: string, accessToken: string): Promise<any | null> {
-  const url = `https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album&market=US&limit=20`
+async function searchSpotifyArtist(artistName: string, accessToken: string, retries = 3): Promise<any | null> {
+  const query = encodeURIComponent(artistName.replace(/-/g, ' ')) // Replace hyphens with spaces
+  const url = `https://api.spotify.com/v1/search?q=${query}&type=artist&limit=1`
 
-  const response = await fetch(url, {
-    headers: { Authorization: `Bearer ${accessToken}` }
-  })
-
-  if (!response.ok) {
-    return null
-  }
-
-  const data = await response.json()
-  const albums = data.items || []
-
-  if (albums.length === 0) {
-    return null
-  }
-
-  // Get full album details to check popularity
-  const albumDetailsPromises = albums.slice(0, 10).map(async (album: any) => {
-    const detailUrl = `https://api.spotify.com/v1/albums/${album.id}`
-    const detailRes = await fetch(detailUrl, {
+  try {
+    const response = await fetch(url, {
       headers: { Authorization: `Bearer ${accessToken}` }
     })
-    return detailRes.ok ? detailRes.json() : null
-  })
 
-  const albumDetails = (await Promise.all(albumDetailsPromises)).filter(Boolean)
+    if (response.status === 429) {
+      if (retries > 0) {
+        const retryAfter = parseInt(response.headers.get('Retry-After') || '2')
+        console.log(`  ⏳ Rate limited. Waiting ${retryAfter}s...`)
+        await new Promise(r => setTimeout(r, (retryAfter * 1000) + 1000))
+        return searchSpotifyArtist(artistName, accessToken, retries - 1)
+      }
+      console.warn(`  ⚠️  Spotify search rate limit exceeded for "${artistName}"`)
+      return null
+    }
 
-  // Sort by popularity and return the top one
-  albumDetails.sort((a: any, b: any) => (b.popularity || 0) - (a.popularity || 0))
+    if (!response.ok) {
+      console.warn(`  ⚠️  Spotify search failed for "${artistName}": ${response.status}`)
+      return null
+    }
 
-  return albumDetails[0] || null
+    const data = await response.json()
+    const artists = data.artists?.items || []
+
+    if (artists.length === 0) {
+      return null
+    }
+
+    // Return top result and log warnings if confidence is low
+    const topResult = artists[0]
+    const nameMatch = fuzzyMatch(artistName, topResult.name)
+    const isPopular = topResult.popularity >= 30
+
+    if (!nameMatch || !isPopular) {
+      console.warn(
+        `  ⚠️  Review match: "${artistName}" → "${topResult.name}" (popularity: ${topResult.popularity})`
+      )
+    }
+
+    return topResult
+  } catch (error) {
+    console.error(`  ❌ Error searching for "${artistName}"`, error)
+    return null
+  }
 }
 
 /**
- * Fetch artist's top tracks
+ * Fetch artist's most popular album with retry
  */
-async function getArtistTopTracks(
-  artistId: string,
-  accessToken: string
-): Promise<any[] | null> {
-  const url = `https://api.spotify.com/v1/artists/${artistId}/top-tracks?market=US`
+async function getArtistTopAlbum(artistId: string, accessToken: string, retries = 3): Promise<any | null> {
+  const url = `https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album&market=US&limit=20`
 
-  const response = await fetch(url, {
-    headers: { Authorization: `Bearer ${accessToken}` }
-  })
+  try {
+    const response = await fetch(url, {
+      headers: { Authorization: `Bearer ${accessToken}` }
+    })
 
-  if (!response.ok) {
+    if (response.status === 429) {
+      if (retries > 0) {
+        const retryAfter = parseInt(response.headers.get('Retry-After') || '2')
+        await new Promise(r => setTimeout(r, (retryAfter * 1000) + 1000))
+        return getArtistTopAlbum(artistId, accessToken, retries - 1)
+      }
+      return null
+    }
+
+    if (!response.ok) return null
+
+    const data = await response.json()
+    const albums = data.items || []
+
+    if (albums.length === 0) return null
+
+    // Get full album details to check popularity (throttled)
+    const albumDetailsPromises = albums.slice(0, 5).map(async (album: any) => {
+      await new Promise(r => setTimeout(r, 100)) // Throttle detail fetches
+      const detailUrl = `https://api.spotify.com/v1/albums/${album.id}`
+      const detailRes = await fetch(detailUrl, {
+        headers: { Authorization: `Bearer ${accessToken}` }
+      })
+      return detailRes.ok ? detailRes.json() : null
+    })
+
+    const albumDetails = (await Promise.all(albumDetailsPromises)).filter(Boolean)
+    albumDetails.sort((a: any, b: any) => (b.popularity || 0) - (a.popularity || 0))
+
+    return albumDetails[0] || null
+  } catch (error) {
     return null
   }
-
-  const data = await response.json()
-  return data.tracks?.slice(0, 3) || []
 }
+
+/**
+ * Fetch artist's top tracks with retry
+ */
+async function getArtistTopTracks(artistId: string, accessToken: string, retries = 3): Promise<any[] | null> {
+  const url = `https://api.spotify.com/v1/artists/${artistId}/top-tracks?market=US`
+
+  try {
+    const response = await fetch(url, {
+      headers: { Authorization: `Bearer ${accessToken}` }
+    })
+
+    if (response.status === 429) {
+      if (retries > 0) {
+        const retryAfter = parseInt(response.headers.get('Retry-After') || '2')
+        await new Promise(r => setTimeout(r, (retryAfter * 1000) + 1000))
+        return getArtistTopTracks(artistId, accessToken, retries - 1)
+      }
+      return null
+    }
+
+    if (!response.ok) return null
+
+    const data = await response.json()
+    return data.tracks ? data.tracks.slice(0, 5) : []
+  } catch (error) {
+    return null
+  }
+}
+
+
 
 /**
  * Simple fuzzy name matching
@@ -253,6 +285,21 @@ async function enrichSpotifyMetadata() {
   console.log(`Removed ${removedCount} artists not present in concerts.json`)
   console.log(`Proceeding with ${Object.keys(filteredArtists).length} artists`)
 
+  // Ensure all valid artists exist in the list to be processed
+  validArtists.forEach(artistName => {
+    if (!filteredArtists[artistName]) {
+      console.log(`  ➕ Adding new artist stub: ${artistName}`)
+      filteredArtists[artistName] = {
+        name: artistName, // Initial name (will be updated by Spotify)
+        normalizedName: artistName,
+        fetchedAt: null,
+        dataSource: 'mock', // Default until enriched
+        genres: [],
+        popularity: 0
+      }
+    }
+  })
+
   const artists = filteredArtists
 
   // Load overrides
@@ -275,6 +322,11 @@ async function enrichSpotifyMetadata() {
 
   for (const normalizedName of artistNames) {
     const artist = artists[normalizedName]
+
+    // Fix: Use the original name if available, or title-case the normalized one for search
+    // (Better to trace back to concerts.json for display name, but we have normalized keys)
+    // We'll search using the stored name or normalized one
+    const searchName = artist.name || normalizedName
 
     // Skip if already enriched with Spotify data (within 90 days)
     if (artist.dataSource === 'spotify' && artist.fetchedAt) {
