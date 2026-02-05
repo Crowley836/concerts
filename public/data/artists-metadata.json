@@ -5435,53 +5435,6 @@
       }
     ]
   },
-  "death-to-all": {
-    "name": "Death To All",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "Death To All is a touring band founded in 2012 by former Death members to pay tribute to their previous band. It features Gene Hoglan (Strapping Young Lad, Testament, Fear Factory, ...), Danny Walker (Intronaut, Bereft), Sean Reinert (Cynic), Steve DiGiorgio (Sadus, Testament, ...), Scott Clendenin, Paul Masvidal (Cynic), Shannon Hamm (Control Denied) and Bobby Koelble with singers Matt Harvey (Exhumed) and Charles Elliott (Abysmal Dawn, Bereft). Read more on Last.fm",
-    "genres": [],
-    "url": "https://www.last.fm/music/Death+To+All",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:45.165Z",
-    "spotifyArtistId": "0kn9uec2nZui0e5R6ZrSr3",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/0kn9uec2nZui0e5R6ZrSr3",
-    "popularity": 7,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Adios",
-      "spotifyAlbumId": "0zHZNKp6YbWNwn353N2kP5",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/0zHZNKp6YbWNwn353N2kP5",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d000048519ed7107e51a729ba4dfde84a",
-        "medium": "https://i.scdn.co/image/ab67616d00001e029ed7107e51a729ba4dfde84a",
-        "large": "https://i.scdn.co/image/ab67616d0000b2739ed7107e51a729ba4dfde84a"
-      },
-      "releaseYear": 2022
-    },
-    "topTracks": [
-      {
-        "name": "Eterno Sufrimiento",
-        "spotifyTrackId": "3JWS3X89RCyLYDsz6pQSTa",
-        "spotifyUrl": "https://open.spotify.com/track/3JWS3X89RCyLYDsz6pQSTa",
-        "previewUrl": null,
-        "durationMs": 248576
-      },
-      {
-        "name": "Cold",
-        "spotifyTrackId": "20XrJwdvTiC2u1ML5YyZrk",
-        "spotifyUrl": "https://open.spotify.com/track/20XrJwdvTiC2u1ML5YyZrk",
-        "previewUrl": null,
-        "durationMs": 373531
-      },
-      {
-        "name": "On November 9 In 1989",
-        "spotifyTrackId": "4gjY3a52CNKr5A0PWbLTk9",
-        "spotifyUrl": "https://open.spotify.com/track/4gjY3a52CNKr5A0PWbLTk9",
-        "previewUrl": null,
-        "durationMs": 224917
-      }
-    ]
-  },
   "archgoat": {
     "name": "Archgoat",
     "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
@@ -11544,28 +11497,6 @@
         "spotifyUrl": "https://open.spotify.com/track/3r7mL1HbSEtTmxyKsstNzk",
         "previewUrl": null,
         "durationMs": 357866
-      }
-    ]
-  },
-  "cobalt": {
-    "name": "cobalt",
-    "normalizedName": "cobalt",
-    "fetchedAt": "2026-02-05T22:08:28.748Z",
-    "dataSource": "spotify",
-    "genres": [
-      "deathcore"
-    ],
-    "popularity": 6,
-    "spotifyArtistId": "72QB6PQRrcBmVlEnXPDtIA",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/72QB6PQRrcBmVlEnXPDtIA",
-    "image": "https://i.scdn.co/image/ab6761610000e5eb3f07c7a2f31a8853759bf295",
-    "topTracks": [
-      {
-        "name": "Calva Monstrum",
-        "spotifyTrackId": "1JYTjpF9cnyYafsOLByKFP",
-        "spotifyUrl": "https://open.spotify.com/track/1JYTjpF9cnyYafsOLByKFP",
-        "previewUrl": null,
-        "durationMs": 288303
       }
     ]
   },
@@ -18174,6 +18105,133 @@
         "spotifyUrl": "https://open.spotify.com/track/0Yt282lihtpuacC6GFjCEp",
         "previewUrl": null,
         "durationMs": 283081
+      }
+    ]
+  },
+  "cobalt": {
+    "name": "cobalt",
+    "normalizedName": "cobalt",
+    "fetchedAt": "2026-02-05T22:41:39.203Z",
+    "dataSource": "spotify",
+    "genres": [
+      "black metal",
+      "sludge metal"
+    ],
+    "popularity": 16,
+    "spotifyArtistId": "2yawagTvYt4y9mXm0d3n3p",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/2yawagTvYt4y9mXm0d3n3p",
+    "image": "https://i.scdn.co/image/ab67616d0000b273748b64d9fd2f4971b9eaf52b",
+    "mostPopularAlbum": {
+      "name": "Slow Forever",
+      "spotifyAlbumId": "5yOrSjOeKeOiyWEm34y3H4",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/5yOrSjOeKeOiyWEm34y3H4",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851748b64d9fd2f4971b9eaf52b",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02748b64d9fd2f4971b9eaf52b",
+        "large": "https://i.scdn.co/image/ab67616d0000b273748b64d9fd2f4971b9eaf52b"
+      },
+      "releaseYear": 2016
+    },
+    "topTracks": [
+      {
+        "name": "Hunt the Buffalo",
+        "spotifyTrackId": "1HRwKWGgkRdWPqpVW68FoA",
+        "spotifyUrl": "https://open.spotify.com/track/1HRwKWGgkRdWPqpVW68FoA",
+        "previewUrl": null,
+        "durationMs": 528333
+      },
+      {
+        "name": "Gin",
+        "spotifyTrackId": "1nvjlkVJO17ozaqMSctsJG",
+        "spotifyUrl": "https://open.spotify.com/track/1nvjlkVJO17ozaqMSctsJG",
+        "previewUrl": null,
+        "durationMs": 444306
+      },
+      {
+        "name": "Arsonry",
+        "spotifyTrackId": "7f8wlrnERTgbtLvCqqIHUJ",
+        "spotifyUrl": "https://open.spotify.com/track/7f8wlrnERTgbtLvCqqIHUJ",
+        "previewUrl": null,
+        "durationMs": 345653
+      },
+      {
+        "name": "Dry Body",
+        "spotifyTrackId": "4eXXahM18fjhaKitVHfsz4",
+        "spotifyUrl": "https://open.spotify.com/track/4eXXahM18fjhaKitVHfsz4",
+        "previewUrl": null,
+        "durationMs": 534093
+      },
+      {
+        "name": "Ruiner",
+        "spotifyTrackId": "4NV2MFAx3eof8viPvuVho3",
+        "spotifyUrl": "https://open.spotify.com/track/4NV2MFAx3eof8viPvuVho3",
+        "previewUrl": null,
+        "durationMs": 392680
+      }
+    ]
+  },
+  "death-to-all": {
+    "name": "death-to-all",
+    "normalizedName": "death-to-all",
+    "fetchedAt": "2026-02-05T22:41:40.133Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal",
+      "metal",
+      "thrash metal",
+      "grindcore",
+      "melodic death metal"
+    ],
+    "popularity": 60,
+    "spotifyArtistId": "4f5V3PQ66nIrBCqugJtaGn",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/4f5V3PQ66nIrBCqugJtaGn",
+    "image": "https://i.scdn.co/image/b1ad9718b69b4c75164d418bde0cf3aa1566ac92",
+    "mostPopularAlbum": {
+      "name": "Leprosy (Deluxe Reissue)",
+      "spotifyAlbumId": "4EQcPArSq6dm0k4QWzpLBF",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/4EQcPArSq6dm0k4QWzpLBF",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851437e65ee8c9a1aa35ed36b90",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02437e65ee8c9a1aa35ed36b90",
+        "large": "https://i.scdn.co/image/ab67616d0000b273437e65ee8c9a1aa35ed36b90"
+      },
+      "releaseYear": 2014
+    },
+    "topTracks": [
+      {
+        "name": "Crystal Mountain",
+        "spotifyTrackId": "0ItAcLSkUiePOmFGun3cSe",
+        "spotifyUrl": "https://open.spotify.com/track/0ItAcLSkUiePOmFGun3cSe",
+        "previewUrl": null,
+        "durationMs": 307426
+      },
+      {
+        "name": "Voice of the Soul",
+        "spotifyTrackId": "69Yia3qCLw6N9U80WhLwLn",
+        "spotifyUrl": "https://open.spotify.com/track/69Yia3qCLw6N9U80WhLwLn",
+        "previewUrl": null,
+        "durationMs": 223933
+      },
+      {
+        "name": "Symbolic",
+        "spotifyTrackId": "0dpFb4qv92TE9R00Lq4SAW",
+        "spotifyUrl": "https://open.spotify.com/track/0dpFb4qv92TE9R00Lq4SAW",
+        "previewUrl": null,
+        "durationMs": 392800
+      },
+      {
+        "name": "Spirit Crusher",
+        "spotifyTrackId": "3sSonVXqDeoEFj2lM7mpYT",
+        "spotifyUrl": "https://open.spotify.com/track/3sSonVXqDeoEFj2lM7mpYT",
+        "previewUrl": null,
+        "durationMs": 407000
+      },
+      {
+        "name": "Pull the Plug",
+        "spotifyTrackId": "2l0h4aBFLp9HdoaNdCTlbW",
+        "spotifyUrl": "https://open.spotify.com/track/2l0h4aBFLp9HdoaNdCTlbW",
+        "previewUrl": null,
+        "durationMs": 266773
       }
     ]
   }
