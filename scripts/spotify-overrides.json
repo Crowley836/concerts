@@ -32,5 +32,13 @@
   "concrete": {
     "spotifyArtistId": "6i5iJD3n6zren2OlmwS0aI",
     "note": "NYHC / Metal"
+  },
+  "cancer": {
+    "spotifyArtistId": "3AHeQk97Bdz43qM7GMlXL8",
+    "note": "UK Death Metal"
+  },
+  "noisem": {
+    "spotifyArtistId": "2705coQfgVPY9w7W6yDKxh",
+    "note": "US Thrash/Grind"
   }
 }

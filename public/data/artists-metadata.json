@@ -11437,68 +11437,6 @@
       }
     ]
   },
-  "cancer": {
-    "name": "cancer",
-    "normalizedName": "cancer",
-    "fetchedAt": "2026-02-05T22:08:40.015Z",
-    "dataSource": "spotify",
-    "genres": [
-      "latin hip hop",
-      "rap"
-    ],
-    "popularity": 76,
-    "spotifyArtistId": "1wGIhYkKWSq4yACtTkCkSX",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/1wGIhYkKWSq4yACtTkCkSX",
-    "image": "https://i.scdn.co/image/ab6761610000e5eba91405d63c939682e4efdcbc",
-    "mostPopularAlbum": {
-      "name": "Muerte",
-      "spotifyAlbumId": "27xqCLyTHom0wyjtw08K12",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/27xqCLyTHom0wyjtw08K12",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851fd7bf6e660e2da01813c70f7",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02fd7bf6e660e2da01813c70f7",
-        "large": "https://i.scdn.co/image/ab67616d0000b273fd7bf6e660e2da01813c70f7"
-      },
-      "releaseYear": 2012
-    },
-    "topTracks": [
-      {
-        "name": "Querer Querernos",
-        "spotifyTrackId": "6d3q0F9VNtdxQUTVlRcet6",
-        "spotifyUrl": "https://open.spotify.com/track/6d3q0F9VNtdxQUTVlRcet6",
-        "previewUrl": null,
-        "durationMs": 240047
-      },
-      {
-        "name": "Maquiavélico",
-        "spotifyTrackId": "447r2keRxpkINmWYp83MlH",
-        "spotifyUrl": "https://open.spotify.com/track/447r2keRxpkINmWYp83MlH",
-        "previewUrl": null,
-        "durationMs": 284708
-      },
-      {
-        "name": "Stupid Love Story",
-        "spotifyTrackId": "1r5mgtowxhqse44YVzCk6x",
-        "spotifyUrl": "https://open.spotify.com/track/1r5mgtowxhqse44YVzCk6x",
-        "previewUrl": null,
-        "durationMs": 286466
-      },
-      {
-        "name": "Es Épico",
-        "spotifyTrackId": "2kd0T6zgABT8P0s2h9QU5O",
-        "spotifyUrl": "https://open.spotify.com/track/2kd0T6zgABT8P0s2h9QU5O",
-        "previewUrl": null,
-        "durationMs": 361978
-      },
-      {
-        "name": "Pensando en Ti",
-        "spotifyTrackId": "2auNjgM4xIOANxtZT4Xe9z",
-        "spotifyUrl": "https://open.spotify.com/track/2auNjgM4xIOANxtZT4Xe9z",
-        "previewUrl": null,
-        "durationMs": 244062
-      }
-    ]
-  },
   "acoustic": {
     "name": "acoustic",
     "normalizedName": "acoustic",
@@ -13815,59 +13753,6 @@
         "spotifyUrl": "https://open.spotify.com/track/0np3m9gWA3Iu3paue0bWZJ",
         "previewUrl": null,
         "durationMs": 208586
-      }
-    ]
-  },
-  "noisem": {
-    "name": "noisem",
-    "normalizedName": "noisem",
-    "fetchedAt": "2026-02-05T22:09:23.550Z",
-    "dataSource": "spotify",
-    "genres": [
-      "chinese r&b",
-      "c-pop",
-      "mandopop",
-      "chinese hip hop"
-    ],
-    "popularity": 46,
-    "spotifyArtistId": "4qk8X3MDfeOdw4y9JSnSZ5",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/4qk8X3MDfeOdw4y9JSnSZ5",
-    "image": "https://i.scdn.co/image/ab6761610000e5eb766a721c9b1a94403035f96e",
-    "topTracks": [
-      {
-        "name": "白月光与朱砂痣 - 中英文版",
-        "spotifyTrackId": "4ZC1k5x3nAJi9E3esl5yLb",
-        "spotifyUrl": "https://open.spotify.com/track/4ZC1k5x3nAJi9E3esl5yLb",
-        "previewUrl": null,
-        "durationMs": 204138
-      },
-      {
-        "name": "宝贝在干嘛",
-        "spotifyTrackId": "2hRWtS0DyRYFMlAjHzG6lD",
-        "spotifyUrl": "https://open.spotify.com/track/2hRWtS0DyRYFMlAjHzG6lD",
-        "previewUrl": null,
-        "durationMs": 140753
-      },
-      {
-        "name": "小雨天气",
-        "spotifyTrackId": "16UoVGRVnVdB2aEHpcSNvo",
-        "spotifyUrl": "https://open.spotify.com/track/16UoVGRVnVdB2aEHpcSNvo",
-        "previewUrl": null,
-        "durationMs": 159130
-      },
-      {
-        "name": "没有任何期待",
-        "spotifyTrackId": "4KMqKVarChldkzBTENdxG1",
-        "spotifyUrl": "https://open.spotify.com/track/4KMqKVarChldkzBTENdxG1",
-        "previewUrl": null,
-        "durationMs": 202321
-      },
-      {
-        "name": "小雨天气",
-        "spotifyTrackId": "3uwnmxmJvk8WfNa4RzqcT7",
-        "spotifyUrl": "https://open.spotify.com/track/3uwnmxmJvk8WfNa4RzqcT7",
-        "previewUrl": null,
-        "durationMs": 159130
       }
     ]
   },
@@ -18383,6 +18268,132 @@
         "spotifyUrl": "https://open.spotify.com/track/2r3UsDOEVwpXfgpm9IX4S1",
         "previewUrl": null,
         "durationMs": 206664
+      }
+    ]
+  },
+  "cancer": {
+    "name": "cancer",
+    "normalizedName": "cancer",
+    "fetchedAt": "2026-02-05T22:57:18.403Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal",
+      "thrash metal",
+      "grindcore"
+    ],
+    "popularity": 29,
+    "spotifyArtistId": "3AHeQk97Bdz43qM7GMlXL8",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/3AHeQk97Bdz43qM7GMlXL8",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb466632a8fe7eef998e250146",
+    "mostPopularAlbum": {
+      "name": "Inverted World",
+      "spotifyAlbumId": "33CylwZqTMpQ2yu1YzmHaY",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/33CylwZqTMpQ2yu1YzmHaY",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d000048512491078268ad4766b02273c0",
+        "medium": "https://i.scdn.co/image/ab67616d00001e022491078268ad4766b02273c0",
+        "large": "https://i.scdn.co/image/ab67616d0000b2732491078268ad4766b02273c0"
+      },
+      "releaseYear": 2025
+    },
+    "topTracks": [
+      {
+        "name": "Hung, Drawn and Quartered",
+        "spotifyTrackId": "305qZ6Qqqdp0EK0AVwVSSV",
+        "spotifyUrl": "https://open.spotify.com/track/305qZ6Qqqdp0EK0AVwVSSV",
+        "previewUrl": null,
+        "durationMs": 204933
+      },
+      {
+        "name": "Blood Bath",
+        "spotifyTrackId": "1rDf5MXuuk2fUNZpE9Xd86",
+        "spotifyUrl": "https://open.spotify.com/track/1rDf5MXuuk2fUNZpE9Xd86",
+        "previewUrl": null,
+        "durationMs": 211173
+      },
+      {
+        "name": "Into the Acid",
+        "spotifyTrackId": "34rsopCcyCWEe66o40AGWG",
+        "spotifyUrl": "https://open.spotify.com/track/34rsopCcyCWEe66o40AGWG",
+        "previewUrl": null,
+        "durationMs": 157560
+      },
+      {
+        "name": "C.F.C.",
+        "spotifyTrackId": "4gG5jBgqe1rijqrouFmMaD",
+        "spotifyUrl": "https://open.spotify.com/track/4gG5jBgqe1rijqrouFmMaD",
+        "previewUrl": null,
+        "durationMs": 178813
+      },
+      {
+        "name": "Back from the Dead",
+        "spotifyTrackId": "07mfjIb98QoiFmGfxB971N",
+        "spotifyUrl": "https://open.spotify.com/track/07mfjIb98QoiFmGfxB971N",
+        "previewUrl": null,
+        "durationMs": 298866
+      }
+    ]
+  },
+  "noisem": {
+    "name": "noisem",
+    "normalizedName": "noisem",
+    "fetchedAt": "2026-02-05T22:57:19.157Z",
+    "dataSource": "spotify",
+    "genres": [
+      "grindcore",
+      "thrash metal",
+      "death metal"
+    ],
+    "popularity": 5,
+    "spotifyArtistId": "2705coQfgVPY9w7W6yDKxh",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/2705coQfgVPY9w7W6yDKxh",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb7ae5bec846636da3891fade4",
+    "mostPopularAlbum": {
+      "name": "Agony Defined",
+      "spotifyAlbumId": "1Gao3vlQaC6eKleC7VyUEG",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/1Gao3vlQaC6eKleC7VyUEG",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d0000485142f44bd71d6b2ebfb80ac37c",
+        "medium": "https://i.scdn.co/image/ab67616d00001e0242f44bd71d6b2ebfb80ac37c",
+        "large": "https://i.scdn.co/image/ab67616d0000b27342f44bd71d6b2ebfb80ac37c"
+      },
+      "releaseYear": 2013
+    },
+    "topTracks": [
+      {
+        "name": "Cascade of Scars",
+        "spotifyTrackId": "2KCFXt1AbwAvFrKJo3EJWg",
+        "spotifyUrl": "https://open.spotify.com/track/2KCFXt1AbwAvFrKJo3EJWg",
+        "previewUrl": null,
+        "durationMs": 252973
+      },
+      {
+        "name": "Voices in the Morgue",
+        "spotifyTrackId": "6JM4U7vsOQBLkEMWFnRmDv",
+        "spotifyUrl": "https://open.spotify.com/track/6JM4U7vsOQBLkEMWFnRmDv",
+        "previewUrl": null,
+        "durationMs": 203446
+      },
+      {
+        "name": "Trail Of Perturbation",
+        "spotifyTrackId": "0gpAs0y4Y1XyJyC6zZ39DI",
+        "spotifyUrl": "https://open.spotify.com/track/0gpAs0y4Y1XyJyC6zZ39DI",
+        "previewUrl": null,
+        "durationMs": 220786
+      },
+      {
+        "name": "1132",
+        "spotifyTrackId": "7eUtL33RqKIuhDeH17ad3K",
+        "spotifyUrl": "https://open.spotify.com/track/7eUtL33RqKIuhDeH17ad3K",
+        "previewUrl": null,
+        "durationMs": 121639
+      },
+      {
+        "name": "Constricted Cognition",
+        "spotifyTrackId": "0zaO5zfWwO3F7sPzQBcolf",
+        "spotifyUrl": "https://open.spotify.com/track/0zaO5zfWwO3F7sPzQBcolf",
+        "previewUrl": null,
+        "durationMs": 133506
       }
     ]
   }
