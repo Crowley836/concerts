@@ -486,48 +486,55 @@ export function ArtistGatefold({
                 >
                   {/* Always show initials as base layer (only if image not loaded) */}
                   {!coverImageLoaded && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      {initials}
-                    </div>
+                    {/* Skull Icon Fallback */ }
+                    < svg
+                        viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-48 h-48 opacity-80"
+                  aria-hidden="true"
+                      >
+                  <path d="M12 2C7.58 2 4 5.58 4 10c0 2.05.8 3.91 2.11 5.3.36 1.76 1.13 3.39 2.14 4.85.5.73 1.25 1.15 2.08 1.15h.33c.48 0 .88-.35.98-.82.16-.76.36-1.5.58-2.22.42-1.38.68-2.82.78-4.26h2c.1 1.44.36 2.88.78 4.26.22.72.42 1.46.58 2.22.1.47.5.82.98.82h.33c.83 0 1.58-.42 2.08-1.15 1.01-1.46 1.78-3.09 2.14-4.85C20 13.91 20.8 12.05 20.8 10c0-4.42-3.58-8-8-8zm-3 8c-.83 0-1.5-.67-1.5-1.5S8.17 7 9 7s1.5.67 1.5 1.5S9.83 10 9 10zm6 0c-.83 0-1.5-.67-1.5-1.5S14.17 7 15 7s1.5.67 1.5 1.5S15.83 10 15 10zM9.5 15c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h5c.28 0 .5.22.5.5s-.22.5-.5.5h-5z" />
+                </svg>
                   )}
 
-                  {/* Artist image overlays initials - instant if preloaded, fade if loading */}
-                  {imageUrl && (
-                    <img
-                      key={artist.name} // Force new image element for each artist
-                      src={imageUrl}
-                      alt={artist.name}
-                      className={`absolute inset-0 w-full h-full object-cover ${coverImageLoaded ? 'opacity-100' : 'opacity-0 transition-opacity duration-300'
-                        }`}
-                      onLoad={() => setCoverImageLoaded(true)}
-                      onError={() => {
-                        // Keep image hidden on error so initials remain visible
-                        setCoverImageLoaded(false)
-                      }}
-                    />
-                  )}
-                </div>
-
-                {/* Back of cover (concert history) */}
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    backfaceVisibility: 'hidden',
-                    WebkitBackfaceVisibility: 'hidden',
-                    transform: 'rotateY(180deg)'
-                  }}
-                >
-                  <ConcertHistoryPanel
-                    artist={artist}
-                    onSetlistClick={handleSetlistClick}
-                    openSetlistConcert={selectedConcert}
+                {/* Artist image overlays initials - instant if preloaded, fade if loading */}
+                {imageUrl && (
+                  <img
+                    key={artist.name} // Force new image element for each artist
+                    src={imageUrl}
+                    alt={artist.name}
+                    className={`absolute inset-0 w-full h-full object-cover ${coverImageLoaded ? 'opacity-100' : 'opacity-0 transition-opacity duration-300'
+                      }`}
+                    onLoad={() => setCoverImageLoaded(true)}
+                    onError={() => {
+                      // Keep image hidden on error so initials remain visible
+                      setCoverImageLoaded(false)
+                    }}
                   />
-                </div>
+                )}
+              </div>
+
+              {/* Back of cover (concert history) */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  backfaceVisibility: 'hidden',
+                  WebkitBackfaceVisibility: 'hidden',
+                  transform: 'rotateY(180deg)'
+                }}
+              >
+                <ConcertHistoryPanel
+                  artist={artist}
+                  onSetlistClick={handleSetlistClick}
+                  openSetlistConcert={selectedConcert}
+                />
               </div>
             </div>
           </div>
         </div>
-      )}
+        </div >
+      )
+}
     </>
   )
 }
