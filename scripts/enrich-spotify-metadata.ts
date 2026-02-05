@@ -216,10 +216,44 @@ async function enrichSpotifyMetadata() {
     process.exit(1)
   }
 
+  // Load concerts to get valid artist list
+  const concertsPath = join(process.cwd(), 'public', 'data', 'concerts.json')
+  const concertsData = JSON.parse(readFileSync(concertsPath, 'utf-8'))
+  const validArtists = new Set<string>()
+
+  concertsData.concerts.forEach((concert: any) => {
+    if (!concert.isFestival) {
+      validArtists.add(normalizeArtistName(concert.headliner))
+    }
+    if (concert.openers) {
+      concert.openers.forEach((opener: string) => {
+        validArtists.add(normalizeArtistName(opener))
+      })
+    }
+  })
+
+  console.log(`Found ${validArtists.size} valid artists from concerts.json`)
+
   // Load artists metadata
   const metadataPath = join(process.cwd(), 'public', 'data', 'artists-metadata.json')
-  const metadataFile = JSON.parse(readFileSync(metadataPath, 'utf-8'))
-  const artists = metadataFile.artists
+  const currentMetadata = JSON.parse(readFileSync(metadataPath, 'utf-8'))
+
+  // Filter metadata to only include valid artists
+  const filteredArtists: Record<string, any> = {}
+  let removedCount = 0
+
+  Object.keys(currentMetadata).forEach(key => {
+    if (validArtists.has(key)) {
+      filteredArtists[key] = currentMetadata[key]
+    } else {
+      removedCount++
+    }
+  })
+
+  console.log(`Removed ${removedCount} artists not present in concerts.json`)
+  console.log(`Proceeding with ${Object.keys(filteredArtists).length} artists`)
+
+  const artists = filteredArtists
 
   // Load overrides
   const overridesPath = join(process.cwd(), 'scripts', 'spotify-overrides.json')
@@ -295,6 +329,13 @@ async function enrichSpotifyMetadata() {
       artist.dataSource = 'spotify'
       artist.fetchedAt = new Date().toISOString()
 
+      // Populate missing image from Spotify
+      if ((!artist.image || artist.image.includes('theaudiodb.com/images/media/artist/thumb/')) && spotifyArtist.images && spotifyArtist.images.length > 0) {
+        // Spotify images are ordered by size (usually Large, Medium, Small)
+        // We prefer the first one (largest) for high quality
+        artist.image = spotifyArtist.images[0].url
+      }
+
       if (album) {
         const images = album.images || []
         artist.mostPopularAlbum = {
@@ -328,13 +369,7 @@ async function enrichSpotifyMetadata() {
     }
   }
 
-  // Update metadata and save
-  metadataFile.metadata.lastUpdated = new Date().toISOString()
-  metadataFile.metadata.dataSource = 'spotify'
-  metadataFile.metadata.note =
-    'Artist metadata enriched with Spotify API data including album covers, track previews, and artist information.'
-
-  writeFileSync(metadataPath, JSON.stringify(metadataFile, null, 2))
+  writeFileSync(metadataPath, JSON.stringify(artists, null, 2))
 
   console.log(`\n📊 Enrichment Summary:`)
   console.log(`   ✅ Enriched: ${enriched}`)

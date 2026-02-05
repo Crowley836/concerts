@@ -98,10 +98,34 @@ async function setupAuth() {
 
         if (!tokens.refresh_token) {
             console.warn('⚠️  No refresh token returned. Did you approve access properly? You might need to revoke access and try again to prompt for consent.')
-        }
+        } else {
+            // Update .env file
+            const envPath = join(process.cwd(), '.env')
+            let envContent = ''
 
-        console.log('\n📝 Please update your .env file with these values.')
-        console.log('Use "nano .env" or your editor to paste them in.')
+            if (existsSync(envPath)) {
+                envContent = readFileSync(envPath, 'utf-8')
+            }
+
+            // Function to update or append a key-value pair
+            const updateEnvVar = (key: string, value: string) => {
+                const regex = new RegExp(`^${key}=.*`, 'm')
+                if (regex.test(envContent)) {
+                    envContent = envContent.replace(regex, `${key}=${value}`)
+                } else {
+                    envContent += `\n${key}=${value}`
+                }
+            }
+
+            updateEnvVar('GOOGLE_CLIENT_ID', clientId!)
+            updateEnvVar('GOOGLE_CLIENT_SECRET', clientSecret!)
+            updateEnvVar('GOOGLE_REDIRECT_URI', redirectUri)
+            updateEnvVar('GOOGLE_REFRESH_TOKEN', tokens.refresh_token!)
+
+            // Clean up multiple newlines might be nice, but simple append/replace is safer to not mess up formatting
+            writeFileSync(envPath, envContent.trim() + '\n')
+            console.log(`\n💾 Updated .env file at: ${envPath}`)
+        }
 
     } catch (error) {
         console.error('❌ Error retrieving access token:', error)

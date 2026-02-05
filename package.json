@@ -44,7 +44,6 @@
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^2.1.0",
     "react-router-dom": "^7.11.0",
-    "react-window": "^1.8.10",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
@@ -52,7 +51,6 @@
     "@types/leaflet": "^1.9.14",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "@types/react-window": "^1.8.8",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "googleapis": "^144.0.0",
