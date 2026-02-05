@@ -151,6 +151,7 @@ export function useArtistData(concerts: Concert[]) {
         albumCover: albumCoverUrl,
         albumName: spotify?.mostPopularAlbum?.name,
         spotifyArtistUrl: spotify?.spotifyArtistUrl,
+        spotifyArtistId: spotify?.spotifyArtistId,
         topTracks: spotify?.topTracks?.map(track => ({
           name: track.name,
           previewUrl: track.previewUrl,

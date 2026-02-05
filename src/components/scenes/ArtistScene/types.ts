@@ -27,6 +27,7 @@ export interface ArtistCard {
   albumCover?: string // Spotify CDN URL
   albumName?: string
   spotifyArtistUrl?: string
+  spotifyArtistId?: string
   topTracks?: SpotifyTrack[]
 }
 
