@@ -18,7 +18,7 @@ export function SpotifyPanel({ artist }: SpotifyPanelProps) {
 
   return (
     <div
-      className="w-[400px] h-[400px] flex flex-col p-8"
+      className="w-[400px] h-[400px] flex flex-col p-2"
       style={{
         background: 'linear-gradient(145deg, #121212 0%, #181818 100%)',
         borderRadius: '4px',
