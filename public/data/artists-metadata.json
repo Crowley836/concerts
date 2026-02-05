@@ -5385,476 +5385,6 @@
       }
     ]
   },
-  "godbelow": {
-    "name": "Godbelow",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "1. Godbelow was a 90s metalcore band from Syracuse, New York.\n\n2. Godbelow is a post-black metal band from Mexico. Read more on Last.fm",
-    "genres": [
-      "groove metal",
-      "metalcore"
-    ],
-    "url": "https://www.last.fm/music/Godbelow",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:44.331Z",
-    "spotifyArtistId": "3yvGGE3lBLFDi8AapUS9dm",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/3yvGGE3lBLFDi8AapUS9dm",
-    "popularity": 3,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Painted Images with the Blood Of...",
-      "spotifyAlbumId": "3h96cTHGRP6DFAOvJrHSmN",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/3h96cTHGRP6DFAOvJrHSmN",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851a29ebb3184dd5f1fb5021cb8",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02a29ebb3184dd5f1fb5021cb8",
-        "large": "https://i.scdn.co/image/ab67616d0000b273a29ebb3184dd5f1fb5021cb8"
-      },
-      "releaseYear": 1999
-    },
-    "topTracks": [
-      {
-        "name": "Still Not Quite Suicide",
-        "spotifyTrackId": "4wFOu9sMPNgJ6ncH0BcOJ0",
-        "spotifyUrl": "https://open.spotify.com/track/4wFOu9sMPNgJ6ncH0BcOJ0",
-        "previewUrl": null,
-        "durationMs": 179488
-      },
-      {
-        "name": "Three Seasons",
-        "spotifyTrackId": "3mpFNcccEU2O6zZ5XzUk6J",
-        "spotifyUrl": "https://open.spotify.com/track/3mpFNcccEU2O6zZ5XzUk6J",
-        "previewUrl": null,
-        "durationMs": 356468
-      },
-      {
-        "name": "One Person Plural",
-        "spotifyTrackId": "01HDwwKh4uFwAhTJlqETRc",
-        "spotifyUrl": "https://open.spotify.com/track/01HDwwKh4uFwAhTJlqETRc",
-        "previewUrl": null,
-        "durationMs": 218071
-      }
-    ]
-  },
-  "archgoat": {
-    "name": "Archgoat",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "Archgoat is a Finnish black/death metal band formed in 1989 in Turku. Their initial period of activity was between 1989 and 1993, when they released two demos - \"Jesus Spawn \" and \"Penis Perversor \" - and an EP titled \"Angelcunt (Tales of Desecration) \". They split up until about 2005 when an old recording was released as the \"Angelslaying Black Fucking Metal \" EP. Since their reformation they have released: four full-length albums, \"Whore of Bethlehem \" in 2006 Read more on Last.fm",
-    "genres": [
-      "black metal",
-      "death metal",
-      "metal"
-    ],
-    "url": "https://www.last.fm/music/Archgoat",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:46.192Z",
-    "spotifyArtistId": "3n2bgWmlyHgwnd9aPmnTM4",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/3n2bgWmlyHgwnd9aPmnTM4",
-    "popularity": 34,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "The Luciferian Crown",
-      "spotifyAlbumId": "7hvIu47gTs4enD7iXNWDMl",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/7hvIu47gTs4enD7iXNWDMl",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d0000485171e90cd3f1e7e481def26ff0",
-        "medium": "https://i.scdn.co/image/ab67616d00001e0271e90cd3f1e7e481def26ff0",
-        "large": "https://i.scdn.co/image/ab67616d0000b27371e90cd3f1e7e481def26ff0"
-      },
-      "releaseYear": 2018
-    },
-    "topTracks": [
-      {
-        "name": "Jesus Christ Father of Lies",
-        "spotifyTrackId": "4UB3o1CWjzR1PMqJiIBRtZ",
-        "spotifyUrl": "https://open.spotify.com/track/4UB3o1CWjzR1PMqJiIBRtZ",
-        "previewUrl": null,
-        "durationMs": 209105
-      },
-      {
-        "name": "Nuns, Cunts & Darkness",
-        "spotifyTrackId": "5vEcd0jbAAnUhuMzxokesp",
-        "spotifyUrl": "https://open.spotify.com/track/5vEcd0jbAAnUhuMzxokesp",
-        "previewUrl": null,
-        "durationMs": 220803
-      },
-      {
-        "name": "Messiah of Pigs",
-        "spotifyTrackId": "64XEIdewMRjJgWiGxfqe8v",
-        "spotifyUrl": "https://open.spotify.com/track/64XEIdewMRjJgWiGxfqe8v",
-        "previewUrl": null,
-        "durationMs": 157070
-      }
-    ]
-  },
-  "wino": {
-    "name": "Wino",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "Wino can refer to an American metal band, an American noise rock band, a Japanese alternative rock band, or a Louisiana awesome band.\n\n1) Wino is the name of the new band of Scott 'Wino' Weinrich of Saint Vitus, The Obsessed, Spirit Caravan and The Hidden Hand-fame.  They have released one album 'Punctuated Equilibrium' in 2009. Shortly after the supporting European tour in April Wino's bass player Jon Blank died of an overdose. The follow up to Punctuated Equilibrium Read more on Last.fm",
-    "genres": [],
-    "url": "https://www.last.fm/music/Wino",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:47.153Z",
-    "spotifyArtistId": "1u5SWpU4mZSziEz2hdPSWQ",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/1u5SWpU4mZSziEz2hdPSWQ",
-    "popularity": 39,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "My Apologies To The Chef",
-      "spotifyAlbumId": "2VKfhxfIcAcYObO8qJEXA0",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/2VKfhxfIcAcYObO8qJEXA0",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d0000485110060bb2baf71f9b5ddf01ea",
-        "medium": "https://i.scdn.co/image/ab67616d00001e0210060bb2baf71f9b5ddf01ea",
-        "large": "https://i.scdn.co/image/ab67616d0000b27310060bb2baf71f9b5ddf01ea"
-      },
-      "releaseYear": 2025
-    },
-    "topTracks": [
-      {
-        "name": "HAMMS IN A GLASS",
-        "spotifyTrackId": "3yOfqcmYBcRZwOhApqfYr5",
-        "spotifyUrl": "https://open.spotify.com/track/3yOfqcmYBcRZwOhApqfYr5",
-        "previewUrl": null,
-        "durationMs": 146392
-      },
-      {
-        "name": "You Look Like A Drunk Phoebe Bridgers",
-        "spotifyTrackId": "49z8uMXflgtt6eQ3x7NRTN",
-        "spotifyUrl": "https://open.spotify.com/track/49z8uMXflgtt6eQ3x7NRTN",
-        "previewUrl": null,
-        "durationMs": 174778
-      },
-      {
-        "name": "Swear To God That I'm (FINE)",
-        "spotifyTrackId": "3CnYs8UlO8J44WsGBYeMhp",
-        "spotifyUrl": "https://open.spotify.com/track/3CnYs8UlO8J44WsGBYeMhp",
-        "previewUrl": null,
-        "durationMs": 138120
-      }
-    ]
-  },
-  "the-chasm": {
-    "name": "The Chasm",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "The Chasm came to be in December 1992, in Mexico City. Daniel Corchado left his old band Cenotaph to embark on a dark journey: the procreation of a unique form of obscure and bizarre Metal of Death. Corchado carried with him the inspiration of the ancient masters: Celtic Frost, Slayer, Black Sabbath, Sacrifice, Destruction and the pure essence of traditional heavy metal plus an infusion of more contemporary acts like Carnage, Winter, Autopsy, early Mayhem, and Dismember. Read more on Last.fm",
-    "genres": [
-      "death metal",
-      "melodic death metal"
-    ],
-    "url": "https://www.last.fm/music/The+Chasm",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:48.310Z",
-    "spotifyArtistId": "4BDYrNGjAAnEDmNYUsJ5eA",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/4BDYrNGjAAnEDmNYUsJ5eA",
-    "popularity": 18,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "The Spell Of Retribution",
-      "spotifyAlbumId": "2TMWCJY9aUW2KLBZAuuyaa",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/2TMWCJY9aUW2KLBZAuuyaa",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851cfce6d5f01c9ccfe4f413636",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02cfce6d5f01c9ccfe4f413636",
-        "large": "https://i.scdn.co/image/ab67616d0000b273cfce6d5f01c9ccfe4f413636"
-      },
-      "releaseYear": 2004
-    },
-    "topTracks": [
-      {
-        "name": "From the Curse A Scourge",
-        "spotifyTrackId": "7l6PT9r4Ed9VwgLWaLGKDj",
-        "spotifyUrl": "https://open.spotify.com/track/7l6PT9r4Ed9VwgLWaLGKDj",
-        "previewUrl": null,
-        "durationMs": 182240
-      },
-      {
-        "name": "Return of the Banished",
-        "spotifyTrackId": "3g6e28rGhTNo6LhI0LY1vz",
-        "spotifyUrl": "https://open.spotify.com/track/3g6e28rGhTNo6LhI0LY1vz",
-        "previewUrl": null,
-        "durationMs": 396360
-      },
-      {
-        "name": "The Omnipotent Codex",
-        "spotifyTrackId": "4gI8HRoQV0zMR53cTxe8Zd",
-        "spotifyUrl": "https://open.spotify.com/track/4gI8HRoQV0zMR53cTxe8Zd",
-        "previewUrl": null,
-        "durationMs": 366200
-      }
-    ]
-  },
-  "full-of-hell": {
-    "name": "Full of Hell",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "Full of Hell is a grindcore band formed in 2009 and based in Ocean City, Maryland and central Pennsylvania. Their sound is an amalgam of 90s grindcore/metalcore, sludge metal and noise; in addition, Full of Hell incorporates industrial and power electronics, which is usually interspersed throughout their relentless grinding death, although they have released a handful of power electronics-only recordings. They were signed to A389 Recordings, through which they released two full length albums Rea",
-    "genres": [
-      "grindcore",
-      "mathcore",
-      "sludge metal",
-      "drone metal",
-      "death metal"
-    ],
-    "url": "https://www.last.fm/music/Full+of+Hell",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:49.496Z",
-    "spotifyArtistId": "1i5rlthy5CmAYWaFOB0jhz",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/1i5rlthy5CmAYWaFOB0jhz",
-    "popularity": 36,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "When No Birds Sang",
-      "spotifyAlbumId": "4opClmCXuwpIFSQbFnyou6",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/4opClmCXuwpIFSQbFnyou6",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851cd6183c1b38af30c29e44c09",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02cd6183c1b38af30c29e44c09",
-        "large": "https://i.scdn.co/image/ab67616d0000b273cd6183c1b38af30c29e44c09"
-      },
-      "releaseYear": 2023
-    },
-    "topTracks": [
-      {
-        "name": "Crawling Back to God",
-        "spotifyTrackId": "23JwfoO6yFgIdbquduMetu",
-        "spotifyUrl": "https://open.spotify.com/track/23JwfoO6yFgIdbquduMetu",
-        "previewUrl": null,
-        "durationMs": 127337
-      },
-      {
-        "name": "Like Stars In The Firmament",
-        "spotifyTrackId": "0rCLd0wFQQPqDNsJ1aTNZU",
-        "spotifyUrl": "https://open.spotify.com/track/0rCLd0wFQQPqDNsJ1aTNZU",
-        "previewUrl": null,
-        "durationMs": 324053
-      },
-      {
-        "name": "FULL OF HEALTH",
-        "spotifyTrackId": "37AupChkjBYtyPmFUjpAnW",
-        "spotifyUrl": "https://open.spotify.com/track/37AupChkjBYtyPmFUjpAnW",
-        "previewUrl": null,
-        "durationMs": 136400
-      }
-    ]
-  },
-  "matt-anderson": {
-    "name": "Matt Anderson",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "MATT ANDERSEN: Breaking Through, One Audience at a Time\n\nThe best performing songwriters, the ones who sound like they really mean what they’re singing about, tend to come from areas known for hard times and hard work. Like say, Perth-Andover, a rural blue-collar village in the Canadian Maritime province of New Brunswick—the home of acclaimed singer-songwriter and guitarist Matt Andersen.\n\n“Perth-Andover’s a really small, family-oriented community,” says Matt. Read more on Last.fm",
-    "genres": [
-      "blues",
-      "modern blues"
-    ],
-    "url": "https://www.last.fm/music/Matt+Anderson",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:50.513Z",
-    "spotifyArtistId": "2dOaom01dm1MhNLnyHpWD5",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/2dOaom01dm1MhNLnyHpWD5",
-    "popularity": 38,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "The Hammer & The Rose",
-      "spotifyAlbumId": "3S0f9Ok4DDuYRtKy0JPZ2v",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/3S0f9Ok4DDuYRtKy0JPZ2v",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d000048519b6bd8473f3d1557f949e5e5",
-        "medium": "https://i.scdn.co/image/ab67616d00001e029b6bd8473f3d1557f949e5e5",
-        "large": "https://i.scdn.co/image/ab67616d0000b2739b6bd8473f3d1557f949e5e5"
-      },
-      "releaseYear": 2025
-    },
-    "topTracks": [
-      {
-        "name": "Magnolia",
-        "spotifyTrackId": "50irkuzpY3jjYinFGzvqhg",
-        "spotifyUrl": "https://open.spotify.com/track/50irkuzpY3jjYinFGzvqhg",
-        "previewUrl": null,
-        "durationMs": 260519
-      },
-      {
-        "name": "Other Side of Goodbye",
-        "spotifyTrackId": "3mMAm6PHzUdHDXgkCVdcnj",
-        "spotifyUrl": "https://open.spotify.com/track/3mMAm6PHzUdHDXgkCVdcnj",
-        "previewUrl": null,
-        "durationMs": 154226
-      },
-      {
-        "name": "Tonight Belongs to You",
-        "spotifyTrackId": "7DTD0QN3IyX2QCgsM5z8zK",
-        "spotifyUrl": "https://open.spotify.com/track/7DTD0QN3IyX2QCgsM5z8zK",
-        "previewUrl": null,
-        "durationMs": 247720
-      }
-    ]
-  },
-  "cerebral-rot": {
-    "name": "Cerebral Rot",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "There are a couple of bands named Cerebral Rot:\n\n1) Seattle reeking death metal formed in 2016. “Cessation of Life” demo released in 2018, Odious Descent into Decay, their first full-length record, was released in 2019 on 20 Buck Spin.\n\n2) Cerebral Rot is a TXDM band formed in Katy TX in 2005. They play a straight forward TX style Death Metal in the vein of Viral Load, Insidious Decrepancy, Grotesque Formation, Braced For Nails, Sect Of Execration,  Devourment(early), Infernal Dominion etc. Read",
-    "genres": [
-      "death metal",
-      "grindcore"
-    ],
-    "url": "https://www.last.fm/music/Cerebral+Rot",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:51.522Z",
-    "spotifyArtistId": "5AEKhKc6WDnY6oi18OWcQN",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/5AEKhKc6WDnY6oi18OWcQN",
-    "popularity": 15,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Excretion of Mortality",
-      "spotifyAlbumId": "5g71TnFPdWkqUCOBAYM0nI",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/5g71TnFPdWkqUCOBAYM0nI",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d0000485115f75a34651e2aca632a8585",
-        "medium": "https://i.scdn.co/image/ab67616d00001e0215f75a34651e2aca632a8585",
-        "large": "https://i.scdn.co/image/ab67616d0000b27315f75a34651e2aca632a8585"
-      },
-      "releaseYear": 2021
-    },
-    "topTracks": [
-      {
-        "name": "Excretion of Mortality",
-        "spotifyTrackId": "1rIlLuW9Mj8NoBar9bkW2Y",
-        "spotifyUrl": "https://open.spotify.com/track/1rIlLuW9Mj8NoBar9bkW2Y",
-        "previewUrl": null,
-        "durationMs": 418800
-      },
-      {
-        "name": "Swamped in Festering Excrementia",
-        "spotifyTrackId": "5GLYr3blO71tjU2oHBoLYC",
-        "spotifyUrl": "https://open.spotify.com/track/5GLYr3blO71tjU2oHBoLYC",
-        "previewUrl": null,
-        "durationMs": 287203
-      },
-      {
-        "name": "Reeking Septic Mass",
-        "spotifyTrackId": "0eZguOK8nxnmUtsPelgpY5",
-        "spotifyUrl": "https://open.spotify.com/track/0eZguOK8nxnmUtsPelgpY5",
-        "previewUrl": null,
-        "durationMs": 261994
-      }
-    ]
-  },
-  "max-iggor-cavalera": {
-    "name": "Max & Iggor Cavalera",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": " Read more on Last.fm",
-    "genres": [],
-    "url": "https://www.last.fm/music/Max+&+Iggor+Cavalera",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:52.230Z",
-    "spotifyArtistId": "1FBJWhRpdQvo1spKGVFjEX",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/1FBJWhRpdQvo1spKGVFjEX",
-    "popularity": 1,
-    "dataSource": "spotify",
-    "topTracks": [
-      {
-        "name": "Roots Bloody Roots - (Live at Wacken 2017)",
-        "spotifyTrackId": "0pX5eZ32RwgPvgH0R1SK9m",
-        "spotifyUrl": "https://open.spotify.com/track/0pX5eZ32RwgPvgH0R1SK9m",
-        "previewUrl": null,
-        "durationMs": 253333
-      }
-    ]
-  },
-  "dirtwire": {
-    "name": "Dirtwire",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "dirtwire sits on the back porch of Americana’s future, conjuring up a gris-gris of sound with an amalgamation of traditional instrumentation, world-beat percussion, and electronic soundscapes. Comprised of multi-instrumentalist David Satori (Beats Antique) and Evan Fraser (Hamsa Lila; Stallamara), each performance brings the audience to a mysterious crossroads at an imaginative and seductive moment in time. The result is a rebirth of Americana and beacon for a post-millennial return to downhome ",
-    "genres": [],
-    "url": "https://www.last.fm/music/Dirtwire",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:53.254Z",
-    "spotifyArtistId": "0hc2qwaU2xy7LUd0FRjcHK",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/0hc2qwaU2xy7LUd0FRjcHK",
-    "popularity": 47,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Blaze",
-      "spotifyAlbumId": "4CY2RY0CMurteDjeJNzKEt",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/4CY2RY0CMurteDjeJNzKEt",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d000048516eb2c4f5a87cdcbe0b47539a",
-        "medium": "https://i.scdn.co/image/ab67616d00001e026eb2c4f5a87cdcbe0b47539a",
-        "large": "https://i.scdn.co/image/ab67616d0000b2736eb2c4f5a87cdcbe0b47539a"
-      },
-      "releaseYear": 2017
-    },
-    "topTracks": [
-      {
-        "name": "Stranger",
-        "spotifyTrackId": "026jMTqOYyHRd2D5n6pWda",
-        "spotifyUrl": "https://open.spotify.com/track/026jMTqOYyHRd2D5n6pWda",
-        "previewUrl": null,
-        "durationMs": 185422
-      },
-      {
-        "name": "Sailing the Solar Flares",
-        "spotifyTrackId": "56ahkH80GMeXhe5dZWZLD1",
-        "spotifyUrl": "https://open.spotify.com/track/56ahkH80GMeXhe5dZWZLD1",
-        "previewUrl": null,
-        "durationMs": 254815
-      },
-      {
-        "name": "Strength in One",
-        "spotifyTrackId": "0qOn7Z91EYtFUENpjKXvtP",
-        "spotifyUrl": "https://open.spotify.com/track/0qOn7Z91EYtFUENpjKXvtP",
-        "previewUrl": null,
-        "durationMs": 240000
-      }
-    ]
-  },
-  "beheaded": {
-    "name": "Beheaded",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "Beheaded is a brutal death metal band.\n\nThey formed back in 1991, with the sole intention of being one blistering death/grind act, Beheaded has breathed fire ever since. Set in Fgura, Malta, an island, in the middle of the Mediterranean Sea, the quintet stood firm, against all the odds, and confrontations such an environment generated. Beheaded toughened after each clash, and molded into a beast of tenacity and inhuman determination. \n\nFounded by Chris Brincat – drums and David Bugeja – guitars ",
-    "genres": [
-      "death metal",
-      "grindcore"
-    ],
-    "url": "https://www.last.fm/music/Beheaded",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:51:54.342Z",
-    "spotifyArtistId": "4J08tm60Pk8FMQynk0Up4o",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/4J08tm60Pk8FMQynk0Up4o",
-    "popularity": 18,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Beast Incarnate",
-      "spotifyAlbumId": "6hQTm1hbrbzi53KU1cy1MY",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/6hQTm1hbrbzi53KU1cy1MY",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d0000485178bf925d7a4512f5ffeea933",
-        "medium": "https://i.scdn.co/image/ab67616d00001e0278bf925d7a4512f5ffeea933",
-        "large": "https://i.scdn.co/image/ab67616d0000b27378bf925d7a4512f5ffeea933"
-      },
-      "releaseYear": 2017
-    },
-    "topTracks": [
-      {
-        "name": "Beast Incarnate",
-        "spotifyTrackId": "0Xm0dF2MmJctbAi5iz64XL",
-        "spotifyUrl": "https://open.spotify.com/track/0Xm0dF2MmJctbAi5iz64XL",
-        "previewUrl": null,
-        "durationMs": 261946
-      },
-      {
-        "name": "A greater terror",
-        "spotifyTrackId": "6W36dxWmGdynLDpGPQu4tV",
-        "spotifyUrl": "https://open.spotify.com/track/6W36dxWmGdynLDpGPQu4tV",
-        "previewUrl": null,
-        "durationMs": 263146
-      },
-      {
-        "name": "Lament of a Sordid God",
-        "spotifyTrackId": "1YE0tEFvrqAReLkxEuZ0NB",
-        "spotifyUrl": "https://open.spotify.com/track/1YE0tEFvrqAReLkxEuZ0NB",
-        "previewUrl": null,
-        "durationMs": 240240
-      }
-    ]
-  },
   "insane-clown-posse": {
     "name": "Insane Clown Posse",
     "image": "https://i.scdn.co/image/ab6761610000e5eb534c6d647953f20279d654f8",
@@ -6320,58 +5850,6 @@
       }
     ]
   },
-  "sulaco": {
-    "name": "Sulaco",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "There are 3 Sulacos.\n\n(1) Sulaco can be seen as an evolution from guitarist Erik Burke's previous band, Lethargy, who played a seminal role in shaping the musical climate of Rochester's underground metal scene. Lethargy was legendary in the Rochester area during the mid 90s for crafting an often imitated but never duplicated style of ridiculously intricate carnival-esque metal that showcased cross-eyed guitar antics and blistering jazz-fusion rhythms over 10 years before it became popular in the",
-    "genres": [
-      "mathcore",
-      "grindcore",
-      "noise rock",
-      "death metal"
-    ],
-    "url": "https://www.last.fm/music/Sulaco",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:52:04.371Z",
-    "spotifyArtistId": "2uwOHrM3C1CedniDmwtpUd",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/2uwOHrM3C1CedniDmwtpUd",
-    "popularity": 1,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Tearing Through The Roots",
-      "spotifyAlbumId": "3vXVGIb91PZ7aRKnkSy37x",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/3vXVGIb91PZ7aRKnkSy37x",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851d413c211760fe22d381ddb65",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02d413c211760fe22d381ddb65",
-        "large": "https://i.scdn.co/image/ab67616d0000b273d413c211760fe22d381ddb65"
-      },
-      "releaseYear": 2006
-    },
-    "topTracks": [
-      {
-        "name": "Middle Man",
-        "spotifyTrackId": "4i4VRpeQjWU94lNrnsj1Li",
-        "spotifyUrl": "https://open.spotify.com/track/4i4VRpeQjWU94lNrnsj1Li",
-        "previewUrl": null,
-        "durationMs": 258560
-      },
-      {
-        "name": "Disguise",
-        "spotifyTrackId": "7D8XyCbvXFwxxM7JTpWNib",
-        "spotifyUrl": "https://open.spotify.com/track/7D8XyCbvXFwxxM7JTpWNib",
-        "previewUrl": null,
-        "durationMs": 309983
-      },
-      {
-        "name": "Full Tomb",
-        "spotifyTrackId": "3f2XmK2CWoL5eVaCD51hPE",
-        "spotifyUrl": "https://open.spotify.com/track/3f2XmK2CWoL5eVaCD51hPE",
-        "previewUrl": null,
-        "durationMs": 121968
-      }
-    ]
-  },
   "alice-cooper": {
     "name": "Alice Cooper",
     "image": "https://i.scdn.co/image/ab6761610000e5eb33b97c45348420d27fb92d68",
@@ -6423,56 +5901,6 @@
         "spotifyUrl": "https://open.spotify.com/track/5D2eCwqbHcqOnfHOCM6TnV",
         "previewUrl": null,
         "durationMs": 187893
-      }
-    ]
-  },
-  "malignancy": {
-    "name": "Malignancy",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "Malignancy plays very intense, crushing brutal death metal out of Yonkers, NY (US)  since 1992 and are known for their seamless variations between hyper-technical riffing and unsurpassable NYDM style breakdowns.  With each release, Malignancy increases speed, technicality, eccentric intensity and originality. Read more on Last.fm",
-    "genres": [
-      "death metal",
-      "grindcore"
-    ],
-    "url": "https://www.last.fm/music/Malignancy",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:52:06.439Z",
-    "spotifyArtistId": "4ypzf3n2YDMIj41Y2WVHYW",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/4ypzf3n2YDMIj41Y2WVHYW",
-    "popularity": 26,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Intrauterine Cannibalism (1999)",
-      "spotifyAlbumId": "5SQImmfMYcDaThRJRBHi1V",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/5SQImmfMYcDaThRJRBHi1V",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851a23a67a2375007be6f3d9b4f",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02a23a67a2375007be6f3d9b4f",
-        "large": "https://i.scdn.co/image/ab67616d0000b273a23a67a2375007be6f3d9b4f"
-      },
-      "releaseYear": 1999
-    },
-    "topTracks": [
-      {
-        "name": "Rotten Seed - 1999",
-        "spotifyTrackId": "38O64Ti5hCExNYbYMBKUxf",
-        "spotifyUrl": "https://open.spotify.com/track/38O64Ti5hCExNYbYMBKUxf",
-        "previewUrl": null,
-        "durationMs": 196813
-      },
-      {
-        "name": "Internal Corruption - 1999",
-        "spotifyTrackId": "0FdQ20Paf03xI9HVdr4mml",
-        "spotifyUrl": "https://open.spotify.com/track/0FdQ20Paf03xI9HVdr4mml",
-        "previewUrl": null,
-        "durationMs": 107746
-      },
-      {
-        "name": "Internal Corruption",
-        "spotifyTrackId": "3sc67EnlFvoFHMgO1usvBW",
-        "spotifyUrl": "https://open.spotify.com/track/3sc67EnlFvoFHMgO1usvBW",
-        "previewUrl": null,
-        "durationMs": 107400
       }
     ]
   },
@@ -6624,58 +6052,6 @@
         "spotifyUrl": "https://open.spotify.com/track/3t3cv2Vb8XzjipocvYP22U",
         "previewUrl": null,
         "durationMs": 261959
-      }
-    ]
-  },
-  "southern-hospitality": {
-    "name": "Southern Hospitality",
-    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-    "bio": "There is more than one artist with this name, including: \n1) Southern Hospitality is an American blues band. \n2) Southern Hospitality is a British DJ collective. \n\n1) Southern Hospitality is an American blues band comprising Damon Fowler (lap steel guitar), J.P. Soars (guitar), and Victor Wainwright (keyboards).\nThe three artists are musician’s musicians, each bringing a unique style and fresh translation of the great Southern soul, blues, and rock music that came before them. Read more on Last.",
-    "genres": [
-      "modern blues",
-      "southern rock",
-      "blues",
-      "blues rock"
-    ],
-    "url": "https://www.last.fm/music/Southern+Hospitality",
-    "source": "lastfm",
-    "fetchedAt": "2026-02-05T21:52:10.712Z",
-    "spotifyArtistId": "1qNyI4IDPQCLmG3B0OMWoe",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/1qNyI4IDPQCLmG3B0OMWoe",
-    "popularity": 3,
-    "dataSource": "spotify",
-    "mostPopularAlbum": {
-      "name": "Easy Livin'",
-      "spotifyAlbumId": "0Pu6ZWCK6xUSaX5X48HjFs",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/0Pu6ZWCK6xUSaX5X48HjFs",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d00004851bf2f6f3349c07db25ce9e90c",
-        "medium": "https://i.scdn.co/image/ab67616d00001e02bf2f6f3349c07db25ce9e90c",
-        "large": "https://i.scdn.co/image/ab67616d0000b273bf2f6f3349c07db25ce9e90c"
-      },
-      "releaseYear": 2013
-    },
-    "topTracks": [
-      {
-        "name": "Southern Livin'",
-        "spotifyTrackId": "494VQeotSE7bUcLejECmTH",
-        "spotifyUrl": "https://open.spotify.com/track/494VQeotSE7bUcLejECmTH",
-        "previewUrl": null,
-        "durationMs": 284466
-      },
-      {
-        "name": "Don't Feel Like Going There Today",
-        "spotifyTrackId": "64tQdwbMcAIZ3exCUmnLOH",
-        "spotifyUrl": "https://open.spotify.com/track/64tQdwbMcAIZ3exCUmnLOH",
-        "previewUrl": null,
-        "durationMs": 355760
-      },
-      {
-        "name": "Kind Lies & Whiskey",
-        "spotifyTrackId": "3Fn6gupMCLUVHrLWbF8CM9",
-        "spotifyUrl": "https://open.spotify.com/track/3Fn6gupMCLUVHrLWbF8CM9",
-        "previewUrl": null,
-        "durationMs": 314760
       }
     ]
   },
@@ -16047,65 +15423,6 @@
       }
     ]
   },
-  "midnight": {
-    "name": "midnight",
-    "normalizedName": "midnight",
-    "fetchedAt": "2026-02-05T22:09:53.066Z",
-    "dataSource": "spotify",
-    "genres": [],
-    "popularity": 52,
-    "spotifyArtistId": "7hQmntLjIT4MjvY3BiujTd",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/7hQmntLjIT4MjvY3BiujTd",
-    "image": "https://i.scdn.co/image/ab6761610000e5ebd16df2340e3f5024f09090cc",
-    "mostPopularAlbum": {
-      "name": "Afterglow",
-      "spotifyAlbumId": "49Eh0Oixu9Sfo43ujAY1sk",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/49Eh0Oixu9Sfo43ujAY1sk",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d000048513aac850b049f8b6fcd83b6dc",
-        "medium": "https://i.scdn.co/image/ab67616d00001e023aac850b049f8b6fcd83b6dc",
-        "large": "https://i.scdn.co/image/ab67616d0000b2733aac850b049f8b6fcd83b6dc"
-      },
-      "releaseYear": 2025
-    },
-    "topTracks": [
-      {
-        "name": "Bye",
-        "spotifyTrackId": "29nNBLIzy35kb3E8cTg7ix",
-        "spotifyUrl": "https://open.spotify.com/track/29nNBLIzy35kb3E8cTg7ix",
-        "previewUrl": null,
-        "durationMs": 137736
-      },
-      {
-        "name": "Navy Eyes",
-        "spotifyTrackId": "0u4Ie3idXMN8wB0ZvPnqhC",
-        "spotifyUrl": "https://open.spotify.com/track/0u4Ie3idXMN8wB0ZvPnqhC",
-        "previewUrl": null,
-        "durationMs": 165284
-      },
-      {
-        "name": "Ghost of Us",
-        "spotifyTrackId": "0Le1LkmYEE4QRgPBISEKR5",
-        "spotifyUrl": "https://open.spotify.com/track/0Le1LkmYEE4QRgPBISEKR5",
-        "previewUrl": null,
-        "durationMs": 195902
-      },
-      {
-        "name": "Heart on Fire",
-        "spotifyTrackId": "76k6Av4PyMxrMvbY9NHQUU",
-        "spotifyUrl": "https://open.spotify.com/track/76k6Av4PyMxrMvbY9NHQUU",
-        "previewUrl": null,
-        "durationMs": 193104
-      },
-      {
-        "name": "Ocean Eyes (from the Netflix Series \"Building The Band\") - Live",
-        "spotifyTrackId": "4VNEJ3JKarFIJrcFUNkqSp",
-        "spotifyUrl": "https://open.spotify.com/track/4VNEJ3JKarFIJrcFUNkqSp",
-        "previewUrl": null,
-        "durationMs": 126971
-      }
-    ]
-  },
   "enforced": {
     "name": "enforced",
     "normalizedName": "enforced",
@@ -17297,67 +16614,6 @@
       }
     ]
   },
-  "concrete": {
-    "name": "concrete",
-    "normalizedName": "concrete",
-    "fetchedAt": "2026-02-05T22:10:15.638Z",
-    "dataSource": "spotify",
-    "genres": [
-      "sexy drill"
-    ],
-    "popularity": 51,
-    "spotifyArtistId": "0gUhWNBM04NdCAxYUWlSPJ",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/0gUhWNBM04NdCAxYUWlSPJ",
-    "image": "https://i.scdn.co/image/ab67616d0000b27396e32f92f2f14652b6fd20f9",
-    "mostPopularAlbum": {
-      "name": "It's Us Vol. 1",
-      "spotifyAlbumId": "3cmWnX51JZRnlS7Wij1VmG",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/3cmWnX51JZRnlS7Wij1VmG",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d0000485196e32f92f2f14652b6fd20f9",
-        "medium": "https://i.scdn.co/image/ab67616d00001e0296e32f92f2f14652b6fd20f9",
-        "large": "https://i.scdn.co/image/ab67616d0000b27396e32f92f2f14652b6fd20f9"
-      },
-      "releaseYear": 2025
-    },
-    "topTracks": [
-      {
-        "name": "GO",
-        "spotifyTrackId": "0L4J3hS3u7IQBtmA4w0Fuh",
-        "spotifyUrl": "https://open.spotify.com/track/0L4J3hS3u7IQBtmA4w0Fuh",
-        "previewUrl": null,
-        "durationMs": 152611
-      },
-      {
-        "name": "ON THE RADAR CONCRETE CYPHER (feat. Lil Yachty, Camo!, KARRAHBOOO, Dc2trill, Draft Day)",
-        "spotifyTrackId": "2sLTyF6TEFsURJvMudHAlL",
-        "spotifyUrl": "https://open.spotify.com/track/2sLTyF6TEFsURJvMudHAlL",
-        "previewUrl": null,
-        "durationMs": 348409
-      },
-      {
-        "name": "LA REID (feat. Lil Yachty)",
-        "spotifyTrackId": "74I2zNBEquuZDHdjhQcQ06",
-        "spotifyUrl": "https://open.spotify.com/track/74I2zNBEquuZDHdjhQcQ06",
-        "previewUrl": null,
-        "durationMs": 132416
-      },
-      {
-        "name": "POINT ME TO IT (feat. Lil Yachty, Camo!)",
-        "spotifyTrackId": "3qK4Li3mxWgR66AOFhosXX",
-        "spotifyUrl": "https://open.spotify.com/track/3qK4Li3mxWgR66AOFhosXX",
-        "previewUrl": null,
-        "durationMs": 194282
-      },
-      {
-        "name": "NOT DA 2 (feat. Lil Yachty, KARRAHBOOO)",
-        "spotifyTrackId": "4sy34zVp9lhb0ozhuRhAKj",
-        "spotifyUrl": "https://open.spotify.com/track/4sy34zVp9lhb0ozhuRhAKj",
-        "previewUrl": null,
-        "durationMs": 132012
-      }
-    ]
-  },
   "hendrix-tribute": {
     "name": "hendrix-tribute",
     "normalizedName": "hendrix-tribute",
@@ -17541,67 +16797,6 @@
         "spotifyUrl": "https://open.spotify.com/track/5GHiFrflp8RvNdzy2iKqNo",
         "previewUrl": null,
         "durationMs": 232571
-      }
-    ]
-  },
-  "lik": {
-    "name": "lik",
-    "normalizedName": "lik",
-    "fetchedAt": "2026-02-05T22:10:20.374Z",
-    "dataSource": "spotify",
-    "genres": [
-      "melodic rap"
-    ],
-    "popularity": 87,
-    "spotifyArtistId": "4O15NlyKLIASxsJ0PrXPfz",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/4O15NlyKLIASxsJ0PrXPfz",
-    "image": "https://i.scdn.co/image/ab6761610000e5eb62c272d76220f2e9dad56704",
-    "mostPopularAlbum": {
-      "name": "Pink Tape",
-      "spotifyAlbumId": "2ua5bFkZLZl1lIgKWtYZIz",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/2ua5bFkZLZl1lIgKWtYZIz",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d000048516f01d9e9df05d4bc6c022343",
-        "medium": "https://i.scdn.co/image/ab67616d00001e026f01d9e9df05d4bc6c022343",
-        "large": "https://i.scdn.co/image/ab67616d0000b2736f01d9e9df05d4bc6c022343"
-      },
-      "releaseYear": 2023
-    },
-    "topTracks": [
-      {
-        "name": "What You Saying",
-        "spotifyTrackId": "7cjoZVmWe2xsGR4wcXiV2v",
-        "spotifyUrl": "https://open.spotify.com/track/7cjoZVmWe2xsGR4wcXiV2v",
-        "previewUrl": null,
-        "durationMs": 131729
-      },
-      {
-        "name": "20 Min",
-        "spotifyTrackId": "0uxSUdBrJy9Un0EYoBowng",
-        "spotifyUrl": "https://open.spotify.com/track/0uxSUdBrJy9Un0EYoBowng",
-        "previewUrl": null,
-        "durationMs": 220586
-      },
-      {
-        "name": "Lucid Dreams (feat. Lil Uzi Vert) - Remix",
-        "spotifyTrackId": "1jKlRcH7X78ps1yKBTWyUV",
-        "spotifyUrl": "https://open.spotify.com/track/1jKlRcH7X78ps1yKBTWyUV",
-        "previewUrl": null,
-        "durationMs": 240437
-      },
-      {
-        "name": "XO Tour Llif3",
-        "spotifyTrackId": "7GX5flRQZVHRAGd6B4TmDO",
-        "spotifyUrl": "https://open.spotify.com/track/7GX5flRQZVHRAGd6B4TmDO",
-        "previewUrl": null,
-        "durationMs": 182706
-      },
-      {
-        "name": "The Way Life Goes (feat. Oh Wonder)",
-        "spotifyTrackId": "2eAZfqOm4EnOF9VvN50Tyc",
-        "spotifyUrl": "https://open.spotify.com/track/2eAZfqOm4EnOF9VvN50Tyc",
-        "previewUrl": null,
-        "durationMs": 221746
       }
     ]
   },
@@ -18232,6 +17427,962 @@
         "spotifyUrl": "https://open.spotify.com/track/2l0h4aBFLp9HdoaNdCTlbW",
         "previewUrl": null,
         "durationMs": 266773
+      }
+    ]
+  },
+  "godbelow": {
+    "name": "godbelow",
+    "normalizedName": "godbelow",
+    "fetchedAt": "2026-02-05T22:50:42.938Z",
+    "dataSource": "spotify",
+    "genres": [
+      "groove metal",
+      "metalcore"
+    ],
+    "popularity": 3,
+    "spotifyArtistId": "3yvGGE3lBLFDi8AapUS9dm",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/3yvGGE3lBLFDi8AapUS9dm",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a29ebb3184dd5f1fb5021cb8",
+    "mostPopularAlbum": {
+      "name": "Painted Images with the Blood Of...",
+      "spotifyAlbumId": "3h96cTHGRP6DFAOvJrHSmN",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/3h96cTHGRP6DFAOvJrHSmN",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851a29ebb3184dd5f1fb5021cb8",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02a29ebb3184dd5f1fb5021cb8",
+        "large": "https://i.scdn.co/image/ab67616d0000b273a29ebb3184dd5f1fb5021cb8"
+      },
+      "releaseYear": 1999
+    },
+    "topTracks": [
+      {
+        "name": "Still Not Quite Suicide",
+        "spotifyTrackId": "4wFOu9sMPNgJ6ncH0BcOJ0",
+        "spotifyUrl": "https://open.spotify.com/track/4wFOu9sMPNgJ6ncH0BcOJ0",
+        "previewUrl": null,
+        "durationMs": 179488
+      },
+      {
+        "name": "Three Seasons",
+        "spotifyTrackId": "3mpFNcccEU2O6zZ5XzUk6J",
+        "spotifyUrl": "https://open.spotify.com/track/3mpFNcccEU2O6zZ5XzUk6J",
+        "previewUrl": null,
+        "durationMs": 356468
+      },
+      {
+        "name": "One Person Plural",
+        "spotifyTrackId": "01HDwwKh4uFwAhTJlqETRc",
+        "spotifyUrl": "https://open.spotify.com/track/01HDwwKh4uFwAhTJlqETRc",
+        "previewUrl": null,
+        "durationMs": 218071
+      },
+      {
+        "name": "Lockout the Inside",
+        "spotifyTrackId": "49AzAnq6rgSGGRY08IwFO3",
+        "spotifyUrl": "https://open.spotify.com/track/49AzAnq6rgSGGRY08IwFO3",
+        "previewUrl": null,
+        "durationMs": 253441
+      },
+      {
+        "name": "Paint the Images",
+        "spotifyTrackId": "5tH9XY7RdWCIkvoVlNgiYy",
+        "spotifyUrl": "https://open.spotify.com/track/5tH9XY7RdWCIkvoVlNgiYy",
+        "previewUrl": null,
+        "durationMs": 276402
+      }
+    ]
+  },
+  "archgoat": {
+    "name": "archgoat",
+    "normalizedName": "archgoat",
+    "fetchedAt": "2026-02-05T22:50:44.280Z",
+    "dataSource": "spotify",
+    "genres": [
+      "black metal",
+      "death metal",
+      "metal"
+    ],
+    "popularity": 34,
+    "spotifyArtistId": "3n2bgWmlyHgwnd9aPmnTM4",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/3n2bgWmlyHgwnd9aPmnTM4",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebd1718c65b1be89f5a6133822",
+    "mostPopularAlbum": {
+      "name": "The Luciferian Crown",
+      "spotifyAlbumId": "7hvIu47gTs4enD7iXNWDMl",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/7hvIu47gTs4enD7iXNWDMl",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d0000485171e90cd3f1e7e481def26ff0",
+        "medium": "https://i.scdn.co/image/ab67616d00001e0271e90cd3f1e7e481def26ff0",
+        "large": "https://i.scdn.co/image/ab67616d0000b27371e90cd3f1e7e481def26ff0"
+      },
+      "releaseYear": 2018
+    },
+    "topTracks": [
+      {
+        "name": "Jesus Christ Father of Lies",
+        "spotifyTrackId": "4UB3o1CWjzR1PMqJiIBRtZ",
+        "spotifyUrl": "https://open.spotify.com/track/4UB3o1CWjzR1PMqJiIBRtZ",
+        "previewUrl": null,
+        "durationMs": 209105
+      },
+      {
+        "name": "Nuns, Cunts & Darkness",
+        "spotifyTrackId": "5vEcd0jbAAnUhuMzxokesp",
+        "spotifyUrl": "https://open.spotify.com/track/5vEcd0jbAAnUhuMzxokesp",
+        "previewUrl": null,
+        "durationMs": 220803
+      },
+      {
+        "name": "Messiah of Pigs",
+        "spotifyTrackId": "64XEIdewMRjJgWiGxfqe8v",
+        "spotifyUrl": "https://open.spotify.com/track/64XEIdewMRjJgWiGxfqe8v",
+        "previewUrl": null,
+        "durationMs": 157070
+      },
+      {
+        "name": "Rise of the Black Moon",
+        "spotifyTrackId": "5jkeSdNuz7hVTPddPV9prS",
+        "spotifyUrl": "https://open.spotify.com/track/5jkeSdNuz7hVTPddPV9prS",
+        "previewUrl": null,
+        "durationMs": 156160
+      },
+      {
+        "name": "Grand Luciferian Theophany",
+        "spotifyTrackId": "78HAYXRqJLjJYbXQu7qLA5",
+        "spotifyUrl": "https://open.spotify.com/track/78HAYXRqJLjJYbXQu7qLA5",
+        "previewUrl": null,
+        "durationMs": 294064
+      }
+    ]
+  },
+  "southern-hospitality": {
+    "name": "southern-hospitality",
+    "normalizedName": "southern-hospitality",
+    "fetchedAt": "2026-02-05T22:50:45.473Z",
+    "dataSource": "spotify",
+    "genres": [
+      "modern blues",
+      "southern rock",
+      "blues",
+      "blues rock"
+    ],
+    "popularity": 3,
+    "spotifyArtistId": "1qNyI4IDPQCLmG3B0OMWoe",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/1qNyI4IDPQCLmG3B0OMWoe",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebb770550248a3f5daed87567e",
+    "mostPopularAlbum": {
+      "name": "Easy Livin'",
+      "spotifyAlbumId": "0Pu6ZWCK6xUSaX5X48HjFs",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/0Pu6ZWCK6xUSaX5X48HjFs",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851bf2f6f3349c07db25ce9e90c",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02bf2f6f3349c07db25ce9e90c",
+        "large": "https://i.scdn.co/image/ab67616d0000b273bf2f6f3349c07db25ce9e90c"
+      },
+      "releaseYear": 2013
+    },
+    "topTracks": [
+      {
+        "name": "Southern Livin'",
+        "spotifyTrackId": "494VQeotSE7bUcLejECmTH",
+        "spotifyUrl": "https://open.spotify.com/track/494VQeotSE7bUcLejECmTH",
+        "previewUrl": null,
+        "durationMs": 284466
+      },
+      {
+        "name": "Don't Feel Like Going There Today",
+        "spotifyTrackId": "64tQdwbMcAIZ3exCUmnLOH",
+        "spotifyUrl": "https://open.spotify.com/track/64tQdwbMcAIZ3exCUmnLOH",
+        "previewUrl": null,
+        "durationMs": 355760
+      },
+      {
+        "name": "Kind Lies & Whiskey",
+        "spotifyTrackId": "3Fn6gupMCLUVHrLWbF8CM9",
+        "spotifyUrl": "https://open.spotify.com/track/3Fn6gupMCLUVHrLWbF8CM9",
+        "previewUrl": null,
+        "durationMs": 314760
+      },
+      {
+        "name": "Fried Neck Bones and Home Fries",
+        "spotifyTrackId": "7fILnLzz6jvp2HoOj2OOGE",
+        "spotifyUrl": "https://open.spotify.com/track/7fILnLzz6jvp2HoOj2OOGE",
+        "previewUrl": null,
+        "durationMs": 469653
+      },
+      {
+        "name": "Long Way Home",
+        "spotifyTrackId": "4v7YtAXUUVtrN5ZVNIDkJK",
+        "spotifyUrl": "https://open.spotify.com/track/4v7YtAXUUVtrN5ZVNIDkJK",
+        "previewUrl": null,
+        "durationMs": 301240
+      }
+    ]
+  },
+  "the-chasm": {
+    "name": "the-chasm",
+    "normalizedName": "the-chasm",
+    "fetchedAt": "2026-02-05T22:50:47.741Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal",
+      "melodic death metal"
+    ],
+    "popularity": 18,
+    "spotifyArtistId": "4BDYrNGjAAnEDmNYUsJ5eA",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/4BDYrNGjAAnEDmNYUsJ5eA",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb8bc06c7e07947f6080455c5a",
+    "mostPopularAlbum": {
+      "name": "The Spell Of Retribution",
+      "spotifyAlbumId": "2TMWCJY9aUW2KLBZAuuyaa",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/2TMWCJY9aUW2KLBZAuuyaa",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851cfce6d5f01c9ccfe4f413636",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02cfce6d5f01c9ccfe4f413636",
+        "large": "https://i.scdn.co/image/ab67616d0000b273cfce6d5f01c9ccfe4f413636"
+      },
+      "releaseYear": 2004
+    },
+    "topTracks": [
+      {
+        "name": "From the Curse A Scourge",
+        "spotifyTrackId": "7l6PT9r4Ed9VwgLWaLGKDj",
+        "spotifyUrl": "https://open.spotify.com/track/7l6PT9r4Ed9VwgLWaLGKDj",
+        "previewUrl": null,
+        "durationMs": 182240
+      },
+      {
+        "name": "Return of the Banished",
+        "spotifyTrackId": "3g6e28rGhTNo6LhI0LY1vz",
+        "spotifyUrl": "https://open.spotify.com/track/3g6e28rGhTNo6LhI0LY1vz",
+        "previewUrl": null,
+        "durationMs": 396360
+      },
+      {
+        "name": "The Omnipotent Codex",
+        "spotifyTrackId": "4gI8HRoQV0zMR53cTxe8Zd",
+        "spotifyUrl": "https://open.spotify.com/track/4gI8HRoQV0zMR53cTxe8Zd",
+        "previewUrl": null,
+        "durationMs": 366200
+      },
+      {
+        "name": "The Scars of My Journey",
+        "spotifyTrackId": "7rkLPeU6WcQWQgNtIyCN1Z",
+        "spotifyUrl": "https://open.spotify.com/track/7rkLPeU6WcQWQgNtIyCN1Z",
+        "previewUrl": null,
+        "durationMs": 229986
+      },
+      {
+        "name": "Spectral Sons of the Mictlan",
+        "spotifyTrackId": "1R58cwqagDDbGa2fI6Fh7C",
+        "spotifyUrl": "https://open.spotify.com/track/1R58cwqagDDbGa2fI6Fh7C",
+        "previewUrl": null,
+        "durationMs": 211026
+      }
+    ]
+  },
+  "full-of-hell": {
+    "name": "full-of-hell",
+    "normalizedName": "full-of-hell",
+    "fetchedAt": "2026-02-05T22:50:48.916Z",
+    "dataSource": "spotify",
+    "genres": [
+      "grindcore",
+      "mathcore",
+      "sludge metal",
+      "drone metal",
+      "death metal"
+    ],
+    "popularity": 36,
+    "spotifyArtistId": "1i5rlthy5CmAYWaFOB0jhz",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/1i5rlthy5CmAYWaFOB0jhz",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb92b7a5112c93bfd159fe5909",
+    "mostPopularAlbum": {
+      "name": "When No Birds Sang",
+      "spotifyAlbumId": "4opClmCXuwpIFSQbFnyou6",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/4opClmCXuwpIFSQbFnyou6",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851cd6183c1b38af30c29e44c09",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02cd6183c1b38af30c29e44c09",
+        "large": "https://i.scdn.co/image/ab67616d0000b273cd6183c1b38af30c29e44c09"
+      },
+      "releaseYear": 2023
+    },
+    "topTracks": [
+      {
+        "name": "Crawling Back to God",
+        "spotifyTrackId": "23JwfoO6yFgIdbquduMetu",
+        "spotifyUrl": "https://open.spotify.com/track/23JwfoO6yFgIdbquduMetu",
+        "previewUrl": null,
+        "durationMs": 127337
+      },
+      {
+        "name": "Like Stars In The Firmament",
+        "spotifyTrackId": "0rCLd0wFQQPqDNsJ1aTNZU",
+        "spotifyUrl": "https://open.spotify.com/track/0rCLd0wFQQPqDNsJ1aTNZU",
+        "previewUrl": null,
+        "durationMs": 324053
+      },
+      {
+        "name": "FULL OF HEALTH",
+        "spotifyTrackId": "37AupChkjBYtyPmFUjpAnW",
+        "spotifyUrl": "https://open.spotify.com/track/37AupChkjBYtyPmFUjpAnW",
+        "previewUrl": null,
+        "durationMs": 136400
+      },
+      {
+        "name": "Rose Tinted World",
+        "spotifyTrackId": "67vYna8TF0R0kQfN92x933",
+        "spotifyUrl": "https://open.spotify.com/track/67vYna8TF0R0kQfN92x933",
+        "previewUrl": null,
+        "durationMs": 491133
+      },
+      {
+        "name": "The Cosmic Vein",
+        "spotifyTrackId": "6xmYCwzQMWf8czU2HowiCQ",
+        "spotifyUrl": "https://open.spotify.com/track/6xmYCwzQMWf8czU2HowiCQ",
+        "previewUrl": null,
+        "durationMs": 132131
+      }
+    ]
+  },
+  "matt-anderson": {
+    "name": "matt-anderson",
+    "normalizedName": "matt-anderson",
+    "fetchedAt": "2026-02-05T22:50:50.214Z",
+    "dataSource": "spotify",
+    "genres": [
+      "blues",
+      "modern blues"
+    ],
+    "popularity": 38,
+    "spotifyArtistId": "2dOaom01dm1MhNLnyHpWD5",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/2dOaom01dm1MhNLnyHpWD5",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb6b25dd1d1b0cbce988681c97",
+    "mostPopularAlbum": {
+      "name": "The Hammer & The Rose",
+      "spotifyAlbumId": "3S0f9Ok4DDuYRtKy0JPZ2v",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/3S0f9Ok4DDuYRtKy0JPZ2v",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d000048519b6bd8473f3d1557f949e5e5",
+        "medium": "https://i.scdn.co/image/ab67616d00001e029b6bd8473f3d1557f949e5e5",
+        "large": "https://i.scdn.co/image/ab67616d0000b2739b6bd8473f3d1557f949e5e5"
+      },
+      "releaseYear": 2025
+    },
+    "topTracks": [
+      {
+        "name": "Magnolia",
+        "spotifyTrackId": "50irkuzpY3jjYinFGzvqhg",
+        "spotifyUrl": "https://open.spotify.com/track/50irkuzpY3jjYinFGzvqhg",
+        "previewUrl": null,
+        "durationMs": 260519
+      },
+      {
+        "name": "Other Side of Goodbye",
+        "spotifyTrackId": "3mMAm6PHzUdHDXgkCVdcnj",
+        "spotifyUrl": "https://open.spotify.com/track/3mMAm6PHzUdHDXgkCVdcnj",
+        "previewUrl": null,
+        "durationMs": 154226
+      },
+      {
+        "name": "Tonight Belongs to You",
+        "spotifyTrackId": "7DTD0QN3IyX2QCgsM5z8zK",
+        "spotifyUrl": "https://open.spotify.com/track/7DTD0QN3IyX2QCgsM5z8zK",
+        "previewUrl": null,
+        "durationMs": 247720
+      },
+      {
+        "name": "Quarter on the Ground (A Song for Uncle Joe)",
+        "spotifyTrackId": "3KSjU5VuvtBtvbQqHXs1y5",
+        "spotifyUrl": "https://open.spotify.com/track/3KSjU5VuvtBtvbQqHXs1y5",
+        "previewUrl": null,
+        "durationMs": 216559
+      },
+      {
+        "name": "Broken Man",
+        "spotifyTrackId": "3Wyyc0MckP2OB99DSse1Ca",
+        "spotifyUrl": "https://open.spotify.com/track/3Wyyc0MckP2OB99DSse1Ca",
+        "previewUrl": null,
+        "durationMs": 213280
+      }
+    ]
+  },
+  "cerebral-rot": {
+    "name": "cerebral-rot",
+    "normalizedName": "cerebral-rot",
+    "fetchedAt": "2026-02-05T22:50:51.714Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal",
+      "grindcore"
+    ],
+    "popularity": 15,
+    "spotifyArtistId": "5AEKhKc6WDnY6oi18OWcQN",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/5AEKhKc6WDnY6oi18OWcQN",
+    "image": "https://i.scdn.co/image/ab67616d0000b27315f75a34651e2aca632a8585",
+    "mostPopularAlbum": {
+      "name": "Excretion of Mortality",
+      "spotifyAlbumId": "5g71TnFPdWkqUCOBAYM0nI",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/5g71TnFPdWkqUCOBAYM0nI",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d0000485115f75a34651e2aca632a8585",
+        "medium": "https://i.scdn.co/image/ab67616d00001e0215f75a34651e2aca632a8585",
+        "large": "https://i.scdn.co/image/ab67616d0000b27315f75a34651e2aca632a8585"
+      },
+      "releaseYear": 2021
+    },
+    "topTracks": [
+      {
+        "name": "Excretion of Mortality",
+        "spotifyTrackId": "1rIlLuW9Mj8NoBar9bkW2Y",
+        "spotifyUrl": "https://open.spotify.com/track/1rIlLuW9Mj8NoBar9bkW2Y",
+        "previewUrl": null,
+        "durationMs": 418800
+      },
+      {
+        "name": "Swamped in Festering Excrementia",
+        "spotifyTrackId": "5GLYr3blO71tjU2oHBoLYC",
+        "spotifyUrl": "https://open.spotify.com/track/5GLYr3blO71tjU2oHBoLYC",
+        "previewUrl": null,
+        "durationMs": 287203
+      },
+      {
+        "name": "Reeking Septic Mass",
+        "spotifyTrackId": "0eZguOK8nxnmUtsPelgpY5",
+        "spotifyUrl": "https://open.spotify.com/track/0eZguOK8nxnmUtsPelgpY5",
+        "previewUrl": null,
+        "durationMs": 261994
+      },
+      {
+        "name": "Vile Yolk of Contagion",
+        "spotifyTrackId": "2D8VaDxfrSjp2Qr7fhX7is",
+        "spotifyUrl": "https://open.spotify.com/track/2D8VaDxfrSjp2Qr7fhX7is",
+        "previewUrl": null,
+        "durationMs": 345000
+      },
+      {
+        "name": "Spewing Purulence",
+        "spotifyTrackId": "299x5rxd4fmT7ffpl4JG6f",
+        "spotifyUrl": "https://open.spotify.com/track/299x5rxd4fmT7ffpl4JG6f",
+        "previewUrl": null,
+        "durationMs": 330071
+      }
+    ]
+  },
+  "max-iggor-cavalera": {
+    "name": "max-iggor-cavalera",
+    "normalizedName": "max-iggor-cavalera",
+    "fetchedAt": "2026-02-05T22:50:52.591Z",
+    "dataSource": "spotify",
+    "genres": [],
+    "popularity": 1,
+    "spotifyArtistId": "1FBJWhRpdQvo1spKGVFjEX",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/1FBJWhRpdQvo1spKGVFjEX",
+    "topTracks": [
+      {
+        "name": "Roots Bloody Roots - (Live at Wacken 2017)",
+        "spotifyTrackId": "0pX5eZ32RwgPvgH0R1SK9m",
+        "spotifyUrl": "https://open.spotify.com/track/0pX5eZ32RwgPvgH0R1SK9m",
+        "previewUrl": null,
+        "durationMs": 253333
+      }
+    ]
+  },
+  "sulaco": {
+    "name": "sulaco",
+    "normalizedName": "sulaco",
+    "fetchedAt": "2026-02-05T22:50:53.714Z",
+    "dataSource": "spotify",
+    "genres": [
+      "mathcore",
+      "grindcore",
+      "noise rock",
+      "death metal"
+    ],
+    "popularity": 1,
+    "spotifyArtistId": "2uwOHrM3C1CedniDmwtpUd",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/2uwOHrM3C1CedniDmwtpUd",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb194415053822ba56006b6ddd",
+    "mostPopularAlbum": {
+      "name": "Tearing Through The Roots",
+      "spotifyAlbumId": "3vXVGIb91PZ7aRKnkSy37x",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/3vXVGIb91PZ7aRKnkSy37x",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851d413c211760fe22d381ddb65",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02d413c211760fe22d381ddb65",
+        "large": "https://i.scdn.co/image/ab67616d0000b273d413c211760fe22d381ddb65"
+      },
+      "releaseYear": 2006
+    },
+    "topTracks": [
+      {
+        "name": "Middle Man",
+        "spotifyTrackId": "4i4VRpeQjWU94lNrnsj1Li",
+        "spotifyUrl": "https://open.spotify.com/track/4i4VRpeQjWU94lNrnsj1Li",
+        "previewUrl": null,
+        "durationMs": 258560
+      },
+      {
+        "name": "Disguise",
+        "spotifyTrackId": "7D8XyCbvXFwxxM7JTpWNib",
+        "spotifyUrl": "https://open.spotify.com/track/7D8XyCbvXFwxxM7JTpWNib",
+        "previewUrl": null,
+        "durationMs": 309983
+      },
+      {
+        "name": "Full Tomb",
+        "spotifyTrackId": "3f2XmK2CWoL5eVaCD51hPE",
+        "spotifyUrl": "https://open.spotify.com/track/3f2XmK2CWoL5eVaCD51hPE",
+        "previewUrl": null,
+        "durationMs": 121968
+      },
+      {
+        "name": "Fix This",
+        "spotifyTrackId": "0sMZx04OHiwDQ4kvfBIcB4",
+        "spotifyUrl": "https://open.spotify.com/track/0sMZx04OHiwDQ4kvfBIcB4",
+        "previewUrl": null,
+        "durationMs": 197781
+      },
+      {
+        "name": "On the Fence",
+        "spotifyTrackId": "0ZK67TNRL2wvTpGFbVoMyN",
+        "spotifyUrl": "https://open.spotify.com/track/0ZK67TNRL2wvTpGFbVoMyN",
+        "previewUrl": null,
+        "durationMs": 219335
+      }
+    ]
+  },
+  "dirtwire": {
+    "name": "dirtwire",
+    "normalizedName": "dirtwire",
+    "fetchedAt": "2026-02-05T22:50:55.043Z",
+    "dataSource": "spotify",
+    "genres": [],
+    "popularity": 47,
+    "spotifyArtistId": "0hc2qwaU2xy7LUd0FRjcHK",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/0hc2qwaU2xy7LUd0FRjcHK",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb33c7aa4aceee9ba261825013",
+    "mostPopularAlbum": {
+      "name": "Electric River",
+      "spotifyAlbumId": "2h0xe7QZC3YTRz3LLuEDx7",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/2h0xe7QZC3YTRz3LLuEDx7",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d000048515849053c367a2c872eda22ac",
+        "medium": "https://i.scdn.co/image/ab67616d00001e025849053c367a2c872eda22ac",
+        "large": "https://i.scdn.co/image/ab67616d0000b2735849053c367a2c872eda22ac"
+      },
+      "releaseYear": 2019
+    },
+    "topTracks": [
+      {
+        "name": "Stranger",
+        "spotifyTrackId": "026jMTqOYyHRd2D5n6pWda",
+        "spotifyUrl": "https://open.spotify.com/track/026jMTqOYyHRd2D5n6pWda",
+        "previewUrl": null,
+        "durationMs": 185422
+      },
+      {
+        "name": "Sailing the Solar Flares",
+        "spotifyTrackId": "56ahkH80GMeXhe5dZWZLD1",
+        "spotifyUrl": "https://open.spotify.com/track/56ahkH80GMeXhe5dZWZLD1",
+        "previewUrl": null,
+        "durationMs": 254815
+      },
+      {
+        "name": "Strength in One",
+        "spotifyTrackId": "0qOn7Z91EYtFUENpjKXvtP",
+        "spotifyUrl": "https://open.spotify.com/track/0qOn7Z91EYtFUENpjKXvtP",
+        "previewUrl": null,
+        "durationMs": 240000
+      },
+      {
+        "name": "Capricorn",
+        "spotifyTrackId": "5NhChflsUwFOqfTiMVKHD7",
+        "spotifyUrl": "https://open.spotify.com/track/5NhChflsUwFOqfTiMVKHD7",
+        "previewUrl": null,
+        "durationMs": 282857
+      },
+      {
+        "name": "Ankaa",
+        "spotifyTrackId": "2oW9vkk27Q7OEGEzeumbFi",
+        "spotifyUrl": "https://open.spotify.com/track/2oW9vkk27Q7OEGEzeumbFi",
+        "previewUrl": null,
+        "durationMs": 230243
+      }
+    ]
+  },
+  "malignancy": {
+    "name": "malignancy",
+    "normalizedName": "malignancy",
+    "fetchedAt": "2026-02-05T22:50:56.404Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal",
+      "grindcore"
+    ],
+    "popularity": 26,
+    "spotifyArtistId": "4ypzf3n2YDMIj41Y2WVHYW",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/4ypzf3n2YDMIj41Y2WVHYW",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a23a67a2375007be6f3d9b4f",
+    "mostPopularAlbum": {
+      "name": "Intrauterine Cannibalism",
+      "spotifyAlbumId": "5dM6Cg01xkGzHESIOZVrWv",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/5dM6Cg01xkGzHESIOZVrWv",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851dd5df1bb7093efb8868072da",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02dd5df1bb7093efb8868072da",
+        "large": "https://i.scdn.co/image/ab67616d0000b273dd5df1bb7093efb8868072da"
+      },
+      "releaseYear": 2019
+    },
+    "topTracks": [
+      {
+        "name": "Rotten Seed - 1999",
+        "spotifyTrackId": "38O64Ti5hCExNYbYMBKUxf",
+        "spotifyUrl": "https://open.spotify.com/track/38O64Ti5hCExNYbYMBKUxf",
+        "previewUrl": null,
+        "durationMs": 196813
+      },
+      {
+        "name": "Internal Corruption - 1999",
+        "spotifyTrackId": "0FdQ20Paf03xI9HVdr4mml",
+        "spotifyUrl": "https://open.spotify.com/track/0FdQ20Paf03xI9HVdr4mml",
+        "previewUrl": null,
+        "durationMs": 107746
+      },
+      {
+        "name": "Internal Corruption",
+        "spotifyTrackId": "3sc67EnlFvoFHMgO1usvBW",
+        "spotifyUrl": "https://open.spotify.com/track/3sc67EnlFvoFHMgO1usvBW",
+        "previewUrl": null,
+        "durationMs": 107400
+      },
+      {
+        "name": "Rotten Seed",
+        "spotifyTrackId": "1EfenhYQdqcFoKqchKKDEf",
+        "spotifyUrl": "https://open.spotify.com/track/1EfenhYQdqcFoKqchKKDEf",
+        "previewUrl": null,
+        "durationMs": 192373
+      },
+      {
+        "name": "Intrauterine Cannibalism",
+        "spotifyTrackId": "3TVurDWLpZNmAO1wk6tRji",
+        "spotifyUrl": "https://open.spotify.com/track/3TVurDWLpZNmAO1wk6tRji",
+        "previewUrl": null,
+        "durationMs": 93960
+      }
+    ]
+  },
+  "beheaded": {
+    "name": "beheaded",
+    "normalizedName": "beheaded",
+    "fetchedAt": "2026-02-05T22:50:57.568Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal",
+      "grindcore"
+    ],
+    "popularity": 18,
+    "spotifyArtistId": "4J08tm60Pk8FMQynk0Up4o",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/4J08tm60Pk8FMQynk0Up4o",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb8a1f5a6e45f15bdac80334ea",
+    "mostPopularAlbum": {
+      "name": "Beast Incarnate",
+      "spotifyAlbumId": "6hQTm1hbrbzi53KU1cy1MY",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/6hQTm1hbrbzi53KU1cy1MY",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d0000485178bf925d7a4512f5ffeea933",
+        "medium": "https://i.scdn.co/image/ab67616d00001e0278bf925d7a4512f5ffeea933",
+        "large": "https://i.scdn.co/image/ab67616d0000b27378bf925d7a4512f5ffeea933"
+      },
+      "releaseYear": 2017
+    },
+    "topTracks": [
+      {
+        "name": "Beast Incarnate",
+        "spotifyTrackId": "0Xm0dF2MmJctbAi5iz64XL",
+        "spotifyUrl": "https://open.spotify.com/track/0Xm0dF2MmJctbAi5iz64XL",
+        "previewUrl": null,
+        "durationMs": 261946
+      },
+      {
+        "name": "A greater terror",
+        "spotifyTrackId": "6W36dxWmGdynLDpGPQu4tV",
+        "spotifyUrl": "https://open.spotify.com/track/6W36dxWmGdynLDpGPQu4tV",
+        "previewUrl": null,
+        "durationMs": 263146
+      },
+      {
+        "name": "Lament of a Sordid God",
+        "spotifyTrackId": "1YE0tEFvrqAReLkxEuZ0NB",
+        "spotifyUrl": "https://open.spotify.com/track/1YE0tEFvrqAReLkxEuZ0NB",
+        "previewUrl": null,
+        "durationMs": 240240
+      },
+      {
+        "name": "The Horror Breathes",
+        "spotifyTrackId": "28cYGzhveFMXheAA0lXv7p",
+        "spotifyUrl": "https://open.spotify.com/track/28cYGzhveFMXheAA0lXv7p",
+        "previewUrl": null,
+        "durationMs": 241173
+      },
+      {
+        "name": "Crossing the House of Knives",
+        "spotifyTrackId": "0CxWPON8exAeAfA4VrwgFA",
+        "spotifyUrl": "https://open.spotify.com/track/0CxWPON8exAeAfA4VrwgFA",
+        "previewUrl": null,
+        "durationMs": 208480
+      }
+    ]
+  },
+  "wino": {
+    "name": "wino",
+    "normalizedName": "wino",
+    "fetchedAt": "2026-02-05T22:54:25.835Z",
+    "dataSource": "spotify",
+    "genres": [
+      "stoner metal",
+      "doom metal",
+      "stoner rock",
+      "sludge metal",
+      "roots rock"
+    ],
+    "popularity": 14,
+    "spotifyArtistId": "6vP6pVpKHwEFO4wX9eT4cv",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/6vP6pVpKHwEFO4wX9eT4cv",
+    "image": "https://i.scdn.co/image/59105b14fada6a3cd41238d57191b49dc3cdbacd",
+    "mostPopularAlbum": {
+      "name": "Create Or Die",
+      "spotifyAlbumId": "5oKLHa0lHgFf9bIVkBYHlI",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/5oKLHa0lHgFf9bIVkBYHlI",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851f663c30175290449f06dd85a",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02f663c30175290449f06dd85a",
+        "large": "https://i.scdn.co/image/ab67616d0000b273f663c30175290449f06dd85a"
+      },
+      "releaseYear": 2025
+    },
+    "topTracks": [
+      {
+        "name": "Anhedonia",
+        "spotifyTrackId": "2BRH8mgHALrCU4hRiEfC8u",
+        "spotifyUrl": "https://open.spotify.com/track/2BRH8mgHALrCU4hRiEfC8u",
+        "previewUrl": null,
+        "durationMs": 294438
+      },
+      {
+        "name": "New Terms",
+        "spotifyTrackId": "35OieEiQoKyVDQiEkLJXDk",
+        "spotifyUrl": "https://open.spotify.com/track/35OieEiQoKyVDQiEkLJXDk",
+        "previewUrl": null,
+        "durationMs": 266883
+      },
+      {
+        "name": "Us Or Them",
+        "spotifyTrackId": "6NDbfmi8j2ecWy5u3g1nkH",
+        "spotifyUrl": "https://open.spotify.com/track/6NDbfmi8j2ecWy5u3g1nkH",
+        "previewUrl": null,
+        "durationMs": 360759
+      },
+      {
+        "name": "Hopeful Defiance",
+        "spotifyTrackId": "39Lt5A1SdbU0oYgBY5WC7k",
+        "spotifyUrl": "https://open.spotify.com/track/39Lt5A1SdbU0oYgBY5WC7k",
+        "previewUrl": null,
+        "durationMs": 222292
+      },
+      {
+        "name": "Carolina Fox",
+        "spotifyTrackId": "1fTbrC3qBpTocqprjjiOIQ",
+        "spotifyUrl": "https://open.spotify.com/track/1fTbrC3qBpTocqprjjiOIQ",
+        "previewUrl": null,
+        "durationMs": 180774
+      }
+    ]
+  },
+  "midnight": {
+    "name": "midnight",
+    "normalizedName": "midnight",
+    "fetchedAt": "2026-02-05T22:54:27.257Z",
+    "dataSource": "spotify",
+    "genres": [
+      "speed metal",
+      "thrash metal",
+      "black metal"
+    ],
+    "popularity": 35,
+    "spotifyArtistId": "28KjD5HkkDDytQzKW7JzTp",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/28KjD5HkkDDytQzKW7JzTp",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebe8f087e1553e9712e1d73f37",
+    "mostPopularAlbum": {
+      "name": "Steel, Rust and Disgust",
+      "spotifyAlbumId": "6JH5sUBAgnFQavboZwslPG",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/6JH5sUBAgnFQavboZwslPG",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851b0b9e0996d821388f851a51d",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02b0b9e0996d821388f851a51d",
+        "large": "https://i.scdn.co/image/ab67616d0000b273b0b9e0996d821388f851a51d"
+      },
+      "releaseYear": 2025
+    },
+    "topTracks": [
+      {
+        "name": "You Can't Stop Steel",
+        "spotifyTrackId": "58qToQt5BeTlrqbJbfZKWR",
+        "spotifyUrl": "https://open.spotify.com/track/58qToQt5BeTlrqbJbfZKWR",
+        "previewUrl": null,
+        "durationMs": 202320
+      },
+      {
+        "name": "Satanic Royalty",
+        "spotifyTrackId": "6AMHU0sIM1xjGlnq1Jlm8W",
+        "spotifyUrl": "https://open.spotify.com/track/6AMHU0sIM1xjGlnq1Jlm8W",
+        "previewUrl": null,
+        "durationMs": 203893
+      },
+      {
+        "name": "Fucking Speed and Darkness",
+        "spotifyTrackId": "4tVzcd2nExn6zGYJRHwV4q",
+        "spotifyUrl": "https://open.spotify.com/track/4tVzcd2nExn6zGYJRHwV4q",
+        "previewUrl": null,
+        "durationMs": 238506
+      },
+      {
+        "name": "Rip This Hell",
+        "spotifyTrackId": "0As8gVOl7cEMYjEsNOIlo8",
+        "spotifyUrl": "https://open.spotify.com/track/0As8gVOl7cEMYjEsNOIlo8",
+        "previewUrl": null,
+        "durationMs": 170213
+      },
+      {
+        "name": "Unholy and Rotten",
+        "spotifyTrackId": "3zP46eiF4wttzPg6TUDaJz",
+        "spotifyUrl": "https://open.spotify.com/track/3zP46eiF4wttzPg6TUDaJz",
+        "previewUrl": null,
+        "durationMs": 214493
+      }
+    ]
+  },
+  "lik": {
+    "name": "lik",
+    "normalizedName": "lik",
+    "fetchedAt": "2026-02-05T22:54:28.110Z",
+    "dataSource": "spotify",
+    "genres": [
+      "death metal"
+    ],
+    "popularity": 28,
+    "spotifyArtistId": "0D5ly26kWmFNj6cbzIpJn7",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/0D5ly26kWmFNj6cbzIpJn7",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb14353978c9aacc6fa3a2dc6b",
+    "mostPopularAlbum": {
+      "name": "Necro",
+      "spotifyAlbumId": "29T8qlzUqSTOIYKsNXUBRD",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/29T8qlzUqSTOIYKsNXUBRD",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851180c13c7693535f9ba13eb4b",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02180c13c7693535f9ba13eb4b",
+        "large": "https://i.scdn.co/image/ab67616d0000b273180c13c7693535f9ba13eb4b"
+      },
+      "releaseYear": 2025
+    },
+    "topTracks": [
+      {
+        "name": "Funeral Anthem",
+        "spotifyTrackId": "4EIQKBSIHTLgPYpTFnApu3",
+        "spotifyUrl": "https://open.spotify.com/track/4EIQKBSIHTLgPYpTFnApu3",
+        "previewUrl": null,
+        "durationMs": 208000
+      },
+      {
+        "name": "War Praise",
+        "spotifyTrackId": "6RM6iFscmNuSWUjKyafopk",
+        "spotifyUrl": "https://open.spotify.com/track/6RM6iFscmNuSWUjKyafopk",
+        "previewUrl": null,
+        "durationMs": 219524
+      },
+      {
+        "name": "Deceased",
+        "spotifyTrackId": "1etjIMdoTVZC4A3WlM5Haf",
+        "spotifyUrl": "https://open.spotify.com/track/1etjIMdoTVZC4A3WlM5Haf",
+        "previewUrl": null,
+        "durationMs": 260500
+      },
+      {
+        "name": "They",
+        "spotifyTrackId": "7deEBxGQPX5QWU1kIrI5CC",
+        "spotifyUrl": "https://open.spotify.com/track/7deEBxGQPX5QWU1kIrI5CC",
+        "previewUrl": null,
+        "durationMs": 242275
+      },
+      {
+        "name": "Morgue Rat",
+        "spotifyTrackId": "6hILlNJYj9U1hAdUhp0gtY",
+        "spotifyUrl": "https://open.spotify.com/track/6hILlNJYj9U1hAdUhp0gtY",
+        "previewUrl": null,
+        "durationMs": 298200
+      }
+    ]
+  },
+  "concrete": {
+    "name": "concrete",
+    "normalizedName": "concrete",
+    "fetchedAt": "2026-02-05T22:55:08.563Z",
+    "dataSource": "spotify",
+    "genres": [
+      "hardcore"
+    ],
+    "popularity": 7,
+    "spotifyArtistId": "6i5iJD3n6zren2OlmwS0aI",
+    "spotifyArtistUrl": "https://open.spotify.com/artist/6i5iJD3n6zren2OlmwS0aI",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebc5b1edf58e4e76f490bb3429",
+    "mostPopularAlbum": {
+      "name": "Mortualis",
+      "spotifyAlbumId": "24aUY4pMGeqNr2S716k0az",
+      "spotifyAlbumUrl": "https://open.spotify.com/album/24aUY4pMGeqNr2S716k0az",
+      "coverArt": {
+        "small": "https://i.scdn.co/image/ab67616d00004851d7c8482a628da2c8b4ea21c9",
+        "medium": "https://i.scdn.co/image/ab67616d00001e02d7c8482a628da2c8b4ea21c9",
+        "large": "https://i.scdn.co/image/ab67616d0000b273d7c8482a628da2c8b4ea21c9"
+      },
+      "releaseYear": 2025
+    },
+    "topTracks": [
+      {
+        "name": "Executing Vengeance",
+        "spotifyTrackId": "5u75gBgN9Oj6SZWwo0GMWt",
+        "spotifyUrl": "https://open.spotify.com/track/5u75gBgN9Oj6SZWwo0GMWt",
+        "previewUrl": null,
+        "durationMs": 187931
+      },
+      {
+        "name": "Cyber Vermin",
+        "spotifyTrackId": "4DlRZHiPCt8xACQWKL8cK8",
+        "spotifyUrl": "https://open.spotify.com/track/4DlRZHiPCt8xACQWKL8cK8",
+        "previewUrl": null,
+        "durationMs": 209869
+      },
+      {
+        "name": "Starving Serpent",
+        "spotifyTrackId": "6zRfCkfQrSHYQwNl4idwf0",
+        "spotifyUrl": "https://open.spotify.com/track/6zRfCkfQrSHYQwNl4idwf0",
+        "previewUrl": null,
+        "durationMs": 202528
+      },
+      {
+        "name": "Illusion Of God",
+        "spotifyTrackId": "3k0UZHywz85Mcds7N6PSNH",
+        "spotifyUrl": "https://open.spotify.com/track/3k0UZHywz85Mcds7N6PSNH",
+        "previewUrl": null,
+        "durationMs": 169141
+      },
+      {
+        "name": "Final War",
+        "spotifyTrackId": "2r3UsDOEVwpXfgpm9IX4S1",
+        "spotifyUrl": "https://open.spotify.com/track/2r3UsDOEVwpXfgpm9IX4S1",
+        "previewUrl": null,
+        "durationMs": 206664
       }
     ]
   }

@@ -16,5 +16,21 @@
   "death-to-all": {
     "spotifyArtistId": "4f5V3PQ66nIrBCqugJtaGn",
     "note": "Death tribute band featuring former members"
+  },
+  "wino": {
+    "spotifyArtistId": "6vP6pVpKHwEFO4wX9eT4cv",
+    "note": "Scott 'Wino' Weinrich solo/acoustic"
+  },
+  "midnight": {
+    "spotifyArtistId": "28KjD5HkkDDytQzKW7JzTp",
+    "note": "US Black/Speed Metal"
+  },
+  "lik": {
+    "spotifyArtistId": "0D5ly26kWmFNj6cbzIpJn7",
+    "note": "Swedish Death Metal"
+  },
+  "concrete": {
+    "spotifyArtistId": "6i5iJD3n6zren2OlmwS0aI",
+    "note": "NYHC / Metal"
   }
 }

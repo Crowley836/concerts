@@ -382,7 +382,11 @@ async function enrichSpotifyMetadata() {
       artist.fetchedAt = new Date().toISOString()
 
       // Populate missing image from Spotify
-      if ((!artist.image || artist.image.includes('theaudiodb.com/images/media/artist/thumb/')) && spotifyArtist.images && spotifyArtist.images.length > 0) {
+      const isPlaceholder = !artist.image ||
+        artist.image.includes('theaudiodb.com/images/media/artist/thumb/') ||
+        artist.image.includes('2a96cbd8b46e442fc41c2b86b821562f.png')
+
+      if (isPlaceholder && spotifyArtist.images && spotifyArtist.images.length > 0) {
         // Spotify images are ordered by size (usually Large, Medium, Small)
         // We prefer the first one (largest) for high quality
         artist.image = spotifyArtist.images[0].url
