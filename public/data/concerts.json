@@ -5,7 +5,7 @@
       "date": "1994-06-06",
       "headliner": "Pink Floyd",
       "headlinerNormalized": "pink-floyd",
-      "genre": "Progressive Rock",
+      "genre": "progressive rock",
       "genreNormalized": "progressive-rock",
       "openers": [],
       "venue": "Carrier Dome",
@@ -30,8 +30,8 @@
       "date": "1994-08-07",
       "headliner": "Collective Soul",
       "headlinerNormalized": "collective-soul",
-      "genre": "Rock",
-      "genreNormalized": "rock",
+      "genre": "post-grunge",
+      "genreNormalized": "post-grunge",
       "openers": [],
       "venue": "Vernon Downs",
       "venueNormalized": "vernon-downs",
@@ -55,7 +55,7 @@
       "date": "1994-11-12",
       "headliner": "Candlebox",
       "headlinerNormalized": "candlebox",
-      "genre": "Grunge",
+      "genre": "grunge",
       "genreNormalized": "grunge",
       "openers": [
         "The Flaming Lips"
@@ -82,7 +82,7 @@
       "date": "1995-02-14",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Fear Factory"
@@ -109,7 +109,7 @@
       "date": "1996-01-15",
       "headliner": "Marilyn Manson",
       "headlinerNormalized": "marilyn-manson",
-      "genre": "Industrial Metal",
+      "genre": "industrial metal",
       "genreNormalized": "industrial-metal",
       "openers": [],
       "venue": "Lost Horizon",
@@ -134,8 +134,8 @@
       "date": "1996-01-25",
       "headliner": "Ozzy Osbourne",
       "headlinerNormalized": "ozzy-osbourne",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "genre": "metal",
+      "genreNormalized": "metal",
       "openers": [
         "Korn",
         "Life of Agony"
@@ -162,7 +162,7 @@
       "date": "1996-03-03",
       "headliner": "Crowbar",
       "headlinerNormalized": "crowbar",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Lost Horizon",
@@ -187,8 +187,8 @@
       "date": "1997-05-18",
       "headliner": "Neurosis",
       "headlinerNormalized": "neurosis",
-      "genre": "Post-Hardcore",
-      "genreNormalized": "post-hardcore",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [
         "Brutal Truth",
         "EyeHateGod",
@@ -216,7 +216,7 @@
       "date": "1997-08-06",
       "headliner": "Coal Chamber",
       "headlinerNormalized": "coal-chamber",
-      "genre": "Nu Metal",
+      "genre": "nu metal",
       "genreNormalized": "nu-metal",
       "openers": [],
       "venue": "Lost Horizon",
@@ -241,7 +241,7 @@
       "date": "1998-11-25",
       "headliner": "Fear Factory",
       "headlinerNormalized": "fear-factory",
-      "genre": "Industrial Metal",
+      "genre": "industrial metal",
       "genreNormalized": "industrial-metal",
       "openers": [],
       "venue": "Lost Horizon",
@@ -297,7 +297,7 @@
       "date": "2000-11-30",
       "headliner": "Deicide",
       "headlinerNormalized": "deicide",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Marduk"
@@ -324,8 +324,8 @@
       "date": "2001-01-18",
       "headliner": "Insane Clown Posse",
       "headlinerNormalized": "insane-clown-posse",
-      "genre": "Hip-Hop",
-      "genreNormalized": "hip-hop",
+      "genre": "horrorcore",
+      "genreNormalized": "horrorcore",
       "openers": [],
       "venue": "Water St. Music Hall",
       "venueNormalized": "water-st-music-hall",
@@ -349,8 +349,8 @@
       "date": "2001-03-11",
       "headliner": "Pantera",
       "headlinerNormalized": "pantera",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Soulfly",
         "Morbid Angel"
@@ -377,7 +377,7 @@
       "date": "2001-10-12",
       "headliner": "Six Feet Under",
       "headlinerNormalized": "six-feet-under",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Skinless",
@@ -405,7 +405,7 @@
       "date": "2002-04-18",
       "headliner": "Gwar",
       "headlinerNormalized": "gwar",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "Lost Horizon",
@@ -458,8 +458,8 @@
       "date": "2002-07-09",
       "headliner": "Down",
       "headlinerNormalized": "down",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Water Street Music Hall",
       "venueNormalized": "water-street-music-hall",
@@ -508,7 +508,7 @@
       "date": "2002-11-12",
       "headliner": "Gwar",
       "headlinerNormalized": "gwar",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "Showplace Theatre",
@@ -533,8 +533,8 @@
       "date": "2002-11-20",
       "headliner": "Down",
       "headlinerNormalized": "down",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Trocadero Theatre",
       "venueNormalized": "trocadero-theatre",
@@ -558,8 +558,8 @@
       "date": "2003-05-03",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Authority Zero",
         "Depswa"
@@ -586,8 +586,8 @@
       "date": "2003-05-12",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [],
       "venue": "Recher Theatre",
       "venueNormalized": "recher-theatre",
@@ -672,7 +672,7 @@
       "date": "2004-02-04",
       "headliner": "Six Feet Under",
       "headlinerNormalized": "six-feet-under",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Recher Theatre",
@@ -697,7 +697,7 @@
       "date": "2004-04-04",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "(Stop at Nothing Lineup)"
@@ -724,7 +724,7 @@
       "date": "2004-04-15",
       "headliner": "Morbid Angel",
       "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Suffocation",
@@ -753,7 +753,7 @@
       "date": "2004-05-30",
       "headliner": "Suffocation",
       "headlinerNormalized": "suffocation",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Behemoth"
@@ -780,8 +780,8 @@
       "date": "2004-08-08",
       "headliner": "Machine Head",
       "headlinerNormalized": "machine-head",
-      "genre": "Alternative Metal",
-      "genreNormalized": "alternative-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "(Burn My Eyes Set) Chimaira"
       ],
@@ -836,7 +836,7 @@
       "date": "2004-08-29",
       "headliner": "Six Feet Under",
       "headlinerNormalized": "six-feet-under",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Internal Bleeding"
@@ -863,8 +863,8 @@
       "date": "2004-09-18",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [],
       "venue": "Recher Theatre",
       "venueNormalized": "recher-theatre",
@@ -888,8 +888,8 @@
       "date": "2004-10-23",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [],
       "venue": "Recher Theatre",
       "venueNormalized": "recher-theatre",
@@ -913,7 +913,7 @@
       "date": "2004-12-08",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "The Red Chord"
@@ -940,7 +940,7 @@
       "date": "2005-02-25",
       "headliner": "Morbid Angel",
       "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Soulfy"
@@ -967,7 +967,7 @@
       "date": "2005-06-09",
       "headliner": "Corrosion of Conformity",
       "headlinerNormalized": "corrosion-of-conformity",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "Crowbar",
@@ -1054,7 +1054,7 @@
       "date": "2005-08-14",
       "headliner": "Six Feet Under",
       "headlinerNormalized": "six-feet-under",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Recher Theatre",
@@ -1079,7 +1079,7 @@
       "date": "2005-11-15",
       "headliner": "Fear Factory",
       "headlinerNormalized": "fear-factory",
-      "genre": "Industrial Metal",
+      "genre": "industrial metal",
       "genreNormalized": "industrial-metal",
       "openers": [
         "Strapping Young Lad"
@@ -1161,7 +1161,7 @@
       "date": "2006-07-14",
       "headliner": "Emperor",
       "headlinerNormalized": "emperor",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "B.B. King Blues Club & Grill",
@@ -1186,8 +1186,8 @@
       "date": "2006-10-24",
       "headliner": "Alice In Chains",
       "headlinerNormalized": "alice-in-chains",
-      "genre": "Alternative Metal",
-      "genreNormalized": "alternative-metal",
+      "genre": "grunge",
+      "genreNormalized": "grunge",
       "openers": [],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
@@ -1211,7 +1211,7 @@
       "date": "2006-11-10",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Dying Fetus",
@@ -1264,7 +1264,7 @@
       "date": "2007-02-20",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "9:30 Club",
@@ -1289,7 +1289,7 @@
       "date": "2007-05-01",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Sonar",
@@ -1373,7 +1373,7 @@
       "date": "2007-07-07",
       "headliner": "Necrophagist",
       "headlinerNormalized": "necrophagist",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Sonar",
@@ -1398,8 +1398,8 @@
       "date": "2007-07-12",
       "headliner": "Amon Amarth",
       "headlinerNormalized": "amon-amarth",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "melodic death metal",
+      "genreNormalized": "melodic-death-metal",
       "openers": [
         "Goatwhore"
       ],
@@ -1425,8 +1425,8 @@
       "date": "2007-10-20",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "Downtown",
       "venueNormalized": "downtown",
@@ -1450,8 +1450,8 @@
       "date": "2007-10-31",
       "headliner": "Down",
       "headlinerNormalized": "down",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [
         "The Sword",
         "Spiderbait"
@@ -1478,8 +1478,8 @@
       "date": "2007-12-31",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
@@ -1503,8 +1503,8 @@
       "date": "2008-02-09",
       "headliner": "Down",
       "headlinerNormalized": "down",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Starland Ballroom",
       "venueNormalized": "starland-ballroom",
@@ -1528,8 +1528,8 @@
       "date": "2008-02-28",
       "headliner": "Kingdom of Sorrow",
       "headlinerNormalized": "kingdom-of-sorrow",
-      "genre": "Hardcore",
-      "genreNormalized": "hardcore",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Ottobar",
       "venueNormalized": "ottobar",
@@ -1553,7 +1553,7 @@
       "date": "2008-04-12",
       "headliner": "Testament",
       "headlinerNormalized": "testament",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "Starland Ballroom",
@@ -1635,7 +1635,7 @@
       "date": "2008-09-10",
       "headliner": "Carcass",
       "headlinerNormalized": "carcass",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Suffocation",
@@ -1664,8 +1664,8 @@
       "date": "2008-12-01",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "9:30 Club",
       "venueNormalized": "9-30-club",
@@ -1689,8 +1689,8 @@
       "date": "2008-12-31",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
@@ -1714,8 +1714,8 @@
       "date": "2009-01-17",
       "headliner": "Metallica",
       "headlinerNormalized": "metallica",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "metal",
+      "genreNormalized": "metal",
       "openers": [
         "Machine Head"
       ],
@@ -1741,7 +1741,7 @@
       "date": "2009-02-11",
       "headliner": "Vital Remains",
       "headlinerNormalized": "vital-remains",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "(With Glen Benton)"
@@ -1768,7 +1768,7 @@
       "date": "2009-03-14",
       "headliner": "Misery Index",
       "headlinerNormalized": "misery-index",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Vital Remains"
@@ -1853,8 +1853,8 @@
       "date": "2009-06-30",
       "headliner": "Hank 3",
       "headlinerNormalized": "hank-3",
-      "genre": "Country",
-      "genreNormalized": "country",
+      "genre": "outlaw country",
+      "genreNormalized": "outlaw-country",
       "openers": [],
       "venue": "9:30 Club",
       "venueNormalized": "9-30-club",
@@ -1878,7 +1878,7 @@
       "date": "2009-07-30",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Marilyn Manson"
@@ -1905,8 +1905,8 @@
       "date": "2009-09-08",
       "headliner": "Down",
       "headlinerNormalized": "down",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [
         "The Melvins"
       ],
@@ -1932,8 +1932,8 @@
       "date": "2009-09-12",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "Electric Factory",
       "venueNormalized": "electric-factory",
@@ -1957,7 +1957,7 @@
       "date": "2009-09-25",
       "headliner": "Satyricon",
       "headlinerNormalized": "satyricon",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Sonar",
@@ -1982,7 +1982,7 @@
       "date": "2009-09-27",
       "headliner": "Gwar",
       "headlinerNormalized": "gwar",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "Sonar",
@@ -2007,7 +2007,7 @@
       "date": "2009-10-19",
       "headliner": "God Dethroned",
       "headlinerNormalized": "god-dethroned",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Sonar",
@@ -2032,8 +2032,8 @@
       "date": "2009-10-20",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Prong",
         "Cattle Decapitation"
@@ -2060,7 +2060,7 @@
       "date": "2009-10-23",
       "headliner": "EyeHateGod",
       "headlinerNormalized": "eyehategod",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "Pig Destroyer",
@@ -2088,7 +2088,7 @@
       "date": "2009-11-09",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Hate Eternal"
@@ -2115,7 +2115,7 @@
       "date": "2009-11-29",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Vital Remains"
@@ -2142,7 +2142,7 @@
       "date": "2009-12-10",
       "headliner": "Gwar",
       "headlinerNormalized": "gwar",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "9:30 Club",
@@ -2167,8 +2167,8 @@
       "date": "2009-12-28",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "9:30 Club",
       "venueNormalized": "9-30-club",
@@ -2192,7 +2192,7 @@
       "date": "2010-01-15",
       "headliner": "Nile",
       "headlinerNormalized": "nile",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Immolation",
@@ -2220,8 +2220,8 @@
       "date": "2010-03-09",
       "headliner": "Goatwhore",
       "headlinerNormalized": "goatwhore",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "black metal",
+      "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Sidebar",
       "venueNormalized": "sidebar",
@@ -2245,7 +2245,7 @@
       "date": "2010-03-16",
       "headliner": "Testament",
       "headlinerNormalized": "testament",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Exodus"
@@ -2272,7 +2272,7 @@
       "date": "2010-03-17",
       "headliner": "Megadeth",
       "headlinerNormalized": "megadeth",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "Rams Head Live",
@@ -2297,7 +2297,7 @@
       "date": "2010-03-21",
       "headliner": "Misery Index",
       "headlinerNormalized": "misery-index",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Talking Head",
@@ -2322,7 +2322,7 @@
       "date": "2010-04-20",
       "headliner": "Mastodon",
       "headlinerNormalized": "mastodon",
-      "genre": "Progressive Metal",
+      "genre": "progressive metal",
       "genreNormalized": "progressive-metal",
       "openers": [],
       "venue": "Rams Head Live",
@@ -2347,7 +2347,7 @@
       "date": "2010-05-06",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Misery Index"
@@ -2406,8 +2406,8 @@
       "date": "2010-06-11",
       "headliner": "Goatwhore",
       "headlinerNormalized": "goatwhore",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "black metal",
+      "genreNormalized": "black-metal",
       "openers": [
         "Misery Index"
       ],
@@ -2433,7 +2433,7 @@
       "date": "2010-08-15",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Megadeth",
@@ -2493,7 +2493,7 @@
       "date": "2011-02-19",
       "headliner": "Deicide",
       "headlinerNormalized": "deicide",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Jungle Rot"
@@ -2554,7 +2554,7 @@
       "date": "2011-09-11",
       "headliner": "Grave",
       "headlinerNormalized": "grave",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Entombed",
@@ -2583,7 +2583,7 @@
       "date": "2011-10-08",
       "headliner": "Immolation",
       "headlinerNormalized": "immolation",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Jungle Rot"
@@ -2610,8 +2610,8 @@
       "date": "2011-10-18",
       "headliner": "Cavalera Conspiracy",
       "headlinerNormalized": "cavalera-conspiracy",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Otep"
       ],
@@ -2637,7 +2637,7 @@
       "date": "2011-11-05",
       "headliner": "Mayhem",
       "headlinerNormalized": "mayhem",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Montage Music Hall",
@@ -2662,7 +2662,7 @@
       "date": "2011-11-16",
       "headliner": "Judas Priest",
       "headlinerNormalized": "judas-priest",
-      "genre": "Heavy Metal",
+      "genre": "heavy metal",
       "genreNormalized": "heavy-metal",
       "openers": [
         "Black Label Society"
@@ -2720,7 +2720,7 @@
       "date": "2012-03-22",
       "headliner": "Gwar",
       "headlinerNormalized": "gwar",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Ghoul",
@@ -2748,8 +2748,8 @@
       "date": "2012-05-17",
       "headliner": "Joe Bonamassa",
       "headlinerNormalized": "joe-bonamassa",
-      "genre": "Rock",
-      "genreNormalized": "rock",
+      "genre": "blues",
+      "genreNormalized": "blues",
       "openers": [],
       "venue": "Landmark Theatre",
       "venueNormalized": "landmark-theatre",
@@ -2806,7 +2806,7 @@
       "date": "2012-07-24",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Motorhead",
@@ -2834,7 +2834,7 @@
       "date": "2012-09-13",
       "headliner": "Kreator",
       "headlinerNormalized": "kreator",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Accept"
@@ -2861,8 +2861,8 @@
       "date": "2012-09-26",
       "headliner": "Down",
       "headlinerNormalized": "down",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Electric Factory",
       "venueNormalized": "electric-factory",
@@ -2886,7 +2886,7 @@
       "date": "2012-09-29",
       "headliner": "Morbid Angel",
       "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Dark Funeral",
@@ -2914,8 +2914,8 @@
       "date": "2012-10-13",
       "headliner": "Shadows Fall",
       "headlinerNormalized": "shadows-fall",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "metalcore",
+      "genreNormalized": "metalcore",
       "openers": [],
       "venue": "Station 58",
       "venueNormalized": "station-58",
@@ -2939,7 +2939,7 @@
       "date": "2012-11-10",
       "headliner": "Deicide",
       "headlinerNormalized": "deicide",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Station 58",
@@ -2995,7 +2995,7 @@
       "date": "2013-02-16",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Shadows Fall"
@@ -3022,7 +3022,7 @@
       "date": "2013-03-08",
       "headliner": "Nile",
       "headlinerNormalized": "nile",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Montage Music Hall",
@@ -3047,7 +3047,7 @@
       "date": "2013-04-28",
       "headliner": "Fear Factory",
       "headlinerNormalized": "fear-factory",
-      "genre": "Industrial Metal",
+      "genre": "industrial metal",
       "genreNormalized": "industrial-metal",
       "openers": [
         "Hate Eternal"
@@ -3108,7 +3108,7 @@
       "date": "2013-07-27",
       "headliner": "Melvins",
       "headlinerNormalized": "melvins",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Westcott Theater",
@@ -3133,8 +3133,8 @@
       "date": "2013-10-13",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [],
       "venue": "Lost Horizon",
       "venueNormalized": "lost-horizon",
@@ -3158,7 +3158,7 @@
       "date": "2013-10-24",
       "headliner": "Deicide",
       "headlinerNormalized": "deicide",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Broken Hope"
@@ -3216,8 +3216,8 @@
       "date": "2014-02-01",
       "headliner": "Amon Amarth",
       "headlinerNormalized": "amon-amarth",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "melodic death metal",
+      "genreNormalized": "melodic-death-metal",
       "openers": [
         "Enslaved",
         "Skeletonwitch"
@@ -3244,8 +3244,8 @@
       "date": "2014-02-08",
       "headliner": "Southern Hospitality",
       "headlinerNormalized": "southern-hospitality",
-      "genre": "blues",
-      "genreNormalized": "blues",
+      "genre": "modern blues",
+      "genreNormalized": "modern-blues",
       "openers": [],
       "venue": "ArtsQuest’s SteelStacks",
       "venueNormalized": "artsquest-s-steelstacks",
@@ -3269,7 +3269,7 @@
       "date": "2014-04-27",
       "headliner": "High on Fire",
       "headlinerNormalized": "high-on-fire",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "EyeHateGod",
@@ -3297,7 +3297,7 @@
       "date": "2014-05-14",
       "headliner": "Nile",
       "headlinerNormalized": "nile",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Siberia",
@@ -3322,8 +3322,8 @@
       "date": "2014-05-15",
       "headliner": "Amon Amarth",
       "headlinerNormalized": "amon-amarth",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "melodic death metal",
+      "genreNormalized": "melodic-death-metal",
       "openers": [
         "Enslaved",
         "Skeletonwitch"
@@ -3385,8 +3385,8 @@
       "date": "2014-07-05",
       "headliner": "King Buzzo",
       "headlinerNormalized": "king-buzzo",
-      "genre": "Grunge",
-      "genreNormalized": "grunge",
+      "genre": "folk punk",
+      "genreNormalized": "folk-punk",
       "openers": [
         "(Acoustic)"
       ],
@@ -3412,7 +3412,7 @@
       "date": "2014-10-10",
       "headliner": "Suffocation",
       "headlinerNormalized": "suffocation",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Jungle Rot",
@@ -3440,7 +3440,7 @@
       "date": "2014-10-13",
       "headliner": "King Diamond",
       "headlinerNormalized": "king-diamond",
-      "genre": "Heavy Metal",
+      "genre": "heavy metal",
       "genreNormalized": "heavy-metal",
       "openers": [],
       "venue": "The Fillmore",
@@ -3493,7 +3493,7 @@
       "date": "2014-12-13",
       "headliner": "Gwar",
       "headlinerNormalized": "gwar",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Corrosion of Conformity"
@@ -3520,8 +3520,8 @@
       "date": "2015-01-28",
       "headliner": "Machine Head",
       "headlinerNormalized": "machine-head",
-      "genre": "Alternative Metal",
-      "genreNormalized": "alternative-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "(Double Set)"
       ],
@@ -3547,7 +3547,7 @@
       "date": "2015-01-31",
       "headliner": "Napalm Death",
       "headlinerNormalized": "napalm-death",
-      "genre": "Grindcore",
+      "genre": "grindcore",
       "genreNormalized": "grindcore",
       "openers": [
         "Iron Reagan",
@@ -3575,7 +3575,7 @@
       "date": "2015-02-08",
       "headliner": "EyeHateGod",
       "headlinerNormalized": "eyehategod",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "Corrosion of Conformity",
@@ -3604,7 +3604,7 @@
       "date": "2015-03-02",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Behemoth"
@@ -3631,8 +3631,8 @@
       "date": "2015-04-08",
       "headliner": "Black Label Society",
       "headlinerNormalized": "black-label-society",
-      "genre": "Sludge Metal",
-      "genreNormalized": "sludge-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Wino (Acoustic)"
       ],
@@ -3658,8 +3658,8 @@
       "date": "2015-04-11",
       "headliner": "At The Gates",
       "headlinerNormalized": "at-the-gates",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "melodic death metal",
+      "genreNormalized": "melodic-death-metal",
       "openers": [
         "Vallenfyre"
       ],
@@ -3685,7 +3685,7 @@
       "date": "2015-04-28",
       "headliner": "Testament",
       "headlinerNormalized": "testament",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Exodus"
@@ -3712,8 +3712,8 @@
       "date": "2015-05-16",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [
         "Mastodon"
       ],
@@ -3771,7 +3771,7 @@
       "date": "2015-08-04",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "The Pinch",
@@ -3796,8 +3796,8 @@
       "date": "2015-09-19",
       "headliner": "Shindig Festival",
       "headlinerNormalized": "shindig-festival",
-      "genre": "future bass",
-      "genreNormalized": "future-bass",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
         "Clutch",
         "Anthrax",
@@ -3825,7 +3825,7 @@
       "date": "2015-10-17",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Cattle Decapitation"
@@ -3852,8 +3852,8 @@
       "date": "2015-10-21",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Decapitated",
         "Soilwork"
@@ -3880,7 +3880,7 @@
       "date": "2015-10-28",
       "headliner": "Misery Index",
       "headlinerNormalized": "misery-index",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Hate Eternal"
@@ -3907,7 +3907,7 @@
       "date": "2015-11-06",
       "headliner": "Vastum",
       "headlinerNormalized": "vastum",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Sidebar",
@@ -3932,7 +3932,7 @@
       "date": "2015-11-08",
       "headliner": "Belphegor",
       "headlinerNormalized": "belphegor",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Baltimore Soundstage",
@@ -3957,7 +3957,7 @@
       "date": "2015-11-10",
       "headliner": "Mortuary Drape",
       "headlinerNormalized": "mortuary-drape",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Mgla",
@@ -3985,7 +3985,7 @@
       "date": "2015-11-25",
       "headliner": "Mayhem",
       "headlinerNormalized": "mayhem",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Watain",
@@ -4013,7 +4013,7 @@
       "date": "2015-12-17",
       "headliner": "Deicide",
       "headlinerNormalized": "deicide",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Season of Suffering"
@@ -4071,7 +4071,7 @@
       "date": "2016-02-02",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Obituary"
@@ -4098,7 +4098,7 @@
       "date": "2016-03-04",
       "headliner": "Taake",
       "headlinerNormalized": "taake",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Metro Gallery",
@@ -4123,7 +4123,7 @@
       "date": "2016-03-16",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Testament",
@@ -4151,7 +4151,7 @@
       "date": "2016-04-01",
       "headliner": "Fear Factory",
       "headlinerNormalized": "fear-factory",
-      "genre": "Industrial Metal",
+      "genre": "industrial metal",
       "genreNormalized": "industrial-metal",
       "openers": [
         "(Demanufacture Set)"
@@ -4203,7 +4203,7 @@
       "date": "2016-04-22",
       "headliner": "EyeHateGod",
       "headlinerNormalized": "eyehategod",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Ottobar",
@@ -4228,8 +4228,8 @@
       "date": "2016-04-28",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Suffocation"
       ],
@@ -4255,7 +4255,7 @@
       "date": "2016-04-29",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Jungle Rot"
@@ -4282,7 +4282,7 @@
       "date": "2016-05-25",
       "headliner": "Profanatica",
       "headlinerNormalized": "profanatica",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Ottobar",
@@ -4368,7 +4368,7 @@
       "date": "2016-07-01",
       "headliner": "Funebrarum",
       "headlinerNormalized": "funebrarum",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Sidebar",
@@ -4393,7 +4393,7 @@
       "date": "2016-07-26",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Nile",
@@ -4422,7 +4422,7 @@
       "date": "2016-08-01",
       "headliner": "Carcass",
       "headlinerNormalized": "carcass",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Crowbar",
@@ -4450,8 +4450,8 @@
       "date": "2016-08-02",
       "headliner": "Zakk Wylde",
       "headlinerNormalized": "zakk-wylde",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "genre": "",
+      "genreNormalized": "",
       "openers": [
         "(Acoustic Set)"
       ],
@@ -4477,8 +4477,8 @@
       "date": "2016-08-19",
       "headliner": "Black Sabbath",
       "headlinerNormalized": "black-sabbath",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "genre": "metal",
+      "genreNormalized": "metal",
       "openers": [],
       "venue": "BB&T Pavilion",
       "venueNormalized": "bb-t-pavilion",
@@ -4502,8 +4502,8 @@
       "date": "2016-08-27",
       "headliner": "William Elliott Whitmore",
       "headlinerNormalized": "william-elliott-whitmore",
-      "genre": "Folk",
-      "genreNormalized": "folk",
+      "genre": "southern gothic",
+      "genreNormalized": "southern-gothic",
       "openers": [],
       "venue": "Rock & Roll Hotel",
       "venueNormalized": "rock-roll-hotel",
@@ -4527,7 +4527,7 @@
       "date": "2016-09-01",
       "headliner": "Belphegor",
       "headlinerNormalized": "belphegor",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Origin"
@@ -4554,7 +4554,7 @@
       "date": "2016-09-18",
       "headliner": "Marduk",
       "headlinerNormalized": "marduk",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Rotting Christ"
@@ -4581,8 +4581,8 @@
       "date": "2016-10-01",
       "headliner": "Brujeria",
       "headlinerNormalized": "brujeria",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "grindcore",
+      "genreNormalized": "grindcore",
       "openers": [
         "Cattle Decapitation"
       ],
@@ -4608,7 +4608,7 @@
       "date": "2016-12-03",
       "headliner": "Armored Saint",
       "headlinerNormalized": "armored-saint",
-      "genre": "Heavy Metal",
+      "genre": "heavy metal",
       "genreNormalized": "heavy-metal",
       "openers": [],
       "venue": "Baltimore Soundstage",
@@ -4633,7 +4633,7 @@
       "date": "2016-12-16",
       "headliner": "Abbath",
       "headlinerNormalized": "abbath",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "High on Fire"
@@ -4660,7 +4660,7 @@
       "date": "2017-01-01",
       "headliner": "Cognitive",
       "headlinerNormalized": "cognitive",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Artificial Brain"
@@ -4687,7 +4687,7 @@
       "date": "2017-02-01",
       "headliner": "Mayhem",
       "headlinerNormalized": "mayhem",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Inquisition",
@@ -4715,8 +4715,8 @@
       "date": "2017-02-01",
       "headliner": "Cavalera Conspiracy",
       "headlinerNormalized": "cavalera-conspiracy",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Immolation"
       ],
@@ -4742,7 +4742,7 @@
       "date": "2017-04-01",
       "headliner": "Testament",
       "headlinerNormalized": "testament",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Sepultura",
@@ -4770,7 +4770,7 @@
       "date": "2017-05-01",
       "headliner": "Shining",
       "headlinerNormalized": "shining",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Revenge"
@@ -4797,8 +4797,8 @@
       "date": "2017-05-10",
       "headliner": "Metallica",
       "headlinerNormalized": "metallica",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "metal",
+      "genreNormalized": "metal",
       "openers": [],
       "venue": "M&T Bank Stadium",
       "venueNormalized": "m-t-bank-stadium",
@@ -4822,7 +4822,7 @@
       "date": "2017-05-19",
       "headliner": "Suffocation",
       "headlinerNormalized": "suffocation",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Revocation"
@@ -4849,7 +4849,7 @@
       "date": "2017-05-20",
       "headliner": "The Obsessed",
       "headlinerNormalized": "the-obsessed",
-      "genre": "Doom Metal",
+      "genre": "doom metal",
       "genreNormalized": "doom-metal",
       "openers": [],
       "venue": "Ottobar",
@@ -4907,7 +4907,7 @@
       "date": "2017-06-01",
       "headliner": "Necrot",
       "headlinerNormalized": "necrot",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Undergang",
@@ -4935,7 +4935,7 @@
       "date": "2017-08-01",
       "headliner": "Obituary",
       "headlinerNormalized": "obituary",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Power Trip"
@@ -4958,39 +4958,11 @@
       "attendedWith": ""
     },
     {
-      "id": "2017-10-01-soulfly-nailbomb-set",
-      "date": "2017-10-01",
-      "headliner": "Soulfly (Nailbomb set)",
-      "headlinerNormalized": "soulfly-nailbomb-set",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
-      "openers": [
-        "Cannabis Corpse",
-        "Noisem"
-      ],
-      "venue": "Baltimore Soundstage",
-      "venueNormalized": "baltimore-soundstage",
-      "city": "Baltimore",
-      "state": "MD",
-      "cityState": "Baltimore, MD",
-      "isFestival": false,
-      "year": 2017,
-      "month": 10,
-      "day": 1,
-      "dayOfWeek": "Sunday",
-      "decade": "2010s",
-      "location": {
-        "lat": 39.2876463,
-        "lng": -76.60706859999999
-      },
-      "attendedWith": ""
-    },
-    {
       "id": "2017-10-01-the-obsessed",
       "date": "2017-10-01",
       "headliner": "The Obsessed",
       "headlinerNormalized": "the-obsessed",
-      "genre": "Doom Metal",
+      "genre": "doom metal",
       "genreNormalized": "doom-metal",
       "openers": [
         "Cobalt"
@@ -5017,7 +4989,7 @@
       "date": "2017-10-12",
       "headliner": "Wolves in the Throne Room",
       "headlinerNormalized": "wolves-in-the-throne-room",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Pillorian"
@@ -5040,12 +5012,40 @@
       "attendedWith": ""
     },
     {
+      "id": "2017-10-26-soulfly-nailbomb-set",
+      "date": "2017-10-26",
+      "headliner": "Soulfly (Nailbomb set)",
+      "headlinerNormalized": "soulfly-nailbomb-set",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Cannabis Corpse",
+        "Noisem"
+      ],
+      "venue": "Baltimore Soundstage",
+      "venueNormalized": "baltimore-soundstage",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "attendedWith": "",
+      "year": 2017,
+      "month": 10,
+      "day": 26,
+      "dayOfWeek": "Thursday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2876463,
+        "lng": -76.60706859999999
+      }
+    },
+    {
       "id": "2017-10-28-primus",
       "date": "2017-10-28",
       "headliner": "Primus",
       "headlinerNormalized": "primus",
-      "genre": "Alternative Metal",
-      "genreNormalized": "alternative-metal",
+      "genre": "funk rock",
+      "genreNormalized": "funk-rock",
       "openers": [
         "Clutch"
       ],
@@ -5071,7 +5071,7 @@
       "date": "2017-11-01",
       "headliner": "Belphegor",
       "headlinerNormalized": "belphegor",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [],
       "venue": "Ottobar",
@@ -5092,11 +5092,36 @@
       "attendedWith": ""
     },
     {
+      "id": "2017-11-02-brujeria",
+      "date": "2017-11-02",
+      "headliner": "Brujeria",
+      "headlinerNormalized": "brujeria",
+      "genre": "grindcore",
+      "genreNormalized": "grindcore",
+      "openers": [],
+      "venue": "Baltimore Soundstage",
+      "venueNormalized": "baltimore-soundstage",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "attendedWith": "",
+      "year": 2017,
+      "month": 11,
+      "day": 2,
+      "dayOfWeek": "Thursday",
+      "decade": "2010s",
+      "location": {
+        "lat": 39.2876463,
+        "lng": -76.60706859999999
+      }
+    },
+    {
       "id": "2017-12-01-mayhem",
       "date": "2017-12-01",
       "headliner": "Mayhem",
       "headlinerNormalized": "mayhem",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Immolation"
@@ -5123,7 +5148,7 @@
       "date": "2017-12-01",
       "headliner": "Morta Skuld",
       "headlinerNormalized": "morta-skuld",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Embalmed",
@@ -5151,7 +5176,7 @@
       "date": "2018-01-01",
       "headliner": "Corrosion of Conformity",
       "headlinerNormalized": "corrosion-of-conformity",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "Crowbar"
@@ -5203,7 +5228,7 @@
       "date": "2018-02-01",
       "headliner": "Watain",
       "headlinerNormalized": "watain",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Destroyer 666"
@@ -5230,8 +5255,8 @@
       "date": "2018-04-01",
       "headliner": "Ministry",
       "headlinerNormalized": "ministry",
-      "genre": "Industrial Metal",
-      "genreNormalized": "industrial-metal",
+      "genre": "industrial",
+      "genreNormalized": "industrial",
       "openers": [
         "Chelsea Wolfe"
       ],
@@ -5257,7 +5282,7 @@
       "date": "2018-05-01",
       "headliner": "Demilich",
       "headlinerNormalized": "demilich",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Blood Incantation",
@@ -5316,7 +5341,7 @@
       "date": "2018-06-01",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Lamb of God",
@@ -5345,7 +5370,7 @@
       "date": "2018-06-01",
       "headliner": "Aborted",
       "headlinerNormalized": "aborted",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Psycroptic",
@@ -5373,7 +5398,7 @@
       "date": "2018-07-01",
       "headliner": "Demolition Hammer",
       "headlinerNormalized": "demolition-hammer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Noisem",
@@ -5428,7 +5453,7 @@
       "date": "2018-08-04",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Lamb of God",
@@ -5484,7 +5509,7 @@
       "date": "2018-09-05",
       "headliner": "Obituary",
       "headlinerNormalized": "obituary",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Exmortus"
@@ -5511,8 +5536,8 @@
       "date": "2018-10-01",
       "headliner": "Paradise Lost",
       "headlinerNormalized": "paradise-lost",
-      "genre": "Metal",
-      "genreNormalized": "metal",
+      "genre": "gothic metal",
+      "genreNormalized": "gothic-metal",
       "openers": [
         "Solstafir"
       ],
@@ -5538,7 +5563,7 @@
       "date": "2018-10-01",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Incantation",
@@ -5566,8 +5591,8 @@
       "date": "2018-10-11",
       "headliner": "Amorphis",
       "headlinerNormalized": "amorphis",
-      "genre": "Progressive Metal",
-      "genreNormalized": "progressive-metal",
+      "genre": "melodic death metal",
+      "genreNormalized": "melodic-death-metal",
       "openers": [
         "Dark Tranquillity",
         "Moonspell"
@@ -5594,7 +5619,7 @@
       "date": "2018-11-01",
       "headliner": "Behemoth",
       "headlinerNormalized": "behemoth",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "At the Gates"
@@ -5621,7 +5646,7 @@
       "date": "2018-11-15",
       "headliner": "Suffocation",
       "headlinerNormalized": "suffocation",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Krisiun",
@@ -5649,8 +5674,8 @@
       "date": "2018-12-28",
       "headliner": "Clutch",
       "headlinerNormalized": "clutch",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "stoner rock",
+      "genreNormalized": "stoner-rock",
       "openers": [],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
@@ -5702,7 +5727,7 @@
       "date": "2019-02-01",
       "headliner": "Corrosion of Conformity",
       "headlinerNormalized": "corrosion-of-conformity",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "Crowbar",
@@ -5730,7 +5755,7 @@
       "date": "2019-03-01",
       "headliner": "Morbid Angel",
       "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Immolation",
@@ -5758,8 +5783,8 @@
       "date": "2019-03-15",
       "headliner": "Joe Bonamassa",
       "headlinerNormalized": "joe-bonamassa",
-      "genre": "Rock",
-      "genreNormalized": "rock",
+      "genre": "blues",
+      "genreNormalized": "blues",
       "openers": [],
       "venue": "The Lyric",
       "venueNormalized": "the-lyric",
@@ -5783,7 +5808,7 @@
       "date": "2019-05-14",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Lamb of God",
@@ -5843,7 +5868,7 @@
       "date": "2019-06-01",
       "headliner": "Nails",
       "headlinerNormalized": "nails",
-      "genre": "Grindcore",
+      "genre": "grindcore",
       "genreNormalized": "grindcore",
       "openers": [
         "Misery Index",
@@ -5871,7 +5896,7 @@
       "date": "2019-06-01",
       "headliner": "Dark Funeral",
       "headlinerNormalized": "dark-funeral",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Belphegor",
@@ -5924,8 +5949,8 @@
       "date": "2019-08-01",
       "headliner": "Chris Stapleton",
       "headlinerNormalized": "chris-stapleton",
-      "genre": "BlueGrass",
-      "genreNormalized": "bluegrass",
+      "genre": "country",
+      "genreNormalized": "country",
       "openers": [],
       "venue": "Merriweather Post Pav.",
       "venueNormalized": "merriweather-post-pav",
@@ -6003,7 +6028,7 @@
       "date": "2019-10-01",
       "headliner": "1349",
       "headlinerNormalized": "1349",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Uada"
@@ -6030,7 +6055,7 @@
       "date": "2019-10-22",
       "headliner": "Obituary",
       "headlinerNormalized": "obituary",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Abbath",
@@ -6058,7 +6083,7 @@
       "date": "2019-11-01",
       "headliner": "Nile",
       "headlinerNormalized": "nile",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Terrorizer"
@@ -6113,8 +6138,8 @@
       "date": "2019-11-01",
       "headliner": "William Elliott Whitmore",
       "headlinerNormalized": "william-elliott-whitmore",
-      "genre": "Folk",
-      "genreNormalized": "folk",
+      "genre": "southern gothic",
+      "genreNormalized": "southern-gothic",
       "openers": [],
       "venue": "Black Cat",
       "venueNormalized": "black-cat",
@@ -6138,8 +6163,8 @@
       "date": "2020-01-01",
       "headliner": "Machine Head",
       "headlinerNormalized": "machine-head",
-      "genre": "Alternative Metal",
-      "genreNormalized": "alternative-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "(Burn My Eyes Set)"
       ],
@@ -6165,7 +6190,7 @@
       "date": "2022-03-01",
       "headliner": "Crowbar",
       "headlinerNormalized": "crowbar",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [],
       "venue": "Lost Horizon",
@@ -6224,7 +6249,7 @@
       "date": "2022-06-01",
       "headliner": "Carnivore A.D.",
       "headlinerNormalized": "carnivore-a-d",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "Sharkey's",
@@ -6249,8 +6274,8 @@
       "date": "2022-08-01",
       "headliner": "Goatwhore",
       "headlinerNormalized": "goatwhore",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "black metal",
+      "genreNormalized": "black-metal",
       "openers": [
         "Incantation"
       ],
@@ -6276,8 +6301,8 @@
       "date": "2022-08-13",
       "headliner": "Alice in Chains",
       "headlinerNormalized": "alice-in-chains",
-      "genre": "Alternative Metal",
-      "genreNormalized": "alternative-metal",
+      "genre": "grunge",
+      "genreNormalized": "grunge",
       "openers": [
         "Breaking Benjamin"
       ],
@@ -6303,7 +6328,7 @@
       "date": "2022-09-01",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Song & Dance",
@@ -6328,7 +6353,7 @@
       "date": "2022-09-20",
       "headliner": "Megadeth",
       "headlinerNormalized": "megadeth",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [],
       "venue": "St. Joseph's Amp",
@@ -6378,8 +6403,8 @@
       "date": "2023-02-01",
       "headliner": "Soulfly",
       "headlinerNormalized": "soulfly",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [],
       "venue": "Lost Horizon",
       "venueNormalized": "lost-horizon",
@@ -6403,8 +6428,8 @@
       "date": "2023-04-01",
       "headliner": "William Elliott Whitmore",
       "headlinerNormalized": "william-elliott-whitmore",
-      "genre": "Folk",
-      "genreNormalized": "folk",
+      "genre": "southern gothic",
+      "genreNormalized": "southern-gothic",
       "openers": [],
       "venue": "Club 443",
       "venueNormalized": "club-443",
@@ -6428,7 +6453,7 @@
       "date": "2023-04-13",
       "headliner": "Morbid Angel",
       "headlinerNormalized": "morbid-angel",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Revocation",
@@ -6456,8 +6481,8 @@
       "date": "2023-06-11",
       "headliner": "Chris Stapleton",
       "headlinerNormalized": "chris-stapleton",
-      "genre": "BlueGrass",
-      "genreNormalized": "bluegrass",
+      "genre": "country",
+      "genreNormalized": "country",
       "openers": [],
       "venue": "St. Joseph's Amp",
       "venueNormalized": "st-joseph-s-amp",
@@ -6481,8 +6506,8 @@
       "date": "2023-08-01",
       "headliner": "Pantera",
       "headlinerNormalized": "pantera",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Lamb of God"
       ],
@@ -6508,8 +6533,8 @@
       "date": "2023-08-01",
       "headliner": "Ghost",
       "headlinerNormalized": "ghost",
-      "genre": "Heavy Metal",
-      "genreNormalized": "heavy-metal",
+      "genre": "metal",
+      "genreNormalized": "metal",
       "openers": [
         "Amon Amarth"
       ],
@@ -6535,7 +6560,7 @@
       "date": "2023-09-20",
       "headliner": "Crowbar",
       "headlinerNormalized": "crowbar",
-      "genre": "Sludge Metal",
+      "genre": "sludge metal",
       "genreNormalized": "sludge-metal",
       "openers": [
         "Primitive Man"
@@ -6562,8 +6587,8 @@
       "date": "2023-11-01",
       "headliner": "Goatwhore",
       "headlinerNormalized": "goatwhore",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "black metal",
+      "genreNormalized": "black-metal",
       "openers": [
         "Withered"
       ],
@@ -6589,7 +6614,7 @@
       "date": "2023-11-01",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [],
       "venue": "Water Street Music Hall",
@@ -6614,7 +6639,7 @@
       "date": "2023-11-20",
       "headliner": "Ulcerate",
       "headlinerNormalized": "ulcerate",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Altars"
@@ -6641,8 +6666,8 @@
       "date": "2024-02-15",
       "headliner": "Go Ahead And Die",
       "headlinerNormalized": "go-ahead-and-die",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "groove metal",
+      "genreNormalized": "groove-metal",
       "openers": [
         "Primitive Man"
       ],
@@ -6668,7 +6693,7 @@
       "date": "2024-03-07",
       "headliner": "Cannibal Corpse",
       "headlinerNormalized": "cannibal-corpse",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Hypocrisy",
@@ -6697,7 +6722,7 @@
       "date": "2024-04-01",
       "headliner": "Dying Fetus",
       "headlinerNormalized": "dying-fetus",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Full of Hell",
@@ -6725,7 +6750,7 @@
       "date": "2024-05-01",
       "headliner": "Cattle Decapitation",
       "headlinerNormalized": "cattle-decapitation",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Carnifex"
@@ -6752,7 +6777,7 @@
       "date": "2024-05-01",
       "headliner": "Internal Bleeding",
       "headlinerNormalized": "internal-bleeding",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Cenotaph",
@@ -6812,7 +6837,7 @@
       "date": "2024-07-01",
       "headliner": "Frozen Soul",
       "headlinerNormalized": "frozen-soul",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Creeping Death"
@@ -6866,8 +6891,8 @@
       "date": "2024-08-01",
       "headliner": "Jackyl",
       "headlinerNormalized": "jackyl",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "glam metal",
+      "genreNormalized": "glam-metal",
       "openers": [],
       "venue": "NYS Fair",
       "venueNormalized": "nys-fair",
@@ -6891,8 +6916,8 @@
       "date": "2024-09-01",
       "headliner": "William Elliott Whitmore",
       "headlinerNormalized": "william-elliott-whitmore",
-      "genre": "Folk",
-      "genreNormalized": "folk",
+      "genre": "southern gothic",
+      "genreNormalized": "southern-gothic",
       "openers": [],
       "venue": "Club 443",
       "venueNormalized": "club-443",
@@ -6916,8 +6941,8 @@
       "date": "2024-09-16",
       "headliner": "Alice Cooper",
       "headlinerNormalized": "alice-cooper",
-      "genre": "Hard Rock",
-      "genreNormalized": "hard-rock",
+      "genre": "glam rock",
+      "genreNormalized": "glam-rock",
       "openers": [
         "Ministry",
         "Filter"
@@ -6944,8 +6969,8 @@
       "date": "2024-09-22",
       "headliner": "Goatwhore",
       "headlinerNormalized": "goatwhore",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "black metal",
+      "genreNormalized": "black-metal",
       "openers": [
         "Vitriol",
         "Necrofier"
@@ -6972,7 +6997,7 @@
       "date": "2025-01-22",
       "headliner": "Six Feet Under",
       "headlinerNormalized": "six-feet-under",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Psycroptic"
@@ -7024,8 +7049,8 @@
       "date": "2025-03-22",
       "headliner": "Malignancy",
       "headlinerNormalized": "malignancy",
-      "genre": "Brutal Death Metal",
-      "genreNormalized": "brutal-death-metal",
+      "genre": "death metal",
+      "genreNormalized": "death-metal",
       "openers": [
         "Concrete"
       ],
@@ -7079,8 +7104,8 @@
       "date": "2025-04-19",
       "headliner": "Metallica",
       "headlinerNormalized": "metallica",
-      "genre": "Thrash Metal",
-      "genreNormalized": "thrash-metal",
+      "genre": "metal",
+      "genreNormalized": "metal",
       "openers": [
         "Pantera",
         "Suicidal Tendencies"
@@ -7107,7 +7132,7 @@
       "date": "2025-05-09",
       "headliner": "Emperor",
       "headlinerNormalized": "emperor",
-      "genre": "Black Metal",
+      "genre": "black metal",
       "genreNormalized": "black-metal",
       "openers": [
         "Wolves in the Throne Room"
@@ -7167,8 +7192,8 @@
       "date": "2025-08-25",
       "headliner": "Mortician",
       "headlinerNormalized": "mortician",
-      "genre": "Grindcore",
-      "genreNormalized": "grindcore",
+      "genre": "death metal",
+      "genreNormalized": "death-metal",
       "openers": [
         "Deteriorot"
       ],
@@ -7194,8 +7219,8 @@
       "date": "2025-09-13",
       "headliner": "Acid Bath",
       "headlinerNormalized": "acid-bath",
-      "genre": "Death Metal",
-      "genreNormalized": "death-metal",
+      "genre": "sludge metal",
+      "genreNormalized": "sludge-metal",
       "openers": [
         "High on Fire",
         "Windhand"
@@ -7222,7 +7247,7 @@
       "date": "2025-09-20",
       "headliner": "Slayer",
       "headlinerNormalized": "slayer",
-      "genre": "Thrash Metal",
+      "genre": "thrash metal",
       "genreNormalized": "thrash-metal",
       "openers": [
         "Cavalera Conspiracy",
@@ -7278,7 +7303,7 @@
       "date": "2025-10-25",
       "headliner": "Vader",
       "headlinerNormalized": "vader",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Kataklysm",
@@ -7306,7 +7331,7 @@
       "date": "2025-11-26",
       "headliner": "Krisiun",
       "headlinerNormalized": "krisiun",
-      "genre": "Death Metal",
+      "genre": "death metal",
       "genreNormalized": "death-metal",
       "openers": [
         "Abysmal Dawn",
@@ -7331,8 +7356,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-27T20:57:35.667Z",
-    "totalConcerts": 270,
+    "lastUpdated": "2026-02-09T15:32:32.030Z",
+    "totalConcerts": 271,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"

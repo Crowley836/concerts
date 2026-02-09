@@ -18396,5 +18396,14 @@
         "durationMs": 133506
       }
     ]
+  },
+  "woodstock-99": {
+    "name": "Woodstock '99",
+    "image": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Woodstock+%2799",
+    "source": "lastfm",
+    "fetchedAt": "2026-02-09T15:32:32.962Z"
   }
 }
