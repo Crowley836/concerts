@@ -13351,5 +13351,17 @@
     "url": "https://www.last.fm/music/Woodstock+%2799",
     "source": "lastfm",
     "fetchedAt": "2026-03-15T01:07:05.332Z"
+  },
+  "cradle-of-filth": {
+    "name": "Cradle of Filth",
+    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/pf0mue1734479541.jpg",
+    "genres": [
+      "Symphonic Metal",
+      "Metal"
+    ],
+    "formed": "1991",
+    "website": "theorderofthedragon.com",
+    "source": "theaudiodb",
+    "fetchedAt": "2026-03-20T13:07:54.148Z"
   }
 }

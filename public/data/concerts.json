@@ -616,7 +616,8 @@
       "openers": [
         "Ozzy Osbourne",
         "Korn",
-        "Marilyn Manson"
+        "Marilyn Manson",
+        "Cradle of Filth"
       ],
       "venue": "Darien Lake PAC",
       "venueNormalized": "darien-lake-pac",
@@ -1235,19 +1236,22 @@
       "attendedWith": ""
     },
     {
-      "id": "2006-11-14-obituary-unleashed",
+      "id": "2006-11-14-obituary",
       "date": "2006-11-14",
-      "headliner": "Obituary / Unleashed",
-      "headlinerNormalized": "obituary-unleashed",
+      "headliner": "Obituary",
+      "headlinerNormalized": "obituary",
       "genre": "Death Metal",
       "genreNormalized": "death-metal",
-      "openers": [],
+      "openers": [
+        "Unleashed"
+      ],
       "venue": "Sonar",
       "venueNormalized": "sonar",
       "city": "Baltimore",
       "state": "MD",
       "cityState": "Baltimore, MD",
       "isFestival": false,
+      "attendedWith": "Gates",
       "year": 2006,
       "month": 11,
       "day": 14,
@@ -1256,8 +1260,7 @@
       "location": {
         "lat": 39.2922465,
         "lng": -76.6095586
-      },
-      "attendedWith": "Gates"
+      }
     },
     {
       "id": "2007-02-20-slayer",
@@ -1283,6 +1286,31 @@
         "lng": -77.0237227
       },
       "attendedWith": ""
+    },
+    {
+      "id": "2007-03-03-cradle-of-filth",
+      "date": "2007-03-03",
+      "headliner": "Cradle of Filth",
+      "headlinerNormalized": "cradle-of-filth",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [],
+      "venue": "Rams Head Live",
+      "venueNormalized": "rams-head-live",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "attendedWith": "",
+      "year": 2007,
+      "month": 3,
+      "day": 3,
+      "dayOfWeek": "Saturday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.2894444,
+        "lng": -76.6072222
+      }
     },
     {
       "id": "2007-05-01-cannibal-corpse",
@@ -1419,6 +1447,33 @@
         "lng": -76.61958179999999
       },
       "attendedWith": ""
+    },
+    {
+      "id": "2007-09-24-gwar",
+      "date": "2007-09-24",
+      "headliner": "Gwar",
+      "headlinerNormalized": "gwar",
+      "genre": "Thrash Metal",
+      "genreNormalized": "thrash-metal",
+      "openers": [
+        "Cradle of Filth"
+      ],
+      "venue": "Rams Head Live",
+      "venueNormalized": "rams-head-live",
+      "city": "Baltimore",
+      "state": "MD",
+      "cityState": "Baltimore, MD",
+      "isFestival": false,
+      "attendedWith": "",
+      "year": 2007,
+      "month": 9,
+      "day": 24,
+      "dayOfWeek": "Monday",
+      "decade": "2000s",
+      "location": {
+        "lat": 39.2894444,
+        "lng": -76.6072222
+      }
     },
     {
       "id": "2007-10-20-clutch",
@@ -7356,8 +7411,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-03-15T01:07:04.294Z",
-    "totalConcerts": 271,
+    "lastUpdated": "2026-03-20T13:07:50.560Z",
+    "totalConcerts": 273,
     "dateRange": {
       "earliest": "1994-06-06",
       "latest": "2025-11-26"
