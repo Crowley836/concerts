@@ -1292,8 +1292,8 @@
       "date": "2007-03-03",
       "headliner": "Cradle of Filth",
       "headlinerNormalized": "cradle-of-filth",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "Symphonic Metal",
+      "genreNormalized": "symphonic-metal",
       "openers": [],
       "venue": "Rams Head Live",
       "venueNormalized": "rams-head-live",
@@ -7411,7 +7411,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-03-20T13:07:50.560Z",
+    "lastUpdated": "2026-03-22T01:02:17.720Z",
     "totalConcerts": 273,
     "dateRange": {
       "earliest": "1994-06-06",
