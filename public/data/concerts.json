@@ -7408,14 +7408,41 @@
         "lng": -76.0830593
       },
       "attendedWith": ""
+    },
+    {
+      "id": "2026-03-29-emperor",
+      "date": "2026-03-29",
+      "headliner": "Emperor",
+      "headlinerNormalized": "emperor",
+      "genre": "Black Metal",
+      "genreNormalized": "black-metal",
+      "openers": [
+        "Blood Incantation"
+      ],
+      "venue": "The Palladium",
+      "venueNormalized": "the-palladium",
+      "city": "Worcester",
+      "state": "MA",
+      "cityState": "Worcester, MA",
+      "isFestival": false,
+      "attendedWith": "Jeff",
+      "year": 2026,
+      "month": 3,
+      "day": 29,
+      "dayOfWeek": "Sunday",
+      "decade": "2020s",
+      "location": {
+        "lat": 42.266725,
+        "lng": -71.80065560000001
+      }
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-03-29T01:09:11.702Z",
-    "totalConcerts": 273,
+    "lastUpdated": "2026-03-31T13:15:08.451Z",
+    "totalConcerts": 274,
     "dateRange": {
       "earliest": "1994-06-06",
-      "latest": "2025-11-26"
+      "latest": "2026-03-29"
     },
     "uniqueArtists": 158,
     "uniqueVenues": 87,
