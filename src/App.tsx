@@ -14,6 +14,7 @@ import { MobileStats } from './components/MobileStats/MobileStats'
 import { ChangelogPage, ChangelogToast, ChangelogRSS } from './components/changelog'
 import { SCENE_MAP, TOAST } from './components/changelog/constants'
 import { useChangelogCheck } from './hooks/useChangelogCheck'
+import { MDFPlannerPage } from './pages/MDFPlannerPage/MDFPlannerPage'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/" element={<MainScenes />} />
       <Route path="/liner-notes" element={<ChangelogPage />} />
       <Route path="/liner-notes/rss" element={<ChangelogRSS />} />
+      <Route path="/mdf-planner" element={<MDFPlannerPage />} />
       {/* Legacy redirects */}
       <Route path="/changelog" element={<ChangelogPage />} />
       <Route path="/changelog/rss" element={<ChangelogRSS />} />

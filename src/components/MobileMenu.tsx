@@ -82,6 +82,24 @@ export function MobileMenu() {
                                     </span>
                                 </motion.button>
                             ))}
+                            
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 10 }}
+                                transition={{ delay: scenes.length * 0.05, duration: 0.3 }}
+                                className="mt-4 pt-4 border-t border-white/10"
+                            >
+                                <a
+                                    href="/mdf-planner"
+                                    className="group flex items-center gap-4 w-full p-4 rounded-xl border transition-all text-left transform active:scale-98 bg-white/5 active:bg-white/10 border-white/5 hover:border-[#e3000b]/50"
+                                >
+                                    <div className="w-3 h-3 rounded-full bg-[#e3000b] shadow-[0_0_10px_#e3000b]" />
+                                    <span className="text-xl font-medium text-white/90 tracking-wide">
+                                        MDF Planner
+                                    </span>
+                                </a>
+                            </motion.div>
                         </nav>
                     </motion.div>
                 )}

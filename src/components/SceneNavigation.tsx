@@ -103,6 +103,26 @@ export function SceneNavigation() {
             </span>
           </button>
         ))}
+        
+        {/* Separator */}
+        <div className="w-8 h-[1px] bg-white/10 mx-auto my-2" />
+        
+        {/* External Link to MDF Planner */}
+        <a
+          href="/mdf-planner"
+          className="group relative flex items-center justify-center min-w-[44px] min-h-[44px] touchable"
+          aria-label="Go to MDF Planner"
+        >
+          {/* Dot */}
+          <motion.div
+            className="w-3 h-3 rounded-full transition-all duration-300 bg-[#e3000b]/50 group-hover:bg-[#e3000b] shadow-[0_0_8px_rgba(227,0,11,0.5)]"
+          />
+
+          {/* Label on desktop hover */}
+          <span className="absolute right-14 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap bg-gray-900 text-[#e3000b] font-medium text-xs px-3 py-1.5 rounded-lg pointer-events-none hidden md:block border border-[#e3000b]/30">
+            MDF Planner
+          </span>
+        </a>
       </div>
     </motion.div>
   )
