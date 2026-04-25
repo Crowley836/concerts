@@ -307,3 +307,76 @@
   justify-content: center;
   overflow: hidden;
 }
+
+/* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+  .mdf-planner-root .app-container {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .mdf-planner-root .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .mdf-planner-root .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .mdf-planner-root .header-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mdf-planner-root .tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mdf-planner-root .tab-btn {
+    flex: 1;
+    padding: 8px 4px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .mdf-planner-root .view-toggle-btn,
+  .mdf-planner-root .screenshot-btn {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .mdf-planner-root .legend {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  /* Improve horizontal scrolling on mobile */
+  .mdf-planner-root .schedule-grid-container {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    /* Hide scrollbar for cleaner look */
+    scrollbar-width: none; 
+  }
+  .mdf-planner-root .schedule-grid-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mdf-planner-root .stage-column {
+    min-width: 85vw; /* Take up most of the screen so user sees one stage at a time */
+    scroll-snap-align: center;
+    scroll-margin: 10px;
+  }
+
+  .mdf-planner-root .band-name {
+    font-size: 1rem;
+  }
+
+  .mdf-planner-root .band-time {
+    font-size: 0.75rem;
+  }
+}
