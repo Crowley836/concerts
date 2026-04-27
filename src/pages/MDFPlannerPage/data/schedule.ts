@@ -153,7 +153,6 @@ export const scheduleData: DaySchedule[] = [
         name: "POWER PLANT LIVE",
         bands: [
           { name: "UNMERCIFUL", start: "05:35 PM", end: "06:15 PM", origin_genre: "USA (Kansas) • Death Metal", description: "Old-school death metal with a sinister edge." },
-          { name: "DEATH ANGEL", start: "06:15 PM", end: "07:05 PM", origin_genre: "USA (California) • Thrash Metal", description: "Bay Area thrash legends since 1982." },
           { name: "BLOOD RED THRONE", start: "07:05 PM", end: "07:50 PM", origin_genre: "Norway • Death Metal", description: "Blasphemous, unrelenting Norwegian extreme metal." },
           { name: "VIO-LENCE", start: "08:50 PM", end: "09:40 PM", origin_genre: "USA (California) • Thrash Metal", description: "Pioneers of crossover thrash from the Bay Area." },
           { name: "DYING FETUS", start: "11:10 PM", end: "12:00 AM", origin_genre: "USA (Maryland) • Brutal/Tech Death Metal", description: "Political, savage and relentless extreme metal." }
@@ -164,6 +163,7 @@ export const scheduleData: DaySchedule[] = [
         bands: [
           { name: "CAVEMAN CULT", start: "03:30 PM", end: "04:10 PM", origin_genre: "USA (Florida) • Blackened Death Metal", description: "Primitive, crushing old-school death metal." },
           { name: "CANCER", start: "04:40 PM", end: "05:30 PM", origin_genre: "UK (England) • Death Metal", description: "UK death metal pioneers since 1988." },
+          { name: "DEATH ANGEL", start: "06:15 PM", end: "07:05 PM", origin_genre: "USA (California) • Thrash Metal", description: "Bay Area thrash legends since 1982." },
           { name: "GRAVE", start: "07:55 PM", end: "08:45 PM", origin_genre: "Sweden • Death Metal", description: "Legends of Swedish death metal since the late '80s." },
           { name: "SARCÓFAGO", start: "09:45 PM", end: "10:45 PM", origin_genre: "Brazil • Black/Thrash Metal", description: "Brazilian black/thrash metal pioneers." }
         ]
