@@ -5,10 +5,9 @@ interface ScheduleGridProps {
   dayData: DaySchedule;
   selectionState: Record<string, string>;
   onToggleSelection: (bandId: string, currentState: string) => void;
-  viewMode: 'simple' | 'detailed';
 }
 
-export const ScheduleGrid = ({ dayData, selectionState, onToggleSelection, viewMode }: ScheduleGridProps) => {
+export const ScheduleGrid = ({ dayData, selectionState, onToggleSelection }: ScheduleGridProps) => {
   // Find the earliest start time and the latest end time across the active day
   let earliestMins = Number.MAX_SAFE_INTEGER;
   let latestMins = 0;
@@ -27,8 +26,8 @@ export const ScheduleGrid = ({ dayData, selectionState, onToggleSelection, viewM
   const startLine = earliestMins - topPadding;
   const totalDuration = (latestMins + 30) - startLine;
   
-  // Use a larger scale for detailed view to fit the text (6px per min gives much more room)
-  const pxPerMinute = viewMode === 'detailed' ? 6 : 2; 
+  // Use 2px per minute
+  const pxPerMinute = 2; 
   const containerHeight = totalDuration * pxPerMinute;
 
   return (
@@ -56,7 +55,6 @@ export const ScheduleGrid = ({ dayData, selectionState, onToggleSelection, viewM
                   earliestTime={startLine}
                   selectionState={selectionState}
                   onToggleSelection={onToggleSelection}
-                  viewMode={viewMode}
                   pxPerMinute={pxPerMinute}
                 />
               ))}

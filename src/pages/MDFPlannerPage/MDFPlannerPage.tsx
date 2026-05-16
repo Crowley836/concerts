@@ -12,7 +12,6 @@ const PRIORITY_LEVELS = ['unselected', 'mustsee', 'target', 'convenient'];
 export const MDFPlannerPage = () => {
   const [activeDay, setActiveDay] = useState(scheduleData[0].day);
   const [selectionState, setSelectionState] = useState<Record<string, string>>({});
-  const [viewMode, setViewMode] = useState<'simple' | 'detailed'>('simple');
 
   useEffect(() => {
     const savedState = sessionStorage.getItem('mdfPlannerState');
@@ -32,10 +31,6 @@ export const MDFPlannerPage = () => {
 
     setSelectionState(newState);
     sessionStorage.setItem('mdfPlannerState', JSON.stringify(newState));
-  };
-
-  const handleToggleViewMode = () => {
-    setViewMode(prev => prev === 'simple' ? 'detailed' : 'simple');
   };
 
   const handleCaptureScreenshot = async () => {
@@ -80,14 +75,6 @@ export const MDFPlannerPage = () => {
               activeDay={activeDay}
               onSelectDay={setActiveDay} 
             />
-            <button
-              className="view-toggle-btn"
-              onClick={handleToggleViewMode}
-              data-html2canvas-ignore
-              title="Toggle Detailed View"
-            >
-              {viewMode === 'simple' ? '🔍 Details' : '➖ Simple'}
-            </button>
             <button 
               className="screenshot-btn" 
               onClick={handleCaptureScreenshot}
@@ -124,7 +111,6 @@ export const MDFPlannerPage = () => {
               dayData={activeDayData} 
               selectionState={selectionState}
               onToggleSelection={handleToggleSelection}
-              viewMode={viewMode}
             />
           )}
         </main>

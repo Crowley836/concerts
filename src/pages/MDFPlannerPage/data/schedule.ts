@@ -92,7 +92,8 @@ export const scheduleData: DaySchedule[] = [
           { name: "LACERATION", start: "05:35 PM", end: "06:10 PM", origin_genre: "USA (California) • Death Metal", description: "Punishing, old-school death metal with crushing grooves." },
           { name: "MACABRE", start: "07:05 PM", end: "07:50 PM", origin_genre: "USA (Illinois) • Death/Grind", description: "Legends of gore-soaked grind/death metal." },
           { name: "MORTICIAN", start: "08:50 PM", end: "09:35 PM", origin_genre: "USA (New York) • Death Metal", description: "Pioneers of horror-themed death metal with samples and drum machines." },
-          { name: "SINISTER", start: "11:15 PM", end: "12:00 AM", origin_genre: "Netherlands • Death Metal", description: "Technical, brutal death metal influenced by thrash." }
+          { name: "MORTA SKULD", start: "10:50 PM", end: "11:25 PM", origin_genre: "USA (Wisconsin) • Death Metal", description: "Old-school death metal with groove." },
+          { name: "SINISTER", start: "11:45 PM", end: "12:15 AM", origin_genre: "Netherlands • Death Metal", description: "Technical, brutal death metal influenced by thrash." }
         ]
       },
       {
@@ -124,7 +125,7 @@ export const scheduleData: DaySchedule[] = [
           { name: "MELLOW HARSHER", start: "04:15 PM", end: "04:50 PM", origin_genre: "USA (California) • Death Metal", description: "Heavy, downtuned death metal with a bleak, doom-laden feel." },
           { name: "TERROR CORPSE", start: "05:35 PM", end: "06:10 PM", origin_genre: "USA (Texas) • Death Metal", description: "Grotesque death metal with horror and gore themes." },
           { name: "OSSUARY", start: "07:15 PM", end: "07:55 PM", origin_genre: "USA (Wisconsin) • Death Metal", description: "Old-school death metal with a raw, crushing assault." },
-          { name: "SOIL OF IGNORANCE", start: "08:15 PM", end: "08:50 PM", origin_genre: "USA (Michigan) • Death Metal", description: "Brutal, old-school death metal with a hateful edge." },
+          { name: "JARHEAD FERTILIZER", start: "08:15 PM", end: "08:50 PM", origin_genre: "USA (Maryland) • Death/Grind", description: "Heavy, crushing death/grind." },
           { name: "MIASMATIC NECROSIS", start: "10:45 PM", end: "11:15 PM", origin_genre: "USA • Death Metal", description: "Gore-infused death metal with underground ferocity." },
           { name: "SHITSTORM", start: "11:40 PM", end: "12:15 AM", origin_genre: "USA (Florida) • Grindcore", description: "Fast, brutal grindcore with political intensity." },
           { name: "ROTTEN SOUND", start: "12:45 AM", end: "01:30 AM", origin_genre: "Finland • Grindcore", description: "Grindcore pioneers with relentless intensity." }
@@ -136,68 +137,6 @@ export const scheduleData: DaySchedule[] = [
           { name: "DESOLUS", start: "09:15 PM", end: "09:45 PM", origin_genre: "USA (Virginia) • Doom/Death", description: "Funeral doom metal with crushing atmosphere." },
           { name: "ATAVISTIC DECAY", start: "10:40 PM", end: "11:10 PM", origin_genre: "USA (Florida) • Death Metal", description: "Old-school death metal with a savage, underground sound." },
           { name: "GLORIOUS DEPRAVITY", start: "11:45 PM", end: "12:15 AM", origin_genre: "USA • Death Metal", description: "Underground death metal with a dark, blasphemous edge." }
-        ]
-      }
-    ]
-  },
-  {
-    day: "Sunday",
-    date: "SUNDAY MAY 24, 2026",
-    doors: {
-      "MARKET PLACE": "02:00 PM",
-      "NEVERMORE HALL": "03:30 PM",
-      "SOUNDSTAGE": "02:30 PM"
-    },
-    stages: [
-      {
-        name: "POWER PLANT LIVE",
-        bands: [
-          { name: "UNMERCIFUL", start: "05:35 PM", end: "06:15 PM", origin_genre: "USA (Kansas) • Death Metal", description: "Old-school death metal with a sinister edge." },
-          { name: "BLOOD RED THRONE", start: "07:05 PM", end: "07:50 PM", origin_genre: "Norway • Death Metal", description: "Blasphemous, unrelenting Norwegian extreme metal." },
-          { name: "VIO-LENCE", start: "08:50 PM", end: "09:40 PM", origin_genre: "USA (California) • Thrash Metal", description: "Pioneers of crossover thrash from the Bay Area." },
-          { name: "DYING FETUS", start: "11:10 PM", end: "12:00 AM", origin_genre: "USA (Maryland) • Brutal/Tech Death Metal", description: "Political, savage and relentless extreme metal." }
-        ]
-      },
-      {
-        name: "MARKET PLACE",
-        bands: [
-          { name: "CAVEMAN CULT", start: "03:30 PM", end: "04:10 PM", origin_genre: "USA (Florida) • Blackened Death Metal", description: "Primitive, crushing old-school death metal." },
-          { name: "CANCER", start: "04:40 PM", end: "05:30 PM", origin_genre: "UK (England) • Death Metal", description: "UK death metal pioneers since 1988." },
-          { name: "DEATH ANGEL", start: "06:15 PM", end: "07:05 PM", origin_genre: "USA (California) • Thrash Metal", description: "Bay Area thrash legends since 1982." },
-          { name: "GRAVE", start: "07:55 PM", end: "08:45 PM", origin_genre: "Sweden • Death Metal", description: "Legends of Swedish death metal since the late '80s." },
-          { name: "SARCÓFAGO", start: "09:45 PM", end: "10:45 PM", origin_genre: "Brazil • Black/Thrash Metal", description: "Brazilian black/thrash metal pioneers." }
-        ]
-      },
-      {
-        name: "NEVERMORE HALL",
-        bands: [
-          { name: "ABERRATION", start: "04:05 PM", end: "04:40 PM", origin_genre: "USA • Death Metal", description: "Old-school style death metal with a nihilistic tone." },
-          { name: "WRATHPRAYER", start: "05:35 PM", end: "06:15 PM", origin_genre: "Chile • Black/Death Metal", description: "Chaotic and ritualistic extreme metal from South America." },
-          { name: "WOE", start: "07:05 PM", end: "07:50 PM", origin_genre: "USA • Black Metal", description: "Atmospheric, political and uncompromising." },
-          { name: "ANTICHRIST SIEGE MACHINE", start: "08:50 PM", end: "09:35 PM", origin_genre: "USA (Virginia) • War Metal", description: "Relentless war metal assault with no mercy." },
-          { name: "...AND OCEANS", start: "10:50 PM", end: "11:40 PM", origin_genre: "Finland • Symphonic/Industrial Black Metal", description: "Atmospheric black metal with evolving symphonic and industrial elements." },
-          { name: "BATUSHKA", start: "12:20 AM", end: "01:20 AM", origin_genre: "Poland • Black Metal", description: "Liturgical black metal rooted in Orthodox tradition." }
-        ]
-      },
-      {
-        name: "SOUNDSTAGE",
-        bands: [
-          { name: "AISLE19", start: "03:05 PM", end: "03:30 PM", origin_genre: "USA (Maryland) • Death Metal", description: "Modern underground brutality." },
-          { name: "HEMORRHOID", start: "04:15 PM", end: "04:50 PM", origin_genre: "Slovakia • Goregrind", description: "Filthy, fast and brutal goregrind assault." },
-          { name: "EXCRESCENCE", start: "05:40 PM", end: "06:15 PM", origin_genre: "USA (New York) • Brutal Death Metal", description: "Technical, suffocating brutality." },
-          { name: "AFTERMATH", start: "07:15 PM", end: "07:50 PM", origin_genre: "USA (Arizona) • Grindcore", description: "Old-school grindcore violence from the desert." },
-          { name: "HOUKAGO GRIND TIME", start: "08:40 PM", end: "09:25 PM", origin_genre: "Japan • Grindcore", description: "Hyper-fast, chaotic Japanese grindcore mayhem." },
-          { name: "SEX PRISONER", start: "10:35 PM", end: "11:10 PM", origin_genre: "USA (Arizona) • Grindcore", description: "Fast, raw grindcore with attitude." },
-          { name: "I.T.O.O.H.!", start: "11:35 PM", end: "12:20 AM", origin_genre: "Czech Republic (Prague) • Grindcore / Experimental Deathgrind", description: "Chaotic, technical and utterly unhinged." },
-          { name: "CEPHALIC CARNAGE", start: "12:45 AM", end: "01:30 AM", origin_genre: "USA (Colorado) • Deathgrind", description: "Technical death metal meets grindcore insanity." }
-        ]
-      },
-      {
-        name: "ANGELS ROCK BAR",
-        bands: [
-          { name: "TÓMARÚM", start: "09:20 PM", end: "09:50 PM", origin_genre: "USA • Progressive Black Metal", description: "Atmospheric, melodic and expansive." },
-          { name: "GUDSFORLADT", start: "10:50 PM", end: "11:20 PM", origin_genre: "USA (Salem, Massachusetts / Los Angeles, California) • Black Metal", description: "Raw, hateful black metal. \"Gudsforladt\" (Danish for \"Godforsaken\") — unforgiving and relentless." },
-          { name: "CEMETERY MOON", start: "11:45 PM", end: "12:20 AM", origin_genre: "USA • Black Metal", description: "Occult, atmospheric black metal." }
         ]
       }
     ]

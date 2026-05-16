@@ -7,11 +7,10 @@ interface BandSlotProps {
   selectionState: Record<string, string>;
   onToggleSelection: (bandId: string, currentState: string) => void;
   earliestTime: number;
-  viewMode: 'simple' | 'detailed';
   pxPerMinute?: number;
 }
 
-export const BandSlot = ({ band, day, stage, selectionState, onToggleSelection, earliestTime, viewMode, pxPerMinute = 2 }: BandSlotProps) => {
+export const BandSlot = ({ band, day, stage, selectionState, onToggleSelection, earliestTime, pxPerMinute = 2 }: BandSlotProps) => {
   const startMins = parseTime(band.start);
   const endMins = parseTime(band.end);
   const duration = endMins - startMins;
@@ -28,18 +27,12 @@ export const BandSlot = ({ band, day, stage, selectionState, onToggleSelection, 
 
   return (
     <div 
-      className={`band-slot ${state} ${viewMode === 'detailed' ? 'detailed' : ''}`}
+      className={`band-slot ${state}`}
       style={{ top: `${topPosition}px`, height: `${height}px` }}
       onClick={handleClick}
     >
       <div className="band-name">{band.name}</div>
       <div className="band-time">{band.start}-{band.end}</div>
-      {viewMode === 'detailed' && (
-        <>
-          <div className="band-origin-genre">{band.origin_genre}</div>
-          <div className="band-description">{band.description}</div>
-        </>
-      )}
     </div>
   );
 };
