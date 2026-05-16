@@ -354,27 +354,41 @@
     gap: 10px;
   }
 
-  /* Improve horizontal scrolling on mobile */
+  /* Squeeze all stages into view on mobile without horizontal scrolling */
   .mdf-planner-root .schedule-grid-container {
     -webkit-overflow-scrolling: touch;
     padding-bottom: 20px;
     /* Hide scrollbar for cleaner look */
     scrollbar-width: none; 
+    overflow-x: hidden;
   }
   .mdf-planner-root .schedule-grid-container::-webkit-scrollbar {
     display: none;
   }
 
   .mdf-planner-root .stage-column {
-    min-width: 85vw; /* Take up most of the screen so user sees one stage at a time */
-    scroll-margin: 10px;
+    min-width: 0; /* Override desktop 200px min-width to fit all on screen */
+    flex: 1;
+    margin: 0 1px;
+  }
+
+  .mdf-planner-root .stage-name {
+    font-size: 0.65rem;
+    line-height: 1.1;
+    word-break: break-word;
+    letter-spacing: 0;
+  }
+
+  .mdf-planner-root .stage-doors {
+    font-size: 0.55rem;
   }
 
   .mdf-planner-root .band-name {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    line-height: 1;
   }
 
   .mdf-planner-root .band-time {
-    font-size: 0.75rem;
+    font-size: 0.55rem;
   }
 }
