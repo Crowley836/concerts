@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import html2canvas from 'html2canvas';
 import './MDFPlanner.css';
 import { scheduleData } from './data/schedule';
 import { TabNavigation } from './components/TabNavigation';
@@ -33,26 +32,6 @@ export const MDFPlannerPage = () => {
     sessionStorage.setItem('mdfPlannerState', JSON.stringify(newState));
   };
 
-  const handleCaptureScreenshot = async () => {
-    const target = document.querySelector('.mdf-planner-root');
-    if (!target) return;
-    
-    try {
-      // Hide elements with 'data-html2canvas-ignore' class if any, or html2canvas handles the attribute natively
-      const canvas = await html2canvas(target as HTMLElement, {
-        backgroundColor: '#050505', // Matches app background
-        scale: 2 // For better resolution
-      });
-      const image = canvas.toDataURL('image/png', 1.0);
-      const link = document.createElement('a');
-      link.download = `mdf-planner-${activeDay}.png`;
-      link.href = image;
-      link.click();
-    } catch (err) {
-      console.error('Failed to capture screenshot', err);
-    }
-  };
-
   const activeDayData = scheduleData.find(d => d.day === activeDay);
 
   return (
@@ -75,14 +54,6 @@ export const MDFPlannerPage = () => {
               activeDay={activeDay}
               onSelectDay={setActiveDay} 
             />
-            <button 
-              className="screenshot-btn" 
-              onClick={handleCaptureScreenshot}
-              data-html2canvas-ignore
-              title="Download Screenshot"
-            >
-              📸
-            </button>
           </div>
         </header>
 
