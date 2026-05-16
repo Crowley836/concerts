@@ -23,9 +23,8 @@
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  min-height: 100vh;
+  /* Let the body handle scrolling for better mobile pinch-zoom */
 }
 
 .mdf-planner-root * {
@@ -357,7 +356,6 @@
 
   /* Improve horizontal scrolling on mobile */
   .mdf-planner-root .schedule-grid-container {
-    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 20px;
     /* Hide scrollbar for cleaner look */
@@ -369,7 +367,6 @@
 
   .mdf-planner-root .stage-column {
     min-width: 85vw; /* Take up most of the screen so user sees one stage at a time */
-    scroll-snap-align: center;
     scroll-margin: 10px;
   }
 

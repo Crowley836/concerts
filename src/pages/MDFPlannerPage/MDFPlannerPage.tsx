@@ -13,10 +13,22 @@ export const MDFPlannerPage = () => {
   const [selectionState, setSelectionState] = useState<Record<string, string>>({});
 
   useEffect(() => {
+    // Allow native scrolling and pinch-zoom on this specific page
+    const originalOverflow = document.body.style.overflow;
+    const originalTouchAction = document.body.style.touchAction;
+    
+    document.body.style.overflow = 'auto';
+    document.body.style.touchAction = 'auto';
+
     const savedState = sessionStorage.getItem('mdfPlannerState');
     if (savedState) {
       setSelectionState(JSON.parse(savedState));
     }
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      document.body.style.touchAction = originalTouchAction;
+    };
   }, []);
 
   const handleToggleSelection = (bandId: string, currentState: string) => {
