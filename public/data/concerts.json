@@ -3299,8 +3299,8 @@
       "date": "2014-02-08",
       "headliner": "Southern Hospitality",
       "headlinerNormalized": "southern-hospitality",
-      "genre": "blues",
-      "genreNormalized": "blues",
+      "genre": "Southern Rock",
+      "genreNormalized": "southern-rock",
       "openers": [],
       "venue": "ArtsQuest’s SteelStacks",
       "venueNormalized": "artsquest-s-steelstacks",
@@ -7491,7 +7491,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-05-17T01:46:10.311Z",
+    "lastUpdated": "2026-05-24T01:52:44.211Z",
     "totalConcerts": 276,
     "dateRange": {
       "earliest": "1994-06-06",
