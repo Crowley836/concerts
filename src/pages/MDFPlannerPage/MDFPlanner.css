@@ -1,394 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
-
 .mdf-planner-root {
-  --bg-color: #050505;
+  --bg-color: #030303;
   --text-color: #e0e0e0;
+  --glow-color: rgba(141, 178, 54, 0.3); /* Acid green glow from the flyer */
   
-  --font-heading: 'Oswald', sans-serif;
-  --font-body: 'Roboto Condensed', sans-serif;
-  
-  /* Band states */
-  --bg-band-unselected: #e3000b; /* The classic MDF red */
-  --bg-band-mustsee: #39ff14; /* Electric Green */
-  --bg-band-target: #ff8c00; /* Bright Orange */
-  --bg-band-convenient: #708090; /* Steel Gray */
-
-  --text-band: #ffffff;
-  
-  /* Layout vars */
-  --px-per-minute: 2px;
-
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  /* Let the body handle scrolling for better mobile pinch-zoom */
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mdf-planner-root * {
   box-sizing: border-box;
 }
 
-.mdf-planner-root h1, 
-.mdf-planner-root h2, 
-.mdf-planner-root h3, 
-.mdf-planner-root h4, 
-.mdf-planner-root h5, 
-.mdf-planner-root h6 {
-  font-family: var(--font-heading);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* Ambient Blurred Backdrop */
+.mdf-ambient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(40px) brightness(0.25) contrast(1.1);
+  transform: scale(1.15); /* Prevents blurred edge bleed */
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
 }
 
-.mdf-planner-root .app-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-top: 80px; /* Add padding for desktop header if needed */
-}
-
-.mdf-planner-root .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid var(--bg-band-unselected);
-  padding-bottom: 10px;
-  flex-wrap: wrap; /* Handle smaller screens */
-  gap: 15px;
-}
-
-.mdf-planner-root .header h1 {
-  font-size: 2.5rem;
-  color: #fff;
-  margin: 0;
-}
-
-.mdf-planner-root .header-accent {
-  color: var(--bg-band-unselected);
-}
-
-.mdf-planner-root .header-controls {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.mdf-planner-root .tabs {
-  display: flex;
-  gap: 15px;
-}
-
-.mdf-planner-root .tab-btn {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #333;
-  padding: 10px 20px;
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border-radius: 4px;
-}
-
-.mdf-planner-root .tab-btn:hover {
-  background: #222;
-}
-
-.mdf-planner-root .tab-btn.active {
-  background: var(--bg-band-unselected);
-  border-color: var(--bg-band-unselected);
-  color: #fff;
-}
-
-.mdf-planner-root .screenshot-btn {
-  background: transparent;
-  border: 1px solid #333;
-  color: #fff;
-  border-radius: 4px;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 1.2rem;
+/* Frosted glass back button */
+.mdf-back-btn {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 50;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 50%;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-.mdf-planner-root .screenshot-btn:hover {
-  background: #222;
-  border-color: #555;
-  transform: scale(1.05);
+.mdf-back-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.08);
+  color: #8db236; /* Match green theme on hover */
 }
 
-.mdf-planner-root .legend {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 30px;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  flex-wrap: wrap;
-}
-
-.mdf-planner-root .legend-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.mdf-planner-root .legend-color {
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-}
-
-.mdf-planner-root .legend-color.unselected { background: var(--bg-band-unselected); }
-.mdf-planner-root .legend-color.mustsee { background: var(--bg-band-mustsee); }
-.mdf-planner-root .legend-color.target { background: var(--bg-band-target); }
-.mdf-planner-root .legend-color.convenient { background: var(--bg-band-convenient); }
-
-.mdf-planner-root .schedule-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.mdf-planner-root .schedule-title {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0;
-}
-
-.mdf-planner-root .schedule-grid-container {
-  display: flex;
-  gap: 10px;
+/* Centered Poster Container */
+.mdf-poster-container {
   position: relative;
-  overflow-x: auto;
-  padding-bottom: 40px;
-}
-
-.mdf-planner-root .stage-column {
-  flex: 1;
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-}
-
-.mdf-planner-root .stage-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.mdf-planner-root .stage-name {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-}
-
-.mdf-planner-root .stage-doors {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: #aaa;
-}
-
-.mdf-planner-root .timeline {
-  position: relative;
-  background: rgba(255, 255, 255, 0.02);
-  border-left: 1px solid rgba(255, 255, 255, 0.05);
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.mdf-planner-root .band-slot {
-  position: absolute;
-  width: 95%;
-  left: 2.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.1s, background-color 0.2s;
-  padding: 4px;
-}
-
-.mdf-planner-root .band-slot:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   z-index: 10;
-}
-
-.mdf-planner-root .band-slot.unselected { background: var(--bg-band-unselected); color: #fff; }
-.mdf-planner-root .band-slot.mustsee { background: var(--bg-band-mustsee); color: #000; font-weight: bold; }
-.mdf-planner-root .band-slot.target { background: var(--bg-band-target); color: #000; font-weight: bold; }
-.mdf-planner-root .band-slot.convenient { background: var(--bg-band-convenient); color: #fff; }
-
-.mdf-planner-root .band-name {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 4px;
-}
-
-.mdf-planner-root .band-time {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-}
-
-.mdf-planner-root .band-slot.detailed .band-time {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin: 4px 0 6px 0;
-  opacity: 0.95;
-}
-
-.mdf-planner-root .view-toggle-btn {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #333;
-  padding: 8px 12px;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s ease;
   display: flex;
   align-items: center;
-}
-
-.mdf-planner-root .view-toggle-btn:hover {
-  background: #222;
-  border-color: #555;
-  transform: scale(1.05);
-}
-
-.mdf-planner-root .band-origin-genre {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  margin-top: 6px;
-  opacity: 0.9;
-  line-height: 1.2;
-}
-
-.mdf-planner-root .band-description {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  margin-top: 4px;
-  opacity: 0.95;
-  line-height: 1.3;
-}
-
-.mdf-planner-root .band-slot.unselected .band-origin-genre,
-.mdf-planner-root .band-slot.unselected .band-description,
-.mdf-planner-root .band-slot.convenient .band-origin-genre,
-.mdf-planner-root .band-slot.convenient .band-description {
-  color: #fff;
-}
-
-.mdf-planner-root .band-slot.mustsee .band-origin-genre,
-.mdf-planner-root .band-slot.mustsee .band-description,
-.mdf-planner-root .band-slot.target .band-origin-genre,
-.mdf-planner-root .band-slot.target .band-description {
-  color: #000;
-}
-
-.mdf-planner-root .band-slot.detailed {
-  padding: 8px 12px;
   justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.5rem 1rem;
+}
+
+/* Elegant card frame for the flyer */
+.mdf-poster-card {
+  position: relative;
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 12px;
   overflow: hidden;
+  border: 1px solid rgba(141, 178, 54, 0.2); /* Acid green outline */
+  box-shadow: 
+    0 25px 60px -15px rgba(0, 0, 0, 0.95),
+    0 0 40px var(--glow-color);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Mobile Responsive Enhancements */
+.mdf-poster-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  border-color: rgba(141, 178, 54, 0.4);
+  box-shadow: 
+    0 35px 80px -10px rgba(0, 0, 0, 0.98),
+    0 0 60px rgba(141, 178, 54, 0.5);
+}
+
+.mdf-poster-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle image scale adjustment on hover */
+.mdf-poster-card:hover .mdf-poster-img {
+  transform: scale(1.01);
+}
+
+/* Mobile optimizations */
 @media (max-width: 768px) {
-  .mdf-planner-root .app-container {
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+  .mdf-back-btn {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.6rem;
+  }
+  
+  .mdf-poster-container {
+    padding: 5rem 1rem 2rem 1rem; /* Padding at top to avoid back button overlay */
   }
 
-  .mdf-planner-root .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+  .mdf-poster-card {
+    max-width: 100%;
+    max-height: 75vh;
   }
 
-  .mdf-planner-root .header h1 {
-    font-size: 1.8rem;
-  }
-
-  .mdf-planner-root .header-controls {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .mdf-planner-root .tabs {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .mdf-planner-root .tab-btn {
-    flex: 1;
-    padding: 8px 4px;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .mdf-planner-root .view-toggle-btn,
-  .mdf-planner-root .screenshot-btn {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-  }
-
-  .mdf-planner-root .legend {
-    font-size: 0.9rem;
-    gap: 10px;
-  }
-
-  /* Squeeze all stages into view on mobile without horizontal scrolling */
-  .mdf-planner-root .schedule-grid-container {
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 20px;
-    /* Hide scrollbar for cleaner look */
-    scrollbar-width: none; 
-    overflow-x: hidden;
-  }
-  .mdf-planner-root .schedule-grid-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mdf-planner-root .stage-column {
-    min-width: 0; /* Override desktop 200px min-width to fit all on screen */
-    flex: 1;
-    margin: 0 1px;
-  }
-
-  .mdf-planner-root .stage-name {
-    font-size: 0.65rem;
-    line-height: 1.1;
-    word-break: break-word;
-    letter-spacing: 0;
-  }
-
-  .mdf-planner-root .stage-doors {
-    font-size: 0.55rem;
-  }
-
-  .mdf-planner-root .band-name {
-    font-size: 0.75rem;
-    line-height: 1;
-  }
-
-  .mdf-planner-root .band-time {
-    font-size: 0.55rem;
+  .mdf-poster-img {
+    max-height: 75vh;
   }
 }
+
