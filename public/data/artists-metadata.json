@@ -5677,68 +5677,19 @@
     ]
   },
   "chris-cain": {
-    "name": "chris-cain",
-    "normalizedName": "chris-cain",
-    "fetchedAt": "2026-02-05T22:08:16.714Z",
-    "dataSource": "spotify",
+    "name": "Chris Cain",
+    "image": "https://lastfm-img.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Chris Cain is a blues and jazz guitarist with an international following. He is originally from San Jose, California, and began playing professionally as a teenager there, in local clubs, at festivals, and at private events.\n\nA virtuoso guitar player, Cain is also regarded among his fans and in the blues community as one of the most innovative and creative improvisers playing blues and jazz guitar today.\n\nCain received four W.C. Handy award nominations in 1987 for his debut album, Late Night Cit",
     "genres": [
-      "modern blues",
       "blues",
-      "blues rock",
-      "soul blues"
+      "Karlsruhe",
+      "bluesclubka",
+      "Gitarrenunterricht",
+      "germany"
     ],
-    "popularity": 31,
-    "spotifyArtistId": "3HFfi1wOWbXd83qSiwJhuv",
-    "spotifyArtistUrl": "https://open.spotify.com/artist/3HFfi1wOWbXd83qSiwJhuv",
-    "image": "https://i.scdn.co/image/ab6761610000e5eb4bee5124fec1d3f0d96f6e10",
-    "mostPopularAlbum": {
-      "name": "Raisin' Cain",
-      "spotifyAlbumId": "2Ez2n6EAa9Xp7dfOacCbEY",
-      "spotifyAlbumUrl": "https://open.spotify.com/album/2Ez2n6EAa9Xp7dfOacCbEY",
-      "coverArt": {
-        "small": "https://i.scdn.co/image/ab67616d000048510ef106bddb27d261e9db1946",
-        "medium": "https://i.scdn.co/image/ab67616d00001e020ef106bddb27d261e9db1946",
-        "large": "https://i.scdn.co/image/ab67616d0000b2730ef106bddb27d261e9db1946"
-      },
-      "releaseYear": 2021
-    },
-    "topTracks": [
-      {
-        "name": "I Believe I Got Off Cheap",
-        "spotifyTrackId": "3CHXwtNr7tjTlImF4tuxW8",
-        "spotifyUrl": "https://open.spotify.com/track/3CHXwtNr7tjTlImF4tuxW8",
-        "previewUrl": null,
-        "durationMs": 199346
-      },
-      {
-        "name": "You Upset Me Baby",
-        "spotifyTrackId": "1CSqZU7fS0M3bGzfNDKjpw",
-        "spotifyUrl": "https://open.spotify.com/track/1CSqZU7fS0M3bGzfNDKjpw",
-        "previewUrl": null,
-        "durationMs": 150680
-      },
-      {
-        "name": "You Won't Have A Problem When I'm Gone",
-        "spotifyTrackId": "7zP7aoZze57UBRRsOM8QZS",
-        "spotifyUrl": "https://open.spotify.com/track/7zP7aoZze57UBRRsOM8QZS",
-        "previewUrl": null,
-        "durationMs": 186586
-      },
-      {
-        "name": "Fear Is My New Roommate",
-        "spotifyTrackId": "3mt70bTnxSrkfQvGuZVgwb",
-        "spotifyUrl": "https://open.spotify.com/track/3mt70bTnxSrkfQvGuZVgwb",
-        "previewUrl": null,
-        "durationMs": 213024
-      },
-      {
-        "name": "Born To Play",
-        "spotifyTrackId": "4zmcjPY1ZtrLiMgrjWax7z",
-        "spotifyUrl": "https://open.spotify.com/track/4zmcjPY1ZtrLiMgrjWax7z",
-        "previewUrl": null,
-        "durationMs": 197133
-      }
-    ]
+    "url": "https://www.last.fm/music/Chris+Cain",
+    "source": "lastfm",
+    "fetchedAt": "2026-08-23T00:29:29.502Z"
   },
   "kenny-neal": {
     "name": "kenny-neal",
@@ -13254,5 +13205,20 @@
     "website": "theorderofthedragon.com",
     "source": "theaudiodb",
     "fetchedAt": "2026-08-09T00:40:09.547Z"
+  },
+  "eric-johanson": {
+    "name": "Eric Johanson",
+    "image": "https://lastfm-img.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Eric Johanson is a modern blues artist, who blends the classic elements of the style with more proggy influences. His side projects Cire and Emptyself offered him musical exploration before his solo career, and bits and pieces of his other discographies can be heard in his solo music as well.\n\nHis latest release, Below Sea Level, provides an interesting take on blues, and is a must-listen for anyone interested in the genre. Read more on Last.fm",
+    "genres": [
+      "blues rock",
+      "blues",
+      "electric blues",
+      "emptyself",
+      "Cire"
+    ],
+    "url": "https://www.last.fm/music/Eric+Johanson",
+    "source": "lastfm",
+    "fetchedAt": "2026-08-23T00:29:28.507Z"
   }
 }

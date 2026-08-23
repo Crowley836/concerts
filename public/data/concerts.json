@@ -7511,7 +7511,7 @@
       "state": "MD",
       "cityState": "Baltimore, MD",
       "isFestival": true,
-      "attendedWith": "",
+      "attendedWith": "Jeff, Kevin",
       "year": 2026,
       "month": 5,
       "day": 22,
@@ -7521,16 +7521,96 @@
         "lat": 39.2904278,
         "lng": -76.6139017
       }
+    },
+    {
+      "id": "2026-06-28-eric-johanson",
+      "date": "2026-06-28",
+      "headliner": "Eric Johanson",
+      "headlinerNormalized": "eric-johanson",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [],
+      "venue": "Club 443",
+      "venueNormalized": "club-443",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "attendedWith": "Taylor",
+      "year": 2026,
+      "month": 6,
+      "day": 28,
+      "dayOfWeek": "Sunday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0524321,
+        "lng": -76.14030819999999
+      }
+    },
+    {
+      "id": "2026-08-15-endless-fires-festival",
+      "date": "2026-08-15",
+      "headliner": "Endless Fires Festival",
+      "headlinerNormalized": "endless-fires-festival",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Gwar",
+        "Weekend Nachos",
+        "Frozen Ground",
+        "Concrete"
+      ],
+      "venue": "Sharkey's Event Center",
+      "venueNormalized": "sharkey-s-event-center",
+      "city": "Liverpool",
+      "state": "NY",
+      "cityState": "Liverpool, NY",
+      "isFestival": true,
+      "attendedWith": "Jeff, Kevin",
+      "year": 2026,
+      "month": 8,
+      "day": 15,
+      "dayOfWeek": "Saturday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.1218637,
+        "lng": -76.21341629999999
+      }
+    },
+    {
+      "id": "2026-08-18-chris-cain",
+      "date": "2026-08-18",
+      "headliner": "Chris Cain",
+      "headlinerNormalized": "chris-cain",
+      "genre": "modern blues",
+      "genreNormalized": "modern-blues",
+      "openers": [],
+      "venue": "Club 443",
+      "venueNormalized": "club-443",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "attendedWith": "Taylor, Dad, Mary",
+      "year": 2026,
+      "month": 8,
+      "day": 18,
+      "dayOfWeek": "Tuesday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0524321,
+        "lng": -76.14030819999999
+      }
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-08-16T00:28:14.898Z",
-    "totalConcerts": 277,
+    "lastUpdated": "2026-08-23T00:29:11.332Z",
+    "totalConcerts": 280,
     "dateRange": {
       "earliest": "1994-06-06",
-      "latest": "2026-05-22"
+      "latest": "2026-08-18"
     },
-    "uniqueArtists": 160,
+    "uniqueArtists": 163,
     "uniqueVenues": 88,
     "uniqueCities": 31
   }
