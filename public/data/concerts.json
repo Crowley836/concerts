@@ -7527,8 +7527,8 @@
       "date": "2026-06-28",
       "headliner": "Eric Johanson",
       "headlinerNormalized": "eric-johanson",
-      "genre": "",
-      "genreNormalized": "",
+      "genre": "blues rock",
+      "genreNormalized": "blues-rock",
       "openers": [],
       "venue": "Club 443",
       "venueNormalized": "club-443",
@@ -7582,8 +7582,8 @@
       "date": "2026-08-18",
       "headliner": "Chris Cain",
       "headlinerNormalized": "chris-cain",
-      "genre": "modern blues",
-      "genreNormalized": "modern-blues",
+      "genre": "blues",
+      "genreNormalized": "blues",
       "openers": [],
       "venue": "Club 443",
       "venueNormalized": "club-443",
@@ -7601,16 +7601,45 @@
         "lat": 43.0524321,
         "lng": -76.14030819999999
       }
+    },
+    {
+      "id": "2026-08-28-berzurkus-festival",
+      "date": "2026-08-28",
+      "headliner": "Berzurkus Festival",
+      "headlinerNormalized": "berzurkus-festival",
+      "genre": "",
+      "genreNormalized": "",
+      "openers": [
+        "Down",
+        "Zakk Sabbath",
+        "Suicidal Tendencies"
+      ],
+      "venue": "Montage Mountain",
+      "venueNormalized": "montage-mountain",
+      "city": "Scranton",
+      "state": "PA",
+      "cityState": "Scranton, PA",
+      "isFestival": true,
+      "attendedWith": "Adam, Finn, Max",
+      "year": 2026,
+      "month": 8,
+      "day": 28,
+      "dayOfWeek": "Friday",
+      "decade": "2020s",
+      "location": {
+        "lat": 41.3533,
+        "lng": -75.6592
+      }
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-08-23T00:29:11.332Z",
-    "totalConcerts": 280,
+    "lastUpdated": "2026-08-30T01:52:13.909Z",
+    "totalConcerts": 281,
     "dateRange": {
       "earliest": "1994-06-06",
-      "latest": "2026-08-18"
+      "latest": "2026-08-28"
     },
-    "uniqueArtists": 163,
+    "uniqueArtists": 164,
     "uniqueVenues": 88,
     "uniqueCities": 31
   }
