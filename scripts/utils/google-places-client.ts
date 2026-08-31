@@ -135,6 +135,7 @@ async function findPlace(
         'Content-Type': 'application/json',
         'X-Goog-Api-Key': GOOGLE_PLACES_API_KEY,
         'X-Goog-FieldMask': 'places.id,places.displayName',
+        'Referer': 'http://localhost',
       },
       body: JSON.stringify(body),
     })
@@ -175,6 +176,7 @@ async function getPlaceDetails(placeId: string): Promise<PlaceDetails | null> {
         'X-Goog-Api-Key': GOOGLE_PLACES_API_KEY,
         'X-Goog-FieldMask':
           'id,displayName,formattedAddress,rating,userRatingCount,websiteUri,types,photos',
+        'Referer': 'http://localhost',
       },
     })
 

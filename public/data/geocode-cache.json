@@ -994,5 +994,23 @@
     "lng": -73.9980485,
     "formattedAddress": "Convention Hall, Asbury Park, NJ",
     "geocodedAt": "2026-01-08T01:29:00.439Z"
+  },
+  "b.b. king blues club & grill|new york city|ny": {
+    "lat": 40.756915,
+    "lng": -73.9884664,
+    "formattedAddress": "B.B. King Blues Club & Grill, New York City, NY",
+    "geocodedAt": "2026-08-31T16:03:39.618Z"
+  },
+  "artsquest’s steelstacks|bethlehem|pa": {
+    "lat": 40.614004,
+    "lng": -75.367718,
+    "formattedAddress": "ArtsQuest’s SteelStacks, Bethlehem, PA",
+    "geocodedAt": "2026-08-31T16:03:40.379Z"
+  },
+  "kodak theatre|rochester|ny": {
+    "lat": 43.1975043,
+    "lng": -77.6327701,
+    "formattedAddress": "Kodak Theatre, Rochester, NY",
+    "geocodedAt": "2026-08-31T16:03:41.509Z"
   }
 }
