@@ -1178,8 +1178,8 @@
       "dayOfWeek": "Friday",
       "decade": "2000s",
       "location": {
-        "lat": 40.7128,
-        "lng": -74.006
+        "lat": 40.756915,
+        "lng": -73.9884664
       }
     },
     {
@@ -3315,8 +3315,8 @@
       "dayOfWeek": "Saturday",
       "decade": "2010s",
       "location": {
-        "lat": 39.7392,
-        "lng": -104.9903
+        "lat": 40.614004,
+        "lng": -75.367718
       }
     },
     {
@@ -7460,8 +7460,8 @@
       "dayOfWeek": "Sunday",
       "decade": "2020s",
       "location": {
-        "lat": 43.1566,
-        "lng": -77.6088
+        "lat": 43.1975043,
+        "lng": -77.6327701
       }
     },
     {
@@ -7633,7 +7633,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-08-30T01:52:13.909Z",
+    "lastUpdated": "2026-09-06T01:26:53.051Z",
     "totalConcerts": 281,
     "dateRange": {
       "earliest": "1994-06-06",
