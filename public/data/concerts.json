@@ -7630,14 +7630,42 @@
         "lat": 41.3533,
         "lng": -75.6592
       }
+    },
+    {
+      "id": "2026-09-04-high-on-fire",
+      "date": "2026-09-04",
+      "headliner": "High on Fire",
+      "headlinerNormalized": "high-on-fire",
+      "genre": "Sludge Metal",
+      "genreNormalized": "sludge-metal",
+      "openers": [
+        "Acid Witch",
+        "Graveripper"
+      ],
+      "venue": "Song & Dance",
+      "venueNormalized": "song-dance",
+      "city": "Syracuse",
+      "state": "NY",
+      "cityState": "Syracuse, NY",
+      "isFestival": false,
+      "attendedWith": "Jeff",
+      "year": 2026,
+      "month": 9,
+      "day": 4,
+      "dayOfWeek": "Friday",
+      "decade": "2020s",
+      "location": {
+        "lat": 43.0471919,
+        "lng": -76.15170789999999
+      }
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-09-06T01:26:53.051Z",
-    "totalConcerts": 281,
+    "lastUpdated": "2026-09-13T01:32:56.203Z",
+    "totalConcerts": 282,
     "dateRange": {
       "earliest": "1994-06-06",
-      "latest": "2026-08-28"
+      "latest": "2026-09-04"
     },
     "uniqueArtists": 164,
     "uniqueVenues": 88,
