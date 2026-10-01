@@ -17,6 +17,16 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
       sourcemap: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ['react', 'react-dom', 'react-router-dom'],
+            charts: ['d3'],
+            maps: ['leaflet', 'react-leaflet', 'react-leaflet-cluster'],
+            animations: ['framer-motion'],
+          },
+        },
+      },
     },
     server: {
       port: 5173,

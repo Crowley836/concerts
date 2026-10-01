@@ -56,3 +56,6 @@ bugs/
 
 # Inspiration and reference materials
 docs/inspiration/
+
+# Test artifacts
+test/screenshots/

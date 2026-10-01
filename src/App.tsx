@@ -183,7 +183,7 @@ function MainScenes() {
         {/* Scene 1: Hero/Timeline */}
         <Scene1Hero concerts={concerts} />
 
-        {/* Scene 2: Venues (Desktop) / Highlights (Mobile) */}
+        {/* Scene 2: Highlights (Mobile) / Bands & Venues (Desktop) */}
         <div className="md:hidden snap-start h-screen">
           <MobileStats concerts={concerts} />
         </div>
@@ -205,15 +205,15 @@ function MainScenes() {
 
 
 
-        {/* Scene 6: Festivals (Now 4) */}
+        {/* Scene 4: Festivals */}
         <Scene6Festivals concerts={concerts} />
 
-        {/* Scene 4: Genres (sunburst) (Now 5) - Desktop Only */}
+        {/* Scene 5: Genres (sunburst) — Desktop Only */}
         <div className="hidden md:block">
           <Scene5Genres concerts={concerts} />
         </div>
 
-        {/* Scene 5: Artists (album mosaic) */}
+        {/* Scene 6: Artists (album mosaic) */}
         <ArtistScene
           concerts={concerts}
           pendingArtistFocus={pendingArtistFocus}
