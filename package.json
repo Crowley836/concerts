@@ -1,6 +1,6 @@
 {
   "name": "mr-crowleys-vault",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "private": true,
   "type": "module",
   "description": "Interactive concert history timeline application",
@@ -68,6 +68,5 @@
     "typescript": "^5.9.3",
     "vite": "^6.4.3",
     "vitest": "^1.0.0"
-
   }
 }
