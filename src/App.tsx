@@ -208,10 +208,8 @@ function MainScenes() {
         {/* Scene 4: Festivals */}
         <Scene6Festivals concerts={concerts} />
 
-        {/* Scene 5: Genres (sunburst) — Desktop Only */}
-        <div className="hidden md:block">
-          <Scene5Genres concerts={concerts} />
-        </div>
+        {/* Scene 5: Genres (Treemap + Timeline Slider) */}
+        <Scene5Genres concerts={concerts} />
 
         {/* Scene 6: Artists (album mosaic) */}
         <ArtistScene

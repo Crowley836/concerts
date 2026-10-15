@@ -26,11 +26,13 @@
     "diff-data": "tsx scripts/diff-concerts.ts",
     "prefetch:setlists": "tsx scripts/prefetch-setlists.ts",
     "test:sanity": "node test/test-simple.mjs",
+    "test": "vitest run",
     "og:generate": "tsx scripts/generate-og-simple.ts",
     "og:preview": "tsx scripts/preview-og-crops.ts",
     "cleanup:backups": "tsx scripts/cleanup-backups.ts",
     "sync-sheet": "tsx scripts/sync-sheet-to-csv.ts",
-    "setup-auth": "tsx scripts/setup-google-auth.ts"
+    "setup-auth": "tsx scripts/setup-google-auth.ts",
+    "aggregate:genres": "tsx scripts/aggregate-genres-timeline.ts"
   },
   "dependencies": {
     "csv-parse": "^7.0.3",
@@ -64,6 +66,8 @@
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
-    "vite": "^6.4.3"
+    "vite": "^6.4.3",
+    "vitest": "^1.0.0"
+
   }
 }
