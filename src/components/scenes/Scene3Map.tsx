@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css'
 import type { Concert } from '../../types/concert'
 import { normalizeVenueName } from '../../utils/normalize'
 import { haptics } from '../../utils/haptics'
+import { addDarkBasemap } from '../../utils/basemap'
 
 interface VenueMetadata {
   name: string
@@ -224,10 +225,8 @@ export function Scene3Map({ concerts, onVenueNavigate, pendingVenueFocus, onVenu
         dragging: false, // Make it completely static
       })
 
-      // Monochromatic tile layer with dark grayscale styling
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19,
-      }).addTo(map)
+      // Monochromatic tile layer with dark grayscale styling (or Esri watermark-free fallback)
+      addDarkBasemap(map, ZOOM_BOUNDS.max)
 
       // Create a custom pane for popups with high z-index
       map.createPane('popupPane')

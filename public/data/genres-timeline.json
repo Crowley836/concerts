@@ -1,0 +1,2144 @@
+{
+  "genres": [
+    {
+      "name": "Death Metal",
+      "normalizedName": "death-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "2000": 1,
+        "2001": 1,
+        "2004": 6,
+        "2005": 2,
+        "2006": 3,
+        "2007": 4,
+        "2008": 3,
+        "2009": 6,
+        "2010": 6,
+        "2011": 4,
+        "2012": 4,
+        "2013": 4,
+        "2014": 6,
+        "2015": 8,
+        "2016": 7,
+        "2017": 7,
+        "2018": 7,
+        "2019": 5,
+        "2022": 3,
+        "2023": 4,
+        "2024": 7,
+        "2025": 6
+      },
+      "totalShows": 104,
+      "firstYear": 2000,
+      "lastYear": 2025,
+      "artists": [
+        {
+          "name": "Dying Fetus",
+          "normalizedName": "dying-fetus",
+          "showCount": 10,
+          "years": [
+            2004,
+            2009,
+            2010,
+            2013,
+            2015,
+            2016,
+            2018,
+            2022,
+            2023,
+            2024
+          ],
+          "firstYear": 2004,
+          "lastYear": 2024
+        },
+        {
+          "name": "Cannibal Corpse",
+          "normalizedName": "cannibal-corpse",
+          "showCount": 7,
+          "years": [
+            2004,
+            2006,
+            2007,
+            2009,
+            2015,
+            2016,
+            2024
+          ],
+          "firstYear": 2004,
+          "lastYear": 2024
+        },
+        {
+          "name": "Deicide",
+          "normalizedName": "deicide",
+          "showCount": 5,
+          "years": [
+            2000,
+            2011,
+            2012,
+            2013,
+            2015
+          ],
+          "firstYear": 2000,
+          "lastYear": 2015
+        },
+        {
+          "name": "Morbid Angel",
+          "normalizedName": "morbid-angel",
+          "showCount": 5,
+          "years": [
+            2004,
+            2005,
+            2012,
+            2019,
+            2023
+          ],
+          "firstYear": 2004,
+          "lastYear": 2023
+        },
+        {
+          "name": "Six Feet Under",
+          "normalizedName": "six-feet-under",
+          "showCount": 4,
+          "years": [
+            2001,
+            2004,
+            2005,
+            2025
+          ],
+          "firstYear": 2001,
+          "lastYear": 2025
+        },
+        {
+          "name": "Suffocation",
+          "normalizedName": "suffocation",
+          "showCount": 4,
+          "years": [
+            2004,
+            2014,
+            2017,
+            2018
+          ],
+          "firstYear": 2004,
+          "lastYear": 2018
+        },
+        {
+          "name": "Obituary",
+          "normalizedName": "obituary",
+          "showCount": 4,
+          "years": [
+            2006,
+            2017,
+            2018,
+            2019
+          ],
+          "firstYear": 2006,
+          "lastYear": 2019
+        },
+        {
+          "name": "Nile",
+          "normalizedName": "nile",
+          "showCount": 4,
+          "years": [
+            2010,
+            2013,
+            2014,
+            2019
+          ],
+          "firstYear": 2010,
+          "lastYear": 2019
+        },
+        {
+          "name": "Goatwhore",
+          "normalizedName": "goatwhore",
+          "showCount": 4,
+          "years": [
+            2010,
+            2022,
+            2023,
+            2024
+          ],
+          "firstYear": 2010,
+          "lastYear": 2024
+        },
+        {
+          "name": "Misery Index",
+          "normalizedName": "misery-index",
+          "showCount": 3,
+          "years": [
+            2009,
+            2010,
+            2015
+          ],
+          "firstYear": 2009,
+          "lastYear": 2015
+        },
+        {
+          "name": "Amon Amarth",
+          "normalizedName": "amon-amarth",
+          "showCount": 2,
+          "years": [
+            2007,
+            2014
+          ],
+          "firstYear": 2007,
+          "lastYear": 2014
+        },
+        {
+          "name": "Carcass",
+          "normalizedName": "carcass",
+          "showCount": 2,
+          "years": [
+            2008,
+            2016
+          ],
+          "firstYear": 2008,
+          "lastYear": 2016
+        },
+        {
+          "name": "Brujeria",
+          "normalizedName": "brujeria",
+          "showCount": 2,
+          "years": [
+            2016,
+            2017
+          ],
+          "firstYear": 2016,
+          "lastYear": 2017
+        },
+        {
+          "name": "MDF IV",
+          "normalizedName": "mdf-iv",
+          "showCount": 1,
+          "years": [
+            2006
+          ],
+          "firstYear": 2006,
+          "lastYear": 2006
+        },
+        {
+          "name": "MDF V",
+          "normalizedName": "mdf-v",
+          "showCount": 1,
+          "years": [
+            2007
+          ],
+          "firstYear": 2007,
+          "lastYear": 2007
+        },
+        {
+          "name": "Necrophagist",
+          "normalizedName": "necrophagist",
+          "showCount": 1,
+          "years": [
+            2007
+          ],
+          "firstYear": 2007,
+          "lastYear": 2007
+        },
+        {
+          "name": "MDF VI",
+          "normalizedName": "mdf-vi",
+          "showCount": 1,
+          "years": [
+            2008
+          ],
+          "firstYear": 2008,
+          "lastYear": 2008
+        },
+        {
+          "name": "Godbelow",
+          "normalizedName": "godbelow",
+          "showCount": 1,
+          "years": [
+            2008
+          ],
+          "firstYear": 2008,
+          "lastYear": 2008
+        },
+        {
+          "name": "Vital Remains",
+          "normalizedName": "vital-remains",
+          "showCount": 1,
+          "years": [
+            2009
+          ],
+          "firstYear": 2009,
+          "lastYear": 2009
+        },
+        {
+          "name": "MDF VII",
+          "normalizedName": "mdf-vii",
+          "showCount": 1,
+          "years": [
+            2009
+          ],
+          "firstYear": 2009,
+          "lastYear": 2009
+        },
+        {
+          "name": "God Dethroned",
+          "normalizedName": "god-dethroned",
+          "showCount": 1,
+          "years": [
+            2009
+          ],
+          "firstYear": 2009,
+          "lastYear": 2009
+        },
+        {
+          "name": "MDF VIII",
+          "normalizedName": "mdf-viii",
+          "showCount": 1,
+          "years": [
+            2010
+          ],
+          "firstYear": 2010,
+          "lastYear": 2010
+        },
+        {
+          "name": "MDF IX",
+          "normalizedName": "mdf-ix",
+          "showCount": 1,
+          "years": [
+            2011
+          ],
+          "firstYear": 2011,
+          "lastYear": 2011
+        },
+        {
+          "name": "Grave",
+          "normalizedName": "grave",
+          "showCount": 1,
+          "years": [
+            2011
+          ],
+          "firstYear": 2011,
+          "lastYear": 2011
+        },
+        {
+          "name": "Immolation",
+          "normalizedName": "immolation",
+          "showCount": 1,
+          "years": [
+            2011
+          ],
+          "firstYear": 2011,
+          "lastYear": 2011
+        },
+        {
+          "name": "MDF X",
+          "normalizedName": "mdf-x",
+          "showCount": 1,
+          "years": [
+            2012
+          ],
+          "firstYear": 2012,
+          "lastYear": 2012
+        },
+        {
+          "name": "Shadows Fall",
+          "normalizedName": "shadows-fall",
+          "showCount": 1,
+          "years": [
+            2012
+          ],
+          "firstYear": 2012,
+          "lastYear": 2012
+        },
+        {
+          "name": "MDF XI",
+          "normalizedName": "mdf-xi",
+          "showCount": 1,
+          "years": [
+            2013
+          ],
+          "firstYear": 2013,
+          "lastYear": 2013
+        },
+        {
+          "name": "MDF XII",
+          "normalizedName": "mdf-xii",
+          "showCount": 1,
+          "years": [
+            2014
+          ],
+          "firstYear": 2014,
+          "lastYear": 2014
+        },
+        {
+          "name": "Death to All",
+          "normalizedName": "death-to-all",
+          "showCount": 1,
+          "years": [
+            2014
+          ],
+          "firstYear": 2014,
+          "lastYear": 2014
+        },
+        {
+          "name": "At The Gates",
+          "normalizedName": "at-the-gates",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        },
+        {
+          "name": "MDF XIII",
+          "normalizedName": "mdf-xiii",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        },
+        {
+          "name": "Vastum",
+          "normalizedName": "vastum",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        },
+        {
+          "name": "MDF XIV",
+          "normalizedName": "mdf-xiv",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Funebrarum",
+          "normalizedName": "funebrarum",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Cognitive",
+          "normalizedName": "cognitive",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "MDF XV",
+          "normalizedName": "mdf-xv",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Necrot",
+          "normalizedName": "necrot",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Morta Skuld",
+          "normalizedName": "morta-skuld",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Demilich",
+          "normalizedName": "demilich",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "MDF XVI",
+          "normalizedName": "mdf-xvi",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "Aborted",
+          "normalizedName": "aborted",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "The Chasm",
+          "normalizedName": "the-chasm",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "MDF XVII",
+          "normalizedName": "mdf-xvii",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "Cerebral Rot",
+          "normalizedName": "cerebral-rot",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "MDF XVIII",
+          "normalizedName": "mdf-xviii",
+          "showCount": 1,
+          "years": [
+            2022
+          ],
+          "firstYear": 2022,
+          "lastYear": 2022
+        },
+        {
+          "name": "Ulcerate",
+          "normalizedName": "ulcerate",
+          "showCount": 1,
+          "years": [
+            2023
+          ],
+          "firstYear": 2023,
+          "lastYear": 2023
+        },
+        {
+          "name": "Cattle Decapitation",
+          "normalizedName": "cattle-decapitation",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        },
+        {
+          "name": "Internal Bleeding",
+          "normalizedName": "internal-bleeding",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        },
+        {
+          "name": "MDF XIX",
+          "normalizedName": "mdf-xix",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        },
+        {
+          "name": "Frozen Soul",
+          "normalizedName": "frozen-soul",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        },
+        {
+          "name": "MDF XX",
+          "normalizedName": "mdf-xx",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Acid Bath",
+          "normalizedName": "acid-bath",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Beheaded",
+          "normalizedName": "beheaded",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Vader",
+          "normalizedName": "vader",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Krisiun",
+          "normalizedName": "krisiun",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        }
+      ]
+    },
+    {
+      "name": "Thrash Metal",
+      "normalizedName": "thrash-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "1995": 1,
+        "2001": 1,
+        "2002": 2,
+        "2003": 2,
+        "2004": 2,
+        "2007": 2,
+        "2008": 1,
+        "2009": 5,
+        "2010": 3,
+        "2011": 1,
+        "2012": 3,
+        "2013": 1,
+        "2014": 1,
+        "2015": 2,
+        "2016": 2,
+        "2017": 4,
+        "2018": 3,
+        "2019": 1,
+        "2022": 2,
+        "2023": 2,
+        "2024": 1,
+        "2025": 2
+      },
+      "totalShows": 44,
+      "firstYear": 1995,
+      "lastYear": 2025,
+      "artists": [
+        {
+          "name": "Slayer",
+          "normalizedName": "slayer",
+          "showCount": 9,
+          "years": [
+            1995,
+            2007,
+            2009,
+            2010,
+            2012,
+            2016,
+            2018,
+            2019,
+            2025
+          ],
+          "firstYear": 1995,
+          "lastYear": 2025
+        },
+        {
+          "name": "Soulfly",
+          "normalizedName": "soulfly",
+          "showCount": 7,
+          "years": [
+            2003,
+            2004,
+            2009,
+            2013,
+            2015,
+            2016,
+            2023
+          ],
+          "firstYear": 2003,
+          "lastYear": 2023
+        },
+        {
+          "name": "Gwar",
+          "normalizedName": "gwar",
+          "showCount": 5,
+          "years": [
+            2002,
+            2007,
+            2009,
+            2012,
+            2014
+          ],
+          "firstYear": 2002,
+          "lastYear": 2014
+        },
+        {
+          "name": "Testament",
+          "normalizedName": "testament",
+          "showCount": 4,
+          "years": [
+            2008,
+            2010,
+            2015,
+            2017
+          ],
+          "firstYear": 2008,
+          "lastYear": 2017
+        },
+        {
+          "name": "Metallica",
+          "normalizedName": "metallica",
+          "showCount": 3,
+          "years": [
+            2009,
+            2017,
+            2025
+          ],
+          "firstYear": 2009,
+          "lastYear": 2025
+        },
+        {
+          "name": "Pantera",
+          "normalizedName": "pantera",
+          "showCount": 2,
+          "years": [
+            2001,
+            2023
+          ],
+          "firstYear": 2001,
+          "lastYear": 2023
+        },
+        {
+          "name": "Megadeth",
+          "normalizedName": "megadeth",
+          "showCount": 2,
+          "years": [
+            2010,
+            2022
+          ],
+          "firstYear": 2010,
+          "lastYear": 2022
+        },
+        {
+          "name": "Cavalera Conspiracy",
+          "normalizedName": "cavalera-conspiracy",
+          "showCount": 2,
+          "years": [
+            2011,
+            2017
+          ],
+          "firstYear": 2011,
+          "lastYear": 2017
+        },
+        {
+          "name": "Kreator",
+          "normalizedName": "kreator",
+          "showCount": 1,
+          "years": [
+            2012
+          ],
+          "firstYear": 2012,
+          "lastYear": 2012
+        },
+        {
+          "name": "Soulfly (Nailbomb set)",
+          "normalizedName": "soulfly-nailbomb-set",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Demolition Hammer",
+          "normalizedName": "demolition-hammer",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "Carnivore A.D.",
+          "normalizedName": "carnivore-a-d",
+          "showCount": 1,
+          "years": [
+            2022
+          ],
+          "firstYear": 2022,
+          "lastYear": 2022
+        },
+        {
+          "name": "Go Ahead And Die",
+          "normalizedName": "go-ahead-and-die",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "normalizedName": "other",
+      "color": "#64748b",
+      "showsByYear": {
+        "1994": 2,
+        "1997": 2,
+        "1999": 1,
+        "2001": 1,
+        "2003": 2,
+        "2004": 1,
+        "2005": 2,
+        "2007": 1,
+        "2008": 1,
+        "2009": 2,
+        "2010": 1,
+        "2014": 2,
+        "2015": 1,
+        "2016": 1,
+        "2018": 1,
+        "2019": 2,
+        "2022": 1,
+        "2023": 1,
+        "2024": 1,
+        "2025": 3,
+        "2026": 6
+      },
+      "totalShows": 35,
+      "firstYear": 1994,
+      "lastYear": 2026,
+      "artists": [
+        {
+          "name": "Chris Stapleton",
+          "normalizedName": "chris-stapleton",
+          "showCount": 2,
+          "years": [
+            2019,
+            2023
+          ],
+          "firstYear": 2019,
+          "lastYear": 2023
+        },
+        {
+          "name": "Pink Floyd",
+          "normalizedName": "pink-floyd",
+          "showCount": 1,
+          "years": [
+            1994
+          ],
+          "firstYear": 1994,
+          "lastYear": 1994
+        },
+        {
+          "name": "Candlebox",
+          "normalizedName": "candlebox",
+          "showCount": 1,
+          "years": [
+            1994
+          ],
+          "firstYear": 1994,
+          "lastYear": 1994
+        },
+        {
+          "name": "King Buzzo",
+          "normalizedName": "king-buzzo",
+          "showCount": 1,
+          "years": [
+            2014
+          ],
+          "firstYear": 2014,
+          "lastYear": 2014
+        },
+        {
+          "name": "Neurosis",
+          "normalizedName": "neurosis",
+          "showCount": 1,
+          "years": [
+            1997
+          ],
+          "firstYear": 1997,
+          "lastYear": 1997
+        },
+        {
+          "name": "Coal Chamber",
+          "normalizedName": "coal-chamber",
+          "showCount": 1,
+          "years": [
+            1997
+          ],
+          "firstYear": 1997,
+          "lastYear": 1997
+        },
+        {
+          "name": "Woodstock '99",
+          "normalizedName": "woodstock-99",
+          "showCount": 1,
+          "years": [
+            1999
+          ],
+          "firstYear": 1999,
+          "lastYear": 1999
+        },
+        {
+          "name": "Ozzfest 2003",
+          "normalizedName": "ozzfest-2003",
+          "showCount": 1,
+          "years": [
+            2003
+          ],
+          "firstYear": 2003,
+          "lastYear": 2003
+        },
+        {
+          "name": "New Jersey Metal and Hardcore Festival",
+          "normalizedName": "new-jersey-metal-and-hardcore-festival",
+          "showCount": 1,
+          "years": [
+            2003
+          ],
+          "firstYear": 2003,
+          "lastYear": 2003
+        },
+        {
+          "name": "Ozzfest 2004",
+          "normalizedName": "ozzfest-2004",
+          "showCount": 1,
+          "years": [
+            2004
+          ],
+          "firstYear": 2004,
+          "lastYear": 2004
+        },
+        {
+          "name": "Ozzfest 2005",
+          "normalizedName": "ozzfest-2005",
+          "showCount": 1,
+          "years": [
+            2005
+          ],
+          "firstYear": 2005,
+          "lastYear": 2005
+        },
+        {
+          "name": "Shindig Festival",
+          "normalizedName": "shindig-festival",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        },
+        {
+          "name": "Florida Metal Fest",
+          "normalizedName": "florida-metal-fest",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Gypsy Blue Revue (JP Soars and Anne Harris)",
+          "normalizedName": "gypsy-blue-revue-jp-soars-and-anne-harris",
+          "showCount": 1,
+          "years": [
+            2026
+          ],
+          "firstYear": 2026,
+          "lastYear": 2026
+        },
+        {
+          "name": "MDF XXI",
+          "normalizedName": "mdf-xxi",
+          "showCount": 1,
+          "years": [
+            2026
+          ],
+          "firstYear": 2026,
+          "lastYear": 2026
+        },
+        {
+          "name": "Endless Fires Festival",
+          "normalizedName": "endless-fires-festival",
+          "showCount": 1,
+          "years": [
+            2026
+          ],
+          "firstYear": 2026,
+          "lastYear": 2026
+        },
+        {
+          "name": "Berzurkus Festival",
+          "normalizedName": "berzurkus-festival",
+          "showCount": 1,
+          "years": [
+            2026
+          ],
+          "firstYear": 2026,
+          "lastYear": 2026
+        },
+        {
+          "name": "Insane Clown Posse",
+          "normalizedName": "insane-clown-posse",
+          "showCount": 1,
+          "years": [
+            2001
+          ],
+          "firstYear": 2001,
+          "lastYear": 2001
+        },
+        {
+          "name": "Sounds of the Underground",
+          "normalizedName": "sounds-of-the-underground",
+          "showCount": 1,
+          "years": [
+            2005
+          ],
+          "firstYear": 2005,
+          "lastYear": 2005
+        },
+        {
+          "name": "Cradle of Filth",
+          "normalizedName": "cradle-of-filth",
+          "showCount": 1,
+          "years": [
+            2007
+          ],
+          "firstYear": 2007,
+          "lastYear": 2007
+        },
+        {
+          "name": "Kingdom of Sorrow",
+          "normalizedName": "kingdom-of-sorrow",
+          "showCount": 1,
+          "years": [
+            2008
+          ],
+          "firstYear": 2008,
+          "lastYear": 2008
+        },
+        {
+          "name": "Integrity",
+          "normalizedName": "integrity",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "Alex Skolnick Trio",
+          "normalizedName": "alex-skolnick-trio",
+          "showCount": 1,
+          "years": [
+            2009
+          ],
+          "firstYear": 2009,
+          "lastYear": 2009
+        },
+        {
+          "name": "Hank 3",
+          "normalizedName": "hank-3",
+          "showCount": 1,
+          "years": [
+            2009
+          ],
+          "firstYear": 2009,
+          "lastYear": 2009
+        },
+        {
+          "name": "Mastodon",
+          "normalizedName": "mastodon",
+          "showCount": 1,
+          "years": [
+            2010
+          ],
+          "firstYear": 2010,
+          "lastYear": 2010
+        },
+        {
+          "name": "Amorphis",
+          "normalizedName": "amorphis",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "Southern Hospitality",
+          "normalizedName": "southern-hospitality",
+          "showCount": 1,
+          "years": [
+            2014
+          ],
+          "firstYear": 2014,
+          "lastYear": 2014
+        },
+        {
+          "name": "Max & Iggor Cavalera",
+          "normalizedName": "max-iggor-cavalera",
+          "showCount": 1,
+          "years": [
+            2022
+          ],
+          "firstYear": 2022,
+          "lastYear": 2022
+        },
+        {
+          "name": "Sulaco",
+          "normalizedName": "sulaco",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        },
+        {
+          "name": "Dirtwire",
+          "normalizedName": "dirtwire",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Malignancy",
+          "normalizedName": "malignancy",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Hendrix Tribute",
+          "normalizedName": "hendrix-tribute",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        },
+        {
+          "name": "Eric Johanson",
+          "normalizedName": "eric-johanson",
+          "showCount": 1,
+          "years": [
+            2026
+          ],
+          "firstYear": 2026,
+          "lastYear": 2026
+        },
+        {
+          "name": "Chris Cain",
+          "normalizedName": "chris-cain",
+          "showCount": 1,
+          "years": [
+            2026
+          ],
+          "firstYear": 2026,
+          "lastYear": 2026
+        }
+      ]
+    },
+    {
+      "name": "Black Metal",
+      "normalizedName": "black-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "2006": 1,
+        "2009": 1,
+        "2011": 1,
+        "2015": 3,
+        "2016": 7,
+        "2017": 5,
+        "2018": 2,
+        "2019": 2,
+        "2025": 1,
+        "2026": 1
+      },
+      "totalShows": 24,
+      "firstYear": 2006,
+      "lastYear": 2026,
+      "artists": [
+        {
+          "name": "Emperor",
+          "normalizedName": "emperor",
+          "showCount": 3,
+          "years": [
+            2006,
+            2025,
+            2026
+          ],
+          "firstYear": 2006,
+          "lastYear": 2026
+        },
+        {
+          "name": "Mayhem",
+          "normalizedName": "mayhem",
+          "showCount": 3,
+          "years": [
+            2011,
+            2015,
+            2017
+          ],
+          "firstYear": 2011,
+          "lastYear": 2017
+        },
+        {
+          "name": "Belphegor",
+          "normalizedName": "belphegor",
+          "showCount": 3,
+          "years": [
+            2015,
+            2016,
+            2017
+          ],
+          "firstYear": 2015,
+          "lastYear": 2017
+        },
+        {
+          "name": "Satyricon",
+          "normalizedName": "satyricon",
+          "showCount": 1,
+          "years": [
+            2009
+          ],
+          "firstYear": 2009,
+          "lastYear": 2009
+        },
+        {
+          "name": "Mortuary Drape",
+          "normalizedName": "mortuary-drape",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        },
+        {
+          "name": "Taake",
+          "normalizedName": "taake",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Archgoat",
+          "normalizedName": "archgoat",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Profanatica",
+          "normalizedName": "profanatica",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Dragged Into Sunlight",
+          "normalizedName": "dragged-into-sunlight",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Marduk",
+          "normalizedName": "marduk",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Abbath",
+          "normalizedName": "abbath",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Shining",
+          "normalizedName": "shining",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Wolves in the Throne Room",
+          "normalizedName": "wolves-in-the-throne-room",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Watain",
+          "normalizedName": "watain",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "Behemoth",
+          "normalizedName": "behemoth",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        },
+        {
+          "name": "Dark Funeral",
+          "normalizedName": "dark-funeral",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "1349",
+          "normalizedName": "1349",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        }
+      ]
+    },
+    {
+      "name": "Sludge Metal",
+      "normalizedName": "sludge-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "1996": 1,
+        "2002": 2,
+        "2005": 1,
+        "2006": 1,
+        "2009": 1,
+        "2013": 1,
+        "2014": 1,
+        "2015": 2,
+        "2016": 1,
+        "2018": 1,
+        "2019": 1,
+        "2022": 1,
+        "2023": 1,
+        "2026": 1
+      },
+      "totalShows": 16,
+      "firstYear": 1996,
+      "lastYear": 2026,
+      "artists": [
+        {
+          "name": "Crowbar",
+          "normalizedName": "crowbar",
+          "showCount": 3,
+          "years": [
+            1996,
+            2022,
+            2023
+          ],
+          "firstYear": 1996,
+          "lastYear": 2023
+        },
+        {
+          "name": "Corrosion of Conformity",
+          "normalizedName": "corrosion-of-conformity",
+          "showCount": 3,
+          "years": [
+            2005,
+            2018,
+            2019
+          ],
+          "firstYear": 2005,
+          "lastYear": 2019
+        },
+        {
+          "name": "EyeHateGod",
+          "normalizedName": "eyehategod",
+          "showCount": 3,
+          "years": [
+            2009,
+            2015,
+            2016
+          ],
+          "firstYear": 2009,
+          "lastYear": 2016
+        },
+        {
+          "name": "High on Fire",
+          "normalizedName": "high-on-fire",
+          "showCount": 2,
+          "years": [
+            2014,
+            2026
+          ],
+          "firstYear": 2014,
+          "lastYear": 2026
+        },
+        {
+          "name": "Superjoint Ritual",
+          "normalizedName": "superjoint-ritual",
+          "showCount": 1,
+          "years": [
+            2002
+          ],
+          "firstYear": 2002,
+          "lastYear": 2002
+        },
+        {
+          "name": "Soilent Green",
+          "normalizedName": "soilent-green",
+          "showCount": 1,
+          "years": [
+            2006
+          ],
+          "firstYear": 2006,
+          "lastYear": 2006
+        },
+        {
+          "name": "Melvins",
+          "normalizedName": "melvins",
+          "showCount": 1,
+          "years": [
+            2013
+          ],
+          "firstYear": 2013,
+          "lastYear": 2013
+        },
+        {
+          "name": "Black Label Society",
+          "normalizedName": "black-label-society",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        }
+      ]
+    },
+    {
+      "name": "Hard Rock",
+      "normalizedName": "hard-rock",
+      "color": "#64748b",
+      "showsByYear": {
+        "2007": 2,
+        "2008": 2,
+        "2009": 2,
+        "2015": 1,
+        "2018": 1,
+        "2024": 2,
+        "2026": 1
+      },
+      "totalShows": 11,
+      "firstYear": 2007,
+      "lastYear": 2026,
+      "artists": [
+        {
+          "name": "Clutch",
+          "normalizedName": "clutch",
+          "showCount": 6,
+          "years": [
+            2007,
+            2008,
+            2009,
+            2015,
+            2018,
+            2026
+          ],
+          "firstYear": 2007,
+          "lastYear": 2026
+        },
+        {
+          "name": "Jackyl",
+          "normalizedName": "jackyl",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        },
+        {
+          "name": "Alice Cooper",
+          "normalizedName": "alice-cooper",
+          "showCount": 1,
+          "years": [
+            2024
+          ],
+          "firstYear": 2024,
+          "lastYear": 2024
+        }
+      ]
+    },
+    {
+      "name": "Heavy Metal",
+      "normalizedName": "heavy-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "1996": 1,
+        "2007": 1,
+        "2011": 1,
+        "2014": 1,
+        "2016": 3,
+        "2023": 1
+      },
+      "totalShows": 8,
+      "firstYear": 1996,
+      "lastYear": 2023,
+      "artists": [
+        {
+          "name": "Ozzy Osbourne",
+          "normalizedName": "ozzy-osbourne",
+          "showCount": 1,
+          "years": [
+            1996
+          ],
+          "firstYear": 1996,
+          "lastYear": 1996
+        },
+        {
+          "name": "Heaven & Hell (Dio)",
+          "normalizedName": "heaven-hell-dio",
+          "showCount": 1,
+          "years": [
+            2007
+          ],
+          "firstYear": 2007,
+          "lastYear": 2007
+        },
+        {
+          "name": "Judas Priest",
+          "normalizedName": "judas-priest",
+          "showCount": 1,
+          "years": [
+            2011
+          ],
+          "firstYear": 2011,
+          "lastYear": 2011
+        },
+        {
+          "name": "King Diamond",
+          "normalizedName": "king-diamond",
+          "showCount": 1,
+          "years": [
+            2014
+          ],
+          "firstYear": 2014,
+          "lastYear": 2014
+        },
+        {
+          "name": "Zakk Wylde",
+          "normalizedName": "zakk-wylde",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Black Sabbath",
+          "normalizedName": "black-sabbath",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Armored Saint",
+          "normalizedName": "armored-saint",
+          "showCount": 1,
+          "years": [
+            2016
+          ],
+          "firstYear": 2016,
+          "lastYear": 2016
+        },
+        {
+          "name": "Ghost",
+          "normalizedName": "ghost",
+          "showCount": 1,
+          "years": [
+            2023
+          ],
+          "firstYear": 2023,
+          "lastYear": 2023
+        }
+      ]
+    },
+    {
+      "name": "Metal",
+      "normalizedName": "metal",
+      "color": "#94a3b8",
+      "showsByYear": {
+        "2002": 2,
+        "2007": 1,
+        "2008": 1,
+        "2009": 1,
+        "2012": 1,
+        "2013": 1,
+        "2018": 1
+      },
+      "totalShows": 8,
+      "firstYear": 2002,
+      "lastYear": 2018,
+      "artists": [
+        {
+          "name": "Down",
+          "normalizedName": "down",
+          "showCount": 5,
+          "years": [
+            2002,
+            2007,
+            2008,
+            2009,
+            2012
+          ],
+          "firstYear": 2002,
+          "lastYear": 2012
+        },
+        {
+          "name": "Housecore Horror Film Festival I",
+          "normalizedName": "housecore-horror-film-festival-i",
+          "showCount": 1,
+          "years": [
+            2013
+          ],
+          "firstYear": 2013,
+          "lastYear": 2013
+        },
+        {
+          "name": "Paradise Lost",
+          "normalizedName": "paradise-lost",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        }
+      ]
+    },
+    {
+      "name": "Industrial Metal",
+      "normalizedName": "industrial-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "1996": 1,
+        "1998": 1,
+        "2005": 1,
+        "2013": 1,
+        "2016": 1,
+        "2018": 1
+      },
+      "totalShows": 6,
+      "firstYear": 1996,
+      "lastYear": 2018,
+      "artists": [
+        {
+          "name": "Fear Factory",
+          "normalizedName": "fear-factory",
+          "showCount": 4,
+          "years": [
+            1998,
+            2005,
+            2013,
+            2016
+          ],
+          "firstYear": 1998,
+          "lastYear": 2016
+        },
+        {
+          "name": "Marilyn Manson",
+          "normalizedName": "marilyn-manson",
+          "showCount": 1,
+          "years": [
+            1996
+          ],
+          "firstYear": 1996,
+          "lastYear": 1996
+        },
+        {
+          "name": "Ministry",
+          "normalizedName": "ministry",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        }
+      ]
+    },
+    {
+      "name": "Alternative Metal",
+      "normalizedName": "alternative-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "2004": 1,
+        "2006": 1,
+        "2015": 1,
+        "2017": 1,
+        "2020": 1,
+        "2022": 1
+      },
+      "totalShows": 6,
+      "firstYear": 2004,
+      "lastYear": 2022,
+      "artists": [
+        {
+          "name": "Machine Head",
+          "normalizedName": "machine-head",
+          "showCount": 3,
+          "years": [
+            2004,
+            2015,
+            2020
+          ],
+          "firstYear": 2004,
+          "lastYear": 2020
+        },
+        {
+          "name": "Alice In Chains",
+          "normalizedName": "alice-in-chains",
+          "showCount": 1,
+          "years": [
+            2006
+          ],
+          "firstYear": 2006,
+          "lastYear": 2006
+        },
+        {
+          "name": "Primus",
+          "normalizedName": "primus",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Alice in Chains",
+          "normalizedName": "alice-in-chains",
+          "showCount": 1,
+          "years": [
+            2022
+          ],
+          "firstYear": 2022,
+          "lastYear": 2022
+        }
+      ]
+    },
+    {
+      "name": "Blues",
+      "normalizedName": "blues",
+      "color": "#2563eb",
+      "showsByYear": {
+        "2011": 1,
+        "2012": 1,
+        "2013": 1,
+        "2019": 2
+      },
+      "totalShows": 5,
+      "firstYear": 2011,
+      "lastYear": 2019,
+      "artists": [
+        {
+          "name": "Legendary Rhythm & Blues Cruise #16",
+          "normalizedName": "legendary-rhythm-blues-cruise-16",
+          "showCount": 1,
+          "years": [
+            2011
+          ],
+          "firstYear": 2011,
+          "lastYear": 2011
+        },
+        {
+          "name": "Legendary Rhythm & Blues Cruise #18",
+          "normalizedName": "legendary-rhythm-blues-cruise-18",
+          "showCount": 1,
+          "years": [
+            2012
+          ],
+          "firstYear": 2012,
+          "lastYear": 2012
+        },
+        {
+          "name": "Legendary Rhythm & Blues Cruise #20",
+          "normalizedName": "legendary-rhythm-blues-cruise-20",
+          "showCount": 1,
+          "years": [
+            2013
+          ],
+          "firstYear": 2013,
+          "lastYear": 2013
+        },
+        {
+          "name": "Matt Anderson",
+          "normalizedName": "matt-anderson",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "Tab Benoit",
+          "normalizedName": "tab-benoit",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        }
+      ]
+    },
+    {
+      "name": "Folk",
+      "normalizedName": "folk",
+      "color": "#64748b",
+      "showsByYear": {
+        "2016": 1,
+        "2018": 1,
+        "2019": 1,
+        "2023": 1,
+        "2024": 1
+      },
+      "totalShows": 5,
+      "firstYear": 2016,
+      "lastYear": 2024,
+      "artists": [
+        {
+          "name": "William Elliott Whitmore",
+          "normalizedName": "william-elliott-whitmore",
+          "showCount": 4,
+          "years": [
+            2016,
+            2019,
+            2023,
+            2024
+          ],
+          "firstYear": 2016,
+          "lastYear": 2024
+        },
+        {
+          "name": "Tim Barry",
+          "normalizedName": "tim-barry",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        }
+      ]
+    },
+    {
+      "name": "Grindcore",
+      "normalizedName": "grindcore",
+      "color": "#64748b",
+      "showsByYear": {
+        "2015": 1,
+        "2019": 2,
+        "2025": 1
+      },
+      "totalShows": 4,
+      "firstYear": 2015,
+      "lastYear": 2025,
+      "artists": [
+        {
+          "name": "Napalm Death",
+          "normalizedName": "napalm-death",
+          "showCount": 1,
+          "years": [
+            2015
+          ],
+          "firstYear": 2015,
+          "lastYear": 2015
+        },
+        {
+          "name": "Full of Hell",
+          "normalizedName": "full-of-hell",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "Nails",
+          "normalizedName": "nails",
+          "showCount": 1,
+          "years": [
+            2019
+          ],
+          "firstYear": 2019,
+          "lastYear": 2019
+        },
+        {
+          "name": "Mortician",
+          "normalizedName": "mortician",
+          "showCount": 1,
+          "years": [
+            2025
+          ],
+          "firstYear": 2025,
+          "lastYear": 2025
+        }
+      ]
+    },
+    {
+      "name": "Rock",
+      "normalizedName": "rock",
+      "color": "#3b82f6",
+      "showsByYear": {
+        "1994": 1,
+        "2012": 1,
+        "2019": 1
+      },
+      "totalShows": 3,
+      "firstYear": 1994,
+      "lastYear": 2019,
+      "artists": [
+        {
+          "name": "Joe Bonamassa",
+          "normalizedName": "joe-bonamassa",
+          "showCount": 2,
+          "years": [
+            2012,
+            2019
+          ],
+          "firstYear": 2012,
+          "lastYear": 2019
+        },
+        {
+          "name": "Collective Soul",
+          "normalizedName": "collective-soul",
+          "showCount": 1,
+          "years": [
+            1994
+          ],
+          "firstYear": 1994,
+          "lastYear": 1994
+        }
+      ]
+    },
+    {
+      "name": "Doom Metal",
+      "normalizedName": "doom-metal",
+      "color": "#64748b",
+      "showsByYear": {
+        "2017": 2,
+        "2018": 1
+      },
+      "totalShows": 3,
+      "firstYear": 2017,
+      "lastYear": 2018,
+      "artists": [
+        {
+          "name": "The Obsessed",
+          "normalizedName": "the-obsessed",
+          "showCount": 1,
+          "years": [
+            2017
+          ],
+          "firstYear": 2017,
+          "lastYear": 2017
+        },
+        {
+          "name": "Wino",
+          "normalizedName": "wino",
+          "showCount": 1,
+          "years": [
+            2018
+          ],
+          "firstYear": 2018,
+          "lastYear": 2018
+        }
+      ]
+    }
+  ],
+  "totalShowsByYear": {
+    "1994": 3,
+    "1995": 1,
+    "1996": 3,
+    "1997": 2,
+    "1998": 1,
+    "1999": 1,
+    "2000": 1,
+    "2001": 3,
+    "2002": 6,
+    "2003": 4,
+    "2004": 10,
+    "2005": 6,
+    "2006": 6,
+    "2007": 11,
+    "2008": 8,
+    "2009": 18,
+    "2010": 10,
+    "2011": 8,
+    "2012": 10,
+    "2013": 9,
+    "2014": 11,
+    "2015": 19,
+    "2016": 23,
+    "2017": 19,
+    "2018": 19,
+    "2019": 17,
+    "2020": 1,
+    "2022": 8,
+    "2023": 10,
+    "2024": 12,
+    "2025": 13,
+    "2026": 9
+  },
+  "milestones": [
+    {
+      "milestone": 25,
+      "year": 2003
+    },
+    {
+      "milestone": 50,
+      "year": 2007
+    },
+    {
+      "milestone": 75,
+      "year": 2009
+    },
+    {
+      "milestone": 100,
+      "year": 2011
+    },
+    {
+      "milestone": 125,
+      "year": 2014
+    },
+    {
+      "milestone": 150,
+      "year": 2015
+    },
+    {
+      "milestone": 175,
+      "year": 2017
+    },
+    {
+      "milestone": 200,
+      "year": 2018
+    },
+    {
+      "milestone": 225,
+      "year": 2019
+    },
+    {
+      "milestone": 250,
+      "year": 2024
+    }
+  ],
+  "yearRange": {
+    "start": 1994,
+    "end": 2026
+  },
+  "generatedAt": "2026-10-15T20:49:45.616Z"
+}

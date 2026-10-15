@@ -19,7 +19,7 @@ export function ChangelogCard({ release, isLatest = false }: ChangelogCardProps)
   }
 
   // Format the date for display
-  const formattedDate = new Date(release.date).toLocaleDateString('en-US', {
+  const formattedDate = new Date(release.date + 'T00:00:00').toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
