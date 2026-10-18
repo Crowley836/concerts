@@ -13557,15 +13557,18 @@
   },
   "cradle-of-filth": {
     "name": "Cradle of Filth",
-    "image": "https://r2.theaudiodb.com/images/media/artist/thumb/pf0mue1734479541.jpg",
+    "image": "https://lastfm-img.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "bio": "Cradle of Filth are an English extreme metal band formed in Suffolk in 1991. Their musical style developed from early black metal influences into a more polished combination of gothic metal, symphonic metal and other metal genres. The band’s lyrics and imagery draw on Gothic literature, poetry, mythology and horror films. The line-up has changed frequently throughout the band’s history, with vocalist Dani Filth as the only constant member.\n\nThe band gained wider attention beyond the underground ",
     "genres": [
-      "Symphonic Metal",
-      "Metal"
+      "black metal",
+      "Symphonic Black Metal",
+      "Gothic Metal",
+      "metal",
+      "death metal"
     ],
-    "formed": "1991",
-    "website": "theorderofthedragon.com",
-    "source": "theaudiodb",
-    "fetchedAt": "2026-09-13T01:32:59.821Z"
+    "url": "https://www.last.fm/music/Cradle+of+Filth",
+    "source": "lastfm",
+    "fetchedAt": "2026-10-18T01:39:51.326Z"
   },
   "eric-johanson": {
     "name": "Eric Johanson",
