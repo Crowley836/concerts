@@ -59,8 +59,11 @@ export class LastFmClient {
 
       const artist = data.artist
 
-      // Find the large image
+      // Find the large image and reject Last.fm's default star placeholder
       const largeImage = artist.image?.find(img => img.size === 'large' || img.size === 'extralarge')
+      const rawImage = largeImage?.['#text']
+      const isPlaceholder = !rawImage || rawImage.includes('2a96cbd8b46e442fc41c2b86b821562f')
+      const validImage = isPlaceholder ? undefined : rawImage
 
       // Extract bio and remove HTML tags
       const bioText = artist.bio?.summary || artist.bio?.content || ''
@@ -72,7 +75,7 @@ export class LastFmClient {
 
       return {
         name: artist.name,
-        image: largeImage?.['#text'],
+        image: validImage,
         bio: cleanBio,
         genres: artist.tags?.tag?.map(t => t.name) || [],
         url: artist.url,

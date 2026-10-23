@@ -327,9 +327,11 @@ async function enrichSpotifyMetadata() {
     // (Better to trace back to concerts.json for display name, but we have normalized keys)
     // We'll search using the stored name or normalized one
     const searchName = artist.name || normalizedName
+    const hasPlaceholderImage = !artist.image || artist.image.includes('2a96cbd8b46e442fc41c2b86b821562f')
+    const hasAlbumCover = !!artist.mostPopularAlbum?.coverArt?.medium
 
-    // Skip if already enriched with Spotify data (within 90 days)
-    if (artist.dataSource === 'spotify' && artist.fetchedAt) {
+    // Skip if already enriched with Spotify data (within 90 days) AND has valid image and album
+    if (artist.dataSource === 'spotify' && artist.fetchedAt && !hasPlaceholderImage && hasAlbumCover) {
       const age = Date.now() - new Date(artist.fetchedAt).getTime()
       const ninetyDays = 90 * 24 * 60 * 60 * 1000
       if (age < ninetyDays) {
@@ -338,7 +340,7 @@ async function enrichSpotifyMetadata() {
       }
     }
 
-    console.log(`Fetching: ${artist.name}`)
+    console.log(`Fetching: ${searchName}`)
 
     try {
       // Rate limiting (Spotify allows ~3 requests/sec)
@@ -358,7 +360,7 @@ async function enrichSpotifyMetadata() {
         }
       } else {
         // Search Spotify
-        spotifyArtist = await searchSpotifyArtist(artist.name, accessToken)
+        spotifyArtist = await searchSpotifyArtist(searchName, accessToken)
       }
 
       if (!spotifyArtist) {
@@ -384,12 +386,17 @@ async function enrichSpotifyMetadata() {
       // Populate missing image from Spotify
       const isPlaceholder = !artist.image ||
         artist.image.includes('theaudiodb.com/images/media/artist/thumb/') ||
-        artist.image.includes('2a96cbd8b46e442fc41c2b86b821562f.png')
+        artist.image.includes('2a96cbd8b46e442fc41c2b86b821562f')
 
-      if (isPlaceholder && spotifyArtist.images && spotifyArtist.images.length > 0) {
+      if (spotifyArtist.images && spotifyArtist.images.length > 0) {
         // Spotify images are ordered by size (usually Large, Medium, Small)
         // We prefer the first one (largest) for high quality
-        artist.image = spotifyArtist.images[0].url
+        if (isPlaceholder || !artist.image) {
+          artist.image = spotifyArtist.images[0].url
+        }
+      } else if (artist.image && artist.image.includes('2a96cbd8b46e442fc41c2b86b821562f')) {
+        // Clear placeholder star if Spotify has no image
+        delete artist.image
       }
 
       if (album) {

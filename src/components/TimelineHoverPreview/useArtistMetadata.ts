@@ -47,6 +47,12 @@ export function useArtistMetadata() {
   }
 
   /**
+   * Last.fm's default "no image" placeholder hash — a gray star.
+   * We treat this as "no image" so the UI falls back to our own placeholder.
+   */
+  const LASTFM_PLACEHOLDER_HASH = '2a96cbd8b46e442fc41c2b86b821562f'
+
+  /**
    * Get image URL for a specific artist
    *
    * @param artistName - The artist name (will be normalized)
@@ -54,7 +60,10 @@ export function useArtistMetadata() {
    */
   const getArtistImage = (artistName: string): string | undefined => {
     const artist = getArtistMetadata(artistName)
-    return artist?.image
+    const url = artist?.image
+    // Reject Last.fm placeholder star
+    if (url && url.includes(LASTFM_PLACEHOLDER_HASH)) return undefined
+    return url
   }
 
   return {

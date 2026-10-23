@@ -1,8 +1,9 @@
 import { TheAudioDBClient } from './utils/theaudiodb-client'
 import { LastFmClient } from './utils/lastfm-client'
-import { SpotifyClient } from './services/spotify-client'
+import { DeezerClient } from './utils/deezer-client'
 import { RateLimiter } from './utils/rate-limiter'
 import { normalizeArtistName } from '../src/utils/normalize.js'
+import { checkUrls } from './utils/url-health.js'
 import { createBackup } from './utils/backup'
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { join } from 'path'
@@ -18,9 +19,100 @@ interface ArtistMetadata {
     bio?: string
     genres?: string[]
     formed?: string
-    source: 'theaudiodb' | 'lastfm' | 'manual'
+    source: 'theaudiodb' | 'lastfm' | 'deezer' | 'manual'
     fetchedAt: string
   }
+}
+
+/**
+ * Generate artist name variants to try as fallbacks
+ * Examples:
+ *   "Brian Setzer and the Nashvillians" → ["Brian Setzer and the Nashvillians", "Brian Setzer"]
+ *   "Trombone Shorty & Orleans Avenue" → ["Trombone Shorty & Orleans Avenue", "Trombone Shorty"]
+ */
+function getArtistNameVariants(artistName: string): string[] {
+  const variants = [artistName] // Always try original name first
+
+  // Remove " and the [Band Name]" suffix
+  const andTheMatch = artistName.match(/^(.+?)\s+and\s+the\s+.+$/i)
+  if (andTheMatch) {
+    variants.push(andTheMatch[1])
+  }
+
+  // Remove " & [Band Name]" suffix
+  const ampersandMatch = artistName.match(/^(.+?)\s+&\s+.+$/i)
+  if (ampersandMatch) {
+    variants.push(ampersandMatch[1])
+  }
+
+  // Remove " with [Guest]" suffix
+  const withMatch = artistName.match(/^(.+?)\s+with\s+.+$/i)
+  if (withMatch) {
+    variants.push(withMatch[1])
+  }
+
+  // Remove "'68 Comeback Special" or similar suffixes
+  // Handles ASCII apostrophe (') and Unicode quotes (' ')
+  const specialMatch = artistName.match(/^(.+?)\s+[''\u2018\u2019][0-9]{2}\s+.+$/i)
+  if (specialMatch) {
+    variants.push(specialMatch[1])
+  }
+
+  return [...new Set(variants)] // Remove duplicates
+}
+
+const CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000
+
+type ArtistRecord = ArtistMetadata[string]
+
+/**
+ * Mock records carry no image, so they are always re-fetched. `source` predates
+ * the current union and older records spell it `dataSource`, hence both reads.
+ */
+function isMockRecord(record: ArtistRecord | undefined): boolean {
+  if (!record) return false
+  const { source, dataSource } = record as { source?: string; dataSource?: string }
+  return source === 'mock' || dataSource === 'mock'
+}
+
+function isFresh(record: ArtistRecord, now: number): boolean {
+  if (record.image && record.image.includes('2a96cbd8b46e442fc41c2b86b821562f')) {
+    return false
+  }
+  return now - new Date(record.fetchedAt).getTime() < CACHE_TTL_MS
+}
+
+/**
+ * Of the given records, which ones' stored image is definitively gone?
+ *
+ * `fetchedAt` says when we asked the API, not whether what it gave us still
+ * loads — and image death is a content event with no schedule (#256), so no TTL
+ * predicts it. Without this, a record enriched on day 1 whose image is
+ * unpublished on day 2 serves a broken image for the remaining 29 days while the
+ * weekly run walks straight past it (#264).
+ *
+ * Only a definitive 4xx counts. A 5xx or timeout is "unknown" and is left alone,
+ * so one bad run cannot strip every artist of its image at once.
+ */
+export async function findDeadImages(
+  entries: Array<{ key: string; url: string }>
+): Promise<Set<string>> {
+  if (entries.length === 0) return new Set()
+  const health = await checkUrls(entries.map(e => e.url))
+  return new Set(entries.filter((e, i) => health[i] === 'dead' || e.url.includes('2a96cbd8b46e442fc41c2b86b821562f')).map(e => e.key))
+}
+
+/** The `{ key, url }` pairs `findDeadImages` takes, for records that have an image. */
+function imageEntries(
+  metadata: ArtistMetadata,
+  keys: Iterable<string>
+): Array<{ key: string; url: string }> {
+  const entries: Array<{ key: string; url: string }> = []
+  for (const key of keys) {
+    const url = metadata[key]?.image
+    if (url && !url.includes('2a96cbd8b46e442fc41c2b86b821562f')) entries.push({ key, url })
+  }
+  return entries
 }
 
 /**
@@ -41,9 +133,11 @@ async function enrichArtists(options: { dryRun?: boolean } = {}) {
   const concertsData = JSON.parse(readFileSync(concertsPath, 'utf-8'))
   const concerts = concertsData.concerts
 
-  // Get unique artists (headliners only for now)
-  const uniqueArtists = [...new Set(concerts.map((c: any) => c.headliner))]
-  console.log(`Found ${uniqueArtists.length} unique artists to enrich\n`)
+  // Get unique artists (headliners + openers)
+  const headliners = concerts.map((c: any) => c.headliner)
+  const openers = concerts.flatMap((c: any) => c.openers || [])
+  const uniqueArtists = [...new Set([...headliners, ...openers])]
+  console.log(`Found ${uniqueArtists.length} unique artists to enrich (headliners + openers)\n`)
 
   // Load existing metadata if available
   const metadataPath = join(process.cwd(), 'public', 'data', 'artists-metadata.json')
@@ -58,103 +152,185 @@ async function enrichArtists(options: { dryRun?: boolean } = {}) {
   const lastFm = process.env.LASTFM_API_KEY
     ? new LastFmClient(process.env.LASTFM_API_KEY)
     : null
-
-  const spotify = new SpotifyClient()
-  if (spotify.isConfigured) {
-    console.log('✅ Spotify Client configured')
-  } else {
-    console.log('⚠️  Spotify credentials missing (skipping Spotify)')
-  }
+  const deezer = new DeezerClient()
 
   const rateLimiter = new RateLimiter(2) // TheAudioDB: 2 calls/sec
+
+  // Which cached records are we about to trust? Check their images before we do.
+  //
+  // This is the artist half of #255's rule — a successful API response is not
+  // evidence of a usable image — which v5.3.0 applied to venues and liner notes
+  // but not here (#264). A dead image demotes the record from "fresh" to "must
+  // re-fetch" below.
+  const now = Date.now()
+  const trusted = uniqueArtists
+    .map(name => normalizeArtistName(name))
+    .filter(key => {
+      const record = metadata[key]
+      return !!record && !isMockRecord(record) && isFresh(record, now)
+    })
+  console.log(`Checking ${trusted.length} cached artist image(s) still load...`)
+  const staleImages = await findDeadImages(imageEntries(metadata, trusted))
+  if (staleImages.size > 0) {
+    console.log(`  ⚠️  ${staleImages.size} cached image(s) are gone — re-fetching those artists`)
+  }
+  console.log()
 
   let enriched = 0
   let skipped = 0
   let failed = 0
+  const written = new Set<string>()
 
   for (const artistName of uniqueArtists) {
     const normalized = normalizeArtistName(artistName)
 
-    // Skip if already enriched and recent (within 30 days)
-    // BUT always re-fetch mock data since it has no images
-    const existingData = metadata[normalized] as any
-    const isMockData = existingData && (existingData.source === 'mock' || existingData.dataSource === 'mock')
-    if (existingData && !isMockData) {
-      const age = Date.now() - new Date(existingData.fetchedAt).getTime()
-      const thirtyDays = 30 * 24 * 60 * 60 * 1000
-      if (age < thirtyDays) {
+    // Skip if already enriched, recent (within 30 days) and still serving a live
+    // image. BUT always re-fetch mock data since it has no images.
+    const existingData = metadata[normalized]
+    if (existingData && !isMockRecord(existingData)) {
+      if (isFresh(existingData, now) && !staleImages.has(normalized)) {
         skipped++
         continue
       }
     }
 
-    console.log(`Fetching metadata for: ${artistName}`)
+    console.log(
+      `Fetching metadata for: ${artistName}${staleImages.has(normalized) ? ' (stored image is gone)' : ''}`
+    )
 
     try {
-      // Rate limit
-      await rateLimiter.wait()
+      let found = false
+      const nameVariants = getArtistNameVariants(artistName)
 
-      // 1. Try Spotify first (High Quality)
-      if (spotify.isConfigured) {
-        // Rate limit roughly (Spotify is generous but let's be safe)
-        await new Promise(r => setTimeout(r, 200))
+      // Try each API across all name variants before falling back to the next API.
+      // This ensures higher-quality sources (TheAudioDB has genres/bio) are fully
+      // exhausted before settling for Deezer (which has images but no genres).
 
-        const spotifyArtist = await spotify.searchArtist(artistName)
-        if (spotifyArtist && spotifyArtist.images && spotifyArtist.images.length > 0) {
-          // Get the best image (usually the second one is ~300x300, or first is 640x640)
-          // We prefer medium/large for detail
-          const image = spotifyArtist.images[0]?.url
+      // 1. TheAudioDB — best quality (genres, bio, formed year)
+      for (let i = 0; i < nameVariants.length && !found; i++) {
+        const variantName = nameVariants[i]
+        const isOriginalName = i === 0
+        if (!isOriginalName) console.log(`  → Trying simplified name: ${variantName}`)
+        await rateLimiter.wait()
+        const audioDbInfo = await audioDb.getArtistInfo(variantName)
+        if (audioDbInfo && audioDbInfo.image) {
+          metadata[normalized] = {
+            ...existingData,
+            ...audioDbInfo,
+          }
+          written.add(normalized)
+          console.log(`  ✅ Found on TheAudioDB${isOriginalName ? '' : ' (using simplified name)'}`)
+          enriched++
+          found = true
+        }
+      }
 
-          if (image) {
-            metadata[normalized] = {
-              name: spotifyArtist.name,
-              image: image,
-              genres: spotifyArtist.genres,
-              source: 'spotify', // Use 'spotify' NOT 'theaudiodb'
-              fetchedAt: new Date().toISOString()
-            } as any // Cast to satisfy strict typing if needed, but structure matches roughly
-            console.log(`  ✅ Found on Spotify`)
-            enriched++
-            continue
+      // 2. Last.fm — fallback with genre/bio data
+      let lastFmInfo: any = null
+      if (!found && lastFm) {
+        for (let i = 0; i < nameVariants.length && !lastFmInfo; i++) {
+          const variantName = nameVariants[i]
+          const isOriginalName = i === 0
+          if (!isOriginalName) console.log(`  → Trying simplified name: ${variantName}`)
+          const info = await lastFm.getArtistInfo(variantName)
+          if (info) {
+            lastFmInfo = info
+            if (info.image && !info.image.includes('2a96cbd8b46e442fc41c2b86b821562f')) {
+              metadata[normalized] = {
+                ...existingData,
+                ...info,
+              }
+              written.add(normalized)
+              console.log(`  ✅ Found on Last.fm${isOriginalName ? '' : ' (using simplified name)'}`)
+              enriched++
+              found = true
+            }
           }
         }
       }
 
-      // 2. Try TheAudioDB
-      const audioDbInfo = await audioDb.getArtistInfo(artistName)
-
-      if (audioDbInfo && audioDbInfo.image) {
-        metadata[normalized] = audioDbInfo
-        console.log(`  ✅ Found on TheAudioDB`)
-        enriched++
-        continue
-      }
-
-      // Fallback to Last.fm
-      if (lastFm) {
-        const lastFmInfo = await lastFm.getArtistInfo(artistName)
-
-        if (lastFmInfo && lastFmInfo.image) {
-          metadata[normalized] = lastFmInfo
-          console.log(`  ✅ Found on Last.fm`)
-          enriched++
-          continue
+      // 3. Deezer — last resort for images (combines with Last.fm bio/genres if available)
+      if (!found) {
+        for (let i = 0; i < nameVariants.length && !found; i++) {
+          const variantName = nameVariants[i]
+          const isOriginalName = i === 0
+          if (!isOriginalName) console.log(`  → Trying simplified name: ${variantName}`)
+          const deezerInfo = await deezer.getArtistInfo(variantName)
+          if (deezerInfo && deezerInfo.image) {
+            metadata[normalized] = {
+              ...existingData,
+              ...(lastFmInfo || {}),
+              ...deezerInfo,
+              genres: (lastFmInfo?.genres?.length ? lastFmInfo.genres : existingData?.genres) || [],
+              bio: lastFmInfo?.bio || existingData?.bio,
+            }
+            written.add(normalized)
+            console.log(`  ✅ Found on Deezer${lastFmInfo ? ' (+ Last.fm metadata)' : ''}${isOriginalName ? '' : ' (using simplified name)'}`)
+            enriched++
+            found = true
+          }
         }
       }
 
-      console.log(`  ⚠️  No metadata found`)
-      failed++
+      if (!found) {
+        console.log(`  ⚠️  No metadata found (tried ${nameVariants.length} name variant${nameVariants.length > 1 ? 's' : ''})`)
+        failed++
+      }
     } catch (error) {
       console.error(`  ❌ Error fetching ${artistName}:`, error)
       failed++
     }
   }
 
+  // Drop records for artists no longer in the archive.
+  //
+  // Records were once keyed by the *enrichment API's* display name rather than
+  // ours. TheAudioDB is user-contributed and carries typos, so we inherited
+  // spellings like "Gorrillaz" and "The Red Hot Chilli Peppers" as primary keys.
+  // That was fixed in 2f1a94b, but the fix only wrote correct keys — it never
+  // deleted the unreachable old ones, and this function writes the whole object
+  // back with no delete path. Five months on, 23 of 280 records were dead weight
+  // still shipping to every client (#255).
+  //
+  // Pruning is also the drift guard: any future key mismatch shows up here as a
+  // named removal on the next run instead of accumulating silently.
+  const liveKeys = new Set(uniqueArtists.map(normalizeArtistName))
+  const orphans = Object.keys(metadata).filter(key => !liveKeys.has(key))
+  for (const key of orphans) {
+    delete metadata[key]
+  }
+  if (orphans.length > 0) {
+    console.log(`\n🧹 Pruned ${orphans.length} record(s) with no artist in concerts.json:`)
+    for (const key of orphans) console.log(`   − ${key}`)
+  }
+
+  // Validate what we just stored, not merely that an API answered (#264).
+  //
+  // TheAudioDB, Last.fm and Deezer all hand back image URLs that can already be
+  // 404ing, so a fresh write is no more trustworthy than a cached one. Anything
+  // still definitively dead loses its `image` — the Artist scene falls back to
+  // `albumCover` or its own placeholder, which beats rendering a broken image.
+  const rewritten = imageEntries(metadata, written)
+  const nowDead = await findDeadImages(rewritten)
+
+  // Records whose image was already known dead and that no source could repair.
+  // They are dead by the pre-pass; re-checking would only risk an "unknown" blip
+  // letting a URL we know is gone survive.
+  for (const key of staleImages) {
+    if (!written.has(key) && metadata[key]) nowDead.add(key)
+  }
+
+  for (const key of nowDead) delete metadata[key].image
+  if (nowDead.size > 0) {
+    console.log(`\n🖼️  Dropped ${nowDead.size} dead image URL(s); the client will fall back:`)
+    for (const key of nowDead) console.log(`   − ${key}`)
+  }
+
   // Save metadata
   if (dryRun) {
-    console.log('\n='.repeat(30))
+    console.log('\n=' .repeat(30))
     console.log('🔍 DRY RUN MODE - No files will be modified')
-    console.log('='.repeat(30))
+    console.log('=' .repeat(30))
     console.log(`\nWould write to: ${metadataPath}`)
     console.log(`File size: ${JSON.stringify(metadata, null, 2).length} bytes`)
   } else {
@@ -169,6 +345,8 @@ async function enrichArtists(options: { dryRun?: boolean } = {}) {
   console.log(`   ✅ Enriched: ${enriched}`)
   console.log(`   ⏭️  Skipped (cached): ${skipped}`)
   console.log(`   ❌ Failed: ${failed}`)
+  console.log(`   🧹 Pruned (orphaned): ${orphans.length}`)
+  console.log(`   🖼️  Dropped (dead image): ${nowDead.size}`)
 
   if (dryRun) {
     console.log('\n💡 To apply these changes, run without --dry-run flag')
