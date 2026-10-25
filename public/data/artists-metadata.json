@@ -20653,5 +20653,160 @@
         "durationMs": 224000
       }
     ]
+  },
+  "woodstock-99": {
+    "name": "Woodstock '99",
+    "image": "https://cdn-images.dzcdn.net/images/artist/de28d7d7132d115ff582834a419aa198/500x500-000000-80-0-0.jpg",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Woodstock+%2799",
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:51.311Z"
+  },
+  "mdf-iv": {
+    "name": "Max Ivory",
+    "image": "https://cdn-images.dzcdn.net/images/artist/994b747104403e74b5b3f26177ba68f1/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:54.418Z"
+  },
+  "mdf-v": {
+    "name": "Mdxv",
+    "image": "https://cdn-images.dzcdn.net/images/artist/05300eaa844c31a3b82d6aa6a0b55319/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:54.992Z"
+  },
+  "mdf-vi": {
+    "name": "Mads Vinding",
+    "image": "https://cdn-images.dzcdn.net/images/artist/e749e69aae75eab439b50df63a271694/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:55.528Z"
+  },
+  "mdf-vii": {
+    "name": "MF DOOM",
+    "image": "https://cdn-images.dzcdn.net/images/artist/7dc35cb3ac1a39d02ddad6b153b473dc/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:56.066Z"
+  },
+  "mdf-viii": {
+    "name": "Mafiii",
+    "image": "https://cdn-images.dzcdn.net/images/artist/ff98d39e49eab7c1af413929c856125b/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:56.526Z"
+  },
+  "legendary-rhythm-blues-cruise-16": {
+    "name": "The Legendary Rhythm & Blues Revue",
+    "image": "https://cdn-images.dzcdn.net/images/artist/daf61947400083a66d17145f87b73b7f/500x500-000000-80-0-0.jpg",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Legendary+Rhythm",
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:57.881Z"
+  },
+  "mdf-ix": {
+    "name": "Maddix",
+    "image": "https://cdn-images.dzcdn.net/images/artist/d00db62cfb03420816f7779f87d12272/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:52:58.435Z"
+  },
+  "legendary-rhythm-blues-cruise-18": {
+    "name": "The Legendary Rhythm & Blues Revue",
+    "image": "https://cdn-images.dzcdn.net/images/artist/daf61947400083a66d17145f87b73b7f/500x500-000000-80-0-0.jpg",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Legendary+Rhythm",
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:00.199Z"
+  },
+  "mdf-x": {
+    "name": "NOFX",
+    "image": "https://cdn-images.dzcdn.net/images/artist/2b7fdd20aa9ea0b9b574f288af485bff/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:00.716Z"
+  },
+  "legendary-rhythm-blues-cruise-20": {
+    "name": "The Legendary Rhythm & Blues Revue",
+    "image": "https://cdn-images.dzcdn.net/images/artist/daf61947400083a66d17145f87b73b7f/500x500-000000-80-0-0.jpg",
+    "bio": " Read more on Last.fm",
+    "genres": [],
+    "url": "https://www.last.fm/music/Legendary+Rhythm",
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:01.911Z"
+  },
+  "mdf-xi": {
+    "name": "MDR Kinderchor",
+    "image": "https://cdn-images.dzcdn.net/images/artist/004efc99c546600dec138a32dcf57523/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:02.401Z"
+  },
+  "mdf-xii": {
+    "name": "MF DOOM",
+    "image": "https://cdn-images.dzcdn.net/images/artist/7dc35cb3ac1a39d02ddad6b153b473dc/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:03.398Z"
+  },
+  "mdf-xiii": {
+    "name": "Mafiii",
+    "image": "https://cdn-images.dzcdn.net/images/artist/ff98d39e49eab7c1af413929c856125b/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:03.902Z"
+  },
+  "mdf-xiv": {
+    "name": "MXIV",
+    "image": "https://cdn-images.dzcdn.net/images/artist/b26412b0533a08a0b3db65c8b092efe3/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:05.347Z"
+  },
+  "mdf-xv": {
+    "name": "Mdxv",
+    "image": "https://cdn-images.dzcdn.net/images/artist/05300eaa844c31a3b82d6aa6a0b55319/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:05.899Z"
+  },
+  "mdf-xvi": {
+    "name": "Mc Davi",
+    "image": "https://cdn-images.dzcdn.net/images/artist/2693c44d6747a9cde8def279eff193a7/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:06.352Z"
+  },
+  "mdf-xvii": {
+    "name": "MMXVII",
+    "image": "https://cdn-images.dzcdn.net/images/artist/86cf9925b6bbaf1196f803a931ab3257/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:06.938Z"
+  },
+  "mdf-xix": {
+    "name": "Maddix",
+    "image": "https://cdn-images.dzcdn.net/images/artist/d00db62cfb03420816f7779f87d12272/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:07.867Z"
+  },
+  "mdf-xx": {
+    "name": "MDXX",
+    "image": "https://cdn-images.dzcdn.net/images/artist/40636b6e635be138a080ac05d05c9f31/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:08.369Z"
+  },
+  "mdf-xxi": {
+    "name": "Maxxi",
+    "image": "https://cdn-images.dzcdn.net/images/artist/907a405ac4782b9eda655d5372f851ac/500x500-000000-80-0-0.jpg",
+    "genres": [],
+    "source": "deezer",
+    "fetchedAt": "2026-10-25T01:53:08.931Z"
   }
 }
